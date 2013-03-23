@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdministrativeRegulation" xml:space="preserve">
+    <value>Văn bản lập quy</value>
+  </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Người duyệt</value>
+  </data>
+  <data name="ChoiceAnnouncement" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="ChoiceConfidential" xml:space="preserve">
+    <value>Mật</value>
+  </data>
+  <data name="ChoiceNormal" xml:space="preserve">
+    <value>Thường</value>
+  </data>
+  <data name="ChoicePersonal" xml:space="preserve">
+    <value>Cá nhân</value>
+  </data>
+  <data name="ChoiceToDo" xml:space="preserve">
+    <value>Thực hiện</value>
+  </data>
+  <data name="ChoiceUrgent" xml:space="preserve">
+    <value>Khẩn</value>
+  </data>
+  <data name="ConfidentialityLevel" xml:space="preserve">
+    <value>Độ mật</value>
+  </data>
+  <data name="ConfidentialityLevelsListTitle" xml:space="preserve">
+    <value>Danh mục độ mật</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Trích yếu</value>
+  </data>
+  <data name="EffectiveDate" xml:space="preserve">
+    <value>Ngày hiệu lực</value>
+  </data>
+  <data name="EffectStatus" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="ExpiredDate" xml:space="preserve">
+    <value>Ngày hết hiệu lực</value>
+  </data>
+  <data name="IncomingDate" xml:space="preserve">
+    <value>Ngày đến</value>
+  </data>
+  <data name="IncomingDocument" xml:space="preserve">
+    <value>Văn thư đến</value>
+  </data>
+  <data name="IncomingDocumentType" xml:space="preserve">
+    <value>Loại văn thư đến</value>
+  </data>
+  <data name="IncomingDocumentTypesListTitle" xml:space="preserve">
+    <value>Danh mục loại văn thư đến</value>
+  </data>
+  <data name="IncomingNumber" xml:space="preserve">
+    <value>Số đến</value>
+  </data>
+  <data name="IssuedDate" xml:space="preserve">
+    <value>Ngày ban hành</value>
+  </data>
+  <data name="LegalDocument" xml:space="preserve">
+    <value>Văn bản pháp luật</value>
+  </data>
+  <data name="LegislationType" xml:space="preserve">
+    <value>Loại văn bản</value>
+  </data>
+  <data name="LegislationTypesListTitle" xml:space="preserve">
+    <value>Danh mục loại văn bản</value>
+  </data>
+  <data name="OfficialForm" xml:space="preserve">
+    <value>Biểu mẫu</value>
+  </data>
+  <data name="OfficialNumber" xml:space="preserve">
+    <value>Số hiệu văn bản</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Nơi ban hành</value>
+  </data>
+  <data name="OrganizationsListTitle" xml:space="preserve">
+    <value>Danh mục đơn vị ban hành</value>
+  </data>
+  <data name="OutgoingDocument" xml:space="preserve">
+    <value>Văn thư đi</value>
+  </data>
+  <data name="PriorityLevel" xml:space="preserve">
+    <value>Độ khẩn</value>
+  </data>
+  <data name="PriorityLevelsListTitle" xml:space="preserve">
+    <value>Danh mục độ khẩn</value>
+  </data>
+  <data name="ReadPermission" xml:space="preserve">
+    <value>Quyền xem</value>
+  </data>
+  <data name="Recipient" xml:space="preserve">
+    <value>Người nhận</value>
+  </data>
+  <data name="ReferenceNumber" xml:space="preserve">
+    <value>Số ref</value>
+  </data>
+  <data name="RelatedDocuments" xml:space="preserve">
+    <value>Văn bản liên quan</value>
+  </data>
+  <data name="RelatedForms" xml:space="preserve">
+    <value>Biểu mẫu liên quan</value>
+  </data>
+  <data name="Signer" xml:space="preserve">
+    <value>Người ký</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Tên văn bản</value>
+  </data>
+  <data name="DraftList" xml:space="preserve">
+    <value>Danh sách văn bản đang soạn thảo</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>Danh sách văn bản</value>
+  </data>
+  <data name="PendingList" xml:space="preserve">
+    <value>Danh sách văn bản đang trình duyệt</value>
+  </data>
+  <data name="AdministrativeRegulationApproverGroup" xml:space="preserve">
+    <value>Nhóm duyệt văn bản lập quy</value>
+  </data>
+  <data name="AdministrativeRegulationEditorGroup" xml:space="preserve">
+    <value>Nhóm soạn văn bản lập quy</value>
+  </data>
+  <data name="LatestDocuments" xml:space="preserve">
+    <value>Văn bản mới</value>
+  </data>
+  <data name="LegalDocumentApproverGroup" xml:space="preserve">
+    <value>Nhóm duyệt văn bản pháp luật</value>
+  </data>
+  <data name="LegalDocumentEditorGroup" xml:space="preserve">
+    <value>Nhóm soạn văn bản pháp luật</value>
+  </data>
+  <data name="OfficialFormApproverGroup" xml:space="preserve">
+    <value>Nhóm duyệt biểu mẫu</value>
+  </data>
+  <data name="OfficialFormEditorGroup" xml:space="preserve">
+    <value>Nhóm soạn biểu mẫu</value>
+  </data>
+  <data name="OutgoingDocumentApproverGroup" xml:space="preserve">
+    <value>Nhóm duyệt văn thư đi</value>
+  </data>
+  <data name="OutgoingDocumentEditorGroup" xml:space="preserve">
+    <value>Nhóm soạn văn thư đi</value>
+  </data>
+  <data name="AdministrativeRegulationApprovalWorkflowName" xml:space="preserve">
+    <value>Quy trình kiểm duyệt văn bản lập quy</value>
+  </data>
+  <data name="LegalDocumentApprovalWorkflowName" xml:space="preserve">
+    <value>Quy trình kiểm duyệt văn bản pháp luật</value>
+  </data>
+  <data name="OfficialFormApprovalWorkflowName" xml:space="preserve">
+    <value>Quy trình kiểm duyệt biểu mẫu</value>
+  </data>
+  <data name="OutgoingDocumentApprovalWorkflowName" xml:space="preserve">
+    <value>Quy trình kiểm duyệt văn thư đi</value>
+  </data>
+  <data name="AdministrativeRegulationContentTypeName" xml:space="preserve">
+    <value>[I-Office] Văn bản lập quy</value>
+  </data>
+  <data name="IncomingDocumentContentTypeName" xml:space="preserve">
+    <value>[I-Office] Văn thư đến</value>
+  </data>
+  <data name="LegalDocumentContentTypeName" xml:space="preserve">
+    <value>[I-Office] Văn bản pháp luật</value>
+  </data>
+  <data name="OfficialFormContentTypeName" xml:space="preserve">
+    <value>[I-Office] Biểu mẫu</value>
+  </data>
+  <data name="OutgoingDocumentContentTypeName" xml:space="preserve">
+    <value>[I-Office] Văn thư đi</value>
+  </data>
+  <data name="FocalPointUnit" xml:space="preserve">
+    <value>Đầu mối</value>
+  </data>
+  <data name="ImplementationUnit" xml:space="preserve">
+    <value>Thực hiện</value>
+  </data>
+  <data name="LeaderApprover" xml:space="preserve">
+    <value>Lãnh đạo phê duyệt</value>
+  </data>
+  <data name="ApprovedDate" xml:space="preserve">
+    <value>Ngày duyệt</value>
+  </data>
+  <data name="ApproverNote" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="FocalPointUnitNote" xml:space="preserve">
+    <value>Tổng hợp và báo cáo tiến độ</value>
+  </data>
+  <data name="ImplementationUnitNote" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="RecipientNote" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="IncomingDocumentApproverGroup" xml:space="preserve">
+    <value>Nhóm duyệt văn thư đến</value>
+  </data>
+  <data name="IncomingDocumentEditorGroup" xml:space="preserve">
+    <value>Nhóm soạn văn thư đến</value>
+  </data>
+  <data name="IncomingDocumentWorkflowName" xml:space="preserve">
+    <value>Quy trình xử lý văn thư đến</value>
+  </data>
+  <data name="IncomingDocumentWorkflowTemplateName" xml:space="preserve">
+    <value>[I-Office] Incoming Document Approval</value>
+  </data>
+  <data name="DecisionDocument" xml:space="preserve">
+    <value>Quyết định</value>
+  </data>
+  <data name="DecisionDocumentContentType" xml:space="preserve">
+    <value>[I-Office] Quyết định</value>
+  </data>
+  <data name="DecisionDocumentEditorGroup" xml:space="preserve">
+    <value>Nhóm soạn quyết định</value>
+  </data>
+  <data name="DecisionList" xml:space="preserve">
+    <value>Danh sách quyết định</value>
+  </data>
+  <data name="DecisionNumber" xml:space="preserve">
+    <value>Số quyết định</value>
+  </data>
+  <data name="DecisionSigner" xml:space="preserve">
+    <value>Người ký</value>
+  </data>
+  <data name="LatestDecisionDocuments" xml:space="preserve">
+    <value>Quyết định mới</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+</root>

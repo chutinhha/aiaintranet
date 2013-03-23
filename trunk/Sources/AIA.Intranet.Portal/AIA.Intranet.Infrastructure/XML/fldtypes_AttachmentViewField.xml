@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">AttachmentView</Field>
+    <Field Name="ParentType">Text</Field>
+    
+    <Field Name="TypeDisplayName">[I-Office]Attachment View</Field>
+    <Field Name="TypeShortDescription">Attachment View</Field>
+    <Field Name="UserCreatable">FALSE</Field>
+    <Field Name="ShowOnListCreate">FALSE</Field>
+    <Field Name="ShowOnSurveyCreate">FALSE</Field>
+    <Field Name="ShowOnDocumentLibraryCreate">FALSE</Field>
+    <Field Name="ShowOnColumnTemplateCreate">FALSE</Field>
+    
+    <Field Name="FieldTypeClass">AIA.Intranet.Infrastructure.CustomFields.AttachmentViewField,$SharePoint.Project.AssemblyFullName$</Field>
+    <!--<Field Name="FieldEditorUserControl">/_controltemplates/AIA.Intranet.Infrastructure/AssignmentFieldEditor.ascx</Field>-->
+    <PropertySchema>
+      <Fields>
+        <!--<Field Name="MyCustomProperty" DisplayName="My Custom Property" Type="Text" Hidden="TRUE"></Field>
+        <Field Name="SendNotifyEmail" DisplayName="Send Notification Email" Type="Text" Hidden="TRUE"></Field>
+        <Field Name="ListId" DisplayName="Lists" Type="Text" Hidden="TRUE"></Field>
+        <Field Name="ColumnName" DisplayName="Column Name" Type="Text" Hidden="TRUE"></Field>-->
+      </Fields>
+    </PropertySchema>
+    <!--<RenderPattern Name="DisplayPattern">
+      <HTML>TRUONG TEST</HTML>
+      <HTML><![CDATA[<img src="]]></HTML>
+      <Column HTMLEncode="TRUE"/>
+      <HTML>" alt="</HTML>
+      <Column2 HTMLEncode="TRUE"/>
+      <HTML><![CDATA["/>]]></HTML>
+    </RenderPattern>-->
+
+    <RenderPattern Name="DisplayPattern">
+      <!--<IfEqual>
+        <Expr1>
+          <Column />
+        </Expr1>
+        <Expr2 />
+        <Then />
+        <Else>-->
+          <HTML>
+            <![CDATA[<script language="javascript" src="../../_layouts/AIA.Intranet.Infrastructure/]]>
+            <![CDATA[DisplayAttachments.ashx?ListId=]]>
+            <List />
+            <![CDATA[&ItemId=]]>
+            <ID />
+            <![CDATA[&FieldDisplayName=]]>
+            <Property Select="DisplayName"/>
+            <![CDATA["></script>]]>
+          </HTML>
+        <!--/Else>
+      </IfEqual>-->
+    </RenderPattern>
+  </FieldType>
+</FieldTypes>

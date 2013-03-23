@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FieldTypes>
+	<FieldType>
+		<Field Name="TypeName">RegularExpressionValidatorField</Field>
+		<Field Name="ParentType">Text</Field>
+		<Field Name="TypeDisplayName">Regular Expression Validator</Field>
+		<Field Name="TypeShortDescription">Validate your field's value with a regular expression</Field>
+		<Field Name="UserCreatable">TRUE</Field>
+		<Field Name="ShowOnListAuthoringPages">TRUE</Field>
+		<Field Name="ShowOnDocumentLibraryAuthoringPages">TRUE</Field>
+		<Field Name="ShowOnSurveyAuthoringPages">TRUE</Field>
+		<Field Name="ShowOnColumnTemplateAuthoringPages">TRUE</Field>
+		<Field Name="FieldTypeClass">AIA.Intranet.Infrastructure.CustomFields.RegularExpressionValidatorField, $SharePoint.Project.AssemblyFullName$</Field>
+		<PropertySchema>
+			<Fields>
+				<Field Name="RegexValidation" DisplayName="Regular expression:" Type="Text" Required="TRUE" DisplaySize="30">
+					<Default />
+				</Field>
+				<Field Name="myErrorMessage" DisplayName="Error message:" Type="Text" Required="TRUE" DisplaySize="30">
+					<Default />
+				</Field>
+			</Fields>
+		</PropertySchema>
+		<RenderPattern Name="DisplayPattern">
+			<Switch>
+				<Expr>
+					<Column />
+				</Expr>
+				<Case Value="" />
+				<Default>
+					<HTML/>
+					<Column HTMLEncode="TRUE"/>
+				</Default>
+			</Switch>
+		</RenderPattern>
+	</FieldType>
+</FieldTypes>

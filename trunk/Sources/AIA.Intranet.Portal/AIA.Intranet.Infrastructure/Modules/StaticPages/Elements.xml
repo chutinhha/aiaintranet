@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="StaticPages" Url="Pages">
+    <File Path="StaticPages\controls.html" Url="Controls.html" Type="GhostableInLibrary" />
+</Module>
+</Elements>

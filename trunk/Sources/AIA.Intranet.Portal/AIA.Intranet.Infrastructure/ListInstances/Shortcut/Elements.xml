@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+<ListInstance Title="Liên kết quản trị"
+                OnQuickLaunch="TRUE"
+                TemplateType="103"
+                FeatureId="00bfea71-2062-426c-90bf-714c59600103"
+                Url="Lists/Shortcuts"
+                CustomSchema="Shortcut\Schema.xml"
+                Description="This list to containt all link to administration work">
+
+    <Data>
+      <Rows>
+        <Row>
+          
+            
+            <Field Name='URL'>/Lists/ProfileType/AllItems.aspx;Loại hồ sơ nhân viên</Field>
+            <Field Name='Comments'>Loại hồ sơ nhân viên</Field>
+            <Field Name='Module'>Nhân viên</Field>
+            <Field Name='ID'>1</Field>
+            
+          
+        </Row>
+        <Row>
+          <Field Name="ID">2</Field>
+          <Field Name="URL">/Lists/ForeignLanguage/AllItems.aspx;Ngoại ngữ</Field>
+          <Field Name="Comments">Ngoại ngữ</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">3</Field>
+          <Field Name="URL">/Lists/Expertise/AllItems.aspx;Trình độ chuyên môn</Field>
+          <Field Name="Comments">Trình độ chuyên môn</Field>
+        </Row>
+
+        <Row>
+          <Field Name="ID">4</Field>
+          <Field Name="URL">/Lists/Position/AllItems.aspx;Chức vụ</Field>
+          <Field Name="Comments">Chức vụ</Field>
+        </Row>
+
+        <Row>
+          <Field Name="ID">5</Field>
+          <Field Name="URL">/Lists/EmailTemplates/AllItems.aspx;Mẫu email</Field>
+          <Field Name="Comments">Mẫu email</Field>
+        </Row>
+      </Rows>
+    </Data>
+
+    
+  </ListInstance>
+</Elements>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfListInstancePermission xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListInstancePermission>
+    <ListUrl>Lists/Calendar</ListUrl>
+    <BrokenInheritance>false</BrokenInheritance>
+    <Assignements>
+      <Assignement>
+        <Name>
+          $Resources:CommonResources,AuthenticatedGroup;
+        </Name>
+        <Permissions>
+          <SPBasePermissions>EmptyMask</SPBasePermissions>
+        </Permissions>
+      </Assignement>
+      <Assignement>
+        <Name>
+          $Resources:CommonResources,SiteAdminGroup;
+        </Name>
+        <Permissions>
+          <SPBasePermissions>AddListItems</SPBasePermissions>
+          <SPBasePermissions>ApproveItems</SPBasePermissions>
+        </Permissions>
+        <RoleDefinitions>
+          <SPRoleType>Contributor</SPRoleType>
+        </RoleDefinitions>
+      </Assignement>
+    </Assignements>
+  </ListInstancePermission>
+</ArrayOfListInstancePermission>

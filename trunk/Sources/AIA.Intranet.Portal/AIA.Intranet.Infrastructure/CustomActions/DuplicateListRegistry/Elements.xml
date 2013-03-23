@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <CustomAction Id="Duplicate List Item"
+             RegistrationType="List"
+             RegistrationId="100"
+             Location="EditControlBlock"
+             Title="Duplicate Item"
+             Sequence="300"
+             ImageUrl="~site/_layouts/images/AIA.Intranet.Infrastructure/copy.png"
+             Rights="EditListItems">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/DuplicateItemPage.aspx?ID={ItemId}&amp;List={ListId}&amp;Source=' + encodeURIComponent(window.location)"/>
+  </CustomAction>
+  <CustomAction Id="Duplicate List Item"
+            RegistrationType="List"
+            RegistrationId="100"
+            Location="EditControlBlock"
+            Title="Duplicate Item"
+            Sequence="300"
+            ImageUrl="~site/_layouts/images/AIA.Intranet.Infrastructure/copy.png"
+            Rights="EditListItems">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/DuplicateItemPage.aspx?ID={ItemId}&amp;List={ListId}&amp;Source=' + encodeURIComponent(window.location)"/>
+  </CustomAction>
+  <CustomAction Id="Duplicate List Item"
+            RegistrationType="List"
+            RegistrationId="10000"
+            Location="EditControlBlock"
+            Title="Duplicate Item"
+            Sequence="300"
+            ImageUrl="~site/_layouts/images/AIA.Intranet.Infrastructure/copy.png"
+            Rights="EditListItems">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/DuplicateItemPage.aspx?ID={ItemId}&amp;List={ListId}&amp;Source=' + encodeURIComponent(window.location)"/>
+  </CustomAction>
+  <CustomAction Id="Duplicate List Item"
+            RegistrationType="List"
+            RegistrationId="10001"
+            Location="EditControlBlock"
+            Title="Duplicate Item"
+            Sequence="300"
+            ImageUrl="~site/_layouts/images/AIA.Intranet.Infrastructure/copy.png"
+            Rights="EditListItems">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/DuplicateItemPage.aspx?ID={ItemId}&amp;List={ListId}&amp;Source=' + encodeURIComponent(window.location)"/>
+  </CustomAction>
+  <CustomAction Id="Duplicate List Item"
+            RegistrationType="List"
+            RegistrationId="10001"
+            Location="EditControlBlock"
+            Title="Duplicate Item"
+            Sequence="300"
+            ImageUrl="~site/_layouts/images/AIA.Intranet.Infrastructure/copy.png"
+            Rights="EditListItems">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/DuplicateItemPage.aspx?ID={ItemId}&amp;List={ListId}&amp;Source=' + encodeURIComponent(window.location)"/>
+  </CustomAction>
+  <CustomAction Id="Duplicate List Item"
+            RegistrationType="List"
+            RegistrationId="10002"
+            Location="EditControlBlock"
+            Title="Duplicate Item"
+            Sequence="300"
+            ImageUrl="~site/_layouts/images/AIA.Intranet.Infrastructure/copy.png"
+            Rights="EditListItems">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/DuplicateItemPage.aspx?ID={ItemId}&amp;List={ListId}&amp;Source=' + encodeURIComponent(window.location)"/>
+  </CustomAction>
+  <CustomAction Id="Duplicate List Item"
+            RegistrationType="List"
+            RegistrationId="10003"
+            Location="EditControlBlock"
+            Title="Duplicate Item"
+            Sequence="300"
+            ImageUrl="~site/_layouts/images/AIA.Intranet.Infrastructure/copy.png"
+            Rights="EditListItems">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/DuplicateItemPage.aspx?ID={ItemId}&amp;List={ListId}&amp;Source=' + encodeURIComponent(window.location)"/>
+  </CustomAction>
+</Elements>

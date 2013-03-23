@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" 
+      Title="EmailTemplate" 
+      FolderCreation="FALSE" 
+      DisableAttachments="TRUE"
+      Direction="$Resources:Direction;"
+      Url="Lists/EmailTemplate" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100534E3D82859DEA408D9CDCF6A83B39BB"
+            Name="Email Template"
+            Description="A content type use in email template list">
+        <FieldRefs>
+          <FieldRef ID ="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"
+                   Name="Title" Required="TRUE" />
+          <FieldRef ID ="{F47CC637-22FF-49be-9DBB-42E765E48B36}"
+                   Name="Subject" Required="TRUE" />
+          <FieldRef ID ="{8FBAC2CE-FD1D-42c7-BB39-2042A1AA5D34}"
+                   Name="Body" Required="FALSE"/>
+          <FieldRef ID ="{1BCADBD1-CC15-40A0-AAF7-6DE222412337}"
+                   Name="SendAsPlainText" Required="FALSE"/>
+          <FieldRef ID="{E6588D3C-1806-4a06-8E2D-27CB5990C4C2}" Name="TemplateModule"/>
+        </FieldRefs>
+      </ContentType>
+
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"
+             Type="Text"
+             Name="Title"
+             DisplayName="Template Name"
+             Required="TRUE"
+             SourceID="http://schemas.microsoft.com/sharepoint/v3"
+             StaticName="Title"
+             FromBaseType="TRUE"
+             ColName="nvarchar1" />
+
+      <Field ID="{F47CC637-22FF-49be-9DBB-42E765E48B36}"
+             Type="Text"
+             Name="Subject"
+             Description="Enter email subject that can include variables as place holders. Variable examples: %ITEM:Title% or %MyMessage%"
+             DisplayName="Subject"
+             StaticName="Subject"
+             Hidden="FALSE"
+             Required="FALSE"
+             Sealed="FALSE" />
+
+      <Field ID="{8FBAC2CE-FD1D-42c7-BB39-2042A1AA5D34}"
+             Type="Note"
+             Name="Body"
+             DisplayName="Body"
+             Description="Enter email message that can include variables as place holders. Variable examples: %ITEM:Title% or %MyMessage%"
+             RichText ="TRUE"
+             AllowHyperlink="TRUE"
+             RichTextMode="FullHtml"
+             RestrictedMode="TRUE"
+             NumLines="20"
+             StaticName="Body"
+             Hidden="FALSE"
+             Required="FALSE"
+             Sealed="FALSE" />
+      <Field ID="{1BCADBD1-CC15-40A0-AAF7-6DE222412337}"
+           Type="Boolean"
+           Name="SendAsPlainText"
+           DisplayName="Send As Plain Text"
+           Description="Check this option if you want to send the body as plain text (ascii text)"
+           StaticName="SendAsPlainText"
+           Hidden="FALSE"
+           Required="FALSE"
+           Sealed="FALSE" />
+      
+      <Field Type="Choice" 
+             DisplayName="Module" 
+             Required="FALSE"
+             FillInChoice="FALSE"
+             ID="{E6588D3C-1806-4a06-8E2D-27CB5990C4C2}" 
+             StaticName="TemplateModule" 
+             Name="TemplateModule" 
+             Group="[I-Office]">
+        <Default>Phòng ban</Default>
+        <CHOICES>
+          <CHOICE>Phòng ban</CHOICE>
+          <CHOICE>Nhân viên</CHOICE>
+          <CHOICE>Tin tức</CHOICE>
+          <CHOICE>Dự án</CHOICE>
+        </CHOICES>
+      </Field>
+
+    </Fields>
+    
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="Subject"></FieldRef>
+          <FieldRef Name="SendAsPlainText"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+          <GroupBy Collapse="FALSE">
+            <FieldRef Name="TemplateModule"></FieldRef>
+          </GroupBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

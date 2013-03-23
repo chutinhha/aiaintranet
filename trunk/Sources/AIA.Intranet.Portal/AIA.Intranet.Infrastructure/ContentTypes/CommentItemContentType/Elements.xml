@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+
+  <!--Comment Item fields-->
+
+  <Field Type="Note" DisplayName="Nội Dung"  NumLines="35" RichText="TRUE" RichTextMode="FullHtml"  Sortable="FALSE" Group="[I-Office]" ID="{1E66B70E-1179-497A-8B73-AD139E34E11E}" StaticName="CommentText" Name="CommentText"  />
+  <Field Type="Number" DisplayName="Số Phản Hồi" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="1" Decimals="0" Group="[I-Office]" ID="{E2811F1E-ED96-4440-B205-14350E02A44C}"  StaticName="RepliesCount" Name="RepliesCount" />
+  <Field ID="{9A04E409-D277-4F84-AEB0-5F437DA0F8AD}" Name="ReplyTo" StaticName="ReplyTo" DisplayName="Phản Hồi Cho" Type="Lookup" Group="[I-Office]" List="" ShowField="Title" ></Field>
+  <Field ID="{504B2598-2121-44EB-A9B1-CEBBB82E0530}" Hidden="FALSE" Required="FALSE" UniqueId="FALSE" Name="CommentUrl" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="CommentUrl" Group="[I-Office]" DisplayName="Nguồn bình luận" Type="Text" Sortable="FALSE" Overwrite="TRUE" />
+  <!--End of comment fields-->
+  
+  <Field Type="Note" DisplayName="RatingUsers"  NumLines="35" RichText="FALSE" RichTextMode="Compatible" Sortable="FALSE" Group="[I-Office]" ID="{9A2979C0-8029-4BEE-BC7F-9925F6CEF137}" StaticName="RatingUsers" Name="RatingUsers"  />
+  <Field Type="Number" DisplayName="RatingAvg" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="0" Decimals="1" Group="[I-Office]" ID="{636A95FE-D0A2-457F-82AE-1CB4D2E9932E}"  StaticName="RatingAvg" Name="RatingAvg" />
+  <!-- item Rating -->
+  
+  <ContentType ID="0x01001f4d5d513dd74966b47635f2003a212f"
+               Name="Item Comment ContentType"
+               Group="[I-Office]"
+               Description="Comment Item ContentType"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"  Name="Title" />
+
+      <FieldRef ID="{1E66B70E-1179-497A-8B73-AD139E34E11E}" Name="CommentText"/>
+      <FieldRef ID="{9A04E409-D277-4F84-AEB0-5F437DA0F8AD}" Name="ReplyTo"/>
+      <FieldRef ID="{504B2598-2121-44EB-A9B1-CEBBB82E0530}" Name="CommentUrl"/>
+      <FieldRef ID="{E2811F1E-ED96-4440-B205-14350E02A44C}" Name="RepliesCount"/>
+      
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <!--<Display>3GuysListForm</Display>
+          <Edit>3GuysListForm</Edit>-->
+          <New>CommentBoxRenderTemplate</New>
+          </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+
+  <ContentType ID="0x0100a64e3c24fa0a477bada67bc8cce19e07"
+              Name="Item Rating ContentType"
+              Group="[I-Office]"
+              Description="Item Rating ContentType"
+              Inherits="FALSE"
+              Version="0">
+    <FieldRefs>
+
+      <FieldRef ID="{9A2979C0-8029-4BEE-BC7F-9925F6CEF137}"  Name="RatingUsers"  />
+      <FieldRef ID="{636A95FE-D0A2-457F-82AE-1CB4D2E9932E}"  Name="RatingAvg" />
+      <FieldRef ID="{504B2598-2121-44EB-A9B1-CEBBB82E0530}" Name="CommentUrl"/>
+
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <!--<Display>3GuysListForm</Display>
+          <Edit>3GuysListForm</Edit>-->
+          <New>CommentBoxRenderTemplate</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+  
+</Elements>

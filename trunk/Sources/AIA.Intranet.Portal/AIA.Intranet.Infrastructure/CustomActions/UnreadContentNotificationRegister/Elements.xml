@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <CustomAction Id="{51B684CB-1735-4DC7-B13D-783E57EA7C0B}"
+								GroupId="GeneralSettings"
+								Location="Microsoft.SharePoint.ListEdit"
+								RegistrationType ="List"
+								Sequence="1000"
+								Title="[I-Office] - Unread Content Notification Settings">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/UnreadContentNotificationSettings.aspx?List={ListId}&amp;Source=' + window.location"/>
+  </CustomAction>
+
+
+  <CustomAction Id="UserInterfaceCustomActions.ListCT.ContentTypeSettings1"
+                GroupId="General"
+                Location="Microsoft.SharePoint.ContentTypeTemplateSettings"
+                RegistrationType="ContentType"
+                Sequence="1000"
+                Title="[I-Office] - Unread Content Notification Settings">
+    <UrlAction Url="{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/UnreadContentNotificationSettings.aspx"/>
+  </CustomAction>
+
+  <CustomAction Id="UserInterfaceCustomActions.SiteCT.ContentTypeSettings1"
+                GroupId="General"
+                Location="Microsoft.SharePoint.ContentTypeSettings"
+                RegistrationType="ContentType"
+                Sequence="1000"
+                Title="[I-Office] - Unread Content Notification Settings">
+    <UrlAction Url="{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/UnreadContentNotificationSettings.aspx"/>
+  </CustomAction>
+
+</Elements>

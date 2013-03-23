@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="517CC013-C357-4388-BD1E-622C2A17B309"
+                GroupId="Permissions"
+                Location="Microsoft.SharePoint.ListEdit"
+                RegistrationType="List"
+                RegistrationId="101"
+                Sequence="100"
+                Title="[I-Office] security rules">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/RuleList.aspx?List={ListId}&amp;Source=' + window.location"/>
+  </CustomAction>
+
+  <CustomAction Id="517CC013-C357-4388-BD1E-622C2A17B309"
+                GroupId="Permissions"
+                Location="Microsoft.SharePoint.ListEdit"
+                RegistrationType="List"
+                RegistrationId="100"
+                Sequence="100"
+                Title="[I-Office] security rules">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/RuleList.aspx?List={ListId}&amp;Source=' + window.location"/>
+  </CustomAction>
+
+  <CustomAction Id="A3431710-ABC3-49b8-84FD-84370AAC1790"
+                GroupId="Permissions"
+                Location="Microsoft.SharePoint.ListEdit"
+                RegistrationType="List"
+                RegistrationId="49001"
+                Sequence="100"
+                Title="[I-Office] security rules">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/RuleList.aspx?List={ListId}&amp;Source=' + window.location"/>
+  </CustomAction>
+</Elements>

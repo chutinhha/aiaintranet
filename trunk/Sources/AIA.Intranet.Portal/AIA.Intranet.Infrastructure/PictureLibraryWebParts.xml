@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfWebpartPageDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebpartPageDefinition>
+    <PageUrl></PageUrl>
+    <FileName>GalleryView.aspx</FileName>
+    <Overwrite>true</Overwrite>
+    <Webparts xsi:type="DefaultWP">
+      <Title>Picture Gallery</Title>
+      <ZoneId>Body</ZoneId>
+      <Index>1</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>GallerySlideShowWebpart.webpart</WebpartName>
+    </Webparts>
+    
+    <Webparts xsi:type="DefaultWP">
+      <Title>Comment box</Title>
+      <ZoneId>CenterColumn</ZoneId>
+      <Index>1</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>CommentBoxWebPart.webpart</WebpartName>
+      <Properties>
+        <Add Name="Title" Value="$Resources:GalleryResources,CommentBoxTitle;" type="string"></Add>
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
+
+  <WebpartPageDefinition>
+    
+    <PageUrl></PageUrl>
+    <FileName>View.aspx</FileName>
+    <Overwrite>true</Overwrite>
+    <Webparts xsi:type="DefaultWP">
+      <Title>Picture Gallery</Title>
+      <ZoneId>CenterColumn</ZoneId>
+      <Index>1</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>FileViewer.webpart</WebpartName>
+    </Webparts>
+    
+    <Webparts xsi:type="DefaultWP">
+      <Title>Comment box</Title>
+      <ZoneId>CenterColumn</ZoneId>
+      <Index>2</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>CommentBoxWebPart.webpart</WebpartName>
+      <Properties>
+        <Add Name="Title" Value="$Resources:GalleryResources,CommentBoxTitle;" type="string"></Add>
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
+  
+</ArrayOfWebpartPageDefinition>

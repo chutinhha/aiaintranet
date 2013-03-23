@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="AIA.Intranet.Infrastructure.Navigation"
+            GroupId="AIA.Intranet.SiteSettings"
+            Location="Microsoft.SharePoint.SiteSettings"
+            Sequence="1005"
+            Title="[I-Office] - Navigations">
+    <UrlAction Url="~sitecollection/Lists/Navigations"/>
+  </CustomAction>
+</Elements>

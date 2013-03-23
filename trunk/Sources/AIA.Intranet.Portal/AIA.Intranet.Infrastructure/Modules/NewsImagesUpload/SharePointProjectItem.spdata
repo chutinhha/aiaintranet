@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="NewsImagesUpload\" Type="ElementManifest" />
+    <ProjectItemFile Source="ioffice-news-thumb.jpg" Target="NewsImagesUpload\" Type="ElementFile" />
+    <ProjectItemFile Source="ioffice-news-thumb_jpg.jpg" Target="NewsImagesUpload\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Defines a administrative menu to appear under document libraries settings -->
+  <CustomAction
+    Id="CCIappItemDiscussions.GenericListDiscussionLinkSettings"
+    GroupId="GeneralSettings"
+    Location="Microsoft.SharePoint.ListEdit"
+    Sequence="106"
+    Title="[I-Office] - Item Discussion Settings">
+    <UrlAction Url="~site/_layouts/AIA.Intranet.Infrastructure/ItemDiscussionSettings.aspx?List={ListId}" />
+  </CustomAction>
+
+  <!-- Document Discussion ECB Link -->
+  <CustomAction
+      Id="Document Discussions"
+      RegistrationType="List"
+      RegistrationId="101"
+      Location="EditControlBlock"
+      ImageUrl="~site/_layouts/images/ICDISC.GIF"
+      Sequence="300"
+      Title="Bình luận">
+    <UrlAction Url="~site/_layouts/AIA.Intranet.Infrastructure/ItemDiscussionResolver.aspx?List={ListId}&amp;Item={ItemId}" />
+  </CustomAction>
+  <!-- Document Discussion ECB Link -->
+  <CustomAction
+    Id="Item Discussions"
+    RegistrationType="List"
+    RegistrationId="100"
+    Location="EditControlBlock"
+    ImageUrl="~site/_layouts/images/ICDISC.GIF"
+    Sequence="300"
+    Title="Bình luận">
+    <UrlAction Url="~site/_layouts/AIA.Intranet.Infrastructure/ItemDiscussionResolver.aspx?List={ListId}&amp;Item={ItemId}" />
+  </CustomAction>
+
+  <!-- Project Discussion ECB Link -->
+  <!--<CustomAction
+    Id="Item Discussions"
+    RegistrationType="List"
+    RegistrationId="10023"
+    Location="EditControlBlock"
+    ImageUrl="~site/_layouts/images/ICDISC.GIF"
+    Sequence="300"
+    Title="Thảo luận">
+    <UrlAction Url="~site/_layouts/AIA.Intranet.Infrastructure/ItemDiscussionResolver.aspx?List={ListId}&amp;Item={ItemId}" />
+  </CustomAction>-->
+  
+</Elements>

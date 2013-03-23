@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ApprovalWFAssociationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ApproverData>
+    <ApprovalWFApprover>
+      <ApprovalLevelName>Duyệt đặt phòng họp</ApprovalLevelName>
+      <SpecificUserGroup>
+        <string>Nhóm duyệt đặt phòng họp</string>
+      </SpecificUserGroup>
+      <ManagerApprove>false</ManagerApprove>
+      <ExpendGroup>false</ExpendGroup>
+      <TaskSequenceType>Sequence</TaskSequenceType>
+      <DueDate />
+      <DurationPerTask>0</DurationPerTask>
+      <EnableEmail>true</EnableEmail>
+      <EmailTemplate>
+        <Url>/Lists/EmailTemplates</Url>
+        <Name>Thông báo yêu cầu duyệt lịch đặt phòng họp</Name>
+      </EmailTemplate>
+      <AllowChangeMessage>false</AllowChangeMessage>
+      <TaskContenType>0x01080100E6FA232BCA3B4B25B9DF4B2E3791D3DD</TaskContenType>
+      <TaskTitle />
+      <EnableChangeApprovers>false</EnableChangeApprovers>
+      <AppendTitle>true</AppendTitle>
+      <UpdateProperties />
+    </ApprovalWFApprover>
+  </ApproverData>
+  <EndOnFirstReject>false</EndOnFirstReject>
+  <EndOnItemDocumentChange>false</EndOnItemDocumentChange>
+  <EnableContentApproval>true</EnableContentApproval>
+  <DelayOnStart>0</DelayOnStart>
+  <StartNotification>false</StartNotification>
+  <EmailTemplate>
+    <Url />
+    <Name />
+  </EmailTemplate>
+  <ColumnName />
+  <UseSpecificUserGroup>false</UseSpecificUserGroup>
+  <UseMetaData>false</UseMetaData>
+  <SpecificUserGroup />
+  <EnableVerboseLog>false</EnableVerboseLog>
+  <EnableReassign>false</EnableReassign>
+  <EnableHoldOn>false</EnableHoldOn>
+  <EnableRequestChange>false</EnableRequestChange>
+  <EnableApprove>true</EnableApprove>
+  <EnableReject>true</EnableReject>
+  <TaskFormOption>
+    <ApproveLabel>Approve</ApproveLabel>
+    <RejectLabel>Reject</RejectLabel>
+    <RequestInformationLabel>Request Info</RequestInformationLabel>
+    <RequestChangeLabel>Request Change</RequestChangeLabel>
+    <OnHoldLabel>Hold</OnHoldLabel>
+    <ReassignLabel>Reassign</ReassignLabel>
+    <EnableApprove>true</EnableApprove>
+    <EnableReject>true</EnableReject>
+    <EnableHoldOn>false</EnableHoldOn>
+    <EnableRequestChange>false</EnableRequestChange>
+    <EnableRequestInf>false</EnableRequestInf>
+    <EnableReassign>false</EnableReassign>
+  </TaskFormOption>
+  <EnableStartingCondition>false</EnableStartingCondition>
+  <ConditionFieldId>fa564e0f-0c70-4ab9-b863-0177e6ddd247</ConditionFieldId>
+  <ConditionFieldValue />
+  <ApproveIfByPass>false</ApproveIfByPass>
+  <EnableUpdatePermission>false</EnableUpdatePermission>
+  <KeepCurrentPermissions>false</KeepCurrentPermissions>
+  <WFEvents>
+    <Events>
+      <TaskEventSetting>
+        <Type>WFApproved</Type>
+        <Actions>
+          <TaskActionSettings xsi:type="UpdateWFItemPermissionSettings">
+            <Type>UpdateWFPermission</Type>
+            <Order>0</Order>
+            <RoleId>1073741826</RoleId>
+            <KeepExisting>false</KeepExisting>
+            <Columns />
+            <AllParticipiants>false</AllParticipiants>
+            <StaticUsers>
+              <string>Nhóm nhân viên</string>
+            </StaticUsers>
+          </TaskActionSettings>
+          <TaskActionSettings xsi:type="UpdateWFItemPermissionSettings">
+            <Type>UpdateWFPermission</Type>
+            <Order>0</Order>
+            <RoleId>1073741827</RoleId>
+            <KeepExisting>true</KeepExisting>
+            <Columns />
+            <AllParticipiants>false</AllParticipiants>
+            <StaticUsers>
+              <string>Nhóm duyệt đặt phòng họp</string>
+            </StaticUsers>
+          </TaskActionSettings>
+          <TaskActionSettings xsi:type="SendEmailToWfItemUserColumnSettings">
+            <Type>SendEmailToWorkflowItemUserColumn</Type>
+            <Order>0</Order>
+            <EmailTemplateUrl>/Lists/EmailTemplates</EmailTemplateUrl>
+            <EmailTemplateName>Thông báo lịch đặt phòng họp đã được duyệt</EmailTemplateName>
+            <TaskId>0</TaskId>
+            <AttachTaskLink>false</AttachTaskLink>
+            <StaticUsers />
+            <FieldId>1df5e554-ec7e-46a6-901d-d85a3881cb18</FieldId>
+          </TaskActionSettings>
+          <TaskActionSettings xsi:type="SendEmailToWfItemUserColumnSettings">
+            <Type>SendEmailToWorkflowItemUserColumn</Type>
+            <Order>0</Order>
+            <EmailTemplateUrl>/Lists/EmailTemplates</EmailTemplateUrl>
+            <EmailTemplateName>Thông báo lịch họp</EmailTemplateName>
+            <TaskId>0</TaskId>
+            <AttachTaskLink>false</AttachTaskLink>
+            <StaticUsers />
+            <FieldId>9e13f687-dd1c-44ed-89a5-83bf27a89959</FieldId>
+          </TaskActionSettings>
+        </Actions>
+      </TaskEventSetting>
+      <TaskEventSetting>
+        <Type>WFStarted</Type>
+        <Actions>
+          <TaskActionSettings xsi:type="UpdateWFItemPermissionSettings">
+            <Type>UpdateWFPermission</Type>
+            <Order>0</Order>
+            <RoleId>1073741826</RoleId>
+            <KeepExisting>false</KeepExisting>
+            <Columns>
+              <string>1df5e554-ec7e-46a6-901d-d85a3881cb18</string>
+            </Columns>
+            <AllParticipiants>false</AllParticipiants>
+            <StaticUsers />
+          </TaskActionSettings>
+          <TaskActionSettings xsi:type="UpdateWFItemPermissionSettings">
+            <Type>UpdateWFPermission</Type>
+            <Order>0</Order>
+            <RoleId>1073741827</RoleId>
+            <KeepExisting>true</KeepExisting>
+            <Columns />
+            <AllParticipiants>false</AllParticipiants>
+            <StaticUsers>
+              <string>Nhóm duyệt đặt phòng họp</string>
+            </StaticUsers>
+          </TaskActionSettings>
+        </Actions>
+      </TaskEventSetting>
+      <TaskEventSetting>
+        <Type>WFRejected</Type>
+        <Actions>
+          <TaskActionSettings xsi:type="SendEmailToWfItemUserColumnSettings">
+            <Type>SendEmailToWorkflowItemUserColumn</Type>
+            <Order>0</Order>
+            <EmailTemplateUrl>/Lists/EmailTemplates</EmailTemplateUrl>
+            <EmailTemplateName>Thông báo lịch đặt phòng họp không được chấp thuận</EmailTemplateName>
+            <TaskId>0</TaskId>
+            <AttachTaskLink>false</AttachTaskLink>
+            <StaticUsers />
+            <FieldId>1df5e554-ec7e-46a6-901d-d85a3881cb18</FieldId>
+          </TaskActionSettings>
+          <TaskActionSettings xsi:type="UpdateWFItemPermissionSettings">
+            <Type>UpdateWFPermission</Type>
+            <Order>0</Order>
+            <RoleId>1073741827</RoleId>
+            <KeepExisting>false</KeepExisting>
+            <Columns>
+              <string>1df5e554-ec7e-46a6-901d-d85a3881cb18</string>
+            </Columns>
+            <AllParticipiants>false</AllParticipiants>
+            <StaticUsers>
+              <string>Nhóm duyệt đặt phòng họp</string>
+            </StaticUsers>
+          </TaskActionSettings>
+        </Actions>
+      </TaskEventSetting>
+    </Events>
+  </WFEvents>
+</ApprovalWFAssociationData>
+

@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfNavigation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Navigation>
+    <Name>Portal</Name>
+    <NavigationUrl>/</NavigationUrl>
+    <Order>1</Order>
+    <NavigationKey>COMPANY</NavigationKey>
+    <Childrens>
+      <Navigation>
+        <Name>Thông báo</Name>
+        <NavigationUrl>/Lists/IAnnouncements</NavigationUrl>
+        <Order>1</Order>
+      </Navigation>
+      <Navigation>
+        <Name>Lịch làm việc</Name>
+        <NavigationUrl>/Lists/CompanyCalendar/calendar.aspx</NavigationUrl>
+        <Order>2</Order>
+      </Navigation>
+
+      <Navigation>
+        <Name>Tin tức</Name>
+        <NavigationUrl>/News</NavigationUrl>
+        <NavigationKey>NEWS</NavigationKey>
+        <Order>3</Order>
+        <Childrens>
+          <Navigation>
+            <Name>Danh mục tin tức</Name>
+            <NavigationUrl>/News/Lists/NewsCategory</NavigationUrl>
+            <NavigationKey>NEWS</NavigationKey>
+          </Navigation>
+        </Childrens>
+      </Navigation>
+
+      <Navigation>
+        <Name>Hình ảnh</Name>
+        <NavigationUrl>/Picture/</NavigationUrl>
+        <NavigationKey>PICTURE</NavigationKey>
+        <Order>4</Order>
+        <Childrens>
+          <Navigation>
+            <Name>Picture albums</Name>
+            <NavigationKey>PICTUREALBUM</NavigationKey>
+            <NavigationUrl>/Picture/Lists/Album/</NavigationUrl>
+            <Order>0</Order>
+          </Navigation>
+        </Childrens>
+      </Navigation>
+
+      <Navigation>
+        <Name>Video</Name>
+        <NavigationUrl>/Video/</NavigationUrl>
+        <NavigationKey>VIDEO</NavigationKey>
+        <Order>5</Order>
+        <Childrens>
+          <Navigation>
+            <Name>Video albums</Name>
+            <NavigationKey>VIDEOALBUM</NavigationKey>
+            <NavigationUrl>/Video/Lists/Album/</NavigationUrl>
+            <Order>0</Order>
+          </Navigation>
+        </Childrens>
+      </Navigation>
+
+      <Navigation>
+        <Name>Nhân Viên</Name>
+        <NavigationUrl>/Lists/Employees/AllItems.aspx</NavigationUrl>
+        <Order>6</Order>
+        <Childrens>
+          <Navigation>
+            <Name>Nhân viên mới</Name>
+            <NavigationUrl>/Lists/Employees/NewEmployee.aspx</NavigationUrl>
+          </Navigation>
+
+          <Navigation>
+            <Name>Nhân viên tiêu biểu</Name>
+            <NavigationUrl>/Lists/TopEmployees/AllItems.aspx</NavigationUrl>
+          </Navigation>
+          
+          <Navigation>
+            <Name>Tìm kiếm Nhân viên tiêu biểu</Name>
+            <NavigationUrl>/Lists/TopEmployees/SearchTopEmployees.aspx</NavigationUrl>
+          </Navigation>
+
+          <Navigation>
+            <Name>Nhân viên sinh nhật trong tháng</Name>
+            <NavigationUrl>/Lists/Employees/EmployeesBirthDay.aspx</NavigationUrl>
+          </Navigation>
+
+          <Navigation>
+            <Name>Tìm kiếm Nhân viên</Name>
+            <NavigationUrl>/Lists/Employees/SearchEmployees.aspx</NavigationUrl>
+          </Navigation>
+          
+          <Navigation>
+            <Name>Danh bạ</Name>
+            <NavigationUrl>/Lists/Employees/EmployeesContact.aspx</NavigationUrl>
+          </Navigation>
+          
+        </Childrens>
+      </Navigation>
+
+      <Navigation>
+        <Name>Dự án</Name>
+        <NavigationUrl>/Pages/Projects.aspx</NavigationUrl>
+        <NavigationKey>PROJECTS</NavigationKey>
+        <Order>7</Order>
+        <Childrens>
+          <Navigation>
+            <Name>Tìm kiếm</Name>
+            <NavigationUrl>/Lists/Projects/AllItems.aspx</NavigationUrl>
+            <Order>0</Order>
+          </Navigation>
+
+          <Navigation>
+            <Name>Dự án của tôi</Name>
+            <NavigationUrl>/Lists/Projects/MyProjects.aspx</NavigationUrl>
+            <Order>1</Order>
+          </Navigation>
+
+          <Navigation>
+            <Name>Dự án chưa bắt đầu</Name>
+            <NavigationUrl>/Lists/Projects/NotStartItems.aspx</NavigationUrl>
+            <Order>2</Order>
+          </Navigation>
+
+          <Navigation>
+            <Name>Dự án đang tiến hành</Name>
+            <NavigationUrl>/Lists/Projects/InprogressItems.aspx</NavigationUrl>
+            <Order>3</Order>
+          </Navigation>
+
+          <Navigation>
+            <Name>Dự án đang đã hoàn thành</Name>
+            <NavigationUrl>/Lists/Projects/CompletedItems.aspx</NavigationUrl>
+            <Order>4</Order>
+          </Navigation>
+
+          <Navigation>
+            <Name>Dự án đang bị hoãn lại</Name>
+            <NavigationUrl>/Lists/Projects/DelayItems.aspx</NavigationUrl>
+            <Order>5</Order>
+          </Navigation>
+          
+        </Childrens>
+      </Navigation>
+      
+      <Navigation>
+        <Name>Sơ đồ tổ chức</Name>
+        <NavigationUrl>/Pages/Orgchart.aspx</NavigationUrl>
+        <Order>8</Order>
+      </Navigation>
+
+      <Navigation>
+        <Name>Liên kết</Name>
+        <NavigationUrl>/Lists/ILinks/AllItems.aspx</NavigationUrl>
+        <Order>9</Order>
+      </Navigation>
+      
+    </Childrens>
+  </Navigation>
+  <Navigation>
+    <NavigationKey>DEPARTMENT</NavigationKey>
+    <Name>Phòng ban</Name>
+    <NavigationUrl>/Lists/Departments</NavigationUrl>
+    <Order>2</Order>
+  </Navigation>
+  <Navigation>
+    <NavigationKey>WORKFLOW</NavigationKey>
+    <Name>Nghiệp vụ</Name>
+    <NavigationUrl>/Pages/Tools.aspx</NavigationUrl>
+    <Order>3</Order>
+    <Childrens>
+      <Navigation>
+        <NavigationKey>ITASK</NavigationKey>
+        <Name>Quản lý công việc</Name>
+        <NavigationUrl>/Pages/Tasks.aspx</NavigationUrl>
+        <Order>0</Order>
+        <Childrens>
+          <Navigation>
+            <Name>Công việc cá nhân</Name>
+            <NavigationUrl>/Lists/ITasks/PrivateItems.aspx</NavigationUrl>
+            <Order>0</Order>
+          </Navigation>
+          <Navigation>
+            <Name>Công việc phòng ban</Name>
+            <NavigationUrl>/Lists/ITasks/DepartmentItems.aspx</NavigationUrl>
+            <Order>1</Order>
+          </Navigation>
+          <Navigation>
+            <Name>Công việc theo dự án</Name>
+            <NavigationUrl>/Lists/ITasks/ProjectItems.aspx</NavigationUrl>
+            <Order>2</Order>
+          </Navigation>
+          <Navigation>
+            <Name>Công việc cần xử lý</Name>
+            <NavigationUrl>/Lists/ITasks/DueTodayFullItems.aspx</NavigationUrl>
+            <Order>3</Order>
+          </Navigation>
+        </Childrens>
+      </Navigation>
+      <Navigation>
+        <NavigationKey>TIMESHEET</NavigationKey>
+        <Name>Công cụ chấm công</Name>
+        <NavigationUrl>/timesheets</NavigationUrl>
+        <Order>1</Order>
+        <Childrens>
+          <Navigation>
+            <Name>Tổng hợp timesheets</Name>
+            <NavigationUrl>/Lists/Timesheets</NavigationUrl>
+            <Order>1</Order>
+            <Groups>$Resources:TaskResources,HRGroup;</Groups>
+          </Navigation>
+        </Childrens>
+      </Navigation>
+      <Navigation>
+        <NavigationKey>ROOMBOOKING</NavigationKey>
+        <Name>Đặt phòng họp</Name>
+        <NavigationUrl>/RoomBookingSystem</NavigationUrl>
+        <Order>1</Order>
+      </Navigation>
+    </Childrens>
+  </Navigation>
+  <Navigation>
+    <NavigationKey>DOCUMENT</NavigationKey>
+    <Name>Tài liệu</Name>
+    <NavigationUrl>/DocumentLibrary</NavigationUrl>
+    <Order>4</Order>
+    <Childrens>
+      <Navigation>
+        <Name>Quyết định</Name>
+        <NavigationUrl>/DocumentLibrary/DecisionDocuments</NavigationUrl>
+        <Order>1</Order>
+      </Navigation>
+      <Navigation>
+        <Name>Văn bản lập quy</Name>
+        <NavigationUrl>/DocumentLibrary/AdministrativeRegulations</NavigationUrl>
+        <Order>2</Order>
+      </Navigation>
+      <Navigation>
+        <Name>Văn bản pháp luật</Name>
+        <NavigationUrl>/DocumentLibrary/LegalDocuments</NavigationUrl>
+        <Order>3</Order>
+      </Navigation>
+      <Navigation>
+        <Name>Văn thư đi</Name>
+        <NavigationUrl>/DocumentLibrary/OutgoingDocuments</NavigationUrl>
+        <Order>4</Order>
+      </Navigation>
+      <Navigation>
+        <Name>Văn thư đến</Name>
+        <NavigationUrl>/DocumentLibrary/Lists/IncomingDocuments</NavigationUrl>
+        <Order>5</Order>
+      </Navigation>
+      <Navigation>
+        <Name>Biểu mẫu</Name>
+        <NavigationUrl>/DocumentLibrary/OfficialForms</NavigationUrl>
+        <Order>6</Order>
+      </Navigation>      
+    </Childrens>
+  </Navigation>
+  <Navigation>
+    <NavigationKey>REQUEST</NavigationKey>
+    <Name>Hỗ trợ</Name>
+    <NavigationUrl>/Requests</NavigationUrl>
+    <Order>5</Order>
+    <Childrens>
+      <Navigation>
+        <Name>Yêu cầu văn phòng phẩm</Name>
+        <NavigationUrl>/Requests/Lists/Stationery</NavigationUrl>
+        <NavigationKey>REQUEST-STATIONERY</NavigationKey>
+        <Order>1</Order>
+      </Navigation>
+      <Navigation>
+        <Name>Yêu cầu công cụ lao động</Name>
+        <NavigationUrl>/Requests/Lists/WorkingTool</NavigationUrl>
+        <NavigationKey>REQUEST-WORKINGTOOL</NavigationKey>
+        <Order>1</Order>
+      </Navigation>
+    </Childrens>
+  </Navigation>
+  <Navigation>
+    <NavigationKey>COMMUNITY</NavigationKey>
+    <Name>Trao đổi</Name>
+    <NavigationUrl>/community</NavigationUrl>
+    <Order>6</Order>
+  </Navigation>
+
+  <Navigation>
+    <NavigationKey>ADMINISTRATION</NavigationKey>
+    <Name>Quản Trị</Name>
+    <NavigationUrl>/Lists/Shortcuts</NavigationUrl>
+    <Order>7</Order>
+    <Groups>GROUP1</Groups>
+    <Childrens>
+      <Navigation>
+        <Name>Nhân Viên</Name>
+        <NavigationUrl>/Lists/Employees</NavigationUrl>
+        <Childrens>
+          <Navigation>
+            <Name>Trình độ chuyên môn</Name>
+            <NavigationUrl>/Lists/Expertise</NavigationUrl>
+          </Navigation>
+          <Navigation>
+            <Name>Chức vụ</Name>
+            <NavigationUrl>/Lists/Position/AllItems.aspx</NavigationUrl>
+          </Navigation>
+          <Navigation>
+            <Name>Loại hồ sơ</Name>
+            <NavigationUrl>/Lists/ProfileType/AllItems.aspx</NavigationUrl>
+          </Navigation>
+          <Navigation>
+            <Name>Ngoại ngữ</Name>
+            <NavigationUrl>/Lists/ForeignLanguage/AllItems.aspx</NavigationUrl>
+          </Navigation>
+          
+          
+        </Childrens>
+      </Navigation>
+      <Navigation>
+        <Name>Phòng ban</Name>
+        <NavigationUrl>/Lists/Departments</NavigationUrl>
+      </Navigation>
+      <Navigation>
+        <Name>Thông báo</Name>
+        <NavigationUrl>/Lists/IAnnouncements</NavigationUrl>
+        <Childrens>
+          <Navigation>
+            <Name>Danh sách thông báo</Name>
+            <NavigationUrl>/Lists/IAnnouncements/All.aspx</NavigationUrl>
+          </Navigation>
+          </Childrens>
+        
+      </Navigation>
+
+      <Navigation>
+        <Name>Tài liệu</Name>
+        <NavigationUrl>/DocumentLibrary</NavigationUrl>
+        <Childrens>
+          <Navigation>
+            <Name>Danh mục loại văn bản</Name>
+            <NavigationUrl>/DocumentLibrary/Lists/LegislationTypes</NavigationUrl>
+          </Navigation>
+          <Navigation>
+            <Name>Danh mục loại văn thư đến</Name>
+            <NavigationUrl>/DocumentLibrary/Lists/IncomingDocumentTypes</NavigationUrl>
+          </Navigation>
+          <Navigation>
+            <Name>Danh mục đơn vị ban hành</Name>
+            <NavigationUrl>/DocumentLibrary/Lists/Organizations</NavigationUrl>
+          </Navigation>
+          <Navigation>
+            <Name>Danh mục độ khẩn</Name>
+            <NavigationUrl>/DocumentLibrary/Lists/PriorityLevels</NavigationUrl>
+          </Navigation>
+          <Navigation>
+            <Name>Danh mục độ mật</Name>
+            <NavigationUrl>/DocumentLibrary/Lists/ConfidentialityLevels</NavigationUrl>
+          </Navigation>
+        </Childrens>
+      </Navigation>
+
+      <Navigation>
+        <Name>Nghiệp vụ</Name>
+        <NavigationUrl>#</NavigationUrl>
+        <Childrens>
+          <Navigation>
+            <Name>Đặt phòng họp</Name>
+            <NavigationUrl>#</NavigationUrl>
+            <Childrens>
+              <Navigation>
+                <Name>Danh sách tòa nhà</Name>
+                <NavigationUrl>/RoomBookingSystem/Lists/Buildings</NavigationUrl>
+              </Navigation>
+              <Navigation>
+                <Name>Danh sách phòng</Name>
+                <NavigationUrl>/RoomBookingSystem/Lists/Rooms</NavigationUrl>
+              </Navigation>
+            </Childrens>
+          </Navigation>
+        </Childrens>
+      </Navigation>
+      
+    </Childrens>
+    
+    <!--<Childrens>
+      <Navigation>
+        <Name>Danh mục loại thông báo</Name>
+        <NavigationUrl>/Lists/AnnouncementCategories</NavigationUrl>
+      </Navigation>
+      <Navigation>
+        <Name>Danh sách chức vụ</Name>
+        <NavigationUrl>/Lists/Position</NavigationUrl>
+      </Navigation>
+      <Navigation>
+        <Name>Danh sách ngoại ngữ</Name>
+        <NavigationUrl>/Lists/ForeignLanguage/AllItems.aspx</NavigationUrl>
+      </Navigation>
+      
+    </Childrens>-->
+  </Navigation>
+  
+</ArrayOfNavigation>
+
+

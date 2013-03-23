@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Folder (0x0120) -->
+  <ContentType ID="0x012000055bc0236c214030873f64adeb28a328"
+               Name="[I-Office] - Category"
+               Group="[I-Office]"
+               Description=""
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <!--<FieldRef ID="{18172A87-700A-4EBC-A78D-172DA8C61E1F}"/>-->
+      <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}"/>
+      
+    </FieldRefs>
+    
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        
+        <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>CategoryContentTypeEventReceiver</Name>
+            <Type>ItemAdded</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>$SharePoint.Type.d99ce184-61ca-4a9e-ad0f-2bda1ee8c86f.FullName$</Class>
+            <SolutionId>$SharePoint.Package.Id$</SolutionId>
+            <Data></Data>
+            <Filter></Filter>
+            <Synchronization>Synchronous</Synchronization>
+          </Receiver>
+
+          <Receiver>
+            <Name>CategoryContentTypeEventReceiver</Name>
+            <Type>ItemUpdated</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>$SharePoint.Type.d99ce184-61ca-4a9e-ad0f-2bda1ee8c86f.FullName$</Class>
+            <SolutionId>$SharePoint.Package.Id$</SolutionId>
+            <Data></Data>
+            <Filter></Filter>
+            <Synchronization>Synchronous</Synchronization>
+          </Receiver>
+
+          <Receiver>
+            <Name>CategoryContentTypeEventReceiver</Name>
+            <Type>ItemUpdating</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>$SharePoint.Type.d99ce184-61ca-4a9e-ad0f-2bda1ee8c86f.FullName$</Class>
+            <SolutionId>$SharePoint.Package.Id$</SolutionId>
+            <Data></Data>
+            <Filter></Filter>
+            <Synchronization>Synchronous</Synchronization>
+          </Receiver>
+
+          <Receiver>
+            <Name>CategoryContentTypeEventReceiver</Name>
+            <Type>ItemDeleting</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>$SharePoint.Type.d99ce184-61ca-4a9e-ad0f-2bda1ee8c86f.FullName$</Class>
+            <SolutionId>$SharePoint.Package.Id$</SolutionId>
+            <Data></Data>
+            <Filter></Filter>
+            <Synchronization>Asynchronous</Synchronization>
+          </Receiver>
+
+        </Receivers>
+      </XmlDocument>
+    </XmlDocuments>
+    
+  </ContentType>
+</Elements>
