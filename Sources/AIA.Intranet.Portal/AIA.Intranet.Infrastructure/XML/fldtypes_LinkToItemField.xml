@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">LinkToItem</Field>
+    <Field Name="ParentType">Text</Field>
+    <Field Name="TypeDisplayName">[I-Office] Link To Item</Field>
+    <Field Name="TypeShortDescription">Email Link To Item</Field>
+    <Field Name="UserCreatable">TRUE</Field>
+    <Field Name="ShowOnListCreate">TRUE</Field>
+    <Field Name="ShowOnSurveyCreate">TRUE</Field>
+    <Field Name="ShowOnDocumentLibraryCreate">TRUE</Field>
+    <Field Name="ShowOnColumnTemplateCreate">TRUE</Field>
+    <Field Name="FieldTypeClass">AIA.Intranet.Infrastructure.CustomFields.LinkToItemField, $SharePoint.Project.AssemblyFullName$</Field>
+  </FieldType>
+</FieldTypes>

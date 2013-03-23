@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+<ListInstance Title="Email Templates"
+                OnQuickLaunch="TRUE"
+                TemplateType="10000"
+                Url="Lists/EmailTemplates"
+                Description="Email Templates List">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="ID">1</Field>
+          <Field Name="Title">Tin tức - Duyệt tin</Field>
+          <Field Name="Subject">Yêu cầu duyệt tin %ITEM:Title%</Field>
+          <Field Name="Body">
+            &lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;Kính gởi: Anh/Chị,&lt;/p&gt;
+            &lt;p&gt;Tin %ITEM:Title% do Nhân viên %ITEM:Editor% soạn thảo đang chờ Anh/Chị duyệt.&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;Anh/Chị vui lòng vào liên kết bên dưới để xem nội dung chi tiết và duyệt tin.&lt;/p&gt;
+            &lt;p&gt;%ITEM:Xem chi tiết%&lt;/p&gt;
+            &lt;p&gt;Trân trọng,​&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;​&lt;/p&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">2</Field>
+          <Field Name="Title">Tin tức - Thông báo quy trình duyệt</Field>
+          <Field Name="Subject">Thông báo quy trình duyệt tin %ITEM:Title%</Field>
+           <Field Name="Body">&lt;p&gt;Hello kitty​&lt;/p&gt;
+&lt;p&gt;sdfds&lt;/p&gt;
+&lt;p&gt;sdfdsf&lt;/p&gt;
+&lt;p&gt;sdfds&lt;/p&gt;
+&lt;p&gt;f&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ds&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;fds&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;f&lt;/strong&gt;&lt;/p&gt;</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">3</Field>
+          <Field Name="Title">Thông báo mới</Field>
+          <Field Name="Subject">Thông báo mới</Field>
+          <Field Name="Body">&lt;p&gt;&lt;/p&gt;
+                &lt;p&gt;Kính gởi: Các Anh/Chị,&lt;/p&gt;
+                &lt;p&gt;Phòng HC kính thông báo đến Các Anh/Chị thông báo do %ITEM:Branch% ban hành&lt;br/&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+                &lt;p&gt;Anh/Chị vui lòng vào đây liên kết bên dưới để&amp;#160;xem thông tin chi tiết.&lt;/p&gt;
+                &lt;p&gt;%ITEM:Xem chi tiết%&lt;/p&gt;
+                &lt;p&gt;Trân trọng,​&lt;br/&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;​&lt;/p&gt;
+          </Field>
+        </Row>
+
+        <Row>
+          <Field Name="ID">4</Field>
+          <Field Name="Title">Thông báo dự án mới</Field>
+          <Field Name="Subject">Thông báo dự án mới</Field>
+          <Field Name="Body">
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Kính gởi: Các Anh/Chị,&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Dự án&amp;#160;%ITEM:Title% được thành lập ngày %ITEM:ProjectStart%.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Do %ITEM:ProjectManager% làm trưởng dự án và các thành viên tham gia đội dự án.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Anh/Chị vui lòng vào link bên dưới để xem thông tin dự án.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&lt;font face="Consolas" size="2"&gt;&lt;font face="Consolas" size="2"&gt;&lt;div&gt;%ITEM:Xem chi tiết%​&lt;/div&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Trân trọng,&lt;/div&gt;
+          </Field>
+        </Row>
+
+        <Row>
+          <Field Name="ID">5</Field>
+          <Field Name="Title">Thông báo thay đổi</Field>
+          <Field Name="Subject">Thông báo thay đổi</Field>
+          <Field Name="Body">
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Kính gởi: Các Anh/Chị,&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Dự án&amp;#160;%ITEM:Title% được thành lập ngày %ITEM:ProjectStart% có thay đổi thông tin.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Do %ITEM:ProjectManager% làm trưởng dự án và các thành viên tham gia đội dự án.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Anh/Chị vui lòng vào link bên dưới để xem thông tin dự án.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&lt;font face="Consolas" size="2"&gt;&lt;font face="Consolas" size="2"&gt;&lt;div&gt;%ITEM:Xem chi tiết%​&lt;/div&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Trân trọng,&lt;/div&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">6</Field>
+          <Field Name="Title">Báo cáo công việc</Field>
+          <Field Name="Subject">Báo cáo công việc</Field>
+          <Field Name="Body">
+            Báo cáo công việc
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">7</Field>
+          <Field Name="Title">Thông báo lịch làm việc công ty</Field>
+          <Field Name="Subject">Thông báo lịch làm việc</Field>
+          <Field Name="Body">
+            &lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;Kính gởi: Anh/Chị,&lt;/p&gt;
+            &lt;p&gt;Lịch làm việc công ty vào ngày %ITEM:EventDate% có Anh/Chị tham dự.&lt;/p&gt;
+            &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;Chi tiết: &lt;b&gt;%ITEM:Title%&lt;/b&gt; &lt;/p&gt;
+            &lt;p&gt;Địa điểm: &lt;b&gt;%ITEM:Location%&lt;/b&gt;&lt;/p&gt;
+            &lt;p&gt;Thời gian: &lt;b&gt;%ITEM:EventDate%&lt;/b&gt;&lt;/p&gt;
+            &lt;p&gt;Ghi chú:&lt;br/&gt; %ITEM:Description%&lt;/p&gt;
+            &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;Anh/Chị vui lòng vào liên kết bên dưới để xem thông tin chi tiết.&lt;/p&gt;
+            &lt;p&gt;%ITEM:Xem chi tiết%&lt;/p&gt;
+            &lt;p&gt;Trân trọng,​&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;​&lt;/p&gt;
+            &lt;span style="display: inline-block;"&gt;&lt;/span&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">8</Field>
+          <Field Name="Title">Nhân viên mới</Field>
+          <Field Name="Subject">Nhân viên mới</Field>
+          <Field Name="Body">
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Kính gởi: Các Anh/Chị,&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Phòng NS kính thông báo đến Các Anh/Chị thành viên mới gia nhập vào công ty - Anh/Chị %ITEM:Title%.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Anh/Chị vui lòng vào link bên dưới để xem thông tin chi tiết.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;%ITEM:Xem chi tiết%&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Trân trọng,&lt;br/&gt;&lt;/div&gt;
+            &lt;p&gt;​&lt;/p&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">9</Field>
+          <Field Name="Title">Nhân viên tiêu biểu</Field>
+          <Field Name="Subject">Nhân viên tiêu biểu</Field>
+          <Field Name="Body">
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Kính gởi: Các Anh/Chị,&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Phòng NS kính thông báo đến Các Anh/Chị thành viên mới gia nhập vào công ty - Anh/Chị %ITEM:Title%.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Anh/Chị vui lòng vào link bên dưới để xem thông tin chi tiết.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;%ITEM:Xem chi tiết%&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Trân trọng,&lt;br/&gt;&lt;/div&gt;
+            &lt;p&gt;​&lt;/p&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">10</Field>
+          <Field Name="Title">Sinh nhật trong tháng</Field>
+          <Field Name="Subject">Sinh nhật trong tháng</Field>
+          <Field Name="Body">
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Kính gởi: Các Anh/Chị,&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Phòng NS kính thông báo đến Các Anh/Chị thành viên mới gia nhập vào công ty - Anh/Chị %ITEM:Title%.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Anh/Chị vui lòng vào link bên dưới để xem thông tin chi tiết.&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;%ITEM:Xem chi tiết%&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;&amp;#160;&lt;/div&gt;
+            &lt;div style="font-family: arial; color: #000000; font-size: 10pt"&gt;Trân trọng,&lt;br/&gt;&lt;/div&gt;
+            &lt;p&gt;​&lt;/p&gt;
+          </Field>
+        </Row>
+
+        <Row>
+          <Field Name="ID">11</Field>
+          <Field Name="Title">Yêu cầu duyệt công việc</Field>
+          <Field Name="Subject">Yêu cầu duyệt công việc</Field>
+          <Field Name="Body">
+            &lt;p style="color: rgb(0, 0, 0); font-family: arial; font-size: 13.3333px;"&gt;
+            ​&lt;span&gt;Kính gởi: Anh/Chị,&lt;/span&gt;
+            &lt;/p&gt;
+            &lt;span style="font-size: 13.3333px;"&gt;
+            &lt;/span&gt;
+            &lt;span style="font-family: arial; font-size: 13.3333px;"&gt;
+            &lt;/span&gt;
+            &lt;span style="color: rgb(0, 0, 0); font-family: arial; font-size: 13.3333px;"&gt;
+            &lt;/span&gt;
+            &lt;p style="color: rgb(0, 0, 0); font-family: arial; font-size: 13.3333px;"&gt;
+            Anh/Chị vui lòng duyệt công việc %ITEM:Title% để tiến hành thực hiện.&lt;br/&gt;&lt;br/&gt;Trân trọng,
+            &lt;/p&gt;
+            &lt;span style="font-size: 13.3333px;"&gt;
+            &lt;/span&gt;
+            &lt;span style="font-family: arial; font-size: 13.3333px;"&gt;
+            &lt;/span&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">12</Field>
+          <Field Name="Title">Thông báo thay đổi lịch làm việc công ty</Field>
+          <Field Name="Subject">Thông báo thay đổi lịch làm việc</Field>
+          <Field Name="Body">
+            &lt;p&gt;Kính gởi: Anh/Chị,&lt;/p&gt;
+            &lt;p&gt;Lịch làm việc công ty vào ngày %ITEM:EventDate% có Anh/Chị tham dự đã thay đổi.&lt;/p&gt;
+            &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;Chi tiết: %ITEM:Title%  ->  &lt;b&gt;%afterTitle%&lt;/b&gt; &lt;/p&gt;
+            &lt;p&gt;Địa điểm: %ITEM:Location%  ->  &lt;b&gt;%afterLocation%&lt;/b&gt;&lt;/p&gt;
+            &lt;p&gt;Thời gian: %ITEM:EventDate%  ->  &lt;b&gt;%afterEventDate%&lt;/b&gt;&lt;/p&gt;
+            &lt;p&gt;Ghi chú: &lt;br/&gt;%afterDescription%&lt;/p&gt;
+            &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;Anh/Chị vui lòng vào liên kết bên dưới để xem thông tin chi tiết.&lt;/p&gt;
+            &lt;p&gt;%ITEM:Xem chi tiết%&lt;/p&gt;
+            &lt;p&gt;Trân trọng,​&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;​&lt;/p&gt;
+            &lt;span style="display: inline-block;"&gt;&lt;/span&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">13</Field>
+          <Field Name="Title">Thông báo hủy lịch làm việc công ty</Field>
+          <Field Name="Subject">Thông báo hủy lịch làm việc</Field>
+          <Field Name="Body">
+            &lt;p&gt;Kính gởi: Anh/Chị,&lt;/p&gt;
+            &lt;p&gt;Lịch làm việc công ty vào ngày %ITEM:EventDate% có Anh/Chị tham dự đã bị hủy.&lt;/p&gt;
+            &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;Chi tiết: &lt;b&gt;%ITEM:Title%&lt;/b&gt; đã bị hủy &lt;/p&gt;
+            &lt;p&gt;Địa điểm: &lt;b&gt;%ITEM:Location%&lt;/b&gt;&lt;/p&gt;
+            &lt;p&gt;Thời gian: &lt;b&gt;%ITEM:EventDate%&lt;/b&gt;&lt;/p&gt;
+            &lt;p&gt;Ghi chú:&lt;br/&gt; %ITEM:Description%&lt;/p&gt;
+            &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;Trân trọng,​&lt;br/&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;&lt;/strong&gt;​&lt;/p&gt;
+            &lt;span style="display: inline-block;"&gt;&lt;/span&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">14</Field>
+          <Field Name="Title">Thông báo yêu cầu duyệt lịch đặt phòng họp</Field>
+          <Field Name="Subject">Thông báo yêu cầu duyệt lịch đặt phòng họp</Field>
+          <Field Name="Body">
+            &lt;p&gt;​Kính gửi: Anh/Chị,&lt;/p&gt;
+            &lt;p&gt;Nhân viên %ITEM:Author% đặt phòng họp vào ngày %ITEM:EventDate%.&lt;/p&gt;
+            &lt;p&gt;Anh/Chị vui lòng vào link bên dưới để xem chi tiết và duyệt lịch.
+            &lt;br/&gt;%ITEM:Xem chi tiết%&lt;/p&gt;
+            &lt;p&gt;Trân trọng,&lt;/p&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">15</Field>
+          <Field Name="Title">Thông báo lịch đặt phòng họp đã được duyệt</Field>
+          <Field Name="Subject">Thông báo lịch đặt phòng họp đã được duyệt</Field>
+          <Field Name="Body">
+            &lt;p&gt;​Kính gửi: Anh/Chị,&lt;/p&gt;
+            &lt;p&gt;Lịch đặt phòng họp "%ITEM:Title%" vào ngày %ITEM:EventDate% đã được duyệt.&lt;/p&gt;
+            &lt;p&gt;Anh/Chị vui lòng vào link bên dưới để xem chi tiết.
+            &lt;br/&gt;%ITEM:Xem chi tiết%&lt;/p&gt;
+            &lt;p&gt;Trân trọng,&lt;/p&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">16</Field>
+          <Field Name="Title">Thông báo lịch đặt phòng họp không được chấp thuận</Field>
+          <Field Name="Subject">Thông báo lịch đặt phòng họp không được chấp thuận</Field>
+          <Field Name="Body">
+            &lt;p&gt;​Kính gửi: Anh/Chị,&lt;/p&gt;
+            &lt;p&gt;Lịch đặt phòng họp "%ITEM:Title%" vào ngày %ITEM:EventDate% không được chấp thuận.&lt;/p&gt;
+            &lt;p&gt;Anh/Chị vui lòng vào link bên dưới để xem chi tiết.
+            &lt;br/&gt;%ITEM:Xem chi tiết%&lt;/p&gt;
+            &lt;p&gt;Trân trọng,&lt;/p&gt;
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">17</Field>
+          <Field Name="Title">Thông báo lịch họp</Field>
+          <Field Name="Subject">Thông báo lịch họp</Field>
+          <Field Name="Body">
+            &lt;p&gt;​Kính gửi: Anh/Chị,&lt;/p&gt;
+            &lt;p&gt;Lịch họp "%ITEM:Title%" vào ngày %ITEM:EventDate% có Anh/Chị tham dự.&lt;/p&gt;
+            &lt;p&gt;Anh/Chị vui lòng vào link bên dưới để xem chi tiết.
+            &lt;br/&gt;%ITEM:Xem chi tiết%&lt;/p&gt;
+            &lt;p&gt;Trân trọng,&lt;/p&gt;
+          </Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
+
+
+
+
+

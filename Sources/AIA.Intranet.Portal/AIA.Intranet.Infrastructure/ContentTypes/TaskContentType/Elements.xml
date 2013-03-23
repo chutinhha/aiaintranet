@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Field Type="LookupFieldWithPicker" DisplayName="$Resources:TaskResources,TaskManager;" Required="TRUE" List="Lists/Employees" ShowField="Title" UnlimitedLengthInDocumentLibrary="TRUE" RelationshipDeleteBehavior="None"
+         ID="{0808d172-deb5-44a2-9fd3-07f934b471d4}" StaticName="TaskManager" Name="TaskManager" Group="[I-Office]" >
+  </Field>
+
+  <Field Type="LookupFieldWithPickerMulti" DisplayName="$Resources:TaskResources,TaskOwners;" Required="TRUE" List="Lists/Employees" ShowField="Title" Mult="TRUE" Sortable="FALSE" UnlimitedLengthInDocumentLibrary="TRUE"
+         RelationshipDeleteBehavior="None" ID="{8a77acfe-5965-4b98-851e-063a531a9681}" StaticName="TaskOwners" Name="TaskOwners" Group="[I-Office]" >
+  </Field>
+
+  <Field Type="LookupFieldWithPickerMulti" DisplayName="$Resources:TaskResources,TaskSupervisors;" Required="FALSE" List="Lists/Employees" ShowField="Title" Mult="TRUE" Sortable="FALSE" UnlimitedLengthInDocumentLibrary="TRUE"
+         RelationshipDeleteBehavior="None" ID="{c95e9388-e937-4c9d-9f5a-ed7a4410631e}" StaticName="TaskSupervisors" Name="TaskSupervisors" Group="[I-Office]" >
+  </Field>
+
+  <Field Type="LookupFieldWithPickerMulti" DisplayName="$Resources:TaskResources,TaskRelations;" Required="FALSE"
+         List="Lists/Employees" ShowField="Title" Mult="TRUE" Sortable="FALSE" UnlimitedLengthInDocumentLibrary="TRUE"
+         RelationshipDeleteBehavior="None" ID="{A31B109A-3A0E-4b17-AC89-EAF6177C1D6A}" StaticName="TaskRelations" Name="TaskRelations" Group="[I-Office]"/>
+
+  <Field Type="Lookup" DisplayName="$Resources:TaskResources,TaskOnProject;" Required="TRUE"  List="Lists/Projects" ShowField="Title"
+         UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{236f5796-dbbe-4957-b253-c010d5546eba}"
+         StaticName="TaskOnProject" Name="TaskOnProject" Group="[I-Office]"/>
+
+  <Field Type="DateTime" DisplayName="$Resources:TaskResources,ActualStart;" Required="FALSE" Format="DateOnly" ID="{1222833e-5242-45b5-839c-199718eee45d}"
+         StaticName="ActualStart" Name="ActualStart" Group="[I-Office]">
+    <Default>[today]</Default>
+  </Field>
+
+  <Field Type="DateTime" DisplayName="$Resources:TaskResources,ActualEnd;" Required="FALSE" Format="DateOnly" ID="{dff20a1a-56fa-4a4f-91b9-a923ccf9b3d3}" StaticName="ActualEnd" Name="ActualEnd" Group="[I-Office]">
+  </Field>
+
+  <Field Type="Choice" ID="{71E86BB9-A2ED-4ad9-8907-E6C94CFD2016}" Name="TaskRate" DisplayName="$Resources:TaskResources,TaskRate;" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TaskRate">
+    <CHOICES>
+      <CHOICE>$Resources:TaskResources,Tasks_TaskRate1;</CHOICE>
+      <CHOICE>$Resources:TaskResources,Tasks_TaskRate2</CHOICE>
+      <CHOICE>$Resources:TaskResources,Tasks_TaskRate3</CHOICE>
+      <CHOICE>$Resources:TaskResources,Tasks_TaskRate4</CHOICE>
+      <CHOICE>$Resources:TaskResources,Tasks_TaskRate5</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">$Resources:TaskResources,Tasks_TaskRate1;</MAPPING>
+      <MAPPING Value="2">$Resources:TaskResources,Tasks_TaskRate2</MAPPING>
+      <MAPPING Value="3">$Resources:TaskResources,Tasks_TaskRate3</MAPPING>
+      <MAPPING Value="4">$Resources:TaskResources,Tasks_TaskRate4</MAPPING>
+      <MAPPING Value="5">$Resources:TaskResources,Tasks_TaskRate5</MAPPING>
+    </MAPPINGS>
+    <Default>$Resources:TaskResources,Tasks_TaskRate2;</Default>
+  </Field>
+
+  <Field ID="{575716E3-C32E-4bdf-A1A8-ABA470931F1A}" Type="Note" RichText="TRUE" Name="RateComment" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE"
+             DisplayName="$Resources:TaskResources,RateComment;" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RateComment">
+  </Field>
+
+  <Field ID="{C745576B-B531-435b-9F1E-863A7AC88943}" Type="User" List="UserInfo" Name="TaskManagerUser" StaticName="TaskManagerUser" Hidden="FALSE" DisplayName="TaskManagerUser" SourceID="http://schemas.microsoft.com/sharepoint/v3" >
+  </Field>
+
+  <Field ID="{A5B8A512-9457-4136-AF8B-2DDA14E57DF3}" Type="User" List="UserInfo" Name="TaskSupervisorUsers" Mult="TRUE" StaticName="TaskSupervisorUsers" Hidden="FALSE" DisplayName="TaskSupervisorUsers" SourceID="http://schemas.microsoft.com/sharepoint/v3" >
+  </Field>
+
+  <Field ID="{1A690310-14E4-4451-A70F-C0F39763D515}" Type="User" List="UserInfo" Name="TaskRelationUsers" Mult="TRUE" StaticName="TaskRelationUsers" Hidden="FALSE" DisplayName="TaskRelationUsers" SourceID="http://schemas.microsoft.com/sharepoint/v3" >
+  </Field>
+
+  <Field ID="{52672DA7-DFE6-4a4f-9F9A-E18521320DD8}" Type="Text" Name="Assigned" DisplayName="Assigned" StaticName="Assigned" Group="[I-Office]" ></Field>
+  
+
+  <!-- Parent ContentType: Task (0x0108) -->
+  <ContentType ID="0x0108008a8b86f25451dfb96e65a47187c7f295"
+               Name="[I-Office] - Công việc cá nhân"
+               Group="[I-Office]"
+               Description="[I-Office] - Task Content Type"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" />
+      <FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+      <FieldRef ID="{a8eb573e-9e11-481a-a8c9-1104a54b2fbd}" Name="Priority" />
+      <FieldRef ID="{c15b34c3-ce7d-490a-b133-3f4de8801b76}" Name="Status" />
+      <FieldRef ID="{d2311440-1ed6-46ea-b46d-daa643dc3886}" Name="PercentComplete" />
+      <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" />
+
+      <FieldRef ID="{1222833E-5242-45b5-839C-199718EEE45D}" Name="ActualStart"/>
+
+      <FieldRef ID="{cd21b4c2-6841-4f9e-a23a-738a65f99889}" Name="DueDate" />
+
+      <FieldRef ID="{DFF20A1A-56FA-4a4f-91B9-A923CCF9B3D3}" Name="ActualEnd"/>
+
+      <FieldRef ID="{8A77ACFE-5965-4b98-851E-063A531A9681}" Name="TaskOwners" />
+      <FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" />
+    </FieldRefs>
+
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+
+          <Receiver>
+            <Name>PrivateTaskContenTypeEventItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.PrivateTaskContenTypeEvent</Class>
+          </Receiver>
+          
+          <Receiver>
+            <Name>PrivateTaskContenTypeEventItemAdded</Name>
+            <Type>ItemAdded</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.PrivateTaskContenTypeEvent</Class>
+          </Receiver>
+
+          <Receiver>
+            <Name>PrivateTaskContenTypeEventItemUpdating</Name>
+            <Type>ItemUpdating</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.PrivateTaskContenTypeEvent</Class>
+          </Receiver>
+
+          <Receiver>
+            <Name>PrivateTaskContenTypeEventItemUpdated</Name>
+            <Type>ItemUpdated</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.PrivateTaskContenTypeEvent</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+
+          <Receiver>
+            <Name>PrivateTaskContenTypeEventItemItemDeleting</Name>
+            <Type>ItemDeleting</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.PrivateTaskContenTypeEvent</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+          
+        </Receivers>
+      </XmlDocument>
+
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <New>PrivateTaskFormTemplate</New>
+          <Edit>PrivateTaskFormTemplate</Edit>
+          <Display>PrivateTaskFormDispTemplate</Display>
+        </FormTemplates>
+      </XmlDocument>
+
+    </XmlDocuments>
+    
+  </ContentType>
+
+  <!-- Parent ContentType: Task (0x0108) -->
+  <ContentType ID="0x0108008a8b86f25d157fbe9664174a8ac7f297"
+               Name="[I-Office] - Công việc theo phòng"
+               Group="[I-Office]"
+               Description="[I-Office] - Task Content Type"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" />
+      <FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+
+      <FieldRef ID="{0808D172-DEB5-44a2-9FD3-07F934B471D4}" Name="TaskManager"/>
+      <FieldRef ID="{8A77ACFE-5965-4b98-851E-063A531A9681}" Name="TaskOwners"/>
+      <FieldRef ID="{C95E9388-E937-4c9d-9F5A-ED7A4410631E}" Name="TaskSupervisors"/>
+      <FieldRef ID="{A31B109A-3A0E-4b17-AC89-EAF6177C1D6A}" Name="TaskRelations"/>
+      
+      <FieldRef ID="{a8eb573e-9e11-481a-a8c9-1104a54b2fbd}" Name="Priority" />
+      <FieldRef ID="{c15b34c3-ce7d-490a-b133-3f4de8801b76}" Name="Status" />
+      <FieldRef ID="{d2311440-1ed6-46ea-b46d-daa643dc3886}" Name="PercentComplete" />
+      <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" />
+      
+      <FieldRef ID="{1222833E-5242-45b5-839C-199718EEE45D}" Name="ActualStart"/>
+
+      <FieldRef ID="{cd21b4c2-6841-4f9e-a23a-738a65f99889}" Name="DueDate" />
+      
+      <FieldRef ID="{DFF20A1A-56FA-4a4f-91B9-A923CCF9B3D3}" Name="ActualEnd"/>
+      
+      <FieldRef ID="{71E86BB9-A2ED-4ad9-8907-E6C94CFD2016}" Name="TaskRate" />
+      <FieldRef ID="{575716E3-C32E-4bdf-A1A8-ABA470931F1A}" Name="RateComment" />
+
+      <FieldRef ID="{C745576B-B531-435b-9F1E-863A7AC88943}" Name="TaskManagerUser" />
+      <FieldRef ID="{A5B8A512-9457-4136-AF8B-2DDA14E57DF3}" Name="TaskSupervisorUsers" />
+      <FieldRef ID="{1A690310-14E4-4451-A70F-C0F39763D515}" Name="TaskRelationUsers" />
+      <FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" />
+
+      <FieldRef ID="{52672DA7-DFE6-4a4f-9F9A-E18521320DD8}" Name="Assigned" />
+
+      <FieldRef ID="{D6C5F133-5FE2-47DC-A135-FEB28DA3903C}" Name="LinkToViewItem"/>
+      <FieldRef ID="{3BBF1E6E-350C-4E73-B233-81AE95E02552}"  Name="ActionColumn" />
+      
+    </FieldRefs>
+    
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+
+          <Receiver>
+            <Name>DepartmentTaskContentTypeEventItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.DepartmentTaskContentTypeEvent</Class>
+          </Receiver>
+          
+          <Receiver>
+            <Name>DepartmentTaskContentTypeEventItemAdded</Name>
+            <Type>ItemAdded</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.DepartmentTaskContentTypeEvent</Class>
+          </Receiver>
+
+          <Receiver>
+            <Name>DepartmentTaskContentTypeEventItemUpdating</Name>
+            <Type>ItemUpdating</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.DepartmentTaskContentTypeEvent</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+          
+          <Receiver>
+            <Name>DepartmentTaskContentTypeEventItemUpdated</Name>
+            <Type>ItemUpdated</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.DepartmentTaskContentTypeEvent</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+
+          <Receiver>
+            <Name>DepartmentTaskContentTypeEventItemDeleting</Name>
+            <Type>ItemDeleting</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.DepartmentTaskContentTypeEvent</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+
+        </Receivers>
+      </XmlDocument>
+
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <New>DepartmentTaskFormTemplate</New>
+          <Edit>DepartmentTaskFormTemplate</Edit>
+          <Display>DepartmentTaskFormDispTemplate</Display>
+        </FormTemplates>
+      </XmlDocument>
+      
+    </XmlDocuments>
+    
+  </ContentType>
+
+
+  <!-- Parent ContentType: Task (0x0108) -->
+  <ContentType ID="0x0108008a8b862f5d157fb9e661474a8ac7f729"
+               Name="[I-Office] - Công việc theo dự án"
+               Group="[I-Office]"
+               Description="[I-Office] - Task Content Type"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" />
+      <FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+
+      <FieldRef ID="{236F5796-DBBE-4957-B253-C010D5546EBA}" Name="TaskOnProject" />
+      
+      <FieldRef ID="{0808D172-DEB5-44a2-9FD3-07F934B471D4}" Name="TaskManager" />
+      <FieldRef ID="{8A77ACFE-5965-4b98-851E-063A531A9681}" Name="TaskOwners" />
+      <FieldRef ID="{C95E9388-E937-4c9d-9F5A-ED7A4410631E}" Name="TaskSupervisors" />
+      <FieldRef ID="{A31B109A-3A0E-4b17-AC89-EAF6177C1D6A}" Name="TaskRelations" />
+
+      <FieldRef ID="{a8eb573e-9e11-481a-a8c9-1104a54b2fbd}" Name="Priority" />
+      <FieldRef ID="{c15b34c3-ce7d-490a-b133-3f4de8801b76}" Name="Status" />
+      <FieldRef ID="{d2311440-1ed6-46ea-b46d-daa643dc3886}" Name="PercentComplete" />
+      <FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" />
+
+      <FieldRef ID="{1222833E-5242-45b5-839C-199718EEE45D}" Name="ActualStart"/>
+
+      <FieldRef ID="{cd21b4c2-6841-4f9e-a23a-738a65f99889}" Name="DueDate" />
+
+      <FieldRef ID="{DFF20A1A-56FA-4a4f-91B9-A923CCF9B3D3}" Name="ActualEnd"/>
+      
+      <FieldRef ID="{71E86BB9-A2ED-4ad9-8907-E6C94CFD2016}" Name="TaskRate" />
+      <FieldRef ID="{575716E3-C32E-4bdf-A1A8-ABA470931F1A}" Name="RateComment" />
+
+      <FieldRef ID="{C745576B-B531-435b-9F1E-863A7AC88943}" Name="TaskManagerUser" />
+      <FieldRef ID="{A5B8A512-9457-4136-AF8B-2DDA14E57DF3}" Name="TaskSupervisorUsers" />
+      <FieldRef ID="{1A690310-14E4-4451-A70F-C0F39763D515}" Name="TaskRelationUsers" />
+      <FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" />
+
+      <FieldRef ID="{52672DA7-DFE6-4a4f-9F9A-E18521320DD8}" Name="Assigned" />
+
+      <FieldRef ID="{D6C5F133-5FE2-47DC-A135-FEB28DA3903C}" Name="LinkToViewItem"/>
+      <FieldRef ID="{3BBF1E6E-350C-4E73-B233-81AE95E02552}"  Name="ActionColumn" />
+      
+    </FieldRefs>
+
+    <XmlDocuments>
+      
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+
+          <Receiver>
+            <Name>ProjectTaskContentTypeEventItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.ProjectTaskContentTypeEvent</Class>
+          </Receiver>
+
+          <Receiver>
+            <Name>ProjectTaskContentTypeEventItemAdded</Name>
+            <Type>ItemAdded</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.ProjectTaskContentTypeEvent</Class>
+          </Receiver>
+
+          <Receiver>
+            <Name>ProjectTaskContentTypeEventItemUpdating</Name>
+            <Type>ItemUpdating</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.ProjectTaskContentTypeEvent</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+
+          <Receiver>
+            <Name>ProjectTaskContentTypeEventItemUpdated</Name>
+            <Type>ItemUpdated</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.ProjectTaskContentTypeEvent</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+
+          <Receiver>
+            <Name>ProjectTaskContentTypeEventItemDeleting</Name>
+            <Type>ItemDeleting</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.ProjectTaskContentTypeEvent</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+
+        </Receivers>
+      </XmlDocument>
+
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <New>ProjectTaskFormTemplate</New>
+          <Edit>ProjectTaskFormTemplate</Edit>
+          <Display>ProjectTaskFormDispTemplate</Display>
+        </FormTemplates>
+      </XmlDocument>
+
+    </XmlDocuments>
+    
+  </ContentType>
+
+
+  <!-- Parent ContentType: Task (0x0108) (Backup -->
+  <!--<ContentType ID="0x0108008a8b86f25d154fbe9665174a87c7f295"
+               Name="[I-Office] - Công việc theo dự án"
+               Group="[I-Office]"
+               Description="[I-Office] - Task Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{1222833E-5242-45b5-839C-199718EEE45D}" Name="ActualStart"/>
+      <FieldRef ID="{DFF20A1A-56FA-4a4f-91B9-A923CCF9B3D3}" Name="ActualEnd"/>
+      <FieldRef ID="{0808D172-DEB5-44a2-9FD3-07F934B471D4}" Name="TaskManager"/>
+      <FieldRef ID="{8A77ACFE-5965-4b98-851E-063A531A9681}" Name="TaskOwners"/>
+      <FieldRef ID="{C95E9388-E937-4c9d-9F5A-ED7A4410631E}" Name="TaskSupervisors"/>
+      <FieldRef ID="{A31B109A-3A0E-4b17-AC89-EAF6177C1D6A}" Name="TaskRelations"/>
+      <FieldRef ID="{9AE6749B-C21E-44db-8B3C-6F94B3441B5A}" Name="TaskCategory"/>
+      <FieldRef ID="{236F5796-DBBE-4957-B253-C010D5546EBA}" Name="TaskOnProject"/>
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <New>TaskFormNewTemplate</New>
+          <Edit>TaskFormEditTemplate</Edit>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>-->
+  
+</Elements>

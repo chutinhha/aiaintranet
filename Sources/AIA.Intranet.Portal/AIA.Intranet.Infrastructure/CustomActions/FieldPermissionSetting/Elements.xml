@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="1fab3423-2aff-4b2e-9221-6ca786c01c34"
+                Location="Microsoft.SharePoint.ListEdit"
+                RegistrationType="List"
+                RegistrationId="100"
+                GroupId="Permissions"
+                RequireSiteAdministrator="true"
+                Rights="ManageLists" Sequence="2000"
+                Title="Field Permission Setting">
+    
+    <UrlAction Url="~site/_layouts/AIA.Intranet.Infrastructure/FieldSettings.aspx?List={ListId}"/>
+  </CustomAction>
+  
+</Elements>

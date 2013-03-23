@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+
+  <CustomAction Id="{EEF4C68D-943C-494D-B76F-E928BAAB0D3C}"
+								GroupId="GeneralSettings"
+								Location="Microsoft.SharePoint.ListEdit"
+								RegistrationType ="List"
+								Sequence="1000"
+								Title="[I-Office] - Notification Settings">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/NotificationSettings.aspx?List={ListId}&amp;Source=' + window.location"/>
+  </CustomAction>
+
+
+  <CustomAction Id="UserInterfaceCustomActions.ListCT.ContentTypeSettings"
+                GroupId="General"
+                Location="Microsoft.SharePoint.ContentTypeTemplateSettings"
+                RegistrationType="ContentType"
+                Sequence="1000"
+                Title="[I-Office] - Notification Settings">
+    <UrlAction Url="{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/NotificationSettings.aspx"/>
+  </CustomAction>
+
+  <CustomAction Id="UserInterfaceCustomActions.SiteCT.ContentTypeSettings"
+                GroupId="General"
+                Location="Microsoft.SharePoint.ContentTypeSettings"
+                RegistrationType="ContentType"
+                Sequence="1000"
+                Title="[I-Office] - Notification Settings">
+    <UrlAction Url="{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/NotificationSettings.aspx"/>
+  </CustomAction>
+
+  
+</Elements>

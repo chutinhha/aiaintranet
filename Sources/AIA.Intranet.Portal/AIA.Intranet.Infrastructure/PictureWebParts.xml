@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfWebpartPageDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/default.aspx</PageUrl>
+    
+    <Webparts xsi:type="DefaultWP">
+      <Title>Hình ảnh mới nhất</Title>
+      <ZoneId>Body</ZoneId>
+      <Index>1</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>GallerySlideShowWebpart.webpart</WebpartName>
+      <Properties>
+        <Add Name="DisplayAllPictures" Value="true" Type="string" ></Add>
+        <Add Name="Carousel" Value="true" Type="string" ></Add>
+      </Properties>
+    </Webparts>
+
+
+    <Webparts xsi:type="XSLTListViewWP">
+      <Title>Picture Albums</Title>
+      <ZoneId>RightColumn</ZoneId>
+      <Index>1</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <ListName>Album</ListName>
+      <ListUrl>/Lists/Album</ListUrl>
+      <ViewName>Albums</ViewName>
+      <CreateDefaultWP>true</CreateDefaultWP>
+      <Properties>
+        <Add Name="Title" Value="Picture Albums" Type="string" />
+      </Properties>
+    </Webparts>
+    
+  </WebpartPageDefinition>
+</ArrayOfWebpartPageDefinition>

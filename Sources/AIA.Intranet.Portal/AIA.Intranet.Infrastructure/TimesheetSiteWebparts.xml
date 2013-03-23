@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfWebpartPageDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/Default.aspx</PageUrl>
+    <Overwrite>true</Overwrite>
+    <FileName></FileName>
+    <Webparts xsi:type="ListViewWP">
+      <Title>Timesheet của tôi</Title>
+      <ZoneId>Body</ZoneId>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <ListName>Timesheet</ListName>
+      <ListUrl>/Lists/Timesheet</ListUrl>
+      <ViewName>Calendar</ViewName>
+      <CreateDefaultWP>false</CreateDefaultWP>
+      <Properties>
+        <Add Name="Title" Value="Timesheet của tôi" Type="string" />
+        <!--<Add Name="ChromeType" Value="2" Type="chrometype" />-->
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="XSLTListViewWP">
+      <Title>Duyệt timesheet</Title>
+      <ZoneId>RightColumn</ZoneId>
+      <Index>1</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <ListName>Duyệt timesheet</ListName>
+      <ListUrl>Lists/TimesheetApproval</ListUrl>
+      <ViewName>Timesheet cần duyệt</ViewName>
+      <CreateDefaultWP>false</CreateDefaultWP>
+    </Webparts>
+
+
+    <Webparts xsi:type="DefaultWP">
+      <Title>Timesheet của tôi</Title>
+      <ZoneId>Body</ZoneId>
+      <Index>2</Index>
+      <Hidden>true</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>MyTimesheet.webpart</WebpartName>
+      <Properties>
+        <!--<Add Name="Title" Value="Timesheet của tôi" Type="string" />-->
+        <Add Name="Hidden" Value="true" Type="string" />
+      </Properties>
+    </Webparts>
+
+  </WebpartPageDefinition>
+</ArrayOfWebpartPageDefinition>

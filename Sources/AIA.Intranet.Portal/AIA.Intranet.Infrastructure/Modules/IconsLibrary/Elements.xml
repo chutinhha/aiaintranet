@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="IconsLibrary" Url="icons" Path="IconsLibrary">
+    <File  Type="GhostableInLibrary"  Path="task.png" Url="task.png" />
+    <File Type="GhostableInLibrary" Path="timesheets.png" Url="timesheets.png" />
+  </Module>
+</Elements>

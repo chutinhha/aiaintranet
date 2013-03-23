@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SiteMap Mapping"
+               OnQuickLaunch="FALSE"
+               FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+               TemplateType="100"
+               Url="Lists/SiteMapMappings"
+              CustomSchema="SiteMapMappings\Schema.xml"
+                Hidden="TRUE"
+               Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="ID">1</Field>
+          <Field Name='Title'>Portal</Field>
+          <Field Name='MappingURL'>
+            /Lists/ILinks/AllItems.aspx
+            /Lists/IAnnouncements/AllItems.aspx
+            /Lists/Projects/AllItems.aspx
+            \.*Lists/Employees\.*
+            \.*/News/.*
+          </Field>
+        </Row>
+        <Row>
+
+          <Field Name='Title'>Phòng ban</Field>
+          <Field Name='MappingURL'>/Lists/Departments/AllItems.aspx</Field>
+          <Field Name='ID'>2</Field>
+
+
+        </Row>
+        <Row>
+          <Field Name="ID">3</Field>
+          <Field Name='Title'>Nghiệp Vụ</Field>
+          <Field Name='MappingURL'>
+            
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">4</Field>
+          <Field Name='Title'>Tài Liệu</Field>
+          <Field Name='MappingURL'>
+            \.*/DocumentLibrary/.*
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">5  </Field>
+          <Field Name='Title'>Hổ trợ</Field>
+          <Field Name='MappingURL'>
+          
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">6</Field>
+          <Field Name='Title'>Quản trị</Field>
+          <Field Name='MappingURL'>
+            /Lists/SiteMapMappings/AllItems.aspx
+            /Lists/EmailTemplates/AllItems.aspx
+            /Lists/Shortcuts
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="ID">7</Field>
+          <Field Name='Title'>Trao đổi</Field>
+          <Field Name='MappingURL'>
+            
+          </Field>
+        </Row>
+        
+      </Rows>
+
+    </Data>
+
+  </ListInstance>
+</Elements>
+

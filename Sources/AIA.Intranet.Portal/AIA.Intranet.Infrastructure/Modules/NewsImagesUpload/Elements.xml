@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="NewsImagesUpload" Url="NewsImages">
+    <File Path="NewsImagesUpload\ioffice-news-thumb.jpg" Url="ioffice-news-thumb.jpg" Type="GhostableInLibrary"/>
+</Module>
+  <Module Name="NewsImagesUpload" Url="NewsImages/_t">
+    <File Path="NewsImagesUpload\ioffice-news-thumb_jpg.jpg" Url="ioffice-news-thumb_jpg.jpg" Type="GhostableInLibrary"/>
+  </Module>
+  <Module Name="NewsImagesUpload" Url="NewsImages/_w">
+    <File Path="NewsImagesUpload\ioffice-news-thumb_jpg.jpg" Url="ioffice-news-thumb_jpg.jpg" Type="GhostableInLibrary"/>
+  </Module>
+</Elements>

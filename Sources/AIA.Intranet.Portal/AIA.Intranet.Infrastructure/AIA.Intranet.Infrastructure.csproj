@@ -1,0 +1,1356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7396F668-5E82-4B80-BEA1-B395C46EDDDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hypertek.IOffice.Infrastructure</RootNamespace>
+    <AssemblyName>Hypertek.IOffice.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+    <TokenReplacementFileExtensions>$(TokenReplacementFileExtensions);xml;aspx;ascx;webpart;dwp;ashx;</TokenReplacementFileExtensions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Properties\AIA.Intranet.Portal.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.ApplicationPages">
+      <HintPath>C:\Program Files\Common Files\Microsoft Shared\web server extensions\14\CONFIG\BIN\Microsoft.SharePoint.ApplicationPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.Web.CommandUI.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\DepartmentProcessing.cs" />
+    <Compile Include="App_Code\JavaScript.cs" />
+    <Compile Include="ContentTypes\CategoryContentType\CategoryContentTypeEventReceiver.cs" />
+    <Compile Include="ContentTypes\TaskContentType\DepartmentTaskContentTypeEvent.cs" />
+    <Compile Include="ContentTypes\TaskContentType\PrivateTaskContenTypeEvent.cs" />
+    <Compile Include="ContentTypes\TaskContentType\ProjectTaskContentTypeEvent.cs" />
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskPermissionEditor.ascx.cs">
+      <DependentUpon>UpdateTaskPermissionEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskPermissionEditor.ascx.designer.cs">
+      <DependentUpon>UpdateTaskPermissionEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\CreateUnreadTaskEditor.ascx.cs">
+      <DependentUpon>CreateUnreadTaskEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\CreateUnreadTaskEditor.ascx.designer.cs">
+      <DependentUpon>CreateUnreadTaskEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWFItemPermissionEditor.ascx.cs">
+      <DependentUpon>UpdateWFItemPermissionEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWFItemPermissionEditor.ascx.designer.cs">
+      <DependentUpon>UpdateWFItemPermissionEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ADSearch.ascx.cs">
+      <DependentUpon>ADSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ADSearch.ascx.designer.cs">
+      <DependentUpon>ADSearch.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\CommentBoxNewControl.ascx.cs">
+      <DependentUpon>CommentBoxNewControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\CommentBoxNewControl.ascx.designer.cs">
+      <DependentUpon>CommentBoxNewControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ILinkForm.ascx.cs">
+      <DependentUpon>ILinkForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ILinkForm.ascx.designer.cs">
+      <DependentUpon>ILinkForm.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ImageFieldControl.ascx.cs">
+      <DependentUpon>ImageFieldControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ImageFieldControl.ascx.designer.cs">
+      <DependentUpon>ImageFieldControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\NotificationSettingControl.ascx.cs">
+      <DependentUpon>NotificationSettingControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\NotificationSettingControl.ascx.designer.cs">
+      <DependentUpon>NotificationSettingControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFields\AttachmentViewField.cs" />
+    <Compile Include="ControlTemplates\ActionEditorControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\SendEmailToStaticAddressEditor.ascx.cs">
+      <DependentUpon>SendEmailToStaticAddressEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\SendEmailToStaticAddressEditor.ascx.designer.cs">
+      <DependentUpon>SendEmailToStaticAddressEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\SendEmailToWfItemUserColumnEditor.ascx.cs">
+      <DependentUpon>SendEmailToWfItemUserColumnEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\SendEmailToWfItemUserColumnEditor.ascx.designer.cs">
+      <DependentUpon>SendEmailToWfItemUserColumnEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\SendEmailtoWorkflowTaskUserColumnEditor.ascx.cs">
+      <DependentUpon>SendEmailtoWorkflowTaskUserColumnEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\SendEmailtoWorkflowTaskUserColumnEditor.ascx.designer.cs">
+      <DependentUpon>SendEmailtoWorkflowTaskUserColumnEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateExecutedDocumentMetaDataEditor.ascx.cs">
+      <DependentUpon>UpdateExecutedDocumentMetaDataEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskItemWithItemPropertyEditor.ascx.cs">
+      <DependentUpon>UpdateTaskItemWithItemPropertyEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskItemWithItemPropertyEditor.ascx.designer.cs">
+      <DependentUpon>UpdateTaskItemWithItemPropertyEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowItemMetaDataEditor.ascx.cs">
+      <DependentUpon>UpdateWorkflowItemMetaDataEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowItemMetaDataEditor.ascx.designer.cs">
+      <DependentUpon>UpdateWorkflowItemMetaDataEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowItemWithKeywordEditor.ascx.cs">
+      <DependentUpon>UpdateWorkflowItemWithKeywordEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowItemWithKeywordEditor.ascx.designer.cs">
+      <DependentUpon>UpdateWorkflowItemWithKeywordEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowItemWithTaskPropertyEditor.ascx.cs">
+      <DependentUpon>UpdateWorkflowItemWithTaskPropertyEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowItemWithTaskPropertyEditor.ascx.designer.cs">
+      <DependentUpon>UpdateWorkflowItemWithTaskPropertyEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowTaskMetaDataEditor.ascx.cs">
+      <DependentUpon>UpdateWorkflowTaskMetaDataEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowTaskMetaDataEditor.ascx.designer.cs">
+      <DependentUpon>UpdateWorkflowTaskMetaDataEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\EmailTemplateSelector.ascx.cs">
+      <DependentUpon>EmailTemplateSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\EmailTemplateSelector.ascx.designer.cs">
+      <DependentUpon>EmailTemplateSelector.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\EntryApprovalEditor.ascx.cs">
+      <DependentUpon>EntryApprovalEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\EntryApprovalEditor.ascx.designer.cs">
+      <DependentUpon>EntryApprovalEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\LookupFieldWithPickerEditor.ascx.cs">
+      <DependentUpon>LookupFieldWithPickerEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\LookupFieldWithPickerEditor.ascx.designer.cs">
+      <DependentUpon>LookupFieldWithPickerEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\TaskConfigurationEditor.ascx.cs">
+      <DependentUpon>TaskConfigurationEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\TaskConfigurationEditor.ascx.designer.cs">
+      <DependentUpon>TaskConfigurationEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\AssignmentFieldEditor.ascx.cs">
+      <DependentUpon>AssignmentFieldEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\AssignmentFieldEditor.ascx.designer.cs">
+      <DependentUpon>AssignmentFieldEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\InsertScript.ascx.cs">
+      <DependentUpon>InsertScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\TaskRuleEditor.ascx.cs">
+      <DependentUpon>TaskRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\AIA.Intranet.Infrastructure\TaskRuleEditor.ascx.designer.cs">
+      <DependentUpon>TaskRuleEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFields\AssignmentField.cs" />
+    <Compile Include="CustomFields\AssignmentFieldControl.cs" />
+    <Compile Include="CustomFields\AttachmentViewFieldControl.cs" />
+    <Compile Include="CustomFields\Email10ValidationRule.cs" />
+    <Compile Include="CustomFields\LinkToItemField.cs" />
+    <Compile Include="CustomFields\EmailField.cs" />
+    <Compile Include="CustomFields\LinkToItemFieldControl.cs" />
+    <Compile Include="CustomFields\EmailFieldControl.cs" />
+    <Compile Include="CustomFields\ImageField\FieldManagement.cs" />
+    <Compile Include="CustomFields\ImageField\ImageField.cs" />
+    <Compile Include="CustomFields\ImageField\ImageFieldBaseFieldControl.cs" />
+    <Compile Include="CustomFields\ImageField\ImageFieldBaseFieldControl.designer.cs">
+      <DependentUpon>ImageFieldBaseFieldControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFields\ImageField\ImageFieldProperties.cs" />
+    <Compile Include="CustomFields\RegularExpressionValidatorValidationRule.cs" />
+    <Compile Include="CustomFields\LookupFieldWithPicker\LookupFieldWithPicker.cs" />
+    <Compile Include="CustomFields\LookupFieldWithPicker\LookupFieldWithPickerControl.cs" />
+    <Compile Include="CustomFields\LookupFieldWithPicker\LookupFieldWithPickerDialog.cs" />
+    <Compile Include="CustomFields\LookupFieldWithPicker\LookupFieldWithPickerEntityEditor.cs" />
+    <Compile Include="CustomFields\LookupFieldWithPicker\LookupFieldWithPickerHelper.cs" />
+    <Compile Include="CustomFields\LookupFieldWithPicker\LookupFieldWithPickerPropertyBag.cs" />
+    <Compile Include="CustomFields\LookupFieldWithPicker\LookupFieldWithPickerQuery.cs" />
+    <Compile Include="CustomFields\LookupFieldWithPicker\MultiLookupFieldWithPickerControl.cs" />
+    <Compile Include="CustomFields\RegularExpressionValidatorField.cs" />
+    <Compile Include="CustomFields\RegularExpressionValidatorFieldControl.cs" />
+    <Compile Include="Features\AIA.Intranet.Infrastructure.Data\AIA.Intranet.Infrastructure.Data.EventReceiver.cs">
+      <DependentUpon>AIA.Intranet.Infrastructure.Data.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\AIA.Intranet.Infrastructure.Site\AIA.Intranet.Infrastructure.Site.EventReceiver.cs">
+      <DependentUpon>AIA.Intranet.Infrastructure.Site.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ActionResolver.ashx.cs">
+      <DependentUpon>ActionResolver.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AddNotificationSettings.aspx.cs">
+      <DependentUpon>AddNotificationSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AddNotificationSettings.aspx.designer.cs">
+      <DependentUpon>AddNotificationSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AD\AllGroups.aspx.cs">
+      <DependentUpon>AllGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AD\AllUsers.aspx.cs">
+      <DependentUpon>AllUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AD\EditGroup.aspx.cs">
+      <DependentUpon>EditGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AD\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AD\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AD\SearchGroup.aspx.cs">
+      <DependentUpon>SearchGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AD\SearchUser.aspx.cs">
+      <DependentUpon>SearchUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AD\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AutoCreationSettings.aspx.cs">
+      <DependentUpon>AutoCreationSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AutoCreationSettings.aspx.designer.cs">
+      <DependentUpon>AutoCreationSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\DisplayAttachments.ashx.cs">
+      <DependentUpon>DisplayAttachments.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AdministrationPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\FileResolver.ashx.cs">
+      <DependentUpon>FileResolver.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ImageViewer.ashx.cs">
+      <DependentUpon>ImageViewer.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ItemDiscussionResolver.aspx.cs">
+      <DependentUpon>ItemDiscussionResolver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ItemDiscussionSettings.aspx.cs">
+      <DependentUpon>ItemDiscussionSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ItemDiscussionSettings.aspx.designer.cs">
+      <DependentUpon>ItemDiscussionSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\PictureViewer.aspx.cs">
+      <DependentUpon>PictureViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\PictureViewer.aspx.designer.cs">
+      <DependentUpon>PictureViewer.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\RedirectPage.aspx.cs">
+      <DependentUpon>RedirectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\RedirectPage.aspx.designer.cs">
+      <DependentUpon>RedirectPage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\RedirectSettings.aspx.cs">
+      <DependentUpon>RedirectSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\RedirectSettings.aspx.designer.cs">
+      <DependentUpon>RedirectSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ShareItem.aspx.cs">
+      <DependentUpon>ShareItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ShareItem.aspx.designer.cs">
+      <DependentUpon>ShareItem.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\TaskRule.aspx.cs">
+      <DependentUpon>TaskRule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\TaskRule.aspx.designer.cs">
+      <DependentUpon>TaskRule.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentNotificationSettings.aspx.cs">
+      <DependentUpon>UnreadContentNotificationSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentNotificationSettings.aspx.designer.cs">
+      <DependentUpon>UnreadContentNotificationSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentResolver.aspx.cs">
+      <DependentUpon>UnreadContentResolver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentResolver.aspx.designer.cs">
+      <DependentUpon>UnreadContentResolver.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recievers\CompanyCalendarEventReceiver.cs" />
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AutoAlertSettings.aspx.cs">
+      <DependentUpon>AutoAlertSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\AutoAlertSettings.aspx.designer.cs">
+      <DependentUpon>AutoAlertSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\CloneList.aspx.cs">
+      <DependentUpon>CloneList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\CloneList.aspx.designer.cs">
+      <DependentUpon>CloneList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\DuplicateItemPage.aspx.cs">
+      <DependentUpon>DuplicateItemPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\DuplicateItemPage.aspx.designer.cs">
+      <DependentUpon>DuplicateItemPage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\EditRule.aspx.cs">
+      <DependentUpon>EditRule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\EditRule.aspx.designer.cs">
+      <DependentUpon>EditRule.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\FieldSettings.aspx.cs">
+      <DependentUpon>FieldSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\FieldSettings.aspx.designer.cs">
+      <DependentUpon>FieldSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ApproveAll.aspx.cs">
+      <DependentUpon>ApproveAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ApproveAll.aspx.designer.cs">
+      <DependentUpon>ApproveAll.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\NotificationSettings.aspx.cs">
+      <DependentUpon>NotificationSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\NotificationSettings.aspx.designer.cs">
+      <DependentUpon>NotificationSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\RuleList.aspx.cs">
+      <DependentUpon>RuleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\RuleList.aspx.designer.cs">
+      <DependentUpon>RuleList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\TaskEvent.aspx.cs">
+      <DependentUpon>TaskEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\TaskEvent.aspx.designer.cs">
+      <DependentUpon>TaskEvent.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\VariableEditor.aspx.cs">
+      <DependentUpon>VariableEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\TaskRulePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recievers\ITaskEvent.cs" />
+    <Compile Include="Recievers\ItemDiscussionEventReceiver\ItemDiscussionEventReceiver.cs" />
+    <Compile Include="Recievers\NotificationReciever\NotificationtReciever.cs" />
+    <Compile Include="Recievers\SetAssignementReciever\SetAssignementReciever.cs" />
+    <Compile Include="Recievers\UnreadContentReciever\UnreadContentReciever.cs" />
+    <Compile Include="Recievers\UpdateImageFieldReciever\UpdateImageFieldReciever.cs" />
+    <Compile Include="Recievers\UpdateLinkToItemFieldReciever\UpdateLinkToItemFieldReciever.cs" />
+    <Compile Include="TimerJobs\ReminderBirthDayTimerJob.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AIA.Intranet.Portal.snk" />
+    <None Include="AppGlobalResources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{48aa1506-4b8e-404e-a76c-e7a0fb95ddf3}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\BuildingContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2483143-3a70-4cbc-acf6-d414e7fe8a49}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\CategoryContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f4b022d0-971f-4f05-985b-3265ab3232d8}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\CommentItemContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3c8ee583-4cc2-4c87-ba67-affe37cce17b}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\DecisionDocumentContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5db522d5-9a44-4c90-ae4e-44b813979bcc}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\NavigationItemContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d86f0736-c4fc-499f-8308-79655650d651}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\OutgoingDocumentContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b6306526-df55-4eaf-9ac8-0393ca4641ea}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\PictureCategoryContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6895e782-9690-4dfc-a65f-92c90d0b9d48}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\TaskContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8a1dc48a-48ff-46dd-8891-00465d449a47}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\ADManagementRegister\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1f9b9ff-28d5-4275-b4e4-64b260983783}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\ApproveRejectSelection\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b1cac286-6ab1-4536-89e6-156d56dd9583}</SharePointProjectItemId>
+    </None>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7576877e-655b-47de-a3fa-2ade6591a7d5}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\AutoAlertAction\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{79849201-6ee0-4472-86f0-e1738a3c31e3}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\AutoCreationReg\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{99108df2-9603-4719-bbd1-1d52c66952ad}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\ClearCacheRegister\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6a8b7546-49d7-4737-a713-0904ee651f95}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\CloneListRegistry\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d5e6c12-47a5-4f48-b7ab-445b44131610}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\DelegateControls\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6bfc5f21-e700-481a-aca4-d14a41456ffd}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\DuplicateListRegistry\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1fdf3924-a288-4530-a6f7-9da04a9a87f9}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\FieldPermissionSetting\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1ecd732-76d0-405b-8758-af1c12741ae1}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\GlobalConfigurationLink\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4f11e72f-7694-41b8-a95d-6e8f873a000a}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\IOfficeGroup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ecb7c438-f28b-429f-a9be-c687d5ed5bdc}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\ItemDisscussionReg\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2d67361-fe76-4439-82eb-e02642d88961}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\JqueryIncludeAction\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1e1dfd51-ba1e-4893-9d30-599b7279250b}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\NavigationLinks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{112bfecb-08b2-4d9f-80bc-bbb5262773c6}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\NotificationRegister\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{97029b07-c62f-490c-a612-73bff14514a8}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\RedirectSettingsRegister\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f59334fd-69ce-44d9-a28d-7615135d48aa}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\SecurityPageRegistry\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{48cd787a-c9af-4901-9c54-14b08f61c7de}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\ShareItemRegistration\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9d3c233f-fe7e-4f65-82dc-56b67b6a1c65}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\TaskRegistrations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dbd7b19d-dddc-4fa1-9999-d459f9d87e4f}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\UnreadContentNotificationRegister\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{05c0ea24-7d56-49ad-92d4-64ac5eee5afa}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\VariablePicker\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d6f9d1b2-278f-47d5-b765-eb928d2f862f}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\AIA.Intranet.Infrastructure.Data\AIA.Intranet.Infrastructure.Data.feature">
+      <FeatureId>{68ccd81d-9f6e-41a4-a1e2-c7ec7f4b4085}</FeatureId>
+    </None>
+    <None Include="Features\AIA.Intranet.Infrastructure.Site\AIA.Intranet.Infrastructure.Site.feature">
+      <FeatureId>{1cfc17f5-ba7c-43d0-8b24-a1cc6d2ed041}</FeatureId>
+    </None>
+    <None Include="Layouts\AIA.Intranet.Infrastructure\ActionResolver.ashx" />
+    <None Include="Layouts\AIA.Intranet.Infrastructure\DisplayAttachments.ashx" />
+    <None Include="Layouts\AIA.Intranet.Infrastructure\FileResolver.ashx" />
+    <None Include="Layouts\AIA.Intranet.Infrastructure\ImageViewer.ashx" />
+    <None Include="ListDefinitions\ADManagerTemplate\ADManagerInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d9b2a8c1-add2-46f9-97f8-c75fba33388e}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\ADManagerTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{846d72c8-5aa0-4c20-b0e7-cdb11c0791ea}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\BuildingListDefinition\Buildings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f371867a-be1e-4077-99a1-da0cb9f4a213}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\BuildingListDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43cf2b95-bffc-4b0b-b2fc-909bf4555dec}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\CommentTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{270f96e7-8d33-4e32-992c-f62b1580a65f}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\EmailList\EmailListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aa77299f-64e9-490d-812a-319a0b122e8e}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\EmailList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6622b27-8ca8-4b41-b820-baeec11fedf3}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\TaskDefinition\TaskInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{09cc773a-8410-469e-a4dc-7117a67ff01c}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\TaskDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ac6ee9a1-639c-4d8f-a343-1d585762c144}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Category\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54588841-d1d2-4236-b76c-d3ccdd10dc08}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\ConfidentialityLevelsListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{379f51bc-5931-48f1-bf58-345cee4b6824}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\DepartmentCalendar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9a23c395-8999-472b-9746-be0121e225db}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\DeptCalendar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a1043164-8606-4fdb-9748-73c37e9ed86b}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\DeptDiscussions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f230a567-13fd-4d19-b5f0-61c392a2cc6a}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Discussions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5ada29e-ac1c-4743-83f4-69739cd725ca}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Icons\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3c8b9322-d74e-45ee-85d2-2dfa00c623b3}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\IncomingDocumentTypesListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f463eda3-6112-47ba-9960-536367e774b7}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\LegislationTypesListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{95aa2778-7b51-4b76-8758-cfb3c29a347f}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\NewsImages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d016cd49-20c7-4a3e-961d-93bd3986edb4}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\OrganizationsListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cda7e769-49a3-43ca-97ca-c6241d6151b4}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\PagesLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b15b53a5-3ae0-4300-836b-b05bdeb03d0d}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\PriorityLevelsListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40b81203-ce64-429f-b433-cdc73cf67f40}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Shortcut\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{866c109e-f2c0-4f81-92bd-c462aefc962d}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\SiteMapMappings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{854179a7-0ae9-44f7-a63c-4cdb780d505e}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\StationeryApproval\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b57a23fe-aa31-4743-ae0d-9e991a2285b3}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\StationeryCategory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c6cc5ed2-e417-4bb7-a4ce-7b7f2225e9a3}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Statistics\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e509098e-632b-49c7-b5ef-972ea87856ee}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\TaskApproval\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{20c10f55-b2c9-40bd-935a-db6a34a88b8e}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\TimesheetApproval\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c573ef25-ffc4-4444-b477-fa6103e1d6e7}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Timesheet\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2092ac35-76f8-4ee2-b62d-9d1f09e37529}</SharePointProjectItemId>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ListInstances\UnreadContent\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a0d661e1-40f9-4dc5-9f89-29feb3acefcb}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\IconsLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b5669cca-6ea7-49d8-944b-29112dd443ba}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\OfficialDocumentWebPartPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f362ed66-b498-43ec-b680-d8db798c2454}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\NewsImagesUpload\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0b0325cd-2f40-4965-864e-e217d5729e5c}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\NewsWebPartPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5e1e44dd-4eaf-46fe-8430-8bb090d089c2}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\RoomBookingSystemWebPartPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1c752be-5dda-4c32-bb2a-7a432b2d4c46}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\StaticPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a7bec3be-42e5-4fd1-93b8-e5087bb78624}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\WebPartPageDefault\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{928f8c4b-fa03-467a-a048-1878da02fb97}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\WebpartPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{14d19f63-6a4d-4366-9ca3-b75aa6e11338}</SharePointProjectItemId>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb804e4e-bf56-43b7-b28d-de9c540a9afa}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c50c0525-7517-4fc0-ae93-9cf4a16bc61b}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\EmailTemplate\EmailTemplateInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5f99be71-fdca-43eb-be90-bacc7a1eb962}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\EmailTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6ffae94c-1428-439f-a319-12f6aef8bcf5}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\EntryApproval\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b6bfbd2c-e716-4817-a424-2a3c667a7aaa}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\GlobalConfiguration\GlobalConfigurationInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{539ec969-b86e-4dfb-8c09-7141f48becfd}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\GlobalConfiguration\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f6aae3c0-9f82-4c66-8c8c-bc7baada2c5b}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\Navigation\NavigationInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ce782f1-8043-474d-8283-5fa754385bd2}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\Navigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9dd5b056-eca8-46a4-a4f2-4aa943a38796}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\TaskConfiguration\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{98bb1c6e-3f8c-4ebe-ad83-a786a6549b7d}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\TaskConfiguration\TaskConfigurationInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3cef6bde-b527-46e9-81fa-20102ea2bb5b}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{ad7e920b-099d-4260-9953-a25dc44eec3d}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Recievers\ItemDiscussionEventReceiver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aa9382ff-23d3-4499-a0fd-efd3139acaf7}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\NotificationReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{10b108d9-9cab-4be0-967e-35ddeaead507}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\SetAssignementReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43cb5d71-18ce-4fda-b153-4ef24a41da30}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\UnreadContentReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7605063d-59f6-4fe0-9bb2-c0453a3f122f}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\UpdateImageFieldReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0bbb269f-1a39-4fa9-baa4-9e4cfaac091b}</SharePointProjectItemId>
+    </None>
+    <None Include="Recievers\UpdateLinkToItemFieldReciever\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{df0dae64-91d0-490f-8900-1003b6a05c45}</SharePointProjectItemId>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59041e3d-5a1e-4561-8544-0cbc764dcdb7}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4028d6e8-3844-4679-a35c-29563caecdc6}</SharePointProjectItemId>
+    </None>
+    <None Include="TEMPLATE\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{925a9ca1-fa7f-48d8-80a8-e88ae84abb75}</SharePointProjectItemId>
+    </None>
+    <None Include="XML\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e05dc1e0-8398-4923-b68a-b152e6fad092}</SharePointProjectItemId>
+    </None>
+    <None Include="XSL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f4803b01-1502-4cf2-b7f0-72eba49327df}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AIA.Intranet.Common\AIA.Intranet.Common.csproj">
+      <Project>{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079}</Project>
+      <Name>AIA.Intranet.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AIA.Intranet.Model\AIA.Intranet.Model.csproj">
+      <Project>{C3DBC301-0C74-4AED-B740-C03B024E563A}</Project>
+      <Name>AIA.Intranet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AIA.Intranet.Resources\AIA.Intranet.Resources.csproj">
+      <Project>{85006ACC-5E40-4043-96E8-C2142B3EF00B}</Project>
+      <Name>AIA.Intranet.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppGlobalResources\Elements.xml" />
+    <Content Include="ContentTypes\BuildingContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentTypes\DecisionDocumentContentType\Elements.xml" />
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskPermissionEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\CreateUnreadTaskEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWFItemPermissionEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="AppGlobalResources\AIA.Intranet.Infrastructure.CustomFields.LookupFieldWithPicker.de-DE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="AppGlobalResources\AIA.Intranet.Infrastructure.CustomFields.LookupFieldWithPicker.en-US.resx" />
+    <Content Include="AppGlobalResources\AIA.Intranet.Infrastructure.CustomFields.LookupFieldWithPicker.resx" />
+    <EmbeddedResource Include="AppGlobalResources\ProjectResources.resx" />
+    <EmbeddedResource Include="AppGlobalResources\RequestFormResources.resx" />
+    <EmbeddedResource Include="AppGlobalResources\RoomBookingSystemResources.resx" />
+    <EmbeddedResource Include="StationerytApprovalWorkflowSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingTooltApprovalWorkflowSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="ListDefinitions\EmailList\Elements.xml" />
+    <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
+    <Content Include="ListDefinitions\EmailList\Schema.xml" />
+    <Content Include="ListInstances\StationeryApproval\Elements.xml" />
+    <Content Include="ListInstances\StationeryApproval\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\RequestFormResources.resx" />
+    <EmbeddedResource Include="RoomBookingSystem_ApprovalWorkflowSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Modules\RoomBookingSystemWebPartPages\General.aspx.xml" />
+    <Content Include="Resources\RoomBookingSystemResources.resx" />
+    <EmbeddedResource Include="VideoLibraryWebparts.xml" />
+    <EmbeddedResource Include="PictureLibraryWebParts.xml" />
+    <EmbeddedResource Include="RoomBookingSystemCustomSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="CustomActions\ClearCacheRegister\Elements.xml" />
+    <Content Include="Features\AIA.Intranet.Infrastructure.Data\AIA.Intranet.Infrastructure.Data.Template.xml">
+      <DependentUpon>AIA.Intranet.Infrastructure.Data.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\logo_form.png" />
+    <Content Include="ListDefinitions\BuildingListDefinition\Buildings\Elements.xml" />
+    <Content Include="ListDefinitions\BuildingListDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\BuildingListDefinition\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\DepartmentCalendar\Elements.xml" />
+    <Content Include="ListInstances\DepartmentCalendar\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\DeptCalendar\Elements.xml" />
+    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_IncomingDocument.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="ListInstances\StationeryCategory\Schema.xml" />
+    <Content Include="ListInstances\StationeryCategory\Elements.xml" />
+    <Content Include="Resources\TaskResources.resx" />
+    <EmbeddedResource Include="TimesheetApprovalWorkflowSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimesheetSiteWebparts.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Images\1352171553_stock_task-recurring.png" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\discussion.png" />
+    <Content Include="ContentTypes\CategoryContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentTypes\CommentItemContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentTypes\NavigationItemContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentTypes\OutgoingDocumentContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentTypes\PictureCategoryContentType\Elements.xml" />
+    <Content Include="ContentTypes\TaskContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\SendEmailToStaticAddressEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\SendEmailToWfItemUserColumnEditor.ascx" />
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\SendEmailtoWorkflowTaskUserColumnEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateExecutedDocumentMetaDataEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskItemWithItemPropertyEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowItemMetaDataEditor.ascx" />
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowItemWithKeywordEditor.ascx" />
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowItemWithTaskPropertyEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateWorkflowTaskMetaDataEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\CommentBoxNewControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\EmailTemplateSelector.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\EntryApprovalEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ADSearch.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ExtendedLookupFields.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ILinkForm.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\NotificationSettingControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\ImageFieldBaseFieldControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ImageFieldControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\share.png" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\Timesheet-Icon-16.png" />
+    <Content Include="ListInstances\TimesheetApproval\Elements.xml" />
+    <Content Include="ListInstances\TimesheetApproval\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="OfficialDocumentCustomSettings.xml" />
+    <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\spstd10.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="XSL\fldtypes_TimesheetField.xsl" />
+    <EmbeddedResource Include="AppGlobalResources\AnnouncementResources.resx" />
+    <EmbeddedResource Include="AppGlobalResources\ApprovalWorkflowResources.resx" />
+    <EmbeddedResource Include="AppGlobalResources\CommonResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppGlobalResources\CompanyCalendarResources.resx" />
+    <EmbeddedResource Include="AppGlobalResources\DepartmentResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppGlobalResources\DocumentResources.resx" />
+    <EmbeddedResource Include="AppGlobalResources\EmployeeResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppGlobalResources\EmployeeResoures.resx" />
+    <EmbeddedResource Include="AppGlobalResources\GalleryResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppGlobalResources\InfrastructureResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppGlobalResources\NewsResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppGlobalResources\OfficialDocumentResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppGlobalResources\TaskResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppGlobalResources\WebPartResources.resx" />
+    <EmbeddedResource Include="NewsApprovalWorkflowSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureCustomSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentSite_HomepageWebparts.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_AdministrativeRegulation.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_OfficialForm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_LegalDocument.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_OutgoingDocument.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectTaskApprovalWorkflowSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskApprovalWorkflowSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="CustomActions\TaskRegistrations\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CustomActions\UnreadContentNotificationRegister\Elements.xml" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\Status-Task-16.png" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\Status-Task-32.png" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\Thumb-Up-16.png" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\Thumb-Up-24.png" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\Thumb-Up-32.png" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\Thumb-Up-48.png" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\view.png" />
+    <Content Include="Layouts\1033\jquery-1.8.2.min.js" />
+    <Content Include="Layouts\1033\jquery.SPServices-0.7.2.js" />
+    <Content Include="Layouts\1033\jquery.SPServices-0.7.2.min.js" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\PictureViewer.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentNotificationSettings.aspx" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentResolver.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ListDefinitions\TaskDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\TaskDefinition\TaskInstance\Elements.xml" />
+    <Content Include="ListDefinitions\TaskDefinition\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\Icons\Elements.xml" />
+    <Content Include="ListInstances\Statistics\Elements.xml" />
+    <Content Include="ListInstances\Statistics\Schema.xml" />
+    <Content Include="ListInstances\TaskApproval\Elements.xml" />
+    <Content Include="ListInstances\TaskApproval\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\Timesheet\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\Timesheet\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\UnreadContent\Elements.xml" />
+    <Content Include="ListInstances\UnreadContent\Schema.xml" />
+    <Content Include="ListInstances\ConfidentialityLevelsListInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\IncomingDocumentTypesListInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\LegislationTypesListInstance\Elements.xml" />
+    <Content Include="ListInstances\OrganizationsListInstance\Elements.xml" />
+    <Content Include="ListInstances\PriorityLevelsListInstance\Elements.xml" />
+    <Content Include="Modules\IconsLibrary\task.png" />
+    <Content Include="Modules\IconsLibrary\Elements.xml" />
+    <Content Include="Modules\OfficialDocumentWebPartPages\Home.aspx.xml" />
+    <Content Include="Modules\NewsImagesUpload\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\NewsImagesUpload\ioffice-news-thumb.jpg" />
+    <Content Include="Modules\StaticPages\controls.html" />
+    <Content Include="Modules\StaticPages\Elements.xml" />
+    <Content Include="Modules\IconsLibrary\timesheets.png" />
+    <Content Include="Resources\OfficialDocumentResources.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\EmployeeResoures.resx" />
+    <EmbeddedResource Include="WelcomeNews.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="ListInstances\Shortcut\Schema.xml" />
+    <Content Include="Modules\NewsImagesUpload\ioffice-news-thumb_jpg.jpg" />
+    <Content Include="Recievers\UnreadContentReciever\Elements.xml" />
+    <Content Include="Resources\GalleryResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GalleryResources.Designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="VideoCustomSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureWebParts.xml" />
+    <Content Include="CustomActions\ADManagementRegister\Elements.xml" />
+    <Content Include="CustomActions\AutoCreationReg\Elements.xml" />
+    <Content Include="CustomActions\ItemDisscussionReg\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="CustomSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Features\AIA.Intranet.Infrastructure.Site\AIA.Intranet.Infrastructure.Site.Template.xml">
+      <DependentUpon>AIA.Intranet.Infrastructure.Site.feature</DependentUpon>
+    </Content>
+    <Content Include="CustomActions\ShareItemRegistration\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Layouts\1033\jquery-1.7.2.min.js" />
+    <Content Include="Layouts\1033\jquery.maskedinput-1.3.js" />
+    <Content Include="Layouts\1033\tabber-minimized.js" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AddNotificationSettings.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\AllGroups.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\AllUsers.aspx" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\css\application.css" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\EditGroup.aspx" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\EditUser.aspx" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\ResetPassword.aspx" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\SearchGroup.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\SearchUser.aspx" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\Settings.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\src\Class.js" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\src\GroupManager.js" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AD\src\jquery-1.4.1.js" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AutoCreationSettings.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\ItemDiscussionResolver.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\ItemDiscussionSettings.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\ItemDiscussionsNotConfigured.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\RedirectPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\ShareItem.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ListDefinitions\ADManagerTemplate\Elements.xml" />
+    <Content Include="ListDefinitions\ADManagerTemplate\ADManagerInstance\Elements.xml" />
+    <Content Include="ListDefinitions\ADManagerTemplate\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListDefinitions\CommentTemplate\Elements.xml" />
+    <Content Include="ListDefinitions\CommentTemplate\Schema.xml" />
+    <Content Include="ListInstances\Category\Elements.xml" />
+    <Content Include="ListInstances\DeptDiscussions\Elements.xml" />
+    <Content Include="ListInstances\Discussions\Elements.xml" />
+    <Content Include="ListInstances\NewsImages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\SiteMapMappings\Elements.xml" />
+    <Content Include="ListInstances\SiteMapMappings\Schema.xml" />
+    <Content Include="Modules\NewsWebPartPages\Home.aspx.xml" />
+    <Content Include="Modules\WebPartPageDefault\Pages.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\WebpartPages\Pages.xml" />
+    <EmbeddedResource Include="NewsCustomSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Recievers\UpdateLinkToItemFieldReciever\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\ApprovalWorkflowResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ApprovalWorkflowResources.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\spstd9.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Recievers\ItemDiscussionEventReceiver\Elements.xml" />
+    <Content Include="Resources\ImageField.vi-VN.resx" />
+    <Content Include="Resources\InfrastructureResources.resx">
+      <LastGenOutput>Infrastructure.Designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="NewsSiteWebparts.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Resources\NewsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NewsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\CompanyCalendarResources.resx">
+      <LastGenOutput>CompanyCalendarResources.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\ProjectResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProjectResources.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\WebPartResources.resx" />
+    <EmbeddedResource Include="SiteStructures.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Recievers\UpdateImageFieldReciever\Elements.xml" />
+    <EmbeddedResource Include="Webparts.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="TEMPLATE\Pages\viewpage_webpart.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <EmbeddedResource Include="VideoWebParts.xml" />
+    <Content Include="XML\fldtypes_EmailField.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\fldtypes_ImageField.xml" />
+    <Content Include="XML\fldtypes_LinkToItemField.xml" />
+    <Content Include="XSL\fldtypes_ActionField.xsl" />
+    <Content Include="XSL\fldtypes_LinkToItemField.xsl" />
+    <Content Include="XSL\fldtypes_EmailField.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XSL\fldtypes_AttachmentViewField.xsl" />
+    <EmbeddedResource Include="SubSiteWebparts.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="XSL\fldtypes_ImageField.xsl" />
+    <EmbeddedResource Include="CorrectLookupFields.xml" />
+    <Content Include="CustomActions\NavigationLinks\Elements.xml" />
+    <Content Include="CustomActions\NotificationRegister\Elements.xml" />
+    <Content Include="CustomActions\RedirectSettingsRegister\Elements.xml" />
+    <EmbeddedResource Include="DefaultNavigations.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletedLists.xml" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\RedirectSettings.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\TaskRule.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ListInstances\PagesLibrary\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListInstances\Shortcut\Elements.xml" />
+    <EmbeddedResource Include="ListPermissions.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\NotificationSettings.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ListDefinitions\EmailTemplate\Elements.xml" />
+    <Content Include="ListDefinitions\EmailTemplate\EmailTemplateInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListDefinitions\EmailTemplate\Schema.xml" />
+    <Content Include="ListDefinitions\EntryApproval\Elements.xml" />
+    <Content Include="ListDefinitions\EntryApproval\Schema.xml" />
+    <Content Include="ListDefinitions\GlobalConfiguration\Elements.xml" />
+    <Content Include="ListDefinitions\GlobalConfiguration\GlobalConfigurationInstance\Elements.xml" />
+    <Content Include="ListDefinitions\GlobalConfiguration\Schema.xml" />
+    <Content Include="ListDefinitions\Navigation\Elements.xml" />
+    <Content Include="ListDefinitions\Navigation\NavigationInstance\Elements.xml" />
+    <Content Include="ListDefinitions\Navigation\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListDefinitions\TaskConfiguration\Elements.xml" />
+    <Content Include="ListDefinitions\TaskConfiguration\Schema.xml" />
+    <Content Include="ListDefinitions\TaskConfiguration\TaskConfigurationInstance\Elements.xml" />
+    <Content Include="Recievers\NotificationReciever\Elements.xml" />
+    <Content Include="SiteColumns\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\fldtypes_AttachmentViewField.xml" />
+    <Content Include="XML\fldtypes_RegExValidator.xml" />
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\LookupFieldWithPickerEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\TaskConfigurationEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\AssignmentFieldEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\InsertScript.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\TaskRuleEditor.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CustomActions\ApproveRejectSelection\Elements.xml" />
+    <Content Include="ControlTemplates\IOfficeRenderTemplate.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CustomActions\AutoAlertAction\Elements.xml" />
+    <Content Include="CustomActions\CloneListRegistry\Elements.xml" />
+    <Content Include="CustomActions\DelegateControls\Elements.xml" />
+    <Content Include="CustomActions\DuplicateListRegistry\Elements.xml" />
+    <Content Include="CustomActions\FieldPermissionSetting\Elements.xml" />
+    <Content Include="CustomActions\GlobalConfigurationLink\Elements.xml" />
+    <Content Include="CustomActions\IOfficeGroup\Elements.xml" />
+    <Content Include="CustomActions\JqueryIncludeAction\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CustomActions\SecurityPageRegistry\Elements.xml" />
+    <Content Include="CustomActions\VariablePicker\Elements.xml" />
+    <Content Include="Images\Hypertek.IOffice.Infrastructure\VariableEditor.png" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\AutoAlertSettings.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\CloneList.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\DuplicateItemPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\EditRule.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\FieldSettings.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\ApproveAll.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\RuleList.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\Scripts\ApproveReject.js" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\Scripts\VariableEditor.js" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\TaskEvent.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\VariableEditor.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Recievers\SetAssignementReciever\Elements.xml" />
+    <Content Include="XML\fldtypes_AssignmentField.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\fldtypes_LookupFieldWithPicker.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\CommonResources.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\DepartmentResources.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\AnnouncementResources.resx">
+      <LastGenOutput>AnnouncementResources.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\ImageField.en-US.resx" />
+    <Content Include="Resources\ImageField.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AIA.Intranet.Infrastructure.CustomFields.LookupFieldWithPicker.de-DE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\AIA.Intranet.Infrastructure.CustomFields.LookupFieldWithPicker.en-US.resx" />
+    <Content Include="Resources\AIA.Intranet.Infrastructure.CustomFields.LookupFieldWithPicker.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EmployeeResources.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

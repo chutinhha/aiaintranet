@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+   Id="COB.SharePoint.Ribbon.NewControlInExistingGroup"
+   Location="CommandUI.Ribbon.ListView"
+   RegistrationType="List"
+   RegistrationId="100">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.ListItem.Workflow.Controls._children">
+          <Button Id="COB.SharePoint.Ribbon.NewControlInExistingGroup.Notify"
+                  Command="COB.Command.NewControlInExistingGroup.Notify"
+                  Sequence="21"
+                  Image16by16="/_layouts/$Resources:core,Language;/images/formatmap16x16.png"
+                  Image16by16Top="-48" Image16by16Left="-240"
+                  Image32by32="/_layouts/$Resources:core,Language;/images/formatmap32x32.png"
+                  Image32by32Top="-448" Image32by32Left="-384"
+                  Description="Uses the notification area to display a message."
+                  LabelText="Approve/Reject Selection"
+                  TemplateAlias="o1"/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="COB.Command.NewControlInExistingGroup.Notify"
+          EnabledScript="javascript:enableApprovalAll();"
+          CommandAction="javascript: showApproveAll(); "/>
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+
+  
+  <CustomAction
+   Id="COB.Command.NewControlInExistingGroup.Notify.Script"
+   Location="ScriptLink"
+   ScriptSrc ="/_layouts/AIA.Intranet.Infrastructure/Scripts/ApproveReject.js"/>
+</Elements>

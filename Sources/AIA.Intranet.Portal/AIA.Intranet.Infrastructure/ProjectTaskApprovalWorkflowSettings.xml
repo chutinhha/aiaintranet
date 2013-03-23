@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ApprovalWFAssociationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ApproverData>
+    <ApprovalWFApprover>
+      <ApprovalLevelName>Level Name</ApprovalLevelName>
+      <ColumnName>c745576b-b531-435b-9f1e-863a7ac88943</ColumnName>
+      <SpecificUserGroup />
+      <ManagerApprove>false</ManagerApprove>
+      <ExpendGroup>false</ExpendGroup>
+      <TaskSequenceType>Sequence</TaskSequenceType>
+      <DueDate />
+      <DurationPerTask>0</DurationPerTask>
+      <EnableEmail>true</EnableEmail>
+      <EmailTemplate>
+        <Url>/Lists/EmailTemplates</Url>
+        <Name>Nhân viên mới</Name>
+      </EmailTemplate>
+      <AllowChangeMessage>false</AllowChangeMessage>
+      <TaskContenType>0x01080100E6FA232BCA3B4B25B9DF4B2E3791D3DD</TaskContenType>
+      <TaskTitle>Vui lòng duyệt công việc</TaskTitle>
+      <EnableChangeApprovers>true</EnableChangeApprovers>
+      <AppendTitle>true</AppendTitle>
+    </ApprovalWFApprover>
+  </ApproverData>
+  <EndOnFirstReject>true</EndOnFirstReject>
+  <EndOnItemDocumentChange>true</EndOnItemDocumentChange>
+  <EnableContentApproval>true</EnableContentApproval>
+  <DelayOnStart>0</DelayOnStart>
+  <StartNotification>false</StartNotification>
+  <EmailTemplate>
+    <Url />
+    <Name />
+  </EmailTemplate>
+  <ColumnName />
+  <UseSpecificUserGroup>false</UseSpecificUserGroup>
+  <UseMetaData>false</UseMetaData>
+  <SpecificUserGroup />
+  <EnableVerboseLog>false</EnableVerboseLog>
+  <EnableReassign>false</EnableReassign>
+  <EnableHoldOn>false</EnableHoldOn>
+  <EnableRequestChange>false</EnableRequestChange>
+  <EnableApprove>true</EnableApprove>
+  <EnableReject>true</EnableReject>
+  <TaskFormOption>
+    <ApproveLabel>Duyệt</ApproveLabel>
+    <RejectLabel>Từ chối</RejectLabel>
+    <RequestInformationLabel>Request Info</RequestInformationLabel>
+    <RequestChangeLabel>Request Change</RequestChangeLabel>
+    <OnHoldLabel>Hold</OnHoldLabel>
+    <ReassignLabel>Reassign</ReassignLabel>
+    <EnableApprove>true</EnableApprove>
+    <EnableReject>true</EnableReject>
+    <EnableHoldOn>false</EnableHoldOn>
+    <EnableRequestChange>false</EnableRequestChange>
+    <EnableRequestInf>false</EnableRequestInf>
+    <EnableReassign>false</EnableReassign>
+  </TaskFormOption>
+  <EnableStartingCondition>false</EnableStartingCondition>
+  <ConditionFieldId>fa564e0f-0c70-4ab9-b863-0177e6ddd247</ConditionFieldId>
+  <ConditionFieldValue />
+  <ApproveIfByPass>false</ApproveIfByPass>
+</ApprovalWFAssociationData>
