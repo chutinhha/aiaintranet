@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIA.Intranet.Portal", "AIA.Intranet.Portal\AIA.Intranet.Portal.csproj", "{FFB5A42F-247B-47B0-8CA0-42563E5AEF12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIA.Intranet.Common", "AIA.Intranet.Common\AIA.Intranet.Common.csproj", "{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIA.Intranet.Model", "AIA.Intranet.Model\AIA.Intranet.Model.csproj", "{C3DBC301-0C74-4AED-B740-C03B024E563A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIA.Intranet.Infrastructure", "AIA.Intranet.Infrastructure\AIA.Intranet.Infrastructure.csproj", "{7396F668-5E82-4B80-BEA1-B395C46EDDDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{AD26BFB5-59CB-4D98-9214-8CEC07127D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIA.Intranet.Resources", "AIA.Intranet.Resources\AIA.Intranet.Resources.csproj", "{85006ACC-5E40-4043-96E8-C2142B3EF00B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +25,35 @@ Global
 		{FFB5A42F-247B-47B0-8CA0-42563E5AEF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFB5A42F-247B-47B0-8CA0-42563E5AEF12}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FFB5A42F-247B-47B0-8CA0-42563E5AEF12}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C3DBC301-0C74-4AED-B740-C03B024E563A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3DBC301-0C74-4AED-B740-C03B024E563A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3DBC301-0C74-4AED-B740-C03B024E563A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C3DBC301-0C74-4AED-B740-C03B024E563A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3DBC301-0C74-4AED-B740-C03B024E563A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3DBC301-0C74-4AED-B740-C03B024E563A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7396F668-5E82-4B80-BEA1-B395C46EDDDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7396F668-5E82-4B80-BEA1-B395C46EDDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7396F668-5E82-4B80-BEA1-B395C46EDDDD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7396F668-5E82-4B80-BEA1-B395C46EDDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7396F668-5E82-4B80-BEA1-B395C46EDDDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7396F668-5E82-4B80-BEA1-B395C46EDDDD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{85006ACC-5E40-4043-96E8-C2142B3EF00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85006ACC-5E40-4043-96E8-C2142B3EF00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85006ACC-5E40-4043-96E8-C2142B3EF00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85006ACC-5E40-4043-96E8-C2142B3EF00B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3DBC301-0C74-4AED-B740-C03B024E563A} = {AD26BFB5-59CB-4D98-9214-8CEC07127D84}
+		{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079} = {AD26BFB5-59CB-4D98-9214-8CEC07127D84}
+		{85006ACC-5E40-4043-96E8-C2142B3EF00B} = {AD26BFB5-59CB-4D98-9214-8CEC07127D84}
 	EndGlobalSection
 EndGlobal
