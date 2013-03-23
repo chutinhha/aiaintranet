@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C3DC01C-1F81-445F-8FD1-CBE04A9E4079}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hypertek.IOffice.Common</RootNamespace>
+    <AssemblyName>Hypertek.IOffice.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Properties\AIA.Intranet.Portal.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="NVelocity, Version=1.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Controls\ProjectTaskSaveButton.cs" />
+    <Compile Include="Controls\DepartmentTaskSaveButton.cs" />
+    <Compile Include="Controls\EmployeeFieldIterator.cs" />
+    <Compile Include="Controls\PermissionFieldIterator.cs" />
+    <Compile Include="Controls\ReadOnlyFieldControl.cs" />
+    <Compile Include="Controls\SPUserGroupTrimmedControl.cs" />
+    <Compile Include="Core\CoreFeatureReciever.cs" />
+    <Compile Include="Core\WebConfigModifierReciever.cs" />
+    <Compile Include="Extensions\AssemblyExtensions.cs" />
+    <Compile Include="Extensions\ControlCollectionExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtention.cs" />
+    <Compile Include="Extensions\ListFieldIteratorExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtesions.cs" />
+    <Compile Include="Extensions\SPContentTypeExtensions.cs" />
+    <Compile Include="Extensions\SPFieldCollectionExtensions.cs" />
+    <Compile Include="Extensions\SPFieldExtensions.cs" />
+    <Compile Include="Extensions\SPFieldLookupExtensions.cs" />
+    <Compile Include="Extensions\SPFolderExtensions.cs" />
+    <Compile Include="Extensions\SPListDiscussionExtensions.cs" />
+    <Compile Include="Extensions\SPListExtensions.cs" />
+    <Compile Include="Extensions\SPListItemDiscussionExtensions.cs" />
+    <Compile Include="Extensions\SPListItemExtensions.cs" />
+    <Compile Include="Extensions\SPPrincipalExtensions.cs" />
+    <Compile Include="Extensions\SPSiteExtensions.cs" />
+    <Compile Include="Extensions\SPUserExtensions.cs" />
+    <Compile Include="Extensions\SPWebApplicationExtensions.cs" />
+    <Compile Include="Extensions\SPWebExtensions.cs" />
+    <Compile Include="Extensions\SPWorkflowActivationPropertiesExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Helpers\ADHelper.cs" />
+    <Compile Include="Helpers\CAMLHelper.cs" />
+    <Compile Include="Helpers\ControlHelper.cs" />
+    <Compile Include="Helpers\CryptoHelper.cs" />
+    <Compile Include="Helpers\DocxFileReader.cs" />
+    <Compile Include="Helpers\FieldValueHelper.cs" />
+    <Compile Include="Helpers\HashHelper.cs" />
+    <Compile Include="Helpers\HtmlToTextConverter.cs" />
+    <Compile Include="Helpers\ListHelper.cs" />
+    <Compile Include="Helpers\NVelocityTemplateEngine\BaseClasses\NVelocityEngineBase.cs" />
+    <Compile Include="Helpers\NVelocityTemplateEngine\Engines\NVelocityAssemblyEngine.cs" />
+    <Compile Include="Helpers\NVelocityTemplateEngine\Engines\NVelocityFileEngine.cs" />
+    <Compile Include="Helpers\NVelocityTemplateEngine\Engines\NVelocityMemoryEngine.cs" />
+    <Compile Include="Helpers\NVelocityTemplateEngine\Interfaces\INVelocityEngine.cs" />
+    <Compile Include="Helpers\NVelocityTemplateEngine\NVelocityEngineFactory.cs" />
+    <Compile Include="Helpers\OfficeFileReader.cs" />
+    <Compile Include="Helpers\OperatorsHelper.cs" />
+    <Compile Include="Helpers\PageHelper.cs" />
+    <Compile Include="Helpers\RequestHelper.cs" />
+    <Compile Include="Helpers\SecurityHelper.cs" />
+    <Compile Include="Helpers\SendEmailHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\SerializationHelper.cs" />
+    <Compile Include="Helpers\SharepointHelper.cs" />
+    <Compile Include="Helpers\SPDisposeCheckIgnoreAttribute.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Helpers\TemplateHelper.cs" />
+    <Compile Include="Helpers\TraceProvider.cs" />
+    <Compile Include="Helpers\UpdateWorkflowItemHelper.cs" />
+    <Compile Include="Helpers\WebPartHelper.cs" />
+    <Compile Include="Extensions\PagedList\BasePagedList.cs" />
+    <Compile Include="Extensions\PagedList\IPagedList.cs" />
+    <Compile Include="Extensions\PagedList\PagedList.cs" />
+    <Compile Include="Extensions\PagedList\PagedListExtensions.cs" />
+    <Compile Include="Extensions\PagedList\PagedListMetaData.cs" />
+    <Compile Include="Extensions\PagedList\StaticPagedList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recievers\SecurityEventReciever.cs" />
+    <Compile Include="SecuredPageLayout.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\CommentService.cs" />
+    <Compile Include="Services\ConfiguratioinService.cs" />
+    <Compile Include="Services\EmailListService.cs" />
+    <Compile Include="Services\DepartmentService.cs" />
+    <Compile Include="Services\EmailTemplateService.cs" />
+    <Compile Include="Services\EmployeeService.cs" />
+    <Compile Include="Services\GenericService.cs" />
+    <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="Services\NewsService.cs" />
+    <Compile Include="Services\ProfileService.cs" />
+    <Compile Include="Services\ProjectServices.cs" />
+    <Compile Include="Services\StatisticService.cs" />
+    <Compile Include="Services\TaskService.cs" />
+    <Compile Include="Services\TimesheetService.cs" />
+    <Compile Include="Utilities\Camlex.NET\Attributes.cs" />
+    <Compile Include="Utilities\Camlex.NET\Camlex.cs" />
+    <Compile Include="Utilities\CAMLSiteQuery.cs" />
+    <Compile Include="Utilities\Camlex.NET\DataTypes.cs" />
+    <Compile Include="Utilities\Camlex.NET\ErrorMessages.cs" />
+    <Compile Include="Utilities\Camlex.NET\Exceptions.cs" />
+    <Compile Include="Utilities\Camlex.NET\ExtensionMethods.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\BaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\BinaryExpressionBaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\BinaryOperationBase.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\CompositeExpressionBaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\CompositeOperationBase.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Factories\AnalyzerFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Factories\OperandBuilder.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Factories\OperationResultBuilder.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Factories\TranslatorFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\GenericTranslator.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Helpers\ExpressionsHelper.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\NullabilityBaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\BooleanValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\DateTimeValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\FieldRefOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\FieldRefOperandWithOrdering.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\GenericStringBasedValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\GuidValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\IntegerValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\LookupIdValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\LookupValueValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\NullValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\TextValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\UserIdConstValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\UserIdValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operands\ValueOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\OperationBase.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\AndAlso\AndAlsoAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\AndAlso\AndAlsoOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Array\ArrayAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Array\ArrayOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\BeginsWith\BeginsWithAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\BeginsWith\BeginsWithOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Contains\ContainsAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Contains\ContainsOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\DateRangesOverlap\DateRangesOverlapAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\DateRangesOverlap\DateRangesOverlapOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Eq\EqAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Eq\EqOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Geq\GeqAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Geq\GeqOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Gt\GtAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Gt\GtOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\IsNotNull\IsNotNullAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\IsNotNull\IsNotNullOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\IsNull\IsNullAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\IsNull\IsNullOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Leq\LeqAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Leq\LeqOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Lt\LtAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Lt\LtOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Neq\NeqAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Neq\NeqOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\OrElse\OrElseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\OrElse\OrElseOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Results\ExpressionOperationResult.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Results\XElementArrayOperationResult.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Operations\Results\XElementOperationResult.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\Query.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReAndAlsoAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReArrayAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReBeginsWithAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReContainsAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReDateRangesOverlapAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReEqAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReGeqAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReGtAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReIsNotNullAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReIsNullAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReLeqAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReLtAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReNeqAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Analyzers\ReOrElseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Factories\ReAnalyzerFromCamlFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Factories\ReLinkerFromCamlFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Factories\ReOperandBuilderFromCaml.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\Factories\ReTranslatorFromCamlFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\ReLinkerFromCaml.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\Caml\ReTranslatorFromCaml.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\ReBaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\ReBinaryExpressionBaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\ReComparisonBaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\ReCompositeExpressionBaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\ReNullabilityBaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\ReverseEngeneering\ReQuery.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\UnaryExpressionBaseAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Impl\UnaryOperationBase.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\IAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\IAnalyzerFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\IOperand.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\IOperandBuilder.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\IOperation.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\IOperationResult.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\IOperationResultBuilder.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\IQuery.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\IQueryEx.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ITranslator.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ITranslatorFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReAnalyzer.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReAnalyzerFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReLinker.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReLinkerFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReOperandBuilder.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReOperationResult.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReQuery.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReTranslator.cs" />
+    <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReTranslatorFactory.cs" />
+    <Compile Include="Utilities\Camlex.NET\ReflectionHelper.cs" />
+    <Compile Include="Utilities\Camlex.NET\Tags.cs" />
+    <Compile Include="Utilities\CCIUtility.cs" />
+    <Compile Include="Utilities\CAMLListQuery.cs" />
+    <Compile Include="Utilities\DiagnosticsService.cs" />
+    <Compile Include="IOfficeContext.cs" />
+    <Compile Include="Utilities\DisableItemEvent.cs" />
+    <Compile Include="Utilities\ImageUtility.cs" />
+    <Compile Include="Utilities\SPTraceLogger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AIA.Intranet.Portal.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{b4e3d611-25a7-40b4-9cac-d596323cd00c}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="3rd\" />
+    <Folder Include="Features\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\AjaxControlToolkit.dll" />
+    <Content Include="Libs\DocumentFormat.OpenXml.dll" />
+    <Content Include="Libs\log4net.dll" />
+    <Content Include="Libs\NVelocity.dll" />
+    <Content Include="Libs\System.Web.DataVisualization.Design.dll" />
+    <Content Include="Libs\System.Web.DataVisualization.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AIA.Intranet.Model\AIA.Intranet.Model.csproj">
+      <Project>{C3DBC301-0C74-4AED-B740-C03B024E563A}</Project>
+      <Name>AIA.Intranet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AIA.Intranet.Resources\AIA.Intranet.Resources.csproj">
+      <Project>{85006ACC-5E40-4043-96E8-C2142B3EF00B}</Project>
+      <Name>AIA.Intranet.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>
