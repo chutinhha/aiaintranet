@@ -7,8 +7,8 @@
     <ProjectGuid>{7396F668-5E82-4B80-BEA1-B395C46EDDDD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hypertek.IOffice.Infrastructure</RootNamespace>
-    <AssemblyName>Hypertek.IOffice.Infrastructure</AssemblyName>
+    <RootNamespace>AIA.Intranet.Infrastructure</RootNamespace>
+    <AssemblyName>AIA.Intranet.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -481,6 +481,26 @@
     <Compile Include="Recievers\UnreadContentReciever\UnreadContentReciever.cs" />
     <Compile Include="Recievers\UpdateImageFieldReciever\UpdateImageFieldReciever.cs" />
     <Compile Include="Recievers\UpdateLinkToItemFieldReciever\UpdateLinkToItemFieldReciever.cs" />
+    <Compile Include="Resources\ApprovalWorkflowResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApprovalWorkflowResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GalleryResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GalleryResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\NewsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ProjectResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="TimerJobs\ReminderBirthDayTimerJob.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -637,18 +657,6 @@
     <None Include="ListInstances\ConfidentialityLevelsListInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{379f51bc-5931-48f1-bf58-345cee4b6824}</SharePointProjectItemId>
     </None>
-    <None Include="ListInstances\DepartmentCalendar\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{9a23c395-8999-472b-9746-be0121e225db}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\DeptCalendar\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a1043164-8606-4fdb-9748-73c37e9ed86b}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\DeptDiscussions\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f230a567-13fd-4d19-b5f0-61c392a2cc6a}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\Discussions\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f5ada29e-ac1c-4743-83f4-69739cd725ca}</SharePointProjectItemId>
-    </None>
     <None Include="ListInstances\Icons\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3c8b9322-d74e-45ee-85d2-2dfa00c623b3}</SharePointProjectItemId>
     </None>
@@ -676,24 +684,8 @@
     <None Include="ListInstances\SiteMapMappings\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{854179a7-0ae9-44f7-a63c-4cdb780d505e}</SharePointProjectItemId>
     </None>
-    <None Include="ListInstances\StationeryApproval\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b57a23fe-aa31-4743-ae0d-9e991a2285b3}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\StationeryCategory\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c6cc5ed2-e417-4bb7-a4ce-7b7f2225e9a3}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\Statistics\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{e509098e-632b-49c7-b5ef-972ea87856ee}</SharePointProjectItemId>
-    </None>
     <None Include="ListInstances\TaskApproval\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{20c10f55-b2c9-40bd-935a-db6a34a88b8e}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\TimesheetApproval\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c573ef25-ffc4-4444-b477-fa6103e1d6e7}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\Timesheet\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{2092ac35-76f8-4ee2-b62d-9d1f09e37529}</SharePointProjectItemId>
-      <SubType>Designer</SubType>
     </None>
     <None Include="ListInstances\UnreadContent\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a0d661e1-40f9-4dc5-9f89-29feb3acefcb}</SharePointProjectItemId>
@@ -848,10 +840,6 @@
     <Content Include="ListDefinitions\EmailList\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\Schema.xml" />
-    <Content Include="ListInstances\StationeryApproval\Elements.xml" />
-    <Content Include="ListInstances\StationeryApproval\Schema.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Modules\AIAHtmlPages\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Sample.txt" />
     <Content Include="Resources\RequestFormResources.resx" />
@@ -861,22 +849,15 @@
     <Content Include="Features\AIA.Intranet.Infrastructure.Data\AIA.Intranet.Infrastructure.Data.Template.xml">
       <DependentUpon>AIA.Intranet.Infrastructure.Data.feature</DependentUpon>
     </Content>
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\logo_form.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\logo_form.png" />
     <Content Include="ListDefinitions\BuildingListDefinition\Buildings\Elements.xml" />
     <Content Include="ListDefinitions\BuildingListDefinition\Elements.xml" />
     <Content Include="ListDefinitions\BuildingListDefinition\Schema.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="ListInstances\DepartmentCalendar\Elements.xml" />
-    <Content Include="ListInstances\DepartmentCalendar\Schema.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="ListInstances\DeptCalendar\Elements.xml" />
-    <Content Include="ListInstances\StationeryCategory\Schema.xml" />
-    <Content Include="ListInstances\StationeryCategory\Elements.xml" />
     <Content Include="Resources\TaskResources.resx" />
     <Content Include="Images\1352171553_stock_task-recurring.png" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\discussion.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\discussion.png" />
     <Content Include="ContentTypes\CategoryContentType\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -941,12 +922,8 @@
     <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ImageFieldControl.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\share.png" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\Timesheet-Icon-16.png" />
-    <Content Include="ListInstances\TimesheetApproval\Elements.xml" />
-    <Content Include="ListInstances\TimesheetApproval\Schema.xml">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Images\AIA.Intranet.Infrastructure\share.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\Timesheet-Icon-16.png" />
     <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\spstd10.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
@@ -991,13 +968,13 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="CustomActions\UnreadContentNotificationRegister\Elements.xml" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\Status-Task-16.png" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\Status-Task-32.png" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\Thumb-Up-16.png" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\Thumb-Up-24.png" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\Thumb-Up-32.png" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\Thumb-Up-48.png" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\view.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\Status-Task-16.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\Status-Task-32.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\Thumb-Up-16.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\Thumb-Up-24.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\Thumb-Up-32.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\Thumb-Up-48.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\view.png" />
     <Content Include="Layouts\1033\jquery-1.8.2.min.js" />
     <Content Include="Layouts\1033\jquery.SPServices-0.7.2.js" />
     <Content Include="Layouts\1033\jquery.SPServices-0.7.2.min.js" />
@@ -1014,16 +991,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="ListInstances\Icons\Elements.xml" />
-    <Content Include="ListInstances\Statistics\Elements.xml" />
-    <Content Include="ListInstances\Statistics\Schema.xml" />
     <Content Include="ListInstances\TaskApproval\Elements.xml" />
     <Content Include="ListInstances\TaskApproval\Schema.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="ListInstances\Timesheet\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="ListInstances\Timesheet\Schema.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="ListInstances\UnreadContent\Elements.xml" />
@@ -1125,8 +1094,6 @@
     <Content Include="ListDefinitions\CommentTemplate\Elements.xml" />
     <Content Include="ListDefinitions\CommentTemplate\Schema.xml" />
     <Content Include="ListInstances\Category\Elements.xml" />
-    <Content Include="ListInstances\DeptDiscussions\Elements.xml" />
-    <Content Include="ListInstances\Discussions\Elements.xml" />
     <Content Include="ListInstances\NewsImages\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -1275,7 +1242,7 @@
     </Content>
     <Content Include="CustomActions\SecurityPageRegistry\Elements.xml" />
     <Content Include="CustomActions\VariablePicker\Elements.xml" />
-    <Content Include="Images\Hypertek.IOffice.Infrastructure\VariableEditor.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\VariableEditor.png" />
     <Content Include="Layouts\AIA.Intranet.Infrastructure\AutoAlertSettings.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
