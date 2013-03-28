@@ -113,9 +113,6 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Data
             }
         }
 
-
-      
-
         private string CreateDepartmentSite(string url, string tempalteName, string siteName,
             string title, string description, int departmentId)
         {
@@ -172,19 +169,6 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Data
                 CCIUtility.LogError(ex.Message, "AIA.Intranet.Infrastructure.Data");
             }
         }
-
-        //private void ProvisionSiteManagement(SPWeb web)
-        //{
-        //    try
-        //    {
-        //        Assembly assembly = Assembly.GetExecutingAssembly();
-        //        string xml = assembly.GetResourceTextFile("AIA.Intranet.Infrastructure.SiteManagerment.xml");
-
-        //        var subsites = SerializationHelper.DeserializeFromXml<WebDefinitionCollection>(xml);
-        //        web.ProvisionWebStructure(subsites);
-        //    }
-        //    catch{}
-        //}
 
         /// <summary>
         /// Add user to group
