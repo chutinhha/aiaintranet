@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="BannerViewer" List="113" Url="_catalogs/wp">
+    <File Path="BannerViewer\BannerViewer.webpart" Url="BannerViewer.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="[I-Office]" />
+    </File>
+  </Module>
+</Elements>

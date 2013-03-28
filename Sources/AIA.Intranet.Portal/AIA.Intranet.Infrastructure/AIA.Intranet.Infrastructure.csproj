@@ -71,8 +71,6 @@
     <Reference Include="Microsoft.SharePoint.Security" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Code\DepartmentProcessing.cs" />
-    <Compile Include="App_Code\JavaScript.cs" />
     <Compile Include="ContentTypes\CategoryContentType\CategoryContentTypeEventReceiver.cs" />
     <Compile Include="ContentTypes\TaskContentType\DepartmentTaskContentTypeEvent.cs" />
     <Compile Include="ContentTypes\TaskContentType\PrivateTaskContenTypeEvent.cs" />
@@ -396,6 +394,14 @@
     <Compile Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentResolver.aspx.designer.cs">
       <DependentUpon>UnreadContentResolver.aspx.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListDefinitions\BannerDefinition\BannerViewer\BannerViewer.cs" />
+    <Compile Include="ListDefinitions\BannerDefinition\BannerViewer\BannerViewerUserControl.ascx.cs">
+      <DependentUpon>BannerViewerUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListDefinitions\BannerDefinition\BannerViewer\BannerViewerUserControl.ascx.designer.cs">
+      <DependentUpon>BannerViewerUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Recievers\CompanyCalendarEventReceiver.cs" />
     <Compile Include="Layouts\AIA.Intranet.Infrastructure\AutoAlertSettings.aspx.cs">
       <DependentUpon>AutoAlertSettings.aspx</DependentUpon>
@@ -478,6 +484,19 @@
     <Compile Include="TimerJobs\ReminderBirthDayTimerJob.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ContentTypes\BannerContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3677fc8f-a31a-456b-ac63-e1dd996766c0}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\BannerDefinition\BannerInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43a205bb-eee9-4939-a968-867fb4967352}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\BannerDefinition\BannerViewer\BannerViewer.webpart" />
+    <None Include="ListDefinitions\BannerDefinition\BannerViewer\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7fc387a9-22a7-4116-8947-0e8651345074}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\BannerDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3b30d4a4-2328-4f55-84d4-f1811e9b44f3}</SharePointProjectItemId>
+    </None>
     <None Include="Modules\AIAHtmlPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{96893d58-df2f-471a-a0d8-e3f6b04cab6f}</SharePointProjectItemId>
     </None>
@@ -793,6 +812,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AppGlobalResources\Elements.xml" />
+    <Content Include="ContentTypes\BannerContentType\Elements.xml" />
     <Content Include="ContentTypes\BuildingContentType\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -814,12 +834,17 @@
     <EmbeddedResource Include="AppGlobalResources\ProjectResources.resx" />
     <EmbeddedResource Include="AppGlobalResources\RequestFormResources.resx" />
     <EmbeddedResource Include="AppGlobalResources\RoomBookingSystemResources.resx" />
-    <EmbeddedResource Include="StationerytApprovalWorkflowSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WorkingTooltApprovalWorkflowSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <Content Include="ListDefinitions\BannerDefinition\BannerViewer\BannerViewerUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ListDefinitions\BannerDefinition\BannerViewer\Elements.xml" />
+    <Content Include="ListDefinitions\BannerDefinition\EditDlg.htm" />
+    <Content Include="ListDefinitions\BannerDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\BannerDefinition\FileDlg.htm" />
+    <Content Include="ListDefinitions\BannerDefinition\BannerInstance\Elements.xml" />
+    <Content Include="ListDefinitions\BannerDefinition\Repair.aspx" />
+    <Content Include="ListDefinitions\BannerDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\BannerDefinition\Upload.aspx" />
     <Content Include="ListDefinitions\EmailList\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\Schema.xml" />
@@ -830,16 +855,8 @@
     <Content Include="Modules\AIAHtmlPages\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Sample.txt" />
     <Content Include="Resources\RequestFormResources.resx" />
-    <EmbeddedResource Include="RoomBookingSystem_ApprovalWorkflowSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Content Include="Modules\RoomBookingSystemWebPartPages\General.aspx.xml" />
     <Content Include="Resources\RoomBookingSystemResources.resx" />
-    <EmbeddedResource Include="VideoLibraryWebparts.xml" />
-    <EmbeddedResource Include="PictureLibraryWebParts.xml" />
-    <EmbeddedResource Include="RoomBookingSystemCustomSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Content Include="CustomActions\ClearCacheRegister\Elements.xml" />
     <Content Include="Features\AIA.Intranet.Infrastructure.Data\AIA.Intranet.Infrastructure.Data.Template.xml">
       <DependentUpon>AIA.Intranet.Infrastructure.Data.feature</DependentUpon>
@@ -855,18 +872,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="ListInstances\DeptCalendar\Elements.xml" />
-    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_IncomingDocument.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Content Include="ListInstances\StationeryCategory\Schema.xml" />
     <Content Include="ListInstances\StationeryCategory\Elements.xml" />
     <Content Include="Resources\TaskResources.resx" />
-    <EmbeddedResource Include="TimesheetApprovalWorkflowSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TimesheetSiteWebparts.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Content Include="Images\1352171553_stock_task-recurring.png" />
     <Content Include="Images\Hypertek.IOffice.Infrastructure\discussion.png" />
     <Content Include="ContentTypes\CategoryContentType\Elements.xml">
@@ -939,7 +947,6 @@
     <Content Include="ListInstances\TimesheetApproval\Schema.xml">
       <SubType>Designer</SubType>
     </Content>
-    <EmbeddedResource Include="OfficialDocumentCustomSettings.xml" />
     <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\spstd10.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
@@ -975,27 +982,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppGlobalResources\WebPartResources.resx" />
     <EmbeddedResource Include="NewsApprovalWorkflowSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PictureCustomSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentSite_HomepageWebparts.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_AdministrativeRegulation.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_OfficialForm.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_LegalDocument.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentSite_ApprovalWorkflowSettings_OutgoingDocument.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProjectTaskApprovalWorkflowSettings.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="TaskApprovalWorkflowSettings.xml">
@@ -1075,10 +1061,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GalleryResources.Designer.cs</LastGenOutput>
     </Content>
-    <EmbeddedResource Include="VideoCustomSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PictureWebParts.xml" />
     <Content Include="CustomActions\ADManagementRegister\Elements.xml" />
     <Content Include="CustomActions\AutoCreationReg\Elements.xml" />
     <Content Include="CustomActions\ItemDisscussionReg\Elements.xml">
@@ -1199,7 +1181,6 @@
     <Content Include="TEMPLATE\Pages\viewpage_webpart.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <EmbeddedResource Include="VideoWebParts.xml" />
     <Content Include="XML\fldtypes_EmailField.xml">
       <SubType>Designer</SubType>
     </Content>
