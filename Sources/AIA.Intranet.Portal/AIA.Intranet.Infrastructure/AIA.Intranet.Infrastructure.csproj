@@ -478,6 +478,9 @@
     <Compile Include="TimerJobs\ReminderBirthDayTimerJob.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Modules\AIAHtmlPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{96893d58-df2f-471a-a0d8-e3f6b04cab6f}</SharePointProjectItemId>
+    </None>
     <None Include="Properties\AIA.Intranet.Portal.snk" />
     <None Include="AppGlobalResources\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{48aa1506-4b8e-404e-a76c-e7a0fb95ddf3}</SharePointProjectItemId>
@@ -824,6 +827,8 @@
     <Content Include="ListInstances\StationeryApproval\Schema.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Modules\AIAHtmlPages\Elements.xml" />
+    <Content Include="Modules\AIAHtmlPages\Sample.txt" />
     <Content Include="Resources\RequestFormResources.resx" />
     <EmbeddedResource Include="RoomBookingSystem_ApprovalWorkflowSettings.xml">
       <SubType>Designer</SubType>
