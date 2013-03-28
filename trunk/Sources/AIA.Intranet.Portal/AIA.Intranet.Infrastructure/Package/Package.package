@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ad7e920b-099d-4260-9953-a25dc44eec3d" solutionId="ad7e920b-099d-4260-9953-a25dc44eec3d" resetWebServer="false" name="Hypertek.IOffice.Infrastructure" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ad7e920b-099d-4260-9953-a25dc44eec3d" solutionId="ad7e920b-099d-4260-9953-a25dc44eec3d" resetWebServer="false" name="AIA.Intranet.Infrastructure" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <assemblies>
     <projectOutputAssembly location="Hypertek.IOffice.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\AIA.Intranet.Common\AIA.Intranet.Common.csproj" />
     <projectOutputAssembly location="AIA.Intranet.Resources.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\AIA.Intranet.Resources\AIA.Intranet.Resources.csproj" />
