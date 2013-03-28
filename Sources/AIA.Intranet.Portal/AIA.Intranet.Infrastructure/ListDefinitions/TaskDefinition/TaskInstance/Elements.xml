@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Công việc"
-                OnQuickLaunch="TRUE"
-                TemplateType="10027"
-                Url="Lists/ITasks"
-                Description="[I-Office] - Task">
-  </ListInstance>
-</Elements>

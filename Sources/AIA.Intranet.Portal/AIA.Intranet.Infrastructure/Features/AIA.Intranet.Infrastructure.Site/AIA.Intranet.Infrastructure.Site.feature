@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a4c261e5-c332-4fd7-8488-70d0754b75eb" description="Hypertek.IOffice.Infrastructure.Site" featureId="a4c261e5-c332-4fd7-8488-70d0754b75eb" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.93d1341d-f4c7-4a24-a7fe-79a801e4cec9.FullName$" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="Hypertek.IOffice.Infrastructure.Site" version="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uVmVyc2lvbgQAAAAGX01ham9yBl9NaW5vcgZfQnVpbGQJX1JldmlzaW9uAAAAAAgICAgBAAAAAAAAAAAAAAACAAAACw==" deploymentPath="$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a4c261e5-c332-4fd7-8488-70d0754b75eb" description="AIA.Intranet.Infrastructure.Site" featureId="a4c261e5-c332-4fd7-8488-70d0754b75eb" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.93d1341d-f4c7-4a24-a7fe-79a801e4cec9.FullName$" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="AIA.Intranet.Infrastructure.Site" version="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uVmVyc2lvbgQAAAAGX01ham9yBl9NaW5vcgZfQnVpbGQJX1JldmlzaW9uAAAAAAgICAgBAAAAAAAAAAAAAAACAAAACw==" deploymentPath="$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
   <projectItems>
     <projectItemReference itemId="99108df2-9603-4719-bbd1-1d52c66952ad" />
     <projectItemReference itemId="6bfc5f21-e700-481a-aca4-d14a41456ffd" />
@@ -36,7 +36,6 @@
     <projectItemReference itemId="14d19f63-6a4d-4366-9ca3-b75aa6e11338" />
     <projectItemReference itemId="866c109e-f2c0-4f81-92bd-c462aefc962d" />
     <projectItemReference itemId="3cef6bde-b527-46e9-81fa-20102ea2bb5b" />
-    <projectItemReference itemId="54588841-d1d2-4236-b76c-d3ccdd10dc08" />
     <projectItemReference itemId="854179a7-0ae9-44f7-a63c-4cdb780d505e" />
     <projectItemReference itemId="3d5e6c12-47a5-4f48-b7ab-445b44131610" />
     <projectItemReference itemId="d2d67361-fe76-4439-82eb-e02642d88961" />
@@ -46,11 +45,7 @@
     <projectItemReference itemId="a0d661e1-40f9-4dc5-9f89-29feb3acefcb" />
     <projectItemReference itemId="05c0ea24-7d56-49ad-92d4-64ac5eee5afa" />
     <projectItemReference itemId="8a1dc48a-48ff-46dd-8891-00465d449a47" />
-    <projectItemReference itemId="ac6ee9a1-639c-4d8f-a343-1d585762c144" />
-    <projectItemReference itemId="09cc773a-8410-469e-a4dc-7117a67ff01c" />
-    <projectItemReference itemId="b6306526-df55-4eaf-9ac8-0393ca4641ea" />
     <projectItemReference itemId="dbd7b19d-dddc-4fa1-9999-d459f9d87e4f" />
-    <projectItemReference itemId="20c10f55-b2c9-40bd-935a-db6a34a88b8e" />
     <projectItemReference itemId="3c8b9322-d74e-45ee-85d2-2dfa00c623b3" />
     <projectItemReference itemId="b5669cca-6ea7-49d8-944b-29112dd443ba" />
     <projectItemReference itemId="a7bec3be-42e5-4fd1-93b8-e5087bb78624" />
@@ -58,5 +53,9 @@
     <projectItemReference itemId="6a8b7546-49d7-4737-a713-0904ee651f95" />
     <projectItemReference itemId="e6622b27-8ca8-4b41-b820-baeec11fedf3" />
     <projectItemReference itemId="aa77299f-64e9-490d-812a-319a0b122e8e" />
+    <projectItemReference itemId="3b30d4a4-2328-4f55-84d4-f1811e9b44f3" />
+    <projectItemReference itemId="43a205bb-eee9-4939-a968-867fb4967352" />
+    <projectItemReference itemId="7fc387a9-22a7-4116-8947-0e8651345074" />
+    <projectItemReference itemId="3677fc8f-a31a-456b-ac63-e1dd996766c0" />
   </projectItems>
 </feature>
