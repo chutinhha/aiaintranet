@@ -4,6 +4,6 @@
                 OnQuickLaunch="TRUE"
                 TemplateType="10004"
                 Url="Lists/Banners"
-                Description="">
+                Description="My List Instance">
   </ListInstance>
 </Elements>

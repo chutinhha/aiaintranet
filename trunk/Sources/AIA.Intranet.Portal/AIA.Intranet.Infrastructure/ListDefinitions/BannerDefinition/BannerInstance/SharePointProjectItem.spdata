@@ -3,7 +3,4 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="BannerInstance\" Type="ElementManifest" />
   </Files>
-  <ExtensionData>
-    <ExtensionDataItem Key="DeploymentConflictResolutionBehavior" Value="Automatic" />
-  </ExtensionData>
 </ProjectItem>
