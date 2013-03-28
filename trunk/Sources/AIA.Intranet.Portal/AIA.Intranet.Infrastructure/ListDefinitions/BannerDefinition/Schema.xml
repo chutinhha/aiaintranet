@@ -2,15 +2,23 @@
 <List xmlns:ows="Microsoft SharePoint" Title="AIA.Intranet.Infrastructure - BannerDefinition" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-BannerDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F21400282be23d8739489c919d1610f2fc0840" Name="BannerContentType" Group="[I-Office]" Description="[I-Office] - Banner" Inherits="TRUE" Version="0">
+
+      <!-- Parent ContentType: Image (0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F214) -->
+      <ContentType ID="0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F21400282bd23e8729479d917a1610ccea0640"
+                  Name="[T2V Group] - BannerContentType"
+                   Group="[T2V Group]"
+                   Description="[T2V Group] - Banner Content Type"
+                   Inherits="TRUE"
+                   Version="0">
         <FieldRefs>
           <RemoveFieldRef ID="{b66e9b50-a28e-469b-b1a0-af0e45486874}" Name="Keywords" />
-          <RemoveFieldRef ID="{a5d2f824-bc53-422e-87fd-765939d863a5}" Name="ImageCreateDate" />
+          <RemoveFieldRef ID="{a5d2f824-bc53-422e-87fd-765939d863a5}"  Name="ImageCreateDate" />
           <FieldRef ID="{6500A5BA-BD48-405e-AD5A-276F1A63311E}" Name="Active" DisplayName="Active" />
-          <FieldRef ID="{C725C79F-C024-4f43-9699-9B424BB8093E}" Name="RelatedLink" DisplayName="Related Link" />
-          <FieldRef ID="{428EC289-C475-453a-8312-560C33ABCEED}" Name="OrderNumber" DisplayName="Order Number" />
+          <FieldRef ID="{C725C79F-C024-4f43-9699-9B424BB8093E}" Name="RelatedLink" DisplayName="Related Link"/>
+          <FieldRef ID="{428EC289-C475-453a-8312-560C33ABCEED}" Name="OrderNumber" DisplayName="Order Number"/>
         </FieldRefs>
       </ContentType>
+
     </ContentTypes>
     <Fields>
       <Field ID="{4b1bf6c6-4f39-45ac-acd5-16fe7a214e5e}" Type="Text" Name="TemplateUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Template_Link;" XName="TemplateUrl" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" PITarget="mso-infoPathSolution" PIAttribute="href" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TemplateUrl">

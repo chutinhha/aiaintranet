@@ -21,7 +21,7 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
-    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
     <TokenReplacementFileExtensions>$(TokenReplacementFileExtensions);xml;aspx;ascx;webpart;dwp;ashx;</TokenReplacementFileExtensions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -539,12 +539,6 @@
     <None Include="ContentTypes\NavigationItemContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d86f0736-c4fc-499f-8308-79655650d651}</SharePointProjectItemId>
     </None>
-    <None Include="ContentTypes\OutgoingDocumentContentType\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b6306526-df55-4eaf-9ac8-0393ca4641ea}</SharePointProjectItemId>
-    </None>
-    <None Include="ContentTypes\PictureCategoryContentType\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6895e782-9690-4dfc-a65f-92c90d0b9d48}</SharePointProjectItemId>
-    </None>
     <None Include="ContentTypes\TaskContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8a1dc48a-48ff-46dd-8891-00465d449a47}</SharePointProjectItemId>
     </None>
@@ -645,15 +639,6 @@
     <None Include="ListDefinitions\EmailList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e6622b27-8ca8-4b41-b820-baeec11fedf3}</SharePointProjectItemId>
     </None>
-    <None Include="ListDefinitions\TaskDefinition\TaskInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{09cc773a-8410-469e-a4dc-7117a67ff01c}</SharePointProjectItemId>
-    </None>
-    <None Include="ListDefinitions\TaskDefinition\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ac6ee9a1-639c-4d8f-a343-1d585762c144}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\Category\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{54588841-d1d2-4236-b76c-d3ccdd10dc08}</SharePointProjectItemId>
-    </None>
     <None Include="ListInstances\ConfidentialityLevelsListInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{379f51bc-5931-48f1-bf58-345cee4b6824}</SharePointProjectItemId>
     </None>
@@ -683,9 +668,6 @@
     </None>
     <None Include="ListInstances\SiteMapMappings\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{854179a7-0ae9-44f7-a63c-4cdb780d505e}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\TaskApproval\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{20c10f55-b2c9-40bd-935a-db6a34a88b8e}</SharePointProjectItemId>
     </None>
     <None Include="ListInstances\UnreadContent\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a0d661e1-40f9-4dc5-9f89-29feb3acefcb}</SharePointProjectItemId>
@@ -823,7 +805,9 @@
     </Content>
     <Content Include="AppGlobalResources\AIA.Intranet.Infrastructure.CustomFields.LookupFieldWithPicker.en-US.resx" />
     <Content Include="AppGlobalResources\AIA.Intranet.Infrastructure.CustomFields.LookupFieldWithPicker.resx" />
-    <EmbeddedResource Include="AppGlobalResources\ProjectResources.resx" />
+    <EmbeddedResource Include="AppGlobalResources\ProjectResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="AppGlobalResources\RequestFormResources.resx" />
     <EmbeddedResource Include="AppGlobalResources\RoomBookingSystemResources.resx" />
     <Content Include="ListDefinitions\BannerDefinition\BannerViewer\BannerViewerUserControl.ascx">
@@ -867,10 +851,6 @@
     <Content Include="ContentTypes\NavigationItemContentType\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="ContentTypes\OutgoingDocumentContentType\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="ContentTypes\PictureCategoryContentType\Elements.xml" />
     <Content Include="ContentTypes\TaskContentType\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -985,16 +965,7 @@
     <Content Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentResolver.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="ListDefinitions\TaskDefinition\Elements.xml" />
-    <Content Include="ListDefinitions\TaskDefinition\TaskInstance\Elements.xml" />
-    <Content Include="ListDefinitions\TaskDefinition\Schema.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="ListInstances\Icons\Elements.xml" />
-    <Content Include="ListInstances\TaskApproval\Elements.xml" />
-    <Content Include="ListInstances\TaskApproval\Schema.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="ListInstances\UnreadContent\Elements.xml" />
     <Content Include="ListInstances\UnreadContent\Schema.xml" />
     <Content Include="ListInstances\ConfidentialityLevelsListInstance\Elements.xml">
@@ -1093,7 +1064,6 @@
     </Content>
     <Content Include="ListDefinitions\CommentTemplate\Elements.xml" />
     <Content Include="ListDefinitions\CommentTemplate\Schema.xml" />
-    <Content Include="ListInstances\Category\Elements.xml" />
     <Content Include="ListInstances\NewsImages\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
