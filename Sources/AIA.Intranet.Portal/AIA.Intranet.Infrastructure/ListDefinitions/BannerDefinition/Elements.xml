@@ -3,13 +3,13 @@
     <!-- Do not change the value of the Name attribute below. If it does not match the folder name of the List Definition project item, an error will occur when the project is run. -->
     <ListTemplate
         Name="BannerDefinition"
-        Type="10004"
+        Type="12001"
         BaseType="1"
         OnQuickLaunch="TRUE"
         SecurityBits="11"
         Sequence="110"
+        DisplayName="[T2V Group] - Banner Definition"
         Hidden="TRUE"
-        DisplayName="Banner Definition"
         Description=""
         Image="/_layouts/images/itdl.png"
         DocumentTemplate="121"/>

@@ -11,12 +11,14 @@
          StaticName="OrderNumber" DisplayName="Order Number" Type="Number" ShowInNewForm="TRUE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" Sortable="FALSE" />
 
 
-  <!-- Parent ContentType: Image (0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F214) -->
-  <ContentType ID="0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F21400282be23d8739489c919d1610f2fc0840"
+  <!-- Parent ContentType: Image (0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F214) --><!--
+  <ContentType ID="0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F21400282be23d8739489c919d1610f2fc0840"-->
+
+  <!-- Parent ContentType: Picture (0x010102) -->
+  <ContentType ID="0x01010200b26c645a40bc449997f77025ba60d607"
                    Name="[T2V Group] - BannerContentType"
                    Group="[T2V Group]"
                    Description="[T2V Group] - Banner Content Type"
-                   Inherits="TRUE"
                    Version="0">
     <FieldRefs>
       <RemoveFieldRef ID="{b66e9b50-a28e-469b-b1a0-af0e45486874}" Name="Keywords" />
