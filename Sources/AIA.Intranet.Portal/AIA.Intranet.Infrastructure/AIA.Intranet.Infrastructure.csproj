@@ -494,19 +494,27 @@
       <DependentUpon>ProjectResources.resx</DependentUpon>
     </Compile>
     <Compile Include="TimerJobs\ReminderBirthDayTimerJob.cs" />
+    <Compile Include="WebParts\BannerSlideShow\BannerSlideShow.cs" />
+    <Compile Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx.cs">
+      <DependentUpon>BannerSlideShowUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx.designer.cs">
+      <DependentUpon>BannerSlideShowUserControl.ascx.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ContentTypes\BannerContentType\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{3677fc8f-a31a-456b-ac63-e1dd996766c0}</SharePointProjectItemId>
+      <SharePointProjectItemId>{918ca61d-b66c-4939-ab59-c54bda141f2f}</SharePointProjectItemId>
     </None>
-    <None Include="ListDefinitions\BannerDefinition\BannerInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{31b33565-60ac-4d4c-8537-b269110617b4}</SharePointProjectItemId>
-    </None>
-    <None Include="ListDefinitions\BannerDefinition\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b376ed4f-8907-482b-b5f5-0d9f86c6ba82}</SharePointProjectItemId>
+    <None Include="ListInstances\BannerLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5d73abca-f75d-4369-b0ae-90265626c236}</SharePointProjectItemId>
     </None>
     <None Include="Modules\AIAHtmlPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{96893d58-df2f-471a-a0d8-e3f6b04cab6f}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\TopBanner\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34f13b27-55bb-4b12-8d76-0093797292c0}</SharePointProjectItemId>
     </None>
     <None Include="Properties\AIA.Intranet.Portal.snk" />
     <None Include="AppGlobalResources\SharePointProjectItem.spdata">
@@ -627,44 +635,11 @@
     <None Include="ListDefinitions\EmailList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e6622b27-8ca8-4b41-b820-baeec11fedf3}</SharePointProjectItemId>
     </None>
-    <None Include="ListInstances\ConfidentialityLevelsListInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{379f51bc-5931-48f1-bf58-345cee4b6824}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\Icons\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{3c8b9322-d74e-45ee-85d2-2dfa00c623b3}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\IncomingDocumentTypesListInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f463eda3-6112-47ba-9960-536367e774b7}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\LegislationTypesListInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{95aa2778-7b51-4b76-8758-cfb3c29a347f}</SharePointProjectItemId>
-    </None>
     <None Include="ListInstances\NewsImages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d016cd49-20c7-4a3e-961d-93bd3986edb4}</SharePointProjectItemId>
     </None>
-    <None Include="ListInstances\OrganizationsListInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{cda7e769-49a3-43ca-97ca-c6241d6151b4}</SharePointProjectItemId>
-    </None>
     <None Include="ListInstances\PagesLibrary\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b15b53a5-3ae0-4300-836b-b05bdeb03d0d}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\PriorityLevelsListInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{40b81203-ce64-429f-b433-cdc73cf67f40}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\Shortcut\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{866c109e-f2c0-4f81-92bd-c462aefc962d}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\SiteMapMappings\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{854179a7-0ae9-44f7-a63c-4cdb780d505e}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\UnreadContent\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a0d661e1-40f9-4dc5-9f89-29feb3acefcb}</SharePointProjectItemId>
-    </None>
-    <None Include="Modules\IconsLibrary\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b5669cca-6ea7-49d8-944b-29112dd443ba}</SharePointProjectItemId>
-    </None>
-    <None Include="Modules\OfficialDocumentWebPartPages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f362ed66-b498-43ec-b680-d8db798c2454}</SharePointProjectItemId>
     </None>
     <None Include="Modules\NewsImagesUpload\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0b0325cd-2f40-4965-864e-e217d5729e5c}</SharePointProjectItemId>
@@ -672,14 +647,8 @@
     <None Include="Modules\NewsWebPartPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5e1e44dd-4eaf-46fe-8430-8bb090d089c2}</SharePointProjectItemId>
     </None>
-    <None Include="Modules\RoomBookingSystemWebPartPages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f1c752be-5dda-4c32-bb2a-7a432b2d4c46}</SharePointProjectItemId>
-    </None>
     <None Include="Modules\StaticPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a7bec3be-42e5-4fd1-93b8-e5087bb78624}</SharePointProjectItemId>
-    </None>
-    <None Include="Modules\WebPartPageDefault\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{928f8c4b-fa03-467a-a048-1878da02fb97}</SharePointProjectItemId>
     </None>
     <None Include="Modules\WebpartPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{14d19f63-6a4d-4366-9ca3-b75aa6e11338}</SharePointProjectItemId>
@@ -751,6 +720,10 @@
     <None Include="TEMPLATE\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{925a9ca1-fa7f-48d8-80a8-e88ae84abb75}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\BannerSlideShow\BannerSlideShow.webpart" />
+    <None Include="WebParts\BannerSlideShow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3340c9f9-df22-4e95-a45a-c17b3c467af7}</SharePointProjectItemId>
+    </None>
     <None Include="XML\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e05dc1e0-8398-4923-b68a-b152e6fad092}</SharePointProjectItemId>
     </None>
@@ -798,20 +771,69 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppGlobalResources\RequestFormResources.resx" />
     <EmbeddedResource Include="AppGlobalResources\RoomBookingSystemResources.resx" />
-    <Content Include="ListDefinitions\BannerDefinition\BannerInstance\Elements.xml" />
-    <Content Include="ListDefinitions\BannerDefinition\EditDlg.htm" />
-    <Content Include="ListDefinitions\BannerDefinition\Elements.xml" />
-    <Content Include="ListDefinitions\BannerDefinition\FileDlg.htm" />
-    <Content Include="ListDefinitions\BannerDefinition\Repair.aspx" />
-    <Content Include="ListDefinitions\BannerDefinition\Schema.xml" />
-    <Content Include="ListDefinitions\BannerDefinition\Upload.aspx" />
+    <Content Include="ControlTemplates\AIARenderTemplate.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_next.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_prev.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_scroll_back.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_scroll_forward.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\aialogo.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\all_site.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\black_transparent.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\career.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\createcontent.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\excel.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\folder_open.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\head.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\head_bg.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\icons.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\itann.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\itgen.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\loader.gif" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\login_bg.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\main_content.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\menu_right_bg.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\ms-dlgTitle.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\news_large_bg.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\opa75.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\pdf.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\printer.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\p_list_left.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\recycle_Bin.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\space.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\sprites_x.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\tab_link.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\images\workflows.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\slideshow\1.jpg" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\slideshow\2.jpg" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\slideshow\3.jpg" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\slideshow\4.jpg" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\slideshow\5.jpg" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\slideshow\space.png" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\styles\corev4_edit.css" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\styles\jquery.ad-gallery.css" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\styles\menutop.css" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\styles\popupForm.css" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\styles\style-ie7.css" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\styles\style-ie8.css" />
+    <Content Include="Images\AIA.Intranet.Infrastructure\styles\styles.css" />
+    <Content Include="Layouts\1033\jquery.ad-gallery.js" />
+    <Content Include="Layouts\1033\slimScroll.js" />
     <Content Include="ListDefinitions\EmailList\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\Schema.xml" />
+    <Content Include="ListInstances\BannerLibrary\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Sample.txt" />
+    <Content Include="Modules\TopBanner\1.jpg" />
+    <Content Include="Modules\TopBanner\2.jpg" />
+    <Content Include="Modules\TopBanner\3.jpg" />
+    <Content Include="Modules\TopBanner\4.jpg" />
+    <Content Include="Modules\TopBanner\5.jpg" />
+    <Content Include="Modules\TopBanner\Elements.xml" />
+    <Content Include="Modules\TopBanner\space.png" />
     <Content Include="Resources\RequestFormResources.resx" />
-    <Content Include="Modules\RoomBookingSystemWebPartPages\General.aspx.xml" />
     <Content Include="Resources\RoomBookingSystemResources.resx" />
     <Content Include="CustomActions\ClearCacheRegister\Elements.xml" />
     <Content Include="Features\AIA.Intranet.Infrastructure.Data\AIA.Intranet.Infrastructure.Data.Template.xml">
@@ -891,6 +913,10 @@
     <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\spstd10.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
+    <Content Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\BannerSlideShow\Elements.xml" />
     <Content Include="XSL\fldtypes_TimesheetField.xsl" />
     <EmbeddedResource Include="AppGlobalResources\AnnouncementResources.resx" />
     <EmbeddedResource Include="AppGlobalResources\ApprovalWorkflowResources.resx" />
@@ -949,28 +975,12 @@
     <Content Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentResolver.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="ListInstances\Icons\Elements.xml" />
-    <Content Include="ListInstances\UnreadContent\Elements.xml" />
-    <Content Include="ListInstances\UnreadContent\Schema.xml" />
-    <Content Include="ListInstances\ConfidentialityLevelsListInstance\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="ListInstances\IncomingDocumentTypesListInstance\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="ListInstances\LegislationTypesListInstance\Elements.xml" />
-    <Content Include="ListInstances\OrganizationsListInstance\Elements.xml" />
-    <Content Include="ListInstances\PriorityLevelsListInstance\Elements.xml" />
-    <Content Include="Modules\IconsLibrary\task.png" />
-    <Content Include="Modules\IconsLibrary\Elements.xml" />
-    <Content Include="Modules\OfficialDocumentWebPartPages\Home.aspx.xml" />
     <Content Include="Modules\NewsImagesUpload\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Modules\NewsImagesUpload\ioffice-news-thumb.jpg" />
     <Content Include="Modules\StaticPages\controls.html" />
     <Content Include="Modules\StaticPages\Elements.xml" />
-    <Content Include="Modules\IconsLibrary\timesheets.png" />
     <Content Include="Resources\OfficialDocumentResources.resx">
       <SubType>Designer</SubType>
     </Content>
@@ -978,7 +988,6 @@
     <EmbeddedResource Include="WelcomeNews.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Content Include="ListInstances\Shortcut\Schema.xml" />
     <Content Include="Modules\NewsImagesUpload\ioffice-news-thumb_jpg.jpg" />
     <Content Include="Recievers\UnreadContentReciever\Elements.xml" />
     <Content Include="Resources\GalleryResources.resx">
@@ -1051,12 +1060,7 @@
     <Content Include="ListInstances\NewsImages\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="ListInstances\SiteMapMappings\Elements.xml" />
-    <Content Include="ListInstances\SiteMapMappings\Schema.xml" />
     <Content Include="Modules\NewsWebPartPages\Home.aspx.xml" />
-    <Content Include="Modules\WebPartPageDefault\Pages.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Modules\WebpartPages\Pages.xml" />
     <EmbeddedResource Include="NewsCustomSettings.xml">
       <SubType>Designer</SubType>
@@ -1134,7 +1138,6 @@
     <Content Include="ListInstances\PagesLibrary\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="ListInstances\Shortcut\Elements.xml" />
     <EmbeddedResource Include="ListPermissions.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1181,9 +1184,6 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="CustomActions\ApproveRejectSelection\Elements.xml" />
-    <Content Include="ControlTemplates\IOfficeRenderTemplate.ascx">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
     <Content Include="CustomActions\AutoAlertAction\Elements.xml" />
     <Content Include="CustomActions\CloneListRegistry\Elements.xml" />
     <Content Include="CustomActions\DelegateControls\Elements.xml" />

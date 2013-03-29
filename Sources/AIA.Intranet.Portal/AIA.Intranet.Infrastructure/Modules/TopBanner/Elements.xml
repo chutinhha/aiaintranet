@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="TopBanner" Url="BannerLibrary">
+    
+  <File Path="TopBanner\space.png" Url="space.png" Type="GhostableInLibrary" />
+  <File Path="TopBanner\1.jpg" Url="1.jpg" Type="GhostableInLibrary" />
+  <File Path="TopBanner\2.jpg" Url="2.jpg" Type="GhostableInLibrary" />
+  <File Path="TopBanner\3.jpg" Url="3.jpg" Type="GhostableInLibrary" />
+  <File Path="TopBanner\4.jpg" Url="4.jpg" Type="GhostableInLibrary" />
+  <File Path="TopBanner\5.jpg" Url="5.jpg" Type="GhostableInLibrary" />
+</Module>
+</Elements>

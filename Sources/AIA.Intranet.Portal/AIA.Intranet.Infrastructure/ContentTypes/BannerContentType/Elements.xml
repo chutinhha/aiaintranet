@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-
+  
   <Field ID="{6500A5BA-BD48-405e-AD5A-276F1A63311E}" UniqueId="TRUE" Name="Active" Group="[T2V Group]"
             StaticName="Active" DisplayName="Active" Type="Boolean" ShowInNewForm="TRUE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" Sortable="FALSE" />
 
@@ -11,21 +11,21 @@
          StaticName="OrderNumber" DisplayName="Order Number" Type="Number" ShowInNewForm="TRUE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" Sortable="FALSE" />
 
 
-  <!-- Parent ContentType: Image (0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F214) --><!--
-  <ContentType ID="0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F21400282be23d8739489c919d1610f2fc0840"-->
-
   <!-- Parent ContentType: Picture (0x010102) -->
-  <ContentType ID="0x01010200b26c645a40bc449997f77025ba60d607"
-                   Name="[T2V Group] - BannerContentType"
-                   Group="[T2V Group]"
-                   Description="[T2V Group] - Banner Content Type"
-                   Version="0">
+  <ContentType ID="0x01010200ec98bbf978904280be10a8bbde810ef7"
+               Name="[T2V Group] - Banner Content Type"
+               Group="[T2V Group]"
+               Description=""
+               Version="0">
     <FieldRefs>
+      
       <RemoveFieldRef ID="{b66e9b50-a28e-469b-b1a0-af0e45486874}" Name="Keywords" />
       <RemoveFieldRef ID="{a5d2f824-bc53-422e-87fd-765939d863a5}"  Name="ImageCreateDate" />
+      <RemoveFieldRef Name="Description" ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" />
       <FieldRef ID="{6500A5BA-BD48-405e-AD5A-276F1A63311E}" Name="Active" DisplayName="Active" />
       <FieldRef ID="{C725C79F-C024-4f43-9699-9B424BB8093E}" Name="RelatedLink" DisplayName="Related Link"/>
       <FieldRef ID="{428EC289-C475-453a-8312-560C33ABCEED}" Name="OrderNumber" DisplayName="Order Number"/>
+
     </FieldRefs>
   </ContentType>
 </Elements>

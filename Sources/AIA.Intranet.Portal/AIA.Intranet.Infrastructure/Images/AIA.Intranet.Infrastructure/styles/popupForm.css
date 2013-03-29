@@ -1,0 +1,480 @@
+/* POPUP FORM ****************/
+.ms-dlgContent{
+	background:#fff;
+	border:1px solid #161D25;
+	position:absolute
+}
+.ms-dlgBorder{
+	border:1px solid #0072BC}
+.ms-hidden{
+	width:1px;
+	height:1px;
+	overflow:hidden;
+	position:absolute;
+	top:-2000px;
+	word-wrap: normal;
+	z-index:3}
+.ms-dlgTitle{
+	background: #21374C url("../_layouts/images/bgximg.png") repeat-x scroll 0 -51px;
+	height:32px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.ms-dlgTitleText{
+	color:#FFFFFF;
+	float:left;
+	font-family:Verdana;
+	font-size:1.3em;
+	font-weight:normal;
+	line-height:1.2;
+	overflow:hidden;
+	padding-left: 10px;
+	padding-top: 7px;
+	text-overflow:ellipsis}
+.ms-dlgTitleBtns{
+	float:right;
+	padding-right:2px;
+	padding-top:2px;}
+.ms-dlgTitle{
+	cursor:default;
+	white-space:nowrap;
+}
+.ms-dlgCloseBtn span{ border:1px solid transparent;
+	cursor:pointer;
+}
+.ms-dlgCloseBtn span:hover
+{ border-color:#8b929a;
+background:url("../_layouts/images/bgximg.png") repeat-x -0px -489px;
+}
+.ms-dlgCloseBtn span{
+	cursor:pointer;
+	border:1px solid transparent;
+}
+.ms-dlgCloseBtn span:hover{ border-color:#8b929a;
+background:url("../_layouts/images/bgximg.png") repeat-x -0px -489px;
+}
+
+.ms-dlgFrameContainer
+{overflow:auto;
+}
+.ms-dlgFrame
+{
+width:100%;
+height:100%;
+border:none;
+}
+body.v4master{
+	height:100%;
+	overflow:hidden;
+	width:100%;
+}
+body #aspnetForm{
+height:100%;
+}
+
+.ms-dialog .s4-notdlg{display:none !important}
+a.ms-skip, a.ms-TurnOnAcc{
+	left:2px;
+}
+.ms-hidden,a.ms-skip,a:hover.ms-skip,a:visited.ms-skip,a.ms-TurnOnAcc,a.ms-SkiptoMainContent,a.ms-SkiptoNavigation{
+position:absolute;
+top:-2000px;
+width:1px;
+height:1px;
+overflow:hidden;
+z-index:3;
+word-wrap:normal;
+}
+.ms-dialog .s4-notdlg{display:none !important}
+a.ms-TurnOffAcc{right:150px}
+a.ms-skip:active, a.ms-skip:focus, a.ms-TurnOnAcc:active, a.ms-TurnOnAcc:focus, a.ms-TurnOffAcc, a.ms-SkiptoMainContent:active, a.ms-SkiptoMainContent:focus, a.ms-SkiptoNavigation:active, a.ms-SkiptoNavigation:focus{background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    height: auto;
+    padding: 2px 4px;
+    position: absolute;
+    top: 2px;
+    width: auto;
+    z-index: 12;}
+.ms-dialog .s4-notdlg{display:none !important}
+.ms-hidden,a.ms-skip,a:hover.ms-skip,a:visited.ms-skip,a.ms-TurnOnAcc,a.ms-SkiptoMainContent,a.ms-SkiptoNavigation{
+position:absolute;
+top:-2000px;
+width:1px;
+height:1px;
+overflow:hidden;
+z-index:3;
+word-wrap:normal;
+}
+a.ms-SkiptoMainContent{
+	right:2px;}
+body #RibbonContainer.loaded{
+	height:auto !important
+}
+
+.ms-dialog body #s4-ribbonrow {
+    background-image: none !important;
+}
+body #s4-ribbonrow {
+    background-color: #21374C;
+    min-height: 43px;
+    overflow-y: hidden;
+}
+.s4-ribbonrowhidetitle {
+    height: 135px;
+}
+.s4-pr {
+    width: 100%;
+}
+body #s4-ribboncont {
+    background: url("../_layouts/images/bgximg.png") repeat-x scroll 0 -565px transparent;
+    padding: 0;
+}
+.ms-cui-ribbon, .ms-cui-menu, .ms-cui-toolbar-toolbar{
+	color: #6C6E70;
+    font-family: "Segoe UI",Tahoma,Verdana,sans-serif;
+    font-size: 8pt;
+}
+.ms-cui-hidden{
+	height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: -2000px;
+    width: 1px;
+    word-wrap: normal;
+}
+.ms-cui-topBar1{
+	position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.ms-cui-qat-container{
+	left: 0;
+    position: absolute;
+    top: 0;
+}
+.ms-cui-topBar2{
+	border-bottom: 1px solid #CAD2DB;
+    height: 43px;
+	background:#21374C
+}
+.ms-cui-topBar2 .ms-cui-jewel-container {
+    margin-top: 20px;
+    padding-right: 3px;
+}
+.ms-cui-jewel-container {
+    height: 23px;
+    white-space: nowrap;
+}
+.ms-cui-TabRowLeft, .ms-cui-jewel-container {
+    float: left;
+}
+.ms-cui-TabRowLeft, .ms-cui-QATRowCenter {
+    float: left;
+}
+.ms-cui-TabRowLeft {
+    font-size: 0;
+    margin-top: 19px;
+}
+.ms-cui-TabRowLeft, .ms-cui-QATRowCenter {
+    float: left;
+}
+.ms-cui-TabRowLeft, .ms-cui-jewel-container {
+    float: left;
+}
+.ms-dialog .s4-notdlg {
+    display: none !important;
+}
+.ms-cui-tts, .ms-cui-tts-scale-1, .ms-cui-tts-scale-2 {
+    display: block;
+    float: left;
+    height: 44px;
+    list-style-type: none;
+    margin: 0 0 -1px;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+}
+.ms-dialog .ms-cui-tts {
+    padding-left: 8px !important;
+}
+.ms-cui-tt, .ms-cui-cg {
+    display: block;
+    float: left;
+    height: 42px;
+    list-style-type: none;
+    margin: 0 2px 2px 0;
+    padding: 0;
+}
+.ms-cui-ribbon a, .ms-cui-menu a, .ms-cui-toolbar-toolbar a {
+    text-decoration: none;
+}
+.ms-cui-tt-s > .ms-cui-tt-a {
+    background-color: #FFFFFF;
+    border-color: #B6BABF;
+    color: #23272C !important;
+	float:left;
+	margin:16px 0 0 10px
+}
+.ms-cui-tt-span {
+    border-top: 1px solid transparent;
+    display: block;
+    padding: 4px 10px;
+    text-align: center;
+}
+.ms-cui-tts > .ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span {
+    padding-bottom: 6px;
+}
+.ms-cui-tabBody {
+    background: url("../_layouts/images/bgximg.png") repeat-x scroll 0 -882px #FFFFFF;
+    border-bottom: 1px solid #898D92;
+    border-style: solid;
+    border-width: 0 0 1px;
+    height: 90px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.ms-cui-group {
+    float: left;
+    height: 90px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+	/****************** ad new*/
+	border-right: 1px solid #E7E7E8;
+	margin-top:1px
+}
+.ms-cui-groupContainer {
+    display: inline-block;
+	line-height:12px
+}
+.ms-cui-groupBody {
+    display: block;
+    height: 71px;
+    padding: 2px 3px 0;
+    text-align: center;
+}
+.ms-cui-layout {
+    display: inline-block;
+}
+.ms-cui-section, .ms-cui-section-alignmiddle {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+.ms-cui-row, .ms-cui-row-onerow, .ms-cui-row-tworowmiddle, .ms-cui-row-tworow {
+    display: block;
+}
+.ms-cui-ctl-large {
+    display: inline-block;
+    margin-left: 1px;
+    margin-right: 1px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+}
+.ms-cui-ribbon a, .ms-cui-menu a, .ms-cui-toolbar-toolbar a {
+    text-decoration: none;
+}
+a.ms-cui-ctl-large {
+    border: 1px solid transparent;
+    cursor: default;
+    height: 63px;
+    padding: 2px 0;
+}
+.ms-cui-ctl-large:hover,.ms-cui-ctl-light-hoveredOver,.ms-cui-ctl-medium:hover,.ms-cui-ctl:hover,.ms-cui-mrusb-selecteditem.ms-cui-ctl-light-hoveredOver a,.ms-cui-ctl-thin:hover{
+border-color:#f1c43f !important;
+background-color:#fdeeb3;
+}
+.ms-cui-ctl-largeIconContainer {
+    display: block;
+    height: 33px;
+    padding: 2px 4px 0;
+}
+.ms-cui-img-container, .ms-cui-img-cont-float {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    z-index: 10;
+}
+.ms-cui-img-cont-float {
+    display: inline-block;
+}
+.ms-cui-img-32by32 {
+    height: 32px;
+    width: 32px;
+}
+.ms-cui-row, .ms-cui-row-tworow {
+    height: 22px;
+    margin-bottom: 2px;
+}
+
+.ms-cui-ctl, a.ms-cui-ctl-medium {
+    cursor: default;
+    display: inline-block;
+    margin-left: 1px;
+    margin-right: 1px;
+    white-space: nowrap;
+}
+a.ms-cui-ctl, a.ms-cui-ctl-medium {
+    border: 1px solid transparent;
+    cursor: default;
+    height: 16px;
+    padding: 1px 2px;
+}
+a.ms-cui-ctl-medium {
+    padding-left: 2px;
+    padding-right: 5px;
+}
+a.ms-cui-ctl-medium .ms-cui-ctl-iconContainer, span.ms-cui-ctl .ms-cui-ctl-a1Internal .ms-cui-img-16by16 {
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+.ms-cui-img-container, .ms-cui-img-cont-float {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    z-index: 10;
+}
+.ms-cui-img-cont-float {
+    display: inline-block;
+}
+.ms-cui-img-16by16 {
+    height: 16px;
+    width: 16px;
+}
+.ms-cui-groupSeparator {/****************************************************************/
+    border-right: 1px solid #E7E7E8;
+    display: inline-block;
+    height: 86px;
+    position: relative;
+    top: 4px;
+	/****************** ad new*/
+	height:0;
+	width:0;
+}
+.s4-ca {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-right: 6px;
+    /*margin-left: 155px;
+    min-height: 324px;*/
+}
+.ms-dialog .s4-ca {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+}
+body #MSO_ContentTable {
+    position: relative;
+}
+.s4-die {
+    display: none;
+}
+td.ms-titleareaframe, div.ms-titleareaframe, .ms-pagetitleareaframe {
+    background: url("../_layouts/images/bgximg.png") repeat-x scroll 0 -461px #D6E8FF;
+    text-align: left;
+}
+.ms-dialog .ms-globalbreadcrumb, .ms-globalTitleArea, .ms-bannerContainer, .ms-titleareaframe, .ms-areaseparatorleft, .ms-nav, .ms-leftareacell, .ms-pagebottommarginleft, .ms-pagebottommargin, .ms-bodyareapagemargin, .ms-pagebottommarginright, .ms-rightareacell, .ms-titlearealeft, .ms-titleareaframe, #onetidPageTitleAreaFrame, .ms-titlearearight, .s4-notdlg-wrapper {
+    margin: 0;
+}
+.s4-ba {
+    padding: 0 0 5px;
+}
+.ms-bodyareacell {
+    vertical-align: top;
+}
+.ms-dialog .ms-bodyareacell {
+    min-height: 0 !important;
+    padding: 8px;
+}
+.s4-wpcell-plain .s4-wpTopTable {
+    border: medium none;
+}
+.ms-formtoolbar {
+    color: #003399;
+    font-family: verdana;
+    font-size: 8pt;
+    text-decoration: none;
+}
+.ms-toolbar {
+    color: #0072BC;
+    font-family: verdana;
+    font-size: 8pt;
+    text-decoration: none;
+}
+.ms-formtoolbar td {
+    padding: 0;
+    vertical-align: top;
+}
+.ms-ButtonHeightWidth {
+    font: 8pt tahoma;
+    height: 2.1em;
+    padding-bottom: 0.4em;
+    padding-top: 0.1em;
+    width: 14.2em;
+}
+.ms-separator {
+    color: #C4C4C4;
+    font-size: 10pt;
+}
+.ms-separator {
+    background-repeat: repeat-x;
+    border: medium none;
+    color: #F1F1F2;
+    font-size: 10pt;
+    padding-left: 4px;
+}
+.ms-formlabel {
+    border-top: 1px solid #D8D8D8;
+    color: #525252;
+    font-family: verdana;
+    font-weight: bold;
+    padding-bottom: 6px;
+    padding-right: 8px;
+    padding-top: 3px;
+    text-align: left;
+}
+.ms-standardheader {
+    color: #525252;
+    font-size: 1em;
+    margin: 0;
+    text-align: left;
+}
+.ms-formlabel h3.ms-standardheader {
+    font-weight: normal;
+}
+.ms-formvalidation {
+    color: #FF0000;
+    font-family: verdana;
+    font-size: 8pt;
+}
+.ms-formbody {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border-top: 1px solid #D8D8D8;
+    padding: 3px 6px 4px;
+    vertical-align: top;
+}
+.ms-long {
+    font-family: Verdana,sans-serif;
+    font-size: 8pt;
+    width: 386px;
+}
+.ms-formline {
+    border-top: 1px solid #C4C4C4;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
