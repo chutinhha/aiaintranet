@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Module Name="RoomBookingSystemWebPartPages" Url="SitePages" SetupPath="1033\STS\doctemp\smartpgs">
-    <File Url="General.aspx" Type="GhostableInLibrary" Path="spstd10.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-  </Module>
-</Elements>

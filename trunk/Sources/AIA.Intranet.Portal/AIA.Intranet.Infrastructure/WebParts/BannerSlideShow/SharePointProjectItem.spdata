@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="BannerSlideShowUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="BannerSlideShow\" Type="ElementManifest" />
+    <ProjectItemFile Source="BannerSlideShow.webpart" Target="BannerSlideShow\" Type="ElementFile" />
+    <ProjectItemFile Source="BannerSlideShowUserControl.ascx" Target="CONTROLTEMPLATES\AIA.Intranet.Infrastructure.WebParts\BannerSlideShow\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="AIA.Intranet.Infrastructure.WebParts.BannerSlideShow" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

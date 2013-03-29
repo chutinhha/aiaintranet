@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Module Name="WebPartPageDefault" Url="Pages" SetupPath="1033\STS\doctemp\smartpgs">
-
-    <File Url="Default.aspx" Type="GhostableInLibrary" Path="spstd4.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-  </Module>
-</Elements>

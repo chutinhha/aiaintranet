@@ -1,6 +1,6 @@
 ﻿<%@ Assembly Name="$SharePoint.Project.AssemblyFullName$" %>
 
-<%@ Assembly Name="AIA.Intranet.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=079ac6f381ab0c9f" %>
+<%@ Assembly Name="AIA.Intranet.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d" %>
 <%@ Import Namespace="AIA.Intranet.Model"%>
 <%@ Import Namespace="AIA.Intranet.Model.Workflow"%>
 

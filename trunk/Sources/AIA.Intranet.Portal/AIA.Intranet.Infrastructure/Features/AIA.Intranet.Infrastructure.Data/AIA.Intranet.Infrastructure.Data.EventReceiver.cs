@@ -32,7 +32,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Data
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
             SPWeb web = (SPWeb)properties.Feature.Parent;
-            AddDepartmentItem(web);
+            //AddDepartmentItem(web);
         }
 
 
