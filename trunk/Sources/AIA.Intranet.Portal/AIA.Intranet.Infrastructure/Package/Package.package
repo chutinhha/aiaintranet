@@ -8,6 +8,7 @@
   <features>
     <featureReference itemId="1cfc17f5-ba7c-43d0-8b24-a1cc6d2ed041" />
     <featureReference itemId="68ccd81d-9f6e-41a4-a1e2-c7ec7f4b4085" />
+    <featureReference itemId="6e90fac6-3a85-47ed-91d9-d0c2efee5569" />
   </features>
   <projectItems>
     <projectItemReference itemId="c50c0525-7517-4fc0-ae93-9cf4a16bc61b" />

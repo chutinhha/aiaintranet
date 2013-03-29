@@ -270,6 +270,9 @@
     <Compile Include="Features\AIA.Intranet.Infrastructure.Data\AIA.Intranet.Infrastructure.Data.EventReceiver.cs">
       <DependentUpon>AIA.Intranet.Infrastructure.Data.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.EventReceiver.cs">
+      <DependentUpon>AIA.Intranet.Infrastructure.News.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\AIA.Intranet.Infrastructure.Site\AIA.Intranet.Infrastructure.Site.EventReceiver.cs">
       <DependentUpon>AIA.Intranet.Infrastructure.Site.feature</DependentUpon>
     </Compile>
@@ -506,6 +509,15 @@
   <ItemGroup>
     <None Include="ContentTypes\BannerContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{918ca61d-b66c-4939-ab59-c54bda141f2f}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\NewsCategoryContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fdca1e7d-ea4b-4183-9ece-79e49719a1ac}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\NewsItemContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{579a7406-d0e7-48f3-8b6d-dd102ecdef1c}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.News.feature">
+      <FeatureId>{6e90fac6-3a85-47ed-91d9-d0c2efee5569}</FeatureId>
     </None>
     <None Include="ListInstances\BannerLibrary\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5d73abca-f75d-4369-b0ae-90265626c236}</SharePointProjectItemId>
@@ -752,6 +764,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="ContentTypes\DecisionDocumentContentType\Elements.xml" />
+    <Content Include="ContentTypes\NewsCategoryContentType\Elements.xml" />
+    <Content Include="ContentTypes\NewsItemContentType\Elements.xml" />
     <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskPermissionEditor.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
@@ -773,6 +787,9 @@
     <EmbeddedResource Include="AppGlobalResources\RoomBookingSystemResources.resx" />
     <Content Include="ControlTemplates\AIARenderTemplate.ascx">
       <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.News.Template.xml">
+      <DependentUpon>AIA.Intranet.Infrastructure.News.feature</DependentUpon>
     </Content>
     <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_next.png" />
     <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_prev.png" />
