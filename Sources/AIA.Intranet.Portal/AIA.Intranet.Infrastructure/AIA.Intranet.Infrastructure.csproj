@@ -397,7 +397,6 @@
     <Compile Include="Layouts\AIA.Intranet.Infrastructure\UnreadContentResolver.aspx.designer.cs">
       <DependentUpon>UnreadContentResolver.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Recievers\CompanyCalendarEventReceiver.cs" />
     <Compile Include="Layouts\AIA.Intranet.Infrastructure\AutoAlertSettings.aspx.cs">
       <DependentUpon>AutoAlertSettings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -469,8 +468,8 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recievers\ITaskEvent.cs" />
     <Compile Include="Recievers\ItemDiscussionEventReceiver\ItemDiscussionEventReceiver.cs" />
+    <Compile Include="Recievers\NewsEventReceiver\NewsEventReceiver.cs" />
     <Compile Include="Recievers\NotificationReciever\NotificationtReciever.cs" />
     <Compile Include="Recievers\SetAssignementReciever\SetAssignementReciever.cs" />
     <Compile Include="Recievers\UnreadContentReciever\UnreadContentReciever.cs" />
@@ -505,6 +504,38 @@
     <Compile Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx.designer.cs">
       <DependentUpon>BannerSlideShowUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\NewsDetailView\NewsDetailView.cs" />
+    <Compile Include="WebParts\NewsDetailView\NewsDetailViewUserControl.ascx.cs">
+      <DependentUpon>NewsDetailViewUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\NewsDetailView\NewsDetailViewUserControl.ascx.designer.cs">
+      <DependentUpon>NewsDetailViewUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\NewsListView\NewsListView.cs" />
+    <Compile Include="WebParts\NewsListView\NewsListViewUserControl.ascx.cs">
+      <DependentUpon>NewsListViewUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\NewsListView\NewsListViewUserControl.ascx.designer.cs">
+      <DependentUpon>NewsListViewUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\OtherNewsListView\OtherNewsListView.cs" />
+    <Compile Include="WebParts\OtherNewsListView\OtherNewsListViewUserControl.ascx.cs">
+      <DependentUpon>OtherNewsListViewUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\OtherNewsListView\OtherNewsListViewUserControl.ascx.designer.cs">
+      <DependentUpon>OtherNewsListViewUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ViewNewsCategoryWebPart\ViewNewsCategoryWebPart.cs" />
+    <Compile Include="WebParts\ViewNewsCategoryWebPart\ViewNewsCategoryWebPartUserControl.ascx.cs">
+      <DependentUpon>ViewNewsCategoryWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ViewNewsCategoryWebPart\ViewNewsCategoryWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>ViewNewsCategoryWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ContentTypes\BannerContentType\SharePointProjectItem.spdata">
@@ -518,6 +549,15 @@
     </None>
     <None Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.News.feature">
       <FeatureId>{6e90fac6-3a85-47ed-91d9-d0c2efee5569}</FeatureId>
+    </None>
+    <None Include="ListDefinitions\NewsCategoryDefinition\NewsCategoryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5466ee37-a495-4c3c-bbde-b068a5c660ac}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\NewsCategoryDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{763814db-9215-4465-a917-3ea9d8ba469d}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\NewsDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{58a96082-a7af-4914-a177-80031f65f99c}</SharePointProjectItemId>
     </None>
     <None Include="ListInstances\BannerLibrary\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5d73abca-f75d-4369-b0ae-90265626c236}</SharePointProjectItemId>
@@ -708,6 +748,9 @@
     <None Include="Recievers\ItemDiscussionEventReceiver\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{aa9382ff-23d3-4499-a0fd-efd3139acaf7}</SharePointProjectItemId>
     </None>
+    <None Include="Recievers\NewsEventReceiver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{63628a39-bb7e-443e-bdd6-a13d42be0302}</SharePointProjectItemId>
+    </None>
     <None Include="Recievers\NotificationReciever\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{10b108d9-9cab-4be0-967e-35ddeaead507}</SharePointProjectItemId>
     </None>
@@ -736,6 +779,22 @@
     <None Include="WebParts\BannerSlideShow\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3340c9f9-df22-4e95-a45a-c17b3c467af7}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\NewsDetailView\NewsDetailView.webpart" />
+    <None Include="WebParts\NewsDetailView\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77a3aafc-d052-43c7-9f79-91e75c74e876}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\NewsListView\NewsListView.webpart" />
+    <None Include="WebParts\NewsListView\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{52b4d9ec-7b8a-4ce6-8864-4f2e89b8586e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\OtherNewsListView\OtherNewsListView.webpart" />
+    <None Include="WebParts\OtherNewsListView\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6d298fdf-f0b5-4d2d-b1ef-3b3e50c871f1}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ViewNewsCategoryWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eabba84b-dab0-4329-bf01-24cdcad8596c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ViewNewsCategoryWebPart\ViewNewsCategoryWebPart.webpart" />
     <None Include="XML\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e05dc1e0-8398-4923-b68a-b152e6fad092}</SharePointProjectItemId>
     </None>
@@ -840,6 +899,11 @@
     <Content Include="ListDefinitions\EmailList\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\Schema.xml" />
+    <Content Include="ListDefinitions\NewsCategoryDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\NewsCategoryDefinition\NewsCategoryInstance\Elements.xml" />
+    <Content Include="ListDefinitions\NewsCategoryDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\NewsDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\NewsDefinition\Schema.xml" />
     <Content Include="ListInstances\BannerLibrary\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Sample.txt" />
@@ -850,6 +914,7 @@
     <Content Include="Modules\TopBanner\5.jpg" />
     <Content Include="Modules\TopBanner\Elements.xml" />
     <Content Include="Modules\TopBanner\space.png" />
+    <Content Include="Recievers\NewsEventReceiver\Elements.xml" />
     <Content Include="Resources\RequestFormResources.resx" />
     <Content Include="Resources\RoomBookingSystemResources.resx" />
     <Content Include="CustomActions\ClearCacheRegister\Elements.xml" />
@@ -934,6 +999,22 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="WebParts\BannerSlideShow\Elements.xml" />
+    <Content Include="WebParts\NewsDetailView\Elements.xml" />
+    <Content Include="WebParts\NewsDetailView\NewsDetailViewUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\NewsListView\Elements.xml" />
+    <Content Include="WebParts\NewsListView\NewsListViewUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\OtherNewsListView\Elements.xml" />
+    <Content Include="WebParts\OtherNewsListView\OtherNewsListViewUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\ViewNewsCategoryWebPart\Elements.xml" />
+    <Content Include="WebParts\ViewNewsCategoryWebPart\ViewNewsCategoryWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="XSL\fldtypes_TimesheetField.xsl" />
     <EmbeddedResource Include="AppGlobalResources\AnnouncementResources.resx" />
     <EmbeddedResource Include="AppGlobalResources\ApprovalWorkflowResources.resx" />

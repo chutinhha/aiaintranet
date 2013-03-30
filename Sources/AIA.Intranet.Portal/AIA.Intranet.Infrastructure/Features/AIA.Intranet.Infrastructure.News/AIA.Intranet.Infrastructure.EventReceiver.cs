@@ -3,6 +3,11 @@ using System.Runtime.InteropServices;
 using System.Security.Permissions;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Security;
+using System.Reflection;
+using AIA.Intranet.Common.Helpers;
+using AIA.Intranet.Model.Infrastructure;
+using System.Collections.Generic;
+using AIA.Intranet.Common.Extensions;
 
 namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
 {
@@ -18,9 +23,11 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
     {
         // Uncomment the method below to handle the event raised after a feature has been activated.
 
-        //public override void FeatureActivated(SPFeatureReceiverProperties properties)
-        //{
-        //}
+        public override void FeatureActivated(SPFeatureReceiverProperties properties)
+        {
+            var web = properties.Feature.Parent as SPWeb;
+            UpdateNewsCategoroySettings(web);
+        }
 
 
         // Uncomment the method below to handle the event raised before a feature is deactivated.
@@ -48,5 +55,25 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
         //public override void FeatureUpgrading(SPFeatureReceiverProperties properties, string upgradeActionName, System.Collections.Generic.IDictionary<string, string> parameters)
         //{
         //}
+
+        #region Private Functions
+        private void UpdateNewsCategoroySettings(SPWeb web)
+        {
+            try
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                string xml = assembly.GetResourceTextFile("AIA.Intranet.Infrastructure.NewsCustomSettings.xml");
+
+                var settings = SerializationHelper.DeserializeFromXml<List<CustomSettingDefinition>>(xml);
+
+                web.UpdateCustomSetting(settings);
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        #endregion Private Functions
     }
 }

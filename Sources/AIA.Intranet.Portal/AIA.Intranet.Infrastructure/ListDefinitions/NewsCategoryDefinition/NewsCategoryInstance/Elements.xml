@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Danh mục"
+                OnQuickLaunch="TRUE"
+                TemplateType="12001"
+                Url="Lists/NewsCategory"
+                Description="My List Instance">
+  </ListInstance>
+</Elements>

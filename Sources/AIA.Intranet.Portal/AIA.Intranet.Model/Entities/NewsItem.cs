@@ -13,15 +13,16 @@ namespace AIA.Intranet.Model.Entities
             : base(item)
         {
             //get image url from ImageField
-            if (item[IOfficeColumnId.NewsThumbnail1] != null && !string.IsNullOrEmpty(item[IOfficeColumnId.NewsThumbnail1].ToString()))
+            if (item["Thumbnail1"] != null && !string.IsNullOrEmpty(item["Thumbnail1"].ToString()))
             {
-                Thumbnail = item[IOfficeColumnId.NewsThumbnail1].ToString().Split(new string[] { ";#" }, StringSplitOptions.None)[1];
+                Thumbnail = item["Thumbnail1"].ToString().Split(new string[] { ";#" }, StringSplitOptions.None)[1];
             }
 
             SPList spList = item.ParentList;
             ViewUrl = spList.DefaultDisplayFormUrl.Substring(0, spList.DefaultDisplayFormUrl.LastIndexOf("/")) + "/" + Constants.NEWS_DISPLAYPAGE + ".aspx?Id=" + item.ID;
 
         }
+
         public NewsItem(DataRow item)
             : base(item)
         {
