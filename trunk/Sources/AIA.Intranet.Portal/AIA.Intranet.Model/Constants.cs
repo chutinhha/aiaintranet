@@ -54,7 +54,7 @@ namespace AIA.Intranet.Model
        #endregion Employees
 
        #region News
-       public const string NEWS_HOME_PAGE = "/Pages/Home.aspx"; //create List.aspx
+       public const string NEWS_HOME_PAGE = "/Pages/Home.aspx";
        public const string NEWS_LISTPAGE = "List"; //create List.aspx
        public const string NEWS_DISPLAYPAGE = "View"; //create View.aspx
 

@@ -25,12 +25,8 @@ namespace AIA.Intranet.Infrastructure.Recievers
        {
            base.ListAdded(properties);
            this.EventFiringEnabled = false;
-
-           //UpdateNewsHomePage(properties.List);
-
            try
            {
-               
                var fields = properties.List.Fields.Cast<SPField>().ToList();
 
                var imageFields = fields.Where(p => p.TypeAsString == Constants.IMAGE_FIELD_TYPE_NAME).ToList();
@@ -56,42 +52,14 @@ namespace AIA.Intranet.Infrastructure.Recievers
                        item.UpdateProperties(props);
                    }
                }
-
-              
-               
            }
            catch (Exception ex)
            {
-
-
            }
            finally
            {
                this.EventFiringEnabled = false;
            }
-           
        }
-
-       //private void UpdateNewsHomePage(SPList list)
-       //{
-           
-       //    WebpartPageDefinition def = new WebpartPageDefinition()
-       //    {
-       //        PageUrl = "/Ipages/Home.aspx",
-       //        Webparts = new System.Collections.Generic.List<WebpartDefinition>() { new XSLTListViewWP()
-       //        {
-       //            AllowDuplicate = false,
-       //            ListName= list.Title,
-       //            Title = list.Title,
-       //            Index =1,
-       //            ZoneId="Header",
-       //            ListUrl = list.DefaultViewUrl
-       //        }
-       //        }
-       //    };
-       //    WebPartHelper.ProvisionWebpart(list.ParentWeb,new WebpartPageDefinitionCollection() { def });
-       //}
-
-
     }
 }

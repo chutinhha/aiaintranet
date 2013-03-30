@@ -21,7 +21,7 @@ namespace AIA.Intranet.Common.Services
             if (hotNewsOnly)
             {
                  caml = Camlex.Query()
-                              .Where(x => (bool)x[IOfficeColumnId.NewsIsHotNews] == true &&
+                              .Where(x => (bool)x["IsHotNews"] == true &&
                                           x[SPBuiltInFieldId._ModerationStatus] == (DataTypes.ModStat)"0")
                               .OrderBy(x => x[SPBuiltInFieldId.Created] as Camlex.Desc)
                               .ToString();

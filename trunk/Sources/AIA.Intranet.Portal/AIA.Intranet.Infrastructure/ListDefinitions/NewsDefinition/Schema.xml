@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="News Definition" FolderCreation="FALSE" DisableAttachments="TRUE" Direction="$Resources:Direction;" Url="Lists/NewsDefinition" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100eef71a706fb84d7e81c701f933f7b87e" 
+                   Name="[T2V Group] - News Item Content Type" 
+                   Group="[T2V Group]" 
+                   Description="" 
+                   Version="0">
+        <FieldRefs>
+          <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" Sealed="TRUE" DisplayName="Tiêu đề" />
+          <FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" Sealed="TRUE" DisplayName="Tiêu đề" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Sealed="TRUE" DisplayName="Tiêu đề" />
+          <FieldRef ID="{C7916F23-1EEE-4232-A0C6-931DE8E5C76B}" Name="ShortDescription" />
+          <FieldRef ID="{01E09BED-73CE-4b7e-B5EA-0CB64FDC0143}" Name="Contents" />
+          <FieldRef ID="{59D82360-3784-44fe-9957-8CB2E719C7D8}" Name="Thumbnail1" />
+          <FieldRef ID="{875E6F9A-B9EC-4c49-BD9B-D8F18B4DCC0F}" Name="ViewCount" />
+          <FieldRef ID="{8E841307-FBC3-4499-BFDE-57BD58CB5270}" Name="IsHotNews" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field Type="Note" DisplayName="Mô tả" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="[T2V Group]" ID="{c7916f23-1eee-4232-a0c6-931de8e5c76b}" StaticName="ShortDescription" Name="ShortDescription" />
+      <Field Type="Note" DisplayName="Nội dung" NumLines="35" RichText="TRUE" RichTextMode="FullHtml" Sortable="FALSE" Group="[T2V Group]" ID="{01e09bed-73ce-4b7e-b5ea-0cb64fdc0143}" StaticName="Contents" Name="Contents" />
+      <Field Type="ImageField" DisplayName="Hình minh họa" Group="[T2V Group]" ID="{59d82360-3784-44fe-9957-8cb2e719c7d8}" StaticName="Thumbnail1" Name="Thumbnail1" />
+      <Field Type="User" DisplayName="Người duyệt" List="UserInfo" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{c7a33037-b9c5-49f0-947f-19dce4866d97}" Name="Approver" StaticName="Approver" Group="[T2V Group]" />
+      <Field Type="Number" DisplayName="Số lần đọc" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="1" Decimals="0" Group="[T2V Group]" ID="{875e6f9a-b9ec-4c49-bd9b-d8f18b4dcc0f}" StaticName="ViewCount" Name="ViewCount" Hidden="TRUE" />
+      <Field Type="Boolean" ID="{8e841307-fbc3-4499-bfde-57bd58cb5270}" StaticName="IsHotNews" Name="IsHotNews" DisplayName="Tin chính" Group="[T2V Group]">
+    <Default>0</Default>
+  </Field>
+      <Field ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitle" Group="$Resources:core,Base_Columns;" ReadOnly="TRUE" Type="Computed" DisplayName="$Resources:core,Title;" DisplayNameSrcField="Title" ClassInfo="Menu" AuthoringInfo="$Resources:core,Linked_Item_With_Menu;">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" />
+          <FieldRef ID="{1344423c-c7f9-4134-88e4-ad842e2d723c}" Name="_EditMenuTableStart2" />
+          <FieldRef ID="{2ea78cef-1bf9-4019-960a-02c41636cb47}" Name="_EditMenuTableEnd" />
+        </FieldRefs>
+        <DisplayPattern>
+          <FieldSwitch>
+            <Expr>
+              <GetVar Name="FreeForm" />
+            </Expr>
+            <Case Value="TRUE">
+              <Field Name="LinkTitleNoMenu" />
+            </Case>
+            <Default>
+              <Field Name="_EditMenuTableStart2" />
+              <Field Name="LinkTitleNoMenu" />
+              <Field Name="_EditMenuTableEnd" />
+            </Default>
+          </FieldSwitch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitleNoMenu" Group="$Resources:core,Base_Columns;" ReadOnly="TRUE" Type="Computed" DisplayName="$Resources:core,Title;" Dir="" DisplayNameSrcField="Title" AuthoringInfo="$Resources:core,Linked_Item;">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{9d30f126-ba48-446b-b8f9-83745f322ebe}" Name="LinkFileNameNoMenu" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <Field Name="LinkFilenameNoMenu" />
+            </Then>
+            <Else>
+              <HTML><![CDATA[<a onfocus="OnLink(this)" href="]]></HTML>
+              <URL />
+              <HTML><![CDATA[" onclick="GoToLink(this);return false;" target="_self">]]></HTML>
+              <Column HTMLEncode="TRUE" Name="Title" Default="$Resources:core,NoTitle;" />
+              <HTML><![CDATA[</a>]]></HTML>
+              <IfNew>
+                <HTML><![CDATA[<img src="/_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/new.gif" alt="]]></HTML>
+                <HTML>$Resources:core,new_gif_alttext;</HTML>
+                <HTML><![CDATA[" class="ms-newgif" />]]></HTML>
+              </IfNew>
+            </Else>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="Thumbnail1" />
+          <FieldRef Name="ShortDescription" />
+          <FieldRef Name="ViewCount" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -6,12 +6,16 @@ using System.Text;
 namespace AIA.Intranet.Model
 {
      public class ListTemplateIds
-   {
+     {
 
-       public const string TOP_EMPLOYEE_LIST = "10009";
+         #region AIA
+         public const string NEWS_TEMPLATE_ID = "12002";
+        #endregion AIA
+
+         public const string TOP_EMPLOYEE_LIST = "10009";
        public const string EMAIL_TEMPLATE_ID = "10000";
        public const string ANNOUNCEMENT_TEMPLTE_ID = "10012";
-       public const string NEWS_TEMPLATE_ID = "10020";
+       
        public const string COMMENT_TEMPLATE_ID = "10021";
        public const string DEPARTMENT_TEMPLATE_ID = "10004";
        public const string EMPLOYEE_TEMPLATE_ID = "10005";
