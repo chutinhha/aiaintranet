@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="StyleSheets" Path="StyleSheets"  Url="Style Library/css" RootWebOnly="TRUE">
+    <File Path="jquery.ad-gallery.css" Url="jquery.ad-gallery.css" Type="GhostableInLibrary" />
+    <File Path="menutop.css" Url="menutop.css" Type="GhostableInLibrary" />
+    <File Path="popupForm.css" Url="popupForm.css" Type="GhostableInLibrary" />
+    <File Path="style-ie7.css" Url="style-ie7.css" Type="GhostableInLibrary" />
+    <File Path="style-ie8.css" Url="style-ie8.css" Type="GhostableInLibrary" />
+    <File Path="styles.css" Url="styles.css" Type="GhostableInLibrary" />
+    <File Path="corev4_edit.css" Url="corev4_edit.css" Type="GhostableInLibrary" />
+    <File Path="override_sp2010.css" Url="override_sp2010.css" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

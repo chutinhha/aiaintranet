@@ -181,7 +181,7 @@ namespace AIA.Intranet.Model
         View,
         Edit
     }
-    public enum RecieverEventTypes
+    public enum ReceiverEventTypes
     {
         ContextEvent,
 

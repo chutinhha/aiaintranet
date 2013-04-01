@@ -48,11 +48,11 @@ namespace AIA.Intranet.Common.Extensions
                                         generic.Invoke(null, new object[] { ct, ctDef.Feature, ctDef.Data, true });
 
                                     }
-                                    foreach (var e in item.Recievers)
+                                    foreach (var e in item.Receivers)
                                     {
-                                        Type type = Activator.CreateInstance(e.RecieverAssembly, e.RecieverClass).GetType();
-                                        //ct.EnsureEventReciever(type, e.Types.ToArray());
-                                        ct.EnsureEventReciever(e.RecieverClass,e.RecieverAssembly, e.Types.ToArray());
+                                        Type type = Activator.CreateInstance(e.ReceiverAssembly, e.ReceiverClass).GetType();
+                                        //ct.EnsureEventReceiver(type, e.Types.ToArray());
+                                        ct.EnsureEventReceiver(e.ReceiverClass,e.ReceiverAssembly, e.Types.ToArray());
                                     }
 
                                     break;
@@ -75,11 +75,11 @@ namespace AIA.Intranet.Common.Extensions
                                         generic.Invoke(null, new object[] { list, listDefinition.Feature, listDefinition.Data });
 
                                     }
-                                    foreach (var e in item.Recievers)
+                                    foreach (var e in item.Receivers)
                                     {
-                                        //Type type = Activator.CreateInstance(e.RecieverAssembly, e.RecieverClass).GetType();
-                                        //ct.EnsureEventReciever(type, e.Types.ToArray());
-                                        list.EnsureEventReciever(e.RecieverClass, e.RecieverAssembly, e.Types.ToArray());
+                                        //Type type = Activator.CreateInstance(e.ReceiverAssembly, e.ReceiverClass).GetType();
+                                        //ct.EnsureEventReceiver(type, e.Types.ToArray());
+                                        list.EnsureEventReceiver(e.ReceiverClass, e.ReceiverAssembly, e.Types.ToArray());
                                     }
                                     break;
                                 case SettingLevels.Site:

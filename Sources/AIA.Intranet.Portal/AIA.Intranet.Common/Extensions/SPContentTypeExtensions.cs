@@ -54,39 +54,39 @@ namespace AIA.Intranet.Common.Extensions
             }
         }
 
-        public static void EnsureEventReciever(this SPContentType contenttype, string recieverClass, string assembly, params SPEventReceiverType[] recieverTypes)
+        public static void EnsureEventReceiver(this SPContentType contenttype, string ReceiverClass, string assembly, params SPEventReceiverType[] ReceiverTypes)
         {
             if (contenttype == null || contenttype.Sealed) return;
 
             
             //if (contenttype.EventReceivers == null) contenttype.EventReceivers;
 
-            foreach (var item in recieverTypes)
+            foreach (var item in ReceiverTypes)
             {
-                if (!contenttype.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == recieverClass &&
+                if (!contenttype.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == ReceiverClass &&
                     P.Assembly == assembly &&
                     P.Type == item))
                 {
-                    contenttype.EventReceivers.Add(item, assembly, recieverClass);
+                    contenttype.EventReceivers.Add(item, assembly, ReceiverClass);
                 }
             }
             contenttype.Update(true);
         }
 
-        public static void EnsureEventReciever(this SPContentType contenttype, System.Type recieverClass, params SPEventReceiverType[] recieverTypes)
+        public static void EnsureEventReceiver(this SPContentType contenttype, System.Type ReceiverClass, params SPEventReceiverType[] ReceiverTypes)
         {
             if (contenttype == null || contenttype.Sealed) return;
 
-            string assembly = recieverClass.Assembly.FullName;
+            string assembly = ReceiverClass.Assembly.FullName;
             //if (contenttype.EventReceivers == null) contenttype.EventReceivers;
 
-            foreach (var item in recieverTypes)
+            foreach (var item in ReceiverTypes)
             {
-                if (!contenttype.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == recieverClass.FullName &&
+                if (!contenttype.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == ReceiverClass.FullName &&
                     P.Assembly == assembly &&
                     P.Type == item))
                 {
-                    contenttype.EventReceivers.Add(item, assembly, recieverClass.FullName);
+                    contenttype.EventReceivers.Add(item, assembly, ReceiverClass.FullName);
                 }
             }
             contenttype.Update();

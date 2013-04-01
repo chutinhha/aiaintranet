@@ -9,9 +9,9 @@ using System.Security;
 [assembly: AssemblyTitle("AIA.Intranet.Infrastructure")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hypertek (www.hypertek.com.vn")]
+[assembly: AssemblyCompany("Tinh Van")]
 [assembly: AssemblyProduct("AIA.Intranet.Infrastructure")]
-[assembly: AssemblyCopyright("Copyright by Hypertek ©  2012")]
+[assembly: AssemblyCopyright("Copyright by Tinh Van © 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

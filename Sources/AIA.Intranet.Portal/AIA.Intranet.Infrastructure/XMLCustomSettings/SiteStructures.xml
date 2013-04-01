@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Webs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <WebDefinition>
+    <Name>MIS</Name>
+    <Url>MIS</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      <WebDefinition>
+        <Name>Share</Name>
+        <Url>Share</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Application Development</Name>
+        <Url>ApplicationDevelopment</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>IT Infrastructure</Name>
+        <Url>ITInfrastructure</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>MIS Governance &amp; Asset Management</Name>
+        <Url>MISGovernance-AssetManagement</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+    </Webs>
+  </WebDefinition>
+  
+  <!-- ############################################################# -->
+  
+  <WebDefinition>
+    <Name>Human Resource</Name>
+    <Url>HumanResource</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      <WebDefinition>
+        <Name>Training &amp; Development</Name>
+        <Url>Training-Development</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Staff Engagement &amp; Relations</Name>
+        <Url>StaffEngagement-Relations</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>HR Business Partner</Name>
+        <Url>HRBusinessPartner</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Rewards &amp; Performance</Name>
+        <Url>Rewards-Performance</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Recruitment</Name>
+        <Url>Recruitment</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+    </Webs>
+  </WebDefinition>
+
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Distribution</Name>
+    <Url>Distribution</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      <WebDefinition>
+        <Name>Distribution Development</Name>
+        <Url>Distribution Development</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+          <WebDefinition>
+            <Name>Agency</Name>
+            <Url>Agency</Url>
+            <Features />
+            <Lists />
+            <Template>STS#0</Template>
+            <Overwrite>true</Overwrite>
+            <Webs>
+
+            </Webs>
+          </WebDefinition>
+          <WebDefinition>
+            <Name>Partnership Distribution</Name>
+            <Url>PartnershipDistribution</Url>
+            <Features />
+            <Lists />
+            <Template>STS#0</Template>
+            <Overwrite>true</Overwrite>
+            <Webs>
+
+            </Webs>
+          </WebDefinition>
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>
+          Agency Distribution Support &amp; Initiatives
+        </Name>
+        <Url>AgencyDistributionSupport-Initiatives</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+          <WebDefinition>
+            <Name>Agency Promotion Support</Name>
+            <Url>AgencyPromotionSupport</Url>
+            <Features />
+            <Lists />
+            <Template>STS#0</Template>
+            <Overwrite>true</Overwrite>
+            <Webs>
+
+            </Webs>
+          </WebDefinition>
+          <WebDefinition>
+            <Name>Agency Management Support</Name>
+            <Url>AgencyManagementSupport</Url>
+            <Features />
+            <Lists />
+            <Template>STS#0</Template>
+            <Overwrite>true</Overwrite>
+            <Webs>
+
+            </Webs>
+          </WebDefinition>
+          <WebDefinition>
+            <Name>Agency Support</Name>
+            <Url>AgencySupport</Url>
+            <Features />
+            <Lists />
+            <Template>STS#0</Template>
+            <Overwrite>true</Overwrite>
+            <Webs>
+
+            </Webs>
+          </WebDefinition>
+        </Webs>
+      </WebDefinition>
+
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+
+  <WebDefinition>
+    <Name>Finance</Name>
+    <Url>Finance</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      <WebDefinition>
+        <Name>Financial Reporting</Name>
+        <Url>FinancialReporting</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Operation Accounting</Name>
+        <Url>OperationAccounting</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Cost &amp; Budget</Name>
+        <Url>Cost-Budget</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+    </Webs>
+  </WebDefinition>
+
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Operations</Name>
+    <Url>Operations</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      <WebDefinition>
+        <Name>U &amp; I</Name>
+        <Url>U-I</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>POS</Name>
+        <Url>POS</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Claims</Name>
+        <Url>Claims</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Corporate Solutions</Name>
+        <Url>CorporateSolutions</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Client Management</Name>
+    <Url>ClientManagement</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      <WebDefinition>
+        <Name>Customer Service</Name>
+        <Url>CustomerService</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Customer Care</Name>
+        <Url>CustomerCare</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+          <WebDefinition>
+            <Name>Customer Care &amp; Customer Retention</Name>
+            <Url>CustomerCare-CustomerRetention</Url>
+            <Features />
+            <Lists />
+            <Template>STS#0</Template>
+            <Overwrite>true</Overwrite>
+            <Webs>
+
+            </Webs>
+          </WebDefinition>
+          <WebDefinition>
+            <Name>Call Center</Name>
+            <Url>CallCenter</Url>
+            <Features />
+            <Lists />
+            <Template>STS#0</Template>
+            <Overwrite>true</Overwrite>
+            <Webs>
+
+            </Webs>
+          </WebDefinition>
+          <WebDefinition>
+            <Name>Customer Complaint</Name>
+            <Url>CustomerComplaint</Url>
+            <Features />
+            <Lists />
+            <Template>STS#0</Template>
+            <Overwrite>true</Overwrite>
+            <Webs>
+
+            </Webs>
+          </WebDefinition>
+          <WebDefinition>
+            <Name>Q &amp; A</Name>
+            <Url>Q-A</Url>
+            <Features />
+            <Lists />
+            <Template>STS#0</Template>
+            <Overwrite>true</Overwrite>
+            <Webs>
+
+            </Webs>
+          </WebDefinition>
+        </Webs>
+      </WebDefinition>
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Actuary</Name>
+    <Url>Actuary</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      <WebDefinition>
+        <Name>Financial Reporting &amp; Valuation</Name>
+        <Url>FinancialReporting-Valuation</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Product</Name>
+        <Url>Product</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Customer Service</Name>
+    <Url>CustomerService</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      <WebDefinition>
+        <Name>Frontline Service</Name>
+        <Url>FrontlineService</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Service Enhancement</Name>
+        <Url>ServiceEnhancement</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Business Strategy</Name>
+    <Url>BusinessStrategy</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Marketing</Name>
+    <Url>Marketing</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+      <WebDefinition>
+        <Name>Corporate Marketing</Name>
+        <Url>CorporateMarketing</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+      <WebDefinition>
+        <Name>Press Relation</Name>
+        <Url>PressRelation</Url>
+        <Features />
+        <Lists />
+        <Template>STS#0</Template>
+        <Overwrite>true</Overwrite>
+        <Webs>
+
+        </Webs>
+      </WebDefinition>
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Collection</Name>
+    <Url>Collection</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>ERM</Name>
+    <Url>ERM</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Compliance</Name>
+    <Url>Compliance</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Legal</Name>
+    <Url>Legal</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Corporate Service</Name>
+    <Url>CorporateService</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Investment</Name>
+    <Url>Investment</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Product Marketing</Name>
+    <Url>ProductMarketing</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+  <WebDefinition>
+    <Name>Property</Name>
+    <Url>Property</Url>
+    <Features />
+    <Lists />
+    <Template>STS#0</Template>
+    <Overwrite>true</Overwrite>
+    <Webs>
+
+    </Webs>
+  </WebDefinition>
+  <!-- ############################################################# -->
+</Webs>

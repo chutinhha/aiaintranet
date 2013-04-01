@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Javascripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="aia.portal.commons.js" Target="Javascripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.SPServices-0.7.2.min.js" Target="Javascripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.SPServices-0.7.2.js" Target="Javascripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.8.3.min.js" Target="Javascripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.8.3.js" Target="Javascripts\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

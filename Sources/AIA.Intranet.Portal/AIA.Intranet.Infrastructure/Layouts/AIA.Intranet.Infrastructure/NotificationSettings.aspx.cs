@@ -9,7 +9,7 @@ using AIA.Intranet.Model.Infrastructure;
 using AIA.Intranet.Infrastructure.Controls;
 using System.Web.UI.WebControls;
 using System.Collections.Generic;
-using AIA.Intranet.Infrastructure.Recievers;
+using AIA.Intranet.Infrastructure.Receivers;
 
 namespace AIA.Intranet.Infrastructure.Layouts
 {
@@ -102,22 +102,22 @@ namespace AIA.Intranet.Infrastructure.Layouts
             //    this.CurrentList.SetCustomSettings<NotificationSettings>(IOfficeFeatures.Infrastructure, settings);
             //}
             
-            //RegisterEventReciever(settings);
+            //RegisterEventReceiver(settings);
 
             BackToPreviousPage();
         }
 
-        private void RegisterEventReciever(NotificationSettings settings)
+        private void RegisterEventReceiver(NotificationSettings settings)
         {
             if (settings.RunOnCreated)
             {
                 if (CurrentList != null)
                 {
-                    this.CurrentList.EnsureEventReciever(typeof(NotificationReciever), SPEventReceiverType.ItemAdded);
+                    this.CurrentList.EnsureEventReceiver(typeof(NotificationReceiver), SPEventReceiverType.ItemAdded);
                 }
                 else
                 {
-                    this.ContentType.EnsureEventReciever(typeof(NotificationReciever), SPEventReceiverType.ItemAdded);
+                    this.ContentType.EnsureEventReceiver(typeof(NotificationReceiver), SPEventReceiverType.ItemAdded);
                 }
             }
 
@@ -125,11 +125,11 @@ namespace AIA.Intranet.Infrastructure.Layouts
             {
                 if (CurrentList != null)
                 {
-                    this.CurrentList.EnsureEventReciever(typeof(NotificationReciever), SPEventReceiverType.ItemUpdated);
+                    this.CurrentList.EnsureEventReceiver(typeof(NotificationReceiver), SPEventReceiverType.ItemUpdated);
                 }
                 else
                 {
-                    this.ContentType.EnsureEventReciever(typeof(NotificationReciever), SPEventReceiverType.ItemUpdated);
+                    this.ContentType.EnsureEventReceiver(typeof(NotificationReceiver), SPEventReceiverType.ItemUpdated);
                 }
             }
         }

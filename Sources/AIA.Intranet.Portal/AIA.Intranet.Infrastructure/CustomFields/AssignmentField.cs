@@ -6,7 +6,7 @@ using Microsoft.SharePoint;
 using Microsoft.SharePoint.WebControls;
 using Microsoft.SharePoint.Security;
 using System.Security.Permissions;
-using AIA.Intranet.Infrastructure.Recievers;
+using AIA.Intranet.Infrastructure.Receivers;
 using AIA.Intranet.Model;
 
 namespace AIA.Intranet.Infrastructure.CustomFields
@@ -187,21 +187,21 @@ namespace AIA.Intranet.Infrastructure.CustomFields
             base.OnAdded(op);
             Update();
             
-            EnsureEventReciever(this.ParentList, typeof(SetAssignementReciever), SPEventReceiverType.ItemAdded);
+            EnsureEventReceiver(this.ParentList, typeof(SetAssignementReceiver), SPEventReceiverType.ItemAdded);
         }
 
-        private void EnsureEventReciever(SPList list, System.Type recieverClass, params SPEventReceiverType[] recieverTypes)
+        private void EnsureEventReceiver(SPList list, System.Type ReceiverClass, params SPEventReceiverType[] ReceiverTypes)
         {
             if (list == null) return;
 
-            string assembly = recieverClass.Assembly.FullName;
-            foreach (var item in recieverTypes)
+            string assembly = ReceiverClass.Assembly.FullName;
+            foreach (var item in ReceiverTypes)
             {
-                if (!list.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == recieverClass.FullName && 
+                if (!list.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == ReceiverClass.FullName && 
                     P.Assembly == assembly && 
                     P.Type == item))
                 { 
-                    list.EventReceivers.Add(item, assembly, recieverClass.FullName); 
+                    list.EventReceivers.Add(item, assembly, ReceiverClass.FullName); 
                 }
             }
             list.Update();

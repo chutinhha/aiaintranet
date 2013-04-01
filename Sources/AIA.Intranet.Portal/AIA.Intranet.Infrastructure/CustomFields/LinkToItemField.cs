@@ -9,7 +9,7 @@ using System.Globalization;
 using System.Windows.Controls;
 using System.Security.Permissions;
 using AIA.Intranet.Common.Extensions;
-using AIA.Intranet.Infrastructure.Recievers;
+using AIA.Intranet.Infrastructure.Receivers;
 
 namespace AIA.Intranet.Infrastructure.CustomFields
 {
@@ -31,7 +31,7 @@ namespace AIA.Intranet.Infrastructure.CustomFields
             base.OnAdded(op);
             if (this.ParentList != null)
             {
-                this.ParentList.EnsureEventReciever(typeof(UpdateLinkToItemFieldReciever), 1000, SPEventReceiverSynchronization.Synchronous, SPEventReceiverType.ItemAdded);
+                this.ParentList.EnsureEventReceiver(typeof(UpdateLinkToItemFieldReceiver), 1000, SPEventReceiverSynchronization.Synchronous, SPEventReceiverType.ItemAdded);
             }
             this.ShowInDisplayForm = false;
             this.ShowInEditForm = false;
@@ -44,7 +44,7 @@ namespace AIA.Intranet.Infrastructure.CustomFields
             base.OnUpdated();
             //if (this.ParentList != null)
             //{
-            //    this.ParentList.EnsureEventReciever(typeof(UpdateLinkToItemFieldReciever), 1000, SPEventReceiverSynchronization.Synchronous, SPEventReceiverType.ItemAdded);
+            //    this.ParentList.EnsureEventReceiver(typeof(UpdateLinkToItemFieldReceiver), 1000, SPEventReceiverSynchronization.Synchronous, SPEventReceiverType.ItemAdded);
             //}
             //this.ShowInDisplayForm = false;
             //this.ShowInEditForm = false;

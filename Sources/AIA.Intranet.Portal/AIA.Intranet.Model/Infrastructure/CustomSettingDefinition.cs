@@ -7,13 +7,13 @@ using Microsoft.SharePoint;
 
 namespace AIA.Intranet.Model.Infrastructure
 {
-    public class Reciever{
-        public string RecieverClass { get; set; }
+    public class Receiver{
+        public string ReceiverClass { get; set; }
         [XmlArray("Types")]
         [XmlArrayItem("Type")]
         public List<SPEventReceiverType> Types { get; set; }
 
-        public string RecieverAssembly { get; set; }
+        public string ReceiverAssembly { get; set; }
     }
 
     [Serializable]
@@ -31,8 +31,8 @@ namespace AIA.Intranet.Model.Infrastructure
             
         }
 
-        [XmlArray("Recievers")]
-        public List<Reciever> Recievers { get; set; }
+        [XmlArray("Receivers")]
+        public List<Receiver> Receivers { get; set; }
     }
 
     [Serializable]

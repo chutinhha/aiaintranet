@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="101">
+      <Receiver>
+        <Name>ItemDiscussionEventReceiverItemAdding</Name>
+        <Type>ItemDeleting</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>AIA.Intranet.Infrastructure.Receivers.ItemDiscussionEventReceiver.ItemDiscussionEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+    
+      <Receiver>
+        <Name>ItemDiscussionEventReceiverItemUpdating</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>AIA.Intranet.Infrastructure.Receivers.ItemDiscussionEventReceiver.ItemDiscussionEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+    </Receivers>
+
+  <Receivers ListTemplateId="100">
+    <Receiver>
+      <Name>ItemDiscussionEventReceiverItemAdding</Name>
+      <Type>ItemDeleting</Type>
+      <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+      <Class>AIA.Intranet.Infrastructure.Receivers.ItemDiscussionEventReceiver.ItemDiscussionEventReceiver</Class>
+      <SequenceNumber>10000</SequenceNumber>
+    </Receiver>
+
+    <Receiver>
+      <Name>ItemDiscussionEventReceiverItemUpdating</Name>
+      <Type>ItemUpdated</Type>
+      <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+      <Class>AIA.Intranet.Infrastructure.Receivers.ItemDiscussionEventReceiver.ItemDiscussionEventReceiver</Class>
+      <SequenceNumber>10000</SequenceNumber>
+    </Receiver>
+  </Receivers>
+  
+</Elements>
