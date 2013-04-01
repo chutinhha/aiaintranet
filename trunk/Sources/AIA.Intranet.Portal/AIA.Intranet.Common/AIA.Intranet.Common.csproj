@@ -294,7 +294,6 @@
     <Content Include="Libs\AjaxControlToolkit.dll" />
     <Content Include="Libs\DocumentFormat.OpenXml.dll" />
     <Content Include="Libs\log4net.dll" />
-    <Content Include="Libs\Microsoft.SharePoint.Publishing.dll" />
     <Content Include="Libs\NVelocity.dll" />
     <Content Include="Libs\System.Web.DataVisualization.Design.dll" />
     <Content Include="Libs\System.Web.DataVisualization.dll" />
