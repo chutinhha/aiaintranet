@@ -96,6 +96,10 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.UpdateWebConfig
                         "configuration/system.webServer/modules",
                         "<add name=\"AIAPortalHttpModule\" type=\"AIA.Intranet.Infrastructure.AIAPortalHttpModule,  AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d\"/>");
 
+            AddNodeValue("add[@expressionPrefix='SPUrl'][@type='Microsoft.SharePoint.Publishing.WebControls.SPUrlExpressionBuilder, Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c']",
+                       "configuration/system.web/compilation/expressionBuilders",
+                       @"<add expressionPrefix='SPUrl' type='Microsoft.SharePoint.Publishing.WebControls.SPUrlExpressionBuilder, Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c' />");
+
             SaveWebConfig(app);
         }
 
