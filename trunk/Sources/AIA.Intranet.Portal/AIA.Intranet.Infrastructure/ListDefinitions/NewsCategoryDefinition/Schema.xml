@@ -3,8 +3,8 @@
   <MetaData>
     <ContentTypes>
       <ContentType ID="0x012000055bc0236c214030873f64adeb28a3280018ca75275b654d63a6fa2d30fd38bc41" 
-                   Name="[T2V Group] - News Category Content Type" 
-                   Group="[T2V Group]" 
+                   Name="[AIA] - News Category Content Type" 
+                   Group="[AIA]" 
                    Description="" 
                    Inherits="TRUE" 
                    Version="0">

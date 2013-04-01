@@ -7,6 +7,12 @@ namespace AIA.Intranet.Model
 {
    public class Constants
    {
+       #region AIA
+       public const string BANNER_LIBRARY_URL = "BannerLibrary";
+       public const string BANNER_CONTENT_TYPE_ID = "0x01010200ec98bbf978904280be10a8bbde810ef7";
+
+       #endregion AIA
+
        #region Approval Status
        public const string APPROVED = "0";
 

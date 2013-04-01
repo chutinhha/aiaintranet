@@ -4,6 +4,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
 using AIA.Intranet.Common.Utilities;
+using AIA.Intranet.Model;
 
 namespace AIA.Intranet.Infrastructure.WebParts.BannerSlideShow
 {
@@ -35,7 +36,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.BannerSlideShow
                 {
                     using (SPWeb web = site.OpenWeb(SPContext.Current.Site.RootWeb.ID))
                     {
-                        SPList spList = CCIUtility.GetListFromURL("/Lists/BannerLibrary", web);
+                        SPList spList = CCIUtility.GetListFromURL(Constants.BANNER_LIBRARY_URL, web);
                         string banners = string.Empty;
                         if (spList != null)
                         {
@@ -66,7 +67,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.BannerSlideShow
                             {
                                 if (Convert.ToBoolean(spItem["Active"]))
                                 {
-                                    banners += string.Format(liSlideShow, string.Format("{0}/{1}", site.MakeFullUrl(spFolder.ServerRelativeUrl), spItem["Name"]), spItem["Title"], spItem["Title"], spItem["RelatedLink"], '"');
+                                    banners += string.Format(liSlideShow, string.Format("{0}/{1}", site.MakeFullUrl(spFolder.ServerRelativeUrl), spItem["Name"]), spItem["Title"], spItem["Description"], spItem["RelatedLink"], '"');
                                 }
                             }
                         }

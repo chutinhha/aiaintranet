@@ -9,7 +9,7 @@
       <properties>
         <property name="Title" type="string">BannerSlideShow</property>
         <property name="Description" type="string">Banner Slide Show</property>
-        <property name="ChromeType" type="chrometype">None</property>
+        <!--<property name="ChromeType" type="chrometype">None</property>-->
       </properties>
     </data>
   </webPart>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="HomeNewsUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="HomeNews\" Type="ElementManifest" />
+    <ProjectItemFile Source="HomeNews.webpart" Target="HomeNews\" Type="ElementFile" />
+    <ProjectItemFile Source="HomeNewsUserControl.ascx" Target="CONTROLTEMPLATES\AIA.Intranet.Infrastructure.WebParts\HomeNews\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="AIA.Intranet.Infrastructure.WebParts.HomeNews" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

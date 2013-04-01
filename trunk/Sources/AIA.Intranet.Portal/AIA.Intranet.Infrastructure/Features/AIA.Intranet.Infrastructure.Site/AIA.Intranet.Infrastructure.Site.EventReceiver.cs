@@ -3,10 +3,15 @@ using System.Runtime.InteropServices;
 using System.Security.Permissions;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Security;
+
+using AIA.Intranet.Common.Utilities;
+using AIA.Intranet.Model;
+
 using System.Reflection;
 using AIA.Intranet.Common.Helpers;
 using AIA.Intranet.Common.Extensions;
 using AIA.Intranet.Model.Infrastructure;
+
 
 namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructure.Site
 {
@@ -29,18 +34,18 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
         {
             SPSite site = (SPSite)properties.Feature.Parent;
             SPWeb web = site.RootWeb;
-
             bool isAllowUnsafeUpdates = web.AllowUnsafeUpdates;
 
             try
             {
                 web.AllowUnsafeUpdates = true;
-
+                AddBannerContentType(web);
                 //SetDefaultCustomMasterPage(web, "/_catalogs/masterpage/AIAPortal.master");
-
                 ProvisionSubSitesStructure(web);
             }
-            catch { }
+            catch 
+            { 
+            }
             finally
             {
                 web.AllowUnsafeUpdates = isAllowUnsafeUpdates;
@@ -90,6 +95,35 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
         //{
         //}
 
+
+        #region Private Functions
+        private void AddBannerContentType(SPWeb web)
+        {
+            try
+            {
+                var bannerList = CCIUtility.GetListFromURL(Constants.BANNER_LIBRARY_URL, web);
+                if (bannerList != null)
+                {
+                    bannerList.ContentTypes.Add(web.AvailableContentTypes["AIA] - Banner Content Type"]);
+                    foreach (SPContentType item in bannerList.ContentTypes)
+                    {
+                        if (item.Parent.Id == SPBuiltInContentTypeId.Picture)
+                        {
+                            bannerList.ContentTypes.Delete(item.Id);
+                        }
+                    }
+                    
+                    bannerList.Update();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        #endregion Private Functions
+
+
         #region [Methods]
         private void ProvisionSubSitesStructure(SPWeb web)
         {
@@ -117,5 +151,6 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             web.Update();
         }
         #endregion [Methods]
+
     }
 }

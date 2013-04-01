@@ -15,7 +15,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.BannerSlideShow
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
         private const string _ascxPath = @"~/_CONTROLTEMPLATES/AIA.Intranet.Infrastructure.WebParts/BannerSlideShow/BannerSlideShowUserControl.ascx";
 
-        [Category("T2V Group"),
+        [Category("AIA"),
         Personalizable(PersonalizationScope.Shared),
         WebBrowsable(true),
         DefaultValue(""),
