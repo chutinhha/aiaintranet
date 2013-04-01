@@ -36,7 +36,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             {
                 web.AllowUnsafeUpdates = true;
 
-                SetDefaultCustomMasterPage(web, "/_catalogs/masterpage/AIAPortal.master");
+                //SetDefaultCustomMasterPage(web, "/_catalogs/masterpage/AIAPortal.master");
 
                 ProvisionSubSitesStructure(web);
             }
@@ -61,7 +61,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             {
                 web.AllowUnsafeUpdates = true;
 
-                SetDefaultCustomMasterPage(web, "/_catalogs/masterpage/v4.master");
+                //SetDefaultCustomMasterPage(web, "/_catalogs/masterpage/v4.master");
             }
             catch { }
             finally
