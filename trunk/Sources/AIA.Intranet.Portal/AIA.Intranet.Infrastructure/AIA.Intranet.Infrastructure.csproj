@@ -277,6 +277,10 @@
     <Compile Include="Features\AIA.Intranet.Infrastructure.Site\AIA.Intranet.Infrastructure.Site.EventReceiver.cs">
       <DependentUpon>AIA.Intranet.Infrastructure.Site.feature</DependentUpon>
     </Compile>
+    <Compile Include="AIAPortalHttpModule.cs" />
+    <Compile Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.EventReceiver.cs">
+      <DependentUpon>AIA.Intranet.UpdateWebConfig.feature</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\AIA.Intranet.Infrastructure\ActionResolver.ashx.cs">
       <DependentUpon>ActionResolver.ashx</DependentUpon>
     </Compile>
@@ -554,6 +558,9 @@
     </None>
     <None Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.News.feature">
       <FeatureId>{6e90fac6-3a85-47ed-91d9-d0c2efee5569}</FeatureId>
+    </None>
+    <None Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.feature">
+      <FeatureId>{7a2645dc-c574-4214-aea2-056b53855073}</FeatureId>
     </None>
     <None Include="ListDefinitions\NewsCategoryDefinition\NewsCategoryInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5466ee37-a495-4c3c-bbde-b068a5c660ac}</SharePointProjectItemId>
@@ -867,6 +874,9 @@
     </Content>
     <Content Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.News.Template.xml">
       <DependentUpon>AIA.Intranet.Infrastructure.News.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.Template.xml">
+      <DependentUpon>AIA.Intranet.UpdateWebConfig.feature</DependentUpon>
     </Content>
     <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_next.png" />
     <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_prev.png" />
