@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="StyleSheets\" Type="ElementManifest" />
+    <ProjectItemFile Source="jquery.ad-gallery.css" Target="StyleSheets\" Type="ElementFile" />
+    <ProjectItemFile Source="menutop.css" Target="StyleSheets\" Type="ElementFile" />
+    <ProjectItemFile Source="popupForm.css" Target="StyleSheets\" Type="ElementFile" />
+    <ProjectItemFile Source="style-ie7.css" Target="StyleSheets\" Type="ElementFile" />
+    <ProjectItemFile Source="style-ie8.css" Target="StyleSheets\" Type="ElementFile" />
+    <ProjectItemFile Source="styles.css" Target="StyleSheets\" Type="ElementFile" />
+    <ProjectItemFile Source="corev4_edit.css" Target="StyleSheets\" Type="ElementFile" />
+    <ProjectItemFile Source="override_sp2010.css" Target="StyleSheets\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

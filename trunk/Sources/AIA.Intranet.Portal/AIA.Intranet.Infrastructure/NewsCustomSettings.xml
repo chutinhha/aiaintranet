@@ -25,40 +25,40 @@
                    
     <Inherit>false</Inherit>
 
-    <Recievers>
-      <Reciever>
-        <RecieverClass>AIA.Intranet.Infrastructure.ContentTypes.CategoryContentTypeEventReceiverEventReceiver</RecieverClass>
+    <Receivers>
+      <Receiver>
+        <ReceiverClass>AIA.Intranet.Infrastructure.ContentTypes.CategoryContentTypeEventReceiverEventReceiver</ReceiverClass>
         <Types>
           <Type>ItemAdded</Type>
         </Types>
-        <RecieverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</RecieverAssembly>
-      </Reciever>
+        <ReceiverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</ReceiverAssembly>
+      </Receiver>
 
-      <Reciever>
-        <RecieverClass>AIA.Intranet.Infrastructure.ContentTypes.CategoryContentTypeEventReceiverEventReceiver</RecieverClass>
+      <Receiver>
+        <ReceiverClass>AIA.Intranet.Infrastructure.ContentTypes.CategoryContentTypeEventReceiverEventReceiver</ReceiverClass>
         <Types>
           <Type>ItemUpdated</Type>
         </Types>
-        <RecieverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</RecieverAssembly>
-      </Reciever>
+        <ReceiverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</ReceiverAssembly>
+      </Receiver>
 
-      <Reciever>
-        <RecieverClass>AIA.Intranet.Infrastructure.ContentTypes.CategoryContentTypeEventReceiverEventReceiver</RecieverClass>
+      <Receiver>
+        <ReceiverClass>AIA.Intranet.Infrastructure.ContentTypes.CategoryContentTypeEventReceiverEventReceiver</ReceiverClass>
         <Types>
           <Type>ItemUpdating</Type>
         </Types>
-        <RecieverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</RecieverAssembly>
-      </Reciever>
+        <ReceiverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</ReceiverAssembly>
+      </Receiver>
 
-      <Reciever>
-        <RecieverClass>AIA.Intranet.Infrastructure.ContentTypes.CategoryContentTypeEventReceiverEventReceiver</RecieverClass>
+      <Receiver>
+        <ReceiverClass>AIA.Intranet.Infrastructure.ContentTypes.CategoryContentTypeEventReceiverEventReceiver</ReceiverClass>
         <Types>
           <Type>ItemDeleting</Type>
         </Types>
-        <RecieverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</RecieverAssembly>
-      </Reciever>
+        <ReceiverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</ReceiverAssembly>
+      </Receiver>
 
-    </Recievers>
+    </Receivers>
     
   </CustomSettingDefinition>
 </ArrayOfCustomSettingDefinition>

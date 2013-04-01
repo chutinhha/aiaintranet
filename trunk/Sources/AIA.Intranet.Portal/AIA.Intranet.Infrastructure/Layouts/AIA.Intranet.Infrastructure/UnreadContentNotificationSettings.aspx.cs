@@ -6,7 +6,7 @@ using System.Web.UI;
 using AIA.Intranet.Infrastructure.Controls;
 using AIA.Intranet.Model.Infrastructure;
 using AIA.Intranet.Common.Extensions;
-using AIA.Intranet.Infrastructure.Recievers;
+using AIA.Intranet.Infrastructure.Receivers;
 
 namespace AIA.Intranet.Infrastructure.Layouts
 {
@@ -153,7 +153,7 @@ namespace AIA.Intranet.Infrastructure.Layouts
             }
 
             CurrentList.SetCustomSettings<UnreadContentNotificationSetting>(Model.IOfficeFeatures.Infrastructure, obj);
-            CurrentList.EnsureEventReciever(typeof(UnreadContentReciever), 10002, SPEventReceiverSynchronization.Synchronous, SPEventReceiverType.ItemAdded);
+            CurrentList.EnsureEventReceiver(typeof(UnreadContentReceiver), 10002, SPEventReceiverSynchronization.Synchronous, SPEventReceiverType.ItemAdded);
         }
 
         public SPList CurrentList

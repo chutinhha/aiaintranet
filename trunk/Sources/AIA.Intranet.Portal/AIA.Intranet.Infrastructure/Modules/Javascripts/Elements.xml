@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Javascripts" Url="Style Library/js" RootWebOnly="TRUE" Path="Javascripts">
+    <File Path="aia.portal.commons.js" Url="aia.portal.commons.js" Type="GhostableInLibrary" />
+    <File Path="jquery.SPServices-0.7.2.min.js" Url="jquery.SPServices-0.7.2.min.js" Type="GhostableInLibrary" />
+    <File Path="jquery.SPServices-0.7.2.js" Url="jquery.SPServices-0.7.2.js" Type="GhostableInLibrary" />
+    <File Path="jquery-1.8.3.min.js" Url="jquery-1.8.3.min.js" Type="GhostableInLibrary" />
+    <File Path="jquery-1.8.3.js" Url="jquery-1.8.3.js" Type="GhostableInLibrary" />
+</Module>
+</Elements>

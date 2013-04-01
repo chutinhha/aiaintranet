@@ -6,7 +6,7 @@ using Microsoft.SharePoint;
 using Microsoft.SharePoint.Security;
 using Microsoft.SharePoint.WebControls;
 using System.Security.Permissions;
-using AIA.Intranet.Infrastructure.Recievers;
+using AIA.Intranet.Infrastructure.Receivers;
 
 namespace AIA.Intranet.Infrastructure.CustomFields
 {
@@ -140,7 +140,7 @@ namespace AIA.Intranet.Infrastructure.CustomFields
 
           
             
-            //EnsureEventReciever(this.ParentList, typeof(SetAssignementReciever), SPEventReceiverType.ItemAdded);
+            //EnsureEventReceiver(this.ParentList, typeof(SetAssignementReceiver), SPEventReceiverType.ItemAdded);
         }
 
        

@@ -21,7 +21,7 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
-    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
     <TokenReplacementFileExtensions>$(TokenReplacementFileExtensions);xml;aspx;ascx;webpart;dwp;ashx;</TokenReplacementFileExtensions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -64,6 +64,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -467,14 +468,18 @@
     <Compile Include="Layouts\TaskRulePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Modules\MasterPages\AIAPortal.master.cs">
+      <DependentUpon>AIAPortal.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recievers\ItemDiscussionEventReceiver\ItemDiscussionEventReceiver.cs" />
-    <Compile Include="Recievers\NewsEventReceiver\NewsEventReceiver.cs" />
-    <Compile Include="Recievers\NotificationReciever\NotificationtReciever.cs" />
-    <Compile Include="Recievers\SetAssignementReciever\SetAssignementReciever.cs" />
-    <Compile Include="Recievers\UnreadContentReciever\UnreadContentReciever.cs" />
-    <Compile Include="Recievers\UpdateImageFieldReciever\UpdateImageFieldReciever.cs" />
-    <Compile Include="Recievers\UpdateLinkToItemFieldReciever\UpdateLinkToItemFieldReciever.cs" />
+    <Compile Include="Receivers\ItemDiscussionEventReceiver\ItemDiscussionEventReceiver.cs" />
+    <Compile Include="Receivers\NewsEventReceiver\NewsEventReceiver.cs" />
+    <Compile Include="Receivers\NotificationReceiver\NotificationtReceiver.cs" />
+    <Compile Include="Receivers\SetAssignementReceiver\SetAssignementReceiver.cs" />
+    <Compile Include="Receivers\UnreadContentReceiver\UnreadContentReceiver.cs" />
+    <Compile Include="Receivers\UpdateImageFieldReceiver\UpdateImageFieldReceiver.cs" />
+    <Compile Include="Receivers\UpdateLinkToItemFieldReceiver\UpdateLinkToItemFieldReceiver.cs" />
     <Compile Include="Resources\ApprovalWorkflowResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -564,6 +569,19 @@
     </None>
     <None Include="Modules\AIAHtmlPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{96893d58-df2f-471a-a0d8-e3f6b04cab6f}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Javascripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8e6398b6-bc4f-4499-92ab-bfb5e9ede567}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPages\AIAPortal.master" />
+    <None Include="Modules\MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b770f84b-7884-4bc4-8351-d15541dcee80}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\PortalImages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{75e8bc88-4cf9-41c8-a58f-562d34b2042f}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\StyleSheets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c87abc9-9797-48f7-a5b7-9cb7839f46fb}</SharePointProjectItemId>
     </None>
     <None Include="Modules\TopBanner\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{34f13b27-55bb-4b12-8d76-0093797292c0}</SharePointProjectItemId>
@@ -745,25 +763,25 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Recievers\ItemDiscussionEventReceiver\SharePointProjectItem.spdata">
+    <None Include="Receivers\ItemDiscussionEventReceiver\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{aa9382ff-23d3-4499-a0fd-efd3139acaf7}</SharePointProjectItemId>
     </None>
-    <None Include="Recievers\NewsEventReceiver\SharePointProjectItem.spdata">
+    <None Include="Receivers\NewsEventReceiver\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{63628a39-bb7e-443e-bdd6-a13d42be0302}</SharePointProjectItemId>
     </None>
-    <None Include="Recievers\NotificationReciever\SharePointProjectItem.spdata">
+    <None Include="Receivers\NotificationReceiver\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{10b108d9-9cab-4be0-967e-35ddeaead507}</SharePointProjectItemId>
     </None>
-    <None Include="Recievers\SetAssignementReciever\SharePointProjectItem.spdata">
+    <None Include="Receivers\SetAssignementReceiver\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{43cb5d71-18ce-4fda-b153-4ef24a41da30}</SharePointProjectItemId>
     </None>
-    <None Include="Recievers\UnreadContentReciever\SharePointProjectItem.spdata">
+    <None Include="Receivers\UnreadContentReceiver\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7605063d-59f6-4fe0-9bb2-c0453a3f122f}</SharePointProjectItemId>
     </None>
-    <None Include="Recievers\UpdateImageFieldReciever\SharePointProjectItem.spdata">
+    <None Include="Receivers\UpdateImageFieldReceiver\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0bbb269f-1a39-4fa9-baa4-9e4cfaac091b}</SharePointProjectItemId>
     </None>
-    <None Include="Recievers\UpdateLinkToItemFieldReciever\SharePointProjectItem.spdata">
+    <None Include="Receivers\UpdateLinkToItemFieldReceiver\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{df0dae64-91d0-490f-8900-1003b6a05c45}</SharePointProjectItemId>
     </None>
     <None Include="Resources\SharePointProjectItem.spdata">
@@ -907,6 +925,54 @@
     <Content Include="ListInstances\BannerLibrary\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Sample.txt" />
+    <Content Include="Modules\Javascripts\aia.portal.commons.js" />
+    <Content Include="Modules\Javascripts\Elements.xml" />
+    <Content Include="Modules\Javascripts\jquery-1.8.3.js" />
+    <Content Include="Modules\Javascripts\jquery-1.8.3.min.js" />
+    <Content Include="Modules\Javascripts\jquery.SPServices-0.7.2.js" />
+    <Content Include="Modules\Javascripts\jquery.SPServices-0.7.2.min.js" />
+    <Content Include="Modules\MasterPages\Elements.xml" />
+    <Content Include="Modules\PortalImages\Elements.xml" />
+    <Content Include="Modules\PortalImages\Images\ad_next.png" />
+    <Content Include="Modules\PortalImages\Images\ad_prev.png" />
+    <Content Include="Modules\PortalImages\Images\ad_scroll_back.png" />
+    <Content Include="Modules\PortalImages\Images\ad_scroll_forward.png" />
+    <Content Include="Modules\PortalImages\Images\aialogo.png" />
+    <Content Include="Modules\PortalImages\Images\all_site.png" />
+    <Content Include="Modules\PortalImages\Images\black_transparent.png" />
+    <Content Include="Modules\PortalImages\Images\career.png" />
+    <Content Include="Modules\PortalImages\Images\createcontent.png" />
+    <Content Include="Modules\PortalImages\Images\excel.png" />
+    <Content Include="Modules\PortalImages\Images\folder_open.png" />
+    <Content Include="Modules\PortalImages\Images\head.png" />
+    <Content Include="Modules\PortalImages\Images\head_bg.png" />
+    <Content Include="Modules\PortalImages\Images\icons.png" />
+    <Content Include="Modules\PortalImages\Images\itann.png" />
+    <Content Include="Modules\PortalImages\Images\itgen.png" />
+    <Content Include="Modules\PortalImages\Images\loader.gif" />
+    <Content Include="Modules\PortalImages\Images\login_bg.png" />
+    <Content Include="Modules\PortalImages\Images\main_content.png" />
+    <Content Include="Modules\PortalImages\Images\menu_right_bg.png" />
+    <Content Include="Modules\PortalImages\Images\ms-dlgTitle.png" />
+    <Content Include="Modules\PortalImages\Images\news_large_bg.png" />
+    <Content Include="Modules\PortalImages\Images\opa75.png" />
+    <Content Include="Modules\PortalImages\Images\pdf.png" />
+    <Content Include="Modules\PortalImages\Images\printer.png" />
+    <Content Include="Modules\PortalImages\Images\p_list_left.png" />
+    <Content Include="Modules\PortalImages\Images\recycle_Bin.png" />
+    <Content Include="Modules\PortalImages\Images\space.png" />
+    <Content Include="Modules\PortalImages\Images\sprites_x.png" />
+    <Content Include="Modules\PortalImages\Images\tab_link.png" />
+    <Content Include="Modules\PortalImages\Images\workflows.png" />
+    <Content Include="Modules\StyleSheets\corev4_edit.css" />
+    <Content Include="Modules\StyleSheets\Elements.xml" />
+    <Content Include="Modules\StyleSheets\jquery.ad-gallery.css" />
+    <Content Include="Modules\StyleSheets\menutop.css" />
+    <Content Include="Modules\StyleSheets\override_sp2010.css" />
+    <Content Include="Modules\StyleSheets\popupForm.css" />
+    <Content Include="Modules\StyleSheets\style-ie7.css" />
+    <Content Include="Modules\StyleSheets\style-ie8.css" />
+    <Content Include="Modules\StyleSheets\styles.css" />
     <Content Include="Modules\TopBanner\1.jpg" />
     <Content Include="Modules\TopBanner\2.jpg" />
     <Content Include="Modules\TopBanner\3.jpg" />
@@ -914,7 +980,7 @@
     <Content Include="Modules\TopBanner\5.jpg" />
     <Content Include="Modules\TopBanner\Elements.xml" />
     <Content Include="Modules\TopBanner\space.png" />
-    <Content Include="Recievers\NewsEventReceiver\Elements.xml" />
+    <Content Include="Receivers\NewsEventReceiver\Elements.xml" />
     <Content Include="Resources\RequestFormResources.resx" />
     <Content Include="Resources\RoomBookingSystemResources.resx" />
     <Content Include="CustomActions\ClearCacheRegister\Elements.xml" />
@@ -992,6 +1058,9 @@
     </Content>
     <Content Include="Images\AIA.Intranet.Infrastructure\share.png" />
     <Content Include="Images\AIA.Intranet.Infrastructure\Timesheet-Icon-16.png" />
+    <EmbeddedResource Include="XMLCustomSettings\SiteStructures.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\spstd10.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
@@ -1087,7 +1156,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Content Include="Modules\NewsImagesUpload\ioffice-news-thumb_jpg.jpg" />
-    <Content Include="Recievers\UnreadContentReciever\Elements.xml" />
+    <Content Include="Receivers\UnreadContentReceiver\Elements.xml" />
     <Content Include="Resources\GalleryResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GalleryResources.Designer.cs</LastGenOutput>
@@ -1163,7 +1232,7 @@
     <EmbeddedResource Include="NewsCustomSettings.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Content Include="Recievers\UpdateLinkToItemFieldReciever\Elements.xml">
+    <Content Include="Receivers\UpdateLinkToItemFieldReceiver\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\ApprovalWorkflowResources.resx">
@@ -1173,7 +1242,7 @@
     <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\spstd9.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="Recievers\ItemDiscussionEventReceiver\Elements.xml" />
+    <Content Include="Receivers\ItemDiscussionEventReceiver\Elements.xml" />
     <Content Include="Resources\ImageField.vi-VN.resx" />
     <Content Include="Resources\InfrastructureResources.resx">
       <LastGenOutput>Infrastructure.Designer.cs</LastGenOutput>
@@ -1197,7 +1266,7 @@
     <EmbeddedResource Include="SiteStructures.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Content Include="Recievers\UpdateImageFieldReciever\Elements.xml" />
+    <Content Include="Receivers\UpdateImageFieldReceiver\Elements.xml" />
     <EmbeddedResource Include="Webparts.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1260,7 +1329,7 @@
     <Content Include="ListDefinitions\TaskConfiguration\Elements.xml" />
     <Content Include="ListDefinitions\TaskConfiguration\Schema.xml" />
     <Content Include="ListDefinitions\TaskConfiguration\TaskConfigurationInstance\Elements.xml" />
-    <Content Include="Recievers\NotificationReciever\Elements.xml" />
+    <Content Include="Receivers\NotificationReceiver\Elements.xml" />
     <Content Include="SiteColumns\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -1324,7 +1393,7 @@
     <Content Include="Layouts\AIA.Intranet.Infrastructure\VariableEditor.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
-    <Content Include="Recievers\SetAssignementReciever\Elements.xml" />
+    <Content Include="Receivers\SetAssignementReceiver\Elements.xml" />
     <Content Include="XML\fldtypes_AssignmentField.xml">
       <SubType>Designer</SubType>
     </Content>

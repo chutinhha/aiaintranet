@@ -627,7 +627,7 @@ namespace AIA.Intranet.Infrastructure.Layouts
             setting.Rules.Add(rule);
 
             this.CurrentList.SetCustomSettings<SecuritySettings>(IOfficeFeatures.IOfficeApp,setting);
-            this.CurrentList.EnsureEventReciever(typeof(SecurityEventHandler), SPEventReceiverType.ItemAdded, SPEventReceiverType.ItemUpdated);
+            this.CurrentList.EnsureEventReceiver(typeof(SecurityEventHandler), SPEventReceiverType.ItemAdded, SPEventReceiverType.ItemUpdated);
         }
 
         private void getRuleObject(Rule rule)

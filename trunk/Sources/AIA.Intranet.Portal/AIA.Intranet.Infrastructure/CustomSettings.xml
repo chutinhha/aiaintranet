@@ -24,16 +24,16 @@
       </Settings>
     </Data>
     <Level>ContentType</Level>
-    <Recievers>
-      <Reciever>
-        <RecieverClass>AIA.Intranet.Infrastructure.Recievers.NotificationReciever</RecieverClass>
+    <Receivers>
+      <Receiver>
+        <ReceiverClass>AIA.Intranet.Infrastructure.Receivers.NotificationReceiver</ReceiverClass>
         <Types>
           <Type>ItemAdded</Type>
           <Type>ItemUpdating</Type>
         </Types>
-        <RecieverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=079ac6f381ab0c9f</RecieverAssembly>
-      </Reciever>
-    </Recievers>
+        <ReceiverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=079ac6f381ab0c9f</ReceiverAssembly>
+      </Receiver>
+    </Receivers>
     <ContentTypeId>0x012000055bc0236c214030873f64adeb28a328</ContentTypeId>
     <Inherit>true</Inherit>
   </CustomSettingDefinition>
@@ -96,16 +96,16 @@
       </Settings>
     </Data>
     <Level>ContentType</Level>
-    <Recievers>
-      <Reciever>
-        <RecieverClass>AIA.Intranet.Infrastructure.Recievers.NotificationReciever</RecieverClass>
+    <Receivers>
+      <Receiver>
+        <ReceiverClass>AIA.Intranet.Infrastructure.Receivers.NotificationReceiver</ReceiverClass>
         <Types>
           <Type>ItemAdded</Type>
           <Type>ItemUpdated</Type>
         </Types>
-        <RecieverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=079ac6f381ab0c9f</RecieverAssembly>
-      </Reciever>
-    </Recievers>
+        <ReceiverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=079ac6f381ab0c9f</ReceiverAssembly>
+      </Receiver>
+    </Receivers>
     <ContentTypeId>0x0100a4d86666b5374687816aa0e8e3cfc6f9</ContentTypeId>
     <Inherit>false</Inherit>
   </CustomSettingDefinition>
@@ -140,15 +140,15 @@
       </Settings>
     </Data>
     <Level>ContentType</Level>
-    <Recievers>
-      <Reciever>
-        <RecieverClass>AIA.Intranet.Infrastructure.Recievers.NotificationReciever</RecieverClass>
+    <Receivers>
+      <Receiver>
+        <ReceiverClass>AIA.Intranet.Infrastructure.Receivers.NotificationReceiver</ReceiverClass>
         <Types>
           <Type>ItemAdded</Type>
         </Types>
-        <RecieverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=079ac6f381ab0c9f</RecieverAssembly>
-      </Reciever>
-    </Recievers>
+        <ReceiverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=079ac6f381ab0c9f</ReceiverAssembly>
+      </Receiver>
+    </Receivers>
     <ContentTypeId>0x01003264B92094D141A88C81507F09F1C9F2</ContentTypeId>
     <Inherit>false</Inherit>
   </CustomSettingDefinition>
@@ -184,15 +184,15 @@
       </Settings>
     </Data>
     <Level>List</Level>
-    <Recievers>
-      <Reciever>
-        <RecieverClass>AIA.Intranet.Infrastructure.Recievers.NotificationReciever</RecieverClass>
+    <Receivers>
+      <Receiver>
+        <ReceiverClass>AIA.Intranet.Infrastructure.Receivers.NotificationReceiver</ReceiverClass>
         <Types>
           <Type>ItemAdded</Type>
         </Types>
-        <RecieverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=079ac6f381ab0c9f</RecieverAssembly>
-      </Reciever>
-    </Recievers>
+        <ReceiverAssembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=079ac6f381ab0c9f</ReceiverAssembly>
+      </Receiver>
+    </Receivers>
     <ListUrl>/Lists/TopEmployees</ListUrl>
     <Inherit>false</Inherit>
   </CustomSettingDefinition>

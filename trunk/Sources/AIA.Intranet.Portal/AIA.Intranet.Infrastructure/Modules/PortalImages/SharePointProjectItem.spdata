@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="PortalImages\" Type="ElementManifest" />
+    <ProjectItemFile Source="Images\ad_next.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\ad_prev.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\ad_scroll_back.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\ad_scroll_forward.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\aialogo.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\all_site.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\black_transparent.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\career.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\createcontent.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\excel.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\folder_open.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\head.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\head_bg.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\icons.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\itann.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\itgen.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\loader.gif" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\login_bg.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\main_content.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\menu_right_bg.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\ms-dlgTitle.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\news_large_bg.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\opa75.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\p_list_left.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\pdf.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\printer.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\recycle_Bin.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\space.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\sprites_x.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\tab_link.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\workflows.png" Target="PortalImages\Images\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

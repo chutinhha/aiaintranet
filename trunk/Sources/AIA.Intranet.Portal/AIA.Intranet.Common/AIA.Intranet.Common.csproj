@@ -73,8 +73,8 @@
     <Compile Include="Controls\PermissionFieldIterator.cs" />
     <Compile Include="Controls\ReadOnlyFieldControl.cs" />
     <Compile Include="Controls\SPUserGroupTrimmedControl.cs" />
-    <Compile Include="Core\CoreFeatureReciever.cs" />
-    <Compile Include="Core\WebConfigModifierReciever.cs" />
+    <Compile Include="Core\CoreFeatureReceiver.cs" />
+    <Compile Include="Core\WebConfigModifierReceiver.cs" />
     <Compile Include="Extensions\AssemblyExtensions.cs" />
     <Compile Include="Extensions\ControlCollectionExtensions.cs" />
     <Compile Include="Extensions\DateTimeExtention.cs" />
@@ -135,7 +135,7 @@
     <Compile Include="Extensions\PagedList\PagedListMetaData.cs" />
     <Compile Include="Extensions\PagedList\StaticPagedList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recievers\SecurityEventReciever.cs" />
+    <Compile Include="Receivers\SecurityEventReceiver.cs" />
     <Compile Include="SecuredPageLayout.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>

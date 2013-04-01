@@ -15,7 +15,7 @@ using AIA.Intranet.Resources;
 using System.Reflection;
 using AIA.Intranet.Common.Helpers;
 using AIA.Intranet.Model.Workflow;
-using AIA.Intranet.Infrastructure.Recievers;
+using AIA.Intranet.Infrastructure.Receivers;
 namespace AIA.Intranet.Infrastructure.ContentTypes
 {
     [Guid("d99ce184-61ca-4a9e-ad0f-2bda1ee8c86f")]

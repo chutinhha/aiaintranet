@@ -216,27 +216,27 @@ namespace AIA.Intranet.Common.Extensions
             }
         }
 
-        public static void EnsureEventReciever(this SPList list, System.Type recieverClass, int sequence, SPEventReceiverSynchronization synchronous, params SPEventReceiverType[] recieverTypes)
+        public static void EnsureEventReceiver(this SPList list, System.Type ReceiverClass, int sequence, SPEventReceiverSynchronization synchronous, params SPEventReceiverType[] ReceiverTypes)
         {
             if (list == null) return;
             try
             {
                 list.ParentWeb.AllowUnsafeUpdates = true;
-                string assembly = recieverClass.Assembly.FullName;
-                foreach (var item in recieverTypes)
+                string assembly = ReceiverClass.Assembly.FullName;
+                foreach (var item in ReceiverTypes)
                 {
-                    if (!list.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == recieverClass.FullName &&
+                    if (!list.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == ReceiverClass.FullName &&
                         P.Assembly == assembly &&
                         P.Type == item))
                     {
                         var def = list.EventReceivers.Add();
                         def.Assembly = assembly;
-                        def.Class = recieverClass.FullName;
+                        def.Class = ReceiverClass.FullName;
                         def.Synchronization = synchronous;
                         def.SequenceNumber = sequence;
                         
-                        def.Type = recieverTypes[0];
-                        foreach (var type in recieverTypes)
+                        def.Type = ReceiverTypes[0];
+                        foreach (var type in ReceiverTypes)
                         {
                             def.Type |= type;
                         }
@@ -258,17 +258,17 @@ namespace AIA.Intranet.Common.Extensions
         }
 
 
-        public static void EnsureEventReciever(this SPList list, string recieverClass, string assembly, params SPEventReceiverType[] recieverTypes)
+        public static void EnsureEventReceiver(this SPList list, string ReceiverClass, string assembly, params SPEventReceiverType[] ReceiverTypes)
         {
             if (list == null) return;
             list.ParentWeb.AllowUnsafeUpdates = true;
-            foreach (var item in recieverTypes)
+            foreach (var item in ReceiverTypes)
             {
-                if (!list.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == recieverClass &&
+                if (!list.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == ReceiverClass &&
                     P.Assembly == assembly &&
                     P.Type == item))
                 {
-                    list.EventReceivers.Add(item, assembly, recieverClass);
+                    list.EventReceivers.Add(item, assembly, ReceiverClass);
                 }
             }
             list.Update(true);
@@ -276,20 +276,20 @@ namespace AIA.Intranet.Common.Extensions
         }
 
            
-        public static void EnsureEventReciever(this SPList list, System.Type recieverClass, params SPEventReceiverType[] recieverTypes)
+        public static void EnsureEventReceiver(this SPList list, System.Type ReceiverClass, params SPEventReceiverType[] ReceiverTypes)
         {
             if (list == null) return;
             try
             {
                 list.ParentWeb.AllowUnsafeUpdates = true;
-                string assembly = recieverClass.Assembly.FullName;
-                foreach (var item in recieverTypes)
+                string assembly = ReceiverClass.Assembly.FullName;
+                foreach (var item in ReceiverTypes)
                 {
-                    if (!list.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == recieverClass.FullName &&
+                    if (!list.EventReceivers.Cast<SPEventReceiverDefinition>().Any(P => P.Class == ReceiverClass.FullName &&
                         P.Assembly == assembly &&
                         P.Type == item))
                     {
-                        list.EventReceivers.Add(item, assembly, recieverClass.FullName);
+                        list.EventReceivers.Add(item, assembly, ReceiverClass.FullName);
                     }
                 }
                 list.Update();
@@ -305,17 +305,17 @@ namespace AIA.Intranet.Common.Extensions
            
         }
 
-        public static void RemoveEventReciever(this SPList list, System.Type recieverClass, params SPEventReceiverType[] recieverTypes)
+        public static void RemoveEventReceiver(this SPList list, System.Type ReceiverClass, params SPEventReceiverType[] ReceiverTypes)
         {
             if (list == null) return;
 
-            string assembly = recieverClass.Assembly.FullName;
+            string assembly = ReceiverClass.Assembly.FullName;
             List<SPEventReceiverDefinition> eventsToDelete = new List<SPEventReceiverDefinition>();
 
-            foreach (var item in recieverTypes)
+            foreach (var item in ReceiverTypes)
             {
                 IEnumerable<SPEventReceiverDefinition> events = list.EventReceivers.Cast<SPEventReceiverDefinition>().Where(
-                    P => P.Class == recieverClass.FullName && P.Assembly == assembly && P.Type == item);
+                    P => P.Class == ReceiverClass.FullName && P.Assembly == assembly && P.Type == item);
                 
                 if (events != null)
                 {

@@ -3,6 +3,10 @@ using System.Runtime.InteropServices;
 using System.Security.Permissions;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Security;
+using System.Reflection;
+using AIA.Intranet.Common.Helpers;
+using AIA.Intranet.Common.Extensions;
+using AIA.Intranet.Model.Infrastructure;
 
 namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructure.Site
 {
@@ -16,18 +20,55 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
     [Guid("93d1341d-f4c7-4a24-a7fe-79a801e4cec9")]
     public class HypertekIOfficeInfrastructureEventReceiver : SPFeatureReceiver
     {
+        string customizedMasterUrl = "/_catalogs/masterpage/AIAPortal.master";
+
+
         // Uncomment the method below to handle the event raised after a feature has been activated.
 
-        //public override void FeatureActivated(SPFeatureReceiverProperties properties)
-        //{
-        //}
+        public override void FeatureActivated(SPFeatureReceiverProperties properties)
+        {
+            SPSite site = (SPSite)properties.Feature.Parent;
+            SPWeb web = site.RootWeb;
+
+            bool isAllowUnsafeUpdates = web.AllowUnsafeUpdates;
+
+            try
+            {
+                web.AllowUnsafeUpdates = true;
+
+                SetDefaultCustomMasterPage(web, "/_catalogs/masterpage/AIAPortal.master");
+
+                ProvisionSubSitesStructure(web);
+            }
+            catch { }
+            finally
+            {
+                web.AllowUnsafeUpdates = isAllowUnsafeUpdates;
+            }
+        }
 
 
         // Uncomment the method below to handle the event raised before a feature is deactivated.
 
-        //public override void FeatureDeactivating(SPFeatureReceiverProperties properties)
-        //{
-        //}
+        public override void FeatureDeactivating(SPFeatureReceiverProperties properties)
+        {
+            SPSite site = (SPSite)properties.Feature.Parent;
+            SPWeb web = site.RootWeb;
+
+            bool isAllowUnsafeUpdates = web.AllowUnsafeUpdates;
+
+            try
+            {
+                web.AllowUnsafeUpdates = true;
+
+                SetDefaultCustomMasterPage(web, "/_catalogs/masterpage/v4.master");
+            }
+            catch { }
+            finally
+            {
+                web.AllowUnsafeUpdates = isAllowUnsafeUpdates;
+            }
+        }
 
 
         // Uncomment the method below to handle the event raised after a feature has been installed.
@@ -48,5 +89,33 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
         //public override void FeatureUpgrading(SPFeatureReceiverProperties properties, string upgradeActionName, System.Collections.Generic.IDictionary<string, string> parameters)
         //{
         //}
+
+        #region [Methods]
+        private void ProvisionSubSitesStructure(SPWeb web)
+        {
+            try
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                string xml = assembly.GetResourceTextFile("AIA.Intranet.Infrastructure.XMLCustomSettings.SiteStructures.xml");
+
+                var subsites = SerializationHelper.DeserializeFromXml<WebDefinitionCollection>(xml);
+                web.ProvisionWebStructure(subsites);
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void SetDefaultCustomMasterPage(SPWeb web, string masterpageUrl)
+        {
+            Uri masterUri = new Uri(web.Url + masterpageUrl);
+
+            web.MasterUrl = masterUri.AbsolutePath;
+            web.CustomMasterUrl = masterUri.AbsolutePath;
+            web.Update();
+        }
+        #endregion [Methods]
     }
 }
