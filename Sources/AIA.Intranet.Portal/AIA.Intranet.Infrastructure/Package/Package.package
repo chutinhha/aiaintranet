@@ -4,7 +4,7 @@
     <projectOutputAssembly location="AIA.Intranet.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\AIA.Intranet.Common\AIA.Intranet.Common.csproj" />
     <projectOutputAssembly location="AIA.Intranet.Resources.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\AIA.Intranet.Resources\AIA.Intranet.Resources.csproj" />
     <projectOutputAssembly location="AIA.Intranet.Model.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\AIA.Intranet.Model\AIA.Intranet.Model.csproj" />
-    <customAssembly location="Microsoft.SharePoint.Publishing.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\AIA.Intranet.Common\Libs\Microsoft.SharePoint.Publishing.dll" />
+    <customAssembly location="Microsoft.SharePoint.Publishing.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="Libs\Microsoft.SharePoint.Publishing.dll" />
   </assemblies>
   <features>
     <featureReference itemId="1cfc17f5-ba7c-43d0-8b24-a1cc6d2ed041" />

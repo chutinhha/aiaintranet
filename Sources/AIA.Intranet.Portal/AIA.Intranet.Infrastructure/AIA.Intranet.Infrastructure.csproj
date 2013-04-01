@@ -924,6 +924,7 @@
     <Content Include="Images\AIA.Intranet.Infrastructure\styles\styles.css" />
     <Content Include="Layouts\1033\jquery.ad-gallery.js" />
     <Content Include="Layouts\1033\slimScroll.js" />
+    <Content Include="Libs\Microsoft.SharePoint.Publishing.dll" />
     <Content Include="ListDefinitions\EmailList\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\Schema.xml" />
