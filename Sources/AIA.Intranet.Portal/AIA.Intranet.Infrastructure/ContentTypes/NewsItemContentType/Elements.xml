@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
 
-  <Field Type="Note" DisplayName="Mô tả"  NumLines="6" RichText="FALSE" Sortable="FALSE" Group="[T2V Group]" 
+  <Field Type="Note" DisplayName="Mô tả"  NumLines="6" RichText="FALSE" Sortable="FALSE" Group="[AIA]" 
          ID="{C7916F23-1EEE-4232-A0C6-931DE8E5C76B}" StaticName="ShortDescription" Name="ShortDescription" />
   
-  <Field Type="Note" DisplayName="Nội dung"  NumLines="35" RichText="TRUE" RichTextMode="FullHtml"  Sortable="FALSE" Group="[T2V Group]" 
+  <Field Type="Note" DisplayName="Nội dung"  NumLines="35" RichText="TRUE" RichTextMode="FullHtml"  Sortable="FALSE" Group="[AIA]" 
          ID="{01E09BED-73CE-4b7e-B5EA-0CB64FDC0143}" StaticName="Contents" Name="Contents"  />
   
-  <Field Type="ImageField" DisplayName="Hình minh họa" Group="[T2V Group]" 
+  <Field Type="ImageField" DisplayName="Hình minh họa" Group="[AIA]" 
          ID="{59D82360-3784-44fe-9957-8CB2E719C7D8}" StaticName="Thumbnail1" Name="Thumbnail1" />
   
-  <Field Type="Number" DisplayName="Số lần đọc" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="1" Decimals="0" Group="[T2V Group]" 
+  <Field Type="Number" DisplayName="Số lần đọc" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="1" Decimals="0" Group="[AIA]" 
          ID="{875E6F9A-B9EC-4c49-BD9B-D8F18B4DCC0F}"  StaticName="ViewCount" Name="ViewCount" Hidden="TRUE"/>
   
-  <Field Type="Boolean" ID="{8E841307-FBC3-4499-BFDE-57BD58CB5270}" StaticName="IsHotNews" Name="IsHotNews" DisplayName="Tin chính" Group="[T2V Group]">
+  <Field Type="Boolean" ID="{8E841307-FBC3-4499-BFDE-57BD58CB5270}" StaticName="IsHotNews" Name="IsHotNews" DisplayName="Tin chính" Group="[AIA]">
     <Default>0</Default>
   </Field>
   
   <!-- Parent ContentType: Item (0x01) -->
   <ContentType ID="0x0100eef71a706fb84d7e81c701f933f7b87e"
-               Name="[T2V Group] - News Item Content Type"
-               Group="[T2V Group]"
+               Name="[AIA] - News Item Content Type"
+               Group="[AIA]"
                Description=""
                Version="0">
     <FieldRefs>

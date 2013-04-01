@@ -13,7 +13,7 @@
         <ShowOnQuickLaunch>false</ShowOnQuickLaunch>
         <Hidden>false</Hidden>
         <RootWebOnly>false</RootWebOnly>
-        <TemplateName>[T2V Group] - News Definition</TemplateName>
+        <TemplateName>[AIA] - News Definition</TemplateName>
       </ListDefinition>
       <RunOnChanged>false</RunOnChanged>
       <RunOnCreated>true</RunOnCreated>

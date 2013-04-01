@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <!-- Parent ContentType: [T2V Group] - Category (AIA.Intranet.Infrastructure\CategoryContentType) (0x012000055bc0236c214030873f64adeb28a328) -->
+  <!-- Parent ContentType: [AIA] - Category (AIA.Intranet.Infrastructure\CategoryContentType) (0x012000055bc0236c214030873f64adeb28a328) -->
   <ContentType ID="0x012000055bc0236c214030873f64adeb28a3280018ca75275b654d63a6fa2d30fd38bc41"
-               Name="[T2V Group] - News Category Content Type"
-               Group="[T2V Group]"
+               Name="[AIA] - News Category Content Type"
+               Group="[AIA]"
                Description=""
                Inherits="TRUE"
                Version="0">

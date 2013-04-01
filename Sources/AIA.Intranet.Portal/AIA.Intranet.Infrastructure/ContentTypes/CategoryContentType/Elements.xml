@@ -2,8 +2,8 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <!-- Parent ContentType: Folder (0x0120) -->
   <ContentType ID="0x012000055bc0236c214030873f64adeb28a328"
-               Name="[T2V Group] - Category"
-               Group="[T2V Group]"
+               Name="[AIA] - Category"
+               Group="[AIA]"
                Description=""
                Inherits="TRUE"
                Version="0">

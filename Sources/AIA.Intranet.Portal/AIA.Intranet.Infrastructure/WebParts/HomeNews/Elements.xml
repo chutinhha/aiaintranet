@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
-  <Module Name="OtherNewsListView" List="113" Url="_catalogs/wp">
-    <File Path="OtherNewsListView\OtherNewsListView.webpart" Url="OtherNewsListView.webpart" Type="GhostableInLibrary" >
+  <Module Name="HomeNews" List="113" Url="_catalogs/wp">
+    <File Path="HomeNews\HomeNews.webpart" Url="HomeNews.webpart" Type="GhostableInLibrary" >
       <Property Name="Group" Value="[AIA]" />
     </File>
   </Module>

@@ -513,6 +513,14 @@
     <Compile Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx.designer.cs">
       <DependentUpon>BannerSlideShowUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\HomeNews\HomeNews.cs" />
+    <Compile Include="WebParts\HomeNews\HomeNewsUserControl.ascx.cs">
+      <DependentUpon>HomeNewsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\HomeNews\HomeNewsUserControl.ascx.designer.cs">
+      <DependentUpon>HomeNewsUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\NewsDetailView\NewsDetailView.cs" />
     <Compile Include="WebParts\NewsDetailView\NewsDetailViewUserControl.ascx.cs">
       <DependentUpon>NewsDetailViewUserControl.ascx</DependentUpon>
@@ -804,6 +812,10 @@
     <None Include="WebParts\BannerSlideShow\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3340c9f9-df22-4e95-a45a-c17b3c467af7}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\HomeNews\HomeNews.webpart" />
+    <None Include="WebParts\HomeNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f57c4e90-695d-4576-bb96-a0ba2b73303e}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\NewsDetailView\NewsDetailView.webpart" />
     <None Include="WebParts\NewsDetailView\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{77a3aafc-d052-43c7-9f79-91e75c74e876}</SharePointProjectItemId>
@@ -1079,6 +1091,10 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="WebParts\BannerSlideShow\Elements.xml" />
+    <Content Include="WebParts\HomeNews\Elements.xml" />
+    <Content Include="WebParts\HomeNews\HomeNewsUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="WebParts\NewsDetailView\Elements.xml" />
     <Content Include="WebParts\NewsDetailView\NewsDetailViewUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>

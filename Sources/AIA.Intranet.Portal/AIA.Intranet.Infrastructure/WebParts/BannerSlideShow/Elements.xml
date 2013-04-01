@@ -2,7 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
   <Module Name="BannerSlideShow" List="113" Url="_catalogs/wp">
     <File Path="BannerSlideShow\BannerSlideShow.webpart" Url="BannerSlideShow.webpart" Type="GhostableInLibrary" >
-      <Property Name="Group" Value="[T2V Group]" />
+      <Property Name="Group" Value="[AIA]" />
     </File>
   </Module>
 </Elements>
