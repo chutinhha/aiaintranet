@@ -85,7 +85,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.SiteMap
                         {
                             
                            
-                            ul.Attributes.Add("rel", "closed");
+                            //ul.Attributes.Add("rel", "closed");
                             //ul.Attributes.Add("style", "display:block");
                            
                             li.Controls.Add(ul);

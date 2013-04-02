@@ -17,6 +17,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.SiteMap
 
         protected override void CreateChildControls()
         {
+            this.ChromeType = PartChromeType.None;
             Control control = Page.LoadControl(_ascxPath);
             Controls.Add(control);
         }

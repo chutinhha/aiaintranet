@@ -52,7 +52,9 @@ ddtreemenu.preventpropagate(e)
 }
 }
 
-ddtreemenu.expandSubTree=function(treeid, ulelement){ //expand a UL element and any of its parent ULs
+ddtreemenu.expandSubTree = function (treeid, ulelement) { 
+    
+//expand a UL element and any of its parent ULs
 var rootnode=document.getElementById(treeid)
 var currentnode=ulelement
 currentnode.style.display="block"
