@@ -2,9 +2,9 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <!-- Parent ContentType: Folder (0x0120) -->
   <ContentType ID="0x012000b855312120314ebcb86402554a0b6bfd"
-               Name="[I-Office] - Navigation Item"
-               Group="[I-Office]"
-               Description="Navigation Item"
+               Name="Navigation Item"
+               Group="AIA Portal"
+               Description=""
                Inherits="TRUE"
                Version="0">
     <FieldRefs>

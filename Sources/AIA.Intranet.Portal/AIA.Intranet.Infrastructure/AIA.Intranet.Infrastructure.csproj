@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContentTypes\CategoryContentType\CategoryContentTypeEventReceiver.cs" />
+    <Compile Include="ContentTypes\MenuItemContentType\MenuItemContentTypeEventReceiver.cs" />
     <Compile Include="ContentTypes\TaskContentType\DepartmentTaskContentTypeEvent.cs" />
     <Compile Include="ContentTypes\TaskContentType\PrivateTaskContenTypeEvent.cs" />
     <Compile Include="ContentTypes\TaskContentType\ProjectTaskContentTypeEvent.cs" />
@@ -558,6 +559,9 @@
     <None Include="ContentTypes\BannerContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{918ca61d-b66c-4939-ab59-c54bda141f2f}</SharePointProjectItemId>
     </None>
+    <None Include="ContentTypes\MenuItemContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6499c605-bd63-4df5-b372-8e034be99392}</SharePointProjectItemId>
+    </None>
     <None Include="ContentTypes\NewsCategoryContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fdca1e7d-ea4b-4183-9ece-79e49719a1ac}</SharePointProjectItemId>
     </None>
@@ -569,6 +573,15 @@
     </None>
     <None Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.feature">
       <FeatureId>{7a2645dc-c574-4214-aea2-056b53855073}</FeatureId>
+    </None>
+    <None Include="ListDefinitions\MenuListDefinition\FooterMenuListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{612ed69b-e56f-49ed-b393-d1c8cefdda9d}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\MenuListDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{89096af6-b03b-4019-9b9d-bf3dd362210f}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\MenuListDefinition\TopMenuListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6f8a06e4-f2e3-45c8-88aa-a11ee82414bb}</SharePointProjectItemId>
     </None>
     <None Include="ListDefinitions\NewsCategoryDefinition\NewsCategoryInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5466ee37-a495-4c3c-bbde-b068a5c660ac}</SharePointProjectItemId>
@@ -605,17 +618,11 @@
     <None Include="AppGlobalResources\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{48aa1506-4b8e-404e-a76c-e7a0fb95ddf3}</SharePointProjectItemId>
     </None>
-    <None Include="ContentTypes\BuildingContentType\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{e2483143-3a70-4cbc-acf6-d414e7fe8a49}</SharePointProjectItemId>
-    </None>
     <None Include="ContentTypes\CategoryContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f4b022d0-971f-4f05-985b-3265ab3232d8}</SharePointProjectItemId>
     </None>
     <None Include="ContentTypes\CommentItemContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3c8ee583-4cc2-4c87-ba67-affe37cce17b}</SharePointProjectItemId>
-    </None>
-    <None Include="ContentTypes\DecisionDocumentContentType\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{5db522d5-9a44-4c90-ae4e-44b813979bcc}</SharePointProjectItemId>
     </None>
     <None Include="ContentTypes\NavigationItemContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d86f0736-c4fc-499f-8308-79655650d651}</SharePointProjectItemId>
@@ -705,12 +712,6 @@
     <None Include="ListDefinitions\ADManagerTemplate\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{846d72c8-5aa0-4c20-b0e7-cdb11c0791ea}</SharePointProjectItemId>
     </None>
-    <None Include="ListDefinitions\BuildingListDefinition\Buildings\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f371867a-be1e-4077-99a1-da0cb9f4a213}</SharePointProjectItemId>
-    </None>
-    <None Include="ListDefinitions\BuildingListDefinition\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{43cf2b95-bffc-4b0b-b2fc-909bf4555dec}</SharePointProjectItemId>
-    </None>
     <None Include="ListDefinitions\CommentTemplate\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{270f96e7-8d33-4e32-992c-f62b1580a65f}</SharePointProjectItemId>
     </None>
@@ -759,9 +760,6 @@
     </None>
     <None Include="ListDefinitions\GlobalConfiguration\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f6aae3c0-9f82-4c66-8c8c-bc7baada2c5b}</SharePointProjectItemId>
-    </None>
-    <None Include="ListDefinitions\Navigation\NavigationInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{1ce782f1-8043-474d-8283-5fa754385bd2}</SharePointProjectItemId>
     </None>
     <None Include="ListDefinitions\Navigation\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9dd5b056-eca8-46a4-a4f2-4aa943a38796}</SharePointProjectItemId>
@@ -856,10 +854,7 @@
   <ItemGroup>
     <Content Include="AppGlobalResources\Elements.xml" />
     <Content Include="ContentTypes\BannerContentType\Elements.xml" />
-    <Content Include="ContentTypes\BuildingContentType\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="ContentTypes\DecisionDocumentContentType\Elements.xml" />
+    <Content Include="ContentTypes\MenuItemContentType\Elements.xml" />
     <Content Include="ContentTypes\NewsCategoryContentType\Elements.xml" />
     <Content Include="ContentTypes\NewsItemContentType\Elements.xml" />
     <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskPermissionEditor.ascx">
@@ -940,6 +935,10 @@
     <Content Include="ListDefinitions\EmailList\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\Schema.xml" />
+    <Content Include="ListDefinitions\MenuListDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\MenuListDefinition\FooterMenuListInstance\Elements.xml" />
+    <Content Include="ListDefinitions\MenuListDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\MenuListDefinition\TopMenuListInstance\Elements.xml" />
     <Content Include="ListDefinitions\NewsCategoryDefinition\Elements.xml" />
     <Content Include="ListDefinitions\NewsCategoryDefinition\NewsCategoryInstance\Elements.xml" />
     <Content Include="ListDefinitions\NewsCategoryDefinition\Schema.xml" />
@@ -1011,11 +1010,6 @@
       <DependentUpon>AIA.Intranet.Infrastructure.Data.feature</DependentUpon>
     </Content>
     <Content Include="Images\AIA.Intranet.Infrastructure\logo_form.png" />
-    <Content Include="ListDefinitions\BuildingListDefinition\Buildings\Elements.xml" />
-    <Content Include="ListDefinitions\BuildingListDefinition\Elements.xml" />
-    <Content Include="ListDefinitions\BuildingListDefinition\Schema.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Resources\TaskResources.resx" />
     <Content Include="Images\1352171553_stock_task-recurring.png" />
     <Content Include="Images\AIA.Intranet.Infrastructure\discussion.png" />
@@ -1304,7 +1298,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XML\fldtypes_ImageField.xml" />
-    <Content Include="XML\fldtypes_LinkToItemField.xml" />
+    <Content Include="XML\fldtypes_LinkToItemField.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XSL\fldtypes_ActionField.xsl" />
     <Content Include="XSL\fldtypes_LinkToItemField.xsl" />
     <Content Include="XSL\fldtypes_EmailField.xsl">
@@ -1349,7 +1345,6 @@
     <Content Include="ListDefinitions\GlobalConfiguration\GlobalConfigurationInstance\Elements.xml" />
     <Content Include="ListDefinitions\GlobalConfiguration\Schema.xml" />
     <Content Include="ListDefinitions\Navigation\Elements.xml" />
-    <Content Include="ListDefinitions\Navigation\NavigationInstance\Elements.xml" />
     <Content Include="ListDefinitions\Navigation\Schema.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -1360,7 +1355,9 @@
     <Content Include="SiteColumns\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="XML\fldtypes_AttachmentViewField.xml" />
+    <Content Include="XML\fldtypes_AttachmentViewField.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XML\fldtypes_RegExValidator.xml" />
     <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\LookupFieldWithPickerEditor.ascx">
       <SubType>ASPXCodeBehind</SubType>

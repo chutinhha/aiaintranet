@@ -318,11 +318,22 @@
 								<tr>
 									<td class="s4-titlelogo">
 										<SharePoint:SPLinkButton runat="server" NavigateUrl="~site/" id="onetidProjectPropertyTitleGraphic" >
-											<SharePoint:SiteLogoImage name="onetidHeadbnnr0" id="onetidHeadbnnr2" LogoImageUrl="/_layouts/images/siteIcon.png" runat="server"/>
+											<SharePoint:SiteLogoImage name="onetidHeadbnnr0" id="onetidHeadbnnr2" LogoImageUrl="<% $SPUrl:~SiteCollection/Style Library/images/aialogo.png%>" runat="server"/>
 										</SharePoint:SPLinkButton>
 									</td>
-									<td class="s4-titletext" style="display:none">
-										<div class="s4-pagedescription" tabindex="0" >
+									<td class="s4-titletext">
+
+                                        <%-- WebPart: TopMenu should be here --%>
+                                        <div class="main_menu">
+                                            <a href="#">About AIA</a>
+                                            <a href="#">Our Services</a>
+                                            <a href="#">Our Markets</a>
+                                            <a href="#">For Media</a>
+                                            <a href="#">Investor Relations</a>
+                                            <a href="#">Customer Support</a>
+                                        </div>
+
+										<div class="s4-pagedescription" tabindex="0" style="display:none">
 											<asp:ContentPlaceHolder id="PlaceHolderPageDescription" runat="server"/>
 										</div>
 									</td>
@@ -334,7 +345,47 @@
 						</table>
 					</div>
 				</div>
-				<div id="s4-topheader2" class="s4-pr s4-notdlg">
+				<%-- Breadcrumb was here --%>
+				
+			</div>
+			<div id="s4-statusbarcontainer">
+				<div id="pageStatusBar" class="s4-status-s1">
+				</div>
+			</div>
+
+           <div id="s4-topheader2" class="s4-pr s4-notdlg">
+
+                    <%-- BEGIN: Breadcrumb --%>
+                    <div class="row_pathnavigator">
+				        <div class="links_navigator">
+					        <asp:ContentPlaceHolder id="PlaceHolderSiteName" runat="server">
+								<asp:SiteMapPath
+                                     runat="server"
+                                     SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider"
+                                     RenderCurrentNodeAsLink="true"
+                                     NodeStyle-CssClass="breadcrumbNode"
+                                     CurrentNodeStyle-CssClass="breadcrumbCurrentNode"
+                                     RootNodeStyle-CssClass="breadcrumbRootNode"
+                                     HideInteriorRootNodes="true"
+                                     SkipLinkText="">
+                                 	<PathSeparatorTemplate>
+								        <span id="onetidPageTitleSeparator" class="s4-nothome s4-bcsep s4-titlesep">
+								        <SharePoint:ClusteredDirectionalSeparatorArrow runat="server"/> </span>
+                                 	</PathSeparatorTemplate>
+                                 </asp:SiteMapPath>
+					        </asp:ContentPlaceHolder>
+										
+					        <span id="onetidPageTitleSeparator" class="s4-nothome s4-bcsep s4-titlesep">
+					        <SharePoint:ClusteredDirectionalSeparatorArrow runat="server"/> </span>
+					        <span>
+						        <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
+					        </span>
+				        </div>
+			        </div>
+                    <%-- END: Breadcrumb --%>
+
+                    <%-- BEGIN: Hide TopNavigation --%>
+                    <div style="display:none">
 					<a name="startNavigation"></a>
 					<div id="s4-searcharea" class="s4-search s4-rp">
 						<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
@@ -376,36 +427,9 @@
 								</asp:ContentPlaceHolder>
 						</asp:ContentPlaceHolder>
 					</div>
-				</div>
-			</div>
-			<div id="s4-statusbarcontainer">
-				<div id="pageStatusBar" class="s4-status-s1">
-				</div>
-			</div>
 
-            <%-- BEGIN: Breadcrumb --%>
-            <div class="row_pathnavigator">
-				<div class="links_navigator">
-					<asp:ContentPlaceHolder id="PlaceHolderSiteName" runat="server">
-                        <asp:SiteMapPath
-                             runat="server"
-                             SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider"
-                             RenderCurrentNodeAsLink="false"
-                             NodeStyle-CssClass="breadcrumbNode"
-                             CurrentNodeStyle-CssClass="breadcrumbCurrentNode"
-                             RootNodeStyle-CssClass="breadcrumbRootNode"
-                             HideInteriorRootNodes="true"
-                             SkipLinkText=""/>
-					</asp:ContentPlaceHolder>
-										
-					<span id="onetidPageTitleSeparator" class="s4-nothome s4-bcsep s4-titlesep">
-					<SharePoint:ClusteredDirectionalSeparatorArrow runat="server"/> </span>
-					<span>
-						<asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
-					</span>
+                    </div> <%-- END: Hide TopNavigation --%>
 				</div>
-			</div>
-            <%-- END: Breadcrumb --%>
 
 	        <SharePoint:VisualUpgradePreviewStatus runat="server" />
 
@@ -444,63 +468,34 @@
 				CssClass="ms-quicklaunch-navmgr"
 				>
 				<div>
-					<SharePoint:DelegateControl runat="server"
-						ControlId="QuickLaunchDataSource">
-					 <Template_Controls>
-						<asp:SiteMapDataSource
-						SiteMapProvider="SPNavigationProvider"
-						ShowStartingNode="False"
-						id="QuickLaunchSiteMap"
-						StartingNodeUrl="sid:1025"
-						runat="server"
-						/>
+					<SharePoint:DelegateControl runat="server" ControlId="QuickLaunchDataSource">
+						<Template_Controls>
+						<asp:SiteMapDataSource SiteMapProvider="SPNavigationProvider" ShowStartingNode="False" id="QuickLaunchSiteMap" StartingNodeUrl="sid:1025" runat="server" />
 					 </Template_Controls>
 					</SharePoint:DelegateControl>
-			<SharePoint:UIVersionedContent UIVersion="3" runat="server">
-				<ContentTemplate>
-					<SharePoint:AspMenu
-						id="QuickLaunchMenu"
-						runat="server"
-						DataSourceId="QuickLaunchSiteMap"
-						Orientation="Vertical"
-						StaticDisplayLevels="2"
-						ItemWrap="true"
-						MaximumDynamicDisplayLevels="0"
-						StaticSubMenuIndent="0"
-						SkipLinkText=""
-						CssClass="s4-die"
-						>
-						<LevelMenuItemStyles>
-							<asp:MenuItemStyle CssClass="ms-navheader"/>
-							<asp:MenuItemStyle CssClass="ms-navitem"/>
-						</LevelMenuItemStyles>
-						<LevelSubMenuStyles>
-							<asp:SubMenuStyle CssClass="ms-navSubMenu1"/>
-							<asp:SubMenuStyle CssClass="ms-navSubMenu2"/>
-						</LevelSubMenuStyles>
-						<LevelSelectedStyles>
-							<asp:MenuItemStyle CssClass="ms-selectednavheader"/>
-							<asp:MenuItemStyle CssClass="ms-selectednav"/>
-						</LevelSelectedStyles>
-					</SharePoint:AspMenu>
-				</ContentTemplate>
-			</SharePoint:UIVersionedContent>
-			<SharePoint:UIVersionedContent UIVersion="4" runat="server">
-				<ContentTemplate>
-					<SharePoint:AspMenu
-					  id="V4QuickLaunchMenu"
-					  runat="server"
-					  EnableViewState="false"
-					  DataSourceId="QuickLaunchSiteMap"
-					  UseSimpleRendering="true"
-					  UseSeparateCss="false"
-					  Orientation="Vertical"
-					  StaticDisplayLevels="2"
-					  MaximumDynamicDisplayLevels="0"
-					  SkipLinkText=""
-					  CssClass="s4-ql" />
-				</ContentTemplate>
-			</SharePoint:UIVersionedContent>
+					<SharePoint:UIVersionedContent UIVersion="3" runat="server">
+						<ContentTemplate>
+							<SharePoint:AspMenu id="QuickLaunchMenu" runat="server" DataSourceId="QuickLaunchSiteMap" Orientation="Vertical" StaticDisplayLevels="2" ItemWrap="true" MaximumDynamicDisplayLevels="0" StaticSubMenuIndent="0" SkipLinkText="" CssClass="s4-die">
+								<LevelMenuItemStyles>
+									<asp:menuitemstyle CssClass="ms-navheader" />
+									<asp:menuitemstyle CssClass="ms-navitem" />
+								</LevelMenuItemStyles>
+								<LevelSubMenuStyles>
+									<asp:submenustyle CssClass="ms-navSubMenu1" />
+									<asp:submenustyle CssClass="ms-navSubMenu2" />
+								</LevelSubMenuStyles>
+								<LevelSelectedStyles>
+									<asp:menuitemstyle CssClass="ms-selectednavheader" />
+									<asp:menuitemstyle CssClass="ms-selectednav" />
+								</LevelSelectedStyles>
+							</SharePoint:AspMenu>
+						</ContentTemplate>
+					</SharePoint:UIVersionedContent>
+					<SharePoint:UIVersionedContent UIVersion="4" runat="server">
+						<ContentTemplate>
+							<SharePoint:AspMenu id="V4QuickLaunchMenu" runat="server" EnableViewState="false" DataSourceId="QuickLaunchSiteMap" UseSimpleRendering="true" UseSeparateCss="false" Orientation="Vertical" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="0" SkipLinkText="" CssClass="s4-ql" />
+						</ContentTemplate>
+					</SharePoint:UIVersionedContent>
 				</div>
 				</Sharepoint:SPNavigationManager>
 			<Sharepoint:UIVersionedContent runat="server" UIVersion="3">
@@ -603,8 +598,10 @@
 				<SharePoint:UIVersionedContent UIVersion="3" runat="server" id="PlaceHolderQuickLaunchBottomV3">
 					<ContentTemplate>
 						<table width="100%" cellpadding="0" cellspacing="0" border="0" class="s4-die">
+						<tbody>
 						<tr><td>
 						<table class="ms-recyclebin" width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tbody>
 						<tr><td nowrap="nowrap">
 						<SharePoint:SPLinkButton runat="server" NavigateUrl="~site/_layouts/recyclebin.aspx" id="v3idNavLinkRecycleBin" ImageUrl="/_layouts/images/recycbin.gif" Text="<%$Resources:wss,StsDefault_RecycleBin%>" PermissionsString="DeleteListItems" />
 						</td></tr>
@@ -705,7 +702,7 @@
 		</div>
 </div>
   <asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server">
-	  <SharePoint:FormDigest runat="server"/>
+		<SharePoint:FormDigest runat="server"/>
   </asp:ContentPlaceHolder>
    <input type="text" name="__spText1" title="text" style="display:none;" />
    <input type="text" name="__spText2" title="text" style="display:none;" />
