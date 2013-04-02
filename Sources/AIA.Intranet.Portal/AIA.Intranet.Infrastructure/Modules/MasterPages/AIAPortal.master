@@ -33,10 +33,12 @@
 	<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" />
 
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/override_sp2010.css%>" runat="server"/>
-    <%--
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/styles.css%>" runat="server"/>
-    <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/corev4_edit.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/jquery.ad-gallery.css%>" runat="server"/>
+    <%--
+    
+    <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/corev4_edit.css%>" runat="server"/>
+    
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/menutop.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/popupForm.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/style-ie7.css%>" runat="server"/>
@@ -45,6 +47,8 @@
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/jquery-1.8.3.js" runat="server" />
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/jquery.SPServices-0.7.2.js" runat="server" />
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/aia.portal.commons.js" runat="server" />
+    <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/jquery.ad-gallery.js" runat="server" />
+    <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/slimScroll.js" runat="server" />
 
 	<SharePoint:CustomJSUrl runat="server" />
 	<SharePoint:SoapDiscoveryLink runat="server" />
