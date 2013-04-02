@@ -2,448 +2,86 @@
 <ArrayOfWebpartPageDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   
   <WebpartPageDefinition>
-    <PageUrl>/Pages/home.aspx</PageUrl>
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Liên kết</Title>
+    <PageUrl>/Pages/Home.aspx</PageUrl>
+    <Webparts xsi:type="DefaultWP">
+      <Title>Banner Slide Show</Title>
+      <ZoneId>LeftTop</ZoneId>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>BannerSlideShow.webpart</WebpartName>
+      <Properties>
+        <Add Name="Title" Value="Banner Slide Show" Type="string" ></Add>
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="DefaultWP">
+      <Title>Home News</Title>
+      <ZoneId>RightTop</ZoneId>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>HomeNews.webpart</WebpartName>
+      <Properties>
+        <Add Name="Title" Value="Home News" Type="string" ></Add>
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Zone 1 Content Editor</Title>
       <ZoneId>CenterLeftColumn</ZoneId>
-      <Index>1</Index>
+      <Content>
+        <![CDATA[<div class="box_3col_left height_box_2">
+                    <div class="menu">
+                        <h1>
+                            Welcome to Group Operations</h1>
+                    </div>
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto;">
+                        <div class="content scroll_a h_scroll_2" style="overflow: hidden; width: auto;">
+                            <h2>
+                                <a href="#">Group Operations Welcome Note Mission Statement</a></h2>
+                            <h3>
+                                Protection AIA understands how important it is to guard against 
+				                unfortunate events.</h3>
+                            <ul class="link_department">
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Corporate Message</a></li>
+                                <li><a href="#">Our Heritage</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Looking to the future</a></li>
+                                <li><a href="#">Awards &amp; Accolades</a></li>
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Corporate Message</a></li>
+                                <li><a href="#">Our Heritage</a></li>
+                                <li><a href="#">Looking to the future</a></li>
+                                <li><a href="#">Wealth Management</a></li>
+                                <li><a href="#">Looking to the future</a></li>
+                                <li><a href="#">Awards &amp; Accolades</a></li>
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Corporate Message</a></li>
+                                <li><a href="#">Our Heritage</a></li>
+                                <li><a href="#">Looking to the future</a></li>
+                            </ul>
+                            <div style="margin-bottom: 14px;">
+                                <a class="button" href="#"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what&#39;s comming 
+				                up</a></div>
+                        </div>
+                        <div class="slimScrollBar ui-draggable" style="background: none repeat scroll 0% 0% rgb(102, 102, 102); width: 7px; position: absolute; top: 0px; opacity: 0.3; border-radius: 7px 7px 7px 7px; z-index: 99; right: 1px; height: 335.805px; display: none;">
+                        </div>
+                        <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px 7px 7px 7px; background: none repeat scroll 0% 0% rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+                        </div>
+                    </div>
+                </div>]]>
+      </Content>
+      <Index>0</Index>
       <Hidden>false</Hidden>
       <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Liên kết</ListName>
-      <ListUrl>/Lists/ILinks/MyItems.aspx</ListUrl>
-      <ViewName>My link</ViewName>
-      <CreateDefaultWP>true</CreateDefaultWP>
       <Properties>
-        <Add Name="Title" Value="Liên kết" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="DefaultWP">
-      <Title>Sinh Nhat</Title>
-      <ZoneId>CenterLeftColumn</ZoneId>
-      <Index>2</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>BirhtDay.webpart</WebpartName>
-    </Webparts>
-
-    <Webparts xsi:type="DefaultWP">
-      <Title>Phim mới nhất</Title>
-      <ZoneId>CenterLeftColumn</ZoneId>
-      <Index>3</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>VideoPlayerWebPart.webpart</WebpartName>
-      <Properties>
-        <Add Name="Title" Value="Video mới nhất" Type="string" />
-        <Add Name="PlayLastestVideo" Value="true" Type="string" ></Add>
-        <Add Name="AutoResize" Value="true" Type="string" ></Add>
-      </Properties>
-    </Webparts>
-  
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Thông báo</Title>
-      <ZoneId>CenterColumn</ZoneId>
-      <Index>1</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Thông báo</ListName>
-      <ListUrl>/Lists/IAnnouncements/AllItems.aspx</ListUrl>
-      <ViewName>All items</ViewName>
-      <CreateDefaultWP>true</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Thông báo" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="DefaultWP">
-      <Title>Tin tức</Title>
-      <ZoneId>CenterColumn</ZoneId>
-      <Index>2</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>LatestHotNews.webpart</WebpartName>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Tài liệu chưa đọc</Title>
-      <ZoneId>CenterRightColumn</ZoneId>
-      <Index>1</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Tài liệu chưa đọc</ListName>
-      <ListUrl>/Lists/UnreadContent/WaitingList.aspx</ListUrl>
-      <ViewName>WaitingList</ViewName>
-      <CreateDefaultWP>true</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Tài liệu chưa đọc" Type="string" />
-      </Properties>
-    </Webparts>
-    
-    <Webparts xsi:type="DefaultWP">
-      <Title>Nhân viên tiêu biểu</Title>
-      <ZoneId>CenterRightColumn</ZoneId>
-      <Index>2</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>TopEmployees.webpart</WebpartName>
-    </Webparts>
-
-    <Webparts xsi:type="DefaultWP">
-      <Title>Nhân viên mới</Title>
-      <ZoneId>CenterRightColumn</ZoneId>
-      <Index>3</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>NewEmployees.webpart</WebpartName>
-    </Webparts>
-
-    <Webparts xsi:type="DefaultWP">
-      <Title>Hình ảnh mới nhất</Title>
-      <ZoneId>CenterRightColumn</ZoneId>
-      <Index>4</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>GallerySlideShowWebpart.webpart</WebpartName>
-      <Properties>
-        <Add Name="DisplayAllPictures" Value="true" Type="string" ></Add>
-        <Add Name="Carousel" Value="true" Type="string" ></Add>
-      </Properties>
-    </Webparts>
-    
-  </WebpartPageDefinition>
-
-  <WebpartPageDefinition>
-    <PageUrl>/Pages/News.aspx</PageUrl>
-   
-    <Webparts xsi:type="DefaultWP">
-      <Title>Redirect</Title>
-      <ZoneId>Main</ZoneId>
-      <Index>1</Index>
-      <Hidden>true</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>RedirectWebPart.webpart</WebpartName>
-      <Properties>
-        <Add Name="TargetUrl" Value="/News" Type="string" ></Add>
-      </Properties>
-    </Webparts>
-
-  </WebpartPageDefinition>
-
-  <WebpartPageDefinition>
-    <PageUrl>/Pages/OrgChart.aspx</PageUrl>
-
-    <Webparts xsi:type="DefaultWP">
-      <Title>So do to chuc</Title>
-      <ZoneId>Main</ZoneId>
-      <Index>1</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>OrgChartWebPart.webpart</WebpartName>
-      
-    </Webparts>
-
-    
-  </WebpartPageDefinition>
-
-  <WebpartPageDefinition>
-    <PageUrl>/Pages/Schedule.aspx</PageUrl>
-
-    <Webparts xsi:type="DefaultWP">
-      <Title>Redirect</Title>
-      <ZoneId>Main</ZoneId>
-      <Index>1</Index>
-      <Hidden>true</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>RedirectWebPart.webpart</WebpartName>
-      <Properties>
-        <Add Name="TargetUrl" Value="/Lists/CompanyCalendar" Type="string" ></Add>
+        <Add Name="Title" Value="Zone 1 Content Editor" Type="string" ></Add>
       </Properties>
     </Webparts>
 
   </WebpartPageDefinition>
   
-  <WebpartPageDefinition>
-    <PageUrl>/Pages/Projects.aspx</PageUrl>
-    
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Dự án của tôi</Title>
-      <ZoneId>Body</ZoneId>
-      <Index>1</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Dự án</ListName>
-      <ListUrl>/Lists/Projects/</ListUrl>
-      <ViewName>Dự án của tôi</ViewName>
-      <CreateDefaultWP>true</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Dự án của tôi" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Dự án chưa bắt đầu</Title>
-      <ZoneId>Body</ZoneId>
-      <Index>2</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Dự án</ListName>
-      <ListUrl>/Lists/Projects/</ListUrl>
-      <ViewName>Chưa bắt đầu</ViewName>
-      <CreateDefaultWP>true</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Dự án chưa bắt đầu" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Dự án đang tiến hành</Title>
-      <ZoneId>Body</ZoneId>
-      <Index>3</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Dự án</ListName>
-      <ListUrl>/Lists/Projects/</ListUrl>
-      <ViewName>Đang tiến hành</ViewName>
-      <CreateDefaultWP>true</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Dự án đang tiến hành" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Dự án đã hoàn thành</Title>
-      <ZoneId>Body</ZoneId>
-      <Index>4</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Dự án</ListName>
-      <ListUrl>/Lists/Projects/</ListUrl>
-      <ViewName>Đã hoàn thành</ViewName>
-      <CreateDefaultWP>true</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Dự án đã hoàn thành" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Dự án bị hoãn lại</Title>
-      <ZoneId>Body</ZoneId>
-      <Index>4</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Dự án</ListName>
-      <ListUrl>/Lists/Projects/</ListUrl>
-      <ViewName>Bị hoãn lại</ViewName>
-      <CreateDefaultWP>true</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Dự án bị hoãn lại" Type="string" />
-      </Properties>
-    </Webparts>
-    
-  </WebpartPageDefinition>
-
-  <WebpartPageDefinition>
-    <PageUrl>/Pages/Tasks.aspx</PageUrl>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Công việc chưa duyệt</Title>
-      <ZoneId>Body</ZoneId>
-      <Index>0</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Công việc</ListName>
-      <ListUrl>/Lists/ITasks</ListUrl>
-      <ViewName>Chưa duyệt</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Danh sách chưa duyệt" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Danh sách công việc cá nhân</Title>
-      <ZoneId>Body</ZoneId>
-      <Index>1</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Công việc</ListName>
-      <ListUrl>/Lists/ITasks</ListUrl>
-      <ViewName>Cá nhân</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Danh sách công việc cá nhân" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Danh sách công việc phòng</Title>
-      <ZoneId>Body</ZoneId>
-      <Index>2</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Công việc</ListName>
-      <ListUrl>/Lists/ITasks</ListUrl>
-      <ViewName>Theo phòng</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Danh sách công việc phòng" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Danh sách công việc theo dự án</Title>
-      <ZoneId>Body</ZoneId>
-      <Index>3</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Công việc</ListName>
-      <ListUrl>/Lists/ITasks</ListUrl>
-      <ViewName>Theo dự án</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Danh sách công việc theo dự án" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <!--Right-->
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Duyệt tin tức</Title>
-      <ZoneId>Right</ZoneId>
-      <Index>0</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Duyệt tin tức</ListName>
-      <ListUrl>/Lists/NewApproval</ListUrl>
-      <ViewName>Duyệt tin tức</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Duyệt tin tức" Type="string" />
-        <!--<Add Name ="Toolbar" xsi:type="string" Value="None" />-->
-      </Properties>
-    </Webparts>
-    
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Công việc cần duyệt</Title>
-      <ZoneId>Right</ZoneId>
-      <Index>0</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Duyệt công việc</ListName>
-      <ListUrl>/Lists/TaskApproval</ListUrl>
-      <ViewName>Công việc cần duyệt</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Công việc cần duyệt" Type="string" />
-        <!--<Add Name ="Toolbar" xsi:type="string" Value="None" />-->
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="DefaultWP">
-      <Title>Thống kê công việc</Title>
-      <ZoneId>Right</ZoneId>
-      <Index>1</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>TaskStatisticWebPart.webpart</WebpartName>
-      <Properties>
-        <Add Name="Title" Value="Thống kê công việc" Type="string" />
-      </Properties>
-    </Webparts>
-    
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Công việc cần hoàn thành</Title>
-      <ZoneId>Right</ZoneId>
-      <Index>3</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Công việc</ListName>
-      <ListUrl>/Lists/ITasks</ListUrl>
-      <ViewName>Cần xử lý trong hôm nay</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Công việc cần hoàn thành" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Công việc trễ hạn</Title>
-      <ZoneId>Right</ZoneId>
-      <Index>4</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Đã giao</ListName>
-      <ListUrl>/Lists/ITasks</ListUrl>
-      <ViewName>Trễ hạn</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Công việc trễ hạn" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Công việc đã giao</Title>
-      <ZoneId>Right</ZoneId>
-      <Index>5</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Đã giao</ListName>
-      <ListUrl>/Lists/ITasks</ListUrl>
-      <ViewName>Đã giao</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Công việc đã giao" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Công việc cần giám sát</Title>
-      <ZoneId>Right</ZoneId>
-      <Index>6</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Công việc</ListName>
-      <ListUrl>/Lists/ITasks</ListUrl>
-      <ViewName>Cần giám sát</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Công việc cần giám sát" Type="string" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="XSLTListViewWP">
-      <Title>Công việc liên quan</Title>
-      <ZoneId>Right</ZoneId>
-      <Index>7</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <ListName>Công việc</ListName>
-      <ListUrl>/Lists/ITasks</ListUrl>
-      <ViewName>Liên quan</ViewName>
-      <CreateDefaultWP>false</CreateDefaultWP>
-      <Properties>
-        <Add Name="Title" Value="Công việc liên quan" Type="string" />
-      </Properties>
-    </Webparts>
-    
-  </WebpartPageDefinition>
-
-  <WebpartPageDefinition>
-    <PageUrl>/Pages/Tools.aspx</PageUrl>
-    <Webparts xsi:type="DefaultWP">
-      <Title>Công cụ</Title>
-      <ZoneId>Main</ZoneId>
-      <Index>1</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <WebpartName>MSContentEditor.dwp</WebpartName>
-      <Properties>
-
-        <Add Name="ContentLink" Value="/Pages/Controls.html" Type="string"/>
-      </Properties>
-    </Webparts>
-    
-  </WebpartPageDefinition>
   
 </ArrayOfWebpartPageDefinition>
