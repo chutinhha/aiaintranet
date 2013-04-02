@@ -29,10 +29,8 @@
       </Properties>
     </Webparts>
 
-   
-    
     <Webparts xsi:type="ContenEditorWP">
-      <Title>Zone 1 Content Editor</Title>
+      <Title>Column 1 Content Editor</Title>
       <ZoneId>CenterLeftColumn</ZoneId>
       <Content>
         <![CDATA[<div class="box_3col_left height_box_2">
@@ -82,6 +80,88 @@
       <AllowDuplicate>false</AllowDuplicate>
       <Properties>
         <Add Name="Title" Value="Zone 1 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 2 Content Editor</Title>
+      <ZoneId>CenterColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_3col_right height_box_2">
+                                            <div class="menu">
+                                                <h1>
+                                                    Procedure &amp; Manuals</h1>
+                                            </div>
+                                            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto;">
+                                                <div class="content scroll_a h_scroll_2" style="overflow: hidden; width: auto;">
+                                                    <h2>
+                                                        Fine a form, Make a claim, applay for Leavel</h2>
+                                                    <h2>
+                                                        <p>
+                                                            Medical Claim Form</p>
+                                                        <a href="#">Who We Are</a>
+                                                    </h2>
+                                                    <h2>
+                                                        <p>
+                                                            Employee Self Service (ESS)</p>
+                                                        <a href="#">Corporate Facts</a>
+                                                    </h2>
+                                                    <br/>
+                                                    <div style="margin-bottom: 14px;">
+                                                        <a class="button" href="#"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what&#39;s comming 
+				                                        up</a></div>
+                                                </div>
+                                                <div class="slimScrollBar ui-draggable" style="background: none repeat scroll 0% 0% rgb(102, 102, 102); width: 7px; position: absolute; top: 0px; opacity: 0.3; display: none; border-radius: 7px 7px 7px 7px; z-index: 99; right: 1px; height: 387px;">
+                                                </div>
+                                                <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px 7px 7px 7px; background: none repeat scroll 0% 0% rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+                                                </div>
+                                            </div>
+                                        </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 2 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 3 Content Editor</Title>
+      <ZoneId>CenterRightColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_3col_right height_box_2">
+                                <div class="menu"><h1>Procedure &amp; Manuals</h1></div>
+                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto;"><div class="content scroll_a h_scroll_2" style="overflow: hidden; width: auto;">
+                                    <h2>Procedure &amp; Manuals</h2>
+                                    <h3>AIA aims to help you find an investment approach 
+							        that fits your financial goal.</h3>
+                                    <ul class="link_department">
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Corporate Message</a></li>
+                                        <li><a href="#">Our Heritage</a></li>
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Corporate Message</a></li>
+                                        <li><a href="#">Our Heritage</a></li>
+                                        <li><a href="#">Who We Are</a></li>
+                                    </ul>
+                                    <br/>
+                                    <div style="margin-bottom: 14px;"><a class="button" href="#"><span>
+								        &nbsp;&nbsp;&nbsp;&nbsp;</span>See what&#39;s comming up</a></div>
+                                </div>
+        <div class="slimScrollBar ui-draggable" style="background: none repeat scroll 0% 0% rgb(102, 102, 102); width: 7px; position: absolute; top: 0px; opacity: 0.3; display: none; border-radius: 7px 7px 7px 7px; z-index: 99; right: 1px; height: 387px;"></div>
+        <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px 7px 7px 7px; background: none repeat scroll 0% 0% rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                            </div>
+        ]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 3 Content Editor" Type="string" ></Add>
         <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
     </Webparts>

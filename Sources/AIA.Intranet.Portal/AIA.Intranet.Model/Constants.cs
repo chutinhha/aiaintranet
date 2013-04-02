@@ -10,7 +10,9 @@ namespace AIA.Intranet.Model
        #region AIA
        public const string BANNER_LIBRARY_URL = "BannerLibrary";
        public const string BANNER_CONTENT_TYPE_ID = "0x01010200ec98bbf978904280be10a8bbde810ef7";
-
+       public const string NEWS_CATEGORY_LIST_URL = "/Lists/NewsCategory";
+       public const string NEWS_DEFAULT_CATEGORY = "News";
+       public const string NEWS_DEFAULT_LISTS_URL = "/Lists/News";
 
        public const string ORDER_NUMBER_COLUMN = "OrderNumber";
        public const string MENU_KEYWORDS_COLUMN = "MenuKeywords";

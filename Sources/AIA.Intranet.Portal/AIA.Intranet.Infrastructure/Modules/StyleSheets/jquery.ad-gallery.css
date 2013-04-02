@@ -1,9 +1,11 @@
  #gallery {background: url(../images/slideshow_bg.png) repeat-x bottom;
 	padding-bottom:10px;
 	position:relative;  }
+	
 .ad-gallery {
-  width: 100%;
+  width: 744px;
 }
+
 .ad-gallery, .ad-gallery * {
   margin: 0;
   padding: 0;

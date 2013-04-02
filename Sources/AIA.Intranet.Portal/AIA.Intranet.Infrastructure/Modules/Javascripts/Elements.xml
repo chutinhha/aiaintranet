@@ -10,5 +10,6 @@
     <File Path="jquery.ad-gallery.js" Url="jquery.ad-gallery.js" Type="GhostableInLibrary" />
     <File Path="slimScroll.js" Url="slimScroll.js" Type="GhostableInLibrary" />
 
+    <File Path="jquery-ui.js" Url="jquery-ui.js" />
 </Module>
 </Elements>

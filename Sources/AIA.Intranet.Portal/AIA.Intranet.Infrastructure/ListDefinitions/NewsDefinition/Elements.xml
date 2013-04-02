@@ -9,6 +9,7 @@
         SecurityBits="11"
         Sequence="410"
         DisplayName="[AIA] - News Definition"
+        Hidden="TRUE"
         Description=""
         Image="/_layouts/images/itgen.png"/>
 </Elements>

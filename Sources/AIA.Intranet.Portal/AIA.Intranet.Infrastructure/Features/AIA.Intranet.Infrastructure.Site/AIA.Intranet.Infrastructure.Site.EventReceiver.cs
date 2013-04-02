@@ -102,15 +102,30 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                 var bannerList = CCIUtility.GetListFromURL(Constants.BANNER_LIBRARY_URL, web);
                 if (bannerList != null)
                 {
-                    bannerList.ContentTypes.Add(web.AvailableContentTypes["AIA] - Banner Content Type"]);
-                    foreach (SPContentType item in bannerList.ContentTypes)
+                    SPContentTypeCollection spContentTypeCollection = web.ContentTypes;
+                    SPContentType aiaBanerContentType = null;
+                    foreach ( SPContentType temp in spContentTypeCollection)
                     {
-                        if (item.Parent.Id == SPBuiltInContentTypeId.Picture)
+                        if (temp.Name.Contains("Banner Content Type"))
                         {
-                            bannerList.ContentTypes.Delete(item.Id);
+                            aiaBanerContentType = temp;
+                            break;
                         }
                     }
-                    
+
+                    if (aiaBanerContentType != null && bannerList.ContentTypes[aiaBanerContentType.Name] == null)
+                    {
+                        bannerList.ContentTypes.Add(aiaBanerContentType);
+                        System.Collections.Generic.List<SPContentType> result = new System.Collections.Generic.List<SPContentType>();
+                        result.Add(aiaBanerContentType);
+                        foreach (SPContentType ct in bannerList.ContentTypes)
+                        {
+                            if (ct.Name != aiaBanerContentType.Name)
+                            {
+                                bannerList.ContentTypes.Delete(ct.Id);
+                            }
+                        }
+                    }
                     bannerList.Update();
                 }
             }
