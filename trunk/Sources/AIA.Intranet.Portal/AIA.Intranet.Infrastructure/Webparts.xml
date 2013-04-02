@@ -12,6 +12,7 @@
       <WebpartName>BannerSlideShow.webpart</WebpartName>
       <Properties>
         <Add Name="Title" Value="Banner Slide Show" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
     </Webparts>
 
@@ -24,6 +25,7 @@
       <WebpartName>HomeNews.webpart</WebpartName>
       <Properties>
         <Add Name="Title" Value="Home News" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
     </Webparts>
 
@@ -78,6 +80,7 @@
       <AllowDuplicate>false</AllowDuplicate>
       <Properties>
         <Add Name="Title" Value="Zone 1 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
     </Webparts>
 
