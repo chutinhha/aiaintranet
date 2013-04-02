@@ -7,6 +7,8 @@
   <Field ID="{05DE4EEF-6D53-48AF-A0B0-4F1E6BBE7ACD}" Name="RelatedContent" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RelatedContent" Group="[I-Office]" DisplayName="RelatedContent" Type="URL" Format="Hyperlink" Sortable="FALSE" FromBaseType="TRUE" Width="62" Height="62" />
 <!--<Field ID="{CD5F3FB8-9549-4AC5-BC2E-C5D4EEEC1A00}" Name="Avatar" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Avatar" Group="[I-Office]" DisplayName="Hình" Type="URL" Format="Image" Sortable="FALSE" FromBaseType="TRUE" Width="62" Height="62" />-->
 
+  <Field ID="{E558F8F8-71B8-4FEE-93F0-08CFCDC385BA}" Name="OrderNumber" StaticName="OrderNumber" DisplayName="Order No." Group="AIA Portal" Type="Number" />
+  
 <Field Type="AttachmentView" 
          DisplayName="Hình" 
          Required="FALSE" 

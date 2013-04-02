@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Menu" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AIA.Intranet.Infrastructure-MenuListDefinition" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" DisableAttachments="TRUE" >
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01008eca22179458404a8358b045dec67955" Name="Menu Item" Group="AIA Portal" Description="" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL" />
+          <FieldRef ID="{E558F8F8-71B8-4FEE-93F0-08CFCDC385BA}" Name="OrderNumber" />
+        </FieldRefs>
+        <XmlDocuments>
+          <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+            <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+              <Receiver>
+                <Name>MenuItemContentTypeEventReceiver</Name>
+                <Type>ItemAdding</Type>
+                <SequenceNumber>10000</SequenceNumber>
+                <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+                <Class>$SharePoint.Type.dd88fee1-d7c4-455b-bd33-edc39935ffd7.FullName$</Class>
+                <SolutionId>$SharePoint.Package.Id$</SolutionId>
+                <Data></Data>
+                <Filter></Filter>
+              </Receiver>
+              <Receiver>
+                <Name>MenuItemContentTypeEventReceiver</Name>
+                <Type>ItemUpdating</Type>
+                <SequenceNumber>10000</SequenceNumber>
+                <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+                <Class>$SharePoint.Type.dd88fee1-d7c4-455b-bd33-edc39935ffd7.FullName$</Class>
+                <SolutionId>$SharePoint.Package.Id$</SolutionId>
+                <Data></Data>
+                <Filter></Filter>
+              </Receiver>
+            </Receivers>
+          </XmlDocument>
+        </XmlDocuments>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Sealed="TRUE" Type="Calculated"/>
+      <Field Name="LinkTitleNoMenu" ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" DisplayName="$Resources:core,Title;" Sealed="TRUE" Type="Calculated"/>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" StaticName="Title" DisplayName="$Resources:core,Title;" />
+      <Field ID="{e558f8f8-71b8-4fee-93f0-08cfcdc385ba}" Name="OrderNumber" StaticName="OrderNumber" DisplayName="Order No." Group="AIA Portal" Type="Number" Description="To set the latest order number leave this field empty"/>
+      <Field ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="URL" Group="$Resources:core,Base_Columns;" Type="URL" DisplayName="$Resources:core,URL;" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="OrderNumber">
+          </FieldRef>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="URL">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="OrderNumber">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

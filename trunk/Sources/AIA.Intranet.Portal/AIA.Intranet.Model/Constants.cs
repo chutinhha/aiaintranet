@@ -177,6 +177,8 @@ namespace AIA.Intranet.Model
        public const string CCI_WORKFLOW_TASK_CONTENT_TYPE_ID = "0x01080100e6fa232bca3b4b25b9df4b2e3791d3fc";
        public const string TASK_EVENT_SETTING_EDITOR_KEY = "TaskEventEditor";
 
+       public const string ORDER_NUMBER_COLUMN = "OrderNumber";
+
        //ECB Menu
        public const string LINK_WORKFLOW_COLUMN = "LinkWorkflow";
        public const string LINK_SEND_ESIGN_COLUMN = "LinkSendESign";

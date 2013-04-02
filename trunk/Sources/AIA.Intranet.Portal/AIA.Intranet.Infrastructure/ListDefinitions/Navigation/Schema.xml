@@ -2,13 +2,13 @@
 <List xmlns:ows="Microsoft SharePoint" 
       Title="[I-Office] - Navigation"
       FolderCreation="TRUE" Direction="$Resources:Direction;"
-      Url="Lists/AIA.Intranet.Infrastructure-Navigation"
+      Url="Lists/TopNavigation"
       BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
       <!--<ContentTypeRef ID="0x012000b855312120314ebcb86402554a0b6bfd"/>-->
       
-      <ContentType ID="0x012000b855312120314ebcb86402554a0b6bfd" Name="[I-Office] - Navigation Item" Group="[I-Office]" Description="Navigation Item" Inherits="TRUE" Version="0">
+      <ContentType ID="0x012000b855312120314ebcb86402554a0b6bfd" Name="Navigation Item" Group="AIA Portal" Description="" Inherits="TRUE" Version="0">
         <FieldRefs>
           <FieldRef ID="{18172A87-700A-4EBC-A78D-172DA8C61E1F}"  />
           <FieldRef ID="081C6E4C-5C14-4F20-B23E-1A71CEB6A67C"/>

@@ -1,21 +1,69 @@
-﻿#s4-bodyContainer {
-width: 960px !important;
-margin-left:auto;
-margin-right:auto;
+﻿body{
+    background-color: #F6F6F0;
+}
+
+#s4-bodyContainer {
+    width: 960px !important;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #FFFFFF;
 }
 
 /* Aligns the Top Bars */
 .ms-cui-ribbonTopBars {
-width: 960px !important;
-margin-left:auto;
-margin-right:auto;
+    width: 960px !important;
+    margin-left:auto;
+    margin-right:auto;
 }
  
 /* Turns off the border on the bottom of the tabs */
 .ms-cui-ribbonTopBars > div {
-border-bottom:1px solid transparent !important;
+    border-bottom:1px solid transparent !important;
 }
 
 body #s4-ribbonrow {
     background-color: #D31145 !important;
+}
+
+.ms-siteactionsmenuhover {
+    background-color: #D31145 !important;
+}
+
+.ms-dlgTitle {
+    background-color: #D31145 !important;
+}
+.ms-dlgBorder {
+    border: 1px solid #F098AE !important;
+}
+.ms-dlgContent {
+    border: 1px solid #D31145 !important;
+}
+.ms-titlerowborder{
+    border: 0px solid transparent !important;
+}
+
+body #s4-topheader2{
+	min-height: inherit !important;
+	border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+}
+
+.ms-ltviewselectormenuheader .ms-viewselector a, .ms-ltviewselectormenuheader .ms-viewselectorhover a{
+	font-size:11px;
+}
+
+.row_pathnavigator{
+	padding: 3px 5px;
+}
+
+.ms-welcomeMenu.ms-SpLinkButtonActive {
+    background-color: #D31145 ;
+}
+
+.s4-breadcrumb-anchor:hover,.s4-breadcrumb-anchor-open,.ms-qatbutton:hover{
+	background-color: #D31145;
+}
+
+.ms-ltviewselectormenuseparator{
+    top: 1px;
 }

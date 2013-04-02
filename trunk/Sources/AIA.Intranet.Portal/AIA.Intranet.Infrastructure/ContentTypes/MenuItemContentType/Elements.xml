@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01008eca22179458404a8358b045dec67955"
+               Name="Menu Item"
+               Group="AIA Portal"
+               Description=""
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+      <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL"/>
+      <FieldRef ID="{E558F8F8-71B8-4FEE-93F0-08CFCDC385BA}" Name="OrderNumber"/>
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>MenuItemContentTypeEventReceiver</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>$SharePoint.Type.dd88fee1-d7c4-455b-bd33-edc39935ffd7.FullName$</Class>
+            <SolutionId>$SharePoint.Package.Id$</SolutionId>
+            <Data></Data>
+            <Filter></Filter>
+          </Receiver>
+          <Receiver>
+            <Name>MenuItemContentTypeEventReceiver</Name>
+            <Type>ItemUpdating</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>$SharePoint.Type.dd88fee1-d7c4-455b-bd33-edc39935ffd7.FullName$</Class>
+            <SolutionId>$SharePoint.Package.Id$</SolutionId>
+            <Data></Data>
+            <Filter></Filter>
+          </Receiver>          
+        </Receivers>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>

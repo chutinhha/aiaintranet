@@ -25,8 +25,6 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
     [Guid("93d1341d-f4c7-4a24-a7fe-79a801e4cec9")]
     public class HypertekIOfficeInfrastructureEventReceiver : SPFeatureReceiver
     {
-        string customizedMasterUrl = "/_catalogs/masterpage/AIAPortal.master";
-
 
         // Uncomment the method below to handle the event raised after a feature has been activated.
 
@@ -40,7 +38,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             {
                 web.AllowUnsafeUpdates = true;
                 AddBannerContentType(web);
-                //SetDefaultCustomMasterPage(web, "/_catalogs/masterpage/AIAPortal.master");
+                //SetDefaultMasterPage(web, "/_catalogs/masterpage/AIAPortal.master");
                 ProvisionSubSitesStructure(web);
             }
             catch 
@@ -66,7 +64,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             {
                 web.AllowUnsafeUpdates = true;
 
-                //SetDefaultCustomMasterPage(web, "/_catalogs/masterpage/v4.master");
+                //SetDefaultMasterPage(web, "/_catalogs/masterpage/v4.master");
             }
             catch { }
             finally
@@ -142,7 +140,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             }
         }
 
-        private void SetDefaultCustomMasterPage(SPWeb web, string masterpageUrl)
+        private void SetDefaultMasterPage(SPWeb web, string masterpageUrl)
         {
             Uri masterUri = new Uri(web.Url + masterpageUrl);
 
