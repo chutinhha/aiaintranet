@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="SiteMapUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SiteMap\" Type="ElementManifest" />
+    <ProjectItemFile Source="SiteMap.webpart" Target="SiteMap\" Type="ElementFile" />
+    <ProjectItemFile Source="SiteMapUserControl.ascx" Target="CONTROLTEMPLATES\AIA.Intranet.Infrastructure.WebParts\SiteMap\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="AIA.Intranet.Infrastructure.WebParts.SiteMap" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

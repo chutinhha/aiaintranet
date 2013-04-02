@@ -29,6 +29,8 @@
       </Properties>
     </Webparts>
 
+   
+    
     <Webparts xsi:type="ContenEditorWP">
       <Title>Zone 1 Content Editor</Title>
       <ZoneId>CenterLeftColumn</ZoneId>
@@ -85,6 +87,21 @@
     </Webparts>
 
   </WebpartPageDefinition>
-  
+
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/SiteMap.aspx</PageUrl>
+    <Webparts xsi:type="DefaultWP">
+      <Title>SiteMap</Title>
+      <ZoneId>Header</ZoneId>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>SiteMap.webpart</WebpartName>
+      <Properties>
+        <Add Name="Title" Value="Site Map" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="string" ></Add>
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
   
 </ArrayOfWebpartPageDefinition>
