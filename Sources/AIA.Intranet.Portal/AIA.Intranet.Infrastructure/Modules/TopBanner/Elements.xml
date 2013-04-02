@@ -10,7 +10,7 @@
       <Property Name="RelatedLink" Value="http://google.com.vn" />
     </File>
 
-    <File Path="TopBanner\1.png" Url="1.png" Type="GhostableInLibrary" >
+    <File Path="TopBanner\1.jpg" Url="1.jpg" Type="GhostableInLibrary" >
       <Property Name="ContentType" Value="[AIA] - Banner Content Type" />
       <Property Name="Title" Value="Welcome AIA Intranet Portal" />
       <Property Name="Active" Value="1" />
@@ -18,7 +18,7 @@
       <Property Name="RelatedLink" Value="http://google.com.vn" />
     </File>
 
-    <File Path="TopBanner\2.png" Url="2.png" Type="GhostableInLibrary" >
+    <File Path="TopBanner\2.jpg" Url="2.jpg" Type="GhostableInLibrary" >
       <Property Name="ContentType" Value="[AIA] - Banner Content Type" />
       <Property Name="Title" Value="Welcome AIA Intranet Portal" />
       <Property Name="Active" Value="1" />
@@ -26,7 +26,7 @@
       <Property Name="RelatedLink" Value="http://google.com.vn" />
     </File>
 
-    <File Path="TopBanner\3.png" Url="3.png" Type="GhostableInLibrary" >
+    <File Path="TopBanner\3.jpg" Url="3.jpg" Type="GhostableInLibrary" >
       <Property Name="ContentType" Value="[AIA] - Banner Content Type" />
       <Property Name="Title" Value="Welcome AIA Intranet Portal" />
       <Property Name="Active" Value="1" />
@@ -34,7 +34,7 @@
       <Property Name="RelatedLink" Value="http://google.com.vn" />
     </File>
 
-    <File Path="TopBanner\4.png" Url="4.png" Type="GhostableInLibrary" >
+    <File Path="TopBanner\4.jpg" Url="4.jpg" Type="GhostableInLibrary" >
       <Property Name="ContentType" Value="[AIA] - Banner Content Type" />
       <Property Name="Title" Value="Welcome AIA Intranet Portal" />
       <Property Name="Active" Value="1" />
@@ -42,7 +42,7 @@
       <Property Name="RelatedLink" Value="http://google.com.vn" />
     </File>
 
-    <File Path="TopBanner\5.png" Url="5.png" Type="GhostableInLibrary" >
+    <File Path="TopBanner\5.jpg" Url="5.jpg" Type="GhostableInLibrary" >
       <Property Name="ContentType" Value="[AIA] - Banner Content Type" />
       <Property Name="Title" Value="Welcome AIA Intranet Portal" />
       <Property Name="Active" Value="1" />

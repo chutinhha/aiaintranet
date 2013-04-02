@@ -6,44 +6,5 @@
       <Property Name="ContentType" Value="Web Part Page" />
     </File>
 
-
-    <File Url="Company.aspx" Type="GhostableInLibrary" Path="spstd9.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-
-    <File Url="Department.aspx" Type="GhostableInLibrary" Path="spstd9.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-
-    <File Url="OrgChart.aspx" Type="GhostableInLibrary" Path="spstd9.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-
-    <File Url="Schedule.aspx" Type="GhostableInLibrary" Path="spstd9.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-
-    <File Url="News.aspx" Type="GhostableInLibrary" Path="spstd9.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-
-    <File Url="Projects.aspx" Type="GhostableInLibrary" Path="spstd4.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-    <File Url="Gallery.aspx" Type="GhostableInLibrary" Path="spstd9.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-
-    <File Url="Tasks.aspx" Type="GhostableInLibrary" Path="spstd4.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-
-    <File Url="Timesheets.aspx" Type="GhostableInLibrary" Path="spstd9.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
-
-    <File Url="Tools.aspx" Type="GhostableInLibrary" Path="spstd9.aspx">
-      <Property Name="ContentType" Value="Web Part Page" />
-    </File>
   </Module>
 </Elements>

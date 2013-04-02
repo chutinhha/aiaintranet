@@ -9,7 +9,8 @@
   padding: 0;
 }
   .ad-gallery .ad-image-wrapper {
-    width: 100%;
+    /*width: 100%;*/
+    width: 744px;
     height: 329px;
     margin-bottom: 10px;
     position: relative;
@@ -103,6 +104,10 @@
 	top:4px;
 	z-index:100;
 	font-size:11px
+  }
+  .ad-controls
+  {
+      display:none;
   }
     .ad-gallery .ad-info {
       float: left;
