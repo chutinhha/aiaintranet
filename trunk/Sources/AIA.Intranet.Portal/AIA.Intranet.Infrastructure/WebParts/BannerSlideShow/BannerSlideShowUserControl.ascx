@@ -9,35 +9,30 @@
     Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BannerSlideShowUserControl.ascx.cs"
     Inherits="AIA.Intranet.Infrastructure.WebParts.BannerSlideShow.BannerSlideShowUserControl" %>
-<link href="../../../_layouts/images/AIA.Intranet.Infrastructure/styles/styles.css"
-    rel="stylesheet" type="text/css" />
-<link href="../../../_layouts/images/AIA.Intranet.Infrastructure/styles/jquery.ad-gallery.css"
-    rel="stylesheet" type="text/css" />
-
-<script src="../../../_layouts/1033/jquery-1.8.2.min.js" type="text/javascript"></script>
-<script src="../../../_layouts/1033/slimScroll.js" type="text/javascript"></script>
-<script src="../../../_layouts/1033/jquery.ad-gallery.js" type="text/javascript"></script>
-<div class="main_content">
+<%--<div class="main_content">
     <div class="div_slider">
-        <div class="col_left">
-            <div class="beauty_slideShowContent">
-                <!-- SLIDE SHOW -->
-                <script type="text/javascript">
-                    $(function () {
-                        var galleries = $('.ad-gallery').adGallery();
-                        $('#switch-effect').change(
+        
+    </div>
+</div>--%>
+<div class="col_left">
+    <div class="beauty_slideShowContent">
+        <!-- SLIDE SHOW -->
+        <script type="text/javascript">
+            $(function () {
+                var galleries = $('.ad-gallery').adGallery();
+                $('#switch-effect').change(
                           function () {
                               galleries[0].settings.effect = $(this).val();
                               return false;
                           }
                         );
-                        $('#toggle-slideshow').click(
+                $('#toggle-slideshow').click(
                           function () {
                               galleries[0].slideshow.toggle();
                               return false;
                           }
                         );
-                        $('#toggle-description').click(
+                $('#toggle-description').click(
                           function () {
                               if (!galleries[0].settings.description_wrapper) {
                                   galleries[0].settings.description_wrapper = $('#descriptions');
@@ -47,21 +42,18 @@
                               return false;
                           }
                         );
-                    });
-                </script>
-                <!--end slideshow scripts-->
-                <div id="gallery" class="ad-gallery">
-                    <div class="ad-image-wrapper">
-                    </div>
-                    <div class="ad-controls">
-                    </div>
-                    <div class="ad-nav">
-                        <div class="ad-thumbs">
-                            <ul class="ad-thumb-list" id="ulThumbList" runat="server">
-                                
-                            </ul>
-                        </div>
-                    </div>
+            });
+        </script>
+        <!--end slideshow scripts-->
+        <div id="gallery" class="ad-gallery">
+            <div class="ad-image-wrapper">
+            </div>
+            <div class="ad-controls">
+            </div>
+            <div class="ad-nav">
+                <div class="ad-thumbs">
+                    <ul class="ad-thumb-list" id="ulThumbList" runat="server">
+                    </ul>
                 </div>
             </div>
         </div>

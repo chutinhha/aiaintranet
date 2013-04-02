@@ -9,7 +9,7 @@
     Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HomeNewsUserControl.ascx.cs"
     Inherits="AIA.Intranet.Infrastructure.WebParts.HomeNews.HomeNewsUserControl" %>
-<div>
+<div class="col_right">
     <div class="title_red_1">
         <h1>
             <asp:Literal ID="literalWebPartTitle" runat="server"></asp:Literal>
@@ -27,17 +27,13 @@
                     </div>
                 </ItemTemplate>
             </asp:Repeater>
-
             <asp:Repeater ID="repeaterCommingUp" runat="server">
-            <ItemTemplate>
-                <div style="margin-bottom: 14px">
-                    <asp:HyperLink ID="hyperLinkCommingUp" CssClass="button" NavigateUrl="#" runat="server"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>HyperLink</asp:HyperLink>
-                </div>
-            </ItemTemplate>
+                <ItemTemplate>
+                    <div style="margin-bottom: 14px">
+                        <asp:HyperLink ID="hyperLinkCommingUp" CssClass="button" NavigateUrl="#" runat="server"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>HyperLink</asp:HyperLink>
+                    </div>
+                </ItemTemplate>
             </asp:Repeater>
-
-           
-            
         </div>
         <div class="slimScrollBar ui-draggable" style="background: none repeat scroll 0% 0% rgb(102, 102, 102);
             width: 7px; position: absolute; top: 64px; opacity: 0.3; border-radius: 7px 7px 7px 7px;
@@ -49,7 +45,6 @@
         </div>
     </div>
 </div>
-
 <%--<div class="gto_news">
     <h2 class="titleRed">
         <a href="#">Procedure &amp; Manuals</a></h2>

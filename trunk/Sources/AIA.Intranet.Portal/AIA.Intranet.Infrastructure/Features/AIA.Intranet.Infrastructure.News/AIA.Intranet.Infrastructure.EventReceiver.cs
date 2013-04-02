@@ -8,6 +8,9 @@ using AIA.Intranet.Common.Helpers;
 using AIA.Intranet.Model.Infrastructure;
 using System.Collections.Generic;
 using AIA.Intranet.Common.Extensions;
+using AIA.Intranet.Infrastructure.Resources;
+using AIA.Intranet.Common.Utilities;
+using AIA.Intranet.Model;
 
 namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
 {
@@ -27,6 +30,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
         {
             var web = properties.Feature.Parent as SPWeb;
             UpdateNewsCategoroySettings(web);
+            CreateFirstCategory(web);
         }
 
 
@@ -72,6 +76,38 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
             catch (Exception)
             {
 
+            }
+        }
+
+        private void CreateFirstCategory(SPWeb web)
+        {
+            try
+            {
+                web.AllowUnsafeUpdates = true;
+
+                SPList listNewsCategory = CCIUtility.GetListFromURL(Constants.NEWS_CATEGORY_LIST_URL, web);
+
+                if (listNewsCategory != null)
+                {
+                    SPList listNews = CCIUtility.GetListFromURL(Constants.NEWS_DEFAULT_LISTS_URL, web);
+                    if (listNews != null)
+                    {
+                        SPListItem newFolder = listNewsCategory.Items.Add(listNewsCategory.RootFolder.ServerRelativeUrl, SPFileSystemObjectType.Folder, null);
+                        if (newFolder != null)
+                        {
+                            newFolder[SPBuiltInFieldId.Title] = Constants.NEWS_DEFAULT_CATEGORY;
+                            newFolder.Update();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                CCIUtility.LogError("News Feature Event Receiver", ex.Message);
+            }
+            finally
+            {
+                web.AllowUnsafeUpdates = false;
             }
         }
         #endregion Private Functions

@@ -128,7 +128,7 @@ namespace AIA.Intranet.Infrastructure.Receivers.NewsEventReceiver
        {
            var rootFolder = list.RootFolder;
 
-           var dispFormUrl = string.Format("{0}/{1}/{2}.aspx", web.ServerRelativeUrl, rootFolder.Url, Constants.NEWS_DISPLAYPAGE);
+           var dispFormUrl = string.Format("{0}/{1}/{2}.aspx", web.ServerRelativeUrl.TrimEnd('/'), rootFolder.Url, Constants.NEWS_DISPLAYPAGE);
            var dispForm = web.GetFile(dispFormUrl);
            if (dispForm != null && dispForm.Exists)
                dispForm.Delete();	// delete & recreate our display form

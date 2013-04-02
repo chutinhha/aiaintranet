@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="InternalNewsListTitle" xml:space="preserve">
-    <value>Tin nội bộ</value>
+    <value>News</value>
   </data>
   <data name="NewsApprovalWorkflowName" xml:space="preserve">
     <value>Quy trình kiểm duyệt tin</value>
@@ -127,7 +127,7 @@
     <value>Nhóm duyệt tin</value>
   </data>
   <data name="NewsCategoryListTitle" xml:space="preserve">
-    <value>Danh mục tin tức</value>
+    <value>News Category</value>
   </data>
   <data name="NewsEditorGroup" xml:space="preserve">
     <value>Nhóm soạn tin</value>

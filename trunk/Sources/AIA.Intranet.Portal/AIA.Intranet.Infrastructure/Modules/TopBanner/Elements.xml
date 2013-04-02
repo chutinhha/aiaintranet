@@ -5,9 +5,9 @@
     <File Path="TopBanner\space.png" Url="space.png" Type="GhostableInLibrary" >
       <Property Name="ContentType" Value="[AIA] - Banner Content Type" />
       <Property Name="Title" Value="Welcome AIA Intranet Portal" />
-      <Property Name="Active" Value="1" />
-      <Property Name="Description" Value="Welcome AIA Intranet Portal Descriptions" />
-      <Property Name="RelatedLink" Value="http://google.com.vn" />
+      <Property Name="Active" Value="0" />
+      <Property Name="Description" Value="" />
+      <Property Name="RelatedLink" Value="" />
     </File>
 
     <File Path="TopBanner\1.jpg" Url="1.jpg" Type="GhostableInLibrary" >

@@ -61,7 +61,7 @@ namespace AIA.Intranet.Infrastructure.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tin nội bộ.
+        ///   Looks up a localized string similar to News.
         /// </summary>
         internal static string InternalNewsListTitle {
             get {
@@ -88,7 +88,7 @@ namespace AIA.Intranet.Infrastructure.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Danh mục tin tức.
+        ///   Looks up a localized string similar to News Category.
         /// </summary>
         internal static string NewsCategoryListTitle {
             get {

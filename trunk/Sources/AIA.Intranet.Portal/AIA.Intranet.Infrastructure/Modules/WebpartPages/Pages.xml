@@ -2,7 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="WebpartPages" Url="Pages" SetupPath="1033\STS\doctemp\smartpgs">
 
-    <File Url="Home.aspx" Type="GhostableInLibrary" Path="spstd10.aspx">
+    <File Url="Home.aspx" Type="GhostableInLibrary" Path="spstd11.aspx">
       <Property Name="ContentType" Value="Web Part Page" />
     </File>
 
