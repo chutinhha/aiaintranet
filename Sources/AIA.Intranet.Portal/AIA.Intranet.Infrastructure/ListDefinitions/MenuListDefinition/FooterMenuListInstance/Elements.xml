@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Footer Menu"
+  <ListInstance Title="Footer menu"
                 OnQuickLaunch="TRUE"
                 TemplateType="10004"
                 FeatureId="01686e8b-2142-4d06-9f43-a3d8a98c7017"

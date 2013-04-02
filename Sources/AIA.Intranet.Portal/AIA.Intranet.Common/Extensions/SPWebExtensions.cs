@@ -243,7 +243,7 @@ namespace AIA.Intranet.Common.Extensions
                     DeleteSite(existed);
                 }
 
-                var newSite = web.AddSite(site.Url, site.Name, site.Template);
+                var newSite = web.AddSite(site.Url.Trim(), site.Name.Trim(), site.Template.Trim());
                 if (newSite == null) continue;
                 //Provision Lists
                 //Provision Features
