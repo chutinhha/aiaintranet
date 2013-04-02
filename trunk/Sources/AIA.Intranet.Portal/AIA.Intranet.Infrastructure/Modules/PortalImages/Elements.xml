@@ -1,36 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="PortalImages" Url="Style Library/images" RootWebOnly="TRUE" Path="PortalImages\Images">
-  <File Path="ad_next.png" Url="ad_next.png" Type="GhostableInLibrary" />
-  <File Path="ad_prev.png" Url="ad_prev.png" Type="GhostableInLibrary" />
-  <File Path="ad_scroll_back.png" Url="ad_scroll_back.png" Type="GhostableInLibrary" />
-  <File Path="ad_scroll_forward.png" Url="ad_scroll_forward.png" Type="GhostableInLibrary" />
-  <File Path="aialogo.png" Url="aialogo.png" Type="GhostableInLibrary" />
-  <File Path="all_site.png" Url="all_site.png" Type="GhostableInLibrary" />
-  <File Path="black_transparent.png" Url="black_transparent.png" Type="GhostableInLibrary" />
-  <File Path="career.png" Url="career.png" Type="GhostableInLibrary" />
-  <File Path="createcontent.png" Url="createcontent.png" Type="GhostableInLibrary" />
-  <File Path="excel.png" Url="excel.png" Type="GhostableInLibrary" />
-  <File Path="folder_open.png" Url="folder_open.png" Type="GhostableInLibrary" />
-  <File Path="head.png" Url="head.png" Type="GhostableInLibrary" />
-  <File Path="head_bg.png" Url="head_bg.png" Type="GhostableInLibrary" />
-  <File Path="icons.png" Url="icons.png" Type="GhostableInLibrary" />
-  <File Path="itann.png" Url="itann.png" Type="GhostableInLibrary" />
-  <File Path="itgen.png" Url="itgen.png" Type="GhostableInLibrary" />
-  <File Path="loader.gif" Url="loader.gif" Type="GhostableInLibrary" />
-  <File Path="login_bg.png" Url="login_bg.png" Type="GhostableInLibrary" />
-  <File Path="main_content.png" Url="main_content.png" Type="GhostableInLibrary" />
-  <File Path="menu_right_bg.png" Url="menu_right_bg.png" Type="GhostableInLibrary" />
-  <File Path="ms-dlgTitle.png" Url="ms-dlgTitle.png" Type="GhostableInLibrary" />
-  <File Path="news_large_bg.png" Url="news_large_bg.png" Type="GhostableInLibrary" />
-  <File Path="opa75.png" Url="opa75.png" Type="GhostableInLibrary" />
-  <File Path="p_list_left.png" Url="p_list_left.png" Type="GhostableInLibrary" />
-  <File Path="pdf.png" Url="pdf.png" Type="GhostableInLibrary" />
-  <File Path="printer.png" Url="printer.png" Type="GhostableInLibrary" />
-  <File Path="recycle_Bin.png" Url="recycle_Bin.png" Type="GhostableInLibrary" />
-  <File Path="space.png" Url="space.png" Type="GhostableInLibrary" />
-  <File Path="sprites_x.png" Url="sprites_x.png" Type="GhostableInLibrary" />
-  <File Path="tab_link.png" Url="tab_link.png" Type="GhostableInLibrary" />
-  <File Path="workflows.png" Url="workflows.png" Type="GhostableInLibrary" />
+    <File Path="ad_next.png" Url="ad_next.png" Type="GhostableInLibrary" />
+    <File Path="ad_prev.png" Url="ad_prev.png" Type="GhostableInLibrary" />
+    <File Path="ad_scroll_back.png" Url="ad_scroll_back.png" Type="GhostableInLibrary" />
+    <File Path="ad_scroll_forward.png" Url="ad_scroll_forward.png" Type="GhostableInLibrary" />
+    <File Path="aialogo.png" Url="aialogo.png" Type="GhostableInLibrary" />
+    <File Path="all_site.png" Url="all_site.png" Type="GhostableInLibrary" />
+    <File Path="black_transparent.png" Url="black_transparent.png" Type="GhostableInLibrary" />
+    <File Path="career.png" Url="career.png" Type="GhostableInLibrary" />
+    <File Path="createcontent.png" Url="createcontent.png" Type="GhostableInLibrary" />
+    <File Path="excel.png" Url="excel.png" Type="GhostableInLibrary" />
+    <File Path="folder_open.png" Url="folder_open.png" Type="GhostableInLibrary" />
+    <File Path="head.png" Url="head.png" Type="GhostableInLibrary" />
+    <File Path="head_bg.png" Url="head_bg.png" Type="GhostableInLibrary" />
+    <File Path="icons.png" Url="icons.png" Type="GhostableInLibrary" />
+    <File Path="itann.png" Url="itann.png" Type="GhostableInLibrary" />
+    <File Path="itgen.png" Url="itgen.png" Type="GhostableInLibrary" />
+    <File Path="loader.gif" Url="loader.gif" Type="GhostableInLibrary" />
+    <File Path="login_bg.png" Url="login_bg.png" Type="GhostableInLibrary" />
+    <File Path="main_content.png" Url="main_content.png" Type="GhostableInLibrary" />
+    <File Path="menu_right_bg.png" Url="menu_right_bg.png" Type="GhostableInLibrary" />
+    <File Path="ms-dlgTitle.png" Url="ms-dlgTitle.png" Type="GhostableInLibrary" />
+    <File Path="news_large_bg.png" Url="news_large_bg.png" Type="GhostableInLibrary" />
+    <File Path="opa75.png" Url="opa75.png" Type="GhostableInLibrary" />
+    <File Path="p_list_left.png" Url="p_list_left.png" Type="GhostableInLibrary" />
+    <File Path="pdf.png" Url="pdf.png" Type="GhostableInLibrary" />
+    <File Path="printer.png" Url="printer.png" Type="GhostableInLibrary" />
+    <File Path="recycle_Bin.png" Url="recycle_Bin.png" Type="GhostableInLibrary" />
+    <File Path="space.png" Url="space.png" Type="GhostableInLibrary" />
+    <File Path="sprites_x.png" Url="sprites_x.png" Type="GhostableInLibrary" />
+    <File Path="tab_link.png" Url="tab_link.png" Type="GhostableInLibrary" />
+    <File Path="workflows.png" Url="workflows.png" Type="GhostableInLibrary" />
+    <File Path="closed.gif" Url="closed.gif" Type="GhostableInLibrary" />
+    <File Path="open.gif" Url="open.gif" Type="GhostableInLibrary" />
+  <File Path="l copy.gif" Url="l copy.gif" Type="GhostableInLibrary"  />
+<File Path="l.gif" Url="l.gif" Type="GhostableInLibrary"  />
+<File Path="l_last.gif" Url="l_last.gif" Type="GhostableInLibrary"  />
+<File Path="l-copy.gif" Url="l-copy.gif" Type="GhostableInLibrary" />
 </Module>
 </Elements>

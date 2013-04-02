@@ -33,5 +33,11 @@
     <ProjectItemFile Source="Images\sprites_x.png" Target="PortalImages\Images\" Type="ElementFile" />
     <ProjectItemFile Source="Images\tab_link.png" Target="PortalImages\Images\" Type="ElementFile" />
     <ProjectItemFile Source="Images\workflows.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\closed.gif" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\open.gif" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\l copy.gif" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\l.gif" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\l_last.gif" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\l-copy.gif" Target="PortalImages\Images\" Type="ElementFile" />
   </Files>
 </ProjectItem>
