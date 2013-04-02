@@ -1,0 +1,64 @@
+.ms-welcomeMenu.ms-SpLinkButtonActive{
+/* [ReplaceColor(themeColor:"Dark2-Lighter")] */ border-color:#8b929a;
+border-color:#ff92ab;/*doanvh*/
+/* [RecolorImage(themeColor:"Dark2-Lightest",includeRectangle:{x:0,y:489,width:1,height:11})] */ background: url(../images/sprites_x.png) repeat-x;/*doanvh*/
+/* [ReplaceColor(themeColor:"Dark2",themeShade:"0.8")] */ background-color:#21374c;
+background-color:#d31145; /*doanvh*/
+}
+body #s4-ribbonrow{
+min-height:43px;
+/* [ReplaceColor(themeColor:"Dark2",themeShade:"0.9")] */ background-color:#21374c;
+overflow-y:hidden;
+background:url("/images/head.png") repeat-x;/*doanvh*/
+}
+.ms-cui-tt-a:hover{
+/* [ReplaceColor(themeColor:"Dark2",themeTint:"0.8")] */ border-color:#fff;/*doanvh*/
+/*background:url("/_layouts/images/bgximg.png") repeat-x -0px -1000px;*/
+background:#fff;/*doanvh*/
+color:#d31145!important;/*doanvh*/
+}
+.ms-browseTab.ms-cui-tt-s > a.ms-cui-tt-a{
+/* [ReplaceColor(themeColor:"Light2")] */ background-color:#fff;
+/* [ReplaceColor(themeColor:"Dark2")] */ color:#23272c !important;
+margin-right: 3px;/*doanvh*/
+}
+.ms-cui-tt-s > .ms-cui-tt-a{
+/* [ReplaceColor(themeColor:"Dark2-Medium")] */ border-color:#e3e3e3;/*doanvh*/
+background-color:#fff;
+color:#23272c !important;
+}
+.ms-cui-tt-s .ms-cui-tt-a:hover{
+/* [ReplaceColor(themeColor:"Dark2-Medium")] */  border-color:#e3e3e3;/*doanvh*/
+background:#f1f1f1 url("/_layouts/images/bgximg.png") repeat-x -0px -976px;
+color:#d31145!important;/*doanvh*/
+}
+.ms-cui-ribbon a,.ms-cui-menu a,.ms-cui-toolbar-toolbar a{
+text-decoration:none;
+margin-right: 3px;/*doanvh*/
+}
+/*popup form*/
+.ms-dlgTitle
+{
+/* [RecolorImage(themeColor:"Light2",includeRectangle:{x:0,y:51,width:1,height:21})] */ background:url("/_layouts/images/bgximg.png") repeat-x -0px -51px;
+/* [ReplaceColor(themeColor:"Dark2",themeShade:"0.90")] */ background-color:#d31145;/*doanvh*/
+height:28px;/*doanvh*/
+white-space:nowrap;
+cursor:default;
+overflow:hidden;
+}
+.ms-dlgBorder
+{
+/* [ReplaceColor(themeColor:"Accent1")] */ border:1px solid #eb87a1;/*doanvh*/
+}
+.ms-dlgContent
+{
+position:absolute;
+/* [ReplaceColor(themeColor:"Light1")] */ background-color:#ffffff;
+display:none;
+/* [ReplaceColor(themeColor:"Dark2")] */ border:1px solid #d31145;/*doanvh*/
+}
+.ms-dlgCloseBtn span:hover
+{
+/* [ReplaceColor(themeColor:"Dark2-Lighter")] */ border-color:#eb87a1;/*doanvh*/
+/* [RecolorImage(themeColor:"Dark2-Lightest",method:"Filling",includeRectangle:{x:0,y:489,width:1,height:11})] */ background: url(../images/sprites_x.png) repeat-x;/*doanvh*/
+}
