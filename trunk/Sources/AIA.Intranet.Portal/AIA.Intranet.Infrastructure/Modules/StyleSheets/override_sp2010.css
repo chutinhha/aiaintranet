@@ -9,9 +9,15 @@
     background-color: #FFFFFF;
 }
 
+#s4-bodyContainer-dlg {
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #FFFFFF;
+}
+
 /* Aligns the Top Bars */
 .ms-cui-ribbonTopBars {
-    width: 960px !important;
+    width: 960px;
     margin-left:auto;
     margin-right:auto;
 }

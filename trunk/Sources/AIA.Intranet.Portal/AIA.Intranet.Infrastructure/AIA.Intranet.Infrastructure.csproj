@@ -583,6 +583,12 @@
     <None Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.feature">
       <FeatureId>{7a2645dc-c574-4214-aea2-056b53855073}</FeatureId>
     </None>
+    <None Include="ListDefinitions\LeftMenuListDefinition\LeftMenuListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1e0eaf76-0ef0-4be6-b0bd-337495f3536e}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\LeftMenuListDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0230deee-fb07-4161-8862-9c3a4eb8521c}</SharePointProjectItemId>
+    </None>
     <None Include="ListDefinitions\MenuListDefinition\FooterMenuListInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{612ed69b-e56f-49ed-b393-d1c8cefdda9d}</SharePointProjectItemId>
     </None>
@@ -950,6 +956,9 @@
     <Content Include="ListDefinitions\EmailList\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\Schema.xml" />
+    <Content Include="ListDefinitions\LeftMenuListDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\LeftMenuListDefinition\LeftMenuListInstance\Elements.xml" />
+    <Content Include="ListDefinitions\LeftMenuListDefinition\Schema.xml" />
     <Content Include="ListDefinitions\MenuListDefinition\Elements.xml" />
     <Content Include="ListDefinitions\MenuListDefinition\FooterMenuListInstance\Elements.xml" />
     <Content Include="ListDefinitions\MenuListDefinition\Schema.xml" />

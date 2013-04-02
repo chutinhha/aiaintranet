@@ -11,6 +11,9 @@ namespace AIA.Intranet.Model
        public const string BANNER_LIBRARY_URL = "BannerLibrary";
        public const string BANNER_CONTENT_TYPE_ID = "0x01010200ec98bbf978904280be10a8bbde810ef7";
 
+
+       public const string ORDER_NUMBER_COLUMN = "OrderNumber";
+       public const string MENU_KEYWORDS_COLUMN = "MenuKeywords";
        #endregion AIA
 
        #region Approval Status
@@ -176,8 +179,6 @@ namespace AIA.Intranet.Model
        public const string CCI_WORKFLOW_TASK_ID = "0x01080100E6FA232BCA3B4B25B9DF4B2E3791D3FC";
        public const string CCI_WORKFLOW_TASK_CONTENT_TYPE_ID = "0x01080100e6fa232bca3b4b25b9df4b2e3791d3fc";
        public const string TASK_EVENT_SETTING_EDITOR_KEY = "TaskEventEditor";
-
-       public const string ORDER_NUMBER_COLUMN = "OrderNumber";
 
        //ECB Menu
        public const string LINK_WORKFLOW_COLUMN = "LinkWorkflow";

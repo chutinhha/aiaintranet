@@ -1,4 +1,6 @@
-﻿$(document).ready(function () {
+﻿JSRequest.EnsureSetup();
+
+$(document).ready(function () {
 
     //Fix the scrollbar in Chrome browser
     var isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
@@ -27,19 +29,10 @@
     //format rating table in survey
     $("td.ms-formbodysurvey table[summary]>tbody>tr:odd").addClass("survey-oddrow");
 
-    //Elements with the potential to be too wide.
-    elements = $(".ms-bodyareacell > div > *, .main-container > div > *");
-    leftPanelWidth = $("#s4-leftpanel").width();
+    //fix width in dialog form
+    if (JSRequest.QueryString["IsDlg"]) {
+        $("#s4-bodyContainer").attr("ID", "#s4-bodyContainer-dlg");
+        $(".ms-cui-ribbonTopBars").width("auto");
+    }
 
-    //For each Elements
-    $(elements).each(function () {
-
-        //if it's wider than the side width
-        if ($(this).width() > ($("#s4-bodyContainer").width() - leftPanelWidth)) {
-            //Calculate the new width taking the left nav into account
-            newWidth = leftPanelWidth + $(this).width();
-            //Set the width!
-            $("#s4-bodyContainer").attr("style", "width:" + newWidth + "px!important")
-        }
-    });
 });
