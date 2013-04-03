@@ -8,9 +8,9 @@
                    Description="" 
                    Version="0">
         <FieldRefs>
-          <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" Sealed="TRUE" DisplayName="Tiêu đề" />
-          <FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" Sealed="TRUE" DisplayName="Tiêu đề" />
-          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Sealed="TRUE" DisplayName="Tiêu đề" />
+          <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" Sealed="TRUE" DisplayName="Title" />
+          <FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" Sealed="TRUE" DisplayName="Title" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Sealed="TRUE" DisplayName="Title" />
           <FieldRef ID="{C7916F23-1EEE-4232-A0C6-931DE8E5C76B}" Name="ShortDescription" />
           <FieldRef ID="{01E09BED-73CE-4b7e-B5EA-0CB64FDC0143}" Name="Contents" />
           <FieldRef ID="{59D82360-3784-44fe-9957-8CB2E719C7D8}" Name="Thumbnail1" />
@@ -20,12 +20,11 @@
       </ContentType>
     </ContentTypes>
     <Fields>
-      <Field Type="Note" DisplayName="Mô tả" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="[AIA]" ID="{c7916f23-1eee-4232-a0c6-931de8e5c76b}" StaticName="ShortDescription" Name="ShortDescription" />
-      <Field Type="Note" DisplayName="Nội dung" NumLines="35" RichText="TRUE" RichTextMode="FullHtml" Sortable="FALSE" Group="[AIA]" ID="{01e09bed-73ce-4b7e-b5ea-0cb64fdc0143}" StaticName="Contents" Name="Contents" />
-      <Field Type="ImageField" DisplayName="Hình minh họa" Group="[AIA]" ID="{59d82360-3784-44fe-9957-8cb2e719c7d8}" StaticName="Thumbnail1" Name="Thumbnail1" />
-      <Field Type="User" DisplayName="Người duyệt" List="UserInfo" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{c7a33037-b9c5-49f0-947f-19dce4866d97}" Name="Approver" StaticName="Approver" Group="[AIA]" />
-      <Field Type="Number" DisplayName="Số lần đọc" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="1" Decimals="0" Group="[AIA]" ID="{875e6f9a-b9ec-4c49-bd9b-d8f18b4dcc0f}" StaticName="ViewCount" Name="ViewCount" Hidden="TRUE" />
-      <Field Type="Boolean" ID="{8e841307-fbc3-4499-bfde-57bd58cb5270}" StaticName="IsHotNews" Name="IsHotNews" DisplayName="Tin chính" Group="[AIA]">
+      <Field Type="Note" DisplayName="Description" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="[AIA]" ID="{c7916f23-1eee-4232-a0c6-931de8e5c76b}" StaticName="ShortDescription" Name="ShortDescription" />
+      <Field Type="Note" DisplayName="Content" NumLines="35" RichText="TRUE" RichTextMode="FullHtml" Sortable="FALSE" Group="[AIA]" ID="{01e09bed-73ce-4b7e-b5ea-0cb64fdc0143}" StaticName="Contents" Name="Contents" />
+      <Field Type="ImageField" DisplayName="Thumbnail" Group="[AIA]" ID="{59d82360-3784-44fe-9957-8cb2e719c7d8}" StaticName="Thumbnail1" Name="Thumbnail1" />
+      <Field Type="Number" DisplayName="View" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="1" Decimals="0" Group="[AIA]" ID="{875e6f9a-b9ec-4c49-bd9b-d8f18b4dcc0f}" StaticName="ViewCount" Name="ViewCount" Hidden="TRUE" />
+      <Field Type="Boolean" ID="{8e841307-fbc3-4499-bfde-57bd58cb5270}" StaticName="IsHotNews" Name="IsHotNews" DisplayName="Is home news" Group="[AIA]">
     <Default>0</Default>
   </Field>
       <Field ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitle" Group="$Resources:core,Base_Columns;" ReadOnly="TRUE" Type="Computed" DisplayName="$Resources:core,Title;" DisplayNameSrcField="Title" ClassInfo="Menu" AuthoringInfo="$Resources:core,Linked_Item_With_Menu;">
@@ -114,6 +113,9 @@
           <FieldRef Name="ViewCount" />
         </ViewFields>
         <Query>
+          <GroupBy Collapse="TRUE">
+            <FieldRef Name="_ModerationStatus" />
+          </GroupBy>
           <OrderBy>
             <FieldRef Name="ID">
             </FieldRef>

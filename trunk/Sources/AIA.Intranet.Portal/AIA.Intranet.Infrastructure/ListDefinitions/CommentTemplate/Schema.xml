@@ -40,7 +40,7 @@
       <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Title" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" ColName="nvarchar1" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
 
       <Field Name="LinkTitle" DisplayName="Title" Type="Text" />
-      <Field Type="Note" DisplayName="Nội Dung"  NumLines="35" RichText="TRUE" RichTextMode="FullHtml"  Sortable="FALSE" Group="[I-Office]" ID="{1E66B70E-1179-497A-8B73-AD139E34E11E}" StaticName="CommentText" Name="CommentText"  />
+      <Field Type="Note" DisplayName="Content"  NumLines="35" RichText="TRUE" RichTextMode="FullHtml"  Sortable="FALSE" Group="[I-Office]" ID="{1E66B70E-1179-497A-8B73-AD139E34E11E}" StaticName="CommentText" Name="CommentText"  />
       <Field Type="Number" DisplayName="Số Phản Hồi" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="1" Decimals="0" Group="[I-Office]" ID="{E2811F1E-ED96-4440-B205-14350E02A44C}"  StaticName="RepliesCount" Name="RepliesCount" />
       <Field ID="{9A04E409-D277-4F84-AEB0-5F437DA0F8AD}" Name="ReplyTo" StaticName="ReplyTo" DisplayName="Phản Hồi Cho" Type="Lookup" Group="[I-Office]" List="" ShowField="ID" ></Field>
       <Field ID="{504B2598-2121-44EB-A9B1-CEBBB82E0530}" Hidden="FALSE" Required="FALSE" UniqueId="FALSE" Name="CommentUrl" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="CommentUrl" Group="[I-Office]" DisplayName="Nguồn bình luận" Type="Text" Sortable="FALSE" Overwrite="TRUE" />

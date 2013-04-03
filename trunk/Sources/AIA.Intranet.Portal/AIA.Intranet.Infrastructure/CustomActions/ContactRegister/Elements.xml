@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="{A5B3C824-0ED4-4eb7-BBA9-235D7A02E061}"
+                Title="Contact email settings"
+                GroupId="GeneralSettings"
+                Location="Microsoft.SharePoint.ListEdit"
+                RegistrationType ="List"
+                RegistrationId="12006"
+                Sequence="1000">
+    <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/ContactEmailSetting.aspx?List={ListId}&amp;Source=' + window.location"/>
+  </CustomAction>
+</Elements>

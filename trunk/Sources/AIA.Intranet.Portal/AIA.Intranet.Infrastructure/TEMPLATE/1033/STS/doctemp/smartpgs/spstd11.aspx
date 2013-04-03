@@ -117,7 +117,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="height: 100%;">
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="width:341px; height: 100%;">
                             <WebPartPages:WebPartZone runat="server" Title="loc:CenterLeftColumn" ID="CenterLeftColumn"
                                 FrameType="TitleBarOnly">
                                 <ZoneTemplate>
@@ -125,7 +125,7 @@
                                 </ZoneTemplate>
                             </WebPartPages:WebPartZone>
                         </td>
-                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="height: 100%;">
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="width:341px; height: 100%;">
                             <WebPartPages:WebPartZone runat="server" Title="loc:CenterColumn" ID="CenterColumn"
                                 FrameType="TitleBarOnly">
                                 <ZoneTemplate>
@@ -133,7 +133,7 @@
                                 </ZoneTemplate>
                             </WebPartPages:WebPartZone>
                         </td>
-                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="height: 100%;">
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="width:341px; height: 100%;">
                             <WebPartPages:WebPartZone runat="server" Title="loc:CenterRightColumn" ID="CenterRightColumn"
                                 FrameType="TitleBarOnly">
                                 <ZoneTemplate>
@@ -142,6 +142,26 @@
                             </WebPartPages:WebPartZone>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" colspan="2"  style="width:70%; height: 100%;">
+                            <WebPartPages:WebPartZone runat="server" Title="loc:LeftBelow" ID="LeftBelow"
+                                FrameType="TitleBarOnly">
+                                <ZoneTemplate>
+                                    
+                                </ZoneTemplate>
+                            </WebPartPages:WebPartZone>
+                        </td>
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="width:30%; height: 100%;">
+                            <WebPartPages:WebPartZone runat="server" Title="loc:RightBelow" ID="RightBelow"
+                                FrameType="TitleBarOnly">
+                                <ZoneTemplate>
+                                    
+                                </ZoneTemplate>
+                            </WebPartPages:WebPartZone>
+                        </td>
+                    </tr>
+
                     <tr>
                         <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" colspan="3" valign="top">
                             <WebPartPages:WebPartZone runat="server" Title="loc:Footer" ID="Footer">

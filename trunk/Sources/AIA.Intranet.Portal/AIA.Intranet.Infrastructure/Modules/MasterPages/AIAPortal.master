@@ -49,6 +49,7 @@
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/aia.portal.commons.js" runat="server" />
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/jquery.ad-gallery.js" runat="server" />
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/jquery-ui.js" runat="server" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.js"></script>
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/slimScroll.js" runat="server" />
 
 	<SharePoint:CustomJSUrl runat="server" />

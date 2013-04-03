@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Field Type="Lookup" DisplayName="Type of Enquiry" Required="TRUE" EnforceUniqueValues="FALSE" List="Lists/TypeOfEnquiry" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" 
+         ID="{1B573CC0-C026-4059-9B67-DC3A26E38CB9}" StaticName="TypeOfEnquiry" Name="TypeOfEnquiry" Group="[AIA]" />
+
+  <Field Type="Note" DisplayName="Content" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" 
+         ID="{6D0F1536-0ADF-40b3-971F-8C98570D7C67}" StaticName="Content" Name="Content" Group="[AIA]" />
+
+  <Field Type="User" DisplayName="Sender" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" 
+         ID="{EA7FB29B-2960-464a-828D-16B19A5F662D}" StaticName="Sender" Name="Sender" Hidden="TRUE" Group="[AIA]" />
+
+  <Field Type="Boolean" DisplayName="Status" EnforceUniqueValues="FALSE" Indexed="FALSE" 
+         ID="{C5F238FD-499D-4f1e-8C1A-28D6E9BAFA94}" StaticName="Status" Name="Status" Hidden="TRUE" Group="[AIA]" >
+    <Default>0</Default>
+  </Field>
+  
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100eafe9a372a964f97b6d3ec857ca34d58"
+               Name="[AIA] - Contact Content Type"
+               Group="[AIA]"
+               Description=""
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{1B573CC0-C026-4059-9B67-DC3A26E38CB9}" Name="TypeOfEnquiry" />
+      <FieldRef ID="{6D0F1536-0ADF-40b3-971F-8C98570D7C67}" Name="Content" />
+      <FieldRef ID="{EA7FB29B-2960-464a-828D-16B19A5F662D}" Name="Sender" />
+      <FieldRef ID="{C5F238FD-499D-4f1e-8C1A-28D6E9BAFA94}" Name="Status" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
