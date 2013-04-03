@@ -529,6 +529,22 @@
     <Compile Include="WebParts\ContactSend\ContactSendUserControl.ascx.designer.cs">
       <DependentUpon>ContactSendUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\FooterMenu\FooterMenu.cs" />
+    <Compile Include="WebParts\FooterMenu\FooterMenuUserControl.ascx.cs">
+      <DependentUpon>FooterMenuUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\FooterMenu\FooterMenuUserControl.ascx.designer.cs">
+      <DependentUpon>FooterMenuUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\HeaderMenu\HeaderMenu.cs" />
+    <Compile Include="WebParts\HeaderMenu\HeaderMenuUserControl.ascx.cs">
+      <DependentUpon>HeaderMenuUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\HeaderMenu\HeaderMenuUserControl.ascx.designer.cs">
+      <DependentUpon>HeaderMenuUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\HomeNews\HomeNews.cs" />
     <Compile Include="WebParts\HomeNews\HomeNewsUserControl.ascx.cs">
       <DependentUpon>HomeNewsUserControl.ascx</DependentUpon>
@@ -536,6 +552,14 @@
     </Compile>
     <Compile Include="WebParts\HomeNews\HomeNewsUserControl.ascx.designer.cs">
       <DependentUpon>HomeNewsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\LeftMenu\LeftMenu.cs" />
+    <Compile Include="WebParts\LeftMenu\LeftMenuUserControl.ascx.cs">
+      <DependentUpon>LeftMenuUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\LeftMenu\LeftMenuUserControl.ascx.designer.cs">
+      <DependentUpon>LeftMenuUserControl.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="WebParts\NewsDetailView\NewsDetailView.cs" />
     <Compile Include="WebParts\NewsDetailView\NewsDetailViewUserControl.ascx.cs">
@@ -622,7 +646,7 @@
     <None Include="ListDefinitions\MenuListDefinition\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{89096af6-b03b-4019-9b9d-bf3dd362210f}</SharePointProjectItemId>
     </None>
-    <None Include="ListDefinitions\MenuListDefinition\TopMenuListInstance\SharePointProjectItem.spdata">
+    <None Include="ListDefinitions\MenuListDefinition\HeaderMenuListInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6f8a06e4-f2e3-45c8-88aa-a11ee82414bb}</SharePointProjectItemId>
     </None>
     <None Include="ListDefinitions\NewsCategoryDefinition\NewsCategoryInstance\SharePointProjectItem.spdata">
@@ -859,9 +883,21 @@
     <None Include="WebParts\ContactSend\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c7c1d5cd-7376-406a-98a5-a0379cbfd810}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\FooterMenu\FooterMenu.webpart" />
+    <None Include="WebParts\FooterMenu\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{17a1cf15-0e0d-4fdb-a72c-c383ec58baac}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HeaderMenu\HeaderMenu.webpart" />
+    <None Include="WebParts\HeaderMenu\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28b2c511-9a42-4828-9f3d-a3c4e27afaf2}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\HomeNews\HomeNews.webpart" />
     <None Include="WebParts\HomeNews\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f57c4e90-695d-4576-bb96-a0ba2b73303e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\LeftMenu\LeftMenu.webpart" />
+    <None Include="WebParts\LeftMenu\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2af937d8-7da4-45f1-98d7-635bccf66215}</SharePointProjectItemId>
     </None>
     <None Include="WebParts\NewsDetailView\NewsDetailView.webpart" />
     <None Include="WebParts\NewsDetailView\SharePointProjectItem.spdata">
@@ -1004,7 +1040,7 @@
     <Content Include="ListDefinitions\MenuListDefinition\Elements.xml" />
     <Content Include="ListDefinitions\MenuListDefinition\FooterMenuListInstance\Elements.xml" />
     <Content Include="ListDefinitions\MenuListDefinition\Schema.xml" />
-    <Content Include="ListDefinitions\MenuListDefinition\TopMenuListInstance\Elements.xml" />
+    <Content Include="ListDefinitions\MenuListDefinition\HeaderMenuListInstance\Elements.xml" />
     <Content Include="ListDefinitions\NewsCategoryDefinition\Elements.xml" />
     <Content Include="ListDefinitions\NewsCategoryDefinition\NewsCategoryInstance\Elements.xml" />
     <Content Include="ListDefinitions\NewsCategoryDefinition\Schema.xml" />
@@ -1169,8 +1205,20 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="WebParts\ContactSend\Elements.xml" />
+    <Content Include="WebParts\FooterMenu\Elements.xml" />
+    <Content Include="WebParts\FooterMenu\FooterMenuUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\HeaderMenu\Elements.xml" />
+    <Content Include="WebParts\HeaderMenu\HeaderMenuUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="WebParts\HomeNews\Elements.xml" />
     <Content Include="WebParts\HomeNews\HomeNewsUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\LeftMenu\Elements.xml" />
+    <Content Include="WebParts\LeftMenu\LeftMenuUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="WebParts\NewsDetailView\Elements.xml" />

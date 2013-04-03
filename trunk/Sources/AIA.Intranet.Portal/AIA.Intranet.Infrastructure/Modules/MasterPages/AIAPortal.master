@@ -13,6 +13,9 @@
 <%@ Register Tagprefix="PublishingWebControls" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register Tagprefix="PublishingNavigation" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 
+<%@ Register tagprefix="HeaderMenu" namespace="AIA.Intranet.Infrastructure.WebParts.HeaderMenu" assembly="AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d" %>
+<%@ Register tagprefix="FooterMenu" namespace="AIA.Intranet.Infrastructure.WebParts.FooterMenu" assembly="AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="<%$Resources:wss,language_value%>" dir="<%$Resources:wss,multipages_direction_dir_value%>" runat="server" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -32,18 +35,19 @@
 	</script>
 	<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" />
 
-    <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/override_sp2010.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/styles.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/jquery.ad-gallery.css%>" runat="server"/>
+
     <%--
-    
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/corev4_edit.css%>" runat="server"/>
-    
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/menutop.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/popupForm.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/style-ie7.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/style-ie8.css%>" runat="server"/>
     --%>
+
+    <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/override_sp2010.css%>" runat="server"/>
+
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/jquery-1.8.3.js" runat="server" />
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/jquery.SPServices-0.7.2.js" runat="server" />
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/aia.portal.commons.js" runat="server" />
@@ -330,14 +334,7 @@
 									<td class="s4-titletext">
 
                                         <%-- WebPart: TopMenu should be here --%>
-                                        <div class="main_menu">
-                                            <a href="#">About AIA</a>
-                                            <a href="#">Our Services</a>
-                                            <a href="#">Our Markets</a>
-                                            <a href="#">For Media</a>
-                                            <a href="#">Investor Relations</a>
-                                            <a href="#">Customer Support</a>
-                                        </div>
+                                        <HeaderMenu:HeaderMenu runat="server" Title="HeaderMenu" __MarkupType="vsattributemarkup" __WebPartId="{78227891-4b8e-49ac-8039-98ba46f7867f}" WebPart="true" __designer:IsClosed="false" id="g_78227891_4b8e_49ac_8039_98ba46f7867f"></HeaderMenu:HeaderMenu>
 
 										<div class="s4-pagedescription" tabindex="0" style="display:none">
 											<asp:ContentPlaceHolder id="PlaceHolderPageDescription" runat="server"/>
@@ -694,12 +691,8 @@
 			</div>
 
             <%-- BEGIN: Footer --%>
-            <div id="footer" class="s4-notdlg">
-                <div>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Data Privacy Policy</a>
-                    <a href="#">Confidentiality Policy</a>
-                </div>
+            <div class="footer s4-notdlg">
+                <FooterMenu:FooterMenu runat="server" Title="FooterMenu" __MarkupType="vsattributemarkup" __WebPartId="{f79bea49-6659-49d7-89b3-22fde0e5f2d4}" WebPart="true" __designer:IsClosed="false" id="g_f79bea49_6659_49d7_89b3_22fde0e5f2d4"></FooterMenu:FooterMenu>
                 <div>Copyright &copy; 2013, AIA Group Limited and its subsidiaries. All rights reserved. Confidential and proprietary information. For internal use only. Do not disclose or distribute</div>
             </div>
             <%-- END: Footer --%>

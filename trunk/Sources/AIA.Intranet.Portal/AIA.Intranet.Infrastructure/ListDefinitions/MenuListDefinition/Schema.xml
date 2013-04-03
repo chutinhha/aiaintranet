@@ -7,6 +7,7 @@
           <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
           <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL" />
           <FieldRef ID="{E558F8F8-71B8-4FEE-93F0-08CFCDC385BA}" Name="OrderNumber" />
+          <FieldRef ID="{dca368a0-8f89-47f7-a0d4-a95f9e33cdd1}" Name="Active"/>
         </FieldRefs>
         <XmlDocuments>
           <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
@@ -42,6 +43,9 @@
       <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" StaticName="Title" DisplayName="$Resources:core,Title;" />
       <Field ID="{e558f8f8-71b8-4fee-93f0-08cfcdc385ba}" Name="OrderNumber" StaticName="OrderNumber" DisplayName="Order No." Group="AIA Portal" Type="Number" Description="To set the latest order number leave this field empty" Min="1" Max="999999999" />
       <Field ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="URL" Group="$Resources:core,Base_Columns;" Type="URL" DisplayName="$Resources:core,URL;" />
+      <Field Type="Boolean" ID="{dca368a0-8f89-47f7-a0d4-a95f9e33cdd1}" StaticName="Active" Name="Active" DisplayName="Active">
+        <Default>1</Default>
+      </Field>
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
@@ -75,6 +79,8 @@
           </FieldRef>
           <FieldRef Name="URL">
           </FieldRef>
+          <FieldRef Name="Active">
+          </FieldRef>          
         </ViewFields>
         <Query>
           <OrderBy>

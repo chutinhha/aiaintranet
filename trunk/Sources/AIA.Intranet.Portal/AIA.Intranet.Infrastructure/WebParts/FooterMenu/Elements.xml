@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="FooterMenu" List="113" Url="_catalogs/wp">
+    <File Path="FooterMenu\FooterMenu.webpart" Url="FooterMenu.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="[AIA]" />
+    </File>
+  </Module>
+</Elements>
