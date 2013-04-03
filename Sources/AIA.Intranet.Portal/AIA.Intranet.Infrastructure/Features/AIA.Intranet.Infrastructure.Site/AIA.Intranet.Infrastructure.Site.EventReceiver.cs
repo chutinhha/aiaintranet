@@ -37,8 +37,9 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             try
             {
                 web.AllowUnsafeUpdates = true;
+
                 AddBannerContentType(web);
-                //SetDefaultMasterPage(web, "/_catalogs/masterpage/AIAPortal.master");
+
                 ProvisionSubSitesStructure(web);
             }
             catch 
@@ -64,7 +65,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             {
                 web.AllowUnsafeUpdates = true;
 
-                //SetDefaultMasterPage(web, "/_catalogs/masterpage/v4.master");
+                RemoveMasterPage(web, "/_catalogs/masterpage/AIAPortal.master");
             }
             catch { }
             finally
@@ -162,6 +163,14 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             web.MasterUrl = masterUri.AbsolutePath;
             web.CustomMasterUrl = masterUri.AbsolutePath;
             web.Update();
+        }
+
+        private void RemoveMasterPage(SPWeb web, string masterpageUrl)
+        {
+            SPFile  file = web.GetFile(web.ServerRelativeUrl.TrimEnd('/') + masterpageUrl);
+            if (file.Exists)
+                file.Delete();
+            file.Update();
         }
         #endregion [Methods]
 

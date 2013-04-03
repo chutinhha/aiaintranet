@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="FooterMenuUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="FooterMenu\" Type="ElementManifest" />
+    <ProjectItemFile Source="FooterMenu.webpart" Target="FooterMenu\" Type="ElementFile" />
+    <ProjectItemFile Source="FooterMenuUserControl.ascx" Target="CONTROLTEMPLATES\AIA.Intranet.Infrastructure.WebParts\FooterMenu\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="AIA.Intranet.Infrastructure.WebParts.FooterMenu" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

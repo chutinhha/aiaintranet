@@ -12,6 +12,7 @@
       <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
       <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL"/>
       <FieldRef ID="{E558F8F8-71B8-4FEE-93F0-08CFCDC385BA}" Name="OrderNumber"/>
+      <FieldRef ID="{dca368a0-8f89-47f7-a0d4-a95f9e33cdd1}" Name="Active"/>
     </FieldRefs>
     <XmlDocuments>
       <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
