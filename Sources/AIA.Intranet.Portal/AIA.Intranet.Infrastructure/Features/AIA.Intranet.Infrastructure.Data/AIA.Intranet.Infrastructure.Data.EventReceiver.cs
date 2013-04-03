@@ -32,6 +32,9 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Data
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
             SPWeb web = (SPWeb)properties.Feature.Parent;
+            var folder = web.RootFolder;
+            folder.WelcomePage = Constants.NEWS_HOME_PAGE.TrimStart('/');
+            folder.Update();
             ProvisionWebpart(web, "AIA.Intranet.Infrastructure.Webparts.xml");
         }
 

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ArrayOfWebpartPageDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   
+  <!--Home-->
   <WebpartPageDefinition>
     <PageUrl>/Pages/Home.aspx</PageUrl>
     <Webparts xsi:type="DefaultWP">
@@ -168,10 +169,11 @@
 
   </WebpartPageDefinition>
 
+  <!--Site Map-->
   <WebpartPageDefinition>
     <PageUrl>/Pages/SiteMap.aspx</PageUrl>
     <Webparts xsi:type="DefaultWP">
-      <Title>SiteMap</Title>
+      <Title>Site Map</Title>
       <ZoneId>Header</ZoneId>
       <Index>0</Index>
       <Hidden>false</Hidden>
@@ -183,5 +185,399 @@
       </Properties>
     </Webparts>
   </WebpartPageDefinition>
+
+  <!--My Page-->
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/MyPage.aspx</PageUrl>
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>My Page Content Editor</Title>
+      <ZoneId>Header</ZoneId>
+      <Content>
+        <![CDATA[<div class="main_content main_bg">
+          <div class="viewlist_page">
+            <div class="whatNews_box noPaddingL mypages_style">
+              <div class="whatNews_description">
+                <h1>My pages</h1>
+                <h3>Title about My page, Title about My page</h3>
+                <div class="row">
+                  <h4>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing of Securities on the Stock Exchange of Hong Kong Limited.</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Who we are</a>
+                    </li>
+                    <li>
+                      <a href="#">Corporate Message</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Heritage</a>
+                    </li>
+                    <li>
+                      <a href="#">Community</a>
+                    </li>
+                    <li>
+                      <a href="#">Looking to the future</a>
+                    </li>
+                    <li>
+                      <a href="#">Awards &amp; Accolades</a>
+                    </li>
+                  </ul>
+                  <div style="margin-bottom:10px">
+                    <a class="button" href="#">
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Go to Employee Sefl Service (ESS) System
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <h4>For none ESS system users, please access forms bellow:</h4>
+                  <br>
+                    <div style="margin-bottom:10px">
+                      <a class="button" href="#">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Go to Employee Sefl Service (ESS) System
+                      </a>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        ]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="My Page Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
+
+  <!--What News-->
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/WhatNews.aspx</PageUrl>
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>What News Content Editor</Title>
+      <ZoneId>Header</ZoneId>
+      <Content>
+        <![CDATA[
+        <div class="col_right">
+          <div class="whatNews_box">
+            <div class="whatNews_description">
+              <h1>What's News</h1>
+              <h3>Title company News, event...</h3>
+              <p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing of Securities on the Stock Exchange of Hong Kong Limited.</p>
+            </div>
+            <div>
+              <div class="whatNews_left">
+                <div align="center" class="news_largeItem">
+                  <img src="http://www.aia.com/en/resources/174ebe004c6982ed8facaf9a6c3b0c76/AIA_male_with_headphones_n_laptop_eng.jpg" />
+                    <div align="center" style="margin-bottom:30px">
+                      <a class="button" href="#">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what's comming up
+                      </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="whatNews_right">
+                <div class="news_listItems">
+                  <div class="listItem">
+                    <h2>News &amp; View</h2>
+                    <p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing</p>
+                    <a href="#"> See more News &amp; View</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>HR Memos</h2>
+                    <p>Rules Governing The Listing</p>
+                    <a href="#"> See more HR Memos</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>AIA Channel</h2>
+                    <p>The information presented herein is intended</p>
+                    <a href="#"> See more AIA Channel</a>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+        ]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="What News Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
+
+  <!--Our Company-->
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/OurCompany.aspx</PageUrl>
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Our Company Content Editor</Title>
+      <ZoneId>Header</ZoneId>
+      <Content>
+        <![CDATA[
+        <div class="col_right">
+          <div class="whatNews_box">
+            <div class="whatNews_description">
+              <h1>
+                Working @ AIA
+              </h1>
+              <h3>
+                Your starting point for getting things done
+              </h3>
+              <p>
+                The information presented herein is intended to comply with the relevant disclosure
+                requirements of the Rules Governing The Listing of Securities on the Stock Exchange
+                of Hong Kong Limited.
+              </p>
+            </div>
+            <div>
+              <div class="whatNews_left">
+                <div align="center" class="news_largeItem">
+                  <img src="http://www.aia.com/en/resources/174ebe004c6982ed8facaf9a6c3b0c76/AIA_male_with_headphones_n_laptop_eng.jpg" />
+                  <div align="center" style="margin-bottom: 30px">
+                    <a class="button" href="#">
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what's comming up
+                    </a>
+                  </div>
+                </div>
+                <div style="width: 102%; margin-top: 10px" class="news_listItems">
+                  <div class="listItem">
+                    <h2>
+                      News &amp; View
+                    </h2>
+                    <p>
+                      The information presented herein is intended to comply with the relevant disclosure
+                      requirements of the Rules Governing The Listing
+                    </p>
+                    <a href="#">See more News &amp; View</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      HR Memos
+                    </h2>
+                    <p>
+                      Rules Governing The Listing
+                    </p>
+                    <a href="#">See more HR Memos</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      AIA Channel
+                    </h2>
+                    <p>
+                      The information presented herein is intended
+                    </p>
+                    <a href="#">See more AIA Channel</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      News &amp; View
+                    </h2>
+                    <p>
+                      The information presented herein is intended to comply with the relevant disclosure
+                      requirements of the Rules Governing The Listing
+                    </p>
+                    <a href="#">See more News &amp; View</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      HR Memos
+                    </h2>
+                    <p>
+                      Rules Governing The Listing
+                    </p>
+                    <a href="#">See more HR Memos</a>
+                  </div>
+                </div>
+              </div>
+              <div class="whatNews_right">
+                <div class="news_listItems">
+                  <div class="intranet_links">
+                    <h2>
+                      Other AIA Intranet Links
+                    </h2>
+                    <p>
+                      Monthly Return of Equity Issuer on Movement in Securities for the month ended 30
+                      November 2012
+                    </p>
+                    <ul>
+                      <li>
+                        <a href="#">Who we are</a>
+                      </li>
+                      <li>
+                        <a href="#">Corporate Message</a>
+                      </li>
+                      <li>
+                        <a href="#">Our Heritage</a>
+                      </li>
+                      <li>
+                        <a href="#">Community</a>
+                      </li>
+                      <li>
+                        <a href="#">Looking to the future</a>
+                      </li>
+                      <li>
+                        <a href="#">Awards &amp; Accolades</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      News &amp; View
+                    </h2>
+                    <p>
+                      The information presented herein is intended to comply with the relevant disclosure
+                      requirements of the Rules Governing The Listing
+                    </p>
+                    <a href="#">See more News &amp; View</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      HR Memos
+                    </h2>
+                    <p>
+                      Rules Governing The Listing
+                    </p>
+                    <a href="#">See more HR Memos</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      AIA Channel
+                    </h2>
+                    <p>
+                      The information presented herein is intended
+                    </p>
+                    <a href="#">See more AIA Channel</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      News &amp; View
+                    </h2>
+                    <p>
+                      The information presented herein is intended to comply with the relevant disclosure
+                      requirements of the Rules Governing The Listing
+                    </p>
+                    <a href="#">See more News &amp; View</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      HR Memos
+                    </h2>
+                    <p>
+                      Rules Governing The Listing
+                    </p>
+                    <a href="#">See more HR Memos</a>
+                  </div>
+                  <div class="listItem">
+                    <h2>
+                      AIA Channel
+                    </h2>
+                    <p>
+                      The information presented herein is intended
+                    </p>
+                    <a href="#">See more AIA Channel</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        ]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Our Company Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
+
+  <!--Career-->
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/Career.aspx</PageUrl>
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Career Content Editor</Title>
+      <ZoneId>Header</ZoneId>
+      <Content>
+        <![CDATA[
+          <div class="col_right">
+            <div class="whatNews_box">
+              <div class="whatNews_description">
+                <h1>What's News</h1>
+                <h3>Title company News, event...</h3>
+                <p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing of Securities on the Stock Exchange of Hong Kong Limited.</p>
+              </div>
+              <div>
+
+                <div align="center" class="div_img_career">
+                  <img src="images/career.png" />
+                </div>
+                <div style="padding-top:20px">
+                  <div class="div40">
+                    <div class="listItemNews">
+                      <h2>Job Openings</h2>
+                      <p>AIA is one of the pre-eminent and the largest listed life insurance groups in the world with an exclusive focus on the Asia Pacific region.</p>
+                      <a href="#">Our Values &amp; Culture</a>
+                      <a href="#">Management Associate Program</a>
+                    </div>
+                  </div>
+                  <div class="div40 noMarginR">
+                    <div class="listItemNews">
+                      <h2>Job Openings FAQ</h2>
+                      <p>Our vision is to be a leading provider of financial prosperity and security solutions through a relentless focus on customers, distributors and employees.</p>
+                      <a href="#">Employees</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        ]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Career Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
+
+  <!--Contact-->
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/Contact.aspx</PageUrl>
+    <Webparts xsi:type="DefaultWP">
+      <Title>Contact</Title>
+      <ZoneId>Header</ZoneId>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>ContactSend.webpart</WebpartName>
+      <Properties>
+        <Add Name="Title" Value="Contact" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="string" ></Add>
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
   
 </ArrayOfWebpartPageDefinition>
+
+
+
+
+
+
+

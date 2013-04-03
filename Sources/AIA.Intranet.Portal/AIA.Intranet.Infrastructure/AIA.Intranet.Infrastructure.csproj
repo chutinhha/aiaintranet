@@ -331,6 +331,13 @@
     <Compile Include="Layouts\AIA.Intranet.Infrastructure\AutoCreationSettings.aspx.designer.cs">
       <DependentUpon>AutoCreationSettings.aspx.cs</DependentUpon>
     </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ContactEmailSetting.aspx.cs">
+      <DependentUpon>ContactEmailSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ContactEmailSetting.aspx.designer.cs">
+      <DependentUpon>ContactEmailSetting.aspx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\AIA.Intranet.Infrastructure\DisplayAttachments.ashx.cs">
       <DependentUpon>DisplayAttachments.ashx</DependentUpon>
     </Compile>
@@ -514,6 +521,14 @@
     <Compile Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx.designer.cs">
       <DependentUpon>BannerSlideShowUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\ContactSend\ContactSend.cs" />
+    <Compile Include="WebParts\ContactSend\ContactSendUserControl.ascx.cs">
+      <DependentUpon>ContactSendUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ContactSend\ContactSendUserControl.ascx.designer.cs">
+      <DependentUpon>ContactSendUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\HomeNews\HomeNews.cs" />
     <Compile Include="WebParts\HomeNews\HomeNewsUserControl.ascx.cs">
       <DependentUpon>HomeNewsUserControl.ascx</DependentUpon>
@@ -568,6 +583,9 @@
     <None Include="ContentTypes\BannerContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{918ca61d-b66c-4939-ab59-c54bda141f2f}</SharePointProjectItemId>
     </None>
+    <None Include="ContentTypes\ContactContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fc12855f-e09c-4957-bff0-8f1d076681a2}</SharePointProjectItemId>
+    </None>
     <None Include="ContentTypes\MenuItemContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6499c605-bd63-4df5-b372-8e034be99392}</SharePointProjectItemId>
     </None>
@@ -577,11 +595,20 @@
     <None Include="ContentTypes\NewsItemContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{579a7406-d0e7-48f3-8b6d-dd102ecdef1c}</SharePointProjectItemId>
     </None>
+    <None Include="CustomActions\ContactRegister\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{be4aaa5a-22d4-4a03-9df1-fb4b83a7a6da}</SharePointProjectItemId>
+    </None>
     <None Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.News.feature">
       <FeatureId>{6e90fac6-3a85-47ed-91d9-d0c2efee5569}</FeatureId>
     </None>
     <None Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.feature">
       <FeatureId>{7a2645dc-c574-4214-aea2-056b53855073}</FeatureId>
+    </None>
+    <None Include="ListDefinitions\ContactDefinition\ContactInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c4ad6b6-5f7c-4b63-85f2-62a739938dd0}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\ContactDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0bceee0-67d3-439f-9c47-c0e80c9120e9}</SharePointProjectItemId>
     </None>
     <None Include="ListDefinitions\LeftMenuListDefinition\LeftMenuListInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1e0eaf76-0ef0-4be6-b0bd-337495f3536e}</SharePointProjectItemId>
@@ -609,6 +636,9 @@
     </None>
     <None Include="ListInstances\BannerLibrary\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5d73abca-f75d-4369-b0ae-90265626c236}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\TypeOfEnquiry\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{efcf9e54-a796-44a5-9a18-e1f7a092aa20}</SharePointProjectItemId>
     </None>
     <None Include="Modules\AIAHtmlPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{96893d58-df2f-471a-a0d8-e3f6b04cab6f}</SharePointProjectItemId>
@@ -825,6 +855,10 @@
     <None Include="WebParts\BannerSlideShow\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3340c9f9-df22-4e95-a45a-c17b3c467af7}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\ContactSend\ContactSend.webpart" />
+    <None Include="WebParts\ContactSend\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c7c1d5cd-7376-406a-98a5-a0379cbfd810}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\HomeNews\HomeNews.webpart" />
     <None Include="WebParts\HomeNews\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f57c4e90-695d-4576-bb96-a0ba2b73303e}</SharePointProjectItemId>
@@ -875,6 +909,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="ContentTypes\BannerContentType\Elements.xml" />
+    <Content Include="ContentTypes\ContactContentType\Elements.xml" />
     <Content Include="ContentTypes\MenuItemContentType\Elements.xml" />
     <Content Include="ContentTypes\NewsCategoryContentType\Elements.xml" />
     <Content Include="ContentTypes\NewsItemContentType\Elements.xml" />
@@ -900,6 +935,7 @@
     <Content Include="ControlTemplates\AIARenderTemplate.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
+    <Content Include="CustomActions\ContactRegister\Elements.xml" />
     <Content Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.News.Template.xml">
       <DependentUpon>AIA.Intranet.Infrastructure.News.feature</DependentUpon>
     </Content>
@@ -952,7 +988,13 @@
     <Content Include="Images\AIA.Intranet.Infrastructure\styles\styles.css" />
     <Content Include="Layouts\1033\jquery.ad-gallery.js" />
     <Content Include="Layouts\1033\slimScroll.js" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\ContactEmailSetting.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="Libs\Microsoft.SharePoint.Publishing.dll" />
+    <Content Include="ListDefinitions\ContactDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\ContactDefinition\ContactInstance\Elements.xml" />
+    <Content Include="ListDefinitions\ContactDefinition\Schema.xml" />
     <Content Include="ListDefinitions\EmailList\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\Schema.xml" />
@@ -969,6 +1011,7 @@
     <Content Include="ListDefinitions\NewsDefinition\Elements.xml" />
     <Content Include="ListDefinitions\NewsDefinition\Schema.xml" />
     <Content Include="ListInstances\BannerLibrary\Elements.xml" />
+    <Content Include="ListInstances\TypeOfEnquiry\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Sample.txt" />
     <Content Include="Modules\Javascripts\aia.portal.commons.js" />
@@ -1122,6 +1165,10 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="WebParts\BannerSlideShow\Elements.xml" />
+    <Content Include="WebParts\ContactSend\ContactSendUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\ContactSend\Elements.xml" />
     <Content Include="WebParts\HomeNews\Elements.xml" />
     <Content Include="WebParts\HomeNews\HomeNewsUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>

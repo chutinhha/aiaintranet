@@ -16,6 +16,12 @@ namespace AIA.Intranet.Model
 
        public const string ORDER_NUMBER_COLUMN = "OrderNumber";
        public const string MENU_KEYWORDS_COLUMN = "MenuKeywords";
+
+       public const string CONTACT_INTERNAL_EMAIL_PROPERTY = "CONTACT_INTERNAL_EMAIL_PROPERTY";
+       public const string CONTACT_EXTERNAL_EMAIL_PROPERTY = "CONTACT_EXTERNAL_EMAIL_PROPERTY";
+
+       public const string TYPE_OF_ENQUIRY_LIST_URL = "/Lists/TypeOfEnquiry";
+       public const string CONTACT_LIST_URL = "/Lists/Contacts";
        #endregion AIA
 
        #region Approval Status

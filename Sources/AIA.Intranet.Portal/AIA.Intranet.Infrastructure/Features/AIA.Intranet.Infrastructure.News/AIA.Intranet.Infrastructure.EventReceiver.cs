@@ -90,7 +90,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
                 if (listNewsCategory != null)
                 {
                     SPList listNews = CCIUtility.GetListFromURL(Constants.NEWS_DEFAULT_LISTS_URL, web);
-                    if (listNews != null)
+                    if (listNews == null)
                     {
                         SPListItem newFolder = listNewsCategory.Items.Add(listNewsCategory.RootFolder.ServerRelativeUrl, SPFileSystemObjectType.Folder, null);
                         if (newFolder != null)

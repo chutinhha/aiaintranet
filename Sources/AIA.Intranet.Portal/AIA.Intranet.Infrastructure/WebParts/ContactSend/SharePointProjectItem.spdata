@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="ContactSendUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ContactSend\" Type="ElementManifest" />
+    <ProjectItemFile Source="ContactSend.webpart" Target="ContactSend\" Type="ElementFile" />
+    <ProjectItemFile Source="ContactSendUserControl.ascx" Target="CONTROLTEMPLATES\AIA.Intranet.Infrastructure.WebParts\ContactSend\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="AIA.Intranet.Infrastructure.WebParts.ContactSend" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

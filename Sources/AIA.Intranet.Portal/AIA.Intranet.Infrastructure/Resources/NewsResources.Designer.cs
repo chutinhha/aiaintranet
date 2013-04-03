@@ -106,7 +106,7 @@ namespace AIA.Intranet.Infrastructure.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hình minh họa.
+        ///   Looks up a localized string similar to News Images.
         /// </summary>
         internal static string NewsImagesListTitle {
             get {
