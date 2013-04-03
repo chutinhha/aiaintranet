@@ -14,8 +14,13 @@ namespace AIA.Intranet.Model
        public const string NEWS_DEFAULT_CATEGORY = "News";
        public const string NEWS_DEFAULT_LISTS_URL = "/Lists/News";
 
+       public const string HEADER_MENU_LIST_URL = "Lists/HeaderMenu";
+       public const string FOOTER_MENU_LIST_URL = "Lists/FooterMenu";
+       public const string LEFT_MENU_LIST_URL = "Lists/LeftMenu";
+
        public const string ORDER_NUMBER_COLUMN = "OrderNumber";
        public const string MENU_KEYWORDS_COLUMN = "MenuKeywords";
+       public const string ACTIVE_COLUMN = "Active";
 
        public const string CONTACT_INTERNAL_EMAIL_PROPERTY = "CONTACT_INTERNAL_EMAIL_PROPERTY";
        public const string CONTACT_EXTERNAL_EMAIL_PROPERTY = "CONTACT_EXTERNAL_EMAIL_PROPERTY";
