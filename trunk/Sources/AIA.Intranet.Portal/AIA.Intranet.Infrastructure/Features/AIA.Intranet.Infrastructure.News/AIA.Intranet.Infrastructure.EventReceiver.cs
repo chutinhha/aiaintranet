@@ -66,7 +66,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
             try
             {
                 Assembly assembly = Assembly.GetExecutingAssembly();
-                string xml = assembly.GetResourceTextFile("AIA.Intranet.Infrastructure.NewsCustomSettings.xml");
+                string xml = assembly.GetResourceTextFile("AIA.Intranet.Infrastructure.XMLCustomSettings.NewsCustomSettings.xml");
 
                 var settings = SerializationHelper.DeserializeFromXml<List<CustomSettingDefinition>>(xml);
 

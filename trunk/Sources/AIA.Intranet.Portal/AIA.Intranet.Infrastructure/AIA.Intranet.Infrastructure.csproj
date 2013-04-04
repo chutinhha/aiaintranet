@@ -1241,6 +1241,9 @@
     <Content Include="WebParts\ViewNewsCategoryWebPart\ViewNewsCategoryWebPartUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
+    <EmbeddedResource Include="XMLCustomSettings\NewsCustomSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Content Include="XSL\fldtypes_TimesheetField.xsl" />
     <EmbeddedResource Include="AppGlobalResources\AnnouncementResources.resx" />
     <EmbeddedResource Include="AppGlobalResources\ApprovalWorkflowResources.resx" />
@@ -1272,9 +1275,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="AppGlobalResources\WebPartResources.resx" />
-    <EmbeddedResource Include="NewsApprovalWorkflowSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="TaskApprovalWorkflowSettings.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1386,9 +1386,6 @@
     </Content>
     <Content Include="Modules\NewsWebPartPages\Home.aspx.xml" />
     <Content Include="Modules\WebpartPages\Pages.xml" />
-    <EmbeddedResource Include="NewsCustomSettings.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Content Include="Receivers\UpdateLinkToItemFieldReceiver\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -1424,7 +1421,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Content Include="Receivers\UpdateImageFieldReceiver\Elements.xml" />
-    <EmbeddedResource Include="Webparts.xml">
+    <EmbeddedResource Include="XMLCustomSettings\Webparts.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Content Include="TEMPLATE\Pages\viewpage_webpart.aspx">
