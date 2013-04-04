@@ -33,7 +33,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                 {
                     using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
                     {
-                        var opinionList = CCIUtility.GetListFromURL(Constants.CONTACT_LIST_URL, web);
+                        var opinionList = CCIUtility.GetListFromURL(Constants.OPINION_LIST_URL, web);
                         if (opinionList != null)
                         {
                             //ffContent.ListId = opinionList.ID;
@@ -68,7 +68,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                     {
                         using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
                         {
-                            var opinionList = CCIUtility.GetListFromURL(Constants.CONTACT_LIST_URL, web);
+                            var opinionList = CCIUtility.GetListFromURL(Constants.OPINION_LIST_URL, web);
                             if (opinionList != null)
                             {
                                 string emailAddress = string.Empty;
@@ -78,8 +78,8 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                                     string[] internalEmailArray = internalEmail.Split(',');
                                     foreach (string item in internalEmailArray)
                                     {
-                                        SPUser user = web.AllUsers[item];
-                                        emailAddress += user.Email;
+                                        SPUser user = web.EnsureUser(item);
+                                        emailAddress += user.Email + ";";
                                     }
                                 }
                                 string externalEmail = opinionList.GetCustomProperty(Constants.CONTACT_EXTERNAL_EMAIL_PROPERTY);
@@ -104,17 +104,18 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                                 string emailBodySetting = opinionList.GetCustomProperty(Constants.CONTACT_BODY_HTML_EMAIL_PROPERTY);
                                 if (!string.IsNullOrEmpty(emailBodySetting))
                                 {
-                                    emailBody = string.Format(emailBodySetting, txtContent.Text);
+                                    emailBody = string.Format(emailBodySetting, txtContent.Text.Replace("\r", "<br />").Replace("\n", "<br />"));
                                 }
-                                
+                                web.AllowUnsafeUpdates = true;
                                 SPListItem spListItem = opinionList.Items.Add();
                                 spListItem["Title"] = emailTitle;
-                                //spListItem["Content"] = txtContent.Text;
-                                //spListItem["TypeOfEnquiry"] = ddlTypeOfEnquiry.SelectedValue;
-                                //spListItem["Author"] = SPContext.Current.Web.CurrentUser;
-                                spListItem.Update();
-
-                                SPUtility.SendEmail(web, true, true, emailAddress, emailTitle, emailBody);
+                                spListItem["Content"] = txtContent.Text;
+                                spListItem["TypeOfEnquiry"] = ddlTypeOfEnquiry.SelectedValue;
+                                spListItem["Author"] = SPContext.Current.Web.CurrentUser;
+                                spListItem["Editor"] = SPContext.Current.Web.CurrentUser;
+                                spListItem.SystemUpdate();
+                                web.AllowUnsafeUpdates = false;
+                                SPUtility.SendEmail(web, true, false, emailAddress, emailTitle, emailBody);
                             }
                         }
                     }
@@ -122,7 +123,6 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
             }
             catch (Exception ex)
             {
-                
                 throw;
             }
         }
