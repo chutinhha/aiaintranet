@@ -167,6 +167,116 @@
       </Properties>
     </Webparts>
 
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 4 Content Editor</Title>
+      <ZoneId>LeftBelow</ZoneId>
+      <Content>
+        <![CDATA[<div class="services">
+                  <div class="col_1">
+                    <div class="fr divImg">
+                      <img src="news/AIA_homepage_individuals_v3.jpg">
+                    </div>
+                    <div class="divContent">
+                      <h2 class="h2_black">Individuals</h2>
+                      <ul class="link_services">
+                        <li>
+                          <a href="#">Investor Relations Overview </a>
+                        </li>
+                        <li>
+                          <a href="#">Share Information</a>
+                        </li>
+                        <li>
+                          <a href="#">Results and Presentations</a>
+                        </li>
+                        <li>
+                          <a href="#">Credit Ratings</a>
+                        </li>
+                        <li>
+                          <a href="#">News</a>
+                        </li>
+                        <li>
+                          <a href="#">Financial Calendar</a>
+                        </li>
+                        <li>
+                          <a href="#">AGM/EGM</a>
+                        </li>
+                        <li>
+                          <a href="#">Corporate Governance</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col_2">
+                    <div class="fr divImg">
+                      <img src="news/AIA_homepage_Corporations.jpg">
+                    </div>
+                    <div class="divContent">
+                      <h2 class="h2_black">Individuals</h2>
+                      <ul class="link_services">
+                        <li>
+                          <a href="#">Investor Relations Overview </a>
+                        </li>
+                        <li>
+                          <a href="#">Share Information</a>
+                        </li>
+                        <li>
+                          <a href="#">Results and Presentations</a>
+                        </li>
+                        <li>
+                          <a href="#">Credit Ratings</a>
+                        </li>
+                        <li>
+                          <a href="#">News</a>
+                        </li>
+                        <li>
+                          <a href="#">Financial Calendar</a>
+                        </li>
+                        <li>
+                          <a href="#">AGM/EGM</a>
+                        </li>
+                        <li>
+                          <a href="#">Corporate Governance</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 4 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 4 Content Editor</Title>
+      <ZoneId>RightBelow</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_right25">
+                  <div class="content">
+                    <h2 class="h2_black">
+                      <a class="arrow_right" href="#">Individuals</a>
+                    </h2>
+                    <div align="center">
+                      <a href="#">
+                        <img class="border_gray" src="http://www.aia.com/en/resources/ca329a804911a6fea83aaf4e12e54bc2/img_video_thumbnail.gif" />
+                      </a>
+                    </div>
+                  </div>
+                </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 4 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
   </WebpartPageDefinition>
 
   <!--Site Map-->
