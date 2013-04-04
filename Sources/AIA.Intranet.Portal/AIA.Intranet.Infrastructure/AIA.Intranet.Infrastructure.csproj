@@ -628,10 +628,10 @@
     <None Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.feature">
       <FeatureId>{7a2645dc-c574-4214-aea2-056b53855073}</FeatureId>
     </None>
-    <None Include="ListDefinitions\ContactDefinition\ContactInstance\SharePointProjectItem.spdata">
+    <None Include="ListDefinitions\OpinionDefinition\OpinionInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6c4ad6b6-5f7c-4b63-85f2-62a739938dd0}</SharePointProjectItemId>
     </None>
-    <None Include="ListDefinitions\ContactDefinition\SharePointProjectItem.spdata">
+    <None Include="ListDefinitions\OpinionDefinition\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b0bceee0-67d3-439f-9c47-c0e80c9120e9}</SharePointProjectItemId>
     </None>
     <None Include="ListDefinitions\LeftMenuListDefinition\LeftMenuListInstance\SharePointProjectItem.spdata">
@@ -1028,9 +1028,9 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Libs\Microsoft.SharePoint.Publishing.dll" />
-    <Content Include="ListDefinitions\ContactDefinition\Elements.xml" />
-    <Content Include="ListDefinitions\ContactDefinition\ContactInstance\Elements.xml" />
-    <Content Include="ListDefinitions\ContactDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\OpinionDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\OpinionDefinition\OpinionInstance\Elements.xml" />
+    <Content Include="ListDefinitions\OpinionDefinition\Schema.xml" />
     <Content Include="ListDefinitions\EmailList\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\EmailListInstance\Elements.xml" />
     <Content Include="ListDefinitions\EmailList\Schema.xml" />

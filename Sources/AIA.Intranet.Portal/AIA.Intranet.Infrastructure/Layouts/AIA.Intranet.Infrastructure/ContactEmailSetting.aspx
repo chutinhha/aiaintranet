@@ -81,7 +81,7 @@
                 <wssuc:InputFormControl ID="InputFormControl3" runat="server">
                     <Template_Control>
                         <asp:TextBox ID="txtEmailTitle" runat="server" style="width:100%;" ></asp:TextBox>
-                        <asp:CheckBox ID="chkAddDate" Text="Add date to title" runat="server" />
+                        <asp:CheckBox ID="chkAddDate" Text="Add Type of Enquiry to title" runat="server" />
                     </Template_Control>
                 </wssuc:InputFormControl>
             </Template_InputFormControls>

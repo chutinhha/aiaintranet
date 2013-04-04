@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="AIA.Intranet.Infrastructure - OpinionDefinition" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AIA.Intranet.Infrastructure-OpinionDefinition" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <!-- Parent ContentType: Item (0x01) -->
+      <ContentType ID="0x0100eafe9a372a964f97b6d3ec857ca34d58"
+                   Name="[AIA] - Contact Content Type"
+                   Group="[AIA]"
+                   Description=""
+                   Inherits="TRUE"
+                   Version="0">
+        <FieldRefs>
+          <FieldRef ID="{1B573CC0-C026-4059-9B67-DC3A26E38CB9}" Name="TypeOfEnquiry" />
+          <FieldRef ID="{6D0F1536-0ADF-40b3-971F-8C98570D7C67}" Name="Content" />
+          <FieldRef ID="{EA7FB29B-2960-464a-828D-16B19A5F662D}" Name="Sender" />
+          <FieldRef ID="{C5F238FD-499D-4f1e-8C1A-28D6E9BAFA94}" Name="Status" />
+        </FieldRefs>
+      </ContentType>
+
+    </ContentTypes>
+    <Fields>
+      <Field Type="Lookup" DisplayName="Type of Enquiry" Required="TRUE" EnforceUniqueValues="FALSE" List="Lists/TypeOfEnquiry" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None"
+         ID="{1B573CC0-C026-4059-9B67-DC3A26E38CB9}" StaticName="TypeOfEnquiry" Name="TypeOfEnquiry" Group="[AIA]" />
+
+      <Field Type="Note" DisplayName="Content" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE"
+             ID="{6D0F1536-0ADF-40b3-971F-8C98570D7C67}" StaticName="Content" Name="Content" Group="[AIA]" />
+
+      <Field Type="User" DisplayName="Sender" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0"
+             ID="{EA7FB29B-2960-464a-828D-16B19A5F662D}" StaticName="Sender" Name="Sender" Hidden="TRUE" Group="[AIA]" />
+
+      <Field Type="Boolean" DisplayName="Status" EnforceUniqueValues="FALSE" Indexed="FALSE"
+         ID="{C5F238FD-499D-4f1e-8C1A-28D6E9BAFA94}" StaticName="Status" Name="Status" Hidden="TRUE" Group="[AIA]" >
+        <Default>0</Default>
+      </Field>
+      
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <!--<FieldRef Name="Attachments">
+          </FieldRef>-->
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <GroupBy Collapse="TRUE">
+            <FieldRef Name="TypeOfEnquiry"></FieldRef>
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="ID" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

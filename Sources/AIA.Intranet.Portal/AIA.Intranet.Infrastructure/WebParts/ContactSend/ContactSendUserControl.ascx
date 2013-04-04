@@ -23,9 +23,9 @@
                     </p>
                 </div>
                 <div id="divMessages" runat="server" style="display:none;">
-                    Chúng tôi đã nhận được thông tin liên hệ của bạn. Chúng tôi sẽ trả lời trong thời gian sớm nhất.
+                    Thanks for your feedbak.
                 </div>
-                <div>
+                <div id="divContent" runat="server">
                     <div style="padding-top: 10px">
                         <div class="div40">
                             <div class="comment_page">
@@ -44,6 +44,8 @@
                                 </div>
                                 <asp:TextBox ID="txtContent" style="width: 385px" CssClass="textarea" TextMode="MultiLine"
                                 Rows="6" runat="server"></asp:TextBox>
+
+                                <%--<SharePoint:FormField ID="ffContent" FieldName="Content" runat="server" ControlMode="New"></SharePoint:FormField>--%>
                                 
                                 <div style="padding: 10px 0 10px 50px">
                                     <asp:Button ID="btnSubmit" runat="server" CssClass="button" Text="Submit" />
