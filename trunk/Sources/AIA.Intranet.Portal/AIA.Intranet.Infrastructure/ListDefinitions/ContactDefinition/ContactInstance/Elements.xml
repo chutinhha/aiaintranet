@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Contacts"
-                OnQuickLaunch="TRUE"
-                TemplateType="12006"
-                Url="Lists/Contacts"
-                Description="">
-  </ListInstance>
-</Elements>
