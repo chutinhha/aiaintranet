@@ -5,6 +5,8 @@ using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
 using AIA.Intranet.Common.Utilities;
 using AIA.Intranet.Model;
+using AIA.Intranet.Common.Extensions;
+using Microsoft.SharePoint.Utilities;
 
 namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
 {
@@ -12,18 +14,40 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
     {
         public string WebPartTitle { get; set; }
         public string WebPartDescription { get; set; }
+        public string WebPartMessage { get; set; }
 
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
             literalWebPartTitle.Text = this.WebPartTitle;
             literalWebPartDescription.Text = this.WebPartDescription;
+            divMessages.InnerText = this.WebPartMessage;
             btnSubmit.Click += new EventHandler(btnSubmit_Click);
+        }
+
+        private void SetFormField()
+        {
+            SPSecurity.RunWithElevatedPrivileges(delegate()
+            {
+                using (SPSite site = new SPSite(SPContext.Current.Site.ID))
+                {
+                    using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
+                    {
+                        var opinionList = CCIUtility.GetListFromURL(Constants.CONTACT_LIST_URL, web);
+                        if (opinionList != null)
+                        {
+                            //ffContent.ListId = opinionList.ID;
+                        }
+                    }
+                }
+            });
         }
 
         void btnSubmit_Click(object sender, EventArgs e)
         {
-            
+            SendEmail();
+            divContent.Style.Add("display", "none");
+            divMessages.Style.Remove("display");
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -34,9 +58,79 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
             }
         }
 
+        private void SendEmail()
+        {
+            try
+            {
+                SPSecurity.RunWithElevatedPrivileges(delegate()
+                {
+                    using (SPSite site = new SPSite(SPContext.Current.Site.ID))
+                    {
+                        using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
+                        {
+                            var opinionList = CCIUtility.GetListFromURL(Constants.CONTACT_LIST_URL, web);
+                            if (opinionList != null)
+                            {
+                                string emailAddress = string.Empty;
+                                string internalEmail = opinionList.GetCustomProperty(Constants.CONTACT_INTERNAL_EMAIL_PROPERTY);
+                                if (!string.IsNullOrEmpty(internalEmail))
+                                {
+                                    string[] internalEmailArray = internalEmail.Split(',');
+                                    foreach (string item in internalEmailArray)
+                                    {
+                                        SPUser user = web.AllUsers[item];
+                                        emailAddress += user.Email;
+                                    }
+                                }
+                                string externalEmail = opinionList.GetCustomProperty(Constants.CONTACT_EXTERNAL_EMAIL_PROPERTY);
+                                if (!string.IsNullOrEmpty(externalEmail))
+                                {
+                                    emailAddress += externalEmail;
+                                }
+
+                                string emailTitle = opinionList.GetCustomProperty(Constants.CONTACT_TITLE_EMAIL_PROPERTY);
+                                string isAddDate = opinionList.GetCustomProperty(Constants.CONTACT_ADD_DATE_EMAIL_PROPERTY);
+                                if (!string.IsNullOrEmpty(isAddDate) && bool.Parse(isAddDate))
+                                {
+                                    emailTitle = string.Format("[{0}] - {1}", ddlTypeOfEnquiry.SelectedItem.Text, emailTitle);
+                                }
+
+                                if (string.IsNullOrEmpty(emailTitle))
+                                {
+                                    emailTitle = opinionList.Title;
+                                }
+
+                                string emailBody = txtContent.Text;
+                                string emailBodySetting = opinionList.GetCustomProperty(Constants.CONTACT_BODY_HTML_EMAIL_PROPERTY);
+                                if (!string.IsNullOrEmpty(emailBodySetting))
+                                {
+                                    emailBody = string.Format(emailBodySetting, txtContent.Text);
+                                }
+                                
+                                SPListItem spListItem = opinionList.Items.Add();
+                                spListItem["Title"] = emailTitle;
+                                //spListItem["Content"] = txtContent.Text;
+                                //spListItem["TypeOfEnquiry"] = ddlTypeOfEnquiry.SelectedValue;
+                                //spListItem["Author"] = SPContext.Current.Web.CurrentUser;
+                                spListItem.Update();
+
+                                SPUtility.SendEmail(web, true, true, emailAddress, emailTitle, emailBody);
+                            }
+                        }
+                    }
+                });
+            }
+            catch (Exception ex)
+            {
+                
+                throw;
+            }
+        }
+
         private void LoadEnquiry()
         {
-            SPSecurity.RunWithElevatedPrivileges(delegate(){
+            SPSecurity.RunWithElevatedPrivileges(delegate()
+            {
                 using (SPSite site = new SPSite(SPContext.Current.Site.ID))
                 {
                     using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))

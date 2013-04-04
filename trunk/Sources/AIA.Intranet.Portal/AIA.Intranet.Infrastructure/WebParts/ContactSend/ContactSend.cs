@@ -40,11 +40,24 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
             set { webPartDescription = value; }
         }
 
+        private string webPartMessage = "Thanks for your feedback.";
+        [WebBrowsable(true),
+        Category("AIA Setting"),
+        Personalizable(PersonalizationScope.Shared),
+        WebDisplayName("Message of webpart"),
+        WebDescription("")]
+        public string WebPartMessage
+        {
+            get { return webPartMessage; }
+            set { webPartMessage = value; }
+        }
+
         protected override void CreateChildControls()
         {
             ContactSendUserControl control = Page.LoadControl(_ascxPath) as ContactSendUserControl;
             control.WebPartTitle = this.WebPartTitle;
             control.WebPartDescription = this.WebPartDescription;
+            control.WebPartMessage = this.WebPartMessage;
             Controls.Add(control);
         }
     }

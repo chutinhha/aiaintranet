@@ -47,6 +47,9 @@ namespace AIA.Intranet.Infrastructure.Layouts
             
             SPContext.Current.List.SetCustomProperty(Constants.CONTACT_INTERNAL_EMAIL_PROPERTY, users.TrimEnd(','));
             SPContext.Current.List.SetCustomProperty(Constants.CONTACT_EXTERNAL_EMAIL_PROPERTY, txtContactEmail.Text);
+            SPContext.Current.List.SetCustomProperty(Constants.CONTACT_ADD_DATE_EMAIL_PROPERTY, chkAddDate.Checked.ToString());
+            SPContext.Current.List.SetCustomProperty(Constants.CONTACT_TITLE_EMAIL_PROPERTY, txtEmailTitle.Text);
+            SPContext.Current.List.SetCustomProperty(Constants.CONTACT_BODY_HTML_EMAIL_PROPERTY, txtHtmlBody.Text);
             GoToListSettingsPage();
         }
 
@@ -61,6 +64,21 @@ namespace AIA.Intranet.Infrastructure.Layouts
             if (!string.IsNullOrEmpty(emailText))
             {
                 txtContactEmail.Text = emailText;
+            }
+            string addDate = SPContext.Current.List.GetCustomProperty(Constants.CONTACT_ADD_DATE_EMAIL_PROPERTY);
+            if (!string.IsNullOrEmpty(addDate))
+            {
+                chkAddDate.Checked = Boolean.Parse(addDate);
+            }
+            string emailTitle = SPContext.Current.List.GetCustomProperty(Constants.CONTACT_TITLE_EMAIL_PROPERTY);
+            if (!string.IsNullOrEmpty(emailTitle))
+	        {
+                txtEmailTitle.Text = emailTitle;
+	        }
+            string emailBody = SPContext.Current.List.GetCustomProperty(Constants.CONTACT_BODY_HTML_EMAIL_PROPERTY);
+            if (!string.IsNullOrEmpty(emailBody))
+            {
+                txtHtmlBody.Text = emailBody;
             }
         }
 

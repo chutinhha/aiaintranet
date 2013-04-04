@@ -24,9 +24,12 @@ namespace AIA.Intranet.Model
 
        public const string CONTACT_INTERNAL_EMAIL_PROPERTY = "CONTACT_INTERNAL_EMAIL_PROPERTY";
        public const string CONTACT_EXTERNAL_EMAIL_PROPERTY = "CONTACT_EXTERNAL_EMAIL_PROPERTY";
+       public const string CONTACT_TITLE_EMAIL_PROPERTY = "CONTACT_TITLE_EMAIL_PROPERTY";
+       public const string CONTACT_BODY_HTML_EMAIL_PROPERTY = "CONTACT_BODY_HTML_EMAIL_PROPERTY";
+       public const string CONTACT_ADD_DATE_EMAIL_PROPERTY = "CONTACT_ADD_DATE_EMAIL_PROPERTY";
 
        public const string TYPE_OF_ENQUIRY_LIST_URL = "/Lists/TypeOfEnquiry";
-       public const string CONTACT_LIST_URL = "/Lists/Contacts";
+       public const string CONTACT_LIST_URL = "/Lists/Opinions";
        #endregion AIA
 
        #region Approval Status
