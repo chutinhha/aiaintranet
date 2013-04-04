@@ -9,12 +9,4 @@
 
 <div class="left_menu_1">
     <asp:Literal ID="ltLeftMenu" runat="server"></asp:Literal>
-    <ul class="child">
-        <li><a href=""><span><span>Protection</span></span></a></li>
-        <li class="active"><a href=""><span><span>Toolkit</span></span></a></li>
-        <li><a href=""><span><span>Investment</span></span></a></li>
-        <li><a href=""><span><span>Retirement</span></span></a></li>
-        <li><a href=""><span><span>Wealth Management</span></span></a></li>
-        <li class="noBorder"><a href=""><span><span>Business</span></span></a></li>
-    </ul>
 </div>
