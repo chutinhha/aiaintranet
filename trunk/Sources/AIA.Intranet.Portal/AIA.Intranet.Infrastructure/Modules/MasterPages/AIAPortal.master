@@ -15,6 +15,7 @@
 
 <%@ Register tagprefix="HeaderMenu" namespace="AIA.Intranet.Infrastructure.WebParts.HeaderMenu" assembly="AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d" %>
 <%@ Register tagprefix="FooterMenu" namespace="AIA.Intranet.Infrastructure.WebParts.FooterMenu" assembly="AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d" %>
+<%@ Register tagprefix="LeftMenu" namespace="AIA.Intranet.Infrastructure.WebParts.LeftMenu" assembly="AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -442,10 +443,16 @@
 						<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarDataSource" runat="server" />
 						<asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" runat="server" />
 						<asp:ContentPlaceHolder id="PlaceHolderLeftActions" runat="server"></asp:ContentPlaceHolder>
-							<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" runat="server"/>
-						<asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" runat="server">
+
+                        <%-- Left menu should be here --%>
+                        <LeftMenu:LeftMenu runat="server" Title="LeftMenu" __MarkupType="vsattributemarkup" __WebPartId="{ffd86f4b-b61a-4439-9383-7be5a0f3ac4d}" WebPart="true" __designer:IsClosed="false" id="g_ffd86f4b_b61a_4439_9383_7be5a0f3ac4d"></LeftMenu:LeftMenu>
+
+						<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" runat="server"/>
+						<asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" runat="server" Visible="false">
+
 				<div class="ms-quicklaunchouter">
 				<div class="ms-quickLaunch">
+
 				<Sharepoint:UIVersionedContent runat="server" UIVersion="4">
 					<ContentTemplate>
 						<h2 style="display:inline;" class="ms-hidden"><SharePoint:EncodedLiteral runat="server" text="<%$Resources:wss,quiklnch_pagetitle%>" EncodeMethod="HtmlEncode"/></h2>
@@ -691,9 +698,11 @@
 			</div>
 
             <%-- BEGIN: Footer --%>
-            <div class="footer s4-notdlg">
-                <FooterMenu:FooterMenu runat="server" Title="FooterMenu" __MarkupType="vsattributemarkup" __WebPartId="{f79bea49-6659-49d7-89b3-22fde0e5f2d4}" WebPart="true" __designer:IsClosed="false" id="g_f79bea49_6659_49d7_89b3_22fde0e5f2d4"></FooterMenu:FooterMenu>
-                <div>Copyright &copy; 2013, AIA Group Limited and its subsidiaries. All rights reserved. Confidential and proprietary information. For internal use only. Do not disclose or distribute</div>
+            <div class="footer-area">
+                <div class="footer s4-notdlg">
+                    <FooterMenu:FooterMenu runat="server" Title="FooterMenu" __MarkupType="vsattributemarkup" __WebPartId="{f79bea49-6659-49d7-89b3-22fde0e5f2d4}" WebPart="true" __designer:IsClosed="false" id="g_f79bea49_6659_49d7_89b3_22fde0e5f2d4"></FooterMenu:FooterMenu>
+                    <div>Copyright &copy; 2013, AIA Group Limited and its subsidiaries. All rights reserved. Confidential and proprietary information. For internal use only. Do not disclose or distribute</div>
+                </div>
             </div>
             <%-- END: Footer --%>
 

@@ -72,6 +72,18 @@ namespace AIA.Intranet.Infrastructure.WebParts.LeftMenu
                         ltLeftMenu.Text = "<ul class='child'>" + htmlBuilder.ToString() + "</ul>";
                 }
             }
+
+            //hide left-panel if no left menu
+            if (string.IsNullOrEmpty(ltLeftMenu.Text))
+            {
+                string htmlHideLeftPanel = @"
+                                                <style type='text/css'>
+                                                    #s4-leftpanel{display: none;}
+                                                    .s4-ca{margin-left: 0;}
+                                                </style>
+                                            ";
+                ltLeftMenu.Text = htmlHideLeftPanel;
+            }
         }
     }
 }

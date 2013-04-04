@@ -4,6 +4,8 @@ main width: 874px
 mau xanh: #53B017
 mau cam: #ff6600
 */
+
+/*
 * {margin: 0; padding:0;}
 body {
     background: #fff;
@@ -20,10 +22,10 @@ img {    border: 0 none;}
 a {    color: #666666;    text-decoration: none;}
 a:hover {color: #be2136;}
 input, select {
-    /*background: none repeat scroll 0 0 transparent;
-    border: medium none;*/
     font-family: Arial,Helvetica,sans-serif;
     outline:none;}
+*/
+    
 .color{color:#666}
 .w100{width:100%!important}
 .fl {    float: left !important;}

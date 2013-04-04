@@ -31,6 +31,8 @@ body #s4-ribbonrow {
     background-color: #D31145 !important;
 }
 
+#s4-mainarea{background-color: #FFFFFF;}
+
 .ms-siteactionsmenuhover {
     background-color: #D31145 !important;
 }
@@ -83,9 +85,18 @@ body #s4-topheader2{
 	margin-right: 22px;
 }
 .header_menu a:hover{color:#BE2136;}
+
+.footer-area{background-color: #FFFFFF;}
 .footer a, .footer a:link, .footer a:visited{color:#666}
 .footer a:hover {color: #be2136;}
 
 .s4-titlelogo {
     padding: 5px 10px 5px 0;
+}
+
+.s4-recentchanges{display:none;}
+
+.left_menu_1 .child {
+    padding-left: 0;
+    margin: 0;
 }
