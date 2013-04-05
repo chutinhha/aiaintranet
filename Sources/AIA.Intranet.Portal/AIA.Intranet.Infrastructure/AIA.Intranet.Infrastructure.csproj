@@ -628,6 +628,9 @@
     <None Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.feature">
       <FeatureId>{7a2645dc-c574-4214-aea2-056b53855073}</FeatureId>
     </None>
+    <None Include="ListDefinitions\NewsDefinition\NewsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{894b51f0-77c2-4692-a43c-f084e9eb4f74}</SharePointProjectItemId>
+    </None>
     <None Include="ListDefinitions\OpinionDefinition\OpinionInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6c4ad6b6-5f7c-4b63-85f2-62a739938dd0}</SharePointProjectItemId>
     </None>
@@ -1028,6 +1031,7 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Libs\Microsoft.SharePoint.Publishing.dll" />
+    <Content Include="ListDefinitions\NewsDefinition\NewsInstance\Elements.xml" />
     <Content Include="ListDefinitions\OpinionDefinition\Elements.xml" />
     <Content Include="ListDefinitions\OpinionDefinition\OpinionInstance\Elements.xml" />
     <Content Include="ListDefinitions\OpinionDefinition\Schema.xml" />
