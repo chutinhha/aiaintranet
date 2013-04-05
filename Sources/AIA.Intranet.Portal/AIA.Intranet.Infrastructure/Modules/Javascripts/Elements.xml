@@ -6,10 +6,15 @@
     <File Path="jquery.SPServices-0.7.2.js" Url="jquery.SPServices-0.7.2.js" Type="GhostableInLibrary" />
     <File Path="jquery-1.8.3.min.js" Url="jquery-1.8.3.min.js" Type="GhostableInLibrary" />
     <File Path="jquery-1.8.3.js" Url="jquery-1.8.3.js" Type="GhostableInLibrary" />
-    <File Path="simpletreemenu.js" Url="simpletreemenu.js" />
+    <File Path="simpletreemenu.js" Url="simpletreemenu.js" Type="GhostableInLibrary" />
     <File Path="jquery.ad-gallery.js" Url="jquery.ad-gallery.js" Type="GhostableInLibrary" />
     <File Path="slimScroll.js" Url="slimScroll.js" Type="GhostableInLibrary" />
 
-    <File Path="jquery-ui.js" Url="jquery-ui.js" />
+    <File Path="jquery-ui.js" Url="jquery-ui.js" Type="GhostableInLibrary"/>
+    <File Path="jquery-ui.min.js" Url="jquery-ui.min.js" Type="GhostableInLibrary" />
+
+    <File Path="jquery.slimscroll.min.js" Url="jquery.slimscroll.min.js" Type="GhostableInLibrary"/>
+    <File Path="jquery.slimscroll.js" Url="jquery.slimscroll.js" Type="GhostableInLibrary" />
+
 </Module>
 </Elements>

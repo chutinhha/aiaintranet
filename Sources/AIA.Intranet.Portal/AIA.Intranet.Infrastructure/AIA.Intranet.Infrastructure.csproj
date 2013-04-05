@@ -1059,7 +1059,10 @@
     <Content Include="Modules\Javascripts\jquery-1.8.3.js" />
     <Content Include="Modules\Javascripts\jquery-1.8.3.min.js" />
     <Content Include="Modules\Javascripts\jquery-ui.js" />
+    <Content Include="Modules\Javascripts\jquery-ui.min.js" />
     <Content Include="Modules\Javascripts\jquery.ad-gallery.js" />
+    <Content Include="Modules\Javascripts\jquery.slimscroll.js" />
+    <Content Include="Modules\Javascripts\jquery.slimscroll.min.js" />
     <Content Include="Modules\Javascripts\jquery.SPServices-0.7.2.js" />
     <Content Include="Modules\Javascripts\jquery.SPServices-0.7.2.min.js" />
     <Content Include="Modules\Javascripts\slimScroll.js" />
