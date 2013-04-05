@@ -253,7 +253,7 @@
     </Webparts>
 
     <Webparts xsi:type="ContenEditorWP">
-      <Title>Column 4 Content Editor</Title>
+      <Title>Column 5 Content Editor</Title>
       <ZoneId>RightBelow</ZoneId>
       <Content>
         <![CDATA[<div class="box_right25">
@@ -273,10 +273,144 @@
       <Hidden>false</Hidden>
       <AllowDuplicate>false</AllowDuplicate>
       <Properties>
-        <Add Name="Title" Value="Column 4 Content Editor" Type="string" ></Add>
+        <Add Name="Title" Value="Column 5 Content Editor" Type="string" ></Add>
         <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
     </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 6 Content Editor</Title>
+      <ZoneId>BelowLeftColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="col_news fl">
+                  <div class="tabLink">
+                    <a href="#">
+                      <div class="div_left">
+                        <h2>Press Releases</h2>
+                      </div>
+                      <div class="div_right">&nbsp;</div>
+                    </a>
+                  </div>
+
+                  <div class="content fl">
+                    <div class="row fl">
+                      <a href="/en/resources/9c5d5b804dd946d4847d94aaf44b317c/AIA_group_press_release_20121218a_en.pdf" class="left" target="_blank">
+                        <img border="0" src="http://www.aia.com/en/resources/9cf5f2004dd946d4847e94aaf44b317c/GP_img_news_01.jpg" />
+                      </a>
+                      <a href="/en/resources/9c5d5b804dd946d4847d94aaf44b317c/AIA_group_press_release_20121218a_en.pdf" target="_blank" class="arrow">
+                        AIG Divests Remaining Holding in AIA, Marking a Milestone in AIA’s History <br />
+                                            Dec 2012      </a>
+                    </div>
+                    <div class="row fl">
+                      <a href="/en/resources/bd7e05004dd7a7dcaedbbeaaf44b317c/AIA_group_press_release_20121218_en.pdf" target="_blank" class="arrow">
+                        AIA Completes the Acquisition of ING Malaysia<br />
+                            Dec 2012  </a>
+                    </div>
+                    <div class="row fl">
+                      <a href="/en/resources/6b48ab804dd69eca9c679caaf44b317c/AIA_gprup_press_release_20121217_en.pdf" target="_blank" class="arrow">
+                        Suspension of Trading<br />
+                            Dec 2012  </a>
+                    </div>
+                    <div class="row fl">
+                      <a href="/en/resources/21c98a004db48b88b791b7aaf44b317c/AIA_Group_Press_Release_5Dec2012_en.pdf" target="_blank" class="arrow">
+                        AIA Completes Acquisition of Aviva NDB Insurance<br />
+                            Dec 2012  </a>
+                    </div>
+                    <div class="row fl">
+                      <a href="/en/resources/bd7e05004dd7a7dcaedbbeaaf44b317c/AIA_group_press_release_20121218_en.pdf" target="_blank" class="arrow">
+                        AIA Completes the Acquisition of ING Malaysia<br />
+                            Dec 2012  </a>
+                    </div>
+                  </div>
+                </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 6 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 7 Content Editor</Title>
+      <ZoneId>BelowCenterColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="col_fund fl">
+                <div class="content">
+                    <h2 class="h2_black"><a href="#" class="arrow_right">Individuals</a></h2>
+                    <div align="center">
+                        <br>
+                        <img src="http://ir1.euroinvestor.com/EIChart/EIChart.aspx?InstrumentIds=4328243&amp;cs=0&amp;opentime=0930&amp;closetime=1600&amp;charttype=intradayprice&amp;volume=false&amp;setup=493&amp;lcid=3081&amp;width=184&amp;height=120&amp;legend=true&amp;dateformat=%20dd/MM/yyyy%20&amp;mountain=bottom&amp;names=%20&amp;timeoffset=480">
+                        <p class="font_11 color">Last update: 28/12/2012 11:07 HKT Quote data provided by &copy;Thoms </p>
+                        
+                    </div>
+                    <br>
+                    <ul class="arrow_thin">
+                            <li>Please <a href="#">click here</a> for more information on Stock Exchange Announcement</li>
+                            <li>Stock Exchange Announcement <a href="#">Share Information</a> for more information</li>
+                        </ul>
+                </div>
+            </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 7 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 8 Content Editor</Title>
+      <ZoneId>BelowRightColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_right_gray w100">
+                <div class="content">
+                    <h2 class="h2_black"><a href="#" class="arrow_right">Careers at AIA</a></h2>
+                    <div align="center"><a href="#"><img src="http://www.aia.com/en/resources/cb63c7804911a6fea843af4e12e54bc2/AIA_hp_employee.jpg" class="border_gray" /></a></div>
+                    <ul class="arrow_thin">
+                            <li>Please <a href="#">click here</a> for more information on Stock Exchange Announcement</li>
+                    </ul>
+                </div>
+            </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 8 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 9 Content Editor</Title>
+      <ZoneId>BelowRightColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_right_gray w100">
+                  <div class="content">
+                      <h2 class="h2_black"><a href="#" class="arrow_right">Careers with AIA for Agents</a></h2>
+                      <div align="center"><a href="#"><img src="http://www.aia.com/en/resources/cbfc5e004911a6fea847af4e12e54bc2/AIA_hp_agent.jpg" class="border_gray"></a>
+                    
+                      </div>
+                      <ul class="arrow_thin">
+                              <li><a href="#">Agency recruitment </a></li>
+                      </ul>
+                  </div>
+              </div>]]>
+      </Content>
+      <Index>1</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 9 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+    
   </WebpartPageDefinition>
 
   <!--Site Map-->
@@ -684,10 +818,4 @@
   </WebpartPageDefinition>
   
 </ArrayOfWebpartPageDefinition>
-
-
-
-
-
-
 

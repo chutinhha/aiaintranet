@@ -163,6 +163,33 @@
                     </tr>
 
                     <tr>
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="width:30%; height: 100%;">
+                            <WebPartPages:WebPartZone runat="server" Title="loc:BelowLeftColumn" ID="BelowLeftColumn"
+                                FrameType="TitleBarOnly">
+                                <ZoneTemplate>
+                                    
+                                </ZoneTemplate>
+                            </WebPartPages:WebPartZone>
+                        </td>
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="width:30%; height: 100%;">
+                            <WebPartPages:WebPartZone runat="server" Title="loc:BelowCenterColumn" ID="BelowCenterColumn"
+                                FrameType="TitleBarOnly">
+                                <ZoneTemplate>
+                                    
+                                </ZoneTemplate>
+                            </WebPartPages:WebPartZone>
+                        </td>
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="width:30%; height: 100%;">
+                            <WebPartPages:WebPartZone runat="server" Title="loc:BelowRightColumn" ID="BelowRightColumn"
+                                FrameType="TitleBarOnly">
+                                <ZoneTemplate>
+                                    
+                                </ZoneTemplate>
+                            </WebPartPages:WebPartZone>
+                        </td>
+                    </tr>
+
+                    <tr>
                         <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" colspan="3" valign="top">
                             <WebPartPages:WebPartZone runat="server" Title="loc:Footer" ID="Footer">
                                 <ZoneTemplate>
