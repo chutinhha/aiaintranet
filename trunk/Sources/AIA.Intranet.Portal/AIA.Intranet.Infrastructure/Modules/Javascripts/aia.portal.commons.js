@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     //fix width in dialog form
     if (JSRequest.QueryString["IsDlg"]) {
-        $("#s4-bodyContainer").attr("ID", "#s4-bodyContainer-dlg");
+        $("#s4-bodyContainer").removeClass("width960");
         $(".ms-cui-ribbonTopBars").width("auto");
     }
 

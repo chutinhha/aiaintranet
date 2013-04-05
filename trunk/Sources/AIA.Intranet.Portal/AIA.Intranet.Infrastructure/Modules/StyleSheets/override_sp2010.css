@@ -3,16 +3,13 @@
 }
 
 #s4-bodyContainer {
-    width: 960px !important;
     margin-left:auto;
     margin-right:auto;
     background-color: #FFFFFF;
 }
 
-#s4-bodyContainer-dlg {
-    margin-left:auto;
-    margin-right:auto;
-    background-color: #FFFFFF;
+.width960 {
+    width: 960px !important;
 }
 
 /* Aligns the Top Bars */
@@ -86,7 +83,7 @@ body #s4-topheader2{
 }
 .header_menu a:hover{color:#BE2136;}
 
-.footer-area{background-color: #FFFFFF;}
+.footer-area{float:left; background-color: #FFFFFF;}
 .footer a, .footer a:link, .footer a:visited{color:#666}
 .footer a:hover {color: #be2136;}
 

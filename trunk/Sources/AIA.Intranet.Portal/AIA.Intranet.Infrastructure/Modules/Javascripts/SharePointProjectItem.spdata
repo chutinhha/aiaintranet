@@ -11,5 +11,8 @@
     <ProjectItemFile Source="jquery.ad-gallery.js" Target="Javascripts\" Type="ElementFile" />
     <ProjectItemFile Source="slimScroll.js" Target="Javascripts\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-ui.js" Target="Javascripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.slimscroll.min.js" Target="Javascripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.slimscroll.js" Target="Javascripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-ui.min.js" Target="Javascripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>
