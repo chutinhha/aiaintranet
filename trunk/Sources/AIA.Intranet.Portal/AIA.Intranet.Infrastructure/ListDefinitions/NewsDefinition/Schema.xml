@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="News Definition" FolderCreation="FALSE" DisableAttachments="TRUE" Direction="$Resources:Direction;" Url="Lists/NewsDefinition" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="News Definition" ModeratedList="TRUE" FolderCreation="FALSE" DisableAttachments="TRUE" Direction="$Resources:Direction;" Url="Lists/NewsDefinition" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
       <ContentType ID="0x0100eef71a706fb84d7e81c701f933f7b87e" 
@@ -14,7 +14,7 @@
           <FieldRef ID="{C7916F23-1EEE-4232-A0C6-931DE8E5C76B}" Name="ShortDescription" />
           <FieldRef ID="{01E09BED-73CE-4b7e-B5EA-0CB64FDC0143}" Name="Contents" />
           <FieldRef ID="{59D82360-3784-44fe-9957-8CB2E719C7D8}" Name="Thumbnail1" />
-          <FieldRef ID="{875E6F9A-B9EC-4c49-BD9B-D8F18B4DCC0F}" Name="ViewCount" />
+          <!--<FieldRef ID="{875E6F9A-B9EC-4c49-BD9B-D8F18B4DCC0F}" Name="ViewCount" />-->
           <FieldRef ID="{8E841307-FBC3-4499-BFDE-57BD58CB5270}" Name="IsHotNews" />
         </FieldRefs>
       </ContentType>
@@ -110,7 +110,6 @@
           </FieldRef>
           <FieldRef Name="Thumbnail1" />
           <FieldRef Name="ShortDescription" />
-          <FieldRef Name="ViewCount" />
         </ViewFields>
         <Query>
           <GroupBy Collapse="TRUE">

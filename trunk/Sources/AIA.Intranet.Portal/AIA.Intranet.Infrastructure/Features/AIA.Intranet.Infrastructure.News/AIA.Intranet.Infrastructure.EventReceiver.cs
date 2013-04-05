@@ -11,6 +11,7 @@ using AIA.Intranet.Common.Extensions;
 using AIA.Intranet.Infrastructure.Resources;
 using AIA.Intranet.Common.Utilities;
 using AIA.Intranet.Model;
+using System.Linq;
 
 namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
 {
@@ -29,8 +30,14 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
             var web = properties.Feature.Parent as SPWeb;
-            UpdateNewsCategoroySettings(web);
-            CreateFirstCategory(web);
+            //UpdateNewsCategoroySettings(web);
+            //CreateFirstCategory(web);
+            var listNews = CCIUtility.GetListFromURL(Constants.NEWS_LIST_URL, web);
+            if (listNews != null)
+            {
+                CreateDetailNewsPage(web, listNews);
+                UpdateImageField(web, listNews);
+            }
         }
 
 
@@ -110,6 +117,85 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
                 web.AllowUnsafeUpdates = false;
             }
         }
+
+        private void CreateDetailNewsPage(SPWeb web, SPList list)
+        {
+            var rootFolder = list.RootFolder;
+
+            var dispFormUrl = string.Format("{0}/{1}/{2}.aspx", web.ServerRelativeUrl.TrimEnd('/'), rootFolder.Url, Constants.NEWS_DISPLAYPAGE);
+            var dispForm = web.GetFile(dispFormUrl);
+            if (dispForm != null && dispForm.Exists)
+                dispForm.Delete();	// delete & recreate our display form
+
+            // create a new DispForm
+            dispForm = rootFolder.Files.Add(dispFormUrl, SPTemplateFileType.FormPage);
+
+            WebPartHelper.ProvisionWebpart(web, new WebpartPageDefinitionCollection()
+            {
+                new WebpartPageDefinition() {
+                PageUrl = dispForm.Url,
+                Title = list.Title,
+                Webparts = new System.Collections.Generic.List<WebpartDefinition>() {
+                        new DefaultWP(){
+                            Index = 0,
+                            ZoneId = "Main",
+                            WebpartName = "NewsDetailView.webpart",
+                            Properties = new System.Collections.Generic.List<Property>(){
+                                new Property(){
+                                    Name = "Title",
+                                    Value = list.Title
+                                },
+                                new Property(){
+                                    Name="ChromeType",
+                                    Type="chrometype",
+                                    Value="2"
+                                }
+                            }
+                        }
+                    }
+                },
+                new WebpartPageDefinition() {
+                PageUrl = dispForm.Url,
+                Title = "Other news",
+                Webparts = new System.Collections.Generic.List<WebpartDefinition>() {
+                        new DefaultWP(){
+                            Index = 2,
+                            ZoneId = "Main",
+                            WebpartName = "OtherNewsListView.webpart",
+                            Properties = new System.Collections.Generic.List<Property>(){
+                                new Property(){
+                                    Name = "Title",
+                                    Value = "Other news"
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            dispForm.Update();
+            //list.Update();
+        }
+
+        private void UpdateImageField(SPWeb web, SPList list)
+        {
+            try
+            {
+                var fields = list.Fields.Cast<SPField>().ToList();
+                var imageFields = fields.Where(p => p.TypeAsString == Constants.IMAGE_FIELD_TYPE_NAME).ToList();
+                foreach (var item in imageFields)
+                {
+                    //var currentWeb = item.ParentList.ParentWeb;
+                    var newsImageLibrary = web.Lists[web.Folders["NewsImages"].ParentListId];
+
+                    item.UpdateImageField(web, newsImageLibrary);
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
         #endregion Private Functions
     }
 }

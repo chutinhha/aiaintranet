@@ -150,6 +150,11 @@ namespace AIA.Intranet.Infrastructure.Receivers.NewsEventReceiver
                                 new Property(){
                                     Name = "Title",
                                     Value = list.Title
+                                },
+                                new Property(){
+                                    Name="ChromeType",
+                                    Type="chrometype",
+                                    Value="2"
                                 }
                             }
                         }

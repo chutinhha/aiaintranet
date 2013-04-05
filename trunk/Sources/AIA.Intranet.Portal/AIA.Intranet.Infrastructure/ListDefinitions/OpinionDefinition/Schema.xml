@@ -64,7 +64,7 @@
           </FieldRef>-->
           <FieldRef Name="LinkTitle">
           </FieldRef>
-          <FieldRef Name="LinkTitle">
+          <FieldRef Name="Modified">
           </FieldRef>
         </ViewFields>
         <Query>
