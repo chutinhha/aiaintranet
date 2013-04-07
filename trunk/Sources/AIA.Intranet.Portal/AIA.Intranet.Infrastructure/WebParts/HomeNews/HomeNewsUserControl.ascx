@@ -9,14 +9,13 @@
     Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HomeNewsUserControl.ascx.cs"
     Inherits="AIA.Intranet.Infrastructure.WebParts.HomeNews.HomeNewsUserControl" %>
-<div class="col_right">
+<div class="homenews">
     <div class="title_red_1">
         <h1>
             <asp:Literal ID="literalWebPartTitle" runat="server"></asp:Literal>
         </h1>
     </div>
-    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto;">
-        <div class="div_hotnews_right scroll_a" style="overflow: hidden; width: auto;">
+        <div class="div_hotnews_right scroll_a">
             <asp:Repeater ID="repeaterHotNews" runat="server">
                 <ItemTemplate>
                     <div class="gto_news">
@@ -35,15 +34,6 @@
                 </ItemTemplate>
             </asp:Repeater>
         </div>
-        <div class="slimScrollBar ui-draggable" style="background: none repeat scroll 0% 0% rgb(102, 102, 102);
-            width: 7px; position: absolute; top: 64px; opacity: 0.3; border-radius: 7px 7px 7px 7px;
-            z-index: 99; right: 1px; height: 232.741px; display: none;">
-        </div>
-        <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute;
-            top: 0px; display: none; border-radius: 7px 7px 7px 7px; background: none repeat scroll 0% 0% rgb(51, 51, 51);
-            opacity: 0.2; z-index: 90; right: 1px;">
-        </div>
-    </div>
 </div>
 <%--<div class="gto_news">
     <h2 class="titleRed">

@@ -2,6 +2,11 @@
 
 $(document).ready(function () {
 
+    $('.scroll_a').slimScroll({
+        start: 'top',
+        disableFadeOut: true
+    });
+
     //Fix the scrollbar in Chrome browser
     var isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
     if (isChrome) {
