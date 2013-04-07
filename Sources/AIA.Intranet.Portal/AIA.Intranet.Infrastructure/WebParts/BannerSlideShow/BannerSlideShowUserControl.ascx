@@ -9,12 +9,7 @@
     Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BannerSlideShowUserControl.ascx.cs"
     Inherits="AIA.Intranet.Infrastructure.WebParts.BannerSlideShow.BannerSlideShowUserControl" %>
-<%--<div class="main_content">
-    <div class="div_slider">
-        
-    </div>
-</div>--%>
-<div class="col_left">
+
     <div class="beauty_slideShowContent">
         <!-- SLIDE SHOW -->
         <script type="text/javascript">
@@ -58,7 +53,7 @@
             </div>
         </div>
     </div>
-</div>
+
 <%--<ul class="ad-thumb-list">
     <li><a href="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/1.jpg">
         <img src="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/space.png"

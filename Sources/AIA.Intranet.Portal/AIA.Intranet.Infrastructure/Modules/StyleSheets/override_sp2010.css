@@ -1,99 +1,119 @@
-﻿body{
-    background-color: #F6F6F0;
+﻿body {
+	background-color: #F6F6F0;
 }
-
 #s4-bodyContainer {
-    margin-left:auto;
-    margin-right:auto;
-    background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
 }
-
 .width960 {
-    width: 960px !important;
+	width: 960px !important;
 }
-
 /* Aligns the Top Bars */
 .ms-cui-ribbonTopBars {
-    width: 960px;
-    margin-left:auto;
-    margin-right:auto;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
 }
- 
 /* Turns off the border on the bottom of the tabs */
 .ms-cui-ribbonTopBars > div {
-    border-bottom:1px solid transparent !important;
+	border-bottom: 1px solid transparent !important;
 }
-
 body #s4-ribbonrow {
-    background-color: #D31145 !important;
+	background-color: #D31145 !important;
 }
-
-#s4-mainarea{background-color: #FFFFFF;}
-
+#s4-mainarea {
+	background-color: #FFFFFF;
+}
 .ms-siteactionsmenuhover {
-    background-color: #D31145 !important;
+	background-color: #D31145 !important;
 }
-
 .ms-dlgTitle {
-    background-color: #D31145 !important;
+	background-color: #D31145 !important;
 }
 .ms-dlgBorder {
-    border: 1px solid #F098AE !important;
+	border: 1px solid #F098AE !important;
 }
 .ms-dlgContent {
-    border: 1px solid #D31145 !important;
+	border: 1px solid #D31145 !important;
 }
-.ms-titlerowborder{
-    border: 0px solid transparent !important;
+.ms-titlerowborder {
+	border: 0px solid transparent !important;
 }
-
-body #s4-topheader2{
+body #s4-topheader2 {
 	min-height: inherit !important;
 	border-bottom: 1px solid #E0E0E0;
-    border-top: 1px solid #E0E0E0;
+	border-top: 1px solid #E0E0E0;
 }
-
-.ms-ltviewselectormenuheader .ms-viewselector a, .ms-ltviewselectormenuheader .ms-viewselectorhover a{
-	font-size:11px;
+.ms-ltviewselectormenuheader .ms-viewselector a, .ms-ltviewselectormenuheader .ms-viewselectorhover a {
+	font-size: 11px;
 }
-
-.row_pathnavigator{
+.row_pathnavigator {
 	padding: 3px 5px;
 }
-
 .ms-welcomeMenu.ms-SpLinkButtonActive {
-    background-color: #D31145 ;
-}
-
-.s4-breadcrumb-anchor:hover,.s4-breadcrumb-anchor-open,.ms-qatbutton:hover{
 	background-color: #D31145;
 }
-
-.ms-ltviewselectormenuseparator{
-    top: 1px;
+.s4-breadcrumb-anchor:hover, .s4-breadcrumb-anchor-open, .ms-qatbutton:hover {
+	background-color: #D31145;
 }
-
-.header_menu{float:left; padding:20px 0 20px 15px;}
-.header_menu ul{margin:0; padding:0;list-style: none outside none;}
-.header_menu li{float: left; padding: 3px 0;}
-.header_menu a, .header_menu a:link, .header_menu a:visited{
-    font:bold 12px Arial, Helvetica, sans-serif;
-	color:#313131;
+.ms-ltviewselectormenuseparator {
+	top: 1px;
+}
+.header_menu {
+	float: left;
+	padding: 20px 0 20px 15px;
+}
+.header_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none outside none;
+}
+.header_menu li {
+	float: left;
+	padding: 3px 0;
+}
+.header_menu a, .header_menu a:link, .header_menu a:visited {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #313131;
 	margin-right: 22px;
 }
-.header_menu a:hover{color:#BE2136;}
-
-.footer-area{float:left; background-color: #FFFFFF;}
-.footer a, .footer a:link, .footer a:visited{color:#666}
-.footer a:hover {color: #be2136;}
-
+.header_menu a:hover {
+	color: #BE2136;
+}
+.footer-area {
+	float: left;
+	background-color: #FFFFFF;
+}
+.footer a, .footer a:link, .footer a:visited {
+	color: #666;
+}
+.footer a:hover {
+	color: #be2136;
+}
 .s4-titlelogo {
-    padding: 5px 10px 5px 0;
+	padding: 5px 10px 5px 0;
 }
-
-.s4-recentchanges{display:none;}
-
+.s4-recentchanges {
+	display: none;
+}
 .left_menu_1 .child {
-    padding-left: 0;
-    margin: 0;
+	padding-left: 0;
+	margin: 0;
 }
+.div_hotnews_right {
+	height: 231px;
+}
+ul {
+	list-style: none outside none;
+}
+.homenews {
+	background: url("../images/menu_right_bg.png") repeat-y scroll 0 0 #EEEEE6;
+}
+.ms-WPBody h1, .ms-WPBody h2, .ms-WPBody h3, .ms-WPBody h4, .ms-WPBody h5, .ms-WPBody h6 {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.height_box_2 .slimScrollDiv {height: auto !important;}
