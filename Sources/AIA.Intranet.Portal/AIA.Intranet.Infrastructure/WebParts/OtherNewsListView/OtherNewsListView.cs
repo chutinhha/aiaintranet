@@ -17,7 +17,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.OtherNewsListView
 
         private string _strItemCount = "5";
         [WebBrowsable(true),
-        Category("Configuration"),
+        Category("AIA Setting"),
         Personalizable(PersonalizationScope.Shared),
         WebDisplayName("Number of displaying items"),
         WebDescription("")]
@@ -29,7 +29,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.OtherNewsListView
 
         private bool _bolShowDateTime = true;
         [WebBrowsable(true),
-        Category("Configuration"),
+        Category("AIA Setting"),
         Personalizable(PersonalizationScope.Shared),
         WebDisplayName("Show datetime ?"),
         WebDescription("")]
@@ -41,7 +41,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.OtherNewsListView
 
         private string _strDateTimeFormat = string.Empty;
         [WebBrowsable(true),
-        Category("Configuration"),
+        Category("AIA Setting"),
         Personalizable(PersonalizationScope.Shared),
         WebDisplayName("DateTime format"),
         WebDescription("")]
@@ -49,6 +49,18 @@ namespace AIA.Intranet.Infrastructure.WebParts.OtherNewsListView
         {
             get { return _strDateTimeFormat; }
             set { _strDateTimeFormat = value; }
+        }
+
+        private string webPartTitle = "Other news";
+        [WebBrowsable(true),
+        Category("AIA Setting"),
+        Personalizable(PersonalizationScope.Shared),
+        WebDisplayName("Display name of webpart"),
+        WebDescription("")]
+        public string WebPartTitle
+        {
+            get { return webPartTitle; }
+            set { webPartTitle = value; }
         }
 
         protected override void CreateChildControls()

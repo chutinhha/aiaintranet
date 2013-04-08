@@ -34,9 +34,10 @@
     <File Path="workflows.png" Url="workflows.png" Type="GhostableInLibrary" />
     <File Path="closed.gif" Url="closed.gif" Type="GhostableInLibrary" />
     <File Path="open.gif" Url="open.gif" Type="GhostableInLibrary" />
-  <File Path="l copy.gif" Url="l copy.gif" Type="GhostableInLibrary"  />
-<File Path="l.gif" Url="l.gif" Type="GhostableInLibrary"  />
-<File Path="l_last.gif" Url="l_last.gif" Type="GhostableInLibrary"  />
-<File Path="l-copy.gif" Url="l-copy.gif" Type="GhostableInLibrary" />
+    <File Path="l copy.gif" Url="l copy.gif" Type="GhostableInLibrary"  />
+    <File Path="l.gif" Url="l.gif" Type="GhostableInLibrary"  />
+    <File Path="l_last.gif" Url="l_last.gif" Type="GhostableInLibrary"  />
+    <File Path="l-copy.gif" Url="l-copy.gif" Type="GhostableInLibrary" />
+    <File Path="bgtitle_list.png" Url="bgtitle_list.png" Type="GhostableInLibrary" />
 </Module>
 </Elements>

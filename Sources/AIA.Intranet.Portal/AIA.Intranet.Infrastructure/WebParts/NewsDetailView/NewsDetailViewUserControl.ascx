@@ -45,11 +45,11 @@
             <h1>
                 <asp:Literal ID="ltNewsTitle" runat="server"></asp:Literal>
             </h1>
-            <h2>
+            <h3>
                 <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible='<%# ShowDateTime %>'>
                     <asp:Literal ID="ltNewsDate" runat="server"></asp:Literal>
                 </asp:PlaceHolder>
-            </h2>
+            </h3>
             <p>
                 <asp:Literal ID="ltNewsDescription" runat="server"></asp:Literal>
             </p>

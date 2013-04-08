@@ -728,3 +728,59 @@ cursor: default;
 .level_4{color:#a9a9a9!important; font: bold 12px/30px Arial, Helvetica, sans-serif;}
 .level_5{color:#a9a9a9!important; font: bold 11px/30px Arial, Helvetica, sans-serif;}
 /* end Sitemap css*/
+
+
+/*begin news list*/
+.uppercase {
+    text-transform: uppercase;
+}
+.box-title {
+    font-weight: bold;
+}
+.box-header {
+    border-bottom-color: #237FE6;
+}
+.box-header {
+    background: url("../images/bgtitle_list.png") repeat-x scroll left bottom #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding: 5px 10px;
+}
+
+.box-desc {
+    padding: 5px 10px;
+}
+.box-content {
+    padding: 5px 10px;
+}
+.wp-newslist-box {
+    border-bottom: 1px solid #DBDBDB;
+    padding: 5px 0;
+}
+
+.ms-WPBody a:link {
+    color: #0072BC;
+    text-decoration: none;
+}
+a:link {
+    color: #0072BC;
+    text-decoration: none;
+}
+.ms-WPBody a {
+    text-decoration: none;
+}
+.wp-newslist-title {
+    font-weight: bold;
+}
+
+.wp-newslist-date {
+    color: #757575;
+}
+.wp-newslist-detail {
+    margin-top: 5px;
+}
+.wp-newslist-detail img {
+    border: 1px solid #D8D8D8;
+    margin-right: 10px;
+}
+/*end news list*/

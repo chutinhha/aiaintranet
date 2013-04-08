@@ -37,6 +37,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
             {
                 CreateDetailNewsPage(web, listNews);
                 UpdateImageField(web, listNews);
+                CreateNewsListView(web, listNews);
             }
         }
 
@@ -193,6 +194,44 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
             }
             catch (Exception ex)
             {
+            }
+        }
+
+        private void CreateNewsListView(SPWeb web, SPList list)
+        {
+            try
+            {
+                // create new view with custom webpart
+                SPViewCollection allviews = list.Views;
+                string viewName = Constants.NEWS_LISTPAGE;
+
+                System.Collections.Specialized.StringCollection viewFields = new System.Collections.Specialized.StringCollection();
+
+                var view = allviews.Add(viewName, viewFields, string.Empty, 1, true, true);
+                WebPartHelper.HideXsltListViewWebParts(web, view.Url);
+                WebPartHelper.ProvisionWebpart(web, new WebpartPageDefinitionCollection()
+                {
+                    new WebpartPageDefinition() {
+                    PageUrl = view.Url,
+                    Title = list.Title,
+                    Webparts = new System.Collections.Generic.List<WebpartDefinition>() {
+                            new DefaultWP(){
+                                Index = 0,
+                                ZoneId = "Main",
+                                WebpartName = "NewsListView.webpart"
+                            }
+                        }
+                    }
+                });
+                WebPartHelper.MoveWebPart(web, view.Url, "NewsListView.webpart", "Main", 0);
+                view.Title = "Approved Items";
+                view.Update();
+                //list.Update();
+            }
+            catch (Exception ex)
+            {
+                
+                throw;
             }
         }
 

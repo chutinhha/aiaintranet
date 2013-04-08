@@ -12,7 +12,7 @@
         <div class="uppercase box-title" style="float: left;"><%= SPContext.Current.List.Title %></div>
         <Sharepoint:SPSecurityTrimmedControl ID="SPSecurityTrimmedControl1" runat="server" PermissionContext="CurrentList" Permissions="EditListItems">
             <div style="float:right;">
-                <a href='<%= SPContext.Current.Site.MakeFullUrl(SPContext.Current.List.Views["All Items"].Url) %>' target="_blank">(biên tập tin)</a>
+                <a href='<%= SPContext.Current.Site.MakeFullUrl(SPContext.Current.List.Views["All Items"].Url) %>' target="_blank">(Create news)</a>
             </div>
         </Sharepoint:SPSecurityTrimmedControl>
         <div class="clear-both"></div>
