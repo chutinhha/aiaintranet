@@ -2,8 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <ListInstance Title="Type of Enquiry"
                 OnQuickLaunch="TRUE"
-                TemplateType="100"
-                FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+                TemplateType="12007"
                 Url="Lists/TypeOfEnquiry"
                 Description="">
     <Data>
@@ -20,4 +19,5 @@
       </Rows>
     </Data>
   </ListInstance>
+  
 </Elements>

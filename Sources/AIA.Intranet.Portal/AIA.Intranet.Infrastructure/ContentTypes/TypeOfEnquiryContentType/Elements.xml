@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Field Type="User" DisplayName="Internal email" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0"
+         ID="{14EB7011-9B2A-4f11-9139-58492581C351}" StaticName="InternalEmail" Name="InternalEmail" Mult="TRUE" Group="[AIA]" />
+  
+  <Field Type="Note" DisplayName="External email" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE"
+         ID="{8360B6CC-950B-4941-AEE2-1FB75B2B4548}" StaticName="ExternalEmail" Name="ExternalEmail" Group="[AIA]" />
+  
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010092dd9c2bb092424eb93d04b0b3990f64"
+                Name="[AIA] - Type of Enquiry Content Type"
+               Group="[AIA]"
+               Description=""
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{14EB7011-9B2A-4f11-9139-58492581C351}" Name="UserEmail" />
+      <FieldRef ID="{8360B6CC-950B-4941-AEE2-1FB75B2B4548}" Name="ExternalEmail" />
+    </FieldRefs>
+  </ContentType>
+  
+</Elements>
