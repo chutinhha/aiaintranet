@@ -1,11 +1,29 @@
 ﻿JSRequest.EnsureSetup();
 
 $(document).ready(function () {
+    //disable slimScroll in Edit mode
+    var inDesignMode;
+    var wikiInEditMode;
 
-    $('.scroll_a').slimScroll({
-        start: 'top',
-        disableFadeOut: true
-    });
+    try {
+        inDesignMode = document.forms[MSOWebPartPageFormName].MSOLayout_InDesignMode.value;
+    } catch (err) { }
+
+    try {
+        wikiInEditMode = document.forms[MSOWebPartPageFormName]._wikiPageMode.value;
+    } catch (err) { }
+
+    if (inDesignMode != "1" && wikiInEditMode != "Edit") {
+        $('.scroll_a').slimScroll({
+            start: 'top',
+            disableFadeOut: true
+        });
+    }
+
+    //fix the breadcrumb to load page title
+    if ($(".ms-ltviewselectormenuheader").length == 0) {
+        $(".links_navigator").append($(".s4-breadcrumb span.s4-breadcrumbCurrentNode").clone().removeClass("s4-breadcrumbCurrentNode"));
+    }
 
     //Fix the scrollbar in Chrome browser
     var isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;

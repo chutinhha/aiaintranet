@@ -6,5 +6,58 @@
                 FeatureId="01686e8b-2142-4d06-9f43-a3d8a98c7017"
                 Url="Lists/HeaderMenu"
                 Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="ID">1</Field>
+          <Field Name="Title">Home</Field>
+          <Field Name="URL">/</Field>
+          <Field Name="OrderNumber">1</Field>
+          <Field Name="Active">True</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">2</Field>
+          <Field Name="Title">What's New</Field>
+          <Field Name="URL">/Pages/WhatsNew.aspx</Field>
+          <Field Name="OrderNumber">2</Field>
+          <Field Name="Active">True</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">3</Field>
+          <Field Name="Title">Our Company</Field>
+          <Field Name="URL">/Pages/OurCompany.aspx</Field>
+          <Field Name="OrderNumber">3</Field>
+          <Field Name="Active">True</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">4</Field> 
+          <Field Name="Title">My Page</Field>
+          <Field Name="URL">/Pages/MyPage.aspx</Field>
+          <Field Name="OrderNumber">4</Field>
+          <Field Name="Active">True</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">5</Field>
+          <Field Name="Title">Careers</Field>
+          <Field Name="URL">/Pages/Careers.aspx</Field>
+          <Field Name="OrderNumber">5</Field>
+          <Field Name="Active">True</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">6</Field>
+          <Field Name="Title">Contact</Field>
+          <Field Name="URL">/Pages/Contact.aspx</Field>
+          <Field Name="OrderNumber">6</Field>
+          <Field Name="Active">True</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">7</Field>
+          <Field Name="Title">Sitemap</Field>
+          <Field Name="URL">/Pages/Sitemap.aspx</Field>
+          <Field Name="OrderNumber">7</Field>
+          <Field Name="Active">True</Field>
+        </Row>
+      </Rows>
+    </Data>
   </ListInstance>
 </Elements>

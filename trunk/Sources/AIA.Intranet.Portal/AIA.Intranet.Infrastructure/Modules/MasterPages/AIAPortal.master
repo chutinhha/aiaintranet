@@ -36,6 +36,8 @@
 	</script>
 	<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" />
 
+    <%-- Order: Bottom to Top --%>
+    <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/override_sp2010.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/styles.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/jquery.ad-gallery.css%>" runat="server"/>
 
@@ -46,8 +48,6 @@
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/style-ie7.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/style-ie8.css%>" runat="server"/>
     --%>
-
-    <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/override_sp2010.css%>" runat="server"/>
 
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/jquery-1.8.3.js" runat="server" />
     <SharePoint:ScriptLink Name="~SiteCollection/Style Library/js/jquery.SPServices-0.7.2.js" runat="server" />
@@ -374,13 +374,13 @@
                                      HideInteriorRootNodes="true"
                                      SkipLinkText="">
                                  	<PathSeparatorTemplate>
-								        <span id="onetidPageTitleSeparator" class="s4-nothome s4-bcsep s4-titlesep">
+								        <span id="onetidPageTitleSeparator" class="s4-bcsep s4-titlesep">
 								        <SharePoint:ClusteredDirectionalSeparatorArrow runat="server"/> </span>
                                  	</PathSeparatorTemplate>
                                  </asp:SiteMapPath>
 					        </asp:ContentPlaceHolder>
 										
-					        <span id="onetidPageTitleSeparator" class="s4-nothome s4-bcsep s4-titlesep">
+					        <span id="onetidPageTitleSeparator" class="s4-bcsep s4-titlesep">
 					        <SharePoint:ClusteredDirectionalSeparatorArrow runat="server"/> </span>
 					        <span>
 						        <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
