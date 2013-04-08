@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfWebpartPageDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--Home-->
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/Home.aspx</PageUrl>
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 1 Content Editor</Title>
+      <ZoneId>Header</ZoneId>
+      <Content>
+        <![CDATA[<div class="whatNews_box noPaddingL">
+        	<div class="whatNews_description">
+                <h1>Clustered-Departments</h1>
+                <h3>Title company News, event...</h3>
+                <p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing of Securities on the Stock Exchange of Hong Kong Limited.</p>
+            </div>
+        	<div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Zone 1 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 1 Content Editor</Title>
+      <ZoneId>CenterLeftColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_3col_left height_box_2">
+                    <div class="menu">
+                        <h1>
+                            Welcome to Group Operations</h1>
+                    </div>
+                    <div class="content scroll_a h_scroll_2">
+                        <h2><a href="#">Group Operations Welcome Note Mission Statement</a></h2>
+                        <h3>Protection AIA understands how important it is to guard against unfortunate events.</h3>
+                        <ul class="link_department">
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Corporate Message</a></li>
+                            <li><a href="#">Our Heritage</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Looking to the future</a></li>
+                            <li><a href="#">Awards & Accolades</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Corporate Message</a></li>
+                            <li><a href="#">Our Heritage</a></li>
+                            <li><a href="#">Looking to the future</a></li>
+                            <li><a href="#">Wealth Management</a></li>
+                            <li><a href="#">Looking to the future</a></li>
+                            <li><a href="#">Awards & Accolades</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Corporate Message</a></li>
+                            <li><a href="#">Our Heritage</a></li>
+                            <li><a href="#">Looking to the future</a></li>
+                        </ul>
+                        <div style="margin-bottom:14px"><a href="#" class="button"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what's comming up</a></div>
+                    </div>
+                </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Zone 1 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 2 Content Editor</Title>
+      <ZoneId>CenterColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_3col_right height_box_2">
+                                            <div class="menu">
+                                                <h1>
+                                                    Procedure &amp; Manuals</h1>
+                                            </div>
+
+                                                <div class="content scroll_a h_scroll_2">
+                                                    <h2>
+                                                        Fine a form, Make a claim, applay for Leavel</h2>
+                                                    <h2>
+                                                        <p>
+                                                            Medical Claim Form</p>
+                                                        <a href="#">Who We Are</a>
+                                                    </h2>
+                                                    <h2>
+                                                        <p>
+                                                            Employee Self Service (ESS)</p>
+                                                        <a href="#">Corporate Facts</a>
+                                                    </h2>
+                                                    <br/>
+                                                    <div style="margin-bottom: 14px;">
+                                                        <a class="button" href="#"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what&#39;s comming 
+				                                        up</a></div>
+                                                </div>
+                                                
+                                        </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 2 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 3 Content Editor</Title>
+      <ZoneId>CenterRightColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_3col_right height_box_2">
+                                <div class="menu"><h1>Procedure &amp; Manuals</h1></div>
+                                <div class="content scroll_a h_scroll_2">
+                                    <h2>Procedure &amp; Manuals</h2>
+                                    <h3>AIA aims to help you find an investment approach 
+							        that fits your financial goal.</h3>
+                                    <ul class="link_department">
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Corporate Message</a></li>
+                                        <li><a href="#">Our Heritage</a></li>
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Corporate Message</a></li>
+                                        <li><a href="#">Our Heritage</a></li>
+                                        <li><a href="#">Who We Are</a></li>
+                                    </ul>
+                                    <br/>
+                                    <div style="margin-bottom: 14px;"><a class="button" href="#"><span>
+								        &nbsp;&nbsp;&nbsp;&nbsp;</span>See what&#39;s comming up</a></div>
+                                </div>
+                            </div>
+        ]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 3 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+  </WebpartPageDefinition>
+  
+</ArrayOfWebpartPageDefinition>

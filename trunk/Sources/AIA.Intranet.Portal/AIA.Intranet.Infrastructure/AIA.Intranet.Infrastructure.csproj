@@ -1377,6 +1377,12 @@
     <EmbeddedResource Include="XMLCustomSettings\NewsCustomSettings.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="XMLCustomSettings\SingleWebParts.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLCustomSettings\ClusteredWebparts.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Content Include="XSL\fldtypes_TimesheetField.xsl" />
     <EmbeddedResource Include="AppGlobalResources\AnnouncementResources.resx" />
     <EmbeddedResource Include="AppGlobalResources\ApprovalWorkflowResources.resx" />
