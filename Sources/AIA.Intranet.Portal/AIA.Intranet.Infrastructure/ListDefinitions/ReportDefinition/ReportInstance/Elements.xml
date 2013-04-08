@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Left menu"
+  <ListInstance Title="Reports"
                 OnQuickLaunch="TRUE"
-                TemplateType="12005"
-                Url="Lists/LeftMenu"
+                TemplateType="12013"
+                Url="Lists/Reports"
                 Description="">
   </ListInstance>
 </Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x010100df97f3ea22c54cceb5965f6a0c2c4770"
+               Name="[AIA] - Report Content Type"
+               Group="[AIA]"
+               Description=""
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+    </FieldRefs>
+  </ContentType>
+</Elements>

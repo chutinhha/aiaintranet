@@ -1,14 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <!-- Do not change the value of the Name attribute below. If it does not match the folder name of the List Definition project item, an error will occur when the project is run. -->
     <ListTemplate
-        Name="LeftMenuListDefinition"
-        Type="12005"
-        BaseType="0"
+        Name="FormDefinition"
+        Type="12010"
+        BaseType="1"
         OnQuickLaunch="TRUE"
         SecurityBits="11"
-        Sequence="410"
-        DisplayName="Left Menu"
+        Sequence="110"
+        DisplayName="Form Definition"
         Description=""
-        Image="/_layouts/images/itgen.png"/>
+        Image="/_layouts/images/itdl.png"
+        DocumentTemplate="121"/>
 </Elements>

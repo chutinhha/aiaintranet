@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SinglePages" Url="Pages" SetupPath="1033\STS\doctemp\smartpgs">
+    
+    <File Url="Home.aspx" Type="GhostableInLibrary" Path="spstd11.aspx">
+      <Property Name="ContentType" Value="Web Part Page" />
+    </File>
+
+  </Module>
+</Elements>
