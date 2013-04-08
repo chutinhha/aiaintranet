@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a4c261e5-c332-4fd7-8488-70d0754b75eb" description="AIA.Intranet.Infrastructure.Site" featureId="01686e8b-2142-4d06-9f43-a3d8a98c7017" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.93d1341d-f4c7-4a24-a7fe-79a801e4cec9.FullName$" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="AIA.Intranet.Infrastructure.Site" version="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uVmVyc2lvbgQAAAAGX01ham9yBl9NaW5vcgZfQnVpbGQJX1JldmlzaW9uAAAAAAgICAgBAAAAAAAAAAAAAAACAAAACw==" deploymentPath="$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a4c261e5-c332-4fd7-8488-70d0754b75eb" description="AIA Intranet Infrastructure Site" featureId="01686e8b-2142-4d06-9f43-a3d8a98c7017" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.93d1341d-f4c7-4a24-a7fe-79a801e4cec9.FullName$" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="AIA.Intranet.Infrastructure.Site" version="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uVmVyc2lvbgQAAAAGX01ham9yBl9NaW5vcgZfQnVpbGQJX1JldmlzaW9uAAAAAAgICAgBAAAAAAAAAAAAAAACAAAACw==" deploymentPath="$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
   <projectItems>
     <projectItemReference itemId="4028d6e8-3844-4679-a35c-29563caecdc6" />
     <projectItemReference itemId="b15b53a5-3ae0-4300-836b-b05bdeb03d0d" />
@@ -38,5 +38,10 @@
     <projectItemReference itemId="f39ac86f-0d81-45e5-a9a8-fb5583ff092e" />
     <projectItemReference itemId="02a6940a-1342-49dd-b0b9-fe8356866b96" />
     <projectItemReference itemId="7d929fa8-60ae-445f-aca5-9e9add865f6b" />
+    <projectItemReference itemId="ef6c93e3-473b-42aa-a604-ed7b1cec515a" />
+    <projectItemReference itemId="1943cd28-5b45-43cc-a135-be21770f80c3" />
+    <projectItemReference itemId="1b80915d-184f-4c2d-8c70-58c526e02fb3" />
+    <projectItemReference itemId="ddf1fbff-d28c-4a67-a2df-33991dc2ba3d" />
+    <projectItemReference itemId="4088c14f-f0c7-4e0c-bc19-5ce77cb0eed4" />
   </projectItems>
 </feature>

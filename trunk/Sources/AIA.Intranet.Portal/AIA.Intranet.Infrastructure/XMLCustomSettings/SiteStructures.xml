@@ -4,18 +4,24 @@
   <WebDefinition>
     <Name>MIS</Name>
     <Url>MIS</Url>
-    <Features />
+    <Feature>
+      <Name>AIA.Intranet.Infrastructure.Single</Name>
+      <Guid>0d50bc1a-6ed1-40c5-9127-3864c57f0401</Guid>
+    </Feature>
     <Lists />
-    <Template>STS#0</Template>
-    <Overwrite>false</Overwrite>
+    <Template>STS#1</Template>
+    <Overwrite>true</Overwrite>
     <Webs>
       <WebDefinition>
         <Name>Share</Name>
         <Url>Share</Url>
-        <Features />
+        <Feature>
+          <Name>AIA.Intranet.Infrastructure.Clustered</Name>
+          <Guid>0d50bc1a-6ed1-40c5-9127-3864c57f0401</Guid>
+        </Feature>
         <Lists />
-        <Template>STS#0</Template>
-        <Overwrite>false</Overwrite>
+        <Template>STS#1</Template>
+        <Overwrite>true</Overwrite>
         <Webs>
 
         </Webs>
@@ -23,10 +29,13 @@
       <WebDefinition>
         <Name>Application Development</Name>
         <Url>ApplicationDevelopment</Url>
-        <Features />
+        <Feature>
+          <Name>AIA.Intranet.Infrastructure.Clustered</Name>
+          <Guid>0d50bc1a-6ed1-40c5-9127-3864c57f0401</Guid>
+        </Feature>
         <Lists />
-        <Template>STS#0</Template>
-        <Overwrite>false</Overwrite>
+        <Template>STS#1</Template>
+        <Overwrite>true</Overwrite>
         <Webs>
 
         </Webs>
@@ -34,10 +43,13 @@
       <WebDefinition>
         <Name>IT Infrastructure</Name>
         <Url>ITInfrastructure</Url>
-        <Features />
+        <Feature>
+          <Name>AIA.Intranet.Infrastructure.Clustered</Name>
+          <Guid>0d50bc1a-6ed1-40c5-9127-3864c57f0401</Guid>
+        </Feature>
         <Lists />
-        <Template>STS#0</Template>
-        <Overwrite>false</Overwrite>
+        <Template>STS#1</Template>
+        <Overwrite>true</Overwrite>
         <Webs>
 
         </Webs>
@@ -45,10 +57,13 @@
       <WebDefinition>
         <Name>MIS Governance &amp; Asset Management</Name>
         <Url>MISGovernance-AssetManagement</Url>
-        <Features />
+        <Feature>
+          <Name>AIA.Intranet.Infrastructure.Clustered</Name>
+          <Guid>0d50bc1a-6ed1-40c5-9127-3864c57f0401</Guid>
+        </Feature>
         <Lists />
-        <Template>STS#0</Template>
-        <Overwrite>false</Overwrite>
+        <Template>STS#1</Template>
+        <Overwrite>true</Overwrite>
         <Webs>
 
         </Webs>

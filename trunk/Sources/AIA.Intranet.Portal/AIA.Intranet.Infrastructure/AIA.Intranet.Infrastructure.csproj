@@ -269,11 +269,17 @@
     <Compile Include="CustomFields\LookupFieldWithPicker\MultiLookupFieldWithPickerControl.cs" />
     <Compile Include="CustomFields\RegularExpressionValidatorField.cs" />
     <Compile Include="CustomFields\RegularExpressionValidatorFieldControl.cs" />
+    <Compile Include="Features\AIA.Intranet.Infrastructure.Clustered\AIA.Intranet.Infrastructure.EventReceiver.cs">
+      <DependentUpon>AIA.Intranet.Infrastructure.Clustered.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\AIA.Intranet.Infrastructure.Data\AIA.Intranet.Infrastructure.Data.EventReceiver.cs">
       <DependentUpon>AIA.Intranet.Infrastructure.Data.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.EventReceiver.cs">
       <DependentUpon>AIA.Intranet.Infrastructure.News.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\AIA.Intranet.Infrastructure.Single\AIA.Intranet.Infrastructure.EventReceiver.cs">
+      <DependentUpon>AIA.Intranet.Infrastructure.Single.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\AIA.Intranet.Infrastructure.Site\AIA.Intranet.Infrastructure.Site.EventReceiver.cs">
       <DependentUpon>AIA.Intranet.Infrastructure.Site.feature</DependentUpon>
@@ -610,6 +616,15 @@
     <None Include="ContentTypes\ContactContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fc12855f-e09c-4957-bff0-8f1d076681a2}</SharePointProjectItemId>
     </None>
+    <None Include="ContentTypes\FormContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1b80915d-184f-4c2d-8c70-58c526e02fb3}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\GuidelineContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ddf1fbff-d28c-4a67-a2df-33991dc2ba3d}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\InternalContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ef6c93e3-473b-42aa-a604-ed7b1cec515a}</SharePointProjectItemId>
+    </None>
     <None Include="ContentTypes\MenuItemContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6499c605-bd63-4df5-b372-8e034be99392}</SharePointProjectItemId>
     </None>
@@ -618,6 +633,12 @@
     </None>
     <None Include="ContentTypes\NewsItemContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{579a7406-d0e7-48f3-8b6d-dd102ecdef1c}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ProcedureContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4088c14f-f0c7-4e0c-bc19-5ce77cb0eed4}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ReportContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1943cd28-5b45-43cc-a135-be21770f80c3}</SharePointProjectItemId>
     </None>
     <None Include="ContentTypes\TypeOfEnquiryContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f39ac86f-0d81-45e5-a9a8-fb5583ff092e}</SharePointProjectItemId>
@@ -630,6 +651,30 @@
     </None>
     <None Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.feature">
       <FeatureId>{7a2645dc-c574-4214-aea2-056b53855073}</FeatureId>
+    </None>
+    <None Include="Features\AIA.Intranet.Infrastructure.Clustered\AIA.Intranet.Infrastructure.Clustered.feature">
+      <FeatureId>{e120a7ff-3278-4cf0-bcd9-5be038497393}</FeatureId>
+    </None>
+    <None Include="Features\AIA.Intranet.Infrastructure.Single\AIA.Intranet.Infrastructure.Single.feature">
+      <FeatureId>{fea29a7b-ea56-41bc-a4e1-79f67795c248}</FeatureId>
+    </None>
+    <None Include="ListDefinitions\FormDefinition\FormInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ed12fe80-1c97-47f3-978d-e6639b0e89cb}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\FormDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{174d079e-9131-43f8-acfd-62f8dfee0762}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\GuidelineDefinition\GuidelineInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0de53414-6834-40da-98e4-73f3d1467e3e}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\GuidelineDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{50090cba-d9d4-451f-bde4-61bada5de43b}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\InternalDefinition\InternalInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6484c50d-70d0-4419-a748-5ad040751b31}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\InternalDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{90ec031a-cb77-4759-8bb5-2c744c92e05c}</SharePointProjectItemId>
     </None>
     <None Include="ListDefinitions\NewsDefinition\NewsInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{894b51f0-77c2-4692-a43c-f084e9eb4f74}</SharePointProjectItemId>
@@ -664,6 +709,18 @@
     <None Include="ListDefinitions\NewsDefinition\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{58a96082-a7af-4914-a177-80031f65f99c}</SharePointProjectItemId>
     </None>
+    <None Include="ListDefinitions\ProcedureDefinition\ProcedureInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1123edf2-bd01-45bb-9487-fb1e7833a905}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\ProcedureDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{20d4087e-5f5d-4b81-9ad7-938cd032c7b3}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\ReportDefinition\ReportInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1f63a623-281d-4199-b70f-8e215e98d8f8}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\ReportDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9d3d1f45-b61f-4235-b04e-f04651e7707d}</SharePointProjectItemId>
+    </None>
     <None Include="ListDefinitions\TypeOfEnquiryDefinition\TypeOfEnquiryInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7d929fa8-60ae-445f-aca5-9e9add865f6b}</SharePointProjectItemId>
     </None>
@@ -673,8 +730,14 @@
     <None Include="ListInstances\BannerLibrary\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5d73abca-f75d-4369-b0ae-90265626c236}</SharePointProjectItemId>
     </None>
+    <None Include="ListInstances\Calendar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{17553c5b-851a-41f9-bd4f-1af179c915bc}</SharePointProjectItemId>
+    </None>
     <None Include="Modules\AIAHtmlPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{96893d58-df2f-471a-a0d8-e3f6b04cab6f}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\ClusteredPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d9cc9b31-7707-4378-a1a9-c52b186634c3}</SharePointProjectItemId>
     </None>
     <None Include="Modules\Javascripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8e6398b6-bc4f-4499-92ab-bfb5e9ede567}</SharePointProjectItemId>
@@ -685,6 +748,9 @@
     </None>
     <None Include="Modules\PortalImages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{75e8bc88-4cf9-41c8-a58f-562d34b2042f}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SinglePages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8e10dc82-48c0-4111-adbb-2c4b95490fe5}</SharePointProjectItemId>
     </None>
     <None Include="Modules\StyleSheets\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1c87abc9-9797-48f7-a5b7-9cb7839f46fb}</SharePointProjectItemId>
@@ -955,9 +1021,14 @@
     </Content>
     <Content Include="ContentTypes\BannerContentType\Elements.xml" />
     <Content Include="ContentTypes\ContactContentType\Elements.xml" />
+    <Content Include="ContentTypes\FormContentType\Elements.xml" />
+    <Content Include="ContentTypes\GuidelineContentType\Elements.xml" />
+    <Content Include="ContentTypes\InternalContentType\Elements.xml" />
     <Content Include="ContentTypes\MenuItemContentType\Elements.xml" />
     <Content Include="ContentTypes\NewsCategoryContentType\Elements.xml" />
     <Content Include="ContentTypes\NewsItemContentType\Elements.xml" />
+    <Content Include="ContentTypes\ProcedureContentType\Elements.xml" />
+    <Content Include="ContentTypes\ReportContentType\Elements.xml" />
     <Content Include="ContentTypes\TypeOfEnquiryContentType\Elements.xml" />
     <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskPermissionEditor.ascx">
       <SubType>ASPXCodeBehind</SubType>
@@ -987,6 +1058,12 @@
     </Content>
     <Content Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.Template.xml">
       <DependentUpon>AIA.Intranet.UpdateWebConfig.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\AIA.Intranet.Infrastructure.Clustered\AIA.Intranet.Infrastructure.Clustered.Template.xml">
+      <DependentUpon>AIA.Intranet.Infrastructure.Clustered.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\AIA.Intranet.Infrastructure.Single\AIA.Intranet.Infrastructure.Single.Template.xml">
+      <DependentUpon>AIA.Intranet.Infrastructure.Single.feature</DependentUpon>
     </Content>
     <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_next.png" />
     <Content Include="Images\AIA.Intranet.Infrastructure\images\ad_prev.png" />
@@ -1038,6 +1115,27 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Libs\Microsoft.SharePoint.Publishing.dll" />
+    <Content Include="ListDefinitions\FormDefinition\EditDlg.htm" />
+    <Content Include="ListDefinitions\FormDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\FormDefinition\FileDlg.htm" />
+    <Content Include="ListDefinitions\FormDefinition\FormInstance\Elements.xml" />
+    <Content Include="ListDefinitions\FormDefinition\Repair.aspx" />
+    <Content Include="ListDefinitions\FormDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\FormDefinition\Upload.aspx" />
+    <Content Include="ListDefinitions\GuidelineDefinition\EditDlg.htm" />
+    <Content Include="ListDefinitions\GuidelineDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\GuidelineDefinition\FileDlg.htm" />
+    <Content Include="ListDefinitions\GuidelineDefinition\GuidelineInstance\Elements.xml" />
+    <Content Include="ListDefinitions\GuidelineDefinition\Repair.aspx" />
+    <Content Include="ListDefinitions\GuidelineDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\GuidelineDefinition\Upload.aspx" />
+    <Content Include="ListDefinitions\InternalDefinition\EditDlg.htm" />
+    <Content Include="ListDefinitions\InternalDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\InternalDefinition\FileDlg.htm" />
+    <Content Include="ListDefinitions\InternalDefinition\InternalInstance\Elements.xml" />
+    <Content Include="ListDefinitions\InternalDefinition\Repair.aspx" />
+    <Content Include="ListDefinitions\InternalDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\InternalDefinition\Upload.aspx" />
     <Content Include="ListDefinitions\NewsDefinition\NewsInstance\Elements.xml" />
     <Content Include="ListDefinitions\OpinionDefinition\Elements.xml" />
     <Content Include="ListDefinitions\OpinionDefinition\OpinionInstance\Elements.xml" />
@@ -1057,12 +1155,29 @@
     <Content Include="ListDefinitions\NewsCategoryDefinition\Schema.xml" />
     <Content Include="ListDefinitions\NewsDefinition\Elements.xml" />
     <Content Include="ListDefinitions\NewsDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\ProcedureDefinition\EditDlg.htm" />
+    <Content Include="ListDefinitions\ProcedureDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\ProcedureDefinition\FileDlg.htm" />
+    <Content Include="ListDefinitions\ProcedureDefinition\ProcedureInstance\Elements.xml" />
+    <Content Include="ListDefinitions\ProcedureDefinition\Repair.aspx" />
+    <Content Include="ListDefinitions\ProcedureDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\ProcedureDefinition\Upload.aspx" />
+    <Content Include="ListDefinitions\ReportDefinition\EditDlg.htm" />
+    <Content Include="ListDefinitions\ReportDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\ReportDefinition\FileDlg.htm" />
+    <Content Include="ListDefinitions\ReportDefinition\ReportInstance\Elements.xml" />
+    <Content Include="ListDefinitions\ReportDefinition\Repair.aspx" />
+    <Content Include="ListDefinitions\ReportDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\ReportDefinition\Upload.aspx" />
     <Content Include="ListDefinitions\TypeOfEnquiryDefinition\Elements.xml" />
     <Content Include="ListDefinitions\TypeOfEnquiryDefinition\TypeOfEnquiryInstance\Elements.xml" />
     <Content Include="ListDefinitions\TypeOfEnquiryDefinition\Schema.xml" />
     <Content Include="ListInstances\BannerLibrary\Elements.xml" />
+    <Content Include="ListInstances\Calendar\Elements.xml" />
+    <Content Include="ListInstances\Calendar\Schema.xml" />
     <Content Include="Modules\AIAHtmlPages\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Sample.txt" />
+    <Content Include="Modules\ClusteredPages\Elements.xml" />
     <Content Include="Modules\Javascripts\aia.portal.commons.js" />
     <Content Include="Modules\Javascripts\Elements.xml" />
     <Content Include="Modules\Javascripts\jquery-1.8.3.js" />
@@ -1116,6 +1231,7 @@
     <Content Include="Modules\PortalImages\Images\sprites_x.png" />
     <Content Include="Modules\PortalImages\Images\tab_link.png" />
     <Content Include="Modules\PortalImages\Images\workflows.png" />
+    <Content Include="Modules\SinglePages\Elements.xml" />
     <Content Include="Modules\StyleSheets\corev4_edit.css" />
     <Content Include="Modules\StyleSheets\Elements.xml" />
     <Content Include="Modules\StyleSheets\jquery.ad-gallery.css" />
