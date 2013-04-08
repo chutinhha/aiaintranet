@@ -31,6 +31,9 @@ namespace AIA.Intranet.Model
 
        public const string TYPE_OF_ENQUIRY_LIST_URL = "/Lists/TypeOfEnquiry";
        public const string OPINION_LIST_URL = "/Lists/Opinions";
+
+       public const string DATA_FEATURE_ID = "40361c29-4256-4f12-95e0-a34d43c12214";
+       public const string NEWS_FEATURE_ID = "1f128cb6-3d86-4500-a339-6c0516ab7be5";
        #endregion AIA
 
        #region Approval Status
