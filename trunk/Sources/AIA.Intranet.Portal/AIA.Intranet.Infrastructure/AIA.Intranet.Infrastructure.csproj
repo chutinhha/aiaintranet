@@ -1075,6 +1075,7 @@
     <Content Include="Modules\PortalImages\Images\ad_scroll_forward.png" />
     <Content Include="Modules\PortalImages\Images\aialogo.png" />
     <Content Include="Modules\PortalImages\Images\all_site.png" />
+    <Content Include="Modules\PortalImages\Images\bgtitle_list.png" />
     <Content Include="Modules\PortalImages\Images\black_transparent.png" />
     <Content Include="Modules\PortalImages\Images\career.png" />
     <Content Include="Modules\PortalImages\Images\closed.gif" />
