@@ -619,6 +619,9 @@
     <None Include="ContentTypes\NewsItemContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{579a7406-d0e7-48f3-8b6d-dd102ecdef1c}</SharePointProjectItemId>
     </None>
+    <None Include="ContentTypes\TypeOfEnquiryContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f39ac86f-0d81-45e5-a9a8-fb5583ff092e}</SharePointProjectItemId>
+    </None>
     <None Include="CustomActions\ContactRegister\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{be4aaa5a-22d4-4a03-9df1-fb4b83a7a6da}</SharePointProjectItemId>
     </None>
@@ -661,11 +664,14 @@
     <None Include="ListDefinitions\NewsDefinition\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{58a96082-a7af-4914-a177-80031f65f99c}</SharePointProjectItemId>
     </None>
+    <None Include="ListDefinitions\TypeOfEnquiryDefinition\TypeOfEnquiryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7d929fa8-60ae-445f-aca5-9e9add865f6b}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\TypeOfEnquiryDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{02a6940a-1342-49dd-b0b9-fe8356866b96}</SharePointProjectItemId>
+    </None>
     <None Include="ListInstances\BannerLibrary\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5d73abca-f75d-4369-b0ae-90265626c236}</SharePointProjectItemId>
-    </None>
-    <None Include="ListInstances\TypeOfEnquiry\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{efcf9e54-a796-44a5-9a18-e1f7a092aa20}</SharePointProjectItemId>
     </None>
     <None Include="Modules\AIAHtmlPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{96893d58-df2f-471a-a0d8-e3f6b04cab6f}</SharePointProjectItemId>
@@ -952,6 +958,7 @@
     <Content Include="ContentTypes\MenuItemContentType\Elements.xml" />
     <Content Include="ContentTypes\NewsCategoryContentType\Elements.xml" />
     <Content Include="ContentTypes\NewsItemContentType\Elements.xml" />
+    <Content Include="ContentTypes\TypeOfEnquiryContentType\Elements.xml" />
     <Content Include="ControlTemplates\AIA.Intranet.Infrastructure\ActionEditors\UpdateTaskPermissionEditor.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
@@ -1050,8 +1057,10 @@
     <Content Include="ListDefinitions\NewsCategoryDefinition\Schema.xml" />
     <Content Include="ListDefinitions\NewsDefinition\Elements.xml" />
     <Content Include="ListDefinitions\NewsDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\TypeOfEnquiryDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\TypeOfEnquiryDefinition\TypeOfEnquiryInstance\Elements.xml" />
+    <Content Include="ListDefinitions\TypeOfEnquiryDefinition\Schema.xml" />
     <Content Include="ListInstances\BannerLibrary\Elements.xml" />
-    <Content Include="ListInstances\TypeOfEnquiry\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Sample.txt" />
     <Content Include="Modules\Javascripts\aia.portal.commons.js" />

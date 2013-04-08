@@ -71,23 +71,26 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                             var opinionList = CCIUtility.GetListFromURL(Constants.OPINION_LIST_URL, web);
                             if (opinionList != null)
                             {
-                                string emailAddress = string.Empty;
-                                string internalEmail = opinionList.GetCustomProperty(Constants.CONTACT_INTERNAL_EMAIL_PROPERTY);
-                                if (!string.IsNullOrEmpty(internalEmail))
+                                string emailAddress = GetEmailByEnquiry(web, int.Parse(ddlTypeOfEnquiry.SelectedValue));
+                                if (string.IsNullOrEmpty(emailAddress))
                                 {
-                                    string[] internalEmailArray = internalEmail.Split(',');
-                                    foreach (string item in internalEmailArray)
+                                    string internalEmail = opinionList.GetCustomProperty(Constants.CONTACT_INTERNAL_EMAIL_PROPERTY);
+                                    if (!string.IsNullOrEmpty(internalEmail))
                                     {
-                                        SPUser user = web.EnsureUser(item);
-                                        emailAddress += user.Email + ";";
+                                        string[] internalEmailArray = internalEmail.Split(',');
+                                        foreach (string item in internalEmailArray)
+                                        {
+                                            SPUser user = web.EnsureUser(item);
+                                            emailAddress += user.Email + ";";
+                                        }
+                                    }
+                                    string externalEmail = opinionList.GetCustomProperty(Constants.CONTACT_EXTERNAL_EMAIL_PROPERTY);
+                                    if (!string.IsNullOrEmpty(externalEmail))
+                                    {
+                                        emailAddress += externalEmail;
                                     }
                                 }
-                                string externalEmail = opinionList.GetCustomProperty(Constants.CONTACT_EXTERNAL_EMAIL_PROPERTY);
-                                if (!string.IsNullOrEmpty(externalEmail))
-                                {
-                                    emailAddress += externalEmail;
-                                }
-
+                                
                                 string emailTitle = opinionList.GetCustomProperty(Constants.CONTACT_TITLE_EMAIL_PROPERTY);
                                 string isAddDate = opinionList.GetCustomProperty(Constants.CONTACT_ADD_DATE_EMAIL_PROPERTY);
                                 if (!string.IsNullOrEmpty(isAddDate) && bool.Parse(isAddDate))
@@ -125,6 +128,34 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
             {
                 throw;
             }
+        }
+
+        private string GetEmailByEnquiry(SPWeb web, int id)
+        {
+            string email = string.Empty;
+            try
+            {
+                var enquiryList = CCIUtility.GetListFromURL(Constants.TYPE_OF_ENQUIRY_LIST_URL, web);
+                if (enquiryList != null)
+                {
+                    SPListItem item = enquiryList.GetItemById(id);
+                    SPFieldUserValueCollection userValueCollection = new SPFieldUserValueCollection(web, item["InternalEmail"].ToString());
+                    if (userValueCollection != null && userValueCollection.Count > 0)
+                    {
+                        foreach (SPFieldUserValue us in userValueCollection)
+                        {
+                            email += us.User.Email + ";";
+                        }
+                    }
+                    email += (item["ExternalEmail"] == null ? string.Empty : item["ExternalEmail"].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                throw;
+            }
+            return email;
         }
 
         private void LoadEnquiry()
