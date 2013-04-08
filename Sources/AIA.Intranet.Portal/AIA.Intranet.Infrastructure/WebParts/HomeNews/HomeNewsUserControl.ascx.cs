@@ -32,7 +32,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.HomeNews
                 Label lableDate = e.Item.FindControl("lableDate") as Label;
                 hyperLinkTitle.Text = rowView.Title;
                 hyperLinkTitle.NavigateUrl = rowView.ViewUrl;
-                lableDate.Text = rowView.ModifiedDate.ToString("dd/MM/yyyy hh:mm");
+                lableDate.Text = rowView.ModifiedDate.ToString("dd/MM/yyyy HH:mm");
             }
         }
 
