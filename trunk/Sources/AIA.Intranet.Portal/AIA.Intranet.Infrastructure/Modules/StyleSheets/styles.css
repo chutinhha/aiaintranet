@@ -738,13 +738,13 @@ cursor: default;
     font-weight: bold;
 }
 .box-header {
-    border-bottom-color: #237FE6;
+    border-bottom-color: #D31145;
 }
 .box-header {
     background: url("../images/bgtitle_list.png") repeat-x scroll left bottom #FFFFFF;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    padding: 5px 10px;
+    padding: 10px 10px 15px 10px;
 }
 
 .box-desc {
@@ -754,8 +754,13 @@ cursor: default;
     padding: 5px 10px;
 }
 .wp-newslist-box {
-    border-bottom: 1px solid #DBDBDB;
+    border-bottom: 1px solid #F098AE;
     padding: 5px 0;
+}
+
+
+.clear-both {
+    clear: both;
 }
 
 .ms-WPBody a:link {
@@ -780,7 +785,7 @@ a:link {
     margin-top: 5px;
 }
 .wp-newslist-detail img {
-    border: 1px solid #D8D8D8;
+    border: 1px solid #F098AE;
     margin-right: 10px;
 }
 /*end news list*/
