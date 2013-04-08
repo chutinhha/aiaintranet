@@ -53,6 +53,10 @@
                             <li><a href="#">Corporate Message</a></li>
                             <li><a href="#">Our Heritage</a></li>
                             <li><a href="#">Looking to the future</a></li>
+                                                        <li>aaa</li>
+                            <li><a href="#">bbb</a></li>
+                            <li><a href="#">ccc</a></li>
+                            <li><a href="#">ddd</a></li>
                             <li><a href="#">Wealth Management</a></li>
                             <li><a href="#">Looking to the future</a></li>
                             <li><a href="#">Awards & Accolades</a></li>
@@ -482,7 +486,7 @@
 
   <!--What News-->
   <WebpartPageDefinition>
-    <PageUrl>/Pages/WhatNews.aspx</PageUrl>
+    <PageUrl>/Pages/WhatsNew.aspx</PageUrl>
     <Webparts xsi:type="ContenEditorWP">
       <Title>What News Content Editor</Title>
       <ZoneId>Header</ZoneId>
@@ -732,7 +736,7 @@
 
   <!--Career-->
   <WebpartPageDefinition>
-    <PageUrl>/Pages/Career.aspx</PageUrl>
+    <PageUrl>/Pages/Careers.aspx</PageUrl>
     <Webparts xsi:type="ContenEditorWP">
       <Title>Career Content Editor</Title>
       <ZoneId>Header</ZoneId>
@@ -796,6 +800,143 @@
       <Properties>
         <Add Name="Title" Value="Contact" Type="string" ></Add>
         <Add Name="ChromeType" Value="2" Type="string" ></Add>
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
+  
+  <!--Term of Use-->
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/TermsOfUse.aspx</PageUrl>
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Terms of Use Content Editor</Title>
+      <ZoneId>Header</ZoneId>
+      <Content>
+        <![CDATA[
+          <div class="col_right">
+            <div class="whatNews_box">
+              <div class="whatNews_description">
+                <h1>Terms of Use</h1>
+
+                <h3>CONDITIONS OF USE</h3>
+
+                <p>By using this website, you acknowledge your assent to the following conditions of use without limitation or qualification. Please read these conditions carefully before using this website. These conditions may be revised at any time by updating this posting. You are bound by any such revisions and should therefore periodically visit this page to review the then current conditions to which you are bound.</p>
+
+                <h3>DISCLAIMER</h3>
+
+                <p>To the fullest extent permissible pursuant to applicable law: (1) The materials on this website are provided “as is” and without warranties or any kind either expressed or implied and American International Assurance Company, Limited and its subsidiaries and affiliates (collectively, “AIA”) disclaim all warranties, expressed or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose; (2) AIA does not warrant that the website or the functions contained in the materials will be uninterrupted or error-free, that defects will be corrected, or that this website or the server that makes it available are free of viruses or other harmful components; and (3) AIA does not warrant or make any representations regarding the use or the results of the use of the materials on this website in terms of their correctness, accuracy, reliability, or otherwise. The information and descriptions contained herein are not necessarily intended to be complete descriptions of all terms, exclusions and conditions applicable to the products and services, but are provided solely for general informational purposes. For complete details please refer to the actual policy or the relevant product or services agreement.</p>
+
+                <p>This website may be linked to other websites which are not maintained by AIA. AIA is not responsible for the availability, content or accuracy of any external websites and does not make any warranty, express or implied, with respect to the use of any external links. The inclusion of any link to such websites does not imply approval of or endorsement by AIA of the websites or the content thereof. You acknowledge and agree that you access such websites at your own risk.</p>
+
+                <h3>LIMITATION OF LIABILITY</h3>
+
+                <p>While AIA uses reasonable efforts to include accurate and up to date information on this website, errors or omissions sometimes occur. To the fullest extent permissible under applicable law, AIA makes no warranties or representations as to the accuracy of the content of this website and under no circumstances, including, but not limited to, negligence, shall AIA or any party involved in creating, producing, or delivering the website be liable to you for any direct, incidental, consequential, indirect, or punitive damages that result from the use of, or the inability to use, the materials on this website, even if AIA or an AIA authorised representative has been advised of the possibility of such damages. To the fullest extent permissible under applicable law, in no event shall AIA's total liability to you for all damages, losses, and causes of action exceed the amount paid by you, if any, for accessing this website.</p>
+
+                <p>AIA also assumes no responsibility, and shall not be liable for, any damages to, or viruses that may infect, your computer equipment or other property as a result of your access to, use of, or browsing in the website or your downloading of any materials, data, text, images, video, or audio from this website.</p>
+
+                <h3>RESTRICTIONS ON USE OF MATERIALS</h3>
+
+                <p>This website is owned and operated by AIA. Except as otherwise expressly permitted by AIA, no materials from this website or any website owned, operated, licenced or controlled by AIA may be copied, reproduced, republished, modified, stored in a retrieval system, used for creating derivative works, uploaded, posted, transmitted (by any form or by any means), distributed or used in any other way for public or commercial purposes. You may download material displayed on this website for your use only, provided that you also retain all copyright and other proprietary notices contained on the materials. You may not distribute, modify, transmit, reuse, repost, or use the content of this website, including the text, images, audio, and video, for public or commercial purposes, without AIA's written permission.</p>
+
+                <p>AIA neither warrants nor represents that your use of materials displayed on this website will not infringe rights of third parties.</p>
+
+                <h3>JURISDICTIONAL ISSUES</h3>
+
+                <p>Unless otherwise expressly set forth herein, AIA makes no representation that materials on this website are appropriate or available for use in any location. Those who choose to access this website do so on their own initiative and are responsible for compliance with local laws.</p>
+
+                <p>Except as expressly set forth herein the information contained on this website is not an offer to sell or a solicitation to buy any security, insurance product or other product or service by AIA. No security, insurance product or other product or service is offered or will be sold by AIA or, if sold by AIA, will be effective in any jurisdiction in which such offer or solicitation, purchase or sale would be unlawful under the securities, insurance or other laws of such jurisdiction. Some products and services may not be available in all jurisdictions.</p>
+
+                <h3>NO OFFER</h3>
+
+                <p>Information provided on this website should not be construed as an offer of securities for sale nor a solicitation of an offer to purchase securities. Past performance is not necessarily an indication of future performance. Any person considering an investment in the securities of AIA Group Limited should seek independent professional advice prior to making any investment decision.</p>
+
+                <h3>OWNERSHIP OF INFORMATION</h3>
+
+                <p>Any information, other than personal data or information, you transmit to AIA via this website, by electronic mail or otherwise, including data, questions, comments, or suggestions will be treated as non-confidential and nonproprietary and will become the property of AIA. Such information, other than personal data or information, may be used for any purpose, including, but not limited to, reproduction, solicitations, disclosure, transmission, publication, broadcast, and posting. AIA is free to use any ideas, concepts, know-how, or techniques contained in any communication you send to AIA via this website or by any other means for any purpose whatsoever, including, but not limited to, developing and marketing products using such information. You waive all applicable rights you may have in any information (other than personal data) you transmit to AIA via this website or otherwise, for the purposes of this section of the Conditions.</p>
+
+                <h3>INTELLECTUAL PROPERTY</h3>
+
+                <p>All trademarks, service marks, trade names, logos, and icons are proprietary to AIA. Other than as expressly set out in these Conditions and except as permitted by applicable law, nothing contained on the website should be construed as granting, by implication, estoppel, or otherwise, any licence or right to use any of AIA's intellectual property including, but not limited to, any trademark or logo displayed on this website without the written permission of AIA. Your use of the trademarks or logos displayed on this website, or any other content on this website, except as provided herein, is strictly prohibited.</p>
+
+                <h3>SOFTWARE LICENCES</h3>
+
+                <p>To the extent that any software is made available or provided to you on this website, AIA grants you a non-exclusive, limited and personal licence to download and use the software for your own personal, non-commercial use only. No other rights to the software are granted. All rights including intellectual property rights in the software remain the property of AIA or the relevant licensors or owners of the software and, except as permitted by law, you may not reverse engineer, decompile, modify or tamper with the software.</p>
+
+                <h3>SECURITY REMINDER</h3>
+
+                <p>At AIA, we take our user's security and confidentiality very seriously. While there is inherent risk in doing business with anyone over a public medium like the Internet, we have implemented measures to reduce these risks. In order to safeguard and protect your privacy, the secure site utilises advanced security techniques, which require Netscape Navigator version 4.0 or Microsoft Internet Explorer version 4.0 or above.</p>
+
+                <h3>INCONSISTENCY IN WORDINGS</h3>
+
+                <p>In the event of any ambiguity or inconsistency between the English and local language versions of these Conditions, the English version will control and prevail.</p>
+
+                <h3>GOVERNING LAW AND JURISDICTION</h3>
+
+                <p>These Conditions will be governed by the laws of the Hong Kong Special Administrative Region of the People's Republic of China ("Hong Kong") and the parties agree to submit to the exclusive jurisdiction of the courts of Hong Kong.</p>
+              </div>
+            </div>
+          </div>
+        ]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Terms of Use Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+  </WebpartPageDefinition>
+
+  <!--Term of Use-->
+  <WebpartPageDefinition>
+    <PageUrl>/Pages/PrivacyStatement.aspx</PageUrl>
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Privacy Statement Content Editor</Title>
+      <ZoneId>Header</ZoneId>
+      <Content>
+        <![CDATA[
+          <div class="col_right">
+            <div class="whatNews_box">
+              <div class="whatNews_description">
+                <h1>PrivacyStatement</h1>
+
+                <h3>Statement of AIA Group Data Privacy Principles</h3>
+
+                <p>Among the most important assets of AIA Group is the trust and confidence that are placed in AIA companies to properly handle information. Customers expect our companies to maintain their information accurately, protected against manipulation and errors, secure from theft, and free from unwarranted disclosure.</p>
+
+                <p>In addressing data privacy and data security issues, in addition to complying with applicable privacy laws and regulations, AIA companies should follow these principles:</p>
+
+                <ul class="noindent">
+                <li>Recognize the importance of privacy and data security to our customers;</li>
+
+                <li>Limit the sharing of a customer’s personal information with third parties to those circumstances necessary to administer a customer’s account, enhance customer services, promote legitimate marketing activities, or otherwise in accordance with applicable law, and standard industry practices;</li>
+
+                <li>When customer personal information is shared with third parties for marketing purposes, to the extent required by applicable laws, customers should be provided an opportunity to restrict the sharing of such information, or customer consent should be procured prior to the sharing of such personal information;</li>
+
+                <li>Enter into agreements, where required by various laws and regulations, and as consistent with good business practices, with third parties (whether affiliated or non-affiliated) receiving customer personal information from AIA companies, including nonpublic personal information and protected health information, providing that the third party will handle that information in a manner that is consistent with AIA policies, applicable law, and industry practice;</li>
+
+                <li>When transferring customer data cross-border, analyze the data flows to ensure compliance with laws applicable to the restriction of cross-border data flows;</li>
+
+                <li>Comply with applicable laws, including any Do Not Call and Do Not Spam legislation, in relation to conducting business via the Internet, email marketing, telemarketing, direct mail marketing and legislation regarding identifying numbers;</li>
+
+                <li>Establish procedures and safeguards consistent with applicable law and AIA policies to protect the security, confidentiality and integrity of customer information.<br>
+                The AIA Group recognizes its responsibilities in relation to the collection, holding, processing or use of personal data. You may choose not to provide us with the requested personal data, but failure to do so may inhibit our ability to do business with you.</li>
+                </ul>
+
+                <p>From time to time we may use your personal information for purposes relating to our business with you including, but not limited to, for the purposes of processing your application, the assessment and processing of claims and any other administration relevant to any policy issued by AIA, for AIA’s internal purposes, to manage and promote the business activities of AIA, to meet requirements imposed by law and for marketing and promotional purposes. In connection with these purposes, the personal data may be made available, locally and overseas, to our subsidiary and affiliated companies and to any agent, contractor or third party who provides administrative or other services to AIA or any member of the AIA Group.</p>
+
+                <p>You have the right to access, and request the correction of your personal data.</p>
+              </div>
+            </div>
+          </div>
+        ]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Privacy Statement Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
     </Webparts>
   </WebpartPageDefinition>

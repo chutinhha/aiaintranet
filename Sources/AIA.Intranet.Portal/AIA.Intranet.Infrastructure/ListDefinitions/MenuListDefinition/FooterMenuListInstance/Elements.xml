@@ -6,5 +6,23 @@
                 FeatureId="01686e8b-2142-4d06-9f43-a3d8a98c7017"
                 Url="Lists/FooterMenu"
                 Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="ID">1</Field>
+          <Field Name="Title">Terms of Use</Field>
+          <Field Name="URL">/Pages/TermsOfUse.aspx</Field>
+          <Field Name="OrderNumber">1</Field>
+          <Field Name="Active">True</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">2</Field>
+          <Field Name="Title">Privacy Statement</Field>
+          <Field Name="URL">/Pages/PrivacyStatement.aspx</Field>
+          <Field Name="OrderNumber">2</Field>
+          <Field Name="Active">True</Field>
+        </Row>
+      </Rows>
+    </Data>
   </ListInstance>
 </Elements>

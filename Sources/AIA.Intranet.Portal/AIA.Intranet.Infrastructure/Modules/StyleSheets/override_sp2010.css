@@ -5,6 +5,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .width960 {
 	width: 960px !important;
@@ -84,6 +85,7 @@ body #s4-topheader2 {
 .footer-area {
 	float: left;
 	background-color: #FFFFFF;
+	width: 100%
 }
 .footer a, .footer a:link, .footer a:visited {
 	color: #666;
@@ -110,10 +112,14 @@ ul {
 .homenews {
 	background: url("../images/menu_right_bg.png") repeat-y scroll 0 0 #EEEEE6;
 }
-.ms-WPBody h1, .ms-WPBody h2, .ms-WPBody h3, .ms-WPBody h4, .ms-WPBody h5, .ms-WPBody h6 {
+h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 .height_box_2 .slimScrollDiv {height: auto !important;}
+.whatNews_box{padding-left: 0;}
+.link_services {
+  padding: 0;
+}

@@ -519,6 +519,8 @@
       <DependentUpon>ProjectResources.resx</DependentUpon>
     </Compile>
     <Compile Include="TimerJobs\ReminderBirthDayTimerJob.cs" />
+    <Compile Include="ViewDelegateControl\CustomViewSelectorMenu.cs" />
+    <Compile Include="ViewDelegateControl\PageHeadDelegateControl.cs" />
     <Compile Include="WebParts\BannerSlideShow\BannerSlideShow.cs" />
     <Compile Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx.cs">
       <DependentUpon>BannerSlideShowUserControl.ascx</DependentUpon>
@@ -950,6 +952,9 @@
     <None Include="TEMPLATE\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{925a9ca1-fa7f-48d8-80a8-e88ae84abb75}</SharePointProjectItemId>
     </None>
+    <None Include="ViewDelegateControl\BreadcrumbViewDelegate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1155f6b7-026a-4e22-82d2-ea6ad121c361}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\BannerSlideShow\BannerSlideShow.webpart" />
     <None Include="WebParts\BannerSlideShow\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3340c9f9-df22-4e95-a45a-c17b3c467af7}</SharePointProjectItemId>
@@ -1330,6 +1335,7 @@
     <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\spstd10.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
+    <Content Include="ViewDelegateControl\BreadcrumbViewDelegate\Elements.xml" />
     <Content Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>

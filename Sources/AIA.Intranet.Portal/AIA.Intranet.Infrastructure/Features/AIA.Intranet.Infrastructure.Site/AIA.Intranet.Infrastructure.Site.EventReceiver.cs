@@ -41,6 +41,8 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                 AddBannerContentType(web);
 
                 ProvisionSubSitesStructure(web);
+
+                ProvisionFeatures(web);
             }
             catch 
             { 
@@ -139,6 +141,12 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
 
 
         #region [Methods]
+        private void ProvisionFeatures(SPWeb web)
+        {
+            web.Features.Add(new Guid(Constants.DATA_FEATURE_ID));
+            web.Features.Add(new Guid(Constants.NEWS_FEATURE_ID));
+        }
+
         private void ProvisionSubSitesStructure(SPWeb web)
         {
             try
