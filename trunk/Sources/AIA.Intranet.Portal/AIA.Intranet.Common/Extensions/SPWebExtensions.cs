@@ -262,16 +262,34 @@ namespace AIA.Intranet.Common.Extensions
 
         private static void DeleteSite(SPWeb existed)
         {
-            foreach (SPWeb item in existed.Webs)
+
+           
+            if (existed.Webs != null)
             {
-                DeleteSite(item);
+                foreach (SPWeb item in existed.Webs)
+                {
+                    DeleteSite(item);
+                   // item.Delete();
+                }
+            }
+            try
+            {
+                if (existed.IsRootWeb)
+                    existed.Delete();
+                else
+                {
+                    existed.ParentWeb.Webs.Delete(existed.Name);
+                }
+
+            }
+            catch (Exception)
+            {
+                
+                
             }
 
-            if (existed.Webs == null || existed.Webs.Count == 0){
-                var parent = existed.ParentWeb;
-                existed.Delete();
-                //DeleteSite(parent);
-            }
+           
+        
             
            
         }
