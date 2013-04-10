@@ -719,8 +719,7 @@ cursor: default;
 	width:auto;
 	padding:1% 3%
 }
-.link_home{ background: url(../images/home.gif) no-repeat left top;}
-.link_home a{ color:#D31246; font: bold 22px/44px Arial, Helvetica, sans-serif; text-decoration:none;
+.link_home a, .link_home a:link, .link_home a:visited, .link_home a:hover{ color:#D31246 !important; font: bold 22px/44px Arial, Helvetica, sans-serif; text-decoration:none;
 	border-bottom:#555 1px dotted;}
 .level_1{color:#000!important; font: bold 18px/30px Arial, Helvetica, sans-serif;}
 .level_2{color:#666!important; font: bold 16px/30px Arial, Helvetica, sans-serif;}

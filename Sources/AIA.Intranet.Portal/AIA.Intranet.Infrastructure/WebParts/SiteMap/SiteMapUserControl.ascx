@@ -8,7 +8,24 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SiteMapUserControl.ascx.cs" Inherits="AIA.Intranet.Infrastructure.WebParts.SiteMap.SiteMapUserControl" %>
 <%@ Register TagPrefix="uc" Namespace="AIA.Intranet.Infrastructure.WebParts.SiteMap" Assembly="$SharePoint.Project.AssemblyFullName$" %>
 <script type="text/javascript" src="/Style%20Library/js/simpletreemenu.js"  language="javascript" ></script>
-<div class="main_content main_bg">
+<script type="text/javascript" language="javascript" >
+
+    function setNodeImage() {
+        $(".submenu").each(function () {
+            $(this).has(">ul:visible").css("background-image", "url('/Style Library/images/open.gif')");
+        });
+    }
+
+    $(function () {
+        $(".submenu").click(function () {
+            $(this).has(">ul:visible").css("background-image", "url('/Style Library/images/open.gif')");
+            $(this).has(">ul:hidden").css("background-image", "url('/Style Library/images/closed.gif')");
+        });
+    })
+
+</script>
+
+<div class="main_content">
     <div class="viewlist_page">
       <div class="col_right w100">
         <div class="whatNews_box noPaddingL">
@@ -17,51 +34,13 @@
           </div>
           <!--sitemap-->
           <div class="leftMenuWidth">
-            <div class="link_home"><a href="#" runat="server" id="lnkHome">Home</a></div>
-           <%-- <ul id="treemenu1" class="treeview">
-              <li class="submenu" style="background-image: url(/Style Library/images/closed.gif);"><a href="#" class="level_1">Folder 1</a>
-                <ul rel="closed" style="display: none;">
-                  <li><a href="#">Sub Item 1.1</a></li>
-                  <li class="li_last"><a href="#">Nấu gì hôm nay?</a></li>
-                </ul>
-              </li>
-              <li><a href="#" class="level_1">Item 3</a></li>
-              <li><a href="#" class="li_last level_1">Item 4</a></li>
-              <li class="submenu"><a href="#" class="level_1">Folder 2</a>
-                <ul rel="closed">
-                  <li><a href="#" class="level_2">Sub Item 2.1</a></li>
-                  <li class="submenu"><a href="#" class="level_2">Sub Item 2.2</a>
-                    <ul rel="closed">
-                      <li><a href="#" class="level_3">Sub Item 2.2_1</a></li>
-                      <li class="submenu"><a href="#" class="level_3">Sub Item 2.2_2</a>
-                        <ul rel="closed">
-                          <li><a href="#" class="level_4">Sub Item 2.2_2_1</a></li>
-                          <li class="submenu"><a href="#" class="level_4">Sub Item 2.2_2_2</a>
-                          	<ul rel="closed">
-                            	<li><a href="#" class="level_5">Sub Item 2.2_2_2__1</a></li>
-                                <li><a href="#" class="level_5">Sub Item 2.2_2_2__2</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a href="#" class="level_3">Sub Item 2.2_3</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#" class="level_2">Sub Item 2.3</a></li>
-                  <li class="li_last"><a href="#" class="level_2">Sub Item 2.4</a></li>
-                </ul>
-              </li>
-              <li><a href="#" class="level_1">Item 6</a></li>
-              <li class="li_last"><a href="#" class="level_1">Item 7</a></li>
-            </ul>--%>
-
+            <div class="link_home"><a href="#" runat="server" id="lnkHome">AIA Portal</a></div>
             <uc:SiteMapControl runat="server" RootId="treemenu2"/>
           </div>
           <script type="text/javascript">
-              //ddtreemenu.createTree(treeid, enablepersist, opt_persist_in_days (default is 1))
-              ddtreemenu.createTree("treemenu2", true)
-              
-              //ddtreemenu.createTree("treemenu2", false)
+              ddtreemenu.createTree("treemenu2", false);
+              ddtreemenu.flatten('treemenu2', 'expand');
+              setNodeImage();
             </script>
         </div>
       </div>
