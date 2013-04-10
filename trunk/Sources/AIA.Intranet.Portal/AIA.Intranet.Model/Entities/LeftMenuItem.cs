@@ -8,20 +8,6 @@ using Microsoft.SharePoint;
 namespace AIA.Intranet.Model.Entities
 {
     [Serializable]
-    public class WebLeftMenuDefinition
-    {
-        public string WebUrl { get; set; }
-
-        [XmlElement("LeftMenus")]
-        public List<LeftMenuDefinition> LeftMenus { get; set; }
-
-        public WebLeftMenuDefinition()
-        {
-            LeftMenus = new List<LeftMenuDefinition>();
-        }
-    }
-
-    [Serializable]
     public class LeftMenuDefinition
     {
         public string Title { get; set; }
@@ -29,10 +15,32 @@ namespace AIA.Intranet.Model.Entities
         public string OrderNo { get; set; }
         public bool Active { get; set; }
         public string Group { get; set; }
+    }
 
-        public void CreateMenu()
+    [Serializable]
+    [XmlRoot("Web")]
+
+    public class WebMenuDefinition
+    {
+        public string Name { get; set; }
+        public string Url { get; set; }
+
+        [XmlArray("LeftMenus")]
+        [XmlArrayItem("LeftMenu")]
+        public List<LeftMenuDefinition> Features { get; set; }
+
+        public WebMenuDefinition()
         {
-            
+            Features = new List<LeftMenuDefinition>();
+        }
+    }
+
+    [XmlRoot("Webs")]
+    public class WebMenuDefinitionCollection : List<WebMenuDefinition>
+    {
+        public WebMenuDefinitionCollection()
+        {
+
         }
     }
 }

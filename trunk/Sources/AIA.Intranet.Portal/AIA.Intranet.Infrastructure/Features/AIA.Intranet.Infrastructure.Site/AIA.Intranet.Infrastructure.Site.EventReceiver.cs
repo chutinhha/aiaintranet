@@ -11,6 +11,7 @@ using System.Reflection;
 using AIA.Intranet.Common.Helpers;
 using AIA.Intranet.Common.Extensions;
 using AIA.Intranet.Model.Infrastructure;
+using AIA.Intranet.Model.Entities;
 
 
 namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructure.Site
@@ -43,6 +44,8 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                 ProvisionSubSitesStructure(web);
 
                 ProvisionFeatures(web);
+
+                ProvisionLeftMenu(web);
             }
             catch 
             { 
@@ -143,8 +146,15 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
         #region [Methods]
         private void ProvisionFeatures(SPWeb web)
         {
-            web.Features.Add(new Guid(Constants.DATA_FEATURE_ID));
-            web.Features.Add(new Guid(Constants.NEWS_FEATURE_ID));
+            try
+            {
+                web.Features.Add(new Guid(Constants.DATA_FEATURE_ID));
+                web.Features.Add(new Guid(Constants.NEWS_FEATURE_ID));
+            }
+            catch
+            {
+            }
+           
         }
 
         private void ProvisionSubSitesStructure(SPWeb web)
@@ -180,6 +190,51 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                 file.Delete();
             file.Update();
         }
+
+        private void ProvisionLeftMenu(SPWeb web)
+        {
+            try
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                string xml = assembly.GetResourceTextFile("AIA.Intranet.Infrastructure.XMLCustomSettings.DefaultLeftMenu.xml");
+
+                var leftMenus = SerializationHelper.DeserializeFromXml<WebMenuDefinitionCollection>(xml);
+                AddLeftMenu(web, leftMenus);
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void AddLeftMenu(SPWeb web, WebMenuDefinitionCollection leftMenus)
+        {
+            try
+            {
+                foreach (var menu in leftMenus)
+                {
+                    using (SPWeb spWeb = web.Site.OpenWeb(menu.Url))
+                    {
+                        var listLeftMenu = CCIUtility.GetListFromURL(Constants.LEFT_MENU_LIST_URL, spWeb);
+                        if (listLeftMenu == null) continue;
+                        foreach (var leftMenu in menu.Features)
+                        {
+                            SPListItem item = listLeftMenu.Items.Add();
+                            item["Title"] = leftMenu.Title;
+                            item["URL"] = leftMenu.Url;
+                            item.SystemUpdate();
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
+
         #endregion [Methods]
 
     }
