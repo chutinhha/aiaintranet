@@ -602,6 +602,14 @@
     <Compile Include="WebParts\SiteMap\SiteMapUserControl.ascx.designer.cs">
       <DependentUpon>SiteMapUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\SiteViewer\SiteViewer.cs" />
+    <Compile Include="WebParts\SiteViewer\SiteViewerUserControl.ascx.cs">
+      <DependentUpon>SiteViewerUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SiteViewer\SiteViewerUserControl.ascx.designer.cs">
+      <DependentUpon>SiteViewerUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\ViewNewsCategoryWebPart\ViewNewsCategoryWebPart.cs" />
     <Compile Include="WebParts\ViewNewsCategoryWebPart\ViewNewsCategoryWebPartUserControl.ascx.cs">
       <DependentUpon>ViewNewsCategoryWebPartUserControl.ascx</DependentUpon>
@@ -735,11 +743,17 @@
     <None Include="ListInstances\Calendar\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{17553c5b-851a-41f9-bd4f-1af179c915bc}</SharePointProjectItemId>
     </None>
+    <None Include="ListInstances\SiteImage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22252bd1-6827-422a-aeb7-c09654ff286e}</SharePointProjectItemId>
+    </None>
     <None Include="Modules\AIAHtmlPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{96893d58-df2f-471a-a0d8-e3f6b04cab6f}</SharePointProjectItemId>
     </None>
     <None Include="Modules\ClusteredPages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d9cc9b31-7707-4378-a1a9-c52b186634c3}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\DefaultPicture\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3f7e8580-a2ad-4d2b-a099-34316cde6e2a}</SharePointProjectItemId>
     </None>
     <None Include="Modules\Javascripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8e6398b6-bc4f-4499-92ab-bfb5e9ede567}</SharePointProjectItemId>
@@ -995,6 +1009,10 @@
       <SharePointProjectItemId>{de398d45-48bc-4199-ba28-5e8ac4c05892}</SharePointProjectItemId>
     </None>
     <None Include="WebParts\SiteMap\SiteMap.webpart" />
+    <None Include="WebParts\SiteViewer\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4c568ea-1caa-45ef-9a6f-10fa87951ca1}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SiteViewer\SiteViewer.webpart" />
     <None Include="WebParts\ViewNewsCategoryWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{eabba84b-dab0-4329-bf01-24cdcad8596c}</SharePointProjectItemId>
     </None>
@@ -1180,9 +1198,13 @@
     <Content Include="ListInstances\BannerLibrary\Elements.xml" />
     <Content Include="ListInstances\Calendar\Elements.xml" />
     <Content Include="ListInstances\Calendar\Schema.xml" />
+    <Content Include="ListInstances\SiteImage\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Elements.xml" />
     <Content Include="Modules\AIAHtmlPages\Sample.txt" />
     <Content Include="Modules\ClusteredPages\Elements.xml" />
+    <Content Include="Modules\DefaultPicture\Clustered-Departments.jpg" />
+    <Content Include="Modules\DefaultPicture\Elements.xml" />
+    <Content Include="Modules\DefaultPicture\Single-Department.jpg" />
     <Content Include="Modules\Javascripts\aia.portal.commons.js" />
     <Content Include="Modules\Javascripts\Elements.xml" />
     <Content Include="Modules\Javascripts\jquery-1.8.3.js" />
@@ -1377,6 +1399,10 @@
     <Content Include="WebParts\SiteMap\SiteMapUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
+    <Content Include="WebParts\SiteViewer\Elements.xml" />
+    <Content Include="WebParts\SiteViewer\SiteViewerUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="WebParts\ViewNewsCategoryWebPart\Elements.xml" />
     <Content Include="WebParts\ViewNewsCategoryWebPart\ViewNewsCategoryWebPartUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>
@@ -1388,6 +1414,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="XMLCustomSettings\ClusteredWebparts.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLCustomSettings\DefaultLeftMenu.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Content Include="XSL\fldtypes_TimesheetField.xsl" />

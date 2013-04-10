@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="DefaultPicture\" Type="ElementManifest" />
+    <ProjectItemFile Source="Clustered-Departments.jpg" Target="DefaultPicture\" Type="ElementFile" />
+    <ProjectItemFile Source="Single-Department.jpg" Target="DefaultPicture\" Type="ElementFile" />
+  </Files>
+</ProjectItem>
