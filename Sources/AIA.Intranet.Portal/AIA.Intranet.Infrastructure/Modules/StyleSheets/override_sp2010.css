@@ -110,7 +110,7 @@ body #s4-topheader2 {
 	margin: 0;
 }
 .div_hotnews_right {
-	height: 231px;
+	height: 232px !important;
 }
 ul {
 	list-style: none outside none;
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6, .scroll_a h3 {
     margin: 0;
     padding: 0;
 }
-.height_box_2 .slimScrollDiv {height: auto !important;}
+.slimScrollDiv {height: auto !important;}
 .whatNews_box{padding-left: 0;}
 .link_services {
   padding: 0;

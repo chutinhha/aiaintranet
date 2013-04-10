@@ -252,6 +252,55 @@ namespace AIA.Intranet.Common.Extensions
                     newSite.Features.Add(feature.Guid);
                     //newSite.Update(); 		 
 	            }
+
+                //BreakRoleInheritance
+                if (site.BreakRoleInheritance)
+                {
+                    try
+                    {
+                        newSite.AllowUnsafeUpdates = true;
+
+                        if (!newSite.HasUniqueRoleAssignments)
+                            newSite.BreakRoleInheritance(false);
+
+                        //create group
+                        string groupOwners = site.Name.Trim() + " Owners";
+                        //if (!CCIUtility.GroupExistsInSiteCollection(newSite, groupOwners))
+                            newSite.CreateNewGroup(groupOwners, "Use this group to grant people full control permissions to the SharePoint site: " + site.Name.Trim(), SPRoleType.Administrator);
+                        //else
+                        //    newSite.AddExistedGroup(groupOwners, SPRoleType.Administrator);
+
+                        string groupMembers = site.Name.Trim() + " Members";
+                        //if (!CCIUtility.GroupExistsInSiteCollection(newSite, groupMembers))
+                            newSite.CreateNewGroup(groupMembers, "Use this group to grant people contribute permissions to the SharePoint site: " + site.Name.Trim(), SPRoleType.Contributor);
+                        //else
+                        //    newSite.AddExistedGroup(groupMembers, SPRoleType.Contributor);
+
+                        string groupVisitors = site.Name.Trim() + " Visitors";
+                        //if (!CCIUtility.GroupExistsInSiteCollection(newSite, groupVisitors))
+                        //{
+                            newSite.CreateNewGroup(groupVisitors, "Use this group to grant people read permissions to the SharePoint site: " + site.Name.Trim(), SPRoleType.Reader);
+
+                            SPUser authenUsers = newSite.EnsureUser("NT AUTHORITY\\authenticated users");
+                            if (authenUsers != null)
+                            {
+                                SPGroup spGrp = newSite.Groups[groupVisitors];
+                                if (spGrp != null)
+                                { spGrp.AddUser(authenUsers); }
+                            }
+                        //}
+                        //else
+                        //    newSite.AddExistedGroup(groupVisitors, SPRoleType.Reader);
+                    }
+                    catch (Exception ex)
+                    {
+                    }
+                    finally
+                    {
+                        newSite.AllowUnsafeUpdates = false;
+                    }
+                }
+
                 if (site.SubSites.Count > 0)
                 {
                     newSite.ProvisionWebStructure(site.SubSites);
@@ -735,7 +784,7 @@ namespace AIA.Intranet.Common.Extensions
                                 groups.Add(groupName, member, owner, groupDescription);
                             }
                             //Associate the group with SPWeb
-                            spWeb.AssociatedGroups.Add(spWeb.SiteGroups[groupName]);
+                            //spWeb.AssociatedGroups.Add(spWeb.SiteGroups[groupName]);
                             spWeb.Update();
 
                             //Assignment of the roles to the group.

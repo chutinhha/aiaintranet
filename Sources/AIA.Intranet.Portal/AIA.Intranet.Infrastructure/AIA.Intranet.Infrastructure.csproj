@@ -1049,7 +1049,9 @@
     <Content Include="ContentTypes\InternalContentType\Elements.xml" />
     <Content Include="ContentTypes\MenuItemContentType\Elements.xml" />
     <Content Include="ContentTypes\NewsCategoryContentType\Elements.xml" />
-    <Content Include="ContentTypes\NewsItemContentType\Elements.xml" />
+    <Content Include="ContentTypes\NewsItemContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ContentTypes\ProcedureContentType\Elements.xml" />
     <Content Include="ContentTypes\ReportContentType\Elements.xml" />
     <Content Include="ContentTypes\TypeOfEnquiryContentType\Elements.xml" />
@@ -1225,6 +1227,9 @@
     <Content Include="Modules\PortalImages\Images\ad_scroll_back.png" />
     <Content Include="Modules\PortalImages\Images\ad_scroll_forward.png" />
     <Content Include="Modules\PortalImages\Images\aialogo.png" />
+    <Content Include="Modules\PortalImages\Images\AIA_hp_agent.jpg" />
+    <Content Include="Modules\PortalImages\Images\AIA_hp_employee.jpg" />
+    <Content Include="Modules\PortalImages\Images\AIA_male_with_headphones_n_laptop_eng.jpg" />
     <Content Include="Modules\PortalImages\Images\all_site.png" />
     <Content Include="Modules\PortalImages\Images\bgtitle_list.png" />
     <Content Include="Modules\PortalImages\Images\black_transparent.png" />
@@ -1233,9 +1238,11 @@
     <Content Include="Modules\PortalImages\Images\createcontent.png" />
     <Content Include="Modules\PortalImages\Images\excel.png" />
     <Content Include="Modules\PortalImages\Images\folder_open.png" />
+    <Content Include="Modules\PortalImages\Images\GP_img_news_01.jpg" />
     <Content Include="Modules\PortalImages\Images\head.png" />
     <Content Include="Modules\PortalImages\Images\head_bg.png" />
     <Content Include="Modules\PortalImages\Images\icons.png" />
+    <Content Include="Modules\PortalImages\Images\img_video_thumbnail.gif" />
     <Content Include="Modules\PortalImages\Images\itann.png" />
     <Content Include="Modules\PortalImages\Images\itgen.png" />
     <Content Include="Modules\PortalImages\Images\l copy.gif" />
@@ -1257,6 +1264,7 @@
     <Content Include="Modules\PortalImages\Images\space.png" />
     <Content Include="Modules\PortalImages\Images\sprites_x.png" />
     <Content Include="Modules\PortalImages\Images\tab_link.png" />
+    <Content Include="Modules\PortalImages\Images\trans.gif" />
     <Content Include="Modules\PortalImages\Images\workflows.png" />
     <Content Include="Modules\SinglePages\Elements.xml" />
     <Content Include="Modules\StyleSheets\aia.rte.custom.styles.css" />

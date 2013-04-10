@@ -41,6 +41,8 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
 
                 AddBannerContentType(web);
 
+                SetRootSitePermissions(web);
+
                 ProvisionSubSitesStructure(web);
 
                 ProvisionFeatures(web);
@@ -189,6 +191,32 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             if (file.Exists)
                 file.Delete();
             file.Update();
+        }
+
+        private void SetRootSitePermissions(SPWeb web)
+        {
+            try
+            {
+                string groupOwners = web.Title.Trim() + " Owners";
+                web.CreateNewGroup(groupOwners, "Use this group to grant people full control permissions to the SharePoint site: " + web.Title.Trim(), SPRoleType.Administrator);
+
+                string groupMembers = web.Title.Trim() + " Members";
+                web.CreateNewGroup(groupMembers, "Use this group to grant people contribute permissions to the SharePoint site: " + web.Title.Trim(), SPRoleType.Contributor);
+
+                string groupVisitors = web.Title.Trim() + " Visitors";
+                web.CreateNewGroup(groupVisitors, "Use this group to grant people read permissions to the SharePoint site: " + web.Title.Trim(), SPRoleType.Reader);
+
+                SPUser authenUsers = web.EnsureUser("NT AUTHORITY\\authenticated users");
+                if (authenUsers != null)
+                {
+                    SPGroup spGrp = web.Groups[groupVisitors];
+                    if (spGrp != null)
+                    { 
+                        spGrp.AddUser(authenUsers); 
+                    }
+                }
+            }
+            catch { }
         }
 
         private void ProvisionLeftMenu(SPWeb web)

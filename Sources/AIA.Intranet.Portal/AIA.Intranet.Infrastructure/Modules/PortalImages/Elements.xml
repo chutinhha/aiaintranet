@@ -39,5 +39,11 @@
     <File Path="l_last.gif" Url="l_last.gif" Type="GhostableInLibrary"  />
     <File Path="l-copy.gif" Url="l-copy.gif" Type="GhostableInLibrary" />
     <File Path="bgtitle_list.png" Url="bgtitle_list.png" Type="GhostableInLibrary" />
+    <File Path="trans.gif" Url="trans.gif" Type="GhostableInLibrary" />
+    <File Path="AIA_hp_agent.jpg" Url="AIA_hp_agent.jpg" Type="GhostableInLibrary" />
+    <File Path="AIA_male_with_headphones_n_laptop_eng.jpg" Url="AIA_male_with_headphones_n_laptop_eng.jpg" Type="GhostableInLibrary" />
+    <File Path="img_video_thumbnail.gif" Url="img_video_thumbnail.gif" Type="GhostableInLibrary" />
+    <File Path="GP_img_news_01.jpg" Url="GP_img_news_01.jpg" Type="GhostableInLibrary" />
+    <File Path="AIA_hp_employee.jpg" Url="AIA_hp_employee.jpg" Type="GhostableInLibrary" />
 </Module>
 </Elements>

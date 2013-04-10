@@ -28,7 +28,12 @@ namespace AIA.Intranet.Infrastructure.WebParts.LeftMenu
         {
             SPWeb currentWeb = SPContext.Current.Web;
 
-            SPList leftMenuList = currentWeb.GetList(currentWeb.ServerRelativeUrl.TrimEnd('/') + "/" + Constants.LEFT_MENU_LIST_URL.TrimStart('/'));
+            SPList leftMenuList = null ;
+
+            try {
+                leftMenuList = currentWeb.GetList(currentWeb.ServerRelativeUrl.TrimEnd('/') + "/" + Constants.LEFT_MENU_LIST_URL.TrimStart('/'));
+            }
+            catch { }
 
             if (leftMenuList != null)
             {

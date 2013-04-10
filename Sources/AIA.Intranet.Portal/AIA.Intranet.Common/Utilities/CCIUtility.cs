@@ -454,5 +454,14 @@ namespace AIA.Intranet.Common.Utilities
             SPFieldUserValue fieldValue = (SPFieldUserValue)field.GetFieldValue(currentValue);
             return fieldValue.User;
         }
+
+        public static bool GroupExistsInWebSite(SPWeb web, string name)
+        {
+            return web.Groups.OfType<SPGroup>().Count(g => g.Name.Equals(name, StringComparison.InvariantCultureIgnoreCase)) > 0;
+        }
+        public static bool GroupExistsInSiteCollection(SPWeb web, string name)
+        {
+            return web.SiteGroups.OfType<SPGroup>().Count(g => g.Name.Equals(name, StringComparison.InvariantCultureIgnoreCase)) > 0;
+        }
     }
 }
