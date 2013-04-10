@@ -35,6 +35,16 @@
             </asp:Repeater>
         </div>
 </div>
+
+<script type="text/javascript">
+    $(function () {
+        $('.scroll_a').slimScroll({
+            //height: '300px',
+            start: 'top',
+            disableFadeOut: true
+        });
+    });
+</script>
 <%--<div class="gto_news">
     <h2 class="titleRed">
         <a href="#">Procedure &amp; Manuals</a></h2>

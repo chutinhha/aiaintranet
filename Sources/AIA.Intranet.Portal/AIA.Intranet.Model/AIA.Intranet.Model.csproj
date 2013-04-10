@@ -67,6 +67,7 @@
     <Compile Include="Entities\EmailListItem.cs" />
     <Compile Include="Entities\ForumCategory.cs" />
     <Compile Include="Entities\ForumPostItem.cs" />
+    <Compile Include="Entities\LeftMenuItem.cs" />
     <Compile Include="Entities\MediaItem.cs" />
     <Compile Include="Entities\ProjectItem.cs" />
     <Compile Include="Entities\SiteMapMapping.cs" />

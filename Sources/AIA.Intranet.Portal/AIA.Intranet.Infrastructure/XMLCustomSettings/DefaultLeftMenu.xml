@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfLeftMenuDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <LeftMenuDefinition>
+    <WebUrl>/MIS</WebUrl>
+    
+    <LeftMenu xsi:type="LeftMenu">
+      <Title>MIS menu 1</Title>
+      <Url>/Pages/Home.aspx</Url>
+      <OrderNo>1</OrderNo>
+      <Active>true</Active>
+      <Group>Home</Group>
+    </LeftMenu>
+    
+    <LeftMenu xsi:type="LeftMenu">
+      <Title>MIS menu 1</Title>
+      <Url>/Pages/Home.aspx</Url>
+      <OrderNo>1</OrderNo>
+      <Active>true</Active>
+      <Group>Home</Group>
+    </LeftMenu>
+    
+  </LeftMenuDefinition>
+  
+  <LeftMenuDefinition>
+    <WebUrl>/MIS/Share</WebUrl>
+    
+    <LeftMenu xsi:type="LeftMenu">
+      <Title>Share menu 1</Title>
+      <Url>/Pages/Home.aspx</Url>
+      <OrderNo>1</OrderNo>
+      <Active>true</Active>
+      <Group>Home</Group>
+    </LeftMenu>
+    
+    <LeftMenu xsi:type="LeftMenu">
+      <Title>share menu 2</Title>
+      <Url>/Pages/Home.aspx</Url>
+      <OrderNo>1</OrderNo>
+      <Active>true</Active>
+      <Group>Home</Group>
+    </LeftMenu>
+    
+  </LeftMenuDefinition>
+
+</ArrayOfLeftMenuDefinition>
