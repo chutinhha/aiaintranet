@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="Guideline Definition" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-GuidelineDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="Guideline Definition" ModeratedList="TRUE" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-GuidelineDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
       <ContentType ID="0x010100faf11af274ea46408491fc842223ec87" Name="[AIA] - Guideline Content Type" Group="[AIA]" Description="" Inherits="TRUE" Version="0">

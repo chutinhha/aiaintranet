@@ -1,38 +1,227 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Webs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
+  <!-- Begin MIS ############################################################# -->
   <WebMenuDefinition>
     <Name>MIS</Name>
     <Url>/MIS</Url>
     <LeftMenus>
       <LeftMenu>
-        <Title>MIS menu 1</Title>
-        <Url>/Pages/Home.aspx</Url>
+        <Title>Home</Title>
+        <Url>/MIS/Pages/Home.aspx</Url>
+        <MenuKeywords>/Pages/</MenuKeywords>
       </LeftMenu>
       <LeftMenu>
-        <Title>MIS menu 2</Title>
-        <Url>/Pages/Home.aspx</Url>
+        <Title>Calendar</Title>
+        <Url>/MIS/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Pages/</MenuKeywords>
+      </LeftMenu>
+      <LeftMenu>
+        <Title>About</Title>
+        <Url>/MIS/Pages/About.aspx</Url>
+        <MenuKeywords>/Pages/</MenuKeywords>
+      </LeftMenu>
+      <LeftMenu>
+        <Title>Home</Title>
+        <Url>/MIS/Pages/Home.aspx</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+      <LeftMenu>
+        <Title>Calendar</Title>
+        <Url>/MIS/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+      <LeftMenu>
+        <Title>About</Title>
+        <Url>/MIS/Pages/About.aspx</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
       </LeftMenu>
     </LeftMenus>
   </WebMenuDefinition>
 
   <WebMenuDefinition>
-    <Name>MIS</Name>
+    <Name>Share</Name>
     <Url>/MIS/Share</Url>
     
     <LeftMenus>
-      
+
       <LeftMenu>
-        <Title>Share menu 1</Title>
-        <Url>/Pages/Home.aspx</Url>
+        <Title>Forms</Title>
+        <Url>/MIS/Share/Lists/Forms/Forms</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
       </LeftMenu>
       
       <LeftMenu>
-        <Title>Share menu 2</Title>
-        <Url>/Pages/Home.aspx</Url>
+        <Title>Guidelines</Title>
+        <Url>/MIS/Share/Lists/Guidelines/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
       </LeftMenu>
-      
+
+      <LeftMenu>
+        <Title>Internal Only</Title>
+        <Url>/MIS/Share/Lists/InternalDocument/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Procedures</Title>
+        <Url>/MIS/Share/Lists/Procedures/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+          <Title>Reports</Title>
+          <Url>/MIS/Share/Lists/Reports/</Url>
+          <MenuKeywords>/Lists/</MenuKeywords>
+        </LeftMenu>
+
+      <LeftMenu>
+        <Title>News</Title>
+        <Url>/MIS/Share/Lists/News/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
     </LeftMenus>
 
   </WebMenuDefinition>
+
+  <WebMenuDefinition>
+    <Name>MISGovernance-AssetManagement</Name>
+    <Url>/MIS/MISGovernance-AssetManagement/</Url>
+
+    <LeftMenus>
+
+      <LeftMenu>
+        <Title>Forms</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Lists/Forms/Forms</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Lists/Guidelines/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Internal Only</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Lists/InternalDocument/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Procedures</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Lists/Procedures/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Reports</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Lists/Reports/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>News</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Lists/News/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+    </LeftMenus>
+
+  </WebMenuDefinition>
+
+  <WebMenuDefinition>
+    <Name>ITInfrastructure</Name>
+    <Url>/MIS/ITInfrastructure/</Url>
+
+    <LeftMenus>
+
+      <LeftMenu>
+        <Title>Forms</Title>
+        <Url>/MIS/ITInfrastructure/Lists/Forms/Forms</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/MIS/ITInfrastructure/Lists/Guidelines/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Internal Only</Title>
+        <Url>/MIS/ITInfrastructure/Lists/InternalDocument/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Procedures</Title>
+        <Url>/MIS/ITInfrastructure/Lists/Procedures/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Reports</Title>
+        <Url>/MIS/ITInfrastructure/Lists/Reports/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>News</Title>
+        <Url>/MIS/ITInfrastructure/Lists/News/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+    </LeftMenus>
+
+  </WebMenuDefinition>
+
+  <WebMenuDefinition>
+    <Name>ApplicationDevelopment</Name>
+    <Url>/MIS/ApplicationDevelopment/</Url>
+
+    <LeftMenus>
+
+      <LeftMenu>
+        <Title>Forms</Title>
+        <Url>/MIS/ApplicationDevelopment/Lists/Forms/Forms</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/MIS/ApplicationDevelopment/Lists/Guidelines/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Internal Only</Title>
+        <Url>/MIS/ApplicationDevelopment/Lists/InternalDocument/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Procedures</Title>
+        <Url>/MIS/ApplicationDevelopment/Lists/Procedures/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Reports</Title>
+        <Url>/MIS/ApplicationDevelopment/Lists/Reports/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>News</Title>
+        <Url>/MIS/ApplicationDevelopment/Lists/News/</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+
+    </LeftMenus>
+
+  </WebMenuDefinition>
+  <!-- End MIS ############################################################# -->
+  
 </Webs>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="ProcedureDefinition" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-ProcedureDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="ProcedureDefinition" ModeratedList="TRUE" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-ProcedureDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
       <ContentType ID="0x010100ff7a1dc30cd04cffae21331fd7b5f865" Name="[AIA] - Procedure Content Type" Group="[AIA]" Description="" Inherits="TRUE" Version="0">

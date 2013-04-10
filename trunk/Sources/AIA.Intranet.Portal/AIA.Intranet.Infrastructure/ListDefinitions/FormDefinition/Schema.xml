@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="Form Definition" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-FormDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="Form Definition" ModeratedList="TRUE" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-FormDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
       <ContentType ID="0x0101002235116d9b4f433683fdea7bcd8857a1" Name="[AIA] - Form Content Type" Group="[AIA]" Description="" Inherits="TRUE" Version="0">
