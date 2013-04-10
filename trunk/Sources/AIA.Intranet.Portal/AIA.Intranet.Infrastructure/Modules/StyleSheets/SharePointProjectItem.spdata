@@ -10,5 +10,6 @@
     <ProjectItemFile Source="styles.css" Target="StyleSheets\" Type="ElementFile" />
     <ProjectItemFile Source="corev4_edit.css" Target="StyleSheets\" Type="ElementFile" />
     <ProjectItemFile Source="override_sp2010.css" Target="StyleSheets\" Type="ElementFile" />
+    <ProjectItemFile Source="aia.rte.custom.styles.css" Target="StyleSheets\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -9,5 +9,6 @@
     <File Path="styles.css" Url="styles.css" Type="GhostableInLibrary" />
     <File Path="corev4_edit.css" Url="corev4_edit.css" Type="GhostableInLibrary" />
     <File Path="override_sp2010.css" Url="override_sp2010.css" Type="GhostableInLibrary" />
-  </Module>
+    <File Path="aia.rte.custom.styles.css" Url="aia.rte.custom.styles.css" Type="GhostableInLibrary" />
+</Module>
 </Elements>

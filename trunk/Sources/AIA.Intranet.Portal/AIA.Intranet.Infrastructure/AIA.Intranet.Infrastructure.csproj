@@ -1237,6 +1237,7 @@
     <Content Include="Modules\PortalImages\Images\tab_link.png" />
     <Content Include="Modules\PortalImages\Images\workflows.png" />
     <Content Include="Modules\SinglePages\Elements.xml" />
+    <Content Include="Modules\StyleSheets\aia.rte.custom.styles.css" />
     <Content Include="Modules\StyleSheets\corev4_edit.css" />
     <Content Include="Modules\StyleSheets\Elements.xml" />
     <Content Include="Modules\StyleSheets\jquery.ad-gallery.css" />

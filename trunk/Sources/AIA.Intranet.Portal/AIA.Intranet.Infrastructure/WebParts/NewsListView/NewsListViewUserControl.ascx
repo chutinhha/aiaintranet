@@ -16,8 +16,8 @@
         <SharePoint:SPSecurityTrimmedControl ID="SPSecurityTrimmedControl1" runat="server"
             PermissionContext="CurrentList" Permissions="EditListItems">
             <div style="float: right;">
-                <a href='<%= SPContext.Current.List.Views["All Items"].ServerRelativeUrl %>' target="_blank">
-                    (Create news)</a>
+                <a href='<%= SPContext.Current.List.Views["All Items"].ServerRelativeUrl %>' target="_blank" class="highlight-manage-news">
+                    Manage news</a>
                 <%--<asp:HyperLink ID="hyperLinkGo" Target="_blank" runat="server">(Create news)</asp:HyperLink>--%>
             </div>
         </SharePoint:SPSecurityTrimmedControl>

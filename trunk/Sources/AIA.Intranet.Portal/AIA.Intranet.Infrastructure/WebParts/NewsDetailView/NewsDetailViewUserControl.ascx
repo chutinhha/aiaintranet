@@ -9,11 +9,14 @@
     Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NewsDetailViewUserControl.ascx.cs"
     Inherits="AIA.Intranet.Infrastructure.WebParts.NewsDetailView.NewsDetailViewUserControl" %>
-<%--<div class="box-container">
+
+<div class="box-container">
+<%--
     <div class="box-header uppercase box-title">
         <%= SPContext.Current.List.Title %>
     </div>
-    <div class="wp-news-details">
+--%>
+    <div class="wp-news-details whatNews_description">
         <div class="wp-news-title-area">
             <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible='<%# ShowDateTime %>'>
                 <div class="wp-news-date">
@@ -21,15 +24,16 @@
                 </div>
             </asp:PlaceHolder>
             <div class="wp-news-title">
-                <asp:Literal ID="ltNewsTitle" runat="server"></asp:Literal>
+                <h1><asp:Literal ID="ltNewsTitle" runat="server"></asp:Literal></h1>
             </div>
         </div>
         <div class="wp-news-desc">
-            <asp:Literal ID="ltNewsDescription" runat="server"></asp:Literal>
+            <h3><asp:Literal ID="ltNewsDescription" runat="server"></asp:Literal></h3>
         </div>
         <div class="wp-news-content">
             <asp:Literal ID="ltNewsContent" runat="server"></asp:Literal>
         </div>
+<%--
         <div class="wp-news-utils">
             <div class="wp-news-utils-box">
                 <img align="absmiddle" alt="" src="<%= SPContext.Current.Site.ServerRelativeUrl.TrimEnd('/') %>/Style Library/images/gotop.gif"
@@ -37,8 +41,11 @@
                 <a href="#top" class="js-go-top handover">Về đầu trang</a>
             </div>
         </div>
+--%>
     </div>
-</div>--%>
+</div>
+
+<%--
 <div class="col_right">
     <div class="whatNews_box">
         <div class="whatNews_description">
@@ -59,3 +66,4 @@
         </div>
     </div>
 </div>
+--%>
