@@ -40,5 +40,11 @@
     <ProjectItemFile Source="Images\l_last.gif" Target="PortalImages\Images\" Type="ElementFile" />
     <ProjectItemFile Source="Images\l-copy.gif" Target="PortalImages\Images\" Type="ElementFile" />
     <ProjectItemFile Source="Images\bgtitle_list.png" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\trans.gif" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\AIA_hp_agent.jpg" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\AIA_male_with_headphones_n_laptop_eng.jpg" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\img_video_thumbnail.gif" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\GP_img_news_01.jpg" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\AIA_hp_employee.jpg" Target="PortalImages\Images\" Type="ElementFile" />
   </Files>
 </ProjectItem>

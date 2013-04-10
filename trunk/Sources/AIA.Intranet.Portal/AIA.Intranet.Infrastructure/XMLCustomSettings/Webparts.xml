@@ -170,7 +170,7 @@
         <![CDATA[<div class="services">
                   <div class="col_1">
                     <div class="fr divImg">
-                      <img src="news/AIA_homepage_individuals_v3.jpg">
+                      <!--<img src="news/AIA_homepage_individuals_v3.jpg">-->
                     </div>
                     <div class="divContent">
                       <h2 class="h2_black">Individuals</h2>
@@ -204,7 +204,7 @@
                   </div>
                   <div class="col_2">
                     <div class="fr divImg">
-                      <img src="news/AIA_homepage_Corporations.jpg">
+                      <!--<img src="news/AIA_homepage_Corporations.jpg">-->
                     </div>
                     <div class="divContent">
                       <h2 class="h2_black">Individuals</h2>
@@ -259,7 +259,7 @@
                     </h2>
                     <div align="center">
                       <a href="#">
-                        <img class="border_gray" src="http://www.aia.com/en/resources/ca329a804911a6fea83aaf4e12e54bc2/img_video_thumbnail.gif" />
+                        <img class="border_gray" src="/Style Library/images/img_video_thumbnail.gif" />
                       </a>
                     </div>
                   </div>
@@ -274,6 +274,7 @@
       </Properties>
     </Webparts>
 
+    <!--
     <Webparts xsi:type="ContenEditorWP">
       <Title>Column 6 Content Editor</Title>
       <ZoneId>BelowLeftColumn</ZoneId>
@@ -290,30 +291,30 @@
 
                   <div class="content fl">
                     <div class="row fl">
-                      <a href="/en/resources/9c5d5b804dd946d4847d94aaf44b317c/AIA_group_press_release_20121218a_en.pdf" class="left" target="_blank">
-                        <img border="0" src="http://www.aia.com/en/resources/9cf5f2004dd946d4847e94aaf44b317c/GP_img_news_01.jpg" />
+                      <a href="#" class="left" target="_blank">
+                        <img border="0" src="/Style Library/images/GP_img_news_01.jpg" />
                       </a>
-                      <a href="/en/resources/9c5d5b804dd946d4847d94aaf44b317c/AIA_group_press_release_20121218a_en.pdf" target="_blank" class="arrow">
+                      <a href="#" target="_blank" class="arrow">
                         AIG Divests Remaining Holding in AIA, Marking a Milestone in AIA’s History <br />
                                             Dec 2012      </a>
                     </div>
                     <div class="row fl">
-                      <a href="/en/resources/bd7e05004dd7a7dcaedbbeaaf44b317c/AIA_group_press_release_20121218_en.pdf" target="_blank" class="arrow">
+                      <a href="#" target="_blank" class="arrow">
                         AIA Completes the Acquisition of ING Malaysia<br />
                             Dec 2012  </a>
                     </div>
                     <div class="row fl">
-                      <a href="/en/resources/6b48ab804dd69eca9c679caaf44b317c/AIA_gprup_press_release_20121217_en.pdf" target="_blank" class="arrow">
+                      <a href="#" target="_blank" class="arrow">
                         Suspension of Trading<br />
                             Dec 2012  </a>
                     </div>
                     <div class="row fl">
-                      <a href="/en/resources/21c98a004db48b88b791b7aaf44b317c/AIA_Group_Press_Release_5Dec2012_en.pdf" target="_blank" class="arrow">
+                      <a href="#" target="_blank" class="arrow">
                         AIA Completes Acquisition of Aviva NDB Insurance<br />
                             Dec 2012  </a>
                     </div>
                     <div class="row fl">
-                      <a href="/en/resources/bd7e05004dd7a7dcaedbbeaaf44b317c/AIA_group_press_release_20121218_en.pdf" target="_blank" class="arrow">
+                      <a href="#" target="_blank" class="arrow">
                         AIA Completes the Acquisition of ING Malaysia<br />
                             Dec 2012  </a>
                     </div>
@@ -366,7 +367,7 @@
         <![CDATA[<div class="box_right_gray w100">
                 <div class="content">
                     <h2 class="h2_black"><a href="#" class="arrow_right">Careers at AIA</a></h2>
-                    <div align="center"><a href="#"><img src="http://www.aia.com/en/resources/cb63c7804911a6fea843af4e12e54bc2/AIA_hp_employee.jpg" class="border_gray" /></a></div>
+                    <div align="center"><a href="#"><img src="/Style Library/images/AIA_hp_employee.jpg" class="border_gray" /></a></div>
                     <ul class="arrow_thin">
                             <li>Please <a href="#">click here</a> for more information on Stock Exchange Announcement</li>
                     </ul>
@@ -389,7 +390,7 @@
         <![CDATA[<div class="box_right_gray w100">
                   <div class="content">
                       <h2 class="h2_black"><a href="#" class="arrow_right">Careers with AIA for Agents</a></h2>
-                      <div align="center"><a href="#"><img src="http://www.aia.com/en/resources/cbfc5e004911a6fea847af4e12e54bc2/AIA_hp_agent.jpg" class="border_gray"></a>
+                      <div align="center"><a href="#"><img src="/Style Library/images/AIA_hp_agent.jpg" class="border_gray"></a>
                     
                       </div>
                       <ul class="arrow_thin">
@@ -406,6 +407,8 @@
         <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
     </Webparts>
+    
+    -->
     
   </WebpartPageDefinition>
 
@@ -511,7 +514,7 @@
             <div>
               <div class="whatNews_left">
                 <div align="center" class="news_largeItem">
-                  <img src="http://www.aia.com/en/resources/174ebe004c6982ed8facaf9a6c3b0c76/AIA_male_with_headphones_n_laptop_eng.jpg" />
+                  <img src="/Style Library/images/AIA_male_with_headphones_n_laptop_eng.jpg" />
                     <div align="center" style="margin-bottom:30px">
                       <a class="button" href="#">
                         <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what's comming up
@@ -582,7 +585,7 @@
             <div>
               <div class="whatNews_left">
                 <div align="center" class="news_largeItem">
-                  <img src="http://www.aia.com/en/resources/174ebe004c6982ed8facaf9a6c3b0c76/AIA_male_with_headphones_n_laptop_eng.jpg" />
+                  <img src="/Style Library/images/AIA_male_with_headphones_n_laptop_eng.jpg" />
                   <div align="center" style="margin-bottom: 30px">
                     <a class="button" href="#">
                       <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what's comming up

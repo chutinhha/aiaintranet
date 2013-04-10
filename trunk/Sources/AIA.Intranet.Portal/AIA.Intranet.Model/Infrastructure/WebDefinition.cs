@@ -40,6 +40,8 @@ namespace AIA.Intranet.Model.Infrastructure
         public string Template { get; set; }
 
         public bool Overwrite { get; set; }
+
+        public bool BreakRoleInheritance { get; set; }
     }
 
     [XmlRoot("Webs")]
