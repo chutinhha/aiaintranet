@@ -139,7 +139,7 @@ namespace AIA.Intranet.Common.Extensions
                 
                 var forms = folder.SubFolders.Cast<SPFolder>().FirstOrDefault(p => p.Name == "Forms");
 
-                string templateFilename = "spstd8.aspx";
+                string templateFilename = "spstd11.aspx";
                 if (useForm && forms != null && folder.Name != "Pages")
                     folder = forms;
                 else

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="Internal Document Definition" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-InternalDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="Internal Document Definition" ModeratedList="TRUE" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-InternalDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
       <ContentType ID="0x01010080f49ba9d6804df5956e976e7a2ffbda" Name="[AIA] - Internal Document Content Type" Group="[AIA]" Description="" Inherits="TRUE" Version="0">

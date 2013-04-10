@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="ReportDefinition" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-ReportDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="ReportDefinition" ModeratedList="TRUE" Direction="$Resources:Direction;" Url="AIA.Intranet.Infrastructure-ReportDefinition" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
       <ContentType ID="0x010100df97f3ea22c54cceb5965f6a0c2c4770" Name="[AIA] - Report Content Type" Group="[AIA]" Description="" Inherits="TRUE" Version="0">

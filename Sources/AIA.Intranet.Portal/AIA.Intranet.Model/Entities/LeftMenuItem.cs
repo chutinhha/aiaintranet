@@ -14,7 +14,7 @@ namespace AIA.Intranet.Model.Entities
         public string Url { get; set; }
         public string OrderNo { get; set; }
         public bool Active { get; set; }
-        public string Group { get; set; }
+        public string MenuKeywords { get; set; }
     }
 
     [Serializable]
