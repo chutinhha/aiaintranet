@@ -2,6 +2,6 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="DefaultPicture" Url="PictureLibrary">
     <File Path="DefaultPicture\Clustered-Departments.jpg" Url="Clustered-Departments.jpg" Type="GhostableInLibrary" />
-    <File Path="DefaultPicture\Single-Department.jpg" Url="DefaultPicture/Single-Department.jpg" Type="GhostableInLibrary" />
+    <File Path="DefaultPicture\Single-Department.jpg" Url="Single-Department.jpg" Type="GhostableInLibrary" />
 </Module>
 </Elements>
