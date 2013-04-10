@@ -255,7 +255,7 @@
       
       <WebDefinition>
         <Name>Distribution Development</Name>
-        <Url>Distribution Development</Url>
+        <Url>Distribution-Development</Url>
         <Features>
           <Feature>
             <Name>AIA.Intranet.Infrastructure.Clustered</Name>
