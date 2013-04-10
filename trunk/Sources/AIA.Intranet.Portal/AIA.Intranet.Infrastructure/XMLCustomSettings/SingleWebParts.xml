@@ -30,7 +30,7 @@
       <Content>
         <![CDATA[<div class="whatNews_left">
                     <div align="center" class="news_largeItem">
-                        <img class="noMarginB" src="http://www.aia.com/en/resources/174ebe004c6982ed8facaf9a6c3b0c76/AIA_male_with_headphones_n_laptop_eng.jpg">
+                        <img class="noMarginB" src="/PictureLibrary/Single-Department.jpg">
                         <!--div align="center" style="margin-bottom:30px"><a href="#" class="button"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what's comming up</a></div-->
                     </div>
                     <div style="width:102%; margin-top:10px" class="news_listItems">
@@ -62,7 +62,43 @@
       </Properties>
     </Webparts>
 
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 3 Content Editor</Title>
+      <ZoneId>RightTop</ZoneId>
+      <Content>
+        <![CDATA[<div style="width: 100%" class="whatNews_right">
+                  <div class="news_listItems">
+                    <div class="listItem">
+                      <h2>
+                        Useful Links
+                      </h2>
+                      <a href="#">Australia</a>
+                      <br />
+                      <a href="#">China</a>
+                      <br />
+                      <a href="#">Hong Kong</a>
+                      <br />
+                      <a href="#">Indonesia</a>
+                      <br />
+                      <a href="#">Malaysia</a>
+                      <br />
+                      <a href="#">New Zealand</a>
+                      <br />
+                      <a href="#">Philippines</a>
+                      <br />
+                    </div>
+                  </div>
+                </div>]]>
+      </Content>
+      <Index>1</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Zone 3 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
   </WebpartPageDefinition>
   
 </ArrayOfWebpartPageDefinition>
-
