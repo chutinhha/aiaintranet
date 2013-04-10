@@ -30,7 +30,20 @@
       </Properties>
     </Webparts>
 
-    <Webparts xsi:type="ContenEditorWP">
+    <Webparts xsi:type="DefaultWP">
+      <Title>Site Viewer</Title>
+      <ZoneId>CenterLeftColumn</ZoneId>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>SiteViewer.webpart</WebpartName>
+      <Properties>
+        <Add Name="Title" Value="Site Viewer" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+    
+    <!--<Webparts xsi:type="ContenEditorWP">
       <Title>Column 1 Content Editor</Title>
       <ZoneId>CenterLeftColumn</ZoneId>
       <Content>
@@ -72,7 +85,7 @@
         <Add Name="Title" Value="Zone 1 Content Editor" Type="string" ></Add>
         <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
-    </Webparts>
+    </Webparts>-->
 
     <Webparts xsi:type="ContenEditorWP">
       <Title>Column 2 Content Editor</Title>
