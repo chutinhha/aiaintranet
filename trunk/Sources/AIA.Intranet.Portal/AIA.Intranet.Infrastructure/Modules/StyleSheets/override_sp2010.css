@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6, .scroll_a h3 {
     background: url("../images/main_content.png") repeat-x scroll 0 0 transparent;
 }
 .srch-stats {
-  background-color: inherit;
+  background-color: inherit !important;
 }
 
 .ms-browseTab.ms-cui-tt-s > a.ms-cui-tt-a {
