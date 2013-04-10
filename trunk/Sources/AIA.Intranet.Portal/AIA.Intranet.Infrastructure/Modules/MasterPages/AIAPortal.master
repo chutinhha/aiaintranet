@@ -174,7 +174,7 @@
 								Sequence="302"
 								UseShortId="true"
 								ClientOnClickNavigateUrl="~site/_layouts/viewlsts.aspx"
-								PermissionsString="ViewFormPages"
+								PermissionsString="ManageLists"
 								PermissionMode="Any" />
 							 <SharePoint:MenuItemTemplate runat="server" id="MenuItem_EditSite"
 								Text="<%$Resources:wss,siteactions_editsite%>"
@@ -360,7 +360,7 @@
 			</div>
 
            <div id="s4-topheader2" class="s4-pr s4-notdlg">
-
+                <div class="inside-s4-topheader2">
                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
 					<tbody>
 						<tr>
@@ -404,6 +404,8 @@
 						</tr>
 					</tbody>
 				</table>
+                </div>
+
 
 
                     <%-- BEGIN: Hide TopNavigation --%>

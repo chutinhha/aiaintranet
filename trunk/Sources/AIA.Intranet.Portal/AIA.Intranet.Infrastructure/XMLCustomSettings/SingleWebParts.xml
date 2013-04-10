@@ -10,7 +10,7 @@
       <ZoneId>Header</ZoneId>
       <Content>
         <![CDATA[<div class="whatNews_description">
-                <h1>MIS (Single-Department)</h1>
+                <h1>Single-Department</h1>
                 <h3>Your starting point for getting things done</h3>
                 <p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing of Securities on the Stock Exchange of Hong Kong Limited.</p>
             </div>]]>
@@ -28,12 +28,12 @@
       <Title>Column 2 Content Editor</Title>
       <ZoneId>LeftTop</ZoneId>
       <Content>
-        <![CDATA[<div class="whatNews_left">
-                    <div align="center" class="news_largeItem">
-                        <img class="noMarginB" src="/PictureLibrary/Single-Department.jpg">
+        <![CDATA[<div class="whatNews_left_unused">
+                    <div align="center" class="news_largeItem_unused">
+                        <img class="noMarginB" src="/PictureLibrary/Single-Department.jpg" width="640px">
                         <!--div align="center" style="margin-bottom:30px"><a href="#" class="button"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what's comming up</a></div-->
                     </div>
-                    <div style="width:102%; margin-top:10px" class="news_listItems">
+                    <div style="margin-top:10px" class="news_listItems">
                     	<h1>Welcome to GTO Portal</h1>
                     	<p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing. The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing</p><br>
                     	<p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing. The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing</p>
@@ -66,7 +66,7 @@
       <Title>Column 3 Content Editor</Title>
       <ZoneId>RightTop</ZoneId>
       <Content>
-        <![CDATA[<div style="width: 100%" class="whatNews_right">
+        <![CDATA[<div style="width: 100%" class="whatNews_right_unused">
                   <div class="news_listItems">
                     <div class="listItem">
                       <h2>

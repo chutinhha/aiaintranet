@@ -45,6 +45,7 @@
     </script>
     <SharePoint:UIVersionedContent ID="WebPartPageHideQLStyles" UIVersion="4" runat="server">
         <contenttemplate>
+        <!--
 <style type="text/css">
     body #s4-leftpanel
     {
@@ -55,6 +56,7 @@
         margin-left: 0px;
     }
 </style>
+-->
 		</contenttemplate>
     </SharePoint:UIVersionedContent>
 </asp:Content>
@@ -99,7 +101,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" colspan="2" valign="top" height="100%">
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" colspan="2" valign="top" style="width:66%; height: 100%;">
                             
                             <WebPartPages:WebPartZone runat="server" Title="loc:LeftTop" ID="LeftTop" FrameType="TitleBarOnly">
                                 <ZoneTemplate>
@@ -107,7 +109,7 @@
                                 </ZoneTemplate>
                             </WebPartPages:WebPartZone>
                         </td>
-                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" height="100%">
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="width:34%; height: 100%;">
 
                             <WebPartPages:WebPartZone runat="server" Title="loc:RightTop" ID="RightTop" FrameType="TitleBarOnly">
                                 <ZoneTemplate>

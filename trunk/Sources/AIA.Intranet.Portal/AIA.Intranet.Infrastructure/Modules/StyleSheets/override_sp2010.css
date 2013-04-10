@@ -215,3 +215,33 @@ h1, h2, h3, h4, h5, h6, .scroll_a h3 {
 #s4-searcharea{
 	width: 248px;
 }
+.s4-ba
+{
+    background: url("../images/main_content.png") repeat-x scroll 0 0 transparent;
+}
+.srch-stats {
+  background-color: inherit;
+}
+
+.ms-browseTab.ms-cui-tt-s > a.ms-cui-tt-a {
+  background-color: #EEEEE6;
+}
+
+.s4-title
+{
+    background-image: none;
+    background-color: #EEEEE6;
+}
+
+.inside-s4-topheader2
+{
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #FFFFFF;
+}
+body #s4-topheader2 {
+    background-image: none;
+    background-color: #EEEEE6;
+}
+body #s4-topheader2 {
+  border-bottom: 1px solid #FFFFFF;
+}
