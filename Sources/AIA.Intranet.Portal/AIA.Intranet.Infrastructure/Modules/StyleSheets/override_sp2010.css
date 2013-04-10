@@ -6,7 +6,13 @@
 	margin-right: auto;
 	background-color: #FFFFFF;
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
 }
+.ms-WPBody{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
 .width960 {
 	width: 960px !important;
 }
@@ -112,7 +118,7 @@ ul {
 .homenews {
 	background: url("../images/menu_right_bg.png") repeat-y scroll 0 0 #EEEEE6;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .scroll_a h3 {
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -122,4 +128,90 @@ h1, h2, h3, h4, h5, h6 {
 .whatNews_box{padding-left: 0;}
 .link_services {
   padding: 0;
+}
+
+.ms-WPBody a:link, .ms-WPBody a:visited, #s4-bodyContainer a:link, #s4-bodyContainer a:visited {
+  color: #666666;
+  text-decoration: none;
+}
+.ms-WPBody a:hover, #s4-bodyContainer a:hover 
+{
+  color: #BE2136;
+  text-decoration: none;
+}
+
+/*begin news list*/
+.uppercase {
+    text-transform: uppercase;
+}
+.box-title {
+    font-weight: bold;
+}
+.box-header {
+    border-bottom-color: #D31145;
+}
+.box-header {
+    background: url("../images/bgtitle_list.png") repeat-x scroll left bottom #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding: 10px 10px 10px 10px;
+}
+
+.box-desc {
+    padding: 5px 10px;
+}
+.box-content {
+    padding: 5px 10px;
+}
+.wp-newslist-box {
+    border-bottom: 1px solid #F098AE;
+    padding: 5px 0;
+}
+
+
+.clear-both {
+    clear: both;
+}
+
+.wp-newslist-title {
+    font-weight: bold;
+}
+
+.wp-newslist-date {
+    color: #757575;
+}
+.wp-newslist-detail {
+    margin-top: 5px;
+}
+.wp-newslist-detail img {
+    border: 1px solid #F098AE;
+    margin-right: 10px;
+}
+
+.wp-news-date {
+    float: right;
+    padding:3px 0;
+}
+
+.box-container{
+	padding: 5px;
+}
+.wp-news-details{
+	padding-right: 4px;
+}
+
+.highlight-manage-news{color: #0072BC !important;font-weight:bold;}
+/*end news list*/
+
+.s4-search select, .s4-search input, .s4-search .ms-searchimage 
+{
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.s4-search select{
+	display: none;
+}
+#s4-searcharea{
+	width: 248px;
 }

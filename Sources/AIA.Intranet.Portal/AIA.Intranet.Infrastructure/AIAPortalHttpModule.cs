@@ -40,7 +40,7 @@ namespace AIA.Intranet.Infrastructure
             if (page != null)
             {
                 var url =  page.Request.Url.ToString().ToLower();
-                if (url.Contains("_vti_bin") || url.Contains("_layouts") || url.Contains("_catalogs")) return;
+                if (url.Contains("_vti_bin") || (url.Contains("_layouts") && !url.Contains("/_layouts/searchresults.aspx")) || url.Contains("_catalogs")) return;
 
                 string masterpage = SPContext.Current.Site.ServerRelativeUrl.TrimEnd('/') + "/_catalogs/masterpage/AIAPortal.master";
 

@@ -15,10 +15,12 @@ namespace AIA.Intranet.Infrastructure.WebParts.HeaderMenu
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
-            {
-                LoadData();
-            }
+            //if (!Page.IsPostBack)
+            //{
+            //    LoadData();
+            //}
+            
+            LoadData();
         }
 
         private void LoadData()

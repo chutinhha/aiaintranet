@@ -13,15 +13,6 @@ namespace AIA.Intranet.Infrastructure.WebParts.NewsDetailView {
     public partial class NewsDetailViewUserControl {
         
         /// <summary>
-        /// ltNewsTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltNewsTitle;
-        
-        /// <summary>
         /// PlaceHolder1 control.
         /// </summary>
         /// <remarks>
@@ -38,6 +29,15 @@ namespace AIA.Intranet.Infrastructure.WebParts.NewsDetailView {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal ltNewsDate;
+        
+        /// <summary>
+        /// ltNewsTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltNewsTitle;
         
         /// <summary>
         /// ltNewsDescription control.

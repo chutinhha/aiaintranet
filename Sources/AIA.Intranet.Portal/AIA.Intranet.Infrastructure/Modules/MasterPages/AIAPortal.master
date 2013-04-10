@@ -37,6 +37,7 @@
 	<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" />
 
     <%-- Order: Bottom to Top --%>
+    <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/aia.rte.custom.styles.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/override_sp2010.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/styles.css%>" runat="server"/>
     <SharePoint:CSSRegistration After="corev4.css" Name="<% $SPUrl:~SiteCollection/Style Library/css/jquery.ad-gallery.css%>" runat="server"/>
@@ -360,46 +361,54 @@
 
            <div id="s4-topheader2" class="s4-pr s4-notdlg">
 
-                    <%-- BEGIN: Breadcrumb --%>
-                    <div class="row_pathnavigator">
-				        <div class="links_navigator">
-					        <asp:ContentPlaceHolder id="PlaceHolderSiteName" runat="server">
-								<asp:SiteMapPath
-                                     runat="server"
-                                     SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider"
-                                     RenderCurrentNodeAsLink="true"
-                                     NodeStyle-CssClass="breadcrumbNode"
-                                     CurrentNodeStyle-CssClass="breadcrumbCurrentNode"
-                                     RootNodeStyle-CssClass="breadcrumbRootNode"
-                                     HideInteriorRootNodes="true"
-                                     SkipLinkText="">
-                                 	<PathSeparatorTemplate>
+                   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td width="100%">
+			                    <%-- BEGIN: Breadcrumb --%>
+			                    <div class="row_pathnavigator">
+							        <div class="links_navigator">
+								        <asp:ContentPlaceHolder id="PlaceHolderSiteName" runat="server">
+											<asp:SiteMapPath
+			                                     runat="server"
+			                                     SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider"
+			                                     RenderCurrentNodeAsLink="true"
+			                                     NodeStyle-CssClass="breadcrumbNode"
+			                                     CurrentNodeStyle-CssClass="breadcrumbCurrentNode"
+			                                     RootNodeStyle-CssClass="breadcrumbRootNode"
+			                                     HideInteriorRootNodes="true"
+			                                     SkipLinkText="">
+			                                 	<PathSeparatorTemplate>
+											        <span id="onetidPageTitleSeparator" class="s4-bcsep s4-titlesep">
+											        <SharePoint:ClusteredDirectionalSeparatorArrow runat="server"/> </span>
+			                                 	</PathSeparatorTemplate>
+			                                 </asp:SiteMapPath>
+								        </asp:ContentPlaceHolder>
+													
 								        <span id="onetidPageTitleSeparator" class="s4-bcsep s4-titlesep">
 								        <SharePoint:ClusteredDirectionalSeparatorArrow runat="server"/> </span>
-                                 	</PathSeparatorTemplate>
-                                 </asp:SiteMapPath>
-					        </asp:ContentPlaceHolder>
-										
-					        <span id="onetidPageTitleSeparator" class="s4-bcsep s4-titlesep">
-					        <SharePoint:ClusteredDirectionalSeparatorArrow runat="server"/> </span>
-					        <span>
-						        <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
-					        </span>
-				        </div>
-			        </div>
-                    <%-- END: Breadcrumb --%>
+								        <span>
+									        <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
+								        </span>
+							        </div>
+						        </div>
+			                    <%-- END: Breadcrumb --%>
+							</td>
+							<td>
+								<div id="s4-searcharea" class="s4-search s4-rp">
+									<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
+										<SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4" Scope=""/>
+									</asp:ContentPlaceHolder>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
 
                     <%-- BEGIN: Hide TopNavigation --%>
                     <div style="display:none">
 					<a name="startNavigation"></a>
-					<div id="s4-searcharea" class="s4-search s4-rp">
-						<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
-							<SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4" />
-						</asp:ContentPlaceHolder>
-						<span class="s4-help">
-								<span style="height:17px;width:17px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><a href="#" style="height:17px;width:17px;display:inline-block;" onclick="TopHelpButtonClick('HelpHome');return false" accesskey="<%$Resources:wss,multipages_helplink_accesskey%>" id="TopHelpLink" title="<%$Resources:wss,multipages_helplinkalt_text%>" runat="server"><img src="/_layouts/images/fgimg.png" alt="<%$Resources:wss,multipages_helplinkalt_text%>" style="left:-0px !important;top:-309px !important;position:absolute;" align="absmiddle" border="0" runat="server" /></a></span>
-						</span>
-					</div>
 					<div class="s4-rp s4-app">
 					</div>
 					<div class="s4-lp s4-toplinks">

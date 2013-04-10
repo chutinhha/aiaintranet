@@ -16,10 +16,12 @@ namespace AIA.Intranet.Infrastructure.WebParts.LeftMenu
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
-            {
-                LoadData();
-            }
+            //if (!Page.IsPostBack)
+            //{
+                
+            //}
+            
+            LoadData();
         }
 
         private void LoadData()

@@ -58,4 +58,11 @@ $(document).ready(function () {
         $(".ms-cui-ribbonTopBars").width("auto");
     }
 
+    //hide _invisibleIfEmpty
+    $("#_invisibleIfEmpty").each(function () {
+        if ($.trim($(this).html()) == "") {
+            $(this).hide();
+        }
+    });
+
 });
