@@ -1404,9 +1404,7 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="WebParts\SiteMap\Elements.xml" />
-    <Content Include="WebParts\SiteMap\SiteMapUserControl.ascx">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
+    <Content Include="WebParts\SiteMap\SiteMapUserControl.ascx" />
     <Content Include="WebParts\SiteViewer\Elements.xml" />
     <Content Include="WebParts\SiteViewer\SiteViewerUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>
