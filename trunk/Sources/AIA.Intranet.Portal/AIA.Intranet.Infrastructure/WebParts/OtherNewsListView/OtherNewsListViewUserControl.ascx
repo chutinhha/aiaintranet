@@ -41,7 +41,7 @@
                         <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible='<%# ShowDateTime %>'><span
                             class='news_others_date'>(<%# Convert.ToDateTime(Eval("Created")).ToString(DateTimeFormat) %>)</span>
                         </asp:PlaceHolder>
-                    
+                    <br />
                 </ItemTemplate>
             </asp:Repeater>
         </div>
