@@ -35,7 +35,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.SiteViewer
                     repeaterCommingUp.DataBind();
                 }
 
-                var subWebs = GetSubWebs();
+                var subWebs = GetSubWebs(SPContext.Current.Web.CurrentUser.LoginName);
                 ulDepartment.InnerHtml = subWebs;
             }
         }
@@ -51,27 +51,32 @@ namespace AIA.Intranet.Infrastructure.WebParts.SiteViewer
             }
         }
 
-        private string GetSubWebs()
+        private string GetSubWebs(string loginName)
         {
             string subWebs = string.Empty;
             try
             {
-                using (SPSite site = new SPSite(SPContext.Current.Site.ID))
+                SPSecurity.RunWithElevatedPrivileges(delegate()
                 {
-                    using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
+                    using (SPSite site = new SPSite(SPContext.Current.Site.ID))
                     {
-                        SPWebCollection webs = web.Webs;
-                        foreach (SPWeb subweb in webs)
+                        using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
                         {
-                            subWebs += string.Format(liItem, subweb.ServerRelativeUrl, subweb.Title);
+                            SPWebCollection webs = web.Webs;
+                            foreach (SPWeb subweb in webs)
+                            {
+                                if (web.DoesUserHavePermissions(loginName, SPBasePermissions.Open))
+                                {
+                                    subWebs += string.Format(liItem, subweb.ServerRelativeUrl, subweb.Title);
+                                }
+                            }
                         }
                     }
-                }
-            }
-            catch (Exception)
-            {
+                });
                 
-                throw;
+            }
+            catch (Exception ex)
+            {
             }
             return subWebs;
         }

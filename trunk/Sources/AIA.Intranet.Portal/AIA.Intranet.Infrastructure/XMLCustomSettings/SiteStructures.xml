@@ -43,8 +43,8 @@
         <Url>ApplicationDevelopment</Url>
         <Features>
           <Feature>
-            <Name>AIA.Intranet.Infrastructure.Clustered</Name>
-            <Guid>0d50bc1a-6ed1-40c5-9127-3864c57f0401</Guid>
+            <Name>AIA.Intranet.Infrastructure.Single</Name>
+            <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
           <Feature>
             <Name>AIA.Intranet.Infrastructure.News</Name>
@@ -65,8 +65,8 @@
         <Url>ITInfrastructure</Url>
         <Features>
           <Feature>
-            <Name>AIA.Intranet.Infrastructure.Clustered</Name>
-            <Guid>0d50bc1a-6ed1-40c5-9127-3864c57f0401</Guid>
+            <Name>AIA.Intranet.Infrastructure.Single</Name>
+            <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
           <Feature>
             <Name>AIA.Intranet.Infrastructure.News</Name>
@@ -87,8 +87,8 @@
         <Url>MISGovernance-AssetManagement</Url>
         <Features>
           <Feature>
-            <Name>AIA.Intranet.Infrastructure.Clustered</Name>
-            <Guid>0d50bc1a-6ed1-40c5-9127-3864c57f0401</Guid>
+            <Name>AIA.Intranet.Infrastructure.Single</Name>
+            <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
           <Feature>
             <Name>AIA.Intranet.Infrastructure.News</Name>
