@@ -77,7 +77,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.LeftMenu
 
                     if (htmlBuilder.Length > 0)
                     {
-                        ltLeftMenu.Text = "<ul class='child'>" + htmlBuilder.ToString() + "</ul>" + @"<style type='text/css'>body #s4-leftpanel-content{background-color: #F8F8F8;} .s4-ca{margin-left:200px;} body #s4-leftpanel{width: 200px;}</style>";
+                        ltLeftMenu.Text = "<ul class='child'>" + htmlBuilder.ToString() + "</ul>" + @"<style type='text/css'>body #s4-leftpanel-content{background-color: #F8F8F8;} .s4-ca{margin-left:200px;} body #s4-leftpanel{width: 200px; display: inline;}</style>";
 
                     }
                 }

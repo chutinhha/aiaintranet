@@ -244,3 +244,12 @@ body #s4-topheader2 {
 body #s4-topheader2 {
   border-bottom: 1px solid #FFFFFF;
 }
+
+.other-news
+{
+margin:0; padding:0;    
+}
+
+.links_navigator>span>table{
+	display:none;
+}

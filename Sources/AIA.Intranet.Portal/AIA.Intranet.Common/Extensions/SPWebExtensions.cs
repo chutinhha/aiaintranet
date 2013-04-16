@@ -13,15 +13,16 @@ using AIA.Intranet.Model.Infrastructure;
 using System.Reflection;
 using System.IO;
 using Microsoft.SharePoint.Utilities;
+using Microsoft.SharePoint.Navigation;
 
 
 namespace AIA.Intranet.Common.Extensions
 {
     public static class SPWebExtensions
     {
-        
 
-        public static void UpdateCustomSetting(this SPWeb web , List<CustomSettingDefinition> settings)
+
+        public static void UpdateCustomSetting(this SPWeb web, List<CustomSettingDefinition> settings)
         {
             SPSecurity.RunWithElevatedPrivileges(delegate()
             {
@@ -52,7 +53,7 @@ namespace AIA.Intranet.Common.Extensions
                                     {
                                         Type type = Activator.CreateInstance(e.ReceiverAssembly, e.ReceiverClass).GetType();
                                         //ct.EnsureEventReceiver(type, e.Types.ToArray());
-                                        ct.EnsureEventReceiver(e.ReceiverClass,e.ReceiverAssembly, e.Types.ToArray());
+                                        ct.EnsureEventReceiver(e.ReceiverClass, e.ReceiverAssembly, e.Types.ToArray());
                                     }
 
                                     break;
@@ -69,7 +70,7 @@ namespace AIA.Intranet.Common.Extensions
                                     if (list != null)
                                     {
                                         Type runtimeType = listDefinition.Data.GetType();
-                                        MethodInfo method = typeof(SPListExtensions).GetGenericMethod("SetCustomSettings", new Type[3] { typeof(SPList), typeof(IOfficeFeatures), runtimeType});
+                                        MethodInfo method = typeof(SPListExtensions).GetGenericMethod("SetCustomSettings", new Type[3] { typeof(SPList), typeof(IOfficeFeatures), runtimeType });
 
                                         MethodInfo generic = method.MakeGenericMethod(runtimeType);
                                         generic.Invoke(null, new object[] { list, listDefinition.Feature, listDefinition.Data });
@@ -114,11 +115,12 @@ namespace AIA.Intranet.Common.Extensions
             {
                 file = web.Site.RootWeb.GetFile(url);
             }
-            else{
+            else
+            {
                 file = web.GetFile(url);
             }
 
-            if (file.Exists && !overwrite) 
+            if (file.Exists && !overwrite)
                 return;
 
             //if (!file.Exists)
@@ -129,14 +131,15 @@ namespace AIA.Intranet.Common.Extensions
                 {
                     folder = web.Site.RootWeb.GetFolder(folderPath);
                 }
-                else{
-                folder = web.GetFolder(folderPath);
+                else
+                {
+                    folder = web.GetFolder(folderPath);
                 }
                 if (folder == null)
                 {
                     return;
                 }
-                
+
                 var forms = folder.SubFolders.Cast<SPFolder>().FirstOrDefault(p => p.Name == "Forms");
 
                 string templateFilename = "spstd11.aspx";
@@ -194,7 +197,7 @@ namespace AIA.Intranet.Common.Extensions
             try
             {
                 //Create the new site from the template
-                
+
                 SPWebTemplate template = GetTemplate(templateName, parentSite.Site);
                 if (template != null)
                 {
@@ -235,7 +238,7 @@ namespace AIA.Intranet.Common.Extensions
         {
             foreach (var site in subsites)
             {
-                var existed = web.Webs.Cast<SPWeb>().Where(p=>p.Url.Contains(site.Url)).FirstOrDefault();
+                var existed = web.Webs.Cast<SPWeb>().Where(p => p.Url.Contains(site.Url)).FirstOrDefault();
 
                 if (existed != null && !site.Overwrite) continue;
                 if (existed != null && site.Overwrite)
@@ -248,10 +251,10 @@ namespace AIA.Intranet.Common.Extensions
                 //Provision Lists
                 //Provision Features
                 foreach (var feature in site.Features)
-	            {
+                {
                     newSite.Features.Add(feature.Guid);
                     //newSite.Update(); 		 
-	            }
+                }
 
                 //BreakRoleInheritance
                 if (site.BreakRoleInheritance)
@@ -266,28 +269,28 @@ namespace AIA.Intranet.Common.Extensions
                         //create group
                         string groupOwners = site.Name.Trim() + " Owners";
                         //if (!CCIUtility.GroupExistsInSiteCollection(newSite, groupOwners))
-                            newSite.CreateNewGroup(groupOwners, "Use this group to grant people full control permissions to the SharePoint site: " + site.Name.Trim(), SPRoleType.Administrator);
+                        newSite.CreateNewGroup(groupOwners, "Use this group to grant people full control permissions to the SharePoint site: " + site.Name.Trim(), SPRoleType.Administrator);
                         //else
                         //    newSite.AddExistedGroup(groupOwners, SPRoleType.Administrator);
 
                         string groupMembers = site.Name.Trim() + " Members";
                         //if (!CCIUtility.GroupExistsInSiteCollection(newSite, groupMembers))
-                            newSite.CreateNewGroup(groupMembers, "Use this group to grant people contribute permissions to the SharePoint site: " + site.Name.Trim(), SPRoleType.Contributor);
+                        newSite.CreateNewGroup(groupMembers, "Use this group to grant people contribute permissions to the SharePoint site: " + site.Name.Trim(), SPRoleType.Contributor);
                         //else
                         //    newSite.AddExistedGroup(groupMembers, SPRoleType.Contributor);
 
                         string groupVisitors = site.Name.Trim() + " Visitors";
                         //if (!CCIUtility.GroupExistsInSiteCollection(newSite, groupVisitors))
                         //{
-                            newSite.CreateNewGroup(groupVisitors, "Use this group to grant people read permissions to the SharePoint site: " + site.Name.Trim(), SPRoleType.Reader);
+                        newSite.CreateNewGroup(groupVisitors, "Use this group to grant people read permissions to the SharePoint site: " + site.Name.Trim(), SPRoleType.Reader);
 
-                            SPUser authenUsers = newSite.EnsureUser("NT AUTHORITY\\authenticated users");
-                            if (authenUsers != null)
-                            {
-                                SPGroup spGrp = newSite.Groups[groupVisitors];
-                                if (spGrp != null)
-                                { spGrp.AddUser(authenUsers); }
-                            }
+                        SPUser authenUsers = newSite.EnsureUser("NT AUTHORITY\\authenticated users");
+                        if (authenUsers != null)
+                        {
+                            SPGroup spGrp = newSite.Groups[groupVisitors];
+                            if (spGrp != null)
+                            { spGrp.AddUser(authenUsers); }
+                        }
                         //}
                         //else
                         //    newSite.AddExistedGroup(groupVisitors, SPRoleType.Reader);
@@ -301,24 +304,68 @@ namespace AIA.Intranet.Common.Extensions
                     }
                 }
 
+
+                //provision Top Navigation Bar
+                try
+                {
+                    newSite.AllowUnsafeUpdates = true;
+
+                    SPNavigationNodeCollection topnav = newSite.Navigation.TopNavigationBar;
+
+                    //clear all
+                    for (int i = topnav.Count - 1; i >= 0; i--)
+                    {
+                        topnav.Delete(topnav[i]);
+                    }
+
+                    string linkTitle = newSite.Title;
+                    SPNavigationNode node = new SPNavigationNode(linkTitle, newSite.ServerRelativeUrl);
+                    node = topnav.AddAsLast(node);
+
+                    SPWeb rootWeb = web.Site.RootWeb;
+                    string linkRootTitle = rootWeb.Title;
+                    SPNavigationNode nodeRoot = new SPNavigationNode(linkRootTitle, rootWeb.ServerRelativeUrl);
+                    nodeRoot = topnav.AddAsFirst(nodeRoot);
+
+                    //AddParentNode(newSite, topnav);
+                }
+                catch (Exception ex)
+                {
+                }
+                finally
+                {
+                    newSite.AllowUnsafeUpdates = false;
+                }
+
                 if (site.SubSites.Count > 0)
                 {
                     newSite.ProvisionWebStructure(site.SubSites);
                 }
-                
+
             }
+        }
+
+        private static void AddParentNode(SPWeb web, SPNavigationNodeCollection topnav)
+        {
+            SPWeb parentWeb = web.ParentWeb;
+            string linkTitle = parentWeb.Title;
+            SPNavigationNode node = new SPNavigationNode(linkTitle, parentWeb.ServerRelativeUrl);
+            node = topnav.AddAsFirst(node);
+
+            if (!parentWeb.IsRootWeb)
+                AddParentNode(parentWeb, topnav);
         }
 
         private static void DeleteSite(SPWeb existed)
         {
 
-           
+
             if (existed.Webs != null)
             {
                 foreach (SPWeb item in existed.Webs)
                 {
                     DeleteSite(item);
-                   // item.Delete();
+                    // item.Delete();
                 }
             }
             try
@@ -333,14 +380,14 @@ namespace AIA.Intranet.Common.Extensions
             }
             catch (Exception)
             {
-                
-                
+
+
             }
 
-           
-        
-            
-           
+
+
+
+
         }
         public static void AddRoleDefinition(this SPWeb web, SPRoleDefinition role, bool hide)
         {
@@ -370,8 +417,8 @@ namespace AIA.Intranet.Common.Extensions
             return web.AvailableContentTypes.Cast<SPContentType>()
                 .Where<SPContentType>(ct => ct.Id.IsChildOf(parent))
                 .ToList<SPContentType>();
-        }       
-        
+        }
+
         public static SPContentType FindContentTypeReadOnly(this SPWeb web, SPContentTypeId contentTypeId)
         {
             return web.AvailableContentTypes.Cast<SPContentType>().FirstOrDefault(ct => ct.Id == contentTypeId);
@@ -434,7 +481,7 @@ namespace AIA.Intranet.Common.Extensions
             }
             return false;
         }
-       
+
         public static T GetCustomSettings<T>(this SPWeb web, IOfficeFeatures featureName)
         {
             return web.GetCustomSettings<T>(featureName, true);
@@ -570,7 +617,7 @@ namespace AIA.Intranet.Common.Extensions
         //    }
         //}
 
-        [SPDisposeCheckIgnore( SPDisposeCheckID.SPDisposeCheckID_120," this object will be dispose manually.")]
+        [SPDisposeCheckIgnore(SPDisposeCheckID.SPDisposeCheckID_120, " this object will be dispose manually.")]
         public static SPWeb GetDestinationWeb(this SPSite site, string destinationFolderUrl)
         {
             SPWeb destinationWeb = null;

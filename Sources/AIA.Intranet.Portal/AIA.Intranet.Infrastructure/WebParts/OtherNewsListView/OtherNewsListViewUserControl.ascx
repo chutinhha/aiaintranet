@@ -32,18 +32,20 @@
     <div class="news_listItems">
         <div class="listItem">
             <h2>
-                <asp:Literal ID="literalWebPartTitle" Text="Other news" runat="server"></asp:Literal>
+                <%= ((System.Web.UI.WebControls.WebParts.WebPart)this.Parent).Title.ToString().Trim() != "" ? ((System.Web.UI.WebControls.WebParts.WebPart)this.Parent).Title.ToString().Trim() : "Other news"%>
             </h2>
-            <asp:Repeater ID="rptOtherNews" runat="server">
-                <ItemTemplate>
-                    <a class='wp-news-others-title' href='<%# Eval("ViewUrl") %>'>
-                        <%# Eval("Title") %></a>
-                        <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible='<%# ShowDateTime %>'><span
-                            class='news_others_date'>(<%# Convert.ToDateTime(Eval("Created")).ToString(DateTimeFormat) %>)</span>
-                        </asp:PlaceHolder>
-                    <br />
-                </ItemTemplate>
-            </asp:Repeater>
+            <ul class="other-news">
+                <asp:Repeater ID="rptOtherNews" runat="server">
+                    <ItemTemplate>
+                        <li>
+                            <a class='wp-news-others-title' href='<%# Eval("ViewUrl") %>'><%# Eval("Title") %></a>
+                            <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible='<%# ShowDateTime %>'><span
+                                class='news_others_date'>(<%# Convert.ToDateTime(Eval("Created")).ToString(DateTimeFormat) %>)</span>
+                            </asp:PlaceHolder>
+                        </li>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </ul>
         </div>
     </div>
 </div>
