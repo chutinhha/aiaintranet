@@ -65,7 +65,6 @@ namespace AIA.Intranet.Infrastructure.WebParts.OtherNewsListView
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
-            literalWebPartTitle.Text = WebPart.WebPartTitle;
         }
 
         protected void Page_Load(object sender, EventArgs e)

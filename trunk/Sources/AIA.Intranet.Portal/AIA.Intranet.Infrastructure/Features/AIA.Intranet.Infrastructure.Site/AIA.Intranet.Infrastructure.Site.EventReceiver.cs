@@ -12,6 +12,7 @@ using AIA.Intranet.Common.Helpers;
 using AIA.Intranet.Common.Extensions;
 using AIA.Intranet.Model.Infrastructure;
 using AIA.Intranet.Model.Entities;
+using Microsoft.SharePoint.Navigation;
 
 
 namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructure.Site
@@ -39,6 +40,8 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             {
                 web.AllowUnsafeUpdates = true;
 
+                ConfigTopNavigationBar(web);
+
                 AddBannerContentType(web);
 
                 SetRootSitePermissions(web);
@@ -57,7 +60,6 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                 web.AllowUnsafeUpdates = isAllowUnsafeUpdates;
             }
         }
-
 
         // Uncomment the method below to handle the event raised before a feature is deactivated.
 
@@ -170,7 +172,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                 web.ProvisionWebStructure(subsites);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
             }
@@ -264,6 +266,19 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
             }
         }
 
+        private void ConfigTopNavigationBar(SPWeb web)
+        {
+            SPNavigationNodeCollection topnav = web.Navigation.TopNavigationBar;
+
+            if (topnav.Count == 1 && topnav[0].Title == "Home" && topnav[0].Url == web.ServerRelativeUrl)
+            {
+                topnav.Delete(topnav[0]);
+
+                string linkTitle = web.Title;
+                SPNavigationNode node = new SPNavigationNode(linkTitle, web.ServerRelativeUrl);
+                node = topnav.AddAsFirst(node);
+            }
+        }
         #endregion [Methods]
 
     }

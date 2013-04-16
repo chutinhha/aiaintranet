@@ -23,21 +23,27 @@ namespace AIA.Intranet.Infrastructure.WebParts.SiteMap
         protected override void CreateChildControls()
         {
             base.CreateChildControls();
-            var rootWeb = SPContext.Current.Site.RootWeb;
-            root = ReadSiteStructure(rootWeb);
 
-            HtmlGenericControl control = new HtmlGenericControl("ul");
-
-            control.Attributes.Add("id", RootId);
-
-            control.Attributes.Add("class", "treeview");
-            foreach (var item in root.ChildItems)
+            SPSecurity.RunWithElevatedPrivileges(delegate()
             {
-                AddChildControl(control, item, 0, root.ChildItems[root.ChildItems.Count-1] == item);
-            }
-            
-            this.Controls.Add(control);
-            
+                using (SPSite site = new SPSite(SPContext.Current.Site.ID))
+                {
+                    var rootWeb = site.RootWeb;
+                    root = ReadSiteStructure(rootWeb);
+
+                    HtmlGenericControl control = new HtmlGenericControl("ul");
+
+                    control.Attributes.Add("id", RootId);
+
+                    control.Attributes.Add("class", "treeview");
+                    foreach (var item in root.ChildItems)
+                    {
+                        AddChildControl(control, item, 0, root.ChildItems[root.ChildItems.Count - 1] == item);
+                    }
+
+                    this.Controls.Add(control);
+                }
+            });           
         }
 
         private SiteMapItem ReadSiteStructure(SPWeb web)
