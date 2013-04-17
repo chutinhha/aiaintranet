@@ -136,14 +136,16 @@
           </FieldRef>
           <FieldRef Name="Thumbnail1" />
           <FieldRef Name="ShortDescription" />
+          <FieldRef Name="IsHotNews" />
+          <FieldRef Name="OrderNumber" />
         </ViewFields>
         <Query>
           <GroupBy Collapse="TRUE">
             <FieldRef Name="_ModerationStatus" />
           </GroupBy>
           <OrderBy>
-            <FieldRef Name="ID">
-            </FieldRef>
+            <FieldRef Name="OrderNumber" Ascending="TRUE"></FieldRef>
+            <FieldRef Name="ID" Ascending="FALSE"></FieldRef>
           </OrderBy>
         </Query>
         <ParameterBindings>
