@@ -57,7 +57,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.HomeNews
                     repeaterCommingUp.DataBind();
                 }
 
-                List<Model.Entities.NewsItem> newsItems = NewsService.GetLastestNews(SPContext.Current.Web, NumberOfItem, true);
+                List<Model.Entities.NewsItem> newsItems = NewsService.GetLastestNews(NumberOfItem, true);
                 if (newsItems != null && newsItems.Count > 0)
                 {
                     repeaterHotNews.DataSource = newsItems;

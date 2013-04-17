@@ -14,28 +14,22 @@
           <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
             <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
               <Receiver>
-                <Name>MenuItemContentTypeEventReceiver</Name>
+                <Name>MenuItemContentTypeEventReceiverItemAdding</Name>
                 <Type>ItemAdding</Type>
                 <SequenceNumber>10000</SequenceNumber>
-                <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
-                <Class>$SharePoint.Type.dd88fee1-d7c4-455b-bd33-edc39935ffd7.FullName$</Class>
-                <SolutionId>$SharePoint.Package.Id$</SolutionId>
-                <Data>
-                </Data>
-                <Filter>
-                </Filter>
+                <Assembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</Assembly>
+                <Class>AIA.Intranet.Infrastructure.ContentTypes.MenuItemContentTypeEventReceiverEventReceiver</Class>
+                <Data></Data>
+                <Filter></Filter>
               </Receiver>
               <Receiver>
-                <Name>MenuItemContentTypeEventReceiver</Name>
+                <Name>NewsItemContentTypeEventRecieverItemUpdating</Name>
                 <Type>ItemUpdating</Type>
                 <SequenceNumber>10000</SequenceNumber>
-                <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
-                <Class>$SharePoint.Type.dd88fee1-d7c4-455b-bd33-edc39935ffd7.FullName$</Class>
-                <SolutionId>$SharePoint.Package.Id$</SolutionId>
-                <Data>
-                </Data>
-                <Filter>
-                </Filter>
+                <Assembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</Assembly>
+                <Class>AIA.Intranet.Infrastructure.ContentTypes.MenuItemContentTypeEventReceiverEventReceiver</Class>
+                <Data></Data>
+                <Filter></Filter>
               </Receiver>
             </Receivers>
           </XmlDocument>

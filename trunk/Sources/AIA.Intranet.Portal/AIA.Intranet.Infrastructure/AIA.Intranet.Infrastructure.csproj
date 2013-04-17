@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="ContentTypes\CategoryContentType\CategoryContentTypeEventReceiver.cs" />
     <Compile Include="ContentTypes\MenuItemContentType\MenuItemContentTypeEventReceiver.cs" />
+    <Compile Include="ContentTypes\NewsItemContentType\NewsItemContentTypeEventReciever.cs" />
     <Compile Include="ContentTypes\TaskContentType\DepartmentTaskContentTypeEvent.cs" />
     <Compile Include="ContentTypes\TaskContentType\PrivateTaskContenTypeEvent.cs" />
     <Compile Include="ContentTypes\TaskContentType\ProjectTaskContentTypeEvent.cs" />

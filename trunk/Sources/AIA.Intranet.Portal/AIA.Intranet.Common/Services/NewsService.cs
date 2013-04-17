@@ -7,24 +7,48 @@ using AIA.Intranet.Common.Utilities;
 using AIA.Intranet.Model;
 using Microsoft.SharePoint;
 using AIA.Intranet.Common.Utilities.Camlex;
+using System.Linq.Expressions;
 
 namespace AIA.Intranet.Common.Services
 {
     public class NewsService
     {
-        public static List<Model.Entities.NewsItem> GetLastestNews(SPWeb web, int itemCount, bool hotNewsOnly)
+        //public static List<Model.Entities.NewsItem> GetLastestNews(SPWeb web, int itemCount, bool hotNewsOnly)
+        //{
+        //    CAMLSiteQuery<NewsItem> query = new CAMLSiteQuery<NewsItem>(ListTemplateIds.NEWS_TEMPLATE_ID, web);
+
+        //    string caml = string.Empty;
+
+        //    if (hotNewsOnly)
+        //    {
+        //        var orderByList = new List<Expression<Func<SPListItem, object>>>();
+        //        orderByList.Add(x => x["OrderNumber"] as Camlex.Asc);
+        //        orderByList.Add(x => x[SPBuiltInFieldId.Created] as Camlex.Desc);
+        //         caml = Camlex.Query()
+        //                      .Where(x => (bool)x["IsHotNews"] == true &&
+        //                                  x[SPBuiltInFieldId._ModerationStatus] == (DataTypes.ModStat)"0")
+        //                      .OrderBy(x => x["OrderNumber"] as Camlex.Desc)
+        //                      .ToString();
+        //    }
+
+        //    return query.ExecuteListQuery(caml, itemCount);
+        //}
+
+        public static List<Model.Entities.NewsItem> GetLastestNews(SPList list, int itemCount, bool hotNewsOnly)
         {
-            CAMLSiteQuery<NewsItem> query = new CAMLSiteQuery<NewsItem>(ListTemplateIds.NEWS_TEMPLATE_ID, web);
+            CAMLListQuery<NewsItem> query = new CAMLListQuery<NewsItem>(list);
 
             string caml = string.Empty;
-
             if (hotNewsOnly)
             {
-                 caml = Camlex.Query()
-                              .Where(x => (bool)x["IsHotNews"] == true &&
-                                          x[SPBuiltInFieldId._ModerationStatus] == (DataTypes.ModStat)"0")
-                              .OrderBy(x => x[SPBuiltInFieldId.Created] as Camlex.Desc)
-                              .ToString();
+                var orderByList = new List<Expression<Func<SPListItem, object>>>();
+                orderByList.Add(x => x["OrderNumber"] as Camlex.Asc);
+                orderByList.Add(x => x[SPBuiltInFieldId.Created] as Camlex.Desc);
+                caml = Camlex.Query()
+                             .Where(x => (bool)x["IsHotNews"] == true &&
+                                         x[SPBuiltInFieldId._ModerationStatus] == (DataTypes.ModStat)"0")
+                             .OrderBy(x => x["OrderNumber"] as Camlex.Desc)
+                             .ToString();
             }
 
             return query.ExecuteListQuery(caml, itemCount);
@@ -32,12 +56,19 @@ namespace AIA.Intranet.Common.Services
 
         public static List<Model.Entities.NewsItem> GetLastestNews(int itemCount)
         {
-            return GetLastestNews(SPContext.Current.Web, itemCount, false);
+            var newsList = CCIUtility.GetListFromURL(Constants.NEWS_LIST_URL, SPContext.Current.Web);
+            if (newsList != null)
+                return GetLastestNews(newsList, itemCount, false);
+            return null;
+            
         }
 
         public static List<Model.Entities.NewsItem> GetLastestNews(int itemCount, bool hotNewsOnly)
         {
-            return GetLastestNews(SPContext.Current.Web, itemCount, hotNewsOnly);
+            var newsList = CCIUtility.GetListFromURL(Constants.NEWS_LIST_URL, SPContext.Current.Web);
+            if (newsList != null)
+                return GetLastestNews(newsList, itemCount, hotNewsOnly);
+            return null;
         }
 
         public static List<Model.Entities.NewsItem> GetLatestNewsByCategory(SPList list, int itemCount)

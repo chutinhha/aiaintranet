@@ -32,6 +32,31 @@
       <FieldRef ID="{59D82360-3784-44fe-9957-8CB2E719C7D8}" Name="Thumbnail1" />
       <!--<FieldRef ID="{875E6F9A-B9EC-4c49-BD9B-D8F18B4DCC0F}" Name="ViewCount" />-->
       <FieldRef ID="{8E841307-FBC3-4499-BFDE-57BD58CB5270}" Name="IsHotNews"/>
+      <FieldRef ID="{e558f8f8-71b8-4fee-93f0-08cfcdc385ba}" Name="OrderNumber" />
     </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>NewsItemContentTypeEventRecieverItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.NewsItemContentTypeEventReciever</Class>
+            <Data></Data>
+            <Filter></Filter>
+          </Receiver>
+          <Receiver>
+            <Name>NewsItemContentTypeEventRecieverItemUpdating</Name>
+            <Type>ItemUpdating</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.NewsItemContentTypeEventReciever</Class>
+            <Data></Data>
+            <Filter></Filter>
+          </Receiver>
+        </Receivers>
+      </XmlDocument>
+    </XmlDocuments>
   </ContentType>
 </Elements>
