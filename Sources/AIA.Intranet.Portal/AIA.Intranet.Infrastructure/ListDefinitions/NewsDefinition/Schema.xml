@@ -16,7 +16,32 @@
           <FieldRef ID="{59D82360-3784-44fe-9957-8CB2E719C7D8}" Name="Thumbnail1" />
           <!--<FieldRef ID="{875E6F9A-B9EC-4c49-BD9B-D8F18B4DCC0F}" Name="ViewCount" />-->
           <FieldRef ID="{8E841307-FBC3-4499-BFDE-57BD58CB5270}" Name="IsHotNews" />
+          <FieldRef ID="{e558f8f8-71b8-4fee-93f0-08cfcdc385ba}" Name="OrderNumber" />
         </FieldRefs>
+        <XmlDocuments>
+          <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+            <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+              <Receiver>
+                <Name>NewsItemContentTypeEventRecieverItemAdding</Name>
+                <Type>ItemAdding</Type>
+                <SequenceNumber>10000</SequenceNumber>
+                <Assembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</Assembly>
+                <Class>AIA.Intranet.Infrastructure.ContentTypes.NewsItemContentTypeEventReciever</Class>
+                <Data></Data>
+                <Filter></Filter>
+              </Receiver>
+              <Receiver>
+                <Name>NewsItemContentTypeEventRecieverItemUpdating</Name>
+                <Type>ItemUpdating</Type>
+                <SequenceNumber>10000</SequenceNumber>
+                <Assembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</Assembly>
+                <Class>AIA.Intranet.Infrastructure.ContentTypes.NewsItemContentTypeEventReciever</Class>
+                <Data></Data>
+                <Filter></Filter>
+              </Receiver>
+            </Receivers>
+          </XmlDocument>
+        </XmlDocuments>
       </ContentType>
     </ContentTypes>
     <Fields>
@@ -24,6 +49,7 @@
       <Field Type="Note" DisplayName="Content" NumLines="35" RichText="TRUE" RichTextMode="FullHtml" Sortable="FALSE" Group="[AIA]" ID="{01e09bed-73ce-4b7e-b5ea-0cb64fdc0143}" StaticName="Contents" Name="Contents" />
       <Field Type="ImageField" DisplayName="Thumbnail" Group="[AIA]" ID="{59d82360-3784-44fe-9957-8cb2e719c7d8}" StaticName="Thumbnail1" Name="Thumbnail1" />
       <Field Type="Number" DisplayName="View" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="1" Decimals="0" Group="[AIA]" ID="{875e6f9a-b9ec-4c49-bd9b-d8f18b4dcc0f}" StaticName="ViewCount" Name="ViewCount" Hidden="TRUE" />
+      <Field ID="{e558f8f8-71b8-4fee-93f0-08cfcdc385ba}" Name="OrderNumber" StaticName="OrderNumber" DisplayName="Order No." Group="AIA Portal" Type="Number" Min="1" Max="999999999" />
       <Field Type="Boolean" ID="{8e841307-fbc3-4499-bfde-57bd58cb5270}" StaticName="IsHotNews" Name="IsHotNews" DisplayName="Is home news" Group="[AIA]">
     <Default>0</Default>
   </Field>
