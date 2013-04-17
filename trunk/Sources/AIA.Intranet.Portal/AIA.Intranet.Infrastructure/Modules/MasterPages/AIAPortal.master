@@ -77,16 +77,11 @@
 
 <script type="text/javascript">
 	//check if IE7 or below
-	if (/MSIE (\d+\.\d+);/.test(navigator.userAgent))
-	{ 
-		var ieversion=new Number(RegExp.$1);
-		if (ieversion<8)
-		{      
-			$("#aspnetForm").css("visibility", "hidden");
-		}
+	if (isIE7orBelow)
+	{      
+		$("#aspnetForm").css("visibility", "hidden");
 	}
 </script>
-
 
 <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
 	<a id="linkTurnOnAcc" href="#" class="ms-TurnOnAcc" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;"><SharePoint:EncodedLiteral runat="server" text="<%$Resources:wss,master_turnonaccessibility%>" EncodeMethod="HtmlEncode"/></a>
