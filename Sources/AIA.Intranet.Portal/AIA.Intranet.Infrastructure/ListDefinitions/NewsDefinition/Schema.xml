@@ -130,17 +130,17 @@
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
-        <RowLimit Paged="TRUE">30</RowLimit>
+        <RowLimit Paged="TRUE">100</RowLimit>
         <ViewFields>
+          <FieldRef Name="OrderNumber" />          
           <FieldRef Name="LinkTitle">
           </FieldRef>
           <FieldRef Name="Thumbnail1" />
           <FieldRef Name="ShortDescription" />
           <FieldRef Name="IsHotNews" />
-          <FieldRef Name="OrderNumber" />
         </ViewFields>
         <Query>
-          <GroupBy Collapse="TRUE">
+          <GroupBy Collapse="FALSE" GroupLimit="30">
             <FieldRef Name="_ModerationStatus" />
           </GroupBy>
           <OrderBy>
@@ -153,6 +153,38 @@
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
         </ParameterBindings>
       </View>
+      
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="Manage home news" DefaultView="FALSE" MobileView="TRUE" MobileDefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="HomeNews.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">100</RowLimit>
+        <ViewFields>
+          <FieldRef Name="OrderNumber" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Thumbnail1" />
+          <FieldRef Name="ShortDescription" />
+          <FieldRef Name="IsHotNews" />
+        </ViewFields>
+        <Query>
+          <GroupBy Collapse="FALSE" GroupLimit="30">
+            <FieldRef Name="_ModerationStatus" />
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="OrderNumber" />
+            <FieldRef Name="ID" Ascending="FALSE" />
+          </OrderBy>
+          <Where>
+            <Eq>
+              <FieldRef Name="IsHotNews" />
+              <Value Type="Boolean">1</Value>
+            </Eq>
+          </Where>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>      
     </Views>
     <Forms>
       <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />

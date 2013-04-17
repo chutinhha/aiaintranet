@@ -1368,9 +1368,7 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="ViewDelegateControl\BreadcrumbViewDelegate\Elements.xml" />
-    <Content Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
+    <Content Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx" />
     <Content Include="WebParts\BannerSlideShow\Elements.xml" />
     <Content Include="WebParts\ContactSend\ContactSendUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>

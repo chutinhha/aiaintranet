@@ -1,5 +1,8 @@
 ﻿JSRequest.EnsureSetup();
 
+var isIE7orBelow = false;
+try { JSON } catch (err) { isIE7orBelow = true; };
+
 $(document).ready(function () {
     //disable slimScroll in Edit mode
     var inDesignMode;
@@ -71,13 +74,10 @@ $(document).ready(function () {
     $(".left_menu_1 li:last").addClass("noBorder");
 
     //check if IE7 or below
-    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) {
-        var ieversion = new Number(RegExp.$1);
-        if (ieversion < 8) {
-            $("#s4-topheader2, #s4-mainarea, .footer-area").hide();
-            $(".header_menu").html("<b>To access this portal, please use a supported browser, such as IE8 and above/Firefox.</b>");
-            $("#aspnetForm").css("visibility", "visible");
-        }
+    if (isIE7orBelow) {
+        $("#s4-topheader2, #s4-mainarea, .footer-area").hide();
+        $(".header_menu").html("<b>To access this portal, please use a supported browser, such as IE8 and above/Firefox.</b>");
+        $("#aspnetForm").css("visibility", "visible");
     }
 
 });

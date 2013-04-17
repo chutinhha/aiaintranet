@@ -24,35 +24,6 @@
             <asp:Literal ID="literalGroups" Text="Structure of Group Operations" runat="server"></asp:Literal>
         </h3>
         <ul class="link_department" id="ulDepartment" runat="server">
-            <%--<asp:Repeater ID="repeaterSubWebs" runat="server">
-                    <ItemTemplate>
-                        <li>
-                            <asp:HyperLink ID="hyperLink" runat="server">HyperLink</asp:HyperLink>
-                        </li>
-                    </ItemTemplate>
-                </asp:Repeater>--%>
-            <%--<li><a href="#">Who We Are</a></li>
-                <li><a href="#">Corporate Message</a></li>
-                <li><a href="#">Our Heritage</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Looking to the future</a></li>
-                <li><a href="#">Awards & Accolades</a></li>
-                <li><a href="#">Who We Are</a></li>
-                <li><a href="#">Corporate Message</a></li>
-                <li><a href="#">Our Heritage</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Looking to the future</a></li>
-                <li><a href="#">Looking to the future</a></li>
-                <li><a href="#">Awards & Accolades</a></li>
-                <li><a href="#">Who We Are</a></li>
-                <li><a href="#">Corporate Message</a></li>
-                <li><a href="#">Our Heritage</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Looking to the future</a></li>
-                <li><a href="#">Protection</a></li>
-                <li><a href="#">Savings</a></li>
-                <li><a href="#">Investment</a></li>
-                <li><a href="#">Wealth Management</a></li>--%>
         </ul>
         <asp:Repeater ID="repeaterCommingUp" runat="server">
             <ItemTemplate>
@@ -63,13 +34,4 @@
         </asp:Repeater>
     </div>
 </div>
-<script type="text/javascript">
-    $(function () {
-        $('.scroll_a').slimScroll({
-            //height: '300px',
-            start: 'top',
-            disableFadeOut: true
-        });
-    });
-</script>
 
