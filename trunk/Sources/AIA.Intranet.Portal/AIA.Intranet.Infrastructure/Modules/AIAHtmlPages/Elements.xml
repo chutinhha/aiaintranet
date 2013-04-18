@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Module Name="AIAHtmlPages">
-    <File Path="AIAHtmlPages\Sample.txt" Url="AIAHtmlPages/Sample.txt" />
-  </Module>
-</Elements>
