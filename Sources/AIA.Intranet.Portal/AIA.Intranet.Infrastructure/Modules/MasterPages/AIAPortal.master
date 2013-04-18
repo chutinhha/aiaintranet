@@ -406,7 +406,7 @@
 							<td>
 								<div id="s4-searcharea" class="s4-search s4-rp">
 									<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
-										<SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4" Scope="Site"/>
+										<SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4" Scope=""/>
 									</asp:ContentPlaceHolder>
 								</div>
 							</td>
