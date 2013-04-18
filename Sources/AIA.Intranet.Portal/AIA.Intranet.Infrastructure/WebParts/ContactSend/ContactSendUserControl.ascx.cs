@@ -126,7 +126,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
             }
             catch (Exception ex)
             {
-                throw;
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
         }
 
