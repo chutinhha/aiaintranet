@@ -13,7 +13,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.BannerSlideShow
         public string BannerFolder { get; set; }
 
         private string liSlideShow = @"<li><a href={4}{0}{4}>
-                                            <img src={4}../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/space.png{4} 
+                                            <img src={4}/Style Library/images/space.png{4} 
                                                 style={4}background: url('{0}') no-repeat center center; -webkit-background-size: cover;
                                                 -moz-background-size: cover; -o-background-size: cover;
                                                 background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{0}', sizingMethod='scale');
