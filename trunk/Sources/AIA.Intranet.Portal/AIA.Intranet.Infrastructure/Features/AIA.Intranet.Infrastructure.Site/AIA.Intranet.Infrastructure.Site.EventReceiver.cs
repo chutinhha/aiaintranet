@@ -51,6 +51,8 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                 ProvisionFeatures(web);
 
                 ProvisionLeftMenu(web);
+
+                ProvisionContactSetting(web);
             }
             catch 
             { 
@@ -232,9 +234,33 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                 AddLeftMenu(web, leftMenus);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
+            }
+        }
 
+        private void ProvisionContactSetting(SPWeb web)
+        {
+            try
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                string xml = assembly.GetResourceTextFile("AIA.Intranet.Infrastructure.XMLCustomSettings.ContactSetting.xml");
+
+                var contactSetting = SerializationHelper.DeserializeFromXml<ContactSettingItem>(xml);
+                if (contactSetting != null)
+                {
+                    var enquiryList = Utility.GetListFromURL(Constants.TYPE_OF_ENQUIRY_LIST_URL, web);
+                    if (enquiryList != null)
+                    {
+                        enquiryList.SetCustomProperty(Constants.CONTACT_TITLE_EMAIL_PROPERTY, contactSetting.Subject);
+                        enquiryList.SetCustomProperty(Constants.CONTACT_BODY_HTML_EMAIL_PROPERTY, contactSetting.Body);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
         }
 
@@ -259,10 +285,9 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                
-                throw;
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
         }
 

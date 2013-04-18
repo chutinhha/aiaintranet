@@ -4,6 +4,7 @@
                 OnQuickLaunch="TRUE"
                 TemplateType="12006"
                 Url="Lists/Opinions"
+                Hidden="TRUE"
                 Description="">
   </ListInstance>
 </Elements>

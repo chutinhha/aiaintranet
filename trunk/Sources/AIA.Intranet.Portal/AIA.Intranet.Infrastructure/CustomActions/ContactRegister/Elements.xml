@@ -5,7 +5,7 @@
                 GroupId="GeneralSettings"
                 Location="Microsoft.SharePoint.ListEdit"
                 RegistrationType ="List"
-                RegistrationId="12006"
+                RegistrationId="12007"
                 Sequence="1000">
     <UrlAction Url="javascript:window.location='{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/ContactEmailSetting.aspx?List={ListId}&amp;Source=' + window.location"/>
   </CustomAction>

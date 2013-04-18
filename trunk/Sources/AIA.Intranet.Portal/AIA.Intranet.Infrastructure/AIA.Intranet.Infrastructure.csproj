@@ -794,6 +794,9 @@
     <EmbeddedResource Include="XMLCustomSettings\Webparts.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="XMLCustomSettings\ContactSetting.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Content Include="XML\fldtypes_ImageField.xml" />
     <Content Include="XSL\fldtypes_ImageField.xsl" />
     <Content Include="ListInstances\PagesLibrary\Elements.xml">

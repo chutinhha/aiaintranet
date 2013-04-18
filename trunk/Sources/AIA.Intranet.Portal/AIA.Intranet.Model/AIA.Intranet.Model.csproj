@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Entities\ContactSettingItem.cs" />
     <Compile Include="Entities\FieldAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
