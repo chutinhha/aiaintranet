@@ -1,83 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-<!--  
-  <Field ID="{18172A87-700A-4EBC-A78D-172DA8C61E1F}" Name="NavigationUrl" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="NavigationUrl" Group="[I-Office]" DisplayName="Navigation Url" Type="Text"  Sortable="FALSE" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/" />
-  <Field ID="{DFDEFF8F-E2D3-4A7D-B34A-A204B5851FCC}" Name="STT" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="STT" Group="[I-Office]" DisplayName="Order" Type="Number"  Sortable="FALSE" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/" />
-  <Field ID="{500B5DEE-9F0D-4E24-8D4B-F5C0C95279CD}" Hidden="TRUE" Required="FALSE" UniqueId="TRUE" Name="NavigationKey" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="NavigationKey" Group="[I-Office]" DisplayName="Navigation Key" Type="Text" Sortable="FALSE" Overwrite="TRUE" />
-  <Field Type="Assignment Field" DisplayName="Quyền xem" Required="FALSE" EnforceUniqueValues="FALSE" Group="[I-Office]" ID="{CE806CF2-9AA5-45D3-966E-ADD0E86110CB}" List="Lists/Employees" ShowField="Title" StaticName="TargetUser" Name="TargetUser" />
-  <Field ID="{05DE4EEF-6D53-48AF-A0B0-4F1E6BBE7ACD}" Name="RelatedContent" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RelatedContent" Group="[I-Office]" DisplayName="RelatedContent" Type="URL" Format="Hyperlink" Sortable="FALSE" FromBaseType="TRUE" Width="62" Height="62" />
-  
-<Field ID="{CD5F3FB8-9549-4AC5-BC2E-C5D4EEEC1A00}" Name="Avatar" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Avatar" Group="[I-Office]" DisplayName="Hình" Type="URL" Format="Image" Sortable="FALSE" FromBaseType="TRUE" Width="62" Height="62" />
--->
-
   <!-- Menu fields -->
   <Field ID="{e558f8f8-71b8-4fee-93f0-08cfcdc385ba}" Name="OrderNumber" StaticName="OrderNumber" DisplayName="Order No." Group="AIA Portal" Type="Number" Min="1" Max="999999999" />
   <Field Type="Text" ID="{385a2fd6-5ec2-482b-8c4b-436069893383}" StaticName="MenuKeywords" Name="MenuKeywords" DisplayName="Group menu by keywords" MaxLength="255" />
   <Field Type="Boolean" ID="{dca368a0-8f89-47f7-a0d4-a95f9e33cdd1}" StaticName="Active" Name="Active" DisplayName="Active">
     <Default>1</Default>
   </Field>
-  
-  
-  <!--
-<Field Type="AttachmentView" 
-         DisplayName="Hình" 
-         Required="FALSE" 
-         EnforceUniqueValues="FALSE" 
-         Group="[I-Office]" 
-         ID="{BB06603F-C5E8-47CB-8A59-9D1B718E81BC}"
-         StaticName="IAvatar" Name="IAvatar"
-       >
-  </Field>
-  <Field Type="LinkToItem" DisplayName="$Resources:CommonResources,ViewDetails;" Required="FALSE" EnforceUniqueValues="FALSE" Group="[I-Office]" ID="{D6C5F133-5FE2-47DC-A135-FEB28DA3903C}" StaticName="LinkToViewItem" Name="LinkToViewItem" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" ShowInVersionHistory="FALSE" />
-
-  <Field Type="Choice"
-             DisplayName="Module"
-             Required="FALSE"
-             FillInChoice="FALSE"
-             ID="{E6588D3C-1806-4a06-8E2D-27CB5990C4C2}"
-             StaticName="TemplateModule"
-             Name="TemplateModule"
-             Group="[I-Office]">
-    <Default>Phòng ban</Default>
-    <CHOICES>
-      <CHOICE>Phòng ban</CHOICE>
-      <CHOICE>Nhân viên</CHOICE>
-      <CHOICE>Tin tức</CHOICE>
-      <CHOICE>Dự án</CHOICE>
-    </CHOICES>
-  </Field>
-
-  <Field ID="{D558E7F2-2B25-4c3c-B6A6-96FABAF8A1AD}" Type="Choice" DisplayName="Public/Private" StaticName="PublicOrPrivate" Name="PublicOrPrivate" Group="[I-Office]">
-    <CHOICES>
-      <CHOICE>Private</CHOICE>
-      <CHOICE>Public</CHOICE>
-    </CHOICES>
-    <Default>
-      Private
-    </Default>
-  </Field>
-
-
-  <Field Type="Calculated"  Sortable="FALSE" DisplayName="Thao Tác" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{3BBF1E6E-350C-4E73-B233-81AE95E02552}"  StaticName="ActionColumn" Name="ActionColumn" Group="[I-Office]">
-    <Formula>=Title</Formula>
-    <FieldRefs>
-      <FieldRef Name="Title" />
-    </FieldRefs>
-  </Field>
-
-  <Field Type="Calculated"  Sortable="FALSE" DisplayName="Timesheet" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{A9AA65C4-89B8-4205-9CED-F572D203F432}"  StaticName="Timesheet" Name="Timesheet" Group="[I-Office]">
-    <Formula>=Title</Formula>
-    <FieldRefs>
-      <FieldRef Name="Title" />
-    </FieldRefs>
-  </Field>
-
-  <Field Type="LookupFieldWithPicker" DisplayName="Employee" Required="TRUE" List="Lists/Employees" ShowField="Title" UnlimitedLengthInDocumentLibrary="TRUE" RelationshipDeleteBehavior="None" 
-         ID="{DF5441DC-0E02-4f92-954D-19C93A930F86}" StaticName="Employee" Name="Employee" Group="[I-Office]">
-  </Field>
-
-  <Field Type="LookupFieldWithPicker" DisplayName="Department" Required="TRUE" List="Lists/Departments" ShowField="Title" UnlimitedLengthInDocumentLibrary="TRUE" RelationshipDeleteBehavior="None"
-         ID="{8E440150-2D36-4483-A7FF-11AA0C4FE776}" StaticName="DepartmentSiteColumn" Name="DepartmentSiteColumn" Group="[I-Office]">
-  </Field>
-  -->
 </Elements>

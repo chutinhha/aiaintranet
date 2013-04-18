@@ -25,7 +25,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Data
     /// </remarks>
 
     [Guid("cdf8a458-365c-4011-b31c-40771b64d22e")]
-    public class HypertekIOfficeInfrastructureEventReceiver : SPFeatureReceiver
+    public class AIAIntranetInfrastructureEventReceiver : SPFeatureReceiver
     {
         // Uncomment the method below to handle the event raised after a feature has been activated.
 

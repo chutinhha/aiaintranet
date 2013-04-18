@@ -271,6 +271,9 @@
     <None Include="Features\AIA.Intranet.Infrastructure.Single\AIA.Intranet.Infrastructure.Single.feature">
       <FeatureId>{fea29a7b-ea56-41bc-a4e1-79f67795c248}</FeatureId>
     </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8f9426a8-ce52-4f2b-8354-d95ed975e3f9}</SharePointProjectItemId>
+    </None>
     <None Include="ListDefinitions\FormDefinition\FormInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ed12fe80-1c97-47f3-978d-e6639b0e89cb}</SharePointProjectItemId>
     </None>
@@ -415,12 +418,6 @@
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c50c0525-7517-4fc0-ae93-9cf4a16bc61b}</SharePointProjectItemId>
     </None>
-    <None Include="ListDefinitions\TaskConfiguration\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{98bb1c6e-3f8c-4ebe-ad83-a786a6549b7d}</SharePointProjectItemId>
-    </None>
-    <None Include="ListDefinitions\TaskConfiguration\TaskConfigurationInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{3cef6bde-b527-46e9-81fa-20102ea2bb5b}</SharePointProjectItemId>
-    </None>
     <None Include="Package\Package.package">
       <PackageId>{ad7e920b-099d-4260-9953-a25dc44eec3d}</PackageId>
     </None>
@@ -544,6 +541,7 @@
     <Content Include="Features\AIA.Intranet.Infrastructure.Single\AIA.Intranet.Infrastructure.Single.Template.xml">
       <DependentUpon>AIA.Intranet.Infrastructure.Single.feature</DependentUpon>
     </Content>
+    <Content Include="Images\html16.png" />
     <Content Include="Layouts\AIA.Intranet.Infrastructure\ContactEmailSetting.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
@@ -713,7 +711,9 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="ViewDelegateControl\BreadcrumbViewDelegate\Elements.xml" />
-    <Content Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx" />
+    <Content Include="WebParts\BannerSlideShow\BannerSlideShowUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="WebParts\BannerSlideShow\Elements.xml" />
     <Content Include="WebParts\ContactSend\ContactSendUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>
@@ -802,9 +802,6 @@
     <Content Include="ListInstances\PagesLibrary\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="ListDefinitions\TaskConfiguration\Elements.xml" />
-    <Content Include="ListDefinitions\TaskConfiguration\Schema.xml" />
-    <Content Include="ListDefinitions\TaskConfiguration\TaskConfigurationInstance\Elements.xml" />
     <Content Include="SiteColumns\Elements.xml">
       <SubType>Designer</SubType>
     </Content>

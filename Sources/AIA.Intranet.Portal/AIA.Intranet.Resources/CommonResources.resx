@@ -117,172 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddNotEditNotDeleteRole" xml:space="preserve">
-    <value>AddNotEditNotDeleteRole</value>
-  </data>
-  <data name="ADGroup" xml:space="preserve">
-    <value>ADGroup</value>
-  </data>
-  <data name="AdvancedSearch" xml:space="preserve">
-    <value>Tìm kiếm nâng cao</value>
-  </data>
-  <data name="All" xml:space="preserve">
-    <value>(All)</value>
-  </data>
-  <data name="BasicSearch" xml:space="preserve">
-    <value>Tìm kiếm cơ bản</value>
-  </data>
-  <data name="CAMLDateFormat" xml:space="preserve">
-    <value>yyyy-MM-dd</value>
-  </data>
-  <data name="DirectorGroup" xml:space="preserve">
-    <value>Nhóm ban quản lý</value>
-  </data>
-  <data name="DirectorGroupDescription" xml:space="preserve">
-    <value>Nhóm ban quản lý</value>
-  </data>
-  <data name="EditNotAddNotDeleteRole" xml:space="preserve">
-    <value>EditNotAddNotDeleteRole</value>
-  </data>
-  <data name="EmailTemplatesListName" xml:space="preserve">
-    <value>Email Templates</value>
-  </data>
-  <data name="EmployeeProfileListDescription" xml:space="preserve">
-    <value>Hồ sơ cá nhân</value>
-  </data>
-  <data name="EmployeeProfileListName" xml:space="preserve">
-    <value>Hồ sơ cá nhân</value>
-  </data>
-  <data name="ExpertiseListName" xml:space="preserve">
-    <value>Trình độ chuyên môn</value>
-  </data>
-  <data name="ForeignLanguageListName" xml:space="preserve">
-    <value>Ngoại ngữ</value>
-  </data>
-  <data name="HRDepartment" xml:space="preserve">
-    <value>Nhân sự</value>
-  </data>
-  <data name="HRGroup" xml:space="preserve">
-    <value>Nhóm quản lý phòng ban và nhân viên</value>
-  </data>
-  <data name="HRGroupDescription" xml:space="preserve">
-    <value>Nhóm quản lý phòng ban và nhân viên</value>
-  </data>
-  <data name="InvalidErrorMessage" xml:space="preserve">
-    <value>Trường dữ liệu không hợp lệ</value>
-  </data>
   <data name="NULL" xml:space="preserve">
     <value>NULL</value>
-  </data>
-  <data name="PositionListName" xml:space="preserve">
-    <value>Chức vụ</value>
-  </data>
-  <data name="ProfileTypeListName" xml:space="preserve">
-    <value>Loại hồ sơ</value>
-  </data>
-  <data name="SearchTitle" xml:space="preserve">
-    <value>Thông tin tìm kiếm</value>
-  </data>
-  <data name="SiteAdminGroup" xml:space="preserve">
-    <value>Nhóm quản trị hệ thống</value>
-  </data>
-  <data name="SiteAdminGroupDescription" xml:space="preserve">
-    <value>Nhóm quản trị hệ thống</value>
-  </data>
-  <data name="StaffGroup" xml:space="preserve">
-    <value>StaffGroup</value>
-  </data>
-  <data name="SubAnnouncementListName" xml:space="preserve">
-    <value>Thông báo</value>
-  </data>
-  <data name="SubCalendarListName" xml:space="preserve">
-    <value>Lịch làm việc</value>
-  </data>
-  <data name="SubDiscussionListName" xml:space="preserve">
-    <value>Thảo luận</value>
-  </data>
-  <data name="SubDocumentListName" xml:space="preserve">
-    <value>Tài liệu</value>
-  </data>
-  <data name="SubSiteAdminGroup" xml:space="preserve">
-    <value>AdminGroup</value>
-  </data>
-  <data name="TopEmployeesListName" xml:space="preserve">
-    <value>Nhân viên tiêu biểu</value>
   </data>
   <data name="VNDateFormat" xml:space="preserve">
     <value>dd/MM/yyyy</value>
   </data>
-  <data name="AddEditNotDeleteRole" xml:space="preserve">
-    <value>AddEditNotDeleteRole</value>
-  </data>
-  <data name="AuthenticatedGroup" xml:space="preserve">
-    <value>Nhóm nhân viên</value>
-  </data>
-  <data name="DocumentAdminGroup" xml:space="preserve">
-    <value>Quản trị thư viện tài liệu</value>
-  </data>
-  <data name="PortalAdminGroup" xml:space="preserve">
-    <value>Quản trị dữ liệu</value>
-  </data>
-  <data name="ProjectAdminGroup" xml:space="preserve">
-    <value>Quản trị dự án</value>
-  </data>
   <data name="VNDateTimeFormat" xml:space="preserve">
     <value>dd/MM/yyyy HH:mm</value>
-  </data>
-  <data name="DiscustionDisplay" xml:space="preserve">
-    <value>Thảo luận</value>
-  </data>
-  <data name="ApprovalWorkflowName" xml:space="preserve">
-    <value>[I-Office] Approval</value>
-  </data>
-  <data name="ECBProjectDerivedExpenses" xml:space="preserve">
-    <value>Quản lý phát sinh</value>
-  </data>
-  <data name="ECBProjectDiscustion" xml:space="preserve">
-    <value>Thảo luận</value>
-  </data>
-  <data name="ECBProjectDocument" xml:space="preserve">
-    <value>Hồ sơ dự án</value>
-  </data>
-  <data name="ECBProjectManageTask" xml:space="preserve">
-    <value>Quản lý công việc</value>
   </data>
   <data name="ECBEditControlBlock" xml:space="preserve">
     <value>EditControlBlock</value>
   </data>
-  <data name="DocumentLeadingHTML" xml:space="preserve">
-    <value>"&lt;div&gt;&lt;h2&gt;Đang tạo thư viện&lt;/h2&gt;&lt;/div&gt;"</value>
+  <data name="ENDateFormat" xml:space="preserve">
+    <value>MM/dd/yyyy</value>
   </data>
-  <data name="DocumentTrailingHTML" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ChoiceEffect" xml:space="preserve">
-    <value>Hiệu lực</value>
-  </data>
-  <data name="ChoiceExpire" xml:space="preserve">
-    <value>Hết hiệu lực</value>
-  </data>
-  <data name="CreatedBy" xml:space="preserve">
-    <value>Người tạo</value>
-  </data>
-  <data name="CreatedDate" xml:space="preserve">
-    <value>Ngày tạo</value>
-  </data>
-  <data name="ModifiedBy" xml:space="preserve">
-    <value>Người sửa</value>
-  </data>
-  <data name="ModifiedDate" xml:space="preserve">
-    <value>Ngày sửa</value>
-  </data>
-  <data name="ManagementGroup" xml:space="preserve">
-    <value>Ban điều hành</value>
-  </data>
-  <data name="GroupTimesheetAdmin" xml:space="preserve">
-    <value>Quản trị timesheet</value>
-  </data>
-  <data name="ViewDetails" xml:space="preserve">
-    <value>Xem chi tiết</value>
+  <data name="ENDateTimeFormat" xml:space="preserve">
+    <value>MM/dd/yyyy HH:mm</value>
   </data>
 </root>
