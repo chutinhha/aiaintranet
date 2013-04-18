@@ -107,7 +107,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                                 //string emailHeader = enquiryList.GetCustomProperty(Constants.CONTACT_HEADER_EMAIL_PROPERTY);
 
                                 string emailBodySetting = enquiryList.GetCustomProperty(Constants.CONTACT_BODY_HTML_EMAIL_PROPERTY);
-                                string emailBody = txtContent.Text.Replace("\r", "<br />").Replace("\n", "<br />");
+                                string emailBody = txtContent.Text.Replace(System.Environment.NewLine, "<br />");
 
                                 if (!string.IsNullOrEmpty(emailBodySetting))
                                 {
@@ -117,7 +117,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                                     }
                                     catch
                                     {
-                                        emailBody = txtContent.Text.Replace("\r", "<br />").Replace("\n", "<br />");
+                                        emailBody = txtContent.Text.Replace(System.Environment.NewLine, "<br />"); ;
                                     }
                                     
                                 }
