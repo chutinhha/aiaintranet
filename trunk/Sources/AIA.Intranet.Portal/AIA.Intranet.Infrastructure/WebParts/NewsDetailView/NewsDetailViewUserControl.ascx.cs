@@ -34,7 +34,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.NewsDetailView
         {
             get
             {
-                string d = CommonResources.VNDateTimeFormat;
+                string d = CommonResources.ENDateTimeFormat;
 
                 if (WebPart != null && !string.IsNullOrEmpty(WebPart.DateTimeFormat))
                 {

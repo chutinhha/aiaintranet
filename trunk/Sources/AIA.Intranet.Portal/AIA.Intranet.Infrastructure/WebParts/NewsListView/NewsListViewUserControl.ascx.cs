@@ -50,7 +50,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.NewsListView
         {
             get
             {
-                string d = CommonResources.VNDateTimeFormat;
+                string d = CommonResources.ENDateTimeFormat;
 
                 if (WebPart != null && !string.IsNullOrEmpty(WebPart.DateTimeFormat))
                 {

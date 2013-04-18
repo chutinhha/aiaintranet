@@ -1,3 +1,2 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" Id="1a549478-87e5-4630-85c2-71295a9bb4da" solutionId="1a549478-87e5-4630-85c2-71295a9bb4da" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="Hypertek.IOffice.Model">
-</package>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1a549478-87e5-4630-85c2-71295a9bb4da" solutionId="1a549478-87e5-4630-85c2-71295a9bb4da" resetWebServer="false" name="AIA.Intranet.Model" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" />

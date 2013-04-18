@@ -15,7 +15,7 @@ using AIA.Intranet.Model.Entities;
 using Microsoft.SharePoint.Navigation;
 
 
-namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructure.Site
+namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Site
 {
     /// <summary>
     /// This class handles events raised during feature activation, deactivation, installation, uninstallation, and upgrade.
@@ -25,7 +25,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
     /// </remarks>
 
     [Guid("93d1341d-f4c7-4a24-a7fe-79a801e4cec9")]
-    public class HypertekIOfficeInfrastructureEventReceiver : SPFeatureReceiver
+    public class AIAIntranetInfrastructureEventReceiver : SPFeatureReceiver
     {
 
         // Uncomment the method below to handle the event raised after a feature has been activated.

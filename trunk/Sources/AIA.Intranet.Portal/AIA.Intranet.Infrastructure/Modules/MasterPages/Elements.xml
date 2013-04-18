@@ -2,16 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
 	<Module Name="MasterPages" Url="_catalogs/masterpage" RootWebOnly="FALSE" Path="MasterPages" xmlns="http://schemas.microsoft.com/sharepoint/">
 		<File Url="AIAPortal.master" Path="AIAPortal.master" Type="GhostableInLibrary" >
-			<!--<Property Name="ID" Value="4" />-->
-			<!--<Property Name="ContentTypeId" Value="0x010105007F62C8AC22D02947B4FE421998B7255D" />-->
 			<Property Name="ContentType" Value="Master Page" />
-			<!--<Property Name="_ModerationStatus" Value="0" />
-			<Property Name="FileDirRef" Value="_catalogs/masterpage" />
-			<Property Name="FSObjType" Value="0" />
-			<Property Name="FileLeafRef" Value="IOffice.master" />
-			<Property Name="MetaInfo" Value="4;#vti_parserversion:SR|14.0.0.6120&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|global\\v4.master&#xD;&#xA;UIVersion:SR|4&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;vti_generator:SR|Microsoft SharePoint&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;vti_cachedcustomprops:VX|vti_title&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;ContentTypeId:SW|0x010105007F62C8AC22D02947B4FE421998B7255D&#xD;&#xA;vti_cachedtitle:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_metatags:VR|HTTP-EQUIV=X-UA-Compatible IE=8 GENERATOR Microsoft\\ SharePoint progid SharePoint.WebPartPage.Document HTTP-EQUIV=Content-Type text/html;\\ charset=utf-8 HTTP-EQUIV=Expires 0&#xD;&#xA;vti_title:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_cachedbodystyle:SR|&lt;body scroll=&quot;no&quot; onload=&quot;if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();&quot; class=&quot;v4master&quot;&gt;&#xD;&#xA;" />
-			<Property Name="Order" Value="200.000000000000" />
-			<Property Name="UIVersion" Value="4" />-->
 		</File>
 	</Module>
 </Elements>
