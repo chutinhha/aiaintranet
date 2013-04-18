@@ -30,52 +30,58 @@ namespace AIA.Intranet.Infrastructure.WebParts.BannerSlideShow
 
         private void LoadBanner()
         {
-            SPSecurity.RunWithElevatedPrivileges(delegate()
+            try
             {
-                using (SPSite site = new SPSite(SPContext.Current.Site.ID))
+                SPSecurity.RunWithElevatedPrivileges(delegate()
                 {
-                    using (SPWeb web = site.OpenWeb(SPContext.Current.Site.RootWeb.ID))
+                    using (SPSite site = new SPSite(SPContext.Current.Site.ID))
                     {
-                        SPList spList = Utility.GetListFromURL(Constants.BANNER_LIBRARY_URL, web);
-                        string banners = string.Empty;
-                        if (spList != null)
+                        using (SPWeb web = site.OpenWeb(SPContext.Current.Site.RootWeb.ID))
                         {
-                            SPFolder spFolder = spList.RootFolder;
-
-                            if (!string.IsNullOrEmpty(BannerFolder))
+                            SPList spList = Utility.GetListFromURL(Constants.BANNER_LIBRARY_URL, web);
+                            string banners = string.Empty;
+                            if (spList != null)
                             {
-                                SPFolderCollection folderCollection = spFolder.SubFolders;
-                                
-                                foreach (SPFolder folder in folderCollection)
+                                SPFolder spFolder = spList.RootFolder;
+
+                                if (!string.IsNullOrEmpty(BannerFolder))
                                 {
-                                    if (spFolder.Name == "Attachments" || spFolder.Item == null) continue;
-                                    if (spFolder.Item.Name == BannerFolder)
+                                    SPFolderCollection folderCollection = spFolder.SubFolders;
+
+                                    foreach (SPFolder folder in folderCollection)
                                     {
-                                        spFolder = folder;
-                                        break;
+                                        if (spFolder.Name == "Attachments" || spFolder.Item == null) continue;
+                                        if (spFolder.Item.Name == BannerFolder)
+                                        {
+                                            spFolder = folder;
+                                            break;
+                                        }
+                                    }
+                                }
+
+                                SPQuery spQuery = new SPQuery();
+                                spQuery.Query = "<OrderBy><FieldRef Name='OrderNumber'/></OrderBy>";
+                                spQuery.Folder = spFolder;
+
+                                SPListItemCollection spItemCollection = spList.GetItems(spQuery);
+
+                                foreach (SPItem spItem in spItemCollection)
+                                {
+                                    if (Convert.ToBoolean(spItem["Active"]))
+                                    {
+                                        banners += string.Format(liSlideShow, string.Format("{0}/{1}", site.MakeFullUrl(spFolder.ServerRelativeUrl), spItem["Name"]), spItem["Title"], spItem["Description"], spItem["RelatedLink"], '"');
                                     }
                                 }
                             }
-
-                            SPQuery spQuery = new SPQuery();
-                            spQuery.Query = "<OrderBy><FieldRef Name='OrderNumber'/></OrderBy>";
-                            spQuery.Folder = spFolder;
-
-                            SPListItemCollection spItemCollection = spList.GetItems(spQuery);
-
-                            foreach (SPItem spItem in spItemCollection)
-                            {
-                                if (Convert.ToBoolean(spItem["Active"]))
-                                {
-                                    banners += string.Format(liSlideShow, string.Format("{0}/{1}", site.MakeFullUrl(spFolder.ServerRelativeUrl), spItem["Name"]), spItem["Title"], spItem["Description"], spItem["RelatedLink"], '"');
-                                }
-                            }
+                            ulThumbList.InnerHtml = banners;
                         }
-                        ulThumbList.InnerHtml = banners;
                     }
-                }
-            });
-            
+                });
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
+            }
         }
     }
 }
