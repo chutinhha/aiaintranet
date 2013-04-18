@@ -5,7 +5,6 @@ using System.Text.RegularExpressions;
 using AIA.Intranet.Common.Helpers;
 using System.Collections;
 using AIA.Intranet.Common.Utilities;
-using AIA.Intranet.Common.NVelocityTemplateEngine;
 using System.Xml.Linq;
 using Microsoft.SharePoint;
 
@@ -32,10 +31,6 @@ namespace AIA.Intranet.Common.Extensions
             return result;
 
          }
-        public static string ToMD5(this string name)
-        {
-            return SecurityHelper.HashPassword(name);
-        }
         public static bool IsDocumentExtension(this string name)
         {
             string nameExt = Path.GetExtension(name).ToLower();
@@ -155,13 +150,6 @@ namespace AIA.Intranet.Common.Extensions
             return name+ext;
         }
 
-        public static string ToPlainText(this string source)
-        {
-            HtmlToTextConverter converter = new HtmlToTextConverter();
-            return converter.Convert(source);
-
-        }
-
         public static string TrimBy(this string source, int characters)
         {
             if (source == null) return string.Empty;
@@ -170,43 +158,6 @@ namespace AIA.Intranet.Common.Extensions
 
         }
 
-        public static string PopulateTemplate(this string template, SPListItem item)
-        {
-            try
-            {
-                var obj = item.ToDictionary().ToAnonymos();
-
-                var memoryEngine = NVelocityEngineFactory.CreateNVelocityMemoryEngine(true);
-                var Parameters = new Hashtable();
-                Parameters.Add("Item", obj);
-                template = memoryEngine.Process(Parameters, template);
-            }
-            catch (Exception ex)
-            {
-
-                CCIUtility.LogError(ex.Message + ex.StackTrace, Model.IOfficeFeatures.IOfficeApp);
-            }
-            return template;
-        }
-
-        public static string CustomFunctionPopulate(this string template)
-        {
-            try
-            {
-                var memoryEngine = NVelocityEngineFactory.CreateNVelocityMemoryEngine(true);
-                var Parameters = new Hashtable();
-                Parameters.Add("Helper", new StringHelper());
-                template= memoryEngine.Process(Parameters, template);
-            }
-            catch (Exception ex)
-            {
-
-                CCIUtility.LogError(ex.Message+ ex.StackTrace, Model.IOfficeFeatures.IOfficeApp);
-            }
-           return template;
-        }
-
-        
         public static string DoStripDiacritics(this string accented)
         {
             Regex regex = new Regex(@"\p{IsCombiningDiacriticalMarks}+");

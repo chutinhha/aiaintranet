@@ -21,8 +21,5 @@ namespace AIA.Intranet.Model.Infrastructure
 
 
         public string UrlFieldName { get; set; }
-
-        public bool EnableNavigationUpdate { get; set; }
-        public NavigationUpdateProperties NavigationUpdate { get; set; } 
     }
 }

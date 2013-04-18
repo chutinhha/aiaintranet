@@ -3,9 +3,9 @@
   
   <FieldType>
     <Field Name="TypeName">ImageField</Field>
-    <Field Name="TypeDisplayName">[I-Office] - Image</Field>
+    <Field Name="TypeDisplayName">Image</Field>
     <Field Name="ParentType">Text</Field>
-    <Field Name="TypeShortDescription">[I-Office] - Image</Field>
+    <Field Name="TypeShortDescription">Image</Field>
     <Field Name="UserCreatable">TRUE</Field>
     <Field Name="FieldTypeClass">AIA.Intranet.Infrastructure.CustomFields.ImageField, $SharePoint.Project.AssemblyFullName$</Field>
     <Field Name="FieldEditorUserControl">/_controltemplates/AIA.Intranet.Infrastructure/ImageFieldControl.ascx</Field>

@@ -66,15 +66,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration.cs" />
-    <Compile Include="Controls\ProjectTaskSaveButton.cs" />
-    <Compile Include="Controls\DepartmentTaskSaveButton.cs" />
-    <Compile Include="Controls\EmployeeFieldIterator.cs" />
-    <Compile Include="Controls\PermissionFieldIterator.cs" />
-    <Compile Include="Controls\ReadOnlyFieldControl.cs" />
-    <Compile Include="Controls\SPUserGroupTrimmedControl.cs" />
-    <Compile Include="Core\CoreFeatureReceiver.cs" />
-    <Compile Include="Core\WebConfigModifierReceiver.cs" />
     <Compile Include="Extensions\AssemblyExtensions.cs" />
     <Compile Include="Extensions\ControlCollectionExtensions.cs" />
     <Compile Include="Extensions\DateTimeExtention.cs" />
@@ -85,11 +76,8 @@
     <Compile Include="Extensions\SPFieldExtensions.cs" />
     <Compile Include="Extensions\SPFieldLookupExtensions.cs" />
     <Compile Include="Extensions\SPFolderExtensions.cs" />
-    <Compile Include="Extensions\SPListDiscussionExtensions.cs" />
     <Compile Include="Extensions\SPListExtensions.cs" />
-    <Compile Include="Extensions\SPListItemDiscussionExtensions.cs" />
     <Compile Include="Extensions\SPListItemExtensions.cs" />
-    <Compile Include="Extensions\SPPrincipalExtensions.cs" />
     <Compile Include="Extensions\SPSiteExtensions.cs" />
     <Compile Include="Extensions\SPUserExtensions.cs" />
     <Compile Include="Extensions\SPWebApplicationExtensions.cs" />
@@ -97,36 +85,15 @@
     <Compile Include="Extensions\SPWorkflowActivationPropertiesExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\TypeExtensions.cs" />
-    <Compile Include="Helpers\ADHelper.cs" />
     <Compile Include="Helpers\CAMLHelper.cs" />
-    <Compile Include="Helpers\ControlHelper.cs" />
-    <Compile Include="Helpers\CryptoHelper.cs" />
-    <Compile Include="Helpers\DocxFileReader.cs" />
-    <Compile Include="Helpers\FieldValueHelper.cs" />
-    <Compile Include="Helpers\HashHelper.cs" />
-    <Compile Include="Helpers\HtmlToTextConverter.cs" />
-    <Compile Include="Helpers\ListHelper.cs" />
-    <Compile Include="Helpers\NVelocityTemplateEngine\BaseClasses\NVelocityEngineBase.cs" />
-    <Compile Include="Helpers\NVelocityTemplateEngine\Engines\NVelocityAssemblyEngine.cs" />
-    <Compile Include="Helpers\NVelocityTemplateEngine\Engines\NVelocityFileEngine.cs" />
-    <Compile Include="Helpers\NVelocityTemplateEngine\Engines\NVelocityMemoryEngine.cs" />
-    <Compile Include="Helpers\NVelocityTemplateEngine\Interfaces\INVelocityEngine.cs" />
-    <Compile Include="Helpers\NVelocityTemplateEngine\NVelocityEngineFactory.cs" />
-    <Compile Include="Helpers\OfficeFileReader.cs" />
-    <Compile Include="Helpers\OperatorsHelper.cs" />
     <Compile Include="Helpers\PageHelper.cs" />
     <Compile Include="Helpers\RequestHelper.cs" />
-    <Compile Include="Helpers\SecurityHelper.cs" />
-    <Compile Include="Helpers\SendEmailHelper.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Helpers\SerializationHelper.cs" />
-    <Compile Include="Helpers\SharepointHelper.cs" />
     <Compile Include="Helpers\SPDisposeCheckIgnoreAttribute.cs" />
     <Compile Include="Helpers\StringHelper.cs" />
-    <Compile Include="Helpers\TemplateHelper.cs" />
-    <Compile Include="Helpers\TraceProvider.cs" />
-    <Compile Include="Helpers\UpdateWorkflowItemHelper.cs" />
+    <Compile Include="Helpers\TraceProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Helpers\WebPartHelper.cs" />
     <Compile Include="Extensions\PagedList\BasePagedList.cs" />
     <Compile Include="Extensions\PagedList\IPagedList.cs" />
@@ -135,24 +102,8 @@
     <Compile Include="Extensions\PagedList\PagedListMetaData.cs" />
     <Compile Include="Extensions\PagedList\StaticPagedList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Receivers\SecurityEventReceiver.cs" />
-    <Compile Include="SecuredPageLayout.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Services\CommentService.cs" />
-    <Compile Include="Services\ConfiguratioinService.cs" />
-    <Compile Include="Services\EmailListService.cs" />
-    <Compile Include="Services\DepartmentService.cs" />
-    <Compile Include="Services\EmailTemplateService.cs" />
-    <Compile Include="Services\EmployeeService.cs" />
     <Compile Include="Services\GenericService.cs" />
-    <Compile Include="Services\NavigationService.cs" />
     <Compile Include="Services\NewsService.cs" />
-    <Compile Include="Services\ProfileService.cs" />
-    <Compile Include="Services\ProjectServices.cs" />
-    <Compile Include="Services\StatisticService.cs" />
-    <Compile Include="Services\TaskService.cs" />
-    <Compile Include="Services\TimesheetService.cs" />
     <Compile Include="Utilities\Camlex.NET\Attributes.cs" />
     <Compile Include="Utilities\Camlex.NET\Camlex.cs" />
     <Compile Include="Utilities\CAMLSiteQuery.cs" />
@@ -269,12 +220,10 @@
     <Compile Include="Utilities\Camlex.NET\Interfaces\ReverseEngeneering\IReTranslatorFactory.cs" />
     <Compile Include="Utilities\Camlex.NET\ReflectionHelper.cs" />
     <Compile Include="Utilities\Camlex.NET\Tags.cs" />
-    <Compile Include="Utilities\CCIUtility.cs" />
+    <Compile Include="Utilities\Utility.cs" />
     <Compile Include="Utilities\CAMLListQuery.cs" />
     <Compile Include="Utilities\DiagnosticsService.cs" />
-    <Compile Include="IOfficeContext.cs" />
     <Compile Include="Utilities\DisableItemEvent.cs" />
-    <Compile Include="Utilities\ImageUtility.cs" />
     <Compile Include="Utilities\SPTraceLogger.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -287,8 +236,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="3rd\" />
     <Folder Include="Features\" />
+    <Folder Include="Receivers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Libs\AjaxControlToolkit.dll" />

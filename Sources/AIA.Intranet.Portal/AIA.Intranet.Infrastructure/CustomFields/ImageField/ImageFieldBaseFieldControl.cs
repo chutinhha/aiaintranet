@@ -64,10 +64,10 @@ namespace AIA.Intranet.Infrastructure.CustomFields
                         SPListItem picture = pictureLibrary.GetItemById(int.Parse(ddlExistingPicture.SelectedValue));
 
                         // Display the thumbnail in the picture
-                        imgExistingPicture.ImageUrl = CCIUtility.GetRelativeUrl(picture["EncodedAbsThumbnailUrl"].ToString());
+                        imgExistingPicture.ImageUrl = Utility.GetRelativeUrl(picture["EncodedAbsThumbnailUrl"].ToString());
                     }
                     catch (Exception ex) {
-                        CCIUtility.LogError(ex);
+                        Utility.LogError(ex);
                     }
                 }
             }
@@ -137,7 +137,7 @@ namespace AIA.Intranet.Infrastructure.CustomFields
                             {
                                 if (!picture.Name.StartsWith("dv_") || picture.Name.Length != 39)
                                 {
-                                    string pictureUrl = CCIUtility.GetRelativeUrl(picture["EncodedAbsThumbnailUrl"].ToString());
+                                    string pictureUrl = Utility.GetRelativeUrl(picture["EncodedAbsThumbnailUrl"].ToString());
                                     ListItem pictureItem = new ListItem(picture.Name, picture.ID.ToString());
 
                                     // If the picture is the one referenced by the field
@@ -228,7 +228,7 @@ namespace AIA.Intranet.Infrastructure.CustomFields
                                             SPListItem pictureItem = web.Files.Add(fileUrl, file.InputStream, fieldProperties != null ? fieldProperties.Overwrite : false).Item;
 
                                             //VuCA: changed pictureItem.ParentList.ParentWeb.Site.Url (make wrong url when using in subsite) to pictureItem.ParentList.ParentWeb.ServerRelativeUrl (also change from absolute url to relative url when saving)
-                                            filename = string.Format("{0};#{1};#{2}", pictureItem.ID, SPUrlUtility.CombineUrl(pictureItem.ParentList.ParentWeb.ServerRelativeUrl, pictureItem.Url), CCIUtility.GetRelativeUrl(pictureItem["EncodedAbsThumbnailUrl"].ToString()));
+                                            filename = string.Format("{0};#{1};#{2}", pictureItem.ID, SPUrlUtility.CombineUrl(pictureItem.ParentList.ParentWeb.ServerRelativeUrl, pictureItem.Url), Utility.GetRelativeUrl(pictureItem["EncodedAbsThumbnailUrl"].ToString()));
                                         }
                                     }
 
@@ -259,7 +259,7 @@ namespace AIA.Intranet.Infrastructure.CustomFields
                                             "{0};#{1};#{2}",
                                             ddlExistingPicture.SelectedValue,
                                             SPUrlUtility.CombineUrl(web.ServerRelativeUrl, picture.Url),
-                                            imgExistingPicture.Visible ? imgExistingPicture.ImageUrl : CCIUtility.GetRelativeUrl(picture["EncodedAbsThumbnailUrl"].ToString())
+                                            imgExistingPicture.Visible ? imgExistingPicture.ImageUrl : Utility.GetRelativeUrl(picture["EncodedAbsThumbnailUrl"].ToString())
                                         );
                                     }
                                 }

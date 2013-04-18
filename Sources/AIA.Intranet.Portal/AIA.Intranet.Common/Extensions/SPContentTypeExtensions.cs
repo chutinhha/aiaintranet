@@ -92,24 +92,24 @@ namespace AIA.Intranet.Common.Extensions
             contenttype.Update();
         }
 
-        public static void SetCustomSettings<T>(this SPContentType contentType, IOfficeFeatures featureName, T settingsObject)
+        public static void SetCustomSettings<T>(this SPContentType contentType, AIAPortalFeatures featureName, T settingsObject)
         {
             contentType.SetCustomSettings<T>(featureName, settingsObject, false);
         }
 
-        public static void RemoveCustomSettings<T>(this SPContentType ctype, IOfficeFeatures featureName)
+        public static void RemoveCustomSettings<T>(this SPContentType ctype, AIAPortalFeatures featureName)
         {
             ctype.SetCustomSettings<T>(featureName, default(T));
         }
 
-        public static void RemoveCustomSettings<T>(this SPContentType ctype, IOfficeFeatures featureName, bool applyToChilds)
+        public static void RemoveCustomSettings<T>(this SPContentType ctype, AIAPortalFeatures featureName, bool applyToChilds)
         {
             ctype.SetCustomSettings<T>(featureName, default(T), applyToChilds);
         }
 
-        public static void SetCustomSettings<T>(this SPContentType contentType, IOfficeFeatures featureName, T settingsObject, bool applyToChilds)
+        public static void SetCustomSettings<T>(this SPContentType contentType, AIAPortalFeatures featureName, T settingsObject, bool applyToChilds)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             string settingsXml = SerializationHelper.SerializeToXml<T>(settingsObject, strKey);
             SPXmlDocumentCollection xmlDocCollection = contentType.XmlDocuments;
             if (!string.IsNullOrEmpty(xmlDocCollection[strKey]))
@@ -142,14 +142,14 @@ namespace AIA.Intranet.Common.Extensions
             //}
         }
 
-        public static T GetCustomSettings<T>(this SPContentType contentType, IOfficeFeatures featureName)
+        public static T GetCustomSettings<T>(this SPContentType contentType, AIAPortalFeatures featureName)
         {
             return contentType.GetCustomSettings<T>(featureName, true);
         }
 
-        public static T GetCustomSettings<T>(this SPContentType contentType, IOfficeFeatures featureName, bool lookupInParent)
+        public static T GetCustomSettings<T>(this SPContentType contentType, AIAPortalFeatures featureName, bool lookupInParent)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             string settingsXml = contentType.XmlDocuments[strKey];
 
             if (!string.IsNullOrEmpty(settingsXml))

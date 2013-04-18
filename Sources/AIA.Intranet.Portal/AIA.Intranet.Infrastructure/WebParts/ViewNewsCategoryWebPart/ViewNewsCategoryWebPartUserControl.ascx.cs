@@ -43,13 +43,13 @@ namespace AIA.Intranet.Infrastructure.WebParts.ViewNewsCategoryWebPart
                         }
                         else if (!string.IsNullOrEmpty(WebPart.ListUrl))
                         {
-                            listNews = CCIUtility.GetListFromURL(WebPart.ListUrl);
+                            listNews = Utility.GetListFromURL(WebPart.ListUrl);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    CCIUtility.LogError(ex);
+                    Utility.LogError(ex);
                 }
 
                 return listNews;

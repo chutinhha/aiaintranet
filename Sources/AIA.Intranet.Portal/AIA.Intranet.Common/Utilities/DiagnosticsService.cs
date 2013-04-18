@@ -47,10 +47,10 @@ namespace AIA.Intranet.Common
         protected override IEnumerable<SPDiagnosticsArea> ProvideAreas()
         {
             List<SPDiagnosticsCategory> categories = new List<SPDiagnosticsCategory>();
-            foreach (string catName in Enum.GetNames(typeof(IOfficeFeatures)))
+            foreach (string catName in Enum.GetNames(typeof(AIAPortalFeatures)))
             {
-                IOfficeFeatures entry = ( IOfficeFeatures)Enum.Parse(typeof(IOfficeFeatures), catName) ;
-                uint catId = (uint)(int)Enum.Parse(typeof(IOfficeFeatures), catName);
+                AIAPortalFeatures entry = ( AIAPortalFeatures)Enum.Parse(typeof(AIAPortalFeatures), catName) ;
+                uint catId = (uint)(int)Enum.Parse(typeof(AIAPortalFeatures), catName);
                 string friendlyname = GetDescription(entry);
                 categories.Add(new SPDiagnosticsCategory(friendlyname, TraceSeverity.Verbose, EventSeverity.Error, 0, catId));
             }
@@ -71,7 +71,7 @@ namespace AIA.Intranet.Common
                 return Areas[DiagnosticsAreaName].Categories[categoryName];
             }
         }
-        public SPDiagnosticsCategory this[IOfficeFeatures id]
+        public SPDiagnosticsCategory this[AIAPortalFeatures id]
         {
             get
             {

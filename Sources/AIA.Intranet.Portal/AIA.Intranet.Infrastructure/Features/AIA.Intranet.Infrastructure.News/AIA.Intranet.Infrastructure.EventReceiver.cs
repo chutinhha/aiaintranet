@@ -8,7 +8,6 @@ using AIA.Intranet.Common.Helpers;
 using AIA.Intranet.Model.Infrastructure;
 using System.Collections.Generic;
 using AIA.Intranet.Common.Extensions;
-using AIA.Intranet.Infrastructure.Resources;
 using AIA.Intranet.Common.Utilities;
 using AIA.Intranet.Model;
 using System.Linq;
@@ -32,7 +31,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
             var web = properties.Feature.Parent as SPWeb;
             //UpdateNewsCategoroySettings(web);
             //CreateFirstCategory(web);
-            var listNews = CCIUtility.GetListFromURL(Constants.NEWS_LIST_URL, web);
+            var listNews = Utility.GetListFromURL(Constants.NEWS_LIST_URL, web);
             if (listNews != null)
             {
                 CreateDetailNewsPage(web, listNews);
@@ -93,11 +92,11 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
             {
                 web.AllowUnsafeUpdates = true;
 
-                SPList listNewsCategory = CCIUtility.GetListFromURL(Constants.NEWS_CATEGORY_LIST_URL, web);
+                SPList listNewsCategory = Utility.GetListFromURL(Constants.NEWS_CATEGORY_LIST_URL, web);
 
                 if (listNewsCategory != null)
                 {
-                    SPList listNews = CCIUtility.GetListFromURL(Constants.NEWS_DEFAULT_LISTS_URL, web);
+                    SPList listNews = Utility.GetListFromURL(Constants.NEWS_DEFAULT_LISTS_URL, web);
                     if (listNews == null)
                     {
                         SPListItem newFolder = listNewsCategory.Items.Add(listNewsCategory.RootFolder.ServerRelativeUrl, SPFileSystemObjectType.Folder, null);
@@ -111,7 +110,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
             }
             catch (Exception ex)
             {
-                CCIUtility.LogError("News Feature Event Receiver", ex.Message);
+                Utility.LogError("News Feature Event Receiver", ex.Message);
             }
             finally
             {

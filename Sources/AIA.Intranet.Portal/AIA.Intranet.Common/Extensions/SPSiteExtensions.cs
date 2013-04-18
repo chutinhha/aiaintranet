@@ -82,7 +82,7 @@ namespace AIA.Intranet.Common.Extensions
             bool disposeSite = false;
             try
             {
-                if (CCIUtility.IsAbsoluteUri(strURL))
+                if (Utility.IsAbsoluteUri(strURL))
                     try
                     {
                         siteGet = new SPSite(strURL);
@@ -91,7 +91,7 @@ namespace AIA.Intranet.Common.Extensions
                     }
                     catch
                     {
-                        CCIUtility.LogInfo("Unable to open web from Url : " + strURL + "It isn't SharePoint site or current user don't have permission to open it", "AIA.Intranet");
+                        Utility.LogInfo("Unable to open web from Url : " + strURL + "It isn't SharePoint site or current user don't have permission to open it", "AIA.Intranet");
                     }
                 else
                 {
@@ -105,12 +105,12 @@ namespace AIA.Intranet.Common.Extensions
                 }
                 catch
                 {
-                    CCIUtility.LogInfo("Unable to load list from Url : " + strURL, "AIA.Intranet");
+                    Utility.LogInfo("Unable to load list from Url : " + strURL, "AIA.Intranet");
                 }
             }
             catch
             {
-                CCIUtility.LogInfo("Couldn't open " + strURL + " as a SharePoint list", "AIA.Intranet");
+                Utility.LogInfo("Couldn't open " + strURL + " as a SharePoint list", "AIA.Intranet");
             }
             finally
             {
@@ -139,7 +139,7 @@ namespace AIA.Intranet.Common.Extensions
             }
             catch (Exception ex)
             {
-                CCIUtility.LogInfo("CreateSite " + ex.ToString(), "AIA.Intranet.Common.Extensions");
+                Utility.LogInfo("CreateSite " + ex.ToString(), "AIA.Intranet.Common.Extensions");
             }
             return siteDepartmentUrl;
         }

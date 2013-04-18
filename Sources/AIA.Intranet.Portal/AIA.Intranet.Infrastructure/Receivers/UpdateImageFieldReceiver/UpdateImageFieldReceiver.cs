@@ -30,7 +30,7 @@ namespace AIA.Intranet.Infrastructure.Receivers
                var fields = properties.List.Fields.Cast<SPField>().ToList();
 
                var imageFields = fields.Where(p => p.TypeAsString == Constants.IMAGE_FIELD_TYPE_NAME).ToList();
-               var lkwithPickerFields = fields.Where(p => p.TypeAsString == Constants.LOOKUP_WITH_PICKER_TYPE_NAME).ToList();
+               //var lkwithPickerFields = fields.Where(p => p.TypeAsString == Constants.LOOKUP_WITH_PICKER_TYPE_NAME).ToList();
 
                foreach (var item in imageFields)
                {
@@ -40,6 +40,7 @@ namespace AIA.Intranet.Infrastructure.Receivers
                    item.UpdateImageField(item.ParentList.ParentWeb, list);
                }
 
+               /*
                foreach (LookupFieldWithPicker item in lkwithPickerFields)
                {
                    if (!item.LookupList.IsGuid())
@@ -52,6 +53,7 @@ namespace AIA.Intranet.Infrastructure.Receivers
                        item.UpdateProperties(props);
                    }
                }
+               */
            }
            catch (Exception ex)
            {

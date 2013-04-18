@@ -109,7 +109,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
         {
             try
             {
-                var bannerList = CCIUtility.GetListFromURL(Constants.BANNER_LIBRARY_URL, web);
+                var bannerList = Utility.GetListFromURL(Constants.BANNER_LIBRARY_URL, web);
                 if (bannerList != null)
                 {
                     SPContentTypeCollection spContentTypeCollection = web.ContentTypes;
@@ -246,7 +246,7 @@ namespace Hypertek.IOffice.Infrastructure.Features.Hypertek.IOffice.Infrastructu
                 {
                     using (SPWeb spWeb = web.Site.OpenWeb(menu.Url))
                     {
-                        var listLeftMenu = CCIUtility.GetListFromURL(Constants.LEFT_MENU_LIST_URL, spWeb);
+                        var listLeftMenu = Utility.GetListFromURL(Constants.LEFT_MENU_LIST_URL, spWeb);
                         if (listLeftMenu == null) continue;
                         foreach (var leftMenu in menu.Features)
                         {
