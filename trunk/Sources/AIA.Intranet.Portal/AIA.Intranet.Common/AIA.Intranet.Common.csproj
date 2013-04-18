@@ -82,7 +82,6 @@
     <Compile Include="Extensions\SPUserExtensions.cs" />
     <Compile Include="Extensions\SPWebApplicationExtensions.cs" />
     <Compile Include="Extensions\SPWebExtensions.cs" />
-    <Compile Include="Extensions\SPWorkflowActivationPropertiesExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\TypeExtensions.cs" />
     <Compile Include="Helpers\CAMLHelper.cs" />
@@ -237,7 +236,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
-    <Folder Include="Receivers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Libs\AjaxControlToolkit.dll" />
