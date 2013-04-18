@@ -43,7 +43,7 @@ namespace AIA.Intranet.Common.Extensions
                                     {
                                         Type runtimeType = ctDef.Data.GetType();
                                         //ct.SetCustomSettings<SettingBase>(ctDef.Feature, ctDef.Data);
-                                        MethodInfo method = typeof(SPContentTypeExtensions).GetGenericMethod("SetCustomSettings", new Type[4] { typeof(SPContentType), typeof(IOfficeFeatures), runtimeType, typeof(bool) });
+                                        MethodInfo method = typeof(SPContentTypeExtensions).GetGenericMethod("SetCustomSettings", new Type[4] { typeof(SPContentType), typeof(AIAPortalFeatures), runtimeType, typeof(bool) });
 
                                         MethodInfo generic = method.MakeGenericMethod(runtimeType);
                                         generic.Invoke(null, new object[] { ct, ctDef.Feature, ctDef.Data, true });
@@ -70,7 +70,7 @@ namespace AIA.Intranet.Common.Extensions
                                     if (list != null)
                                     {
                                         Type runtimeType = listDefinition.Data.GetType();
-                                        MethodInfo method = typeof(SPListExtensions).GetGenericMethod("SetCustomSettings", new Type[3] { typeof(SPList), typeof(IOfficeFeatures), runtimeType });
+                                        MethodInfo method = typeof(SPListExtensions).GetGenericMethod("SetCustomSettings", new Type[3] { typeof(SPList), typeof(AIAPortalFeatures), runtimeType });
 
                                         MethodInfo generic = method.MakeGenericMethod(runtimeType);
                                         generic.Invoke(null, new object[] { list, listDefinition.Feature, listDefinition.Data });
@@ -208,7 +208,7 @@ namespace AIA.Intranet.Common.Extensions
             }
             catch (Exception ex)
             {
-                CCIUtility.LogError(ex.Message + ex.StackTrace, IOfficeFeatures.Infrastructure);
+                Utility.LogError(ex.Message + ex.StackTrace, AIAPortalFeatures.Infrastructure);
             }
             finally
             {
@@ -482,14 +482,14 @@ namespace AIA.Intranet.Common.Extensions
             return false;
         }
 
-        public static T GetCustomSettings<T>(this SPWeb web, IOfficeFeatures featureName)
+        public static T GetCustomSettings<T>(this SPWeb web, AIAPortalFeatures featureName)
         {
             return web.GetCustomSettings<T>(featureName, true);
         }
 
-        public static T GetCustomSettings<T>(this SPWeb web, IOfficeFeatures featureName, bool lookupInParent)
+        public static T GetCustomSettings<T>(this SPWeb web, AIAPortalFeatures featureName, bool lookupInParent)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             string settingsXml = web.GetCustomProperty(strKey);
 
             if (!string.IsNullOrEmpty(settingsXml))
@@ -501,16 +501,16 @@ namespace AIA.Intranet.Common.Extensions
             return default(T);
         }
 
-        public static void SetCustomSettings<T>(this SPWeb web, IOfficeFeatures featureName, T settingsObject)
+        public static void SetCustomSettings<T>(this SPWeb web, AIAPortalFeatures featureName, T settingsObject)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             string settingsXml = SerializationHelper.SerializeToXml<T>(settingsObject);
             web.SetCustomProperty(strKey, settingsXml);
         }
 
-        public static void RemoveCustomSettings<T>(this SPWeb web, IOfficeFeatures featureName)
+        public static void RemoveCustomSettings<T>(this SPWeb web, AIAPortalFeatures featureName)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             //web.Properties.Remove(strKey);
             web.Properties[strKey] = null;
             web.Update();
@@ -547,7 +547,7 @@ namespace AIA.Intranet.Common.Extensions
 
         public static bool CCIappFeatureNameContainName(string s)
         {
-            foreach (string name in Enum.GetNames(typeof(IOfficeFeatures)))
+            foreach (string name in Enum.GetNames(typeof(AIAPortalFeatures)))
             {
                 if (string.Compare(name, s) == 0)
                     return true;
@@ -621,7 +621,7 @@ namespace AIA.Intranet.Common.Extensions
         public static SPWeb GetDestinationWeb(this SPSite site, string destinationFolderUrl)
         {
             SPWeb destinationWeb = null;
-            if (!CCIUtility.IsAbsoluteUri(destinationFolderUrl))
+            if (!Utility.IsAbsoluteUri(destinationFolderUrl))
                 try
                 {
                     destinationWeb = site.OpenWeb(destinationFolderUrl, false);
@@ -919,7 +919,7 @@ namespace AIA.Intranet.Common.Extensions
                 catch (Exception ex)
                 {
                     principal = null;
-                    CCIUtility.LogError("GetPrinciple " + ex.ToString(), Model.IOfficeFeatures.Infrastructure);
+                    Utility.LogError("GetPrinciple " + ex.ToString(), Model.AIAPortalFeatures.Infrastructure);
                 }
             }
 

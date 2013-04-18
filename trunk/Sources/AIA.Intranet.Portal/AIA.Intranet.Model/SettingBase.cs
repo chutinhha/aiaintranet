@@ -8,9 +8,6 @@ using AIA.Intranet.Model.Infrastructure;
 namespace AIA.Intranet.Model
 {
     [XmlInclude (typeof(AutoCreationSettings))]
-    [XmlInclude(typeof(NotificationSettings))]
-    [XmlInclude(typeof(UnreadContentNotificationSetting))]
-    [XmlInclude(typeof(NotificationSettingsCollection))]
     [Serializable]
 
     public class SettingBase
@@ -19,7 +16,7 @@ namespace AIA.Intranet.Model
 
         public SettingBase()
         {
-            Version = "I-Office v1.0.0.0";
+            Version = "AIA Intranet Portal v1.0.0.0";
         }
     }
 }

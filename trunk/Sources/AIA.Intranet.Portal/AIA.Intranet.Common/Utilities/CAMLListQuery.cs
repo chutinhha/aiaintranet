@@ -20,7 +20,7 @@ namespace AIA.Intranet.Common.Utilities
 
         public CAMLListQuery(string listUrl)
         {
-            Source = CCIUtility.GetListFromURL(listUrl);
+            Source = Utility.GetListFromURL(listUrl);
         }
 
         public SPListItemCollection GetItems(string caml)
@@ -105,7 +105,7 @@ namespace AIA.Intranet.Common.Utilities
             }
             catch (Exception ex)
             {
-                CCIUtility.LogError(ex);
+                Utility.LogError(ex);
             }
             
             return CreateInstance(item);

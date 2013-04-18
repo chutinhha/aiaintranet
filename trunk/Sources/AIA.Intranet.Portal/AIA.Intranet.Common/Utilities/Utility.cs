@@ -3,7 +3,6 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using AIA.Intranet.Common.Extensions;
-using AIA.Intranet.Common.Helper.OfficeFileReader;
 using AIA.Intranet.Common.Helpers;
 
 using Microsoft.SharePoint;
@@ -18,7 +17,7 @@ using System.Reflection;
 
 namespace AIA.Intranet.Common.Utilities
 {
-    public class CCIUtility
+    public class Utility
     {
         public static void TransferToErrorPage(string message, string linkText, string linkURL)
         {
@@ -47,13 +46,13 @@ namespace AIA.Intranet.Common.Utilities
             }
             catch (Exception ex)
             {
-                CCIUtility.LogError("Cannot get relative url from " + fullUrl, "AIA.Intranet");
+                Utility.LogError("Cannot get relative url from " + fullUrl, "AIA.Intranet");
             }
             return null;
         } 
 
         #region Log
-        public static void LogInfo(string errorMessage, IOfficeFeatures category)
+        public static void LogInfo(string errorMessage, AIAPortalFeatures category)
         {
             try
             {
@@ -73,10 +72,10 @@ namespace AIA.Intranet.Common.Utilities
         public static void LogInfo(string errorMessage, string category)
         {
             //Log(errorMessage, TraceProvider.TraceSeverity.InformationEvent, category);
-            IOfficeFeatures e = IOfficeFeatures.IOfficeApp;
+            AIAPortalFeatures e = AIAPortalFeatures.Infrastructure;
             try 
 	        {	        
-		        e = (IOfficeFeatures)Enum.Parse(typeof(IOfficeFeatures), category);
+		        e = (AIAPortalFeatures)Enum.Parse(typeof(AIAPortalFeatures), category);
 	        }
 	        catch{};
             LogInfo(errorMessage, e);
@@ -86,7 +85,7 @@ namespace AIA.Intranet.Common.Utilities
             //logger.Write(0, SPTraceLogger.TraceSeverity.InformationEvent, "AIA.Intranet TraceProvider", "AIA.Intranet", category, errorMessage);
 
         }
-        public static void LogError(string errorMessage, IOfficeFeatures category)
+        public static void LogError(string errorMessage, AIAPortalFeatures category)
         {
             
             try
@@ -113,10 +112,10 @@ namespace AIA.Intranet.Common.Utilities
 
         public static void LogError(string errorMessage, string category)
         {
-            IOfficeFeatures e = IOfficeFeatures.IOfficeApp;
+            AIAPortalFeatures e = AIAPortalFeatures.Infrastructure;
             try
             {
-                e = (IOfficeFeatures)Enum.Parse(typeof(IOfficeFeatures), category);
+                e = (AIAPortalFeatures)Enum.Parse(typeof(AIAPortalFeatures), category);
             }
             catch { };
 
@@ -148,7 +147,7 @@ namespace AIA.Intranet.Common.Utilities
         }
         #endregion
 
-        public static string BuildKey<T>(IOfficeFeatures featureName)
+        public static string BuildKey<T>(AIAPortalFeatures featureName)
         {
             return featureName.ToString() + typeof(T).ToString();
         }
@@ -263,38 +262,6 @@ namespace AIA.Intranet.Common.Utilities
             return destinationList;
         }
 
-        public static string ExtractWordContent(SPFile file)
-        {
-            string ext = Path.GetExtension(file.Name).ToLower();
-            if (ext == ".doc")
-            {
-                String tempFile = Path.GetTempFileName();
-                using (FileStream fs = File.Create(tempFile))
-                {
-                    using(var datastream = file.OpenBinaryStream()){
-                        byte[] data =new byte[datastream.Length];
-                        datastream.Read(data, 0, (int)datastream.Length);
-                        fs.Write(data,0, data.Length);
-                    }
-                }
-                using (OfficeFileReader objOFR = new OfficeFileReader())
-                {
-                    string output = "";
-                    objOFR.GetText(tempFile, ref output);
-                    return output;
-                }
-            }
-            if (ext == ".docx")
-            {
-                using (DocxFileReader dtt = new DocxFileReader(file.OpenBinaryStream()))
-                {
-                    return dtt.ExtractText();
-                }
-            }
-
-            return string.Empty;
-        }
-
         public static SPListItem GetItemByDocumentUrl(string url)
         {
             SPListItem item = null;
@@ -320,7 +287,7 @@ namespace AIA.Intranet.Common.Utilities
 
         public static void LogError(Exception ex)
         {
-            LogError(ex.Message + ex.StackTrace, IOfficeFeatures.IOfficeApp);
+            LogError(ex.Message + ex.StackTrace, AIAPortalFeatures.Infrastructure);
         }
 
         [SPDisposeCheckIgnore(SPDisposeCheckID.SPDisposeCheckID_110, "Don't want to do it")]
@@ -336,7 +303,7 @@ namespace AIA.Intranet.Common.Utilities
             bool disposeSite = false;
             try
             {
-                if (CCIUtility.IsAbsoluteUri(strURL))
+                if (Utility.IsAbsoluteUri(strURL))
                     try
                     {
                         site = new SPSite(strURL);
@@ -346,7 +313,7 @@ namespace AIA.Intranet.Common.Utilities
                     }
                     catch
                     {
-                        CCIUtility.LogInfo("Unable to open web from Url : " + strURL + "It isn't SharePoint site or current user don't have permission to open it", "AIA.Intranet");
+                        Utility.LogInfo("Unable to open web from Url : " + strURL + "It isn't SharePoint site or current user don't have permission to open it", "AIA.Intranet");
                     }
                 else
                 {
@@ -360,7 +327,7 @@ namespace AIA.Intranet.Common.Utilities
                 
                 try
                 {
-                    if (CCIUtility.IsAbsoluteUri(strURL))
+                    if (Utility.IsAbsoluteUri(strURL))
                     {
                         list = web.GetList(strURL);
                     }
@@ -384,12 +351,12 @@ namespace AIA.Intranet.Common.Utilities
                 }
                 catch (Exception ex)
                 {
-                    CCIUtility.LogInfo("Unable to load list from Url : " + strURL, "AIA.Intranet");
+                    Utility.LogInfo("Unable to load list from Url : " + strURL, "AIA.Intranet");
                 }
             }
             catch
             {
-                CCIUtility.LogInfo("Couldn't open " + strURL + " as a SharePoint list", "AIA.Intranet");
+                Utility.LogInfo("Couldn't open " + strURL + " as a SharePoint list", "AIA.Intranet");
             }
             finally
             {

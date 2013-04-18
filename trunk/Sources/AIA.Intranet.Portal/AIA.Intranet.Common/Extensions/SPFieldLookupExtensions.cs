@@ -68,7 +68,7 @@ namespace AIA.Intranet.Common.Extensions
 
         public static void UpdateLookupReferences(this SPFieldLookup lookupField, string listUrl, SPWeb web)
         {
-            var list = CCIUtility.GetListFromURL(listUrl, web);
+            var list = Utility.GetListFromURL(listUrl, web);
             
                 lookupField.UpdateLookupReferences(web, list);
 

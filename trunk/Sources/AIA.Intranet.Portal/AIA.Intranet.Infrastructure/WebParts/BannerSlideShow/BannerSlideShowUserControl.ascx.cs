@@ -36,7 +36,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.BannerSlideShow
                 {
                     using (SPWeb web = site.OpenWeb(SPContext.Current.Site.RootWeb.ID))
                     {
-                        SPList spList = CCIUtility.GetListFromURL(Constants.BANNER_LIBRARY_URL, web);
+                        SPList spList = Utility.GetListFromURL(Constants.BANNER_LIBRARY_URL, web);
                         string banners = string.Empty;
                         if (spList != null)
                         {

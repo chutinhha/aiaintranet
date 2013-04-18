@@ -63,105 +63,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
-    <Compile Include="Entities\ConfigurationItem.cs" />
-    <Compile Include="Entities\EmailListItem.cs" />
-    <Compile Include="Entities\ForumCategory.cs" />
-    <Compile Include="Entities\ForumPostItem.cs" />
-    <Compile Include="Entities\LeftMenuItem.cs" />
-    <Compile Include="Entities\MediaItem.cs" />
-    <Compile Include="Entities\ProjectItem.cs" />
-    <Compile Include="Entities\SiteMapMapping.cs" />
-    <Compile Include="Entities\Stationery.cs" />
-    <Compile Include="Entities\StationeryItem.cs" />
-    <Compile Include="Entities\StatisticItem.cs" />
-    <Compile Include="Entities\TaskItem.cs" />
-    <Compile Include="Entities\TaskStatistics.cs" />
-    <Compile Include="Entities\TimesheetItem.cs" />
-    <Compile Include="EntityMapping.cs" />
-    <Compile Include="Infrastructure\NavigationUpdateProperties.cs" />
-    <Compile Include="Infrastructure\RemindBirthDaySetting.cs" />
-    <Compile Include="Infrastructure\UnreadContentNotificationSetting.cs" />
-    <Compile Include="IOfficeContentType.cs" />
-    <Compile Include="EEC\Constants.cs" />
-    <Compile Include="EEC\EECSettings.cs" />
-    <Compile Include="Entities\BaseEntity.cs" />
-    <Compile Include="Entities\CommentItem.cs" />
-    <Compile Include="Entities\Department.cs" />
-    <Compile Include="Entities\EmailTemplate.cs" />
-    <Compile Include="Entities\Employee.cs" />
-    <Compile Include="Entities\FieldAttribute.cs" />
-    <Compile Include="Entities\LinkItem.cs" />
-    <Compile Include="Entities\Navigation.cs" />
-    <Compile Include="Entities\NewsItem.cs" />
-    <Compile Include="Entities\OrgChartNode.cs" />
-    <Compile Include="Entities\PictureItem.cs" />
-    <Compile Include="Entities\UserInfomation.cs" />
-    <Compile Include="Enums.cs" />
-    <Compile Include="Infrastructure\ADGroup.cs" />
-    <Compile Include="Infrastructure\ADProperties.cs" />
-    <Compile Include="Infrastructure\ADSetting.cs" />
-    <Compile Include="Infrastructure\ADUser.cs" />
-    <Compile Include="Infrastructure\AutoAlertSettings.cs" />
-    <Compile Include="Infrastructure\AutoCreationSettings.cs" />
-    <Compile Include="Infrastructure\CCIProxy.cs" />
-    <Compile Include="Infrastructure\CustomSettingDefinition.cs" />
-    <Compile Include="Infrastructure\EmailTemplateSettings.cs" />
-    <Compile Include="Infrastructure\EmailVariable.cs" />
-    <Compile Include="Infrastructure\ErrorCodes.cs" />
-    <Compile Include="Infrastructure\ErrorMessage.cs" />
-    <Compile Include="Infrastructure\FeatureDefinition.cs" />
-    <Compile Include="Infrastructure\FieldPermission.cs" />
-    <Compile Include="Infrastructure\FieldPermissionSettings.cs" />
-    <Compile Include="Infrastructure\Assignement.cs" />
-    <Compile Include="Infrastructure\ItemDiscussionProperties.cs" />
-    <Compile Include="Infrastructure\ListInstanceDefinition.cs" />
-    <Compile Include="Infrastructure\ListInstancePermission.cs" />
-    <Compile Include="Infrastructure\LookupFieldDefinition.cs" />
-    <Compile Include="Infrastructure\NotificationSetings.cs" />
-    <Compile Include="Infrastructure\PermissionAssigment.cs" />
-    <Compile Include="Infrastructure\RedirectSettings.cs" />
-    <Compile Include="Infrastructure\Rule.cs" />
-    <Compile Include="Infrastructure\SecuritySettings.cs" />
-    <Compile Include="Infrastructure\WebDefinition.cs" />
-    <Compile Include="Infrastructure\WebpartPageDefinition.cs" />
-    <Compile Include="IOfficeColumnId.cs" />
-    <Compile Include="IOfficeTemplateId.cs" />
-    <Compile Include="IPForm\CustomFormSettings.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Report\CellAttribute.cs" />
-    <Compile Include="Report\ExcelReportSample.cs" />
-    <Compile Include="Report\MySampleReport.cs" />
-    <Compile Include="Report\PlaceHolderAttribute.cs" />
-    <Compile Include="Report\PlaceHolderType.cs" />
-    <Compile Include="Report\ReportBase.cs" />
-    <Compile Include="Search\Criteria.cs" />
-    <Compile Include="Search\Settings\FieldSetting.cs" />
-    <Compile Include="Search\Settings\SearchCriteriaEditorSettings.cs" />
-    <Compile Include="Search\Settings\SearchResultsEditorSettings.cs" />
-    <Compile Include="Search\Settings\SearchSettings.cs" />
-    <Compile Include="SessionManager.cs" />
-    <Compile Include="SettingBase.cs" />
-    <Compile Include="Workflow\ApprovalConfiguration.cs" />
-    <Compile Include="Workflow\ApprovalWFApprover.cs">
+    <Compile Include="Entities\FieldAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Workflow\ApprovalWFAssociationData.cs" />
-    <Compile Include="Workflow\ApprovalWFData.cs" />
-    <Compile Include="Workflow\ApprovalWFInitiation.cs" />
-    <Compile Include="Workflow\ApprovalWFInitiationData.cs" />
-    <Compile Include="Workflow\ApprovalWorkflowParameter.cs" />
-    <Compile Include="Workflow\EmailVariable.cs" />
-    <Compile Include="Workflow\InfoPathAttachment.cs" />
-    <Compile Include="Workflow\Parameter.cs" />
-    <Compile Include="Workflow\SendRelatedDocumentsSettings.cs" />
-    <Compile Include="Workflow\TaskActionSettings.cs" />
-    <Compile Include="Workflow\TaskDetail.cs" />
-    <Compile Include="Workflow\TaskEventHandlerParameter.cs" />
-    <Compile Include="Workflow\TaskEventSettings.cs" />
-    <Compile Include="Workflow\TaskFormOption.cs" />
-    <Compile Include="Workflow\TaskInfo.cs" />
-    <Compile Include="Workflow\TaskResultSettings.cs" />
-    <Compile Include="Workflow\TaskRuleSettings.cs" />
+    <Compile Include="Entities\LeftMenuItem.cs" />
+    <Compile Include="Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\NewsItem.cs" />
+    <Compile Include="Infrastructure\Assignement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\AutoCreationSettings.cs" />
+    <Compile Include="Infrastructure\CustomSettingDefinition.cs" />
+    <Compile Include="Infrastructure\FeatureDefinition.cs" />
+    <Compile Include="Infrastructure\ListInstanceDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\WebDefinition.cs" />
+    <Compile Include="Infrastructure\WebpartPageDefinition.cs" />
+    <Compile Include="AIATemplateId.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AIA.Intranet.Portal.snk" />

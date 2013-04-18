@@ -127,7 +127,7 @@ namespace AIA.Intranet.Common.Extensions
             }
             catch (Exception ex)
             {
-                CCIUtility.LogError(ex);
+                Utility.LogError(ex);
             }
             finally
             {
@@ -209,7 +209,7 @@ namespace AIA.Intranet.Common.Extensions
                     catch (Exception ex)
                     {
 
-                        CCIUtility.LogError(ex.Message + ex.StackTrace, IOfficeFeatures.Infrastructure);
+                        Utility.LogError(ex.Message + ex.StackTrace, AIAPortalFeatures.Infrastructure);
                     }
                    
                 }
@@ -339,7 +339,7 @@ namespace AIA.Intranet.Common.Extensions
                 return list.GetItemById(id);
             }
             catch  {
-                CCIUtility.LogError("The list item id = " +  id.ToString() + " doesn't exist in list " +  list.RootFolder.Url, "AIA.Intranet.Common");
+                Utility.LogError("The list item id = " +  id.ToString() + " doesn't exist in list " +  list.RootFolder.Url, "AIA.Intranet.Common");
             }
             return null;
         }
@@ -411,14 +411,14 @@ namespace AIA.Intranet.Common.Extensions
             return (list.GetItems(query).Count == 0 );
         }
         
-        public static T GetCustomSettings<T>(this SPList list, IOfficeFeatures featureName)
+        public static T GetCustomSettings<T>(this SPList list, AIAPortalFeatures featureName)
         {
             return list.GetCustomSettings<T>(featureName, true);
         }
 
-        public static T GetCustomSettings<T>(this SPList list, IOfficeFeatures featureName, bool lookupInParent)
+        public static T GetCustomSettings<T>(this SPList list, AIAPortalFeatures featureName, bool lookupInParent)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             string settingsXml = list.GetCustomProperty(strKey);
 
             if (!string.IsNullOrEmpty(settingsXml))
@@ -430,9 +430,9 @@ namespace AIA.Intranet.Common.Extensions
             return default(T);
         }
 
-        public static void SetCustomSettings<T>(this SPList list, IOfficeFeatures featureName, T settingsObject)
+        public static void SetCustomSettings<T>(this SPList list, AIAPortalFeatures featureName, T settingsObject)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             string settingsXml = SerializationHelper.SerializeToXml<T>(settingsObject);
             list.SetCustomProperty(strKey, settingsXml);
         }
@@ -501,7 +501,7 @@ namespace AIA.Intranet.Common.Extensions
                         }
                         catch(Exception e)
                         {
-                            CCIUtility.LogError("Add contenttype error: " + e.Message, "AIA.Intranet.Common");
+                            Utility.LogError("Add contenttype error: " + e.Message, "AIA.Intranet.Common");
                         }
                         finally
                         {
@@ -531,9 +531,9 @@ namespace AIA.Intranet.Common.Extensions
             return ctIdReturn;
         }
 
-        public static void RemoveCustomSettings<T>(this SPList list, IOfficeFeatures featureName)
+        public static void RemoveCustomSettings<T>(this SPList list, AIAPortalFeatures featureName)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
 
             SPFolder rootFolder = list.RootFolder;
             rootFolder.Properties.Remove(strKey);
@@ -699,7 +699,7 @@ namespace AIA.Intranet.Common.Extensions
             }
             catch (Exception ex)
             {
-                CCIUtility.LogError(ex.Message, "AIA.Intranet.Common");
+                Utility.LogError(ex.Message, "AIA.Intranet.Common");
             }
         }
 
@@ -770,7 +770,7 @@ namespace AIA.Intranet.Common.Extensions
             }
             catch (Exception ex)
             {
-                CCIUtility.LogError("SetPermissionForList " + ex.ToString(), "AIA.Intranet.Common.Extensions");
+                Utility.LogError("SetPermissionForList " + ex.ToString(), "AIA.Intranet.Common.Extensions");
                 throw;
             }
         }

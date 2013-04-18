@@ -33,7 +33,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                 {
                     using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
                     {
-                        var opinionList = CCIUtility.GetListFromURL(Constants.OPINION_LIST_URL, web);
+                        var opinionList = Utility.GetListFromURL(Constants.OPINION_LIST_URL, web);
                         if (opinionList != null)
                         {
                             //ffContent.ListId = opinionList.ID;
@@ -68,7 +68,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                     {
                         using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
                         {
-                            var opinionList = CCIUtility.GetListFromURL(Constants.OPINION_LIST_URL, web);
+                            var opinionList = Utility.GetListFromURL(Constants.OPINION_LIST_URL, web);
                             if (opinionList != null)
                             {
                                 string emailAddress = GetEmailByEnquiry(web, int.Parse(ddlTypeOfEnquiry.SelectedValue));
@@ -135,7 +135,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
             string email = string.Empty;
             try
             {
-                var enquiryList = CCIUtility.GetListFromURL(Constants.TYPE_OF_ENQUIRY_LIST_URL, web);
+                var enquiryList = Utility.GetListFromURL(Constants.TYPE_OF_ENQUIRY_LIST_URL, web);
                 if (enquiryList != null)
                 {
                     SPListItem item = enquiryList.GetItemById(id);
@@ -166,7 +166,7 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                 {
                     using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
                     {
-                        var enquiryList = CCIUtility.GetListFromURL(Constants.TYPE_OF_ENQUIRY_LIST_URL, web);
+                        var enquiryList = Utility.GetListFromURL(Constants.TYPE_OF_ENQUIRY_LIST_URL, web);
                         if (enquiryList != null)
                         {
                             var spListItemCollection = enquiryList.GetItems();

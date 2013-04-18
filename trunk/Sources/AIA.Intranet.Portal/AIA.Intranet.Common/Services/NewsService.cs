@@ -56,7 +56,7 @@ namespace AIA.Intranet.Common.Services
 
         public static List<Model.Entities.NewsItem> GetLastestNews(int itemCount)
         {
-            var newsList = CCIUtility.GetListFromURL(Constants.NEWS_LIST_URL, SPContext.Current.Web);
+            var newsList = Utility.GetListFromURL(Constants.NEWS_LIST_URL, SPContext.Current.Web);
             if (newsList != null)
                 return GetLastestNews(newsList, itemCount, false);
             return null;
@@ -65,7 +65,7 @@ namespace AIA.Intranet.Common.Services
 
         public static List<Model.Entities.NewsItem> GetLastestNews(int itemCount, bool hotNewsOnly)
         {
-            var newsList = CCIUtility.GetListFromURL(Constants.NEWS_LIST_URL, SPContext.Current.Web);
+            var newsList = Utility.GetListFromURL(Constants.NEWS_LIST_URL, SPContext.Current.Web);
             if (newsList != null)
                 return GetLastestNews(newsList, itemCount, hotNewsOnly);
             return null;

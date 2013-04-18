@@ -66,7 +66,7 @@ namespace AIA.Intranet.Common.Extensions
                 }
             }
             catch {
-                CCIUtility.LogInfo("The field : " + field.Title + " doesn't exit in target list id" + targetListId, "AIA.Intranet.Common");
+                Utility.LogInfo("The field : " + field.Title + " doesn't exit in target list id" + targetListId, "AIA.Intranet.Common");
                 /*field is not existed*/
                 
                 }

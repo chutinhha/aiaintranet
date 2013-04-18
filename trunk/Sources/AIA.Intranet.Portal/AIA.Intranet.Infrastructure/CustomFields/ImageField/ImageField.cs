@@ -54,7 +54,7 @@ namespace AIA.Intranet.Infrastructure.CustomFields
             }
             catch (Exception ex)
             {
-                CCIUtility.LogError(ex);
+                Utility.LogError(ex);
                 
             }
 

@@ -21,7 +21,7 @@ namespace AIA.Intranet.Model.Infrastructure
     [XmlInclude(typeof(ListSettingDefinition))]
     public class CustomSettingDefinition
     {
-        public IOfficeFeatures Feature { get; set; }
+        public AIAPortalFeatures Feature { get; set; }
         public string Object { get; set; }
         public SettingBase Data { get; set; }
         

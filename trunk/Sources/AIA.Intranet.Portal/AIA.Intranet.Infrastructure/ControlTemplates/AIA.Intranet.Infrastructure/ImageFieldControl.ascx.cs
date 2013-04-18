@@ -76,7 +76,7 @@ namespace AIA.Intranet.Infrastructure.Controls
                                     SPListItem picture = pictureLibrary.GetItemById(fieldProperties.DefaultPictureId);
 
                                     // Display the thumbnail in the picture
-                                    imgDefaultPicture.ImageUrl = CCIUtility.GetRelativeUrl(picture["EncodedAbsThumbnailUrl"].ToString());
+                                    imgDefaultPicture.ImageUrl = Utility.GetRelativeUrl(picture["EncodedAbsThumbnailUrl"].ToString());
                                     
                                 }
                                 imgDefaultPicture.Visible = true;

@@ -11,7 +11,6 @@ using AIA.Intranet.Common.Extensions;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Utilities;
 using AIA.Intranet.Model;
-using AIA.Intranet.Model.Security;
 using System.Text;
 using System.IO;
 using System.Xml;
@@ -354,7 +353,7 @@ namespace AIA.Intranet.Common.Extensions
                                 catch
                                 {
                                     destinationItem[destField.Title] = oldValue;
-                                    CCIUtility.LogInfo("CopyMetaData " + destField.Title + " is not metadata of " + listItem.Title + ":" + listItem.Name, "AIA.Intranet.Common");
+                                    Utility.LogInfo("CopyMetaData " + destField.Title + " is not metadata of " + listItem.Title + ":" + listItem.Name, "AIA.Intranet.Common");
                                 }
                             }
                         }
@@ -364,7 +363,7 @@ namespace AIA.Intranet.Common.Extensions
                 }
                 catch (Exception ex)
                 {
-                    CCIUtility.LogError(ex.Message + ex.StackTrace, "AIA.Intranet.Common");
+                    Utility.LogError(ex.Message + ex.StackTrace, "AIA.Intranet.Common");
                     Thread.Sleep(1000);
                 }
             }
@@ -400,14 +399,14 @@ namespace AIA.Intranet.Common.Extensions
             //catch { }
         }
 
-        public static T GetCustomSettings<T>(this SPListItem listItem, IOfficeFeatures featureName)
+        public static T GetCustomSettings<T>(this SPListItem listItem, AIAPortalFeatures featureName)
         {
             return listItem.GetCustomSettings<T>(featureName, true);
         }
 
-        public static T GetCustomSettings<T>(this SPListItem listItem, IOfficeFeatures featureName, bool lookupInParent)
+        public static T GetCustomSettings<T>(this SPListItem listItem, AIAPortalFeatures featureName, bool lookupInParent)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             string settingsXml = listItem.GetCustomProperty(strKey);
 
             //CCIUtility.LogError(settingsXml, CCIappFeatureNames.CCIappEEC);
@@ -423,17 +422,17 @@ namespace AIA.Intranet.Common.Extensions
             return objReturn;
         }
 
-        public static void SetCustomSettings<T>(this SPListItem listItem, IOfficeFeatures featureName, T settingsObject)
+        public static void SetCustomSettings<T>(this SPListItem listItem, AIAPortalFeatures featureName, T settingsObject)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             string settingsXml = SerializationHelper.SerializeToXml<T>(settingsObject);
             //CCIUtility.LogError(settingsXml, CCIappFeatureNames.CCIappEEC);
             listItem.SetCustomProperty(strKey, settingsXml);
         }
 
-        public static void RemoveCustomSettings<T>(this SPListItem listItem, IOfficeFeatures featureName)
+        public static void RemoveCustomSettings<T>(this SPListItem listItem, AIAPortalFeatures featureName)
         {
-            string strKey = CCIUtility.BuildKey<T>(featureName);
+            string strKey = Utility.BuildKey<T>(featureName);
             listItem.Properties.Remove(strKey);
             listItem.SystemUpdate();
         }
@@ -443,29 +442,6 @@ namespace AIA.Intranet.Common.Extensions
             byte[] content = listItem.File.OpenBinary();
             SPFile destFile = destFolder.Files.Add(destFolder.ServerRelativeUrl + "/" + listItem.File.Name, content);
             return destFile.Item;
-        }
-
-        public static void SetReviewColumnValue(this SPListItem listItem, string reviewColumn)
-        {
-            try
-            {
-                if (listItem.Fields.ContainFieldId(new Guid(reviewColumn)))
-                {
-                    string text = CCIUtility.ExtractWordContent(listItem.File);
-                    // WordprocessingDocument Wordprocessingdocument = WordprocessingDocument.Open(listItem.File.OpenBinaryStream(), true);
-                    //Body body = Wordprocessingdocument.MainDocumentPart.Document.Body;
-
-                    if (text.Length > 10000)
-                    {
-                        text = text.Substring(0, 10000);
-                    }
-                    listItem[new Guid(reviewColumn)] = text;
-                }
-            }
-            catch (Exception ex)
-            {
-
-            }
         }
 
         public static void UpdateFieldValue(this SPListItem item, SPField updatedField, string data)
@@ -549,13 +525,6 @@ namespace AIA.Intranet.Common.Extensions
                     }
 
                     item[updatedField.Id] = fieldValues;
-                    break;
-
-                case SPFieldType.Invalid:
-                    if (string.Compare(updatedField.TypeAsString, Constants.LOOKUP_WITH_PICKER_TYPE_NAME, true) == 0)
-                    {
-                        item[updatedField.Id] = data;
-                    }
                     break;
             }
         }
@@ -663,33 +632,6 @@ namespace AIA.Intranet.Common.Extensions
             return item.ParentList.GetItemByUniqueId(item.UniqueId);
         }
 
-        public static string GetPictureUrl(this SPListItem listItem, ImageSize imageSize)
-        {
-            StringBuilder url = new StringBuilder();
-            // Build the url up until the final portion
-            url.Append(SPEncode.UrlEncodeAsUrl(listItem.Web.Url));
-            url.Append('/');
-            url.Append(SPEncode.UrlEncodeAsUrl(listItem.ParentList.RootFolder.Url));
-            url.Append('/');
-
-            // Determine the final portion based on the requested image size
-            string filename = listItem.File.Name;
-            if (imageSize == ImageSize.Full)
-            {
-                url.Append(SPEncode.UrlEncodeAsUrl(filename));
-            }
-            else
-            {
-                string basefilename = Path.GetFileNameWithoutExtension(filename);
-                string extension = Path.GetExtension(filename);
-                string dir = (imageSize == ImageSize.Thumbnail) ? "_t/" : "_w/";
-                url.Append(dir);
-                url.Append(SPEncode.UrlEncodeAsUrl(basefilename));
-                url.Append(SPEncode.UrlEncodeAsUrl(extension).Replace('.', '_'));
-                url.Append(".jpg");
-            }
-            return url.ToString();
-        }
 
         public static List<SPPrincipal> GetEffectivePrincipals(this SPListItem item, params SPBasePermissions[] permissions){
             List<SPPrincipal> users = new List<SPPrincipal>();
