@@ -69,12 +69,13 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                         using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
                         {
                             var opinionList = Utility.GetListFromURL(Constants.OPINION_LIST_URL, web);
-                            if (opinionList != null)
+                            var enquiryList = Utility.GetListFromURL(Constants.TYPE_OF_ENQUIRY_LIST_URL, web);
+                            if (opinionList != null && enquiryList != null)
                             {
                                 string emailAddress = GetEmailByEnquiry(web, int.Parse(ddlTypeOfEnquiry.SelectedValue));
                                 if (string.IsNullOrEmpty(emailAddress))
                                 {
-                                    string internalEmail = opinionList.GetCustomProperty(Constants.CONTACT_INTERNAL_EMAIL_PROPERTY);
+                                    string internalEmail = enquiryList.GetCustomProperty(Constants.CONTACT_INTERNAL_EMAIL_PROPERTY);
                                     if (!string.IsNullOrEmpty(internalEmail))
                                     {
                                         string[] internalEmailArray = internalEmail.Split(',');
@@ -84,31 +85,43 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                                             emailAddress += user.Email + ";";
                                         }
                                     }
-                                    string externalEmail = opinionList.GetCustomProperty(Constants.CONTACT_EXTERNAL_EMAIL_PROPERTY);
+                                    string externalEmail = enquiryList.GetCustomProperty(Constants.CONTACT_EXTERNAL_EMAIL_PROPERTY);
                                     if (!string.IsNullOrEmpty(externalEmail))
                                     {
                                         emailAddress += externalEmail;
                                     }
                                 }
-                                
-                                string emailTitle = opinionList.GetCustomProperty(Constants.CONTACT_TITLE_EMAIL_PROPERTY);
-                                string isAddDate = opinionList.GetCustomProperty(Constants.CONTACT_ADD_DATE_EMAIL_PROPERTY);
-                                if (!string.IsNullOrEmpty(isAddDate) && bool.Parse(isAddDate))
-                                {
-                                    emailTitle = string.Format("[{0}] - {1}", ddlTypeOfEnquiry.SelectedItem.Text, emailTitle);
-                                }
 
+                                string emailTitle = enquiryList.GetCustomProperty(Constants.CONTACT_TITLE_EMAIL_PROPERTY);
                                 if (string.IsNullOrEmpty(emailTitle))
                                 {
                                     emailTitle = opinionList.Title;
                                 }
 
-                                string emailBody = txtContent.Text;
-                                string emailBodySetting = opinionList.GetCustomProperty(Constants.CONTACT_BODY_HTML_EMAIL_PROPERTY);
+                                string isAddDate = enquiryList.GetCustomProperty(Constants.CONTACT_ADD_DATE_EMAIL_PROPERTY);
+                                if (!string.IsNullOrEmpty(isAddDate) && bool.Parse(isAddDate))
+                                {
+                                    emailTitle = string.Format("[{0}] - {1}", ddlTypeOfEnquiry.SelectedItem.Text, emailTitle);
+                                }
+
+                                //string emailHeader = enquiryList.GetCustomProperty(Constants.CONTACT_HEADER_EMAIL_PROPERTY);
+
+                                string emailBodySetting = enquiryList.GetCustomProperty(Constants.CONTACT_BODY_HTML_EMAIL_PROPERTY);
+                                string emailBody = txtContent.Text.Replace("\r", "<br />").Replace("\n", "<br />");
+
                                 if (!string.IsNullOrEmpty(emailBodySetting))
                                 {
-                                    emailBody = string.Format(emailBodySetting, txtContent.Text.Replace("\r", "<br />").Replace("\n", "<br />"));
+                                    try
+                                    {
+                                        emailBody = string.Format(emailBodySetting, emailBody);
+                                    }
+                                    catch
+                                    {
+                                        emailBody = txtContent.Text.Replace("\r", "<br />").Replace("\n", "<br />");
+                                    }
+                                    
                                 }
+
                                 web.AllowUnsafeUpdates = true;
                                 SPListItem spListItem = opinionList.Items.Add();
                                 spListItem["Title"] = emailTitle;

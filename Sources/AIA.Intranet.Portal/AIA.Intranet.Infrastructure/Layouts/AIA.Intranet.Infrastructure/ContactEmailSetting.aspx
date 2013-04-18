@@ -86,7 +86,7 @@
                 </wssuc:InputFormControl>
             </Template_InputFormControls>
         </wssuc:InputFormSection>
-        <wssuc:InputFormSection ID="InputFormSection4" Title="Email title" Description="Title of email" runat="server">
+        <wssuc:InputFormSection ID="InputFormSection4" Title="Email body" Description="Body of email format" runat="server">
             <Template_InputFormControls>
                 <wssuc:InputFormControl ID="InputFormControl4" runat="server">
                     <Template_Control>

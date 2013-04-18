@@ -28,6 +28,7 @@ namespace AIA.Intranet.Model
        public const string CONTACT_TITLE_EMAIL_PROPERTY = "CONTACT_TITLE_EMAIL_PROPERTY";
        public const string CONTACT_BODY_HTML_EMAIL_PROPERTY = "CONTACT_BODY_HTML_EMAIL_PROPERTY";
        public const string CONTACT_ADD_DATE_EMAIL_PROPERTY = "CONTACT_ADD_DATE_EMAIL_PROPERTY";
+       public const string CONTACT_HEADER_EMAIL_PROPERTY = "CONTACT_HEADER_EMAIL_PROPERTY";
 
        public const string TYPE_OF_ENQUIRY_LIST_URL = "/Lists/TypeOfEnquiry";
        public const string OPINION_LIST_URL = "/Lists/Opinions";
