@@ -139,21 +139,24 @@ namespace AIA.Intranet.Infrastructure.WebParts.ContactSend
                 if (enquiryList != null)
                 {
                     SPListItem item = enquiryList.GetItemById(id);
-                    SPFieldUserValueCollection userValueCollection = new SPFieldUserValueCollection(web, item["InternalEmail"].ToString());
-                    if (userValueCollection != null && userValueCollection.Count > 0)
+                    if (item["InternalEmail"] != null)
                     {
-                        foreach (SPFieldUserValue us in userValueCollection)
+                        SPFieldUserValueCollection userValueCollection = new SPFieldUserValueCollection(web, item["InternalEmail"].ToString());
+                        if (userValueCollection != null && userValueCollection.Count > 0)
                         {
-                            email += us.User.Email + ";";
+                            foreach (SPFieldUserValue us in userValueCollection)
+                            {
+                                email += us.User.Email + ";";
+                            }
                         }
                     }
+                                        
                     email += (item["ExternalEmail"] == null ? string.Empty : item["ExternalEmail"].ToString());
                 }
             }
             catch (Exception ex)
             {
-                
-                throw;
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
             return email;
         }
