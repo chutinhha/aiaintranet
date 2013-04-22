@@ -14,7 +14,7 @@ namespace AIA.Intranet.Infrastructure.ContentTypes
     {
         public override void ItemAdding(SPItemEventProperties properties)
         {
-            IncreaseItemOrderNo(properties);
+            IncreaseItemOrderNo(properties, false);
         }
 
         /// <summary>
@@ -22,10 +22,10 @@ namespace AIA.Intranet.Infrastructure.ContentTypes
         /// </summary>
         public override void ItemUpdating(SPItemEventProperties properties)
         {
-            IncreaseItemOrderNo(properties);
+            IncreaseItemOrderNo(properties, true);
         }
 
-        private void IncreaseItemOrderNo(SPItemEventProperties properties)
+        private void IncreaseItemOrderNo(SPItemEventProperties properties, bool isUpdate)
         {
             if (properties.AfterProperties[Constants.ORDER_NUMBER_COLUMN] != null && !string.IsNullOrEmpty(properties.AfterProperties[Constants.ORDER_NUMBER_COLUMN].ToString()))
             {
@@ -64,7 +64,8 @@ namespace AIA.Intranet.Infrastructure.ContentTypes
             }
             else
             {
-                properties.AfterProperties[Constants.ORDER_NUMBER_COLUMN] = GetLatestItemOrderNo(properties) + 1;
+                if (!isUpdate)
+                    properties.AfterProperties[Constants.ORDER_NUMBER_COLUMN] = GetLatestItemOrderNo(properties) + 1;
             }
         }
 
