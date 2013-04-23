@@ -167,77 +167,94 @@
       <Title>Column 4 Content Editor</Title>
       <ZoneId>LeftBelow</ZoneId>
       <Content>
-        <![CDATA[<div class="services">
-                  <div class="col_1">
-                    <div class="fr divImg">
-                      <!--<img src="news/AIA_homepage_individuals_v3.jpg">-->
-                    </div>
-                    <div class="divContent">
-                      <h2 class="h2_black">Individuals</h2>
-                      <ul class="link_services">
-                        <li>
-                          <a href="#">Investor Relations Overview </a>
-                        </li>
-                        <li>
-                          <a href="#">Share Information</a>
-                        </li>
-                        <li>
-                          <a href="#">Results and Presentations</a>
-                        </li>
-                        <li>
-                          <a href="#">Credit Ratings</a>
-                        </li>
-                        <li>
-                          <a href="#">News</a>
-                        </li>
-                        <li>
-                          <a href="#">Financial Calendar</a>
-                        </li>
-                        <li>
-                          <a href="#">AGM/EGM</a>
-                        </li>
-                        <li>
-                          <a href="#">Corporate Governance</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col_2">
-                    <div class="fr divImg">
-                      <!--<img src="news/AIA_homepage_Corporations.jpg">-->
-                    </div>
-                    <div class="divContent">
-                      <h2 class="h2_black">Individuals</h2>
-                      <ul class="link_services">
-                        <li>
-                          <a href="#">Investor Relations Overview </a>
-                        </li>
-                        <li>
-                          <a href="#">Share Information</a>
-                        </li>
-                        <li>
-                          <a href="#">Results and Presentations</a>
-                        </li>
-                        <li>
-                          <a href="#">Credit Ratings</a>
-                        </li>
-                        <li>
-                          <a href="#">News</a>
-                        </li>
-                        <li>
-                          <a href="#">Financial Calendar</a>
-                        </li>
-                        <li>
-                          <a href="#">AGM/EGM</a>
-                        </li>
-                        <li>
-                          <a href="#">Corporate Governance</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                </div>]]>
+        <![CDATA[<div style="border-width: 2px 1px 3px; border-style: solid; border-color: rgb(240, 152, 174); float: left; width: 100%;">
+	<div style="border-bottom: 4px solid rgb(211, 17, 69); float: left; width: 100%;">
+		<div class="scroll_b" style="float: left; width: 100%;">
+			<div class="col_1" style="float: left; width: 50%;">
+				<div class="divContent">
+				  <h2 class="h2_black">Individuals</h2>
+				  <ul class="link_a">
+					<li>
+					  <a href="#">Investor Relations Overview </a>
+					</li>
+					<li>
+					  <a href="#">Share Information</a>
+					</li>
+					<li>
+					  <a href="#">Results and Presentations</a>
+					</li>
+					<li>
+					  <a href="#">Credit Ratings</a>
+					</li>
+					<li>
+					  <a href="#">News</a>
+					</li>
+					<li>
+					  <a href="#">Financial Calendar</a>
+					</li>
+					<li>
+					  <a href="#">AGM/EGM</a>
+					</li>
+					<li>
+					  <a href="#">Corporate Governance</a>
+					</li>
+					<li>
+					  <a href="#">Financial Calendar</a>
+					</li>
+					<li>
+					  <a href="#">AGM/EGM</a>
+					</li>
+					<li>
+					  <a href="#">Corporate Governance</a>
+					</li>
+				  </ul>
+				</div>
+			</div>
+			<div class="col_2" style="float: left; width: 50%;">
+				<div class="divContent">
+				  <h2 class="h2_black">Individuals</h2>
+				  <ul class="link_a">
+					<li>
+					  <a href="#">Investor Relations Overview </a>
+					</li>
+					<li>
+					  <a href="#">Share Information</a>
+					</li>
+					<li>
+					  <a href="#">Results and Presentations</a>
+					</li>
+					<li>
+					  <a href="#">Credit Ratings</a>
+					</li>
+					<li>
+					  <a href="#">News</a>
+					</li>
+					<li>
+					  <a href="#">Financial Calendar</a>
+					</li>
+					<li>
+					  <a href="#">AGM/EGM</a>
+					</li>
+					<li>
+					  <a href="#">Corporate Governance</a>
+					</li>
+					<li>
+					  <a href="#">Financial Calendar</a>
+					</li>
+					<li>
+					  <a href="#">AGM/EGM</a>
+					</li>
+					<li>
+					  <a href="#">Corporate Governance</a>
+					</li>
+				  </ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+]]>
       </Content>
       <Index>0</Index>
       <Hidden>false</Hidden>
