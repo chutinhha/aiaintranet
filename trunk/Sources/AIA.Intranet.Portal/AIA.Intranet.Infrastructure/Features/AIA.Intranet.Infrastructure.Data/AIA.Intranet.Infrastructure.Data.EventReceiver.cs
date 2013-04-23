@@ -80,8 +80,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Data
             }
             catch (Exception ex)
             {
-                
-                throw;
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
         }
         #endregion Functions

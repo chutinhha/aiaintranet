@@ -143,6 +143,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Site
             }
             catch (Exception ex)
             {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
 
             }
         }
@@ -157,8 +158,9 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Site
                 web.Features.Add(new Guid(Constants.DATA_FEATURE_ID));
                 web.Features.Add(new Guid(Constants.NEWS_FEATURE_ID));
             }
-            catch
+            catch(Exception ex)
             {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
            
         }
@@ -176,6 +178,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Site
             }
             catch (Exception ex)
             {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
 
             }
         }
@@ -220,7 +223,10 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Site
                     }
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
+            }
         }
 
         private void ProvisionLeftMenu(SPWeb web)
