@@ -253,3 +253,14 @@ margin:0; padding:0;
 .links_navigator>span>table{
 	display:none;
 }
+
+.link_a a
+{
+    background: url(../images/icons.png) no-repeat left -92px;
+	color: #666666;
+	font-size:11px;
+	padding-left:8px
+}
+.scroll_b{
+	width: 100% !important;
+}

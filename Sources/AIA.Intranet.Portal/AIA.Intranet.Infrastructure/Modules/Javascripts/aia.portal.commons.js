@@ -3,11 +3,11 @@
 var isIE7orBelow = false;
 try { JSON } catch (err) { isIE7orBelow = true; };
 
+var inDesignMode;
+var wikiInEditMode;
+
 $(document).ready(function () {
     //disable slimScroll in Edit mode
-    var inDesignMode;
-    var wikiInEditMode;
-
     try {
         inDesignMode = document.forms[MSOWebPartPageFormName].MSOLayout_InDesignMode.value;
     } catch (err) { }
@@ -20,6 +20,12 @@ $(document).ready(function () {
         $('.scroll_a').slimScroll({
             start: 'top',
             disableFadeOut: true
+        });
+
+        $('.scroll_b').slimScroll({
+            start: 'top',
+            disableFadeOut: true,
+            height: '150px'
         });
     }
 
