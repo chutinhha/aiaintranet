@@ -80,8 +80,9 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
                 web.UpdateCustomSetting(settings);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
 
             }
         }
@@ -193,6 +194,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
             }
             catch (Exception ex)
             {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
         }
 
@@ -229,8 +231,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
             }
             catch (Exception ex)
             {
-                
-                throw;
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
         }
 

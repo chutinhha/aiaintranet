@@ -8,6 +8,7 @@ using System.Reflection;
 using AIA.Intranet.Common.Helpers;
 using AIA.Intranet.Model.Infrastructure;
 using AIA.Intranet.Common.Extensions;
+using AIA.Intranet.Common.Utilities;
 
 namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Clustered
 {
@@ -73,8 +74,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Clust
             }
             catch (Exception ex)
             {
-
-                throw;
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
         }
         #endregion Functions
