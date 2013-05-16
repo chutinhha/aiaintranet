@@ -541,6 +541,7 @@
     <Content Include="Features\AIA.Intranet.Infrastructure.Single\AIA.Intranet.Infrastructure.Single.Template.xml">
       <DependentUpon>AIA.Intranet.Infrastructure.Single.feature</DependentUpon>
     </Content>
+    <Content Include="Images\favicon.ico" />
     <Content Include="Images\html16.png" />
     <Content Include="Layouts\AIA.Intranet.Infrastructure\ContactEmailSetting.aspx">
       <SubType>ASPXCodeBehind</SubType>
@@ -573,7 +574,9 @@
     <Content Include="ListDefinitions\OpinionDefinition\Schema.xml" />
     <Content Include="ListDefinitions\LeftMenuListDefinition\Elements.xml" />
     <Content Include="ListDefinitions\LeftMenuListDefinition\LeftMenuListInstance\Elements.xml" />
-    <Content Include="ListDefinitions\LeftMenuListDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\LeftMenuListDefinition\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ListDefinitions\MenuListDefinition\Elements.xml" />
     <Content Include="ListDefinitions\MenuListDefinition\FooterMenuListInstance\Elements.xml" />
     <Content Include="ListDefinitions\MenuListDefinition\Schema.xml" />
@@ -606,7 +609,9 @@
     <Content Include="ListInstances\SiteImage\Elements.xml" />
     <Content Include="Modules\ClusteredPages\Elements.xml" />
     <Content Include="Modules\DefaultPicture\Clustered-Departments.jpg" />
-    <Content Include="Modules\DefaultPicture\Elements.xml" />
+    <Content Include="Modules\DefaultPicture\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Modules\DefaultPicture\Single-Department.jpg" />
     <Content Include="Modules\Javascripts\aia.portal.commons.js" />
     <Content Include="Modules\Javascripts\Elements.xml" />
@@ -638,6 +643,7 @@
     <Content Include="Modules\PortalImages\Images\closed.gif" />
     <Content Include="Modules\PortalImages\Images\createcontent.png" />
     <Content Include="Modules\PortalImages\Images\excel.png" />
+    <Content Include="Modules\PortalImages\Images\favicon.ico" />
     <Content Include="Modules\PortalImages\Images\folder_open.png" />
     <Content Include="Modules\PortalImages\Images\GP_img_news_01.jpg" />
     <Content Include="Modules\PortalImages\Images\head.png" />

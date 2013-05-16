@@ -46,5 +46,6 @@
     <ProjectItemFile Source="Images\img_video_thumbnail.gif" Target="PortalImages\Images\" Type="ElementFile" />
     <ProjectItemFile Source="Images\GP_img_news_01.jpg" Target="PortalImages\Images\" Type="ElementFile" />
     <ProjectItemFile Source="Images\AIA_hp_employee.jpg" Target="PortalImages\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Images\favicon.ico" Target="PortalImages\Images\" Type="ElementFile" />
   </Files>
 </ProjectItem>

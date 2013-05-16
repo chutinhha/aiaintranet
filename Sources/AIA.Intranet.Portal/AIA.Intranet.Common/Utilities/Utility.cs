@@ -430,5 +430,19 @@ namespace AIA.Intranet.Common.Utilities
         {
             return web.SiteGroups.OfType<SPGroup>().Count(g => g.Name.Equals(name, StringComparison.InvariantCultureIgnoreCase)) > 0;
         }
+
+        public static void ChangeSPGroupOwnerByUser(SPWeb web, string groupName, string ownerName)
+        {
+            SPGroup group = web.Groups[groupName];
+            group.Owner = web.SiteUsers[ownerName];
+            group.Update();
+        }
+
+        public static void ChangeSPGroupOwnerBySPGroup(SPWeb web, string groupName, string groupOwnerName)
+        {
+            SPGroup group = web.Groups[groupName];
+            group.Owner = web.Groups[groupOwnerName];
+            group.Update();
+        }
     }
 }
