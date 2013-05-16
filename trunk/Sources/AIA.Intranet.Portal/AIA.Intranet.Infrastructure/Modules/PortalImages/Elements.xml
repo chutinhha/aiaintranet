@@ -45,5 +45,6 @@
     <File Path="img_video_thumbnail.gif" Url="img_video_thumbnail.gif" Type="GhostableInLibrary" />
     <File Path="GP_img_news_01.jpg" Url="GP_img_news_01.jpg" Type="GhostableInLibrary" />
     <File Path="AIA_hp_employee.jpg" Url="AIA_hp_employee.jpg" Type="GhostableInLibrary" />
+    <File Path="favicon.ico" Url="favicon.ico" Type="GhostableInLibrary" />
 </Module>
 </Elements>

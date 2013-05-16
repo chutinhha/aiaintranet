@@ -213,6 +213,12 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Site
                 string groupVisitors = web.Title.Trim() + " Visitors";
                 web.CreateNewGroup(groupVisitors, "Use this group to grant people read permissions to the SharePoint site: " + web.Title.Trim(), SPRoleType.Reader);
 
+                web.Update();
+
+                Utility.ChangeSPGroupOwnerBySPGroup(web, groupOwners, groupOwners);
+                Utility.ChangeSPGroupOwnerBySPGroup(web, groupMembers, groupOwners);
+                Utility.ChangeSPGroupOwnerBySPGroup(web, groupVisitors, groupOwners);
+
                 SPUser authenUsers = web.EnsureUser("NT AUTHORITY\\authenticated users");
                 if (authenUsers != null)
                 {
