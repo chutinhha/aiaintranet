@@ -70,7 +70,7 @@ $(document).ready(function () {
     }
 
     //force hide _invisibleIfEmpty
-    $("td[name='_invisibleIfEmpty']:not(:has(.ad-gallery))").each(function () {
+    $("td[name='_invisibleIfEmpty']:not(:has(img)):not(:has(.ad-gallery))").each(function () {
         if ($.trim($(this).text()) == "") {
             $(this).hide();
         }
@@ -86,4 +86,15 @@ $(document).ready(function () {
         $("#aspnetForm").css("visibility", "visible");
     }
 
+    //refresh document links when expand a group in Document Library (if any)
+    $("a[onclick*='ExpCollGroup']").bind('click', function () {
+        setTimeout("refreshDocumentLinks()", 2000);
+    });
+    //do the first change after page load
+    refreshDocumentLinks();
 });
+
+function refreshDocumentLinks() {
+    //detect link in Document Library and change the behavior
+    $("div[field='LinkFilename'] a[href*='.pdf']").removeAttr('onclick').attr("target", "_blank");
+}
