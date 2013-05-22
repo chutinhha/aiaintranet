@@ -38,6 +38,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
                 UpdateImageField(web, listNews);
                 CreateNewsListView(web, listNews);
             }
+            //ProvisionWebpart(web, "AIA.Intranet.Infrastructure.XMLCustomSettings.NewsWebParts.xml");
         }
 
 
@@ -228,6 +229,23 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.News
                 view.Title = "Approved Items";
                 view.Update();
                 //list.Update();
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
+            }
+        }
+
+        private void ProvisionWebpart(SPWeb web, string xmlFile)
+        {
+            try
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                string xml = assembly.GetResourceTextFile(xmlFile);
+
+                var webpartPage = SerializationHelper.DeserializeFromXml<WebpartPageDefinitionCollection>(xml);
+
+                WebPartHelper.ProvisionWebpart(web, webpartPage);
             }
             catch (Exception ex)
             {

@@ -3,52 +3,35 @@
   
   <!--Home-->
   <WebpartPageDefinition>
-    <PageUrl>/Pages/Home.aspx</PageUrl>
     
+    <PageUrl>/Pages/Home.aspx</PageUrl>
+
+    <!--Picture-->
     <Webparts xsi:type="ContenEditorWP">
       <Title>Column 1 Content Editor</Title>
-      <ZoneId>Header</ZoneId>
-      <Content>
-        <![CDATA[<div class="whatNews_description">
-                <h1>Single-Department</h1>
-                <h3>Your starting point for getting things done</h3>
-                <p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing of Securities on the Stock Exchange of Hong Kong Limited.</p>
-            </div>]]>
-      </Content>
-      <Index>0</Index>
-      <Hidden>false</Hidden>
-      <AllowDuplicate>false</AllowDuplicate>
-      <Properties>
-        <Add Name="Title" Value="Zone 1 Content Editor" Type="string" ></Add>
-        <Add Name="ChromeType" Value="2" Type="chrometype" />
-      </Properties>
-    </Webparts>
-
-    <Webparts xsi:type="ContenEditorWP">
-      <Title>Column 2 Content Editor</Title>
       <ZoneId>LeftTop</ZoneId>
       <Content>
         <![CDATA[<div class="whatNews_left_unused">
                     <div align="center" class="news_largeItem_unused">
-                        <img class="noMarginB" src="/PictureLibrary/Single-Department.jpg" width="640px">
-                        <!--div align="center" style="margin-bottom:30px"><a href="#" class="button"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what's comming up</a></div-->
+                        <img class="noMarginB" src="/PictureLibrary/Single-Department.jpg" width="100%" style="min-height: 275px;">
                     </div>
-                    <div style="margin-top:10px" class="news_listItems">
+                    <!--<div style="margin-top:10px" class="news_listItems">
                     	<h1>Welcome to GTO Portal</h1>
                     	<p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing. The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing</p><br>
                     	<p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing. The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing</p>
-                    </div>
+                    </div>-->
                 </div>]]>
       </Content>
       <Index>0</Index>
       <Hidden>false</Hidden>
       <AllowDuplicate>false</AllowDuplicate>
       <Properties>
-        <Add Name="Title" Value="Zone 2 Content Editor" Type="string" ></Add>
+        <Add Name="Title" Value="Column 1 Content Editor" Type="string" ></Add>
         <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
     </Webparts>
 
+    <!--News-->
     <Webparts xsi:type="DefaultWP">
       <Title>Home News</Title>
       <ZoneId>RightTop</ZoneId>
@@ -62,7 +45,7 @@
       </Properties>
     </Webparts>
 
-    <Webparts xsi:type="ContenEditorWP">
+    <!--<Webparts xsi:type="ContenEditorWP">
       <Title>Column 3 Content Editor</Title>
       <ZoneId>RightTop</ZoneId>
       <Content>
@@ -97,7 +80,147 @@
         <Add Name="Title" Value="Zone 3 Content Editor" Type="string" ></Add>
         <Add Name="ChromeType" Value="2" Type="chrometype" />
       </Properties>
+    </Webparts>-->
+    
+    <!--Introduction-->
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 2 Content Editor</Title>
+      <ZoneId>TopRow</ZoneId>
+      <Content>
+        <![CDATA[<div class="whatNews_left_unused">
+                    <div style="margin-top:10px" class="news_listItems">
+                    	<h1>Welcome to GTO Portal (Single-Department)</h1>
+                    	<p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing. The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing</p><br>
+                    	<p>The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing. The information presented herein is intended to comply with the relevant disclosure requirements of the Rules Governing The Listing</p>
+                    </div>
+                </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 2 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
     </Webparts>
+    
+    <!--Three column-->
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 3 Content Editor</Title>
+      <ZoneId>CenterLeftColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_3col_right height_box_2">
+                                            <div class="menu">
+                                                <h1>
+                                                    Procedure &amp; Manuals</h1>
+                                            </div>
+
+                                                <div class="content scroll_a h_scroll_2">
+                                                    <h2>
+                                                        Fine a form, Make a claim, applay for Leavel</h2>
+                                                    <h2>
+                                                        <p>
+                                                            Medical Claim Form</p>
+                                                        <a href="#">Who We Are</a>
+                                                    </h2>
+                                                    <h2>
+                                                        <p>
+                                                            Employee Self Service (ESS)</p>
+                                                        <a href="#">Corporate Facts</a>
+                                                    </h2>
+                                                    <br/>
+                                                    <div style="margin-bottom: 14px;">
+                                                        <a class="button" href="#"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what&#39;s comming 
+				                                        up</a></div>
+                                                </div>
+                                                
+                                        </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 3 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 4 Content Editor</Title>
+      <ZoneId>CenterColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_3col_right height_box_2">
+                                            <div class="menu">
+                                                <h1>
+                                                    Procedure &amp; Manuals</h1>
+                                            </div>
+
+                                                <div class="content scroll_a h_scroll_2">
+                                                    <h2>
+                                                        Fine a form, Make a claim, applay for Leavel</h2>
+                                                    <h2>
+                                                        <p>
+                                                            Medical Claim Form</p>
+                                                        <a href="#">Who We Are</a>
+                                                    </h2>
+                                                    <h2>
+                                                        <p>
+                                                            Employee Self Service (ESS)</p>
+                                                        <a href="#">Corporate Facts</a>
+                                                    </h2>
+                                                    <br/>
+                                                    <div style="margin-bottom: 14px;">
+                                                        <a class="button" href="#"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>See what&#39;s comming 
+				                                        up</a></div>
+                                                </div>
+                                                
+                                        </div>]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 4 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+    <Webparts xsi:type="ContenEditorWP">
+      <Title>Column 5 Content Editor</Title>
+      <ZoneId>CenterRightColumn</ZoneId>
+      <Content>
+        <![CDATA[<div class="box_3col_right height_box_2">
+                                <div class="menu"><h1>Procedure &amp; Manuals</h1></div>
+                                <div class="content scroll_a h_scroll_2">
+                                    <h2>Procedure &amp; Manuals</h2>
+                                    <h3>AIA aims to help you find an investment approach 
+							        that fits your financial goal.</h3>
+                                    <ul class="link_department">
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Corporate Message</a></li>
+                                        <li><a href="#">Our Heritage</a></li>
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Who We Are</a></li>
+                                        <li><a href="#">Corporate Message</a></li>
+                                        <li><a href="#">Our Heritage</a></li>
+                                        <li><a href="#">Who We Are</a></li>
+                                    </ul>
+                                    <br/>
+                                    <div style="margin-bottom: 14px;"><a class="button" href="#"><span>
+								        &nbsp;&nbsp;&nbsp;&nbsp;</span>See what&#39;s comming up</a></div>
+                                </div>
+                            </div>
+        ]]>
+      </Content>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <Properties>
+        <Add Name="Title" Value="Column 5 Content Editor" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+    
 
   </WebpartPageDefinition>
   

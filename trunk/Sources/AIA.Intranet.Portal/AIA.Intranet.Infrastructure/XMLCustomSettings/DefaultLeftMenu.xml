@@ -6,36 +6,56 @@
     <Name>Actuary</Name>
     <Url>/Actuary</Url>
     <LeftMenus>
+      
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Actuary/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Actuary/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Actuary/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Actuary/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Actuary/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+      
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Actuary/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+      
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Actuary/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
+      
       <LeftMenu>
         <Title>About</Title>
         <Url>/Actuary/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Actuary/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Actuary/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Actuary/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+      
+      
     </LeftMenus>
   </WebMenuDefinition>
 
@@ -46,40 +66,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Actuary/FinancialReporting-Valuation/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Actuary/Pages/Home.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Actuary/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Actuary/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Actuary/FinancialReporting-Valuation/Lists/Guidelines/</Url>
+        <Url>/Actuary/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Actuary/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Actuary/Pages/TeamOrganization.aspx</Url>
         <MenuKeywords>/Lists/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Actuary/FinancialReporting-Valuation/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Actuary/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Actuary/FinancialReporting-Valuation/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Actuary/Pages/About.aspx</Url>
+        <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
 
-      <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Actuary/FinancialReporting-Valuation/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-
-      <LeftMenu>
-        <Title>News</Title>
-        <Url>/Actuary/FinancialReporting-Valuation/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
 
     </LeftMenus>
 
@@ -92,40 +125,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Actuary/Product/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Actuary/Pages/Home.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Actuary/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Actuary/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Actuary/Product/Lists/Guidelines/</Url>
+        <Url>/Actuary/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Actuary/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Actuary/Pages/TeamOrganization.aspx</Url>
         <MenuKeywords>/Lists/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Actuary/Product/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Actuary/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Actuary/Product/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Actuary/Pages/About.aspx</Url>
+        <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
 
-      <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Actuary/Product/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-
-      <LeftMenu>
-        <Title>News</Title>
-        <Url>/Actuary/MISGovernance-AssetManagement/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
 
     </LeftMenus>
 
@@ -138,36 +184,56 @@
     <Name>BusinessStrategy</Name>
     <Url>/BusinessStrategy</Url>
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/BusinessStrategy/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/BusinessStrategy/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/BusinessStrategy/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/BusinessStrategy/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/BusinessStrategy/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/BusinessStrategy/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/BusinessStrategy/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/BusinessStrategy/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/BusinessStrategy/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/BusinessStrategy/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/BusinessStrategy/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/BusinessStrategy/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/BusinessStrategy/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/BusinessStrategy</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/BusinessStrategy/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/BusinessStrategy</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/BusinessStrategy/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/BusinessStrategy/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/BusinessStrategy/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
   </WebMenuDefinition>
   <!-- End BusinessStrategy ############################################################# -->
@@ -177,36 +243,56 @@
     <Name>ClientManagement</Name>
     <Url>/ClientManagement</Url>
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/ClientManagement/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/ClientManagement/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/ClientManagement/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/ClientManagement/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/ClientManagement/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/ClientManagement/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/ClientManagement/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/ClientManagement/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/ClientManagement/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/ClientManagement/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/ClientManagement/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
   </WebMenuDefinition>
 
@@ -215,36 +301,56 @@
     <Name>CustomerCare</Name>
     <Url>/ClientManagement/CustomerCare</Url>
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/ClientManagement/CustomerCare/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/ClientManagement/CustomerCare/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/ClientManagement/CustomerCare/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/ClientManagement/CustomerCare/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/ClientManagement/CustomerCare/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/ClientManagement/CustomerCare/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/ClientManagement/CustomerCare/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/ClientManagement/CustomerCare/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/ClientManagement/CustomerCare/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/ClientManagement/CustomerCare/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/ClientManagement/CustomerCare/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
   </WebMenuDefinition>
 
@@ -255,40 +361,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/ClientManagement/CustomerCare/CallCenter/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/ClientManagement/CustomerCare/CallCenter/Pages/Home.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/ClientManagement/CustomerCare/CallCenter/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/ClientManagement/CustomerCare/CallCenter/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/ClientManagement/CustomerCare/CallCenter/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/ClientManagement/CustomerCare/CallCenter/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/ClientManagement/CustomerCare/CallCenter/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/ClientManagement/CustomerCare/CallCenter/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/ClientManagement/CustomerCare/CallCenter/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/ClientManagement/CustomerCare/CallCenter/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/ClientManagement/CustomerCare/CallCenter/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/ClientManagement/CustomerCare/CallCenter/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/ClientManagement/CustomerCare/CallCenter/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/ClientManagement/CustomerCare/CallCenter/Pages/About.aspx</Url>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -301,40 +420,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Pages/Home.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Pages/About.aspx</Url>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -347,40 +479,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Pages/Home.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Pages/About.aspx</Url>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -393,40 +538,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/ClientManagement/CustomerCare/Q-A/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/ClientManagement/CustomerCare/Q-A/Pages/Home.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/ClientManagement/CustomerCare/Q-A/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/ClientManagement/CustomerCare/Q-A/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/ClientManagement/CustomerCare/Q-A/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/ClientManagement/CustomerCare/Q-A/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/ClientManagement/CustomerCare/Q-A/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/ClientManagement/CustomerCare/Q-A/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/ClientManagement/CustomerCare/Q-A/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/ClientManagement/CustomerCare/Q-A/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/ClientManagement/CustomerCare/Q-A/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/ClientManagement/CustomerCare/Q-A/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/ClientManagement/CustomerCare/Q-A/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/ClientManagement/CustomerCare/Q-A/Pages/About.aspx</Url>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -436,38 +594,60 @@
   <WebMenuDefinition>
     <Name>CustomerService</Name>
     <Url>/ClientManagement/CustomerService</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/ClientManagement/CustomerService/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/ClientManagement/CustomerService/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/ClientManagement/CustomerService/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/ClientManagement/CustomerService/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/ClientManagement/CustomerService/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/ClientManagement/CustomerService/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/ClientManagement/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/ClientManagement/CustomerService/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/ClientManagement/CustomerService/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ClientManagement</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/ClientManagement/CustomerService/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/ClientManagement/CustomerService/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/ClientManagement/CustomerService/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
   <!-- End ClientManagement ############################################################# -->
 
@@ -475,38 +655,60 @@
   <WebMenuDefinition>
     <Name>Collection</Name>
     <Url>/Collection</Url>
+    
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Collection/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Collection/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Collection/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Collection/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Collection/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Collection/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Collection/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Collection/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Collection/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Collection/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Collection/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Collection/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Collection/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Collection</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Collection/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Collection</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Collection/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Collection/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Collection/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
   <!-- End Collection ############################################################# -->
 
@@ -514,38 +716,60 @@
   <WebMenuDefinition>
     <Name>Compliance</Name>
     <Url>/Compliance</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Compliance/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Compliance/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Compliance/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Compliance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Compliance/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Compliance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Compliance/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Compliance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Compliance/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Compliance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Compliance/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Compliance/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Compliance/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Compliance</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Compliance/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Compliance</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Compliance/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Compliance/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Compliance/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
   <!-- End Compliance ############################################################# -->
 
@@ -553,38 +777,60 @@
   <WebMenuDefinition>
     <Name>CustomerService</Name>
     <Url>/CustomerService</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/CustomerService/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/CustomerService/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/CustomerService/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/CustomerService/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/CustomerService/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/CustomerService/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/CustomerService/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/CustomerService</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/CustomerService/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/CustomerService</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/CustomerService/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/CustomerService/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/CustomerService/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
   
   <WebMenuDefinition>
@@ -594,40 +840,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/CustomerService/FrontlineService/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/CustomerService/FrontlineService/Pages/Home.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/CustomerService/FrontlineService/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/CustomerService/FrontlineService/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/CustomerService/FrontlineService/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/CustomerService/FrontlineService/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/CustomerService/FrontlineService/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/CustomerService/FrontlineService/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/CustomerService/FrontlineService/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/CustomerService/FrontlineService/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/CustomerService/FrontlineService/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/CustomerService/FrontlineService/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/CustomerService</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/CustomerService/FrontlineService/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/CustomerService/FrontlineService/Pages/About.aspx</Url>
+        <MenuKeywords>/CustomerService</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -640,40 +899,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/CustomerService/ServiceEnhancement/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/CustomerService/ServiceEnhancement/Pages/Home.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/CustomerService/ServiceEnhancement/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/CustomerService/ServiceEnhancement/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/CustomerService/ServiceEnhancement/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/CustomerService/ServiceEnhancement/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/CustomerService/ServiceEnhancement/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/CustomerService/ServiceEnhancement/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/CustomerService/ServiceEnhancement/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/CustomerService/ServiceEnhancement/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/CustomerService/ServiceEnhancement/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/CustomerService/ServiceEnhancement/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/CustomerService</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/CustomerService/ServiceEnhancement/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/CustomerService/ServiceEnhancement/Pages/About.aspx</Url>
+        <MenuKeywords>/CustomerService</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -684,76 +956,120 @@
   <WebMenuDefinition>
     <Name>Distribution</Name>
     <Url>/Distribution</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Distribution/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Distribution/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Distribution/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Distribution/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Distribution/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Distribution/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Distribution/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Distribution/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Distribution/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Distribution/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Distribution/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
 
   <!--AgencyDistributionSupport-Initiatives-->
   <WebMenuDefinition>
     <Name>AgencyDistributionSupport-Initiatives</Name>
     <Url>/Distribution/AgencyDistributionSupport-Initiatives</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Distribution/AgencyDistributionSupport-Initiatives/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
 
   <WebMenuDefinition>
@@ -763,40 +1079,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Pages/Home.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Pages/About.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -809,40 +1138,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Pages/Home.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Pages/About.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -855,40 +1197,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Pages/Home.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Pages/About.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -898,38 +1253,60 @@
   <WebMenuDefinition>
     <Name>Distribution-Development</Name>
     <Url>/Distribution/Distribution-Development</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Distribution/Distribution-Development/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Distribution/Distribution-Development/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Distribution/Distribution-Development/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Distribution/Distribution-Development/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Distribution/Distribution-Development/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Distribution/Distribution-Development/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Distribution/Distribution-Development/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Distribution/Distribution-Development/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Distribution/Distribution-Development/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Distribution/Distribution-Development/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Distribution/Distribution-Development/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
 
   <WebMenuDefinition>
@@ -939,40 +1316,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Distribution/Distribution-Development/Agency/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Distribution/Distribution-Development/Agency/Pages/Home.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Distribution/Distribution-Development/Agency/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Distribution/Distribution-Development/Agency/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Distribution/Distribution-Development/Agency/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Distribution/Distribution-Development/Agency/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Distribution/Distribution-Development/Agency/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Distribution/Distribution-Development/Agency/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Distribution/Distribution-Development/Agency/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Distribution/Distribution-Development/Agency/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Distribution/Distribution-Development/Agency/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Distribution/Distribution-Development/Agency/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Distribution/Distribution-Development/Agency/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Distribution/Distribution-Development/Agency/Pages/About.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -985,40 +1375,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Pages/Home.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Pages/About.aspx</Url>
+        <MenuKeywords>/Distribution</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1029,38 +1432,60 @@
   <WebMenuDefinition>
     <Name>ERM</Name>
     <Url>/ERM</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/ERM/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ERM/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/ERM/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/ERM/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/ERM/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/ERM/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/ERM/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/ERM/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/ERM/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/ERM/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/ERM/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/ERM/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/ERM/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ERM</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/ERM/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ERM</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/ERM/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/ERM/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/ERM/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
   <!-- End ERM ############################################################# -->
 
@@ -1068,38 +1493,60 @@
   <WebMenuDefinition>
     <Name>Finance</Name>
     <Url>/Finance</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Finance/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Finance/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Finance/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Finance/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Finance/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Finance/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Finance/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Finance</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Finance/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Finance</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Finance/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Finance/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Finance/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
 
   <WebMenuDefinition>
@@ -1109,40 +1556,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Finance/Cost-Budget/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Finance/Cost-Budget/Pages/Home.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Finance/Cost-Budget/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Finance/Cost-Budget/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Finance/Cost-Budget/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Finance/Cost-Budget/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Finance/Cost-Budget/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Finance/Cost-Budget/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Finance/Cost-Budget/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Finance/Cost-Budget/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Finance/Cost-Budget/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Finance/Cost-Budget/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Finance</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Finance/Cost-Budget/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Finance/Cost-Budget/Pages/About.aspx</Url>
+        <MenuKeywords>/Finance</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1155,40 +1615,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Finance/FinancialReporting/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Finance/FinancialReporting/Pages/Home.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Finance/FinancialReporting/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Finance/FinancialReporting/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Finance/FinancialReporting/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Finance/FinancialReporting/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Finance/FinancialReporting/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Finance/FinancialReporting/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Finance/FinancialReporting/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Finance/FinancialReporting/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Finance/FinancialReporting/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Finance/FinancialReporting/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Finance</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Finance/FinancialReporting/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Finance/FinancialReporting/Pages/About.aspx</Url>
+        <MenuKeywords>/Finance</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1201,40 +1674,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Finance/OperationAccounting/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Finance/OperationAccounting/Pages/Home.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Finance/OperationAccounting/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Finance/OperationAccounting/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Finance/OperationAccounting/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Finance/OperationAccounting/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Finance/OperationAccounting/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Finance/OperationAccounting/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Finance/OperationAccounting/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Finance/OperationAccounting/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Finance/OperationAccounting/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Finance/OperationAccounting/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Finance</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Finance/OperationAccounting/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Finance/OperationAccounting/Pages/About.aspx</Url>
+        <MenuKeywords>/Finance</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1245,38 +1731,60 @@
   <WebMenuDefinition>
     <Name>HumanResource</Name>
     <Url>/HumanResource</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/HumanResource/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/HumanResource/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/HumanResource/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/HumanResource/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/HumanResource/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/HumanResource/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/HumanResource/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/HumanResource/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/HumanResource/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/HumanResource/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/HumanResource/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
 
   <WebMenuDefinition>
@@ -1286,40 +1794,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/HumanResource/HRBusinessPartner/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/HumanResource/HRBusinessPartner/Pages/Home.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/HumanResource/HRBusinessPartner/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/HumanResource/HRBusinessPartner/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/HumanResource/HRBusinessPartner/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/HumanResource/HRBusinessPartner/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/HumanResource/HRBusinessPartner/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/HumanResource/HRBusinessPartner/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/HumanResource/HRBusinessPartner/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/HumanResource/HRBusinessPartner/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/HumanResource/HRBusinessPartner/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/HumanResource/HRBusinessPartner/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/HumanResource/HRBusinessPartner/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/HumanResource/HRBusinessPartner/Pages/About.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1332,40 +1853,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/HumanResource/Recruitment/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/HumanResource/Recruitment/Pages/Home.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/HumanResource/Recruitment/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/HumanResource/Recruitment/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/HumanResource/Recruitment/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/HumanResource/Recruitment/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/HumanResource/Recruitment/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/HumanResource/Recruitment/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/HumanResource/Recruitment/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/HumanResource/Recruitment/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/HumanResource/Recruitment/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/HumanResource/Recruitment/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/HumanResource/Recruitment/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/HumanResource/Recruitment/Pages/About.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1378,40 +1912,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/HumanResource/Rewards-Performance/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/HumanResource/Rewards-Performance/Pages/Home.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/HumanResource/Rewards-Performance/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/HumanResource/Rewards-Performance/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/HumanResource/Rewards-Performance/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/HumanResource/Rewards-Performance/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/HumanResource/Rewards-Performance/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/HumanResource/Rewards-Performance/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/HumanResource/Rewards-Performance/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/HumanResource/Rewards-Performance/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/HumanResource/Rewards-Performance/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/HumanResource/Rewards-Performance/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/HumanResource/Rewards-Performance/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/HumanResource/Rewards-Performance/Pages/About.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1424,40 +1971,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/HumanResource/StaffEngagement-Relations/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/HumanResource/Recruitment/Pages/Home.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/HumanResource/StaffEngagement-Relations/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/HumanResource/StaffEngagement-Relations/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/HumanResource/StaffEngagement-Relations/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/HumanResource/StaffEngagement-Relations/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/HumanResource/StaffEngagement-Relations/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/HumanResource/StaffEngagement-Relations/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/HumanResource/StaffEngagement-Relations/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/HumanResource/StaffEngagement-Relations/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/HumanResource/StaffEngagement-Relations/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/HumanResource/StaffEngagement-Relations/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/HumanResource/StaffEngagement-Relations/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/HumanResource/StaffEngagement-Relations/Pages/About.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1470,40 +2030,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/HumanResource/Training-Development/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/HumanResource/Training-Development/Pages/Home.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/HumanResource/Training-Development/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/HumanResource/Training-Development/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/HumanResource/Training-Development/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/HumanResource/Training-Development/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/HumanResource/Training-Development/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/HumanResource/Training-Development/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/HumanResource/Training-Development/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/HumanResource/Training-Development/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/HumanResource/Training-Development/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/HumanResource/Training-Development/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/HumanResource/Training-Development/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/HumanResource/Training-Development/Pages/About.aspx</Url>
+        <MenuKeywords>/HumanResource</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1514,38 +2087,60 @@
   <WebMenuDefinition>
     <Name>Investment</Name>
     <Url>/Investment</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Investment/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Investment/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Investment/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Investment/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Investment/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Investment/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Investment/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Investment/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Investment/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Investment/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Investment/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Investment/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Investment/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Investment</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Investment/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Investment</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Investment/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Investment/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Investment/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
   <!-- End Investment ############################################################# -->
 
@@ -1553,38 +2148,60 @@
   <WebMenuDefinition>
     <Name>Legal</Name>
     <Url>/Legal</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Legal/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Legal/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Legal/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Legal/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Legal/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Legal/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Legal/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Legal/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Legal/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Legal/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Legal/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Legal/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Legal/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Legal</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Legal/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Legal</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Legal/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Legal/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Legal/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
   <!-- End Legal ############################################################# -->
 
@@ -1592,38 +2209,60 @@
   <WebMenuDefinition>
     <Name>Marketing</Name>
     <Url>/Marketing</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Marketing/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Marketing/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Marketing/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Marketing/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Marketing/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Marketing/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Marketing/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Marketing</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Marketing/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Marketing</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Marketing/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Marketing/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Marketing/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
 
   <WebMenuDefinition>
@@ -1633,40 +2272,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Marketing/CorporateMarketing/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Marketing/CorporateMarketing/Pages/Home.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Marketing/CorporateMarketing/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Marketing/CorporateMarketing/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Marketing/CorporateMarketing/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Marketing/CorporateMarketing/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Marketing/CorporateMarketing/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Marketing/CorporateMarketing/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Marketing/CorporateMarketing/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Marketing/CorporateMarketing/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Marketing/CorporateMarketing/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Marketing/CorporateMarketing/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Marketing</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Marketing/CorporateMarketing/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Marketing/CorporateMarketing/Pages/About.aspx</Url>
+        <MenuKeywords>/Marketing</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1679,40 +2331,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Marketing/PressRelation/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Marketing/PressRelation/Pages/Home.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Marketing/PressRelation/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Marketing/PressRelation/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Marketing/PressRelation/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Marketing/PressRelation/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Marketing/PressRelation/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Marketing/PressRelation/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Marketing/PressRelation/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Marketing/PressRelation/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Marketing/PressRelation/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Marketing/PressRelation/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Marketing</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Marketing/PressRelation/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Marketing/PressRelation/Pages/About.aspx</Url>
+        <MenuKeywords>/Marketing</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1723,38 +2388,60 @@
   <WebMenuDefinition>
     <Name>Operations</Name>
     <Url>/Operations</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Operations/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Operations/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Operations/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Operations/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Operations/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Operations/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Operations/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Operations/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Operations/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Operations/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Operations/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
 
   <WebMenuDefinition>
@@ -1764,40 +2451,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Operations/Claims/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Operations/Claims/Pages/Home.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Operations/Claims/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Operations/Claims/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Operations/Claims/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Operations/Claims/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Operations/Claims/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Operations/Claims/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Operations/Claims/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Operations/Claims/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Operations/Claims/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Operations/Claims/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Operations/Claims/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Operations/Claims/Pages/About.aspx</Url>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1810,40 +2510,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Operations/CorporateSolutions/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Operations/CorporateSolutions/Pages/Home.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Operations/CorporateSolutions/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Operations/CorporateSolutions/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Operations/CorporateSolutions/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Operations/CorporateSolutions/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Operations/CorporateSolutions/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Operations/CorporateSolutions/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Operations/CorporateSolutions/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Operations/CorporateSolutions/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Operations/CorporateSolutions/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Operations/CorporateSolutions/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Operations/CorporateSolutions/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Operations/CorporateSolutions/Pages/About.aspx</Url>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1856,40 +2569,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Operations/POS/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Operations/POS/Pages/Home.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Operations/POS/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Operations/POS/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Operations/POS/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Operations/POS/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Operations/POS/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Operations/POS/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Operations/POS/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Operations/POS/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Operations/POS/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Operations/POS/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Operations/POS/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Operations/POS/Pages/About.aspx</Url>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1902,40 +2628,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/Operations/U-I/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/Operations/U-I/Pages/Home.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Operations/U-I/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Operations/U-I/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Operations/U-I/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/Operations/U-I/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/Operations/U-I/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/Operations/U-I/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/Operations/U-I/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/Operations/U-I/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/Operations/U-I/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/Operations/U-I/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/Operations/U-I/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/Operations/U-I/Pages/About.aspx</Url>
+        <MenuKeywords>/Operations</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -1946,38 +2685,60 @@
   <WebMenuDefinition>
     <Name>ProductMarketing</Name>
     <Url>/ProductMarketing</Url>
+
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/ProductMarketing/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ProductMarketing/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/ProductMarketing/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/ProductMarketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/ProductMarketing/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/ProductMarketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/ProductMarketing/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/ProductMarketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/ProductMarketing/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/ProductMarketing/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/ProductMarketing/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/ProductMarketing/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/ProductMarketing/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ProductMarketing</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/ProductMarketing/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/ProductMarketing</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/ProductMarketing/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/ProductMarketing/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/ProductMarketing/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
+    
   </WebMenuDefinition>
   <!-- End ProductMarketing ############################################################# -->
 
@@ -1986,36 +2747,56 @@
     <Name>Property</Name>
     <Url>/Property</Url>
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/Property/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Property/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/Property/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/Property/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Property/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Property/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Property/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Property/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Property/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Property/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Property/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Property/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/Property/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Property</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/Property/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/Property</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/Property/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/Property/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/Property/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
   </WebMenuDefinition>
   <!-- End Property ############################################################# -->
@@ -2025,81 +2806,115 @@
   <WebMenuDefinition>
     <Name>MIS</Name>
     <Url>/MIS</Url>
+    
     <LeftMenus>
+
       <LeftMenu>
         <Title>Home</Title>
         <Url>/MIS/Pages/Home.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/MIS/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/MIS/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/MIS/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/MIS/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/MIS/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Calendar</Title>
         <Url>/MIS/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/MIS</MenuKeywords>
       </LeftMenu>
+
       <LeftMenu>
         <Title>About</Title>
         <Url>/MIS/Pages/About.aspx</Url>
-        <MenuKeywords>/Pages/</MenuKeywords>
+        <MenuKeywords>/MIS</MenuKeywords>
       </LeftMenu>
-      <LeftMenu>
-        <Title>Home</Title>
-        <Url>/MIS/Pages/Home.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>Calendar</Title>
-        <Url>/MIS/Lists/Calendar/calendar.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
-      <LeftMenu>
-        <Title>About</Title>
-        <Url>/MIS/Pages/About.aspx</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
-      </LeftMenu>
+
+
     </LeftMenus>
   </WebMenuDefinition>
 
   <WebMenuDefinition>
     <Name>Share</Name>
     <Url>/MIS/Share</Url>
-    
+
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/MIS/Share/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/MIS/Share/Pages/Home.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
-      
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/MIS/Share/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/MIS/Share/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/MIS/Share/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/MIS/Share/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/MIS/Share/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/MIS/Share/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/MIS/Share/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/MIS/Share/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-          <Title>Reports</Title>
-          <Url>/MIS/Share/Lists/Reports/</Url>
-          <MenuKeywords>/Lists/</MenuKeywords>
-        </LeftMenu>
+        <Title>Calendar</Title>
+        <Url>/MIS/Share/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/MIS</MenuKeywords>
+      </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/MIS/Share/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/MIS/Share/Pages/About.aspx</Url>
+        <MenuKeywords>/MIS</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -2112,40 +2927,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/MIS/MISGovernance-AssetManagement/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Pages/Home.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/MIS/MISGovernance-AssetManagement/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/MIS/MISGovernance-AssetManagement/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/MIS/MISGovernance-AssetManagement/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/MIS/MISGovernance-AssetManagement/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/MIS/MISGovernance-AssetManagement/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/MIS</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/MIS/MISGovernance-AssetManagement/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Pages/About.aspx</Url>
+        <MenuKeywords>/MIS</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -2158,40 +2986,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/MIS/ITInfrastructure/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/MIS/ITInfrastructure/Pages/Home.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/MIS/ITInfrastructure/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/MIS/ITInfrastructure/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/MIS/ITInfrastructure/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/MIS/ITInfrastructure/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/MIS/ITInfrastructure/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/MIS/ITInfrastructure/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/MIS/ITInfrastructure/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/MIS/ITInfrastructure/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/MIS/ITInfrastructure/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/MIS/ITInfrastructure/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/MIS</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/MIS/ITInfrastructure/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/MIS/ITInfrastructure/Pages/About.aspx</Url>
+        <MenuKeywords>/MIS</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 
@@ -2204,40 +3045,53 @@
     <LeftMenus>
 
       <LeftMenu>
-        <Title>Forms</Title>
-        <Url>/MIS/ApplicationDevelopment/Lists/Forms/Forms</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Home</Title>
+        <Url>/MIS/ApplicationDevelopment/Pages/Home.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Functions &amp; News</Title>
+        <Url>/MIS/ApplicationDevelopment/Pages/FunctionsAndNews.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/MIS/ApplicationDevelopment/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/MIS/ApplicationDevelopment/Lists/Guidelines/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Url>/MIS/ApplicationDevelopment/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Internal Only</Title>
-        <Url>/MIS/ApplicationDevelopment/Lists/InternalDocument/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Activities</Title>
+        <Url>/MIS/ApplicationDevelopment/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Procedures</Title>
-        <Url>/MIS/ApplicationDevelopment/Lists/Procedures/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Team Organization</Title>
+        <Url>/MIS/ApplicationDevelopment/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Reports</Title>
-        <Url>/MIS/ApplicationDevelopment/Lists/Reports/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>Calendar</Title>
+        <Url>/MIS/ApplicationDevelopment/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/MIS</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
-        <Title>News</Title>
-        <Url>/MIS/ApplicationDevelopment/Lists/News/</Url>
-        <MenuKeywords>/Lists/</MenuKeywords>
+        <Title>About</Title>
+        <Url>/MIS/ApplicationDevelopment/Pages/About.aspx</Url>
+        <MenuKeywords>/MIS</MenuKeywords>
       </LeftMenu>
+
 
     </LeftMenus>
 

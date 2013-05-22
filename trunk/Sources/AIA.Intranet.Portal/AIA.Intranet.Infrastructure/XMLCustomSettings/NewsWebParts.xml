@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfWebpartPageDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!--Home-->
+  <WebpartPageDefinition>
+    
+    <PageUrl>/Pages/Home.aspx</PageUrl>
+
+    <!--News-->
+    <Webparts xsi:type="DefaultWP">
+      <Title>Home News</Title>
+      <ZoneId>RightTop</ZoneId>
+      <Index>0</Index>
+      <Hidden>false</Hidden>
+      <AllowDuplicate>false</AllowDuplicate>
+      <WebpartName>HomeNews.webpart</WebpartName>
+      <Properties>
+        <Add Name="Title" Value="Home News" Type="string" ></Add>
+        <Add Name="ChromeType" Value="2" Type="chrometype" />
+      </Properties>
+    </Webparts>
+
+  </WebpartPageDefinition>
+  
+</ArrayOfWebpartPageDefinition>
