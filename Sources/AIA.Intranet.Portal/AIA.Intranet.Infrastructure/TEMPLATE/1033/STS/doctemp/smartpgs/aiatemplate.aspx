@@ -91,7 +91,15 @@
                             </WebPartPages:WebPartZone>
                         </td>
                     </tr>
-
+                    <tr>
+                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" colspan="3" valign="top">
+                            <WebPartPages:WebPartZone runat="server" Title="loc:TopRow" ID="TopRow" FrameType="TitleBarOnly"
+                                Orientation="Horizontal">
+                                <ZoneTemplate>
+                                </ZoneTemplate>
+                            </WebPartPages:WebPartZone>
+                        </td>
+                    </tr>
                     <tr>
                         <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" colspan="2" valign="top" style="width:66%; height: 100%;">
                             
@@ -110,16 +118,6 @@
                             </WebPartPages:WebPartZone>
                         </td>
                     </tr>
-
-                    <tr>
-                        <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" colspan="3" valign="top">
-                            <WebPartPages:WebPartZone runat="server" Title="loc:TopRow" ID="TopRow" FrameType="TitleBarOnly">
-                                <ZoneTemplate>
-                                </ZoneTemplate>
-                            </WebPartPages:WebPartZone>
-                        </td>
-                    </tr>
-
                     <tr>
                         <td id="_invisibleIfEmpty" name="_invisibleIfEmpty" valign="top" style="width:33%; height: 100%;">
                             <WebPartPages:WebPartZone runat="server" Title="loc:CenterLeftColumn" ID="CenterLeftColumn"
@@ -201,7 +199,6 @@
                             </WebPartPages:WebPartZone>
                         </td>
                     </tr>
-
                 </table>
             </td>
         </tr>

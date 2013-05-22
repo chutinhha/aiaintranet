@@ -710,6 +710,9 @@
     <EmbeddedResource Include="XMLCustomSettings\SiteStructures.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\aiatemplate.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="TEMPLATE\1033\STS\doctemp\smartpgs\spstd11.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
@@ -801,6 +804,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="XMLCustomSettings\ContactSetting.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLCustomSettings\NewsWebParts.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Content Include="XML\fldtypes_ImageField.xml" />

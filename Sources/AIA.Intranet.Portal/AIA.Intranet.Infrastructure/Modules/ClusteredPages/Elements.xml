@@ -6,6 +6,26 @@
       <Property Name="ContentType" Value="Web Part Page" />
     </File>
 
+    <File Url="FunctionsAndNews.aspx" Type="GhostableInLibrary" Path="spstd11.aspx">
+      <Property Name="ContentType" Value="Web Part Page" />
+    </File>
+
+    <File Url="PolicyStandards.aspx" Type="GhostableInLibrary" Path="spstd11.aspx">
+      <Property Name="ContentType" Value="Web Part Page" />
+    </File>
+
+    <File Url="Guidelines.aspx" Type="GhostableInLibrary" Path="spstd11.aspx">
+      <Property Name="ContentType" Value="Web Part Page" />
+    </File>
+
+    <File Url="TeamActivities.aspx" Type="GhostableInLibrary" Path="spstd11.aspx">
+      <Property Name="ContentType" Value="Web Part Page" />
+    </File>
+
+    <File Url="TeamOrganization.aspx" Type="GhostableInLibrary" Path="spstd11.aspx">
+      <Property Name="ContentType" Value="Web Part Page" />
+    </File>
+
     <File Url="About.aspx" Type="GhostableInLibrary" Path="spstd2.aspx">
       <Property Name="ContentType" Value="Web Part Page" />
     </File>
