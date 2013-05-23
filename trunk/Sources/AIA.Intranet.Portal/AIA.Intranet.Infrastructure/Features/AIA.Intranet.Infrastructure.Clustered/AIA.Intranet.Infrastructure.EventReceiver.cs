@@ -9,6 +9,7 @@ using AIA.Intranet.Common.Helpers;
 using AIA.Intranet.Model.Infrastructure;
 using AIA.Intranet.Common.Extensions;
 using AIA.Intranet.Common.Utilities;
+using AIA.Intranet.Model.Entities;
 
 namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Clustered
 {
@@ -32,6 +33,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Clust
             folder.Update();
             ProvisionFeatures(web);
             ProvisionWebpart(web, "AIA.Intranet.Infrastructure.XMLCustomSettings.ClusteredWebparts.xml");
+            ProvisionLeftMenu(web);
         }
 
 
@@ -91,6 +93,48 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Clust
             }
 
         }
+
+        private void ProvisionLeftMenu(SPWeb web)
+        {
+            try
+            {
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                string xml = assembly.GetResourceTextFile("AIA.Intranet.Infrastructure.XMLCustomSettings.LeftMenu.xml");
+
+                var leftMenus = SerializationHelper.DeserializeFromXml<WebMenuDefinitionCollection>(xml);
+                AddLeftMenu(web, leftMenus);
+
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
+            }
+        }
+
+        private void AddLeftMenu(SPWeb web, WebMenuDefinitionCollection leftMenus)
+        {
+            try
+            {
+                foreach (var menu in leftMenus)
+                {
+                    var listLeftMenu = Utility.GetListFromURL(Constants.LEFT_MENU_LIST_URL, web);
+                    if (listLeftMenu == null) continue;
+                    foreach (var leftMenu in menu.Features)
+                    {
+                        SPListItem item = listLeftMenu.Items.Add();
+                        item["Title"] = leftMenu.Title;
+                        item["URL"] = web.ServerRelativeUrl.TrimEnd('/') + leftMenu.Url;
+                        //item["MenuKeywords"] = leftMenu.MenuKeywords;
+                        item.SystemUpdate();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
+            }
+        }
+
         #endregion Functions
     }
 }

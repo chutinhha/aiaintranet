@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Webs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <WebMenuDefinition>
+    <Name>Actuary</Name>
+    <Url>/Actuary</Url>
+    <LeftMenus>
+      
+      <LeftMenu>
+        <Title>Home</Title>
+        <Url>/Pages/Home.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>News</Title>
+        <Url>/Lists/News/</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Policy &amp; Standards</Title>
+        <Url>/Pages/PolicyStandards.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Guidelines</Title>
+        <Url>/Pages/Guidelines.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+
+      <LeftMenu>
+        <Title>Team Activities</Title>
+        <Url>/Pages/TeamActivities.aspx</Url>
+        <MenuKeywords>/Actuary/</MenuKeywords>
+      </LeftMenu>
+      
+      <LeftMenu>
+        <Title>Team Organization</Title>
+        <Url>/Pages/TeamOrganization.aspx</Url>
+        <MenuKeywords>/Lists/</MenuKeywords>
+      </LeftMenu>
+      
+      <LeftMenu>
+        <Title>Calendar</Title>
+        <Url>/Lists/Calendar/calendar.aspx</Url>
+        <MenuKeywords>/Actuary</MenuKeywords>
+      </LeftMenu>
+      
+      <LeftMenu>
+        <Title>About</Title>
+        <Url>/Pages/About.aspx</Url>
+        <MenuKeywords>/Actuary</MenuKeywords>
+      </LeftMenu>
+      
+      
+    </LeftMenus>
+  </WebMenuDefinition>
+
+</Webs>
