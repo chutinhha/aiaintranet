@@ -15,7 +15,7 @@
     <Overwrite>true</Overwrite>
     <BreakRoleInheritance>true</BreakRoleInheritance>
     <Webs>
-      
+
       <WebDefinition>
         <Name>Share</Name>
         <Url>Share</Url>
@@ -24,10 +24,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -37,7 +34,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>Application Development</Name>
         <Url>ApplicationDevelopment</Url>
@@ -46,10 +43,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -59,7 +53,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>IT Infrastructure</Name>
         <Url>ITInfrastructure</Url>
@@ -68,10 +62,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -81,7 +72,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>MIS Governance &amp; Asset Management</Name>
         <Url>MISGovernance-AssetManagement</Url>
@@ -90,10 +81,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -103,12 +91,12 @@
 
         </Webs>
       </WebDefinition>
-      
+
     </Webs>
   </WebDefinition>
-  
+
   <!-- ############################################################# -->
-  
+
   <WebDefinition>
     <Name>Human Resource</Name>
     <Url>HumanResource</Url>
@@ -123,7 +111,7 @@
     <Overwrite>true</Overwrite>
     <BreakRoleInheritance>true</BreakRoleInheritance>
     <Webs>
-      
+
       <WebDefinition>
         <Name>Training &amp; Development</Name>
         <Url>Training-Development</Url>
@@ -132,10 +120,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -145,7 +130,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>Staff Engagement &amp; Relations</Name>
         <Url>StaffEngagement-Relations</Url>
@@ -154,10 +139,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -167,7 +149,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>HR Business Partner</Name>
         <Url>HRBusinessPartner</Url>
@@ -176,10 +158,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -189,7 +168,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>Rewards &amp; Performance</Name>
         <Url>Rewards-Performance</Url>
@@ -198,10 +177,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -211,7 +187,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>Recruitment</Name>
         <Url>Recruitment</Url>
@@ -220,10 +196,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -233,7 +206,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
     </Webs>
   </WebDefinition>
 
@@ -252,7 +225,7 @@
     <Overwrite>true</Overwrite>
     <BreakRoleInheritance>true</BreakRoleInheritance>
     <Webs>
-      
+
       <WebDefinition>
         <Name>Distribution Development</Name>
         <Url>Distribution-Development</Url>
@@ -267,7 +240,7 @@
         <Overwrite>true</Overwrite>
         <BreakRoleInheritance>true</BreakRoleInheritance>
         <Webs>
-          
+
           <WebDefinition>
             <Name>Agency</Name>
             <Url>Agency</Url>
@@ -289,7 +262,7 @@
 
             </Webs>
           </WebDefinition>
-          
+
           <WebDefinition>
             <Name>Partnership Distribution</Name>
             <Url>PartnershipDistribution</Url>
@@ -311,10 +284,10 @@
 
             </Webs>
           </WebDefinition>
-          
+
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>
           Agency Distribution Support &amp; Initiatives
@@ -352,9 +325,9 @@
 
             </Webs>
           </WebDefinition>
-          
+
           <WebDefinition>
-            
+
             <Name>Agency Management Support</Name>
             <Url>AgencyManagementSupport</Url>
             <Features>
@@ -375,7 +348,7 @@
 
             </Webs>
           </WebDefinition>
-          
+
           <WebDefinition>
             <Name>Agency Support</Name>
             <Url>AgencySupport</Url>
@@ -397,7 +370,7 @@
 
             </Webs>
           </WebDefinition>
-          
+
         </Webs>
       </WebDefinition>
 
@@ -419,7 +392,7 @@
     <Overwrite>true</Overwrite>
     <BreakRoleInheritance>true</BreakRoleInheritance>
     <Webs>
-      
+
       <WebDefinition>
         <Name>Financial Reporting</Name>
         <Url>FinancialReporting</Url>
@@ -428,10 +401,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -441,7 +411,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>Operation Accounting</Name>
         <Url>OperationAccounting</Url>
@@ -450,10 +420,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -463,7 +430,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>Cost &amp; Budget</Name>
         <Url>Cost-Budget</Url>
@@ -472,10 +439,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -503,7 +467,7 @@
     <Overwrite>true</Overwrite>
     <BreakRoleInheritance>true</BreakRoleInheritance>
     <Webs>
-      
+
       <WebDefinition>
         <Name>U &amp; I</Name>
         <Url>U-I</Url>
@@ -512,10 +476,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -525,7 +486,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>POS</Name>
         <Url>POS</Url>
@@ -534,10 +495,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -547,7 +505,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>Claims</Name>
         <Url>Claims</Url>
@@ -556,10 +514,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -569,7 +524,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>Corporate Solutions</Name>
         <Url>CorporateSolutions</Url>
@@ -578,10 +533,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -591,7 +543,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
     </Webs>
   </WebDefinition>
   <!-- ############################################################# -->
@@ -609,7 +561,7 @@
     <Overwrite>true</Overwrite>
     <BreakRoleInheritance>true</BreakRoleInheritance>
     <Webs>
-      
+
       <WebDefinition>
         <Name>Customer Service</Name>
         <Url>CustomerService</Url>
@@ -618,10 +570,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -631,7 +580,7 @@
 
         </Webs>
       </WebDefinition>
-      
+
       <WebDefinition>
         <Name>Customer Care</Name>
         <Url>CustomerCare</Url>
@@ -640,17 +589,14 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
         <Overwrite>true</Overwrite>
         <BreakRoleInheritance>true</BreakRoleInheritance>
         <Webs>
-          
+
           <WebDefinition>
             <Name>Customer Care &amp; Customer Retention</Name>
             <Url>CustomerCare-CustomerRetention</Url>
@@ -672,7 +618,7 @@
 
             </Webs>
           </WebDefinition>
-          
+
           <WebDefinition>
             <Name>Call Center</Name>
             <Url>CallCenter</Url>
@@ -694,7 +640,7 @@
 
             </Webs>
           </WebDefinition>
-          
+
           <WebDefinition>
             <Name>Customer Complaint</Name>
             <Url>CustomerComplaint</Url>
@@ -716,7 +662,7 @@
 
             </Webs>
           </WebDefinition>
-          
+
           <WebDefinition>
             <Name>Q &amp; A</Name>
             <Url>Q-A</Url>
@@ -738,10 +684,10 @@
 
             </Webs>
           </WebDefinition>
-          
+
         </Webs>
       </WebDefinition>
-      
+
     </Webs>
   </WebDefinition>
   <!-- ############################################################# -->
@@ -767,10 +713,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -788,10 +731,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -826,10 +766,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -847,10 +784,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -877,7 +811,7 @@
     <Overwrite>true</Overwrite>
     <BreakRoleInheritance>true</BreakRoleInheritance>
     <Webs>
-      
+
     </Webs>
   </WebDefinition>
   <!-- ############################################################# -->
@@ -903,10 +837,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>
@@ -924,10 +855,7 @@
             <Name>AIA.Intranet.Infrastructure.Single</Name>
             <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
           </Feature>
-          <Feature>
-            <Name>AIA.Intranet.Infrastructure.News</Name>
-            <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-          </Feature>
+
         </Features>
         <Lists />
         <Template>STS#1</Template>

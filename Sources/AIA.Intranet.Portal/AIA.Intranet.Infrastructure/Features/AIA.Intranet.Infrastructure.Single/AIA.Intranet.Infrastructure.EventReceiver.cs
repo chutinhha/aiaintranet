@@ -29,6 +29,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Singl
             var folder = web.RootFolder;
             folder.WelcomePage = Constants.NEWS_HOME_PAGE.TrimStart('/');
             folder.Update();
+            ProvisionFeatures(web);
             ProvisionWebpart(web, "AIA.Intranet.Infrastructure.XMLCustomSettings.SingleWebParts.xml");
         }
 
@@ -74,6 +75,19 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Singl
             {
                 Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
             }
+        }
+
+        private void ProvisionFeatures(SPWeb web)
+        {
+            try
+            {
+                web.Features.Add(new Guid(Constants.NEWS_FEATURE_ID));
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex.Message, AIAPortalFeatures.Infrastructure);
+            }
+
         }
         #endregion Functions
     }
