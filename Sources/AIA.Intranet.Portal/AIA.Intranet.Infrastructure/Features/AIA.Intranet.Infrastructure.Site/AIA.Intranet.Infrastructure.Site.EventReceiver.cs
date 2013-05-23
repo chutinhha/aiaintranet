@@ -50,7 +50,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Site
 
                 ProvisionFeatures(web);
 
-                ProvisionLeftMenu(web);
+                //ProvisionLeftMenu(web);
 
                 ProvisionContactSetting(web);
             }
