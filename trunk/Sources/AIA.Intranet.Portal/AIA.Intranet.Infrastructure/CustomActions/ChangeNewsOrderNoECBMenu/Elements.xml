@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="0a95afc0-0b70-4e08-9c14-14b10479e78d"
+                RegistrationType="List"
+                RegistrationId="12002"
+                Location="EditControlBlock"
+                Title="Quick change order number"
+                Sequence="410"
+                ImageUrl="/_layouts/images/EDITITEM.GIF"
+                Rights="EditListItems"
+                >
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/ChangeNewsOrderNo.aspx?ID={ItemId}&amp;ListId={ListId}&amp;Source=' + encodeURIComponent(window.location.href), RefreshOnDialogClose, 500, 200,'Quick change order number')"/>
+  </CustomAction>
+</Elements>

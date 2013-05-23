@@ -108,6 +108,13 @@
     <Compile Include="Features\AIA.Intranet.UpdateWebConfig\AIA.Intranet.UpdateWebConfig.EventReceiver.cs">
       <DependentUpon>AIA.Intranet.UpdateWebConfig.feature</DependentUpon>
     </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ChangeNewsOrderNo.aspx.cs">
+      <DependentUpon>ChangeNewsOrderNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ChangeNewsOrderNo.aspx.designer.cs">
+      <DependentUpon>ChangeNewsOrderNo.aspx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\AIA.Intranet.Infrastructure\ContactEmailSetting.aspx.cs">
       <DependentUpon>ContactEmailSetting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -255,6 +262,9 @@
     </None>
     <None Include="ContentTypes\TypeOfEnquiryContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f39ac86f-0d81-45e5-a9a8-fb5583ff092e}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\ChangeNewsOrderNoECBMenu\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fd7106de-0532-4cd9-ad38-407345f5dfda}</SharePointProjectItemId>
     </None>
     <None Include="CustomActions\ContactRegister\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{be4aaa5a-22d4-4a03-9df1-fb4b83a7a6da}</SharePointProjectItemId>
@@ -528,6 +538,9 @@
     <Content Include="ContentTypes\ProcedureContentType\Elements.xml" />
     <Content Include="ContentTypes\ReportContentType\Elements.xml" />
     <Content Include="ContentTypes\TypeOfEnquiryContentType\Elements.xml" />
+    <Content Include="CustomActions\ChangeNewsOrderNoECBMenu\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="CustomActions\ContactRegister\Elements.xml" />
     <Content Include="Features\AIA.Intranet.Infrastructure.News\AIA.Intranet.Infrastructure.News.Template.xml">
       <DependentUpon>AIA.Intranet.Infrastructure.News.feature</DependentUpon>
@@ -543,6 +556,9 @@
     </Content>
     <Content Include="Images\favicon.ico" />
     <Content Include="Images\html16.png" />
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\ChangeNewsOrderNo.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="Layouts\AIA.Intranet.Infrastructure\ContactEmailSetting.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
@@ -584,7 +600,9 @@
     <Content Include="ListDefinitions\NewsCategoryDefinition\Elements.xml" />
     <Content Include="ListDefinitions\NewsCategoryDefinition\NewsCategoryInstance\Elements.xml" />
     <Content Include="ListDefinitions\NewsCategoryDefinition\Schema.xml" />
-    <Content Include="ListDefinitions\NewsDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\NewsDefinition\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ListDefinitions\NewsDefinition\Schema.xml" />
     <Content Include="ListDefinitions\ProcedureDefinition\EditDlg.htm" />
     <Content Include="ListDefinitions\ProcedureDefinition\Elements.xml" />

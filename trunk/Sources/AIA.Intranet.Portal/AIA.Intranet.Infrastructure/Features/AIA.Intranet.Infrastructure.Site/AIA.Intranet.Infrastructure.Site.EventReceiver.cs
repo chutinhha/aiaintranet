@@ -291,7 +291,7 @@ namespace AIA.Intranet.Infrastructure.Features.AIA.Intranet.Infrastructure.Site
                             SPListItem item = listLeftMenu.Items.Add();
                             item["Title"] = leftMenu.Title;
                             item["URL"] = leftMenu.Url;
-                            item["MenuKeywords"] = leftMenu.MenuKeywords;
+                            //item["MenuKeywords"] = leftMenu.MenuKeywords;
                             item.SystemUpdate();
                         }
                     }
