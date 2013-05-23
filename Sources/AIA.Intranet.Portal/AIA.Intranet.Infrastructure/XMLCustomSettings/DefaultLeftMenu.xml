@@ -14,8 +14,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Actuary/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Actuary/Lists/News/</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
@@ -72,8 +72,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Actuary/FinancialReporting-Valuation/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Actuary/FinancialReporting-Valuation/Lists/News/</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
@@ -131,8 +131,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Actuary/Product/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Actuary/Product/Lists/News/</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
@@ -192,8 +192,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/BusinessStrategy/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/BusinessStrategy/Lists/News/</Url>
         <MenuKeywords>/BusinessStrategy/</MenuKeywords>
       </LeftMenu>
 
@@ -251,8 +251,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/ClientManagement/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/ClientManagement/Lists/News/</Url>
         <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
@@ -309,8 +309,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/ClientManagement/CustomerCare/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/ClientManagement/CustomerCare/Lists/News/</Url>
         <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
@@ -367,8 +367,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/ClientManagement/CustomerCare/CallCenter/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/ClientManagement/CustomerCare/CallCenter/Lists/News/</Url>
         <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
@@ -426,8 +426,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerCare-CustomerRetention/Lists/News/</Url>
         <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
@@ -485,8 +485,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/ClientManagement/CustomerCare/CustomerComplaint/Lists/News/</Url>
         <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
@@ -544,8 +544,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/ClientManagement/CustomerCare/Q-A/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/ClientManagement/CustomerCare/Q-A/Lists/News/</Url>
         <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
@@ -604,8 +604,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/ClientManagement/CustomerService/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/ClientManagement/CustomerService/Lists/News/</Url>
         <MenuKeywords>/ClientManagement/</MenuKeywords>
       </LeftMenu>
 
@@ -665,8 +665,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Collection/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Collection/Lists/News/</Url>
         <MenuKeywords>/Collection/</MenuKeywords>
       </LeftMenu>
 
@@ -726,8 +726,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Compliance/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Compliance/Lists/News/</Url>
         <MenuKeywords>/Compliance/</MenuKeywords>
       </LeftMenu>
 
@@ -787,8 +787,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/CustomerService/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/CustomerService/Lists/News/</Url>
         <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
@@ -846,8 +846,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/CustomerService/FrontlineService/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/CustomerService/FrontlineService/Lists/News/</Url>
         <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
@@ -905,8 +905,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/CustomerService/ServiceEnhancement/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/CustomerService/ServiceEnhancement/Lists/News/</Url>
         <MenuKeywords>/CustomerService/</MenuKeywords>
       </LeftMenu>
 
@@ -966,8 +966,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Distribution/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Distribution/Lists/News/</Url>
         <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
@@ -1026,8 +1026,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/Lists/News/</Url>
         <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
@@ -1085,8 +1085,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyManagementSupport/Lists/News/</Url>
         <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
@@ -1144,8 +1144,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencyPromotionSupport/Lists/News/</Url>
         <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
@@ -1203,8 +1203,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Distribution/AgencyDistributionSupport-Initiatives/AgencySupport/Lists/News/</Url>
         <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
@@ -1263,8 +1263,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Distribution/Distribution-Development/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Distribution/Distribution-Development/Lists/News/</Url>
         <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
@@ -1322,8 +1322,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Distribution/Distribution-Development/Agency/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Distribution/Distribution-Development/Agency/Lists/News/</Url>
         <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
@@ -1381,8 +1381,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Distribution/Distribution-Development/PartnershipDistribution/Lists/News/</Url>
         <MenuKeywords>/Distribution/</MenuKeywords>
       </LeftMenu>
 
@@ -1442,8 +1442,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/ERM/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/ERM/Lists/News/</Url>
         <MenuKeywords>/ERM/</MenuKeywords>
       </LeftMenu>
 
@@ -1503,8 +1503,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Finance/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Finance/Lists/News/</Url>
         <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
@@ -1562,8 +1562,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Finance/Cost-Budget/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Finance/Cost-Budget/Lists/News/</Url>
         <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
@@ -1621,8 +1621,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Finance/FinancialReporting/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Finance/FinancialReporting/Lists/News/</Url>
         <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
@@ -1680,8 +1680,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Finance/OperationAccounting/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Finance/OperationAccounting/Lists/News/</Url>
         <MenuKeywords>/Finance/</MenuKeywords>
       </LeftMenu>
 
@@ -1741,8 +1741,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/HumanResource/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/HumanResource/Lists/News/</Url>
         <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
@@ -1800,8 +1800,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/HumanResource/HRBusinessPartner/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/HumanResource/HRBusinessPartner/Lists/News/</Url>
         <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
@@ -1859,8 +1859,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/HumanResource/Recruitment/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/HumanResource/Recruitment/Lists/News/</Url>
         <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
@@ -1918,8 +1918,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/HumanResource/Rewards-Performance/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/HumanResource/Rewards-Performance/Lists/News/</Url>
         <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
@@ -1977,8 +1977,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/HumanResource/StaffEngagement-Relations/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/HumanResource/StaffEngagement-Relations/Lists/News/</Url>
         <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
@@ -2036,8 +2036,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/HumanResource/Training-Development/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/HumanResource/Training-Development/Lists/News/</Url>
         <MenuKeywords>/HumanResource/</MenuKeywords>
       </LeftMenu>
 
@@ -2097,8 +2097,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Investment/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Investment/Lists/News/</Url>
         <MenuKeywords>/Investment/</MenuKeywords>
       </LeftMenu>
 
@@ -2158,8 +2158,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Legal/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Legal/Lists/News/</Url>
         <MenuKeywords>/Legal/</MenuKeywords>
       </LeftMenu>
 
@@ -2219,8 +2219,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Marketing/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Marketing/Lists/News/</Url>
         <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
@@ -2278,8 +2278,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Marketing/CorporateMarketing/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Marketing/CorporateMarketing/Lists/News/</Url>
         <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
@@ -2337,8 +2337,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Marketing/PressRelation/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Marketing/PressRelation/Lists/News/</Url>
         <MenuKeywords>/Marketing/</MenuKeywords>
       </LeftMenu>
 
@@ -2398,8 +2398,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Operations/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Operations/Lists/News/</Url>
         <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
@@ -2457,8 +2457,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Operations/Claims/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Operations/Claims/Lists/News/</Url>
         <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
@@ -2516,8 +2516,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Operations/CorporateSolutions/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Operations/CorporateSolutions/Lists/News/</Url>
         <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
@@ -2575,8 +2575,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Operations/POS/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Operations/POS/Lists/News/</Url>
         <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
@@ -2634,8 +2634,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Operations/U-I/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Operations/U-I/Lists/News/</Url>
         <MenuKeywords>/Operations/</MenuKeywords>
       </LeftMenu>
 
@@ -2695,8 +2695,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/ProductMarketing/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/ProductMarketing/Lists/News/</Url>
         <MenuKeywords>/ProductMarketing/</MenuKeywords>
       </LeftMenu>
 
@@ -2755,8 +2755,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/Property/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/Property/Lists/News/</Url>
         <MenuKeywords>/Property/</MenuKeywords>
       </LeftMenu>
 
@@ -2816,8 +2816,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/MIS/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/MIS/Lists/News/</Url>
         <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
@@ -2874,8 +2874,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/MIS/Share/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/MIS/Share/Lists/News/</Url>
         <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
@@ -2933,8 +2933,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/MIS/MISGovernance-AssetManagement/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/MIS/MISGovernance-AssetManagement/Lists/News/</Url>
         <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
@@ -2992,8 +2992,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/MIS/ITInfrastructure/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/MIS/ITInfrastructure/Lists/News/</Url>
         <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
@@ -3051,8 +3051,8 @@
       </LeftMenu>
 
       <LeftMenu>
-        <Title>Functions &amp; News</Title>
-        <Url>/MIS/ApplicationDevelopment/Pages/FunctionsAndNews.aspx</Url>
+        <Title>News</Title>
+        <Url>/MIS/ApplicationDevelopment/Lists/News/</Url>
         <MenuKeywords>/MIS/</MenuKeywords>
       </LeftMenu>
 
