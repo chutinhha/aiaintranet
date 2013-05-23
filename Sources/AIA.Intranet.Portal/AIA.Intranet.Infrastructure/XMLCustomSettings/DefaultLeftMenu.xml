@@ -67,49 +67,49 @@
 
       <LeftMenu>
         <Title>Home</Title>
-        <Url>/Actuary/Pages/Home.aspx</Url>
+        <Url>/Actuary/FinancialReporting-Valuation/Pages/Home.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Functions &amp; News</Title>
-        <Url>/Actuary/Pages/FunctionsAndNews.aspx</Url>
+        <Url>/Actuary/FinancialReporting-Valuation/Pages/FunctionsAndNews.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Policy &amp; Standards</Title>
-        <Url>/Actuary/Pages/PolicyStandards.aspx</Url>
+        <Url>/Actuary/FinancialReporting-Valuation/Pages/PolicyStandards.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Actuary/Pages/Guidelines.aspx</Url>
+        <Url>/Actuary/FinancialReporting-Valuation/Pages/Guidelines.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Team Activities</Title>
-        <Url>/Actuary/Pages/TeamActivities.aspx</Url>
+        <Url>/Actuary/FinancialReporting-Valuation/Pages/TeamActivities.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Team Organization</Title>
-        <Url>/Actuary/Pages/TeamOrganization.aspx</Url>
+        <Url>/Actuary/FinancialReporting-Valuation/Pages/TeamOrganization.aspx</Url>
         <MenuKeywords>/Lists/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Calendar</Title>
-        <Url>/Actuary/Lists/Calendar/calendar.aspx</Url>
+        <Url>/Actuary/FinancialReporting-Valuation/Lists/Calendar/calendar.aspx</Url>
         <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>About</Title>
-        <Url>/Actuary/Pages/About.aspx</Url>
+        <Url>/Actuary/FinancialReporting-Valuation/Pages/About.aspx</Url>
         <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
 
@@ -126,49 +126,49 @@
 
       <LeftMenu>
         <Title>Home</Title>
-        <Url>/Actuary/Pages/Home.aspx</Url>
+        <Url>/Actuary/Product/Pages/Home.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Functions &amp; News</Title>
-        <Url>/Actuary/Pages/FunctionsAndNews.aspx</Url>
+        <Url>/Actuary/Product/Pages/FunctionsAndNews.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Policy &amp; Standards</Title>
-        <Url>/Actuary/Pages/PolicyStandards.aspx</Url>
+        <Url>/Actuary/Product/Pages/PolicyStandards.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Actuary/Pages/Guidelines.aspx</Url>
+        <Url>/Actuary/Product/Pages/Guidelines.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Team Activities</Title>
-        <Url>/Actuary/Pages/TeamActivities.aspx</Url>
+        <Url>/Actuary/Product/Pages/TeamActivities.aspx</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Team Organization</Title>
-        <Url>/Actuary/Pages/TeamOrganization.aspx</Url>
+        <Url>/Actuary/Product/Pages/TeamOrganization.aspx</Url>
         <MenuKeywords>/Lists/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Calendar</Title>
-        <Url>/Actuary/Lists/Calendar/calendar.aspx</Url>
+        <Url>/Actuary/Product/Lists/Calendar/calendar.aspx</Url>
         <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>About</Title>
-        <Url>/Actuary/Pages/About.aspx</Url>
+        <Url>/Actuary/Product/Pages/About.aspx</Url>
         <MenuKeywords>/Actuary</MenuKeywords>
       </LeftMenu>
 
