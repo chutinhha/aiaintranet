@@ -97,16 +97,24 @@ namespace AIA.Intranet.Infrastructure.WebParts.HomeNews
             lblTitle.Text = "Comming up link : ";
             Controls.Add(lblTitle);
 
+            literalSpace = new Literal();
+            literalSpace.Text = "<br />Title:&nbsp;";
+            Controls.Add(literalSpace);
+
             txtCommingUpTitle = new TextBox();
             txtCommingUpTitle.ID = "txtTitle";
             Controls.Add(txtCommingUpTitle);
+
+            literalSpace = new Literal();
+            literalSpace.Text = "<br />Link:&nbsp;";
+            Controls.Add(literalSpace);
 
             txtCommingUpLink = new TextBox();
             txtCommingUpLink.ID = "txtLink";
             Controls.Add(txtCommingUpLink);
 
             literalSpace = new Literal();
-            literalSpace.Text = "&nbsp;";
+            literalSpace.Text = "<br />";
             Controls.Add(literalSpace);
 
             btnAdd = new Button();

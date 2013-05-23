@@ -6,7 +6,7 @@
         <FieldRefs>
           <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
           <FieldRef ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL" />
-          <FieldRef ID="{385a2fd6-5ec2-482b-8c4b-436069893383}" Name="MenuKeywords" />
+          <!--<FieldRef ID="{385a2fd6-5ec2-482b-8c4b-436069893383}" Name="MenuKeywords" />-->
           <FieldRef ID="{E558F8F8-71B8-4FEE-93F0-08CFCDC385BA}" Name="OrderNumber" />
           <FieldRef ID="{dca368a0-8f89-47f7-a0d4-a95f9e33cdd1}" Name="Active"/>
         </FieldRefs>
@@ -40,7 +40,7 @@
       <Field Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Sealed="TRUE" Type="Calculated"/>
       <Field Name="LinkTitleNoMenu" ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" DisplayName="$Resources:core,Title;" Sealed="TRUE" Type="Calculated"/>
       <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" StaticName="Title" DisplayName="$Resources:core,Title;" />
-      <Field ID="{385a2fd6-5ec2-482b-8c4b-436069893383}" Type="Text" StaticName="MenuKeywords" Name="MenuKeywords" DisplayName="Group menu by keywords" MaxLength="255" Required="TRUE"/>
+      <!--<Field ID="{385a2fd6-5ec2-482b-8c4b-436069893383}" Type="Text" StaticName="MenuKeywords" Name="MenuKeywords" DisplayName="Group menu by keywords" MaxLength="255" Description="Leave this field empty to display this left menu on all site pages"/>-->
       <Field ID="{e558f8f8-71b8-4fee-93f0-08cfcdc385ba}" Name="OrderNumber" StaticName="OrderNumber" DisplayName="Order No." Group="AIA Portal" Type="Number" Description="To set the latest order number leave this field empty" Min="1" Max="999999999" />
       <Field ID="{c29e077d-f466-4d8e-8bbe-72b66c5f205c}" Name="URL" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="URL" Group="$Resources:core,Base_Columns;" Type="URL" DisplayName="$Resources:core,URL;" />
       <Field Type="Boolean" ID="{dca368a0-8f89-47f7-a0d4-a95f9e33cdd1}" StaticName="Active" Name="Active" DisplayName="Active">
@@ -83,9 +83,9 @@
           </FieldRef>
         </ViewFields>
         <Query>
-          <GroupBy Collapse="FALSE" GroupLimit="30">
+          <!--<GroupBy Collapse="FALSE" GroupLimit="30">
             <FieldRef Name="MenuKeywords" />
-          </GroupBy>
+          </GroupBy>-->
           <OrderBy>
             <FieldRef Name="OrderNumber">
             </FieldRef>

@@ -29,7 +29,7 @@ namespace AIA.Intranet.Infrastructure.ContentTypes
             IncreaseItemOrderNo(properties);
 
             TrimTextFieldValue(properties, "Title");
-            TrimTextFieldValue(properties, "MenuKeywords");
+            //TrimTextFieldValue(properties, "MenuKeywords");
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace AIA.Intranet.Infrastructure.ContentTypes
             IncreaseItemOrderNo(properties);
 
             TrimTextFieldValue(properties, "Title");
-            TrimTextFieldValue(properties, "MenuKeywords");
+            //TrimTextFieldValue(properties, "MenuKeywords");
         }
 
         private void IncreaseItemOrderNo(SPItemEventProperties properties)
@@ -60,10 +60,10 @@ namespace AIA.Intranet.Infrastructure.ContentTypes
                     expressionsAnd.Add(x => ((int)x[Constants.ORDER_NUMBER_COLUMN]) >= orderNo);
                     expressionsAnd.Add(x => (x["ID"]) != (DataTypes.Counter)strItemId);
 
-                    if (properties.AfterProperties[Constants.MENU_KEYWORDS_COLUMN] != null)
-                    {
-                        expressionsAnd.Add(x => ((string)x[Constants.MENU_KEYWORDS_COLUMN]) == properties.AfterProperties[Constants.MENU_KEYWORDS_COLUMN].ToString());
-                    }
+                    //if (properties.AfterProperties[Constants.MENU_KEYWORDS_COLUMN] != null)
+                    //{
+                    //    expressionsAnd.Add(x => ((string)x[Constants.MENU_KEYWORDS_COLUMN]) == properties.AfterProperties[Constants.MENU_KEYWORDS_COLUMN].ToString());
+                    //}
 
                     caml = Camlex.Query().WhereAll(expressionsAnd).OrderBy(x => x[Constants.ORDER_NUMBER_COLUMN] as Camlex.Asc).ToString();
 
@@ -98,10 +98,14 @@ namespace AIA.Intranet.Infrastructure.ContentTypes
             string caml = string.Empty;
             var expressionsAnd = new List<Expression<Func<SPListItem, bool>>>();
 
-            if (properties.AfterProperties[Constants.MENU_KEYWORDS_COLUMN] != null)
-            {
-                expressionsAnd.Add(x => ((string)x[Constants.MENU_KEYWORDS_COLUMN]) == properties.AfterProperties[Constants.MENU_KEYWORDS_COLUMN].ToString());
-            }
+            //if (properties.AfterProperties[Constants.MENU_KEYWORDS_COLUMN] != null)
+            //{
+            //    expressionsAnd.Add(x => ((string)x[Constants.MENU_KEYWORDS_COLUMN]) == properties.AfterProperties[Constants.MENU_KEYWORDS_COLUMN].ToString());
+            //}
+            //else
+            //{
+            //    expressionsAnd.Add(x => (x[Constants.MENU_KEYWORDS_COLUMN]) == null);
+            //}
 
             if (expressionsAnd.Count > 0)
                 caml = Camlex.Query().WhereAll(expressionsAnd).OrderBy(x => x[Constants.ORDER_NUMBER_COLUMN] as Camlex.Desc).ToString();

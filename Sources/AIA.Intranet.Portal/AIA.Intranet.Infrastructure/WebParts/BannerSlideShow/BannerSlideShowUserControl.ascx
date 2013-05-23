@@ -10,6 +10,11 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BannerSlideShowUserControl.ascx.cs"
     Inherits="AIA.Intranet.Infrastructure.WebParts.BannerSlideShow.BannerSlideShowUserControl" %>
 
+<style type='text/css'>
+    body #s4-leftpanel{display: none;}
+    .s4-ca{margin-left: 0;}
+</style>
+
     <div class="beauty_slideShowContent">
         <!-- SLIDE SHOW -->
         <script type="text/javascript">
@@ -53,46 +58,3 @@
             </div>
         </div>
     </div>
-
-<%--<ul class="ad-thumb-list">
-    <li><a href="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/1.jpg">
-        <img src="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/space.png"
-            style="background: url('../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/1.jpg') no-repeat center center;
-            -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
-            background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/1.jpg', sizingMethod='scale');
-            -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/1.jpg', sizingMethod='scale')';
-            width: 52px; height: 35px" title="Title 01" alt="Alt 01" class="image01" />
-    </a></li>
-    <li><a href="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/2.jpg">
-        <img src="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/space.png"
-            style="background: url('../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/2.jpg') no-repeat center center;
-            -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
-            background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/2.jpg', sizingMethod='scale');
-            -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/2.jpg', sizingMethod='scale')';
-            width: 52px; height: 35px" title="Title 02" alt="Alt 02" class="image02" />
-    </a></li>
-    <li><a href="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/3.jpg">
-        <img src="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/space.png"
-            style="background: url('../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/3.jpg') no-repeat center center;
-            -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
-            background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/3.jpg', sizingMethod='scale');
-            -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/3.jpg', sizingMethod='scale')';
-            width: 52px; height: 35px" title="Title 03" alt="Alt 03" class="image03" />
-    </a></li>
-    <li><a href="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/4.jpg">
-        <img src="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/space.png"
-            style="background: url('../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/4.jpg') no-repeat center center;
-            -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
-            background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/4.jpg', sizingMethod='scale');
-            -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/4.jpg', sizingMethod='scale')';
-            width: 52px; height: 35px" title="Title 04" alt="Alt 04" class="image04" />
-    </a></li>
-    <li><a href="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/5.jpg">
-        <img src="../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/space.png"
-            style="background: url('../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/5.jpg') no-repeat center center;
-            -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
-            background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/5.jpg', sizingMethod='scale');
-            -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../_layouts/images/AIA.Intranet.Infrastructure/slideshow/5.jpg', sizingMethod='scale')';
-            width: 52px; height: 35px" title="Title 05" alt="Alt 05" class="image05" />
-    </a></li>
-</ul>--%>

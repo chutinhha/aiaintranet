@@ -44,7 +44,9 @@ namespace AIA.Intranet.Infrastructure.WebParts.LeftMenu
 
                 expressionsAnd.Add(x => ((bool)x[Constants.ACTIVE_COLUMN]) == true);
 
-                caml = Camlex.Query().WhereAll(expressionsAnd).OrderBy(x => x[Constants.ORDER_NUMBER_COLUMN] as Camlex.Asc).ToString();
+                //caml = Camlex.Query().WhereAll(expressionsAnd).OrderBy(x => x[Constants.ORDER_NUMBER_COLUMN] as Camlex.Asc).ToString();
+
+                caml = Camlex.Query().WhereAll(expressionsAnd).OrderBy(x => new[] { /* x[Constants.MENU_KEYWORDS_COLUMN] as Camlex.Asc, */ x[Constants.ORDER_NUMBER_COLUMN] as Camlex.Asc }).ToString();
 
                 SPQuery spQuery = new SPQuery();
                 spQuery.Query = caml;
@@ -60,19 +62,23 @@ namespace AIA.Intranet.Infrastructure.WebParts.LeftMenu
                         string classNoBorder = string.Empty;
                         if (i == items.Count - 1) classNoBorder = "class='noBorder'";
 
-                        if (item["MenuKeywords"] != null && HttpContext.Current.Request.Url.AbsolutePath.ToLower().Contains(item["MenuKeywords"].ToString().ToLower()))
-                        {
+                        //if ((item["MenuKeywords"] == null || string.IsNullOrEmpty(item["MenuKeywords"].ToString())) || (item["MenuKeywords"] != null && HttpContext.Current.Request.Url.AbsoluteUri.ToLower().Contains(item["MenuKeywords"].ToString().ToLower())))
+                        //{
                             if (item["URL"] != null)
                             {
                                 SPFieldUrlValue urlValue = new SPFieldUrlValue(item["URL"].ToString());
 
-                                htmlBuilder.AppendFormat("<li {0}><a href='{1}'>{2}</a></li>", classNoBorder, urlValue.Url, item.Title);
+                                string boldText = string.Empty;
+                                if (HttpContext.Current.Request.Url.AbsoluteUri.ToLower().Contains(urlValue.Url.ToLower()))
+                                    boldText = "style='font-weight: bold; color:#000'";
+
+                                htmlBuilder.AppendFormat("<li {0}><a href='{1}' {2}>{3}</a></li>", classNoBorder, urlValue.Url, boldText, item.Title);
                             }
                             else
                             {
                                 htmlBuilder.AppendFormat("<li {0}><a href='#'>{1}</a></li>", classNoBorder, item.Title);
                             }
-                        }
+                        //}
                     }
 
                     if (htmlBuilder.Length > 0)

@@ -40,7 +40,7 @@
                                 <h2>
                                     Content contact</h2>
                                 <div class="fl">
-                                    Content&nbsp;<asp:RequiredFieldValidator ID="rfvContent" ControlToValidate="txtContent" runat="server" ErrorMessage="(*)"></asp:RequiredFieldValidator>
+                                    Comment&nbsp;<asp:RequiredFieldValidator ID="rfvContent" ControlToValidate="txtContent" runat="server" ErrorMessage="(*)"></asp:RequiredFieldValidator>
                                 </div>
                                 <asp:TextBox ID="txtContent" style="width: 385px" CssClass="textarea" TextMode="MultiLine"
                                 Rows="6" runat="server"></asp:TextBox>
