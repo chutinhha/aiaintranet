@@ -249,10 +249,7 @@
                 <Name>AIA.Intranet.Infrastructure.Single</Name>
                 <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
               </Feature>
-              <Feature>
-                <Name>AIA.Intranet.Infrastructure.News</Name>
-                <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-              </Feature>
+
             </Features>
             <Lists />
             <Template>STS#1</Template>
@@ -271,10 +268,7 @@
                 <Name>AIA.Intranet.Infrastructure.Single</Name>
                 <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
               </Feature>
-              <Feature>
-                <Name>AIA.Intranet.Infrastructure.News</Name>
-                <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-              </Feature>
+
             </Features>
             <Lists />
             <Template>STS#1</Template>
@@ -312,10 +306,7 @@
                 <Name>AIA.Intranet.Infrastructure.Single</Name>
                 <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
               </Feature>
-              <Feature>
-                <Name>AIA.Intranet.Infrastructure.News</Name>
-                <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-              </Feature>
+
             </Features>
             <Lists />
             <Template>STS#1</Template>
@@ -335,10 +326,7 @@
                 <Name>AIA.Intranet.Infrastructure.Single</Name>
                 <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
               </Feature>
-              <Feature>
-                <Name>AIA.Intranet.Infrastructure.News</Name>
-                <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-              </Feature>
+
             </Features>
             <Lists />
             <Template>STS#1</Template>
@@ -357,10 +345,7 @@
                 <Name>AIA.Intranet.Infrastructure.Single</Name>
                 <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
               </Feature>
-              <Feature>
-                <Name>AIA.Intranet.Infrastructure.News</Name>
-                <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-              </Feature>
+
             </Features>
             <Lists />
             <Template>STS#1</Template>
@@ -605,10 +590,7 @@
                 <Name>AIA.Intranet.Infrastructure.Single</Name>
                 <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
               </Feature>
-              <Feature>
-                <Name>AIA.Intranet.Infrastructure.News</Name>
-                <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-              </Feature>
+
             </Features>
             <Lists />
             <Template>STS#1</Template>
@@ -627,10 +609,7 @@
                 <Name>AIA.Intranet.Infrastructure.Single</Name>
                 <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
               </Feature>
-              <Feature>
-                <Name>AIA.Intranet.Infrastructure.News</Name>
-                <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-              </Feature>
+
             </Features>
             <Lists />
             <Template>STS#1</Template>
@@ -649,10 +628,7 @@
                 <Name>AIA.Intranet.Infrastructure.Single</Name>
                 <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
               </Feature>
-              <Feature>
-                <Name>AIA.Intranet.Infrastructure.News</Name>
-                <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-              </Feature>
+
             </Features>
             <Lists />
             <Template>STS#1</Template>
@@ -671,10 +647,7 @@
                 <Name>AIA.Intranet.Infrastructure.Single</Name>
                 <Guid>cc2046f6-9e9e-48e1-99e0-f7c1e22dd4b3</Guid>
               </Feature>
-              <Feature>
-                <Name>AIA.Intranet.Infrastructure.News</Name>
-                <Guid>1f128cb6-3d86-4500-a339-6c0516ab7be5</Guid>
-              </Feature>
+
             </Features>
             <Lists />
             <Template>STS#1</Template>
