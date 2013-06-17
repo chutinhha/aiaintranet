@@ -72,6 +72,7 @@
     <Reference Include="Microsoft.SharePoint.Security" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContentTypes\BannerContentType\BannerContentTypeEventReciever.cs" />
     <Compile Include="ContentTypes\CategoryContentType\CategoryContentTypeEventReceiver.cs" />
     <Compile Include="ContentTypes\MenuItemContentType\MenuItemContentTypeEventReceiver.cs" />
     <Compile Include="ContentTypes\NewsItemContentType\NewsItemContentTypeEventReciever.cs" />
@@ -121,6 +122,13 @@
     </Compile>
     <Compile Include="Layouts\AIA.Intranet.Infrastructure\ContactEmailSetting.aspx.designer.cs">
       <DependentUpon>ContactEmailSetting.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ChangeMenuOrderNo.aspx.cs">
+      <DependentUpon>ChangeMenuOrderNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\AIA.Intranet.Infrastructure\ChangeMenuOrderNo.aspx.designer.cs">
+      <DependentUpon>ChangeMenuOrderNo.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\MasterPages\AIAPortal.master.cs">
       <DependentUpon>AIAPortal.master</DependentUpon>
@@ -254,6 +262,9 @@
     <None Include="ContentTypes\NewsItemContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{579a7406-d0e7-48f3-8b6d-dd102ecdef1c}</SharePointProjectItemId>
     </None>
+    <None Include="ContentTypes\PolicyContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f00f1a35-d449-4d4f-8d78-8ea180c944fe}</SharePointProjectItemId>
+    </None>
     <None Include="ContentTypes\ProcedureContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4088c14f-f0c7-4e0c-bc19-5ce77cb0eed4}</SharePointProjectItemId>
     </None>
@@ -262,6 +273,12 @@
     </None>
     <None Include="ContentTypes\TypeOfEnquiryContentType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f39ac86f-0d81-45e5-a9a8-fb5583ff092e}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\ChangeBannerOrderMenuECBMenu\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ee50a06b-27ef-44bc-808d-7ed8923ed6e8}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\ChangeMenuOrderNoECBMenu\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a8dc7fef-f709-49a6-bf9e-0ee71cba8c42}</SharePointProjectItemId>
     </None>
     <None Include="CustomActions\ChangeNewsOrderNoECBMenu\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fd7106de-0532-4cd9-ad38-407345f5dfda}</SharePointProjectItemId>
@@ -334,6 +351,12 @@
     </None>
     <None Include="ListDefinitions\NewsDefinition\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{58a96082-a7af-4914-a177-80031f65f99c}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\PolicyListDefinition\PolicyListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b14e3f1e-5a5b-442f-bda1-8a5eb3f67962}</SharePointProjectItemId>
+    </None>
+    <None Include="ListDefinitions\PolicyListDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{058e1442-70b5-4c3c-bc54-65fe801dfa31}</SharePointProjectItemId>
     </None>
     <None Include="ListDefinitions\ProcedureDefinition\ProcedureInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1123edf2-bd01-45bb-9487-fb1e7833a905}</SharePointProjectItemId>
@@ -525,7 +548,9 @@
     <Content Include="AppGlobalResources\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="ContentTypes\BannerContentType\Elements.xml" />
+    <Content Include="ContentTypes\BannerContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ContentTypes\ContactContentType\Elements.xml" />
     <Content Include="ContentTypes\FormContentType\Elements.xml" />
     <Content Include="ContentTypes\GuidelineContentType\Elements.xml" />
@@ -535,9 +560,16 @@
     <Content Include="ContentTypes\NewsItemContentType\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="ContentTypes\PolicyContentType\Elements.xml" />
     <Content Include="ContentTypes\ProcedureContentType\Elements.xml" />
     <Content Include="ContentTypes\ReportContentType\Elements.xml" />
     <Content Include="ContentTypes\TypeOfEnquiryContentType\Elements.xml" />
+    <Content Include="CustomActions\ChangeBannerOrderMenuECBMenu\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CustomActions\ChangeMenuOrderNoECBMenu\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="CustomActions\ChangeNewsOrderNoECBMenu\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -560,6 +592,9 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Layouts\AIA.Intranet.Infrastructure\ContactEmailSetting.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\AIA.Intranet.Infrastructure\ChangeMenuOrderNo.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Libs\Microsoft.SharePoint.Publishing.dll" />
@@ -604,6 +639,13 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="ListDefinitions\NewsDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\PolicyListDefinition\EditDlg.htm" />
+    <Content Include="ListDefinitions\PolicyListDefinition\Elements.xml" />
+    <Content Include="ListDefinitions\PolicyListDefinition\FileDlg.htm" />
+    <Content Include="ListDefinitions\PolicyListDefinition\PolicyListInstance\Elements.xml" />
+    <Content Include="ListDefinitions\PolicyListDefinition\Repair.aspx" />
+    <Content Include="ListDefinitions\PolicyListDefinition\Schema.xml" />
+    <Content Include="ListDefinitions\PolicyListDefinition\Upload.aspx" />
     <Content Include="ListDefinitions\ProcedureDefinition\EditDlg.htm" />
     <Content Include="ListDefinitions\ProcedureDefinition\Elements.xml" />
     <Content Include="ListDefinitions\ProcedureDefinition\FileDlg.htm" />
@@ -775,7 +817,9 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="WebParts\SiteMap\Elements.xml" />
-    <Content Include="WebParts\SiteMap\SiteMapUserControl.ascx" />
+    <Content Include="WebParts\SiteMap\SiteMapUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="WebParts\SiteViewer\Elements.xml" />
     <Content Include="WebParts\SiteViewer\SiteViewerUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>

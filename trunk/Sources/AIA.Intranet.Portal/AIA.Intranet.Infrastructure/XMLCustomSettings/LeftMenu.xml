@@ -20,13 +20,13 @@
 
       <LeftMenu>
         <Title>Policy &amp; Standards</Title>
-        <Url>/Pages/PolicyStandards.aspx</Url>
+        <Url>/PolicyAndStandards</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
       <LeftMenu>
         <Title>Guidelines</Title>
-        <Url>/Pages/Guidelines.aspx</Url>
+        <Url>/Lists/Guidelines</Url>
         <MenuKeywords>/Actuary/</MenuKeywords>
       </LeftMenu>
 
