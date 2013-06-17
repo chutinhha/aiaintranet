@@ -40,7 +40,7 @@
                                 <h2>
                                     Content contact</h2>
                                 <div class="fl">
-                                    Comment&nbsp;<asp:RequiredFieldValidator ID="rfvContent" ControlToValidate="txtContent" runat="server" ErrorMessage="(*)"></asp:RequiredFieldValidator>
+                                    Comment&nbsp;<asp:RequiredFieldValidator ID="rfvContent" ControlToValidate="txtContent" runat="server" ErrorMessage="(*)" ValidationGroup="ContactSend"></asp:RequiredFieldValidator>
                                 </div>
                                 <asp:TextBox ID="txtContent" style="width: 385px" CssClass="textarea" TextMode="MultiLine"
                                 Rows="6" runat="server"></asp:TextBox>
@@ -48,7 +48,7 @@
                                 <%--<SharePoint:FormField ID="ffContent" FieldName="Content" runat="server" ControlMode="New"></SharePoint:FormField>--%>
                                 
                                 <div style="padding: 10px 0 10px 50px">
-                                    <asp:Button ID="btnSubmit" runat="server" CssClass="button" Text="Submit" />
+                                    <asp:Button ID="btnSubmit" runat="server" CssClass="button" Text="Submit" ValidationGroup="ContactSend"/>
                                     <input id="btnReset" type="reset" class="button" value="Reset" />
                                 </div>
                             </div>

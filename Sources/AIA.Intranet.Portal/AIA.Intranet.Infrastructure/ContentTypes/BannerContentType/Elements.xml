@@ -27,5 +27,31 @@
       <FieldRef ID="{428EC289-C475-453a-8312-560C33ABCEED}" Name="OrderNumber" DisplayName="Order Number"/>
 
     </FieldRefs>
+
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>BannerContentTypeEventRecieverItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.BannerContentTypeEventReciever</Class>
+            <Data></Data>
+            <Filter></Filter>
+          </Receiver>
+          <Receiver>
+            <Name>BannerContentTypeEventRecieverItemUpdating</Name>
+            <Type>ItemUpdating</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>AIA.Intranet.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b6a88a58a49868d</Assembly>
+            <Class>AIA.Intranet.Infrastructure.ContentTypes.BannerContentTypeEventReciever</Class>
+            <Data></Data>
+            <Filter></Filter>
+          </Receiver>
+        </Receivers>
+      </XmlDocument>
+    </XmlDocuments>
+    
   </ContentType>
 </Elements>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="bfb90470-410e-4129-a647-e1da122055c4" 
+                RegistrationType="List"
+                RegistrationId="12005"
+                Location="EditControlBlock"
+                Title="Quick change order number"
+                Sequence="410"
+                ImageUrl="/_layouts/images/EDITITEM.GIF"
+                Rights="EditListItems"
+                >
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/ChangeMenuOrderNo.aspx?ID={ItemId}&amp;ListId={ListId}&amp;Source=' + encodeURIComponent(window.location.href), RefreshOnDialogClose, 500, 200,'Quick change order number')"/>
+  </CustomAction>
+
+  <CustomAction Id="F93DF726-820F-48BD-80D7-AE43E0185B88"
+                RegistrationType="List"
+                RegistrationId="10004"
+                Location="EditControlBlock"
+                Title="Quick change order number"
+                Sequence="410"
+                ImageUrl="/_layouts/images/EDITITEM.GIF"
+                Rights="EditListItems"
+                >
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/ChangeMenuOrderNo.aspx?ID={ItemId}&amp;ListId={ListId}&amp;Source=' + encodeURIComponent(window.location.href), RefreshOnDialogClose, 500, 200,'Quick change order number')"/>
+  </CustomAction>  
+</Elements>

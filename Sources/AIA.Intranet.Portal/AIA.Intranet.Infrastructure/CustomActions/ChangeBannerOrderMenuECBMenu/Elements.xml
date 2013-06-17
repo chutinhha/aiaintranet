@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <CustomAction Location="ScriptLink"
+                ScriptBlock="function getFirstItemID() {
+					                     var IDs = MakeSelectionStr()
+                                   arrIDs = IDs.split(';');
+                               var result = '';
+                               if (arrIDs.length > 0)
+                               {
+                                 result = arrIDs[0];
+                               }
+                               
+                               return result;
+				                     }"
+            Sequence="0"></CustomAction>
+  
+  <CustomAction Id="9e5a6aa8-b966-404e-b9e8-31b2af7ae53b"  
+                RegistrationType="List"
+                RegistrationId="109"
+                Location="Microsoft.SharePoint.StandardMenu"
+                GroupId="ActionsMenu"
+                Title="Quick change order number"
+                Sequence="410"
+                Rights="EditListItems"
+
+                >
+    <UrlAction Url="javascript:OpenPopUpPageWithTitle('{SiteUrl}/_layouts/AIA.Intranet.Infrastructure/ChangeMenuOrderNo.aspx?ID=' + getFirstItemID() + '&amp;ListId={ListId}&amp;Source=' + encodeURIComponent(window.location.href), RefreshOnDialogClose, 500, 200,'Quick change order number')"/>
+  </CustomAction>
+</Elements>
